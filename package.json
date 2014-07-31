@@ -1,0 +1,26 @@
+{
+	"name": "canvasblocker",
+	"title": "CanvasBlocker",
+	"id": "CanvasBlocker@kkapsner.de",
+	"description": "Blocks the JS-API for modifying <canvas>",
+	"preferences": [
+		{
+			"name": "whiteList",
+			"title": "White list",
+			"description": "Domains where the <canvas>-API should not be blocked. To add multiple domains seperate them by comma.",
+			"type": "string",
+			"value": "kkapsner.de"
+		},
+		{
+			"name": "blockAll",
+			"title": "Block everything",
+			"description": "If you want to block everything (ignore the white list).",
+			"type": "bool",
+			"value": false
+		}
+	],
+	"author": "Korbinian Kapsner",
+	"license": "MPL 2.0",
+	"version": "0.1",
+	"permissions": {"private-browsing": true}
+}
