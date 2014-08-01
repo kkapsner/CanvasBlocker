@@ -17,6 +17,20 @@
 			"description": "If you want to block everything (ignore the white list).",
 			"type": "bool",
 			"value": false
+		},
+		{
+			"name": "blackList",
+			"title": "Black list",
+			"description": "Domains where the <canvas>-API should always be blocked. To add multiple domains seperate them by comma.",
+			"type": "string",
+			"value": ""
+		},
+		{
+			"name": "askPermission",
+			"title": "Ask for permission",
+			"description": "If you want to be asked if you want to block a canvas element if the domain is neither in the white or black list.",
+			"type": "bool",
+			"value": true
 		}
 	],
 	"author": "Korbinian Kapsner",
