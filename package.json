@@ -31,6 +31,13 @@
 			"description": "If you want to be asked if you want to block a canvas element if the domain is neither in the white or black list.",
 			"type": "bool",
 			"value": true
+		},
+		{
+			"name": "allowPDFCanvas",
+			"title": "Allow canvas in PDFs.",
+			"description": "The native pdf.js uses <canvas> to display the PDF content. If this is unchecked there will lots of annoying ask dialogs.",
+			"type": "bool",
+			"value": true
 		}
 	],
 	"author": "Korbinian Kapsner",
