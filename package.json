@@ -2,7 +2,7 @@
 	"name": "canvasblocker",
 	"title": "CanvasBlocker",
 	"id": "CanvasBlocker@kkapsner.de",
-	"description": "Blocks the JS-API for modifying <canvas>",
+	"description": "Blocks the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
 	"preferences": [
 		{
 			"name": "whiteList",
