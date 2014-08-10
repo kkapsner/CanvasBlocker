@@ -9,7 +9,7 @@
 			"title": "White list",
 			"description": "Domains where the <canvas>-API should not be blocked. To add multiple domains seperate them by comma.",
 			"type": "string",
-			"value": "kkapsner.de"
+			"value": "kkapsner.de,^https?://(\\\\w+\\\\.)*google.[a-z]+/maps"
 		},
 		{
 			"name": "blockAll",
@@ -42,6 +42,6 @@
 	],
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.1",
+	"version": "0.1.1",
 	"permissions": {"private-browsing": true}
 }

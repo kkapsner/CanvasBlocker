@@ -4,9 +4,9 @@ var askFunctionName = Math.random().toString(16);
 function checkPDF(blocking){
 	if (unsafeWindow.document.contentType.match(/\/pdf$/i)){
 		self.port.emit("isPDF", blocking);
-		return false;
+		return true;
 	}
-	return true;
+	return false;
 }
 
 function block(force){
