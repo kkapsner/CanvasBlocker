@@ -16,6 +16,7 @@ function block(force){
 		unsafeWindow.HTMLCanvasElement.prototype.getContext = null;
 	}
 }
+
 function ask(force){
 	if (force || !checkPDF("ask")){
 		// console.log("ask");
@@ -28,23 +29,69 @@ function ask(force){
 				enumerabe: false
 			}
 		);
-		unsafeWindow.HTMLCanvasElement.prototype.getContext = new unsafeWindow.Function(function(){
-			var oldBorder = this.style.border;
-			this.style.border = "2px dashed red";
-			var confirmText =
-				this.parentNode?
-				"Do you want to allow the red bordered <canvas>?":
-				"Do you want to allow an invisibe <canvas>?";
-			var allow = confirm(confirmText);
-			this.style.border = oldBorder;
-			if (allow){
-				this.getContext = this["askFunctionName"];
-				return this["askFunctionName"].apply(this, arguments);
+		unsafeWindow.HTMLCanvasElement.prototype.getContext = new unsafeWindow.Function(
+			function(){
+				if (this.parentNode){
+					var oldBorder = this.style.border;
+					this.style.border = "2px dashed red";
+					var confirmText = "askForPermission";
+					var allow = confirm(confirmText);
+					this.style.border = oldBorder;
+					if (allow){
+						this.getContext = this["askFunctionName"];
+						return this["askFunctionName"].apply(this, arguments);
+					}
+					else {
+						this.getContext = null;
+						return null;
+					}
+				}
+				else {
+					return null;
+				}
+			}.toString()
+				.replace(/^function\s*\(\)\s*\{|\}\s*$/g, "")
+				.replace(/askFunctionName/g, askFunctionName)
+				.replace(/askForPermission/g, _("askForPermission"))
+		);
+	}
+}
+function askInvisible(force){
+	if (force || !checkPDF("askInvisible")){
+		// console.log("ask");
+		
+		Object.defineProperty(
+			unsafeWindow.HTMLCanvasElement.prototype,
+			askFunctionName,
+			{
+				value: getContext,
+				enumerabe: false
 			}
-			else {
-				return null;
-			}
-		}.toString().replace(/^function\s*\(\)\s*\{|\}\s*$/g, "").replace(/askFunctionName/g, askFunctionName));
+		);
+		unsafeWindow.HTMLCanvasElement.prototype.getContext = new unsafeWindow.Function(
+			function(){
+				var oldBorder = this.style.border;
+				this.style.border = "2px dashed red";
+				var confirmText =
+					this.parentNode?
+					"askForPermission":
+					"askForInvisiblePermission";
+				var allow = confirm(confirmText);
+				this.style.border = oldBorder;
+				if (allow){
+					this.getContext = this["askFunctionName"];
+					return this["askFunctionName"].apply(this, arguments);
+				}
+				else {
+					this.getContext = null;
+					return null;
+				}
+			}.toString()
+				.replace(/^function\s*\(\)\s*\{|\}\s*$/g, "")
+				.replace(/askFunctionName/g, askFunctionName)
+				.replace(/askForPermission/g, _("askForPermission"))
+				.replace(/askForInvisiblePermission/g, _("askForInvisiblePermission"))
+		);
 	}
 }
 function unblock(){
@@ -52,8 +99,16 @@ function unblock(){
 	unsafeWindow.HTMLCanvasElement.prototype.getContext = getContext;
 }
 
-ask();
+var _ = function(name){
+	return _[name] || name;
+}
+self.port.on("setTranslation", function(name, translation){
+	_[name] = translation;
+});
+
+block();
 self.port.on("block", block);
 self.port.on("ask", ask);
+self.port.on("askInvisible", askInvisible);
 self.port.on("unblock", unblock);
 self.port.on("detach", unblock);

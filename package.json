@@ -7,41 +7,42 @@
 		{
 			"name": "whiteList",
 			"title": "White list",
-			"description": "Domains where the <canvas>-API should not be blocked. To add multiple domains seperate them by comma.",
 			"type": "string",
 			"value": "kkapsner.de,^https?://(\\\\w+\\\\.)*google.[a-z]+/maps"
 		},
 		{
 			"name": "blockAll",
 			"title": "Block everything",
-			"description": "If you want to block everything (ignore the white list).",
 			"type": "bool",
 			"value": false
 		},
 		{
 			"name": "blackList",
 			"title": "Black list",
-			"description": "Domains where the <canvas>-API should always be blocked. To add multiple domains seperate them by comma.",
 			"type": "string",
 			"value": ""
 		},
 		{
 			"name": "askPermission",
 			"title": "Ask for permission",
-			"description": "If you want to be asked if you want to block a canvas element if the domain is neither in the white or black list.",
 			"type": "bool",
 			"value": true
 		},
 		{
+			"name": "askInvisiblePermission",
+			"title": "Ask for permission for invisible elements",
+			"type": "bool",
+			"value": false
+		},
+		{
 			"name": "allowPDFCanvas",
-			"title": "Allow canvas in PDFs.",
-			"description": "The native pdf.js uses <canvas> to display the PDF content. If this is unchecked there will lots of annoying ask dialogs.",
+			"title": "Allow canvas in PDFs",
 			"type": "bool",
 			"value": true
 		}
 	],
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"permissions": {"private-browsing": true}
 }
