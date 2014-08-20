@@ -11,28 +11,42 @@
 			"value": "kkapsner.de,^https?://(\\\\w+\\\\.)*google.[a-z]+/maps"
 		},
 		{
-			"name": "blockAll",
-			"title": "Block everything",
-			"type": "bool",
-			"value": false
-		},
-		{
 			"name": "blackList",
 			"title": "Black list",
 			"type": "string",
 			"value": ""
 		},
 		{
-			"name": "askPermission",
-			"title": "Ask for permission",
-			"type": "bool",
-			"value": true
-		},
-		{
-			"name": "askInvisiblePermission",
-			"title": "Ask for permission for invisible elements",
-			"type": "bool",
-			"value": false
+			"name": "blockMode",
+			"title": "block mode",
+			"type": "menulist",
+			"value": "askVisible",
+			"options": [
+				{
+					"value": "blockEverything",
+					"label": "block everything"
+				},
+				{
+					"value": "allowOnlyWhiteList",
+					"label": "allow only white list"
+				},
+				{
+					"value": "askVisible",
+					"label": "ask for permission for visible <canvas>"
+				},
+				{
+					"value": "askInvisible",
+					"label": "ask for permision for invisible <canvas>"
+				},
+				{
+					"value": "blockOnlyBlackList",
+					"label": "block only black list"
+				},
+				{
+					"value": "allowEverything",
+					"label": "allow everything"
+				}
+			]
 		},
 		{
 			"name": "allowPDFCanvas",
