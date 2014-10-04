@@ -37,6 +37,10 @@
 						var oldBorder = this.style.border;
 						this.style.border = "2px dashed red";
 						var confirmText = "askForPermission";
+						// try {throw new Error();}
+						// catch (e){
+							// console.log(e.stack.split(/\s*(?:-?>|@)\s*/));
+						// }
 						var allow = confirm(confirmText);
 						this.style.border = oldBorder;
 						if (allow){
