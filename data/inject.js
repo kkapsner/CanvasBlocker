@@ -116,5 +116,5 @@
 	self.port.on("askVisible", askVisible);
 	self.port.on("askInvisible", askInvisible);
 	self.port.on("unblock", unblock);
-	self.port.on("detach", unblock);
+	//self.port.on("detach", unblock); // produces memory leak due to the reference to unsafeWindow
 }());
