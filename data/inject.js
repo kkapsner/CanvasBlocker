@@ -28,7 +28,7 @@
 				askFunctionName,
 				{
 					value: getContext,
-					enumerabe: false
+					enumerable: false
 				}
 			);
 			unsafeWindow.HTMLCanvasElement.prototype.getContext = new unsafeWindow.Function(
@@ -70,7 +70,7 @@
 				askFunctionName,
 				{
 					value: getContext,
-					enumerabe: false
+					enumerable: false
 				}
 			);
 			unsafeWindow.HTMLCanvasElement.prototype.getContext = new unsafeWindow.Function(
