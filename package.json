@@ -20,7 +20,7 @@
 			"name": "blockMode",
 			"title": "block mode",
 			"type": "menulist",
-			"value": "askVisible",
+			"value": "ask",
 			"options": [
 				{
 					"value": "blockEverything",
@@ -31,12 +31,8 @@
 					"label": "allow only white list"
 				},
 				{
-					"value": "askVisible",
-					"label": "ask for permission for visible <canvas>"
-				},
-				{
-					"value": "askInvisible",
-					"label": "ask for permision for invisible <canvas>"
+					"value": "ask",
+					"label": "ask for permission"
 				},
 				{
 					"value": "blockReadout",
@@ -56,7 +52,7 @@
 			"name": "askOnlyOnce",
 			"title": "Ask only once",
 			"type": "bool",
-			"value": false
+			"value": true
 		},
 		{
 			"name": "allowPDFCanvas",
