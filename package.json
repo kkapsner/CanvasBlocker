@@ -20,7 +20,7 @@
 			"name": "blockMode",
 			"title": "block mode",
 			"type": "menulist",
-			"value": "blockReadout",
+			"value": "askReadout",
 			"options": [
 				{
 					"value": "blockEverything",
@@ -37,6 +37,10 @@
 				{
 					"value": "blockReadout",
 					"label": "block readout API"
+				},
+				{
+					"value": "askReadout",
+					"label": "ask for readout API permission"
 				},
 				{
 					"value": "blockOnlyBlackList",

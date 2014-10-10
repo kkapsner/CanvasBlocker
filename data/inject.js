@@ -1,4 +1,4 @@
-/* global self, window, console, unsafeWindow */
+/* global self, window, console, unsafeWindow, exportFunction */
 (function(){
 	"use strict";
 	
@@ -12,7 +12,12 @@
 			}
 		},
 		readAPI: {
-			status: "allow"
+			status: "allow",
+			askStatus: {
+				askOnce: false,
+				alreadyAsked: false,
+				answer: null
+			}
 		}
 	};
 	
@@ -62,114 +67,94 @@
 		return bytes;
 	}());
 	
-	var originalToDataURL = unsafeWindow.HTMLCanvasElement.prototype.toDataURL;
-	Object.defineProperty(
-		unsafeWindow.HTMLCanvasElement.prototype,
-		"toDataURL",
-		{
-			enumerable: true,
-			configureable: false,
-			get: exportFunction(function(){
-				switch (blockMode.readAPI.status){
-					case "allow":
-						return originalToDataURL;
-					case "block":
-					default:
-						return exportFunction(
-							function(){
-								var type = arguments[0] || "image/png";
-								return "data:" + type + ";base64," + btoa(randomImage);
-							},
-							unsafeWindow
-						);
+	// Readout API blocking
+	var fakeFunctions = {
+		toDataURL: {
+			object: unsafeWindow.HTMLCanvasElement,
+			func: function(){
+				var type = arguments[0] || "image/png";
+				return "data:" + type + ";base64," + btoa(randomImage);
+			}
+		},
+		toBlob: {
+			object: unsafeWindow.HTMLCanvasElement,
+			func: function(callback){
+				var type = arguments[0] || "image/png";
+				var blob = new window.Blob(randomImage, {type: type});
+				callback(blob);
+			},
+			exportOptions: {allowCallbacks: true}
+		},
+		mozGetAsFile: {
+			object: unsafeWindow.HTMLCanvasElement,
+			func: undef
+		},
+		getImageData: {
+			object: unsafeWindow.CanvasRenderingContext2D,
+			func: function(sx, sy, sw, sh){
+				var imageData = new window.ImageData(sw, sh);
+				var l = sw * sh * 4;
+				for (var i = 0; i < l; i += 1){
+					imageData.data[i] = Math.floor(
+						Math.random() * 256
+					);
 				}
-			}, unsafeWindow)
+				return imageData;
+			}
 		}
-	);
+	};
 	
-	var originalToBlob = unsafeWindow.HTMLCanvasElement.prototype.toBlob;
-	Object.defineProperty(
-		unsafeWindow.HTMLCanvasElement.prototype,
-		"toBlob",
-		{
-			enumerable: true,
-			configureable: false,
-			get: exportFunction(function(){
-				switch (blockMode.readAPI.status){
-					case "allow":
-						return originalToBlob;
-					case "block":
-					default:
-						return exportFunction(
-							function(callback){
-								var type = arguments[0] || "image/png";
-								var blob = new window.Blob(randomImage, {type: type});
-								callback(blob);
-							},
-							unsafeWindow,
-							{allowCallbacks: true}
-						);
-				}
-			}, unsafeWindow)
-		}
-	);
+	Object.keys(fakeFunctions).forEach(function(name){
+		var fakeFunction = fakeFunctions[name];
+		var original = fakeFunction.object.prototype[name];
+		Object.defineProperty(
+			fakeFunction.object.prototype,
+			name,
+			{
+				enumerable: true,
+				configureable: false,
+				get: exportFunction(function(){
+					var status = blockMode.readAPI.status;
+					if (status === "ask"){
+						var askStatus = blockMode.readAPI.askStatus;
+						var allow;
+						if (askStatus.askOnce && askStatus.alreadyAsked){
+							// console.log("already asked");
+							allow = askStatus.answer;
+						}
+						else {
+							// console.log("asking");
+							allow = window.confirm(_("askForReadoutPermission"));
+							askStatus.alreadyAsked = true;
+							askStatus.answer = allow;
+						}
+						status = allow? "allow": "block";
+					}
+					switch (status){
+						case "allow":
+							return original;
+						case "block":
+						default:
+							return exportFunction(
+								fakeFunction.func,
+								unsafeWindow,
+								fakeFunction.exportOptions
+							);
+					}
+				}, unsafeWindow)
+			}
+		);
+	});
 	
-	var originalMozGetAsFile = unsafeWindow.HTMLCanvasElement.prototype.mozGetAsFile;
-	Object.defineProperty(
-		unsafeWindow.HTMLCanvasElement.prototype,
-		"mozGetAsFile",
-		{
-			enumerable: true,
-			configureable: false,
-			get: exportFunction(function(){
-				switch (blockMode.readAPI.status){
-					case "allow":
-						return originalMozGetAsFile;
-					case "block":
-					default:
-						undef
-				}
-			}, unsafeWindow)
-		}
-	);
-	
-	var originalGetImageData = unsafeWindow.CanvasRenderingContext2D.prototype.getImageData;
-	Object.defineProperty(
-		unsafeWindow.CanvasRenderingContext2D.prototype,
-		"getImageData",
-		{
-			enumerable: true,
-			configureable: false,
-			get: exportFunction(function(){
-				switch (blockMode.readAPI.status){
-					case "allow":
-						return originalGetImageData;
-					case "block":
-					default:
-						return exportFunction(
-							function(sx, sy, sw, sh){
-								var imageData = new window.ImageData(sw, sh);
-								var l = sw * sh * 4;
-								for (var i = 0; i < l; i += 1){
-									imageData.data[i] = Math.floor(
-										Math.random() * 256
-									);
-								}
-								return imageData;
-							},
-							unsafeWindow
-						);
-				}
-			}, unsafeWindow)
-		}
-	);
-
+	// Translation
 	var _ = function(name){
 		return _[name] || name;
 	};
 	self.port.on("setTranslation", function(name, translation){
 		_[name] = translation;
 	});
+	
+	// Communication with main.js
 	
 	function checkPDF(blocking){
 		if (document.contentType.match(/\/pdf$/i)){
@@ -196,6 +181,13 @@
 		if (force || !checkPDF("blockReadout")){
 			blockMode.getContext.status = "allow";
 			blockMode.readAPI.status = "block";
+		}
+	});
+	self.port.on("askReadout", function(force, askOnce){
+		if (force || !checkPDF("askReadout")){
+			blockMode.getContext.status = "allow";
+			blockMode.readAPI.status = "ask";
+			blockMode.readAPI.askStatus.askOnce = askOnce;
 		}
 	});
 	self.port.on("unblock", function(){
