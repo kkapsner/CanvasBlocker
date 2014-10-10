@@ -53,6 +53,15 @@
 		}
 	);
 	
+	var randomImage = (function(){
+		var length = Math.floor(20 + Math.random() * 100);
+		var bytes = "";
+		for (var i = 0; i < length; i += 1){
+			bytes += String.fromCharCode(Math.floor(Math.random() * 256));
+		}
+		return bytes;
+	}());
+	
 	var originalToDataURL = unsafeWindow.HTMLCanvasElement.prototype.toDataURL;
 	Object.defineProperty(
 		unsafeWindow.HTMLCanvasElement.prototype,
@@ -66,7 +75,59 @@
 						return originalToDataURL;
 					case "block":
 					default:
-						return undef;
+						return exportFunction(
+							function(){
+								var type = arguments[0] || "image/png";
+								return "data:" + type + ";base64," + btoa(randomImage);
+							},
+							unsafeWindow
+						);
+				}
+			}, unsafeWindow)
+		}
+	);
+	
+	var originalToBlob = unsafeWindow.HTMLCanvasElement.prototype.toBlob;
+	Object.defineProperty(
+		unsafeWindow.HTMLCanvasElement.prototype,
+		"toBlob",
+		{
+			enumerable: true,
+			configureable: false,
+			get: exportFunction(function(){
+				switch (blockMode.readAPI.status){
+					case "allow":
+						return originalToBlob;
+					case "block":
+					default:
+						return exportFunction(
+							function(callback){
+								var type = arguments[0] || "image/png";
+								var blob = new window.Blob(randomImage, {type: type});
+								callback(blob);
+							},
+							unsafeWindow,
+							{allowCallbacks: true}
+						);
+				}
+			}, unsafeWindow)
+		}
+	);
+	
+	var originalMozGetAsFile = unsafeWindow.HTMLCanvasElement.prototype.mozGetAsFile;
+	Object.defineProperty(
+		unsafeWindow.HTMLCanvasElement.prototype,
+		"mozGetAsFile",
+		{
+			enumerable: true,
+			configureable: false,
+			get: exportFunction(function(){
+				switch (blockMode.readAPI.status){
+					case "allow":
+						return originalMozGetAsFile;
+					case "block":
+					default:
+						undef
 				}
 			}, unsafeWindow)
 		}
@@ -85,7 +146,19 @@
 						return originalGetImageData;
 					case "block":
 					default:
-						return undef;
+						return exportFunction(
+							function(sx, sy, sw, sh){
+								var imageData = new window.ImageData(sw, sh);
+								var l = sw * sh * 4;
+								for (var i = 0; i < l; i += 1){
+									imageData.data[i] = Math.floor(
+										Math.random() * 256
+									);
+								}
+								return imageData;
+							},
+							unsafeWindow
+						);
 				}
 			}, unsafeWindow)
 		}

@@ -20,7 +20,7 @@
 			"name": "blockMode",
 			"title": "block mode",
 			"type": "menulist",
-			"value": "ask",
+			"value": "blockReadout",
 			"options": [
 				{
 					"value": "blockEverything",
