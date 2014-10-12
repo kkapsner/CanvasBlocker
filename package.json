@@ -8,7 +8,7 @@
 			"name": "whiteList",
 			"title": "White list",
 			"type": "string",
-			"value": "kkapsner.de,^https?://(\\\\w+\\\\.)*google.[a-z]+/maps"
+			"value": "kkapsner.de"
 		},
 		{
 			"name": "blackList",
@@ -37,6 +37,10 @@
 				{
 					"value": "blockReadout",
 					"label": "block readout API"
+				},
+				{
+					"value": "fakeReadout",
+					"label": "fake readout API"
 				},
 				{
 					"value": "askReadout",

@@ -133,13 +133,15 @@
 					switch (status){
 						case "allow":
 							return original;
-						case "block":
-						default:
-							return exportFunction(
+						case "fake":
+							return fakeFunction.func? exportFunction(
 								fakeFunction.func,
 								unsafeWindow,
 								fakeFunction.exportOptions
-							);
+							): undef;
+						case "block":
+						default:
+							return undef;
 					}
 				}, unsafeWindow)
 			}
@@ -181,6 +183,12 @@
 		if (force || !checkPDF("blockReadout")){
 			blockMode.getContext.status = "allow";
 			blockMode.readAPI.status = "block";
+		}
+	});
+	self.port.on("fakeReadout", function(force){
+		if (force || !checkPDF("fakeReadout")){
+			blockMode.getContext.status = "allow";
+			blockMode.readAPI.status = "fake";
 		}
 	});
 	self.port.on("askReadout", function(force, askOnce){
