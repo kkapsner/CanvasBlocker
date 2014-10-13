@@ -5,6 +5,7 @@
 	var blockMode = {
 		getContext: {
 			status: "block",
+			askText: "askForPermission",
 			askStatus: {
 				askOnce: false,
 				alreadyAsked: false,
@@ -13,6 +14,7 @@
 		},
 		readAPI: {
 			status: "allow",
+			askText: "askForReadoutPermission",
 			askStatus: {
 				askOnce: false,
 				alreadyAsked: false,
@@ -22,42 +24,6 @@
 	};
 	
 	var undef;
-	var originalGetContext = unsafeWindow.HTMLCanvasElement.prototype.getContext;
-	Object.defineProperty(
-		unsafeWindow.HTMLCanvasElement.prototype,
-		"getContext",
-		{
-			enumerable: true,
-			configureable: false,
-			get: exportFunction(function(){
-				switch (blockMode.getContext.status){
-					case "allow":
-						// console.log("allow");
-						return originalGetContext;
-					case "ask":
-						// console.log("ask");
-						var status = blockMode.getContext.askStatus;
-						var allow;
-						if (status.askOnce && status.alreadyAsked){
-							// console.log("already asked");
-							allow = status.answer;
-						}
-						else {
-							// console.log("asking");
-							allow = window.confirm(_("askForPermission"));
-							status.alreadyAsked = true;
-							status.answer = allow;
-						}
-						return allow? originalGetContext: undef;
-					case "block":
-					default:
-						// console.log("block");
-						return undef;
-				}
-			}, unsafeWindow)
-		}
-	);
-	
 	var randomImage = (function(){
 		var length = Math.floor(20 + Math.random() * 100);
 		var bytes = "";
@@ -67,18 +33,24 @@
 		return bytes;
 	}());
 	
-	// Readout API blocking
-	var fakeFunctions = {
+	// changed functions
+	var changedFunctions = {
+		getContext: {
+			mode: blockMode.getContext,
+			object: unsafeWindow.HTMLCanvasElement
+		},
 		toDataURL: {
+			mode: blockMode.readAPI,
 			object: unsafeWindow.HTMLCanvasElement,
-			func: function(){
+			fake: function(){
 				var type = arguments[0] || "image/png";
 				return "data:" + type + ";base64," + btoa(randomImage);
 			}
 		},
 		toBlob: {
+			mode: blockMode.readAPI,
 			object: unsafeWindow.HTMLCanvasElement,
-			func: function(callback){
+			fake: function(callback){
 				var type = arguments[0] || "image/png";
 				var blob = new window.Blob(randomImage, {type: type});
 				callback(blob);
@@ -86,12 +58,13 @@
 			exportOptions: {allowCallbacks: true}
 		},
 		mozGetAsFile: {
-			object: unsafeWindow.HTMLCanvasElement,
-			func: undef
+			mode: blockMode.readAPI,
+			object: unsafeWindow.HTMLCanvasElement
 		},
 		getImageData: {
+			mode: blockMode.readAPI,
 			object: unsafeWindow.CanvasRenderingContext2D,
-			func: function(sx, sy, sw, sh){
+			fake: function(sx, sy, sw, sh){
 				var imageData = new window.ImageData(sw, sh);
 				var l = sw * sh * 4;
 				for (var i = 0; i < l; i += 1){
@@ -104,40 +77,38 @@
 		}
 	};
 	
-	Object.keys(fakeFunctions).forEach(function(name){
-		var fakeFunction = fakeFunctions[name];
-		var original = fakeFunction.object.prototype[name];
+	Object.keys(changedFunctions).forEach(function(name){
+		var changedFunction = changedFunctions[name];
+		var original = changedFunction.object.prototype[name];
 		Object.defineProperty(
-			fakeFunction.object.prototype,
+			changedFunction.object.prototype,
 			name,
 			{
 				enumerable: true,
 				configureable: false,
 				get: exportFunction(function(){
-					var status = blockMode.readAPI.status;
+					var status = changedFunction.mode.status;
 					if (status === "ask"){
-						var askStatus = blockMode.readAPI.askStatus;
-						var allow;
+						var askStatus = changedFunction.mode.askStatus;
 						if (askStatus.askOnce && askStatus.alreadyAsked){
 							// console.log("already asked");
-							allow = askStatus.answer;
+							status = askStatus.answer;
 						}
 						else {
 							// console.log("asking");
-							allow = window.confirm(_("askForReadoutPermission"));
+							status = window.confirm(_(changedFunction.mode.askText))? "allow": "block";
 							askStatus.alreadyAsked = true;
-							askStatus.answer = allow;
+							askStatus.answer = status;
 						}
-						status = allow? "allow": "block";
 					}
 					switch (status){
 						case "allow":
 							return original;
 						case "fake":
-							return fakeFunction.func? exportFunction(
-								fakeFunction.func,
+							return changedFunction.fake? exportFunction(
+								changedFunction.fake,
 								unsafeWindow,
-								fakeFunction.exportOptions
+								changedFunction.exportOptions
 							): undef;
 						case "block":
 						default:
@@ -202,7 +173,7 @@
 		blockMode.getContext.status = "allow";
 		blockMode.readAPI.status = "allow";
 	});
-	self.port.on("detach", function(force){
+	self.port.on("detach", function(){
 		blockMode.getContext.status = "allow";
 		blockMode.readAPI.status = "allow";
 	});
