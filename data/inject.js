@@ -74,6 +74,10 @@
 				}
 				return imageData;
 			}
+		},
+		readPixels: {
+			mode: blockMode.readAPI,
+			object: unsafeWindow.WebGLRenderingContext
 		}
 	};
 	
