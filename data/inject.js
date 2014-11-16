@@ -65,13 +65,15 @@
 			mode: blockMode.readAPI,
 			object: unsafeWindow.CanvasRenderingContext2D,
 			fake: function(sx, sy, sw, sh){
-				var imageData = new window.ImageData(sw, sh);
 				var l = sw * sh * 4;
+				var data = new Uint8ClampedArray(l);
 				for (var i = 0; i < l; i += 1){
-					imageData.data[i] = Math.floor(
+					data[i] = Math.floor(
 						Math.random() * 256
 					);
 				}
+				var imageData = new window.ImageData(sw, sh);
+				imageData.data.set(cloneInto(data, unsafeWindow));
 				return imageData;
 			}
 		},
