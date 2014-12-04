@@ -1,11 +1,15 @@
-/* global self, window, console, unsafeWindow, exportFunction */
+/* global self, window, console, unsafeWindow, exportFunction, cloneInto */
 (function(){
 	"use strict";
 	
 	var blockMode = {
 		getContext: {
 			status: "block",
-			askText: "askForPermission",
+			askText: {
+				visible: "askForVisiblePermission",
+				invisible: "askForInvisiblePermission",
+				nocanvas: "askForPermission"
+			},
 			askStatus: {
 				askOnce: false,
 				alreadyAsked: false,
@@ -14,7 +18,11 @@
 		},
 		readAPI: {
 			status: "allow",
-			askText: "askForReadoutPermission",
+			askText: {
+				visible: "askForVisibleReadoutPermission",
+				invisible: "askForInvisibleReadoutPermission",
+				nocanvas: "askForReadoutPermission"
+			},
 			askStatus: {
 				askOnce: false,
 				alreadyAsked: false,
@@ -32,6 +40,44 @@
 		}
 		return bytes;
 	}());
+	
+	// Check canvas appearance
+	function canvasAppearance(context){
+		var oldBorder = false;
+		var canvas = false;
+		var visible = false;
+		if (context){
+			if (context.nodeName === "CANVAS"){
+				canvas = context;
+			}
+			else if (
+				context instanceof CanvasRenderingContext2D ||
+				context instanceof WebGLRenderingContext
+			){
+				canvas = context.canvas;
+			}
+		}
+		if (canvas){
+			oldBorder = canvas.style.border;
+			canvas.style.border = "2px solid red";
+			if (canvas.ownerDocument.contains(canvas)){
+				canvas.scrollIntoView();
+				var rect = canvas.getBoundingClientRect();
+				var foundEl = document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
+				visible = (foundEl === canvas);
+			}
+		}
+		return {
+			canvas: canvas,
+			text: canvas? (visible? "visible": "invisible"): "nocanvas",
+			visible: visible,
+			reset: function(){
+				if (canvas){
+					canvas.style.border = oldBorder;
+				}
+			}
+		};
+	}
 	
 	// changed functions
 	var changedFunctions = {
@@ -101,10 +147,13 @@
 							status = askStatus.answer;
 						}
 						else {
+							var appearance = canvasAppearance(this);
 							// console.log("asking");
-							status = window.confirm(_(changedFunction.mode.askText))? "allow": "block";
+							status = window.confirm(_(changedFunction.mode.askText[appearance.text]))? "allow": "block";
 							askStatus.alreadyAsked = true;
 							askStatus.answer = status;
+							
+							appearance.reset();
 						}
 					}
 					switch (status){
