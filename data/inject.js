@@ -101,19 +101,17 @@
 							status = askStatus.answer;
 						}
 						else {
-							//unsafeWindow.console.log("asking");
-							var callers = new Error().stack.split('\n');
-							var findme = callers.shift(); // Remove us from the stack
-							findme = findme.replace(/(:[0-9]+){1,2}$/, ""); // rm line & column
-							// Eliminate squashed stack. stack may contain 2+ stacks, but why...
-							for (var i = 0; callers[i]; i++){
-								if (callers[i].search(findme) == 0){
-									callers.splice(i, callers.length - i);
-									break;
-								}
-							}
+							//console.log("asking");
 							var msg = _(changedFunction.mode.askText);
 							if (changedFunction.mode.askText === "askForReadoutPermission"){
+								var callers = new Error().stack.split('\n');
+								//console.log(callers);
+								var findme = callers.shift(); // Remove us from the stack
+								findme = findme.replace(/(:[0-9]+){1,2}$/, ""); // rm line & column
+								// Eliminate squashed stack. stack may contain 2+ stacks, but why...
+								callers = callers.filter(function(caller){
+									return caller.search(findme) === -1;
+								});
 								msg += "\n\nCaller: " + callers[0];
 								// maybe show full stack here if some pref
 								//msg += "\n\nFull stack: \n" + callers.join('\n');
@@ -121,7 +119,7 @@
 							status = window.confirm(msg) ? "allow": "block";
 							askStatus.alreadyAsked = true;
 							askStatus.answer = status;
-							//unsafeWindow.console.log("asking (done)");
+							//console.log("asking (done)");
 						}
 					}
 					switch (status){
