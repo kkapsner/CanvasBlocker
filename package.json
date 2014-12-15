@@ -63,6 +63,18 @@
 			"value": true
 		},
 		{
+			"name": "showCallingFile",
+			"title": "Display calling file",
+			"type": "bool",
+			"value": false
+		},
+		{
+			"name": "showCompleteCallingStack",
+			"title": "Display complete calling stack",
+			"type": "bool",
+			"value": false
+		},
+		{
 			"name": "allowPDFCanvas",
 			"title": "Allow canvas in PDFs",
 			"type": "bool",

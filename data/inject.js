@@ -2,6 +2,9 @@
 (function(){
 	"use strict";
 	
+	var settings = {
+		showCallingFile: false
+	};
 	var blockMode = {
 		getContext: {
 			status: "block",
@@ -103,8 +106,8 @@
 						else {
 							//console.log("asking");
 							var msg = _(changedFunction.mode.askText);
-							if (changedFunction.mode.askText === "askForReadoutPermission"){
-								var callers = new Error().stack.split('\n');
+							if (settings.showCallingFile){
+								var callers = new Error().stack.trim().split("\n");
 								//console.log(callers);
 								var findme = callers.shift(); // Remove us from the stack
 								findme = findme.replace(/(:[0-9]+){1,2}$/, ""); // rm line & column
@@ -112,9 +115,15 @@
 								callers = callers.filter(function(caller){
 									return caller.search(findme) === -1;
 								});
-								msg += "\n\nCaller: " + callers[0];
-								// maybe show full stack here if some pref
-								//msg += "\n\nFull stack: \n" + callers.join('\n');
+								msg += "\n\n" + _("sourceOutput") + ": ";
+								if (settings.showCompleteCallingStack){
+									msg += callers.reduce(function(stack, c){
+										return stack + "\n\t" + _("stackEntryOutput", parseStackEntry(c));
+									}, "");
+								}
+								else{
+									msg += _("stackEntryOutput", parseStackEntry(callers[0]));
+								}
 							}
 							status = window.confirm(msg) ? "allow": "block";
 							askStatus.alreadyAsked = true;
@@ -140,9 +149,26 @@
 		);
 	});
 	
+	// Stack parsing
+	function parseStackEntry(entry){
+		var m = /@(.*):(\d*):(\d*)$/.exec(entry) || ["", entry, "--", "--"];
+		return {
+			url: m[1],
+			line: m[2],
+			column: m[3],
+			raw: entry
+		};
+	}
+	
 	// Translation
-	var _ = function(name){
-		return _[name] || name;
+	var _ = function(name, replace){
+		var str = _[name] || name;
+		if (replace){
+			Object.keys(replace).forEach(function(name){
+				str = str.replace(new RegExp("{" + name + "}", "g"), replace[name]);
+			});
+		}
+		return str;
 	};
 	self.port.on("setTranslation", function(name, translation){
 		_[name] = translation;
@@ -197,5 +223,10 @@
 	self.port.on("detach", function(){
 		blockMode.getContext.status = "allow";
 		blockMode.readAPI.status = "allow";
+	});
+	
+	// settings passthrough
+	self.port.on("set", function(name, value){
+		settings[name] = value;
 	});
 }());
