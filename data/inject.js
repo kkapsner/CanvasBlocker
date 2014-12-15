@@ -2,6 +2,9 @@
 (function(){
 	"use strict";
 	
+	var settings = {
+		showCallingFile: false
+	};
 	var blockMode = {
 		getContext: {
 			status: "block",
@@ -147,12 +150,32 @@
 							status = askStatus.answer;
 						}
 						else {
+							//console.log("asking");
 							var appearance = canvasAppearance(this);
-							// console.log("asking");
-							status = window.confirm(_(changedFunction.mode.askText[appearance.text]))? "allow": "block";
+							var msg = _(changedFunction.mode.askText[appearance.text]);
+							if (settings.showCallingFile){
+								var callers = new Error().stack.trim().split("\n");
+								//console.log(callers);
+								var findme = callers.shift(); // Remove us from the stack
+								findme = findme.replace(/(:[0-9]+){1,2}$/, ""); // rm line & column
+								// Eliminate squashed stack. stack may contain 2+ stacks, but why...
+								callers = callers.filter(function(caller){
+									return caller.search(findme) === -1;
+								});
+								msg += "\n\n" + _("sourceOutput") + ": ";
+								if (settings.showCompleteCallingStack){
+									msg += callers.reduce(function(stack, c){
+										return stack + "\n\t" + _("stackEntryOutput", parseStackEntry(c));
+									}, "");
+								}
+								else{
+									msg += _("stackEntryOutput", parseStackEntry(callers[0]));
+								}
+							}
+							status = window.confirm(msg) ? "allow": "block";
 							askStatus.alreadyAsked = true;
 							askStatus.answer = status;
-							
+							//console.log("asking (done)");
 							appearance.reset();
 						}
 					}
@@ -174,9 +197,26 @@
 		);
 	});
 	
+	// Stack parsing
+	function parseStackEntry(entry){
+		var m = /@(.*):(\d*):(\d*)$/.exec(entry) || ["", entry, "--", "--"];
+		return {
+			url: m[1],
+			line: m[2],
+			column: m[3],
+			raw: entry
+		};
+	}
+	
 	// Translation
-	var _ = function(name){
-		return _[name] || name;
+	var _ = function(name, replace){
+		var str = _[name] || name;
+		if (replace){
+			Object.keys(replace).forEach(function(name){
+				str = str.replace(new RegExp("{" + name + "}", "g"), replace[name]);
+			});
+		}
+		return str;
 	};
 	self.port.on("setTranslation", function(name, translation){
 		_[name] = translation;
@@ -231,5 +271,10 @@
 	self.port.on("detach", function(){
 		blockMode.getContext.status = "allow";
 		blockMode.readAPI.status = "allow";
+	});
+	
+	// settings passthrough
+	self.port.on("set", function(name, value){
+		settings[name] = value;
 	});
 }());
