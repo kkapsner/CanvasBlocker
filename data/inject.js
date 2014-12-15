@@ -112,8 +112,11 @@
 								var findme = callers.shift(); // Remove us from the stack
 								findme = findme.replace(/(:[0-9]+){1,2}$/, ""); // rm line & column
 								// Eliminate squashed stack. stack may contain 2+ stacks, but why...
+								var inDoubleStack = false;
 								callers = callers.filter(function(caller){
-									return caller.search(findme) === -1;
+									var doubleStackStart = caller.search(findme) !== -1;
+									inDoubleStack = inDoubleStack || doubleStackStart;
+									return !inDoubleStack;
 								});
 								msg += "\n\n" + _("sourceOutput") + ": ";
 								if (settings.showCompleteCallingStack){
