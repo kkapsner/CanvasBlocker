@@ -15,8 +15,8 @@
 			},
 			askStatus: {
 				askOnce: false,
-				alreadyAsked: false,
-				answer: null
+				alreadyAsked: {},
+				answer: {}
 			}
 		},
 		readAPI: {
@@ -28,8 +28,8 @@
 			},
 			askStatus: {
 				askOnce: false,
-				alreadyAsked: false,
-				answer: null
+				alreadyAsked: {},
+				answer: {}
 			}
 		}
 	};
@@ -48,7 +48,7 @@
 	function canvasAppearance(context){
 		var oldBorder = false;
 		var canvas = false;
-		var visible = false;
+		var inDOM = null;
 		if (context){
 			if (context.nodeName === "CANVAS"){
 				canvas = context;
@@ -63,17 +63,28 @@
 		if (canvas){
 			oldBorder = canvas.style.border;
 			canvas.style.border = "2px solid red";
-			if (canvas.ownerDocument.contains(canvas)){
-				canvas.scrollIntoView();
-				var rect = canvas.getBoundingClientRect();
-				var foundEl = document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
-				visible = (foundEl === canvas);
-			}
+			inDOM = canvas.ownerDocument.contains(canvas);
 		}
 		return {
 			canvas: canvas,
-			text: canvas? (visible? "visible": "invisible"): "nocanvas",
-			visible: visible,
+			askCategory: canvas? (inDOM? "visible": "invisible"): "nocanvas",
+			get text(){
+				var text = canvas? (this.visible? "visible": "invisible"): "nocanvas";
+				Object.defineProperty(this, "text", {value: text});
+				return text;
+			},
+			inDom: inDOM,
+			get visible(){
+				var visible = inDOM;
+				if (inDOM){
+					canvas.scrollIntoView();
+					var rect = canvas.getBoundingClientRect();
+					var foundEl = document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
+					visible = (foundEl === canvas);
+				}
+				Object.defineProperty(this, "visible", {value: visible});
+				return visible;
+			},
 			reset: function(){
 				if (canvas){
 					canvas.style.border = oldBorder;
@@ -145,13 +156,13 @@
 					var status = changedFunction.mode.status;
 					if (status === "ask"){
 						var askStatus = changedFunction.mode.askStatus;
-						if (askStatus.askOnce && askStatus.alreadyAsked){
+						var appearance = canvasAppearance(this);
+						if (askStatus.askOnce && askStatus.alreadyAsked[appearance.askCategory]){
 							// console.log("already asked");
-							status = askStatus.answer;
+							status = askStatus.answer[appearance.askCategory];
 						}
 						else {
 							//console.log("asking");
-							var appearance = canvasAppearance(this);
 							var msg = _(changedFunction.mode.askText[appearance.text]);
 							if (settings.showCallingFile){
 								var callers = new Error().stack.trim().split("\n");
@@ -159,8 +170,11 @@
 								var findme = callers.shift(); // Remove us from the stack
 								findme = findme.replace(/(:[0-9]+){1,2}$/, ""); // rm line & column
 								// Eliminate squashed stack. stack may contain 2+ stacks, but why...
+								var inDoubleStack = false;
 								callers = callers.filter(function(caller){
-									return caller.search(findme) === -1;
+									var doubleStackStart = caller.search(findme) !== -1;
+									inDoubleStack = inDoubleStack || doubleStackStart;
+									return !inDoubleStack;
 								});
 								msg += "\n\n" + _("sourceOutput") + ": ";
 								if (settings.showCompleteCallingStack){
@@ -173,8 +187,8 @@
 								}
 							}
 							status = window.confirm(msg) ? "allow": "block";
-							askStatus.alreadyAsked = true;
-							askStatus.answer = status;
+							askStatus.alreadyAsked[appearance.text] = true;
+							askStatus.answer[appearance.text] = status;
 							//console.log("asking (done)");
 							appearance.reset();
 						}
