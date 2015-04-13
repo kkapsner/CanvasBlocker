@@ -10,6 +10,7 @@
 	};
 	var blockMode = {
 		getContext: {
+			name: "getContext",
 			status: "block",
 			askText: {
 				visible: "askForVisiblePermission",
@@ -23,6 +24,7 @@
 			}
 		},
 		readAPI: {
+			name: "readAPI",
 			status: "allow",
 			askText: {
 				visible: "askForVisibleReadoutPermission",
@@ -196,6 +198,7 @@
 							appearance.reset();
 						}
 					}
+					self.port.emit("accessed " + changedFunction.mode.name, status);
 					switch (status){
 						case "allow":
 							return original;
@@ -242,7 +245,7 @@
 	// Communication with main.js
 	
 	function checkAbout(){
-		return document.location.protocol === "about:");
+		return document.location.protocol === "about:";
 	}
 	
 	function checkPDF(blocking){
