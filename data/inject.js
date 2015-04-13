@@ -242,7 +242,7 @@
 	// Communication with main.js
 	
 	function checkAbout(){
-		return document.location.protocol === "about:");
+		return document.location.protocol === "about:";
 	}
 	
 	function checkPDF(blocking){
