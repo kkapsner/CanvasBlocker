@@ -49,6 +49,33 @@
 		return bytes;
 	}());
 	
+	// parse calling stack
+	function errorToCallingStackMsg(error){
+		var msg = "";
+		var callers = error.stack.trim().split("\n");
+		//console.log(callers);
+		var findme = callers.shift(); // Remove us from the stack
+		findme = findme.replace(/(:[0-9]+){1,2}$/, ""); // rm line & column
+		// Eliminate squashed stack. stack may contain 2+ stacks, but why...
+		var inDoubleStack = false;
+		callers = callers.filter(function(caller){
+			var doubleStackStart = caller.search(findme) !== -1;
+			inDoubleStack = inDoubleStack || doubleStackStart;
+			return !inDoubleStack;
+		});
+		msg += "\n\n" + _("sourceOutput") + ": ";
+		if (settings.showCompleteCallingStack){
+			msg += callers.reduce(function(stack, c){
+				return stack + "\n\t" + _("stackEntryOutput", parseStackEntry(c));
+			}, "");
+		}
+		else{
+			msg += _("stackEntryOutput", parseStackEntry(callers[0]));
+		}
+		
+		return msg;
+	}
+	
 	// Check canvas appearance
 	function canvasAppearance(context){
 		var oldBorder = false;
@@ -159,6 +186,7 @@
 				configureable: false,
 				get: exportFunction(function(){
 					var status = changedFunction.mode.status;
+					var callingStackMsg = errorToCallingStackMsg(new Error());
 					if (status === "ask"){
 						var askStatus = changedFunction.mode.askStatus;
 						var appearance = canvasAppearance(this);
@@ -170,26 +198,7 @@
 							//console.log("asking");
 							var msg = _(changedFunction.mode.askText[appearance.text]);
 							if (settings.showCallingFile){
-								var callers = new Error().stack.trim().split("\n");
-								//console.log(callers);
-								var findme = callers.shift(); // Remove us from the stack
-								findme = findme.replace(/(:[0-9]+){1,2}$/, ""); // rm line & column
-								// Eliminate squashed stack. stack may contain 2+ stacks, but why...
-								var inDoubleStack = false;
-								callers = callers.filter(function(caller){
-									var doubleStackStart = caller.search(findme) !== -1;
-									inDoubleStack = inDoubleStack || doubleStackStart;
-									return !inDoubleStack;
-								});
-								msg += "\n\n" + _("sourceOutput") + ": ";
-								if (settings.showCompleteCallingStack){
-									msg += callers.reduce(function(stack, c){
-										return stack + "\n\t" + _("stackEntryOutput", parseStackEntry(c));
-									}, "");
-								}
-								else{
-									msg += _("stackEntryOutput", parseStackEntry(callers[0]));
-								}
+								msg += callingStackMsg;
 							}
 							status = window.confirm(msg) ? "allow": "block";
 							askStatus.alreadyAsked[appearance.text] = true;
@@ -198,7 +207,7 @@
 							appearance.reset();
 						}
 					}
-					self.port.emit("accessed " + changedFunction.mode.name, status);
+					self.port.emit("accessed " + changedFunction.mode.name, status, callingStackMsg);
 					switch (status){
 						case "allow":
 							return original;
