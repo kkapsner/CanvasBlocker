@@ -253,49 +253,27 @@
 	
 	// Communication with main.js
 	
-	function checkAbout(){
-		return document.location.protocol === "about:";
-	}
-	
-	function checkPDF(blocking){
-		if (document.contentType.match(/\/pdf$/i)){
-			self.port.emit("isPDF", blocking);
-			return true;
-		}
-		return false;
-	}
-	
-	self.port.on("block", function(force){
-		if (force || !checkAbout() || !checkPDF("block")){
-			blockMode.getContext.status = "block";
-			blockMode.readAPI.status = "allow";
-		}
+	self.port.on("block", function(){
+		blockMode.getContext.status = "block";
+		blockMode.readAPI.status = "allow";
 	});
-	self.port.on("ask", function(force, askOnce){
-		if (force || !checkAbout() || !checkPDF("askVisible")){
-			blockMode.getContext.status = "ask";
-			blockMode.getContext.askStatus.askOnce = askOnce;
-			blockMode.readAPI.status = "allow";
-		}
+	self.port.on("ask", function(askOnce){
+		blockMode.getContext.status = "ask";
+		blockMode.getContext.askStatus.askOnce = askOnce;
+		blockMode.readAPI.status = "allow";
 	});
-	self.port.on("blockReadout", function(force){
-		if (force || !checkAbout() || !checkPDF("blockReadout")){
-			blockMode.getContext.status = "allow";
-			blockMode.readAPI.status = "block";
-		}
+	self.port.on("blockReadout", function(){
+		blockMode.getContext.status = "allow";
+		blockMode.readAPI.status = "block";
 	});
-	self.port.on("fakeReadout", function(force){
-		if (force || !checkAbout() || !checkPDF("fakeReadout")){
-			blockMode.getContext.status = "allow";
-			blockMode.readAPI.status = "fake";
-		}
+	self.port.on("fakeReadout", function(){
+		blockMode.getContext.status = "allow";
+		blockMode.readAPI.status = "fake";
 	});
-	self.port.on("askReadout", function(force, askOnce){
-		if (force || !checkAbout() || !checkPDF("askReadout")){
-			blockMode.getContext.status = "allow";
-			blockMode.readAPI.status = "ask";
-			blockMode.readAPI.askStatus.askOnce = askOnce;
-		}
+	self.port.on("askReadout", function(askOnce){
+		blockMode.getContext.status = "allow";
+		blockMode.readAPI.status = "ask";
+		blockMode.readAPI.askStatus.askOnce = askOnce;
 	});
 	self.port.on("unblock", function(){
 		blockMode.getContext.status = "allow";
