@@ -1,4 +1,4 @@
-/* global self, window, console, unsafeWindow, exportFunction, cloneInto */
+/* global self, window, CanvasRenderingContext2D, WebGLRenderingContext, console, unsafeWindow, exportFunction, cloneInto, checkURL, getDomainRegExpList */
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
@@ -225,7 +225,7 @@
 								unsafeWindow,
 								changedFunction.exportOptions
 							): undef;
-						case "block":
+						//case "block":
 						default:
 							return undef;
 					}
@@ -265,7 +265,7 @@
 		switch (mode){
 			case "block":
 				blockMode.getContext.status = "block";
-				blockMode.readAPI.status = "allow";
+				blockMode.readAPI.status = "block";
 				break;
 			case "ask":
 				blockMode.getContext.status = "ask";
