@@ -171,7 +171,15 @@
 		},
 		readPixels: {
 			mode: blockMode.readAPI,
-			object: unsafeWindow.WebGLRenderingContext
+			object: unsafeWindow.WebGLRenderingContext,
+			fake: function(x, y, width, height, format, type, pixels){
+				// fake not working due to XRay copy restrictions...
+				// for (var i = 0; i < pixels.length; i += 1){
+					// pixels[i] = Math.floor(
+						// Math.random() * 256
+					// );
+				// }
+			}
 		}
 	};
 	
@@ -253,36 +261,55 @@
 	
 	// Communication with main.js
 	
-	self.port.on("block", function(){
-		blockMode.getContext.status = "block";
-		blockMode.readAPI.status = "allow";
+	function setStatus(mode, askOnce){
+		switch (mode){
+			case "block":
+				blockMode.getContext.status = "block";
+				blockMode.readAPI.status = "allow";
+				break;
+			case "ask":
+				blockMode.getContext.status = "ask";
+				blockMode.getContext.askStatus.askOnce = askOnce;
+				blockMode.readAPI.status = "allow";
+				break;
+			case "blockReadout":
+				blockMode.getContext.status = "allow";
+				blockMode.readAPI.status = "block";
+				break;
+			case "fakeReadout":
+				blockMode.getContext.status = "allow";
+				blockMode.readAPI.status = "fake";
+				break;
+			case "askReadout":
+				blockMode.getContext.status = "allow";
+				blockMode.readAPI.status = "ask";
+				blockMode.readAPI.askStatus.askOnce = askOnce;
+				break;
+			case "unblock":
+				blockMode.getContext.status = "allow";
+				blockMode.readAPI.status = "allow";
+				break;
+			case "detach":
+				blockMode.getContext.status = "allow";
+				blockMode.readAPI.status = "allow";
+				break;
+		}
+	}
+	["block", "ask", "blockReadout", "fakeReadout", "askReadout", "unblock", "detach"].forEach(function(mode){
+		self.port.on(mode, function(askOnce){
+			setStatus(mode, askOnce);
+		});
 	});
-	self.port.on("ask", function(askOnce){
-		blockMode.getContext.status = "ask";
-		blockMode.getContext.askStatus.askOnce = askOnce;
-		blockMode.readAPI.status = "allow";
-	});
-	self.port.on("blockReadout", function(){
-		blockMode.getContext.status = "allow";
-		blockMode.readAPI.status = "block";
-	});
-	self.port.on("fakeReadout", function(){
-		blockMode.getContext.status = "allow";
-		blockMode.readAPI.status = "fake";
-	});
-	self.port.on("askReadout", function(askOnce){
-		blockMode.getContext.status = "allow";
-		blockMode.readAPI.status = "ask";
-		blockMode.readAPI.askStatus.askOnce = askOnce;
-	});
-	self.port.on("unblock", function(){
-		blockMode.getContext.status = "allow";
-		blockMode.readAPI.status = "allow";
-	});
-	self.port.on("detach", function(){
-		blockMode.getContext.status = "allow";
-		blockMode.readAPI.status = "allow";
-	});
+	
+	setStatus(
+		checkURL(
+			location,
+			self.options.blockMode,
+			getDomainRegExpList(self.options.whiteList),
+			getDomainRegExpList(self.options.blackList)
+		),
+		self.options.askOnce
+	);
 	
 	// settings passthrough
 	self.port.on("set", function(name, value){
