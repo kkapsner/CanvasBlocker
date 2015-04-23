@@ -6,7 +6,8 @@
 	"use strict";
 	
 	var settings = {
-		showCallingFile: false
+		showCallingFile: false,
+		showCompleteCallingStack: false
 	};
 	var blockMode = {
 		getContext: {
@@ -247,7 +248,7 @@
 	
 	// Translation
 	var _ = function(name, replace){
-		var str = _[name] || name;
+		var str = self.options.translations[name] || name;
 		if (replace){
 			Object.keys(replace).forEach(function(name){
 				str = str.replace(new RegExp("{" + name + "}", "g"), replace[name]);
@@ -255,9 +256,6 @@
 		}
 		return str;
 	};
-	self.port.on("setTranslation", function(name, translation){
-		_[name] = translation;
-	});
 	
 	// Communication with main.js
 	
