@@ -17,6 +17,12 @@
 			"value": ""
 		},
 		{
+			"name": "ignoreList",
+			"title": "Ignore list",
+			"type": "string",
+			"value": ""
+		},
+		{
 			"name": "blockMode",
 			"title": "block mode",
 			"type": "menulist",
