@@ -89,6 +89,6 @@
 	],
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.1.5 - Release",
+	"version": "0.1.5-Release",
 	"permissions": {"private-browsing": true}
 }
