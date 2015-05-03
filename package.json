@@ -69,6 +69,12 @@
 			"value": true
 		},
 		{
+			"name": "showNotifications",
+			"title": "Show notifications",
+			"type": "bool",
+			"value": true
+		},
+		{
 			"name": "showCallingFile",
 			"title": "Display calling file",
 			"type": "bool",
