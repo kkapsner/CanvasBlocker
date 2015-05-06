@@ -17,29 +17,11 @@
 			"value": ""
 		},
 		{
-			"name": "ignoreList",
-			"title": "Ignore list",
-			"type": "string",
-			"value": ""
-		},
-		{
 			"name": "blockMode",
 			"title": "block mode",
 			"type": "menulist",
 			"value": "fakeReadout",
 			"options": [
-				{
-					"value": "blockEverything",
-					"label": "block everything"
-				},
-				{
-					"value": "allowOnlyWhiteList",
-					"label": "allow only white list"
-				},
-				{
-					"value": "ask",
-					"label": "ask for permission"
-				},
 				{
 					"value": "blockReadout",
 					"label": "block readout API"
@@ -51,6 +33,22 @@
 				{
 					"value": "askReadout",
 					"label": "ask for readout API permission"
+				},
+				{
+					"value": "",
+					"label": ""
+				},
+				{
+					"value": "blockEverything",
+					"label": "block everything"
+				},
+				{
+					"value": "allowOnlyWhiteList",
+					"label": "allow only white list"
+				},
+				{
+					"value": "ask",
+					"label": "ask for permission"
 				},
 				{
 					"value": "blockOnlyBlackList",
@@ -72,19 +70,29 @@
 			"name": "showNotifications",
 			"title": "Show notifications",
 			"type": "bool",
-			"value": true
+			"value": true,
+			"style": "border-bottom: 0px transparent none; padding-top: 0.5em;"
+		},
+		{
+			"name": "ignoreList",
+			"title": "Ignore list",
+			"type": "string",
+			"value": "",
+			"style": "border-top: 0px transparent none; padding-bottom: 0.5em;"
 		},
 		{
 			"name": "showCallingFile",
 			"title": "Display calling file",
 			"type": "bool",
-			"value": false
+			"value": false,
+			"style": "border-bottom: 0px transparent none; padding-top: 0.5em;"
 		},
 		{
 			"name": "showCompleteCallingStack",
 			"title": "Display complete calling stack",
 			"type": "bool",
-			"value": false
+			"value": false,
+			"style": "border-top: 0px transparent none; padding-bottom: 0.5em;"
 		},
 		{
 			"name": "allowPDFCanvas",
