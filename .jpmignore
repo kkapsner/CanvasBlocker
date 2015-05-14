@@ -1,0 +1,10 @@
+*.svg
+*.png
+*.xpi
+*.zip
+.*
+*.txt
+*.md
+test/
+addon description/
+doc/
