@@ -50,6 +50,18 @@
 		return bytes;
 	}());
 	
+	
+	// Stack parsing
+	function parseStackEntry(entry){
+		var m = /@(.*):(\d*):(\d*)$/.exec(entry) || ["", entry, "--", "--"];
+		return {
+			url: m[1],
+			line: m[2],
+			column: m[3],
+			raw: entry
+		};
+	}
+	
 	// parse calling stack
 	function errorToCallingStackMsg(error){
 		var msg = "";
@@ -126,7 +138,7 @@
 		};
 	}
 	
-	// changed functions
+	// changed functions and their fakes
 	var changedFunctions = {
 		getContext: {
 			mode: blockMode.getContext,
@@ -184,9 +196,17 @@
 		}
 	};
 	
+	// do the replacements
 	Object.keys(changedFunctions).forEach(function(name){
 		var changedFunction = changedFunctions[name];
 		var original = changedFunction.object.prototype[name];
+		var fake = changedFunction.fake?
+			exportFunction(
+				changedFunction.fake,
+				unsafeWindow,
+				changedFunction.exportOptions
+			):
+			undef;
 		Object.defineProperty(
 			changedFunction.object.prototype,
 			name,
@@ -200,11 +220,11 @@
 						var askStatus = changedFunction.mode.askStatus;
 						var appearance = canvasAppearance(this);
 						if (askStatus.askOnce && askStatus.alreadyAsked[appearance.askCategory]){
-							// console.log("already asked");
+							// already asked
 							status = askStatus.answer[appearance.askCategory];
 						}
 						else {
-							//console.log("asking");
+							// asking
 							var msg = _(changedFunction.mode.askText[appearance.text]);
 							if (settings.showCallingFile){
 								msg += callingStackMsg;
@@ -212,7 +232,6 @@
 							status = window.confirm(msg) ? "allow": "block";
 							askStatus.alreadyAsked[appearance.text] = true;
 							askStatus.answer[appearance.text] = status;
-							//console.log("asking (done)");
 							appearance.reset();
 						}
 					}
@@ -221,11 +240,7 @@
 						case "allow":
 							return original;
 						case "fake":
-							return changedFunction.fake? exportFunction(
-								changedFunction.fake,
-								unsafeWindow,
-								changedFunction.exportOptions
-							): undef;
+							return fake;
 						//case "block":
 						default:
 							return undef;
@@ -235,21 +250,11 @@
 		);
 	});
 	
-	// Stack parsing
-	function parseStackEntry(entry){
-		var m = /@(.*):(\d*):(\d*)$/.exec(entry) || ["", entry, "--", "--"];
-		return {
-			url: m[1],
-			line: m[2],
-			column: m[3],
-			raw: entry
-		};
-	}
-	
 	// Translation
 	var _ = function(name, replace){
 		var str = self.options.translations[name] || name;
 		if (replace){
+			// replace generic content in the transation by given parameter
 			Object.keys(replace).forEach(function(name){
 				str = str.replace(new RegExp("{" + name + "}", "g"), replace[name]);
 			});
@@ -299,6 +304,7 @@
 		});
 	});
 	
+	// initial status setting
 	setStatus(
 		checkURL(
 			location,
