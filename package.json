@@ -94,7 +94,7 @@
 			"name": "allowPDFCanvas",
 			"title": "Allow canvas in PDFs",
 			"type": "bool",
-			"value": true
+			"value": false
 		}
 	],
 	"main": "lib/main.js",
