@@ -147,7 +147,7 @@
 		toDataURL: {
 			mode: blockMode.readAPI,
 			object: unsafeWindow.HTMLCanvasElement,
-			fake: function(){
+			fake: function toDataURL(){
 				var type = arguments[0] || "image/png";
 				return "data:" + type + ";base64," + btoa(randomImage);
 			}
@@ -155,7 +155,7 @@
 		toBlob: {
 			mode: blockMode.readAPI,
 			object: unsafeWindow.HTMLCanvasElement,
-			fake: function(callback){
+			fake: function toBlob(callback){
 				var type = arguments[0] || "image/png";
 				var blob = new window.Blob(randomImage, {type: type});
 				callback(blob);
@@ -169,7 +169,7 @@
 		getImageData: {
 			mode: blockMode.readAPI,
 			object: unsafeWindow.CanvasRenderingContext2D,
-			fake: function(sx, sy, sw, sh){
+			fake: function getImageData(sx, sy, sw, sh){
 				var l = sw * sh * 4;
 				var data = new Uint8ClampedArray(l);
 				for (var i = 0; i < l; i += 1){
@@ -185,7 +185,7 @@
 		readPixels: {
 			mode: blockMode.readAPI,
 			object: unsafeWindow.WebGLRenderingContext,
-			fake: function(x, y, width, height, format, type, pixels){
+			fake: function readPixels(x, y, width, height, format, type, pixels){
 				// fake not working due to XRay copy restrictions...
 				// for (var i = 0; i < pixels.length; i += 1){
 					// pixels[i] = Math.floor(
