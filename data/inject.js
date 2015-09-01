@@ -41,14 +41,6 @@
 	};
 	
 	var undef;
-	var randomImage = (function(){
-		var length = Math.floor(20 + Math.random() * 100);
-		var bytes = "";
-		for (var i = 0; i < length; i += 1){
-			bytes += String.fromCharCode(Math.floor(Math.random() * 256));
-		}
-		return bytes;
-	}());
 	
 	
 	// Stack parsing
@@ -138,6 +130,13 @@
 		};
 	}
 	
+	function getFakeCanvas(original){
+		var imageData = changedFunctions.getImageData.fake(0, 0, this.width, this.height);
+		var canvas = this.cloneNode(true);
+		var context = canvas.getContext("2d");
+		context.putImageData(imageData, 0, 0);
+		return canvas;
+	}
 	// changed functions and their fakes
 	var changedFunctions = {
 		getContext: {
@@ -148,17 +147,14 @@
 			mode: blockMode.readAPI,
 			object: unsafeWindow.HTMLCanvasElement,
 			fake: function toDataURL(){
-				var type = arguments[0] || "image/png";
-				return "data:" + type + ";base64," + btoa(randomImage);
+				return window.HTMLCanvasElement.prototype.toDataURL.apply(getFakeCanvas(this), arguments);
 			}
 		},
 		toBlob: {
 			mode: blockMode.readAPI,
 			object: unsafeWindow.HTMLCanvasElement,
 			fake: function toBlob(callback){
-				var type = arguments[0] || "image/png";
-				var blob = new window.Blob(randomImage, {type: type});
-				callback(blob);
+				window.HTMLCanvasElement.prototype.toBlob.apply(getFakeCanvas(this), arguments);
 			},
 			exportOptions: {allowCallbacks: true}
 		},
