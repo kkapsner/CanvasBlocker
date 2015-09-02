@@ -166,6 +166,8 @@
 			mode: blockMode.readAPI,
 			object: unsafeWindow.CanvasRenderingContext2D,
 			fake: function getImageData(sx, sy, sw, sh){
+				sw = parseInt(sw, 10);
+				sh = parseInt(sh, 10);
 				var l = sw * sh * 4;
 				var data = new Uint8ClampedArray(l);
 				for (var i = 0; i < l; i += 1){
