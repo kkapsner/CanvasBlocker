@@ -23,6 +23,10 @@
 			"value": "fakeReadout",
 			"options": [
 				{
+					"value": "blockEverything",
+					"label": "block everything"
+				},
+				{
 					"value": "blockReadout",
 					"label": "block readout API"
 				},
@@ -52,6 +56,6 @@
 	"main": "lib/main.js",
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.1.9-Development",
+	"version": "0.2.0-Development",
 	"permissions": {"private-browsing": true}
 }
