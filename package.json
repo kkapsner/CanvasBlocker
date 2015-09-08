@@ -23,10 +23,6 @@
 			"value": "fakeReadout",
 			"options": [
 				{
-					"value": "blockEverything",
-					"label": "block everything"
-				},
-				{
 					"value": "blockReadout",
 					"label": "block readout API"
 				},
@@ -35,10 +31,40 @@
 					"label": "fake readout API"
 				},
 				{
+					"value": "askReadout",
+					"label": "ask for readout API permission"
+				},
+				{
+					"value": "",
+					"label": ""
+				},
+				{
+					"value": "blockEverything",
+					"label": "block everything"
+				},
+				{
+					"value": "block",
+					"label": "allow only white list"
+				},
+				{
+					"value": "ask",
+					"label": "ask for permission"
+				},
+				{
+					"value": "allow",
+					"label": "block only black list"
+				},
+				{
 					"value": "allowEverything",
 					"label": "allow everything"
 				}
 			]
+		},
+		{
+			"name": "askOnlyOnce",
+			"title": "Ask only once",
+			"type": "bool",
+			"value": true
 		},
 		{
 			"name": "showNotifications",
@@ -51,6 +77,18 @@
 			"title": "Ignore list",
 			"type": "string",
 			"value": ""
+		},
+		{
+			"name": "showCallingFile",
+			"title": "Display calling file",
+			"type": "bool",
+			"value": false
+		},
+		{
+			"name": "showCompleteCallingStack",
+			"title": "Display complete calling stack",
+			"type": "bool",
+			"value": false
 		}
 	],
 	"main": "lib/main.js",
