@@ -12,8 +12,6 @@ The different block modes are:
 <li>allow everything: Ignore all lists and allow the &lt;canvas&gt; API on all websites.</li>
 </ul>
 
-Firefox's native PDF reader uses the &lt;canvas&gt; API to display PDF content, so blocking it for MIME-content type of "*/pdf" will prevent the PDF reader from working. Therefore, the &lt;canvas&gt; API is enabled for PDFs by default, but it can be disabled without affecting the block mode setting.
-
 At present, only my domain (kkapsner.de) is whitelisted by default.
 
 Please report issues and feature requests at https://github.com/kkapsner/CanvasBlocker/issues
