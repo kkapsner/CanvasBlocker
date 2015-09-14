@@ -2,7 +2,9 @@
 	"name": "canvasblocker",
 	"title": "CanvasBlocker",
 	"id": "CanvasBlocker@kkapsner.de",
-	"description": "Blocks the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
+	"keywords": "privacy, canvas, fingerprinting",
+	"description": "Changes the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
+	"homepage": "https://github.com/kkapsner/CanvasBlocker/",
 	"preferences": [
 		{
 			"name": "whiteList",
