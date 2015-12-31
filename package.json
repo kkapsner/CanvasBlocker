@@ -91,6 +91,17 @@
 			"title": "Display complete calling stack",
 			"type": "bool",
 			"value": false
+		},{
+			"name": "enableStackList",
+			"title": "Use script scoped white list",
+			"type": "bool",
+			"value": false
+		},
+		{
+			"name": "stackList",
+			"title": "Script scoped white list",
+			"type": "string",
+			"value": ""
 		}
 	],
 	"main": "lib/main.js",
