@@ -93,13 +93,13 @@
 			"value": false
 		},{
 			"name": "enableStackList",
-			"title": "Use script scoped white list",
+			"title": "Use file specific scoped white list",
 			"type": "bool",
 			"value": false
 		},
 		{
 			"name": "stackList",
-			"title": "Script scoped white list",
+			"title": "File specific white list",
 			"type": "string",
 			"value": ""
 		}
