@@ -1,37 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. --><RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <Description about="urn:mozilla:install-manifest">
-    <em:id>CanvasBlocker@kkapsner.de</em:id>
-    <em:version>0.1.6-Development</em:version>
-    <em:type>2</em:type>
-    <em:bootstrap>true</em:bootstrap>
-    <em:unpack>false</em:unpack>
+<?xml version="1.0" encoding="utf-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>CanvasBlocker@kkapsner.de</em:id>
+		<em:type>2</em:type>
+		<em:bootstrap>true</em:bootstrap>
+		<em:unpack>false</em:unpack>
+		<em:version>0.2.3-Development</em:version>
+		<em:name>CanvasBlocker</em:name>
+		<em:description>Changes the JS-API for modifying &lt;canvas&gt; to prevent Canvas-Fingerprinting.</em:description>
+		<em:creator>Korbinian Kapsner</em:creator>
+		<em:homepageURL>https://github.com/kkapsner/CanvasBlocker/</em:homepageURL>
+		<em:optionsURL>data:text/xml,&lt;placeholder/&gt;</em:optionsURL>
+		<em:optionsType>2</em:optionsType>
+		
+		<!-- Firefox -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>40.0</em:minVersion>
+				<em:maxVersion>46.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
 
-    <!-- Firefox -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>26.0</em:minVersion>
-        <em:maxVersion>36.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-	
-	<!-- Mobile Native -->
-	<em:targetApplication>
-		<Description>
-			<em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
-			<em:minVersion>25.0</em:minVersion>
-			<em:maxVersion>36.*</em:maxVersion>
-		</Description>
-	</em:targetApplication>
 
-    <!-- Front End MetaData -->
-    <em:name>CanvasBlocker</em:name>
-    <em:description>Blocks the JS-API for modifying &lt;canvas&gt; to prevent Canvas-Fingerprinting.</em:description>
-    <em:creator>Korbinian Kapsner</em:creator>
-    
-    <em:optionsType>2</em:optionsType>
-    
-  </Description>
+
+		<!-- Mobile Native -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+				<em:minVersion>40.0</em:minVersion>
+				<em:maxVersion>46.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
 </RDF>
