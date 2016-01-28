@@ -13,3 +13,7 @@ The different block modes are:
 </ul>
 
 At present, only my domain (kkapsner.de) is whitelisted by default.
+
+Please report issues and feature requests at https://github.com/kkapsner/CanvasBlocker/issues
+
+A highly experimental version for Android is available at https://github.com/kkapsner/CanvasBlocker/tree/android

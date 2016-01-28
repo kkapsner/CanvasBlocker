@@ -2,7 +2,9 @@
 	"name": "canvasblocker",
 	"title": "CanvasBlocker",
 	"id": "CanvasBlocker@kkapsner.de",
-	"description": "Blocks the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
+	"keywords": "privacy, canvas, fingerprinting",
+	"description": "Changes the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
+	"homepage": "https://github.com/kkapsner/CanvasBlocker/",
 	"preferences": [
 		{
 			"name": "whiteList",
@@ -17,29 +19,11 @@
 			"value": ""
 		},
 		{
-			"name": "ignoreList",
-			"title": "Ignore list",
-			"type": "string",
-			"value": ""
-		},
-		{
 			"name": "blockMode",
 			"title": "block mode",
 			"type": "menulist",
 			"value": "fakeReadout",
 			"options": [
-				{
-					"value": "blockEverything",
-					"label": "block everything"
-				},
-				{
-					"value": "allowOnlyWhiteList",
-					"label": "allow only white list"
-				},
-				{
-					"value": "ask",
-					"label": "ask for permission"
-				},
 				{
 					"value": "blockReadout",
 					"label": "block readout API"
@@ -53,7 +37,23 @@
 					"label": "ask for readout API permission"
 				},
 				{
-					"value": "blockOnlyBlackList",
+					"value": "",
+					"label": ""
+				},
+				{
+					"value": "blockEverything",
+					"label": "block everything"
+				},
+				{
+					"value": "block",
+					"label": "allow only white list"
+				},
+				{
+					"value": "ask",
+					"label": "ask for permission"
+				},
+				{
+					"value": "allow",
 					"label": "block only black list"
 				},
 				{
@@ -69,6 +69,18 @@
 			"value": true
 		},
 		{
+			"name": "showNotifications",
+			"title": "Show notifications",
+			"type": "bool",
+			"value": true
+		},
+		{
+			"name": "ignoreList",
+			"title": "Ignore list",
+			"type": "string",
+			"value": ""
+		},
+		{
 			"name": "showCallingFile",
 			"title": "Display calling file",
 			"type": "bool",
@@ -79,16 +91,22 @@
 			"title": "Display complete calling stack",
 			"type": "bool",
 			"value": false
+		},{
+			"name": "enableStackList",
+			"title": "Use file specific scoped white list",
+			"type": "bool",
+			"value": false
 		},
 		{
-			"name": "allowPDFCanvas",
-			"title": "Allow canvas in PDFs",
-			"type": "bool",
-			"value": true
+			"name": "stackList",
+			"title": "File specific white list",
+			"type": "string",
+			"value": ""
 		}
 	],
+	"main": "lib/main.js",
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.1.6-Development",
+	"version": "0.2.3-Development",
 	"permissions": {"private-browsing": true}
 }
