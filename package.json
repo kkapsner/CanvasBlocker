@@ -91,11 +91,22 @@
 			"title": "Display complete calling stack",
 			"type": "bool",
 			"value": false
+		},{
+			"name": "enableStackList",
+			"title": "Use file specific scoped white list",
+			"type": "bool",
+			"value": false
+		},
+		{
+			"name": "stackList",
+			"title": "File specific white list",
+			"type": "string",
+			"value": ""
 		}
 	],
 	"main": "lib/main.js",
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.2.1-Development",
+	"version": "0.2.3-Development",
 	"permissions": {"private-browsing": true}
 }
