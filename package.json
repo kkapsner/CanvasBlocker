@@ -107,6 +107,9 @@
 	"main": "lib/main.js",
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.2.3-Development",
-	"permissions": {"private-browsing": true}
+	"version": "0.3.0-Development",
+	"permissions": {
+		"private-browsing": true,
+		"multiprocess": true
+	}
 }

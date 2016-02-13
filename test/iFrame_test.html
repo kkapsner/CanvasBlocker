@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+iFrame Test. Thanks to DocumentRoot.
+<img id="display" width="100%">
+<iframe id="iframe" sandbox="allow-same-origin" style="display:none"></iframe>
+<script>
+(function(){
+	document.getElementById("display").src = after();
+}());
+
+function after(){
+	var fp_text = "BrowserLeaks,com <canvas> 10";
+
+	// create window canvas
+	var canvas = document.createElement('canvas');
+	canvas.setAttribute("width", 220);
+	canvas.setAttribute("height", 30);
+
+	// draw image in window canvas
+	var ctx = canvas.getContext('2d');
+	ctx.textBaseline = "top";
+	ctx.font = "14px 'Arial'";
+	ctx.textBaseline = "alphabetic";
+	ctx.fillStyle = "#f60";
+	ctx.fillRect(125, 1, 62, 20);
+	ctx.fillStyle = "#069";
+	ctx.fillText(fp_text, 2, 15);
+	ctx.fillStyle = "rgba(102, 204, 0, 07)";
+	ctx.fillText(fp_text, 4, 17);
+
+	// create iframe canvas and ctx
+	var iframe_canvas = document.getElementById("iframe").contentDocument.createElement('canvas');
+	iframe_canvas.setAttribute("width", 220);
+	iframe_canvas.setAttribute("height", 30);
+	var iframe_ctx = iframe_canvas.getContext('2d');
+
+	// copy image from window canvas to iframe ctx
+	iframe_ctx.drawImage(canvas, 0, 0);
+
+	return iframe_canvas.toDataURL();
+}
+</script>
+</body></html>
