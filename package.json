@@ -104,9 +104,16 @@
 			"value": ""
 		}
 	],
+	"engines": {
+		"firefox": ">=38.0a1",
+		"fennec": ">=38.0a1",
+		"thunderbird": ">=38.0a1",
+		"seamonkey": ">=2.0",
+		"{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}": ">=25"
+	},
 	"main": "lib/main.js",
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.2.2-Release",
+	"version": "0.2.2-OtherRelease",
 	"permissions": {"private-browsing": true}
 }
