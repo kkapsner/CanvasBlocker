@@ -108,6 +108,11 @@
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
 	"version": "0.3.1-Development",
+	
+	"engines": {
+		"firefox": ">=38.0a1",
+		"fennec": ">=38.0a1"
+	},
 	"permissions": {
 		"private-browsing": true,
 		"multiprocess": true
