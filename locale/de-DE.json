@@ -21,6 +21,8 @@
  "blockMode_options.block readout API": "Auslese-API blockieren", 
  "blockMode_options.fake readout API": "Auslese-API vortäuschen", 
  "blockMode_title": "Blockiermodus", 
+ "maxFakeSize_description": "Maximale Vortäuschgröße", 
+ "maxFakeSize_": "Canvas, die eine größe Fläche als die hier angegeben Zahl haben, werden nicht vorgetäuscht. (Null eingeben, um es zu deaktivieren.)", 
  "disableNotifications": "Benachrichtigungen deaktivieren", 
  "displayCallingStack": "Aufrufestack anzeigen", 
  "displayFullURL": "URL anzeigen", 

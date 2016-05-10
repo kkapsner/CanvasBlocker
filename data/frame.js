@@ -34,16 +34,17 @@
 					token
 				)[0];
 			},
-			prefs: function(name){
-				return sendSyncMessage(
-					"canvasBlocker-pref-get",
-					name
-				)[0];
-			}
+			prefs
 		});
 	}
 	function notify(data){
 		sendAsyncMessage("canvasBlocker-notify", data);
+	}
+	function prefs(name){
+		return sendSyncMessage(
+			"canvasBlocker-pref-get",
+			name
+		)[0];
 	}
 	
 	function interceptWrapper(ev){
@@ -55,7 +56,7 @@
 			var window = ev.target.defaultView;
 			intercept(
 				{subject: window},
-				{check, ask: askWrapper, notify}
+				{check, ask: askWrapper, notify, prefs}
 			);
 		}
 	}

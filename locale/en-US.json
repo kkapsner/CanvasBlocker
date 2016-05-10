@@ -21,6 +21,8 @@
  "blockMode_options.block readout API": "block readout API", 
  "blockMode_options.fake readout API": "fake readout API", 
  "blockMode_title": "Block mode", 
+ "maxFakeSize_description": "Maximal fake size", 
+ "maxFakeSize_": "Canvas with a bigger area than this number will not be faked. (Enter zero to disable.)", 
  "disableNotifications": "disable notifications", 
  "displayCallingStack": "display calling stack", 
  "displayFullURL": "display full URL", 

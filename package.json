@@ -63,6 +63,12 @@
 			]
 		},
 		{
+			"name": "maxFakeSize",
+			"title": "Maximal fake size",
+			"type": "integer",
+			"value": 0
+		},
+		{
 			"name": "askOnlyOnce",
 			"title": "Ask only once",
 			"type": "bool",
