@@ -93,6 +93,12 @@
 			"value": false
 		},
 		{
+			"name": "usePersistentProfile",
+			"title": "Maintain a persistent profile fingerprint",
+			"type": "bool",
+			"value": false
+		},
+		{
 			"name": "showCompleteCallingStack",
 			"title": "Display complete calling stack",
 			"type": "bool",

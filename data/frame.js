@@ -26,6 +26,16 @@
 			return {type: [], mode: "allow"};
 		}
 	}
+	
+	/*
+	 *  Retrieve the profile seed value from Chrome using the provided messaging subsystem.
+	 */
+	function getProfileSeed(){
+		if (enabled){
+			return sendSyncMessage("canvasBlocker-getProfileSeed")[0]
+		}
+	}
+
 	function askWrapper(data){
 		return ask(data, {
 			_: function(token){
@@ -40,6 +50,7 @@
 	function notify(data){
 		sendAsyncMessage("canvasBlocker-notify", data);
 	}
+
 	function prefs(name){
 		return sendSyncMessage(
 			"canvasBlocker-pref-get",
@@ -47,6 +58,9 @@
 		)[0];
 	}
 	
+	/*
+	 *  Injects various API hooks to catch canvas fingerprinting attempts.
+	 */
 	function interceptWrapper(ev){
 		if (enabled){
 			// window is only equal to content for the top window. For susequent
@@ -56,7 +70,7 @@
 			var window = ev.target.defaultView;
 			intercept(
 				{subject: window},
-				{check, ask: askWrapper, notify, prefs}
+				{check, ask: askWrapper, notify, prefs, getProfileSeed}
 			);
 		}
 	}
