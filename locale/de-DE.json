@@ -46,8 +46,10 @@
  "sourceOutput": "Aufrufende Datei", 
  "stackEntryOutput": "{url} Zeile {line} Spalte {column}", 
  "stackList_description": "JS-Dateien, die die <canvas>-API verwenden dürfen. Die Angabe muss hier im JSON-Format vorliegen. Beispiel: [{\"url\": \"http://domain/datei1.js\"}, {\"url\": \"http://domain/datei2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]", 
- "stackList_title": "Dateispezifische Whitelist", 
- "whiteList_description": "Domänen oder URLs, die die <canvas>-API verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.", 
+ "stackList_title": "Dateispezifische Whitelist",
+ "usePersistentProfile_description": "",
+ "usePersistentProfile_title": "Pflegen Sie eine persistente Profil Fingerabdruck",
+ "whiteList_description": "Domänen oder URLs, die die <canvas>-API verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
  "whiteList_title": "Whitelist", 
  "whitelistDomain": "erlaube Domain", 
  "whitelistURL": "erlaube URL"
