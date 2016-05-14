@@ -31,7 +31,7 @@
  "fakedReadout": "Faked readout on {url}", 
  "ignoreList_description": "Domains or URLs where no notification will be shown. To add multiple entries, separate them by commas.", 
  "ignoreList_title": "Ignore list", 
- "ignorelistDomain": "ignore domain", 
+ "ignorelistDomain": "silence domain", 
  "ignorelistURL": "ignore URL", 
  "inputIgnoreDomain": "Input domain to add to ignore list:", 
  "inputWhitelistDomain": "Input URL RegExp to add to white list:", 
