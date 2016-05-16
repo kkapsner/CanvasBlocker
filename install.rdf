@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. --><RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>CanvasBlocker@kkapsner.de</em:id>
-    <em:version>0.2.2.1-OtherRelease</em:version>
+    <em:version>0.2.2.2-OtherRelease</em:version>
     <em:type>2</em:type>
     <em:bootstrap>true</em:bootstrap>
     <em:unpack>false</em:unpack>
@@ -12,7 +12,7 @@
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>36.0</em:minVersion>
+        <em:minVersion>28.0</em:minVersion>
         <em:maxVersion>40.0</em:maxVersion>
       </Description>
     </em:targetApplication>
