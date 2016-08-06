@@ -69,6 +69,22 @@
 			"value": 0
 		},
 		{
+			"name": "rng",
+			"title": "Random number generator",
+			"type": "menulist",
+			"value": "nonPersistent",
+			"options": [
+				{
+					"value": "nonPersistent",
+					"label": "non persistent"
+				},
+				{
+					"value": "persistent",
+					"label": "persistent"
+				}
+			]
+		},
+		{
 			"name": "askOnlyOnce",
 			"title": "Ask only once",
 			"type": "bool",
