@@ -21,6 +21,7 @@
 	"blockMode_options.block only black list": "nur Einträge der Blacklist blockieren",
 	"blockMode_options.block readout API": "Auslese-API blockieren",
 	"blockMode_options.fake readout API": "Auslese-API vortäuschen",
+	"blockMode_options.fake input API": "Eingabe-API vortäuschen",
 	"blockMode_title": "Blockiermodus",
 	
 	"maxFakeSize_description": "Canvas, die eine größe Fläche als die hier angegeben Zahl haben, werden nicht vorgetäuscht. (Null eingeben, um es zu deaktivieren.)",
@@ -38,6 +39,8 @@
 	"enableStackList_title": "Dateispezifische Whitelist verwenden",
 	
 	"fakedReadout": "Auslese vorgetäuscht auf {url}",
+	"fakedInput": "Eingabe vorgetäuscht auf {url}",
+	
 	"ignoreList_description": "Domänen oder URLs, bei denen keine Benachrichtigung angezeigt werden. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 	"ignoreList_title": "Ignorierliste",
 	"ignorelistDomain": "verschweige Domain",

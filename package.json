@@ -33,6 +33,10 @@
 					"label": "fake readout API"
 				},
 				{
+					"value": "fakeInput",
+					"label": "fake input API"
+				},
+				{
 					"value": "askReadout",
 					"label": "ask for readout API permission"
 				},
