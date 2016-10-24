@@ -8,8 +8,7 @@
 	const {utils: Cu} = Components;
 	const COMMONJS_URI = "resource://gre/modules/commonjs";
 	const {require} = Cu.import(COMMONJS_URI + "/toolkit/require.js", {});
-	const {intercept, setExportFunction} = require("../lib/intercept.js");
-	setExportFunction(Cu.exportFunction);
+	const {intercept} = require("../lib/intercept.js");
 	const {ask} = require("../lib/askForPermission.js");
 	
 	// Variable to "unload" the script
