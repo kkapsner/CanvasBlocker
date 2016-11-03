@@ -4,6 +4,7 @@ The different block modes are:
 <ul>
 <li>block readout API: All websites not on the white list or black list can use the &lt;canvas&gt; API to display something on the page, but the readout API is not allowed to return values to the website.</li>
 <li>fake readout API: Canvas Blocker's default setting, and my favorite! All websites not on the white list or black list can use the &lt;canvas&gt; API to display something on the page, but the readout API is forced to return a new random value each time it is called.</li>
+<li>fake at input: on display of text the drawn pixels get modified slightly. This makes the detection of the add-on harder but is less secure. On WebGL-canvas the behaviour is identical to "fake readout API".</li>
 <li>ask for readout API permission: All websites not on the white list or black list can use the &lt;canvas&gt; API to display something on the page, but the user will be asked if the website should be allowed to use the readout API each time it is called.</li>
 <li>block everything: Ignore all lists and block the &lt;canvas&gt; API on all websites.</li>
 <li>allow only white list: Only websites in the white list are allowed to use the &lt;canvas&gt; API.</li>

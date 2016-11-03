@@ -1,0 +1,24 @@
+Version 0.3.2:
+	new features:
+		- "fake at input" mode
+		- fake notifications only show up when something is faked
+	
+	fixes:
+		- fake notifications did not show always when something was faked
+		- ECMA 2016 compliant
+		- function signature for faked functions could not be read
+
+Version 0.3.1:
+	new features:
+		- added fennec support
+		- faster faking performance
+		- new preferences:
+			* disabling faking in getImageData for big canvas
+			* persistent random number supply
+	
+	fixes:
+		- ask for permission failed on prototype
+
+Version 0.3.0:
+	new features:
+		- e10s ready

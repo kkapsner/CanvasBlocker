@@ -21,7 +21,7 @@
 	"blockMode_options.block only black list": "block only black list",
 	"blockMode_options.block readout API": "block readout API",
 	"blockMode_options.fake readout API": "fake readout API",
-	"blockMode_options.fake input API": "fake input API",
+	"blockMode_options.fake input API": "fake at input",
 	"blockMode_title": "Block mode",
 	
 	"maxFakeSize_description": "Canvas with a bigger area than this number will not be faked. (Enter zero to disable.)",
@@ -39,7 +39,7 @@
 	"enableStackList_title": "Use file specific white list",
 	
 	"fakedReadout": "Faked readout on {url}",
-	"fakedInput": "Faked input on {url}",
+	"fakedInput": "Faked at input on {url}",
 	
 	"ignoreList_description": "Domains or URLs where no notification will be shown. To add multiple entries, separate them by commas.",
 	"ignoreList_title": "Ignore list",
