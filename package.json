@@ -101,6 +101,12 @@
 			"value": true
 		},
 		{
+			"name": "notificationDisplayTime",
+			"title": "notification display time",
+			"type": "integer",
+			"value": 30
+		},
+		{
 			"name": "ignoreList",
 			"title": "Ignore list",
 			"type": "string",

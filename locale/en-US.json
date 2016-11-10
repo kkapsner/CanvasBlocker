@@ -55,6 +55,8 @@
 	"showCompleteCallingStack_title": "Display complete calling stack",
 	"showNotifications_description": "Show a notification when the block mode is set to \"fake readout API\".",
 	"showNotifications_title": "Show notifications",
+	"notificationDisplayTime_description": "Number of seconds the notifications are shown. (Enter zero to disable automatic closing.)",
+	"notificationDisplayTime_title": "Notification display time",
 	"sourceOutput": "Calling file",
 	"stackEntryOutput": "{url} line {line} column {column}",
 	"stackList_description": "JS files which are allowed to use the <canvas>-API. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
