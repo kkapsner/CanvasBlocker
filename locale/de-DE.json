@@ -64,5 +64,8 @@
 	"whiteList_description": "Domänen oder URLs, die die <canvas>-API verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 	"whiteList_title": "Whitelist",
 	"whitelistDomain": "erlaube Domain",
-	"whitelistURL": "erlaube URL"
+	"whitelistURL": "erlaube URL",
+	
+	"showReleaseNotes_title": "Versionsinformationen"
+	"showReleaseNotes_label": "Anzeigen"
 }

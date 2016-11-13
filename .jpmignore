@@ -4,6 +4,7 @@
 *.zip
 .*
 *.txt
+!releaseNotes.txt
 *.md
 test/
 addon description/

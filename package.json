@@ -134,6 +134,12 @@
 			"title": "File specific white list",
 			"type": "string",
 			"value": ""
+		},
+		{
+			"name": "showReleaseNotes",
+			"title": "Release notes",
+			"type": "control",
+			"label": "Show"
 		}
 	],
 	"main": "lib/main.js",

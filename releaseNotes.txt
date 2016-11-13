@@ -1,3 +1,15 @@
+Version 0.3.3:
+	changes:
+		- switching of the mode, white- and black-listing only affects new loaded pages
+	
+	new features:
+		- auto close of the notifications (preference)
+		- button to show the release notes
+	
+	fixes:
+		- "about:"-tabs could not be dragged
+		- performance issues
+
 Version 0.3.2:
 	new features:
 		- "fake at input" mode

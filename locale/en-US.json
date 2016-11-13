@@ -65,5 +65,8 @@
 	"whiteList_description": "Domains or URLs where the <canvas>-API should not be blocked. To add multiple entries, separate them by commas.",
 	"whitelist": "whitelist",
 	"whitelistDomain": "whitelist domain",
-	"whitelistURL": "whitelist URL"
+	"whitelistURL": "whitelist URL",
+	
+	"showReleaseNotes_title": "Release notes",
+	"showReleaseNotes_label": "Show"
 }
