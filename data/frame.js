@@ -26,6 +26,18 @@
 			return {type: [], mode: "allow"};
 		}
 	}
+	function checkStack(stack){
+		if (enabled){
+			var status = sendSyncMessage(
+				"canvasBlocker-checkStack",
+				stack
+			);
+			return status[0];
+		}
+		else {
+			return true;
+		}
+	}
 	function askWrapper(data){
 		return ask(data, {
 			_: function(token){
@@ -56,7 +68,7 @@
 			var window = ev.target.defaultView;
 			intercept(
 				{subject: window},
-				{check, ask: askWrapper, notify, prefs}
+				{check, checkStack, ask: askWrapper, notify, prefs}
 			);
 		}
 	}
