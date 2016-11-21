@@ -1,3 +1,8 @@
+Version 0.3.4:
+	fixes:
+		- performance issues
+		- German translations
+
 Version 0.3.3:
 	changes:
 		- switching of the mode, white- and black-listing only affects new loaded pages
