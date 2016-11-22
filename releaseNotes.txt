@@ -1,4 +1,7 @@
 Version 0.3.4:
+	changes:
+		- different fake modes show independent notifications
+	
 	fixes:
 		- performance issues
 		- German translations
