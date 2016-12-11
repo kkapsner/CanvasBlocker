@@ -24,7 +24,7 @@
 	"blockMode_options.fake input API": "Bei Ausgabe vortäuschen",
 	"blockMode_title": "Blockiermodus",
 	
-	"maxFakeSize_description": "Canvas, die eine größe Fläche als die hier angegeben Zahl haben, werden nicht vorgetäuscht. (Null eingeben, um es zu deaktivieren.)",
+	"maxFakeSize_description": "Canvas, die eine größe Fläche als die hier angegebenen Zahl haben, werden nicht vorgetäuscht. (Null eingeben, um es zu deaktivieren.)",
 	"maxFakeSize_title": "Maximale Vortäuschgröße",
 	
 	"rng_description": "",
@@ -55,7 +55,7 @@
 	"showCompleteCallingStack_title": "Kompletten Aufrufestack anzeigen",
 	"showNotifications_description": "Benachrichtigungen anzeigen, wenn der Blockiermodus auf \"Auslese-API vortäuschen\" gesetzt ist.",
 	"showNotifications_title": "Benachrichtigungen anzeigen",
-	"notificationDisplayTime_description": "Anzahl Sekunden, die die Benachrichtigungen anzeigen werdne sollen. (Null eingeben, um die Benachrichtigungen nicht automatisch zu schließen.)",
+	"notificationDisplayTime_description": "Anzahl Sekunden, die die Benachrichtigungen anzeigen werden sollen. (Null eingeben, um die Benachrichtigungen nicht automatisch zu schließen.)",
 	"notificationDisplayTime_title": "Benachrichtigungsanzeigezeit",
 	"sourceOutput": "Aufrufende Datei",
 	"stackEntryOutput": "{url} Zeile {line} Spalte {column}",

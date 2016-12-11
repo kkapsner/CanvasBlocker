@@ -1,4 +1,10 @@
 {
+	"locales": {
+		"de": {
+			"title": "CanvasBlocker",
+			"description": "Ändert die JS-API zum Ändern von <canvas> um Canvas-Fingerprinting zu verhindern."
+		}
+	},
 	"name": "canvasblocker",
 	"title": "CanvasBlocker",
 	"id": "CanvasBlocker@kkapsner.de",
