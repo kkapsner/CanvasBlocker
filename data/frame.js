@@ -4,10 +4,28 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 (function(){
 	"use strict";
-	
 	const {utils: Cu} = Components;
-	const COMMONJS_URI = "resource://gre/modules/commonjs";
-	const {require} = Cu.import(COMMONJS_URI + "/toolkit/require.js", {});
+	var chrome =  {
+		Cc: Components.classes,
+		Ci: Components.interfaces,
+		Cm: Components.manager,
+		Cr: Components.results,
+		Cu: Components.utils,
+		CC: Components.Constructor,
+		components: Components,
+		ChromeWorker: undefined
+	};
+	const { Loader, Require, unload, Module} = Components.utils.import('resource://gre/modules/commonjs/toolkit/loader.js');
+	var loader = Loader({
+		paths: {
+			"": "resource://gre/modules/commonjs/"
+		},
+		modules: {
+			"chrome": chrome
+		}
+	});
+	var requirer = Module("resource://canvasblocker-at-kkapsner-dot-de/data/frame.js", "./data/frame.js");
+	var require = Require(loader, requirer);
 	const {intercept} = require("../lib/intercept.js");
 	const {ask} = require("../lib/askForPermission.js");
 	
