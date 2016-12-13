@@ -6,7 +6,8 @@ Version 0.3.5
 		- improved performance when canvas bigger than maxSize.
 	
 	fixes:
-		- 
+		- German translations
+		- Fennec stopped working in version 50
 
 Version 0.3.4:
 	changes:
