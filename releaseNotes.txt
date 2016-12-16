@@ -1,7 +1,4 @@
 Version 0.3.5
-	changes:
-		- 
-	
 	new features:
 		- improved performance when canvas bigger than maxSize.
 	
