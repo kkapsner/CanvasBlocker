@@ -55,7 +55,7 @@
 	"showCompleteCallingStack_title": "Kompletten Aufrufestack anzeigen",
 	"showNotifications_description": "Benachrichtigungen anzeigen, wenn der Blockiermodus auf \"Auslese-API vortäuschen\" gesetzt ist.",
 	"showNotifications_title": "Benachrichtigungen anzeigen",
-	"notificationDisplayTime_description": "Anzahl der Sekunden, die die Benachrichtigungen anzeigen werden sollen. (Null eingeben, um die Benachrichtigungen nicht automatisch zu schließen.)",
+	"notificationDisplayTime_description": "Anzahl der Sekunden, die die Benachrichtigungen angezeigt werden sollen. (Null eingeben, um die Benachrichtigungen nicht automatisch zu schließen.)",
 	"notificationDisplayTime_title": "Benachrichtigungsanzeigezeit",
 	"sourceOutput": "Aufrufende Datei",
 	"stackEntryOutput": "{url} Zeile {line} Spalte {column}",
