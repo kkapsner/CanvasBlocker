@@ -1,0 +1,30 @@
+{
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions": [
+		"activeTab",
+		"tabs"
+	],
+	"page_action": {
+		"browser_style": true,
+		"default_icon": {
+			"19": "icons/printed19.png",
+			"38": "icons/printed38.png"
+		},
+		"default_popup": "pageAction/index.html"
+	},
+	
+	"applications": {
+		"gecko": {
+			"id": "CanvasBlocker-WebExtension@kkapsner.de",
+			"strict_min_version": "51.0",
+			"strict_max_version": "60.*"
+		}
+	},
+	
+	"description": "Embeded WebExtension for the CanvasBlocker.",
+	"name": "CanvasBlocker-WebExtension",
+	"version": "1.0",
+	"manifest_version": 2
+}

@@ -11,6 +11,7 @@
 	"keywords": "privacy, canvas, fingerprinting",
 	"description": "Changes the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
 	"homepage": "https://github.com/kkapsner/CanvasBlocker/",
+	"hasEmbeddedWebExtension": true,
 	"preferences": [
 		{
 			"name": "whiteList",
