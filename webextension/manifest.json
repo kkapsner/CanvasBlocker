@@ -14,6 +14,13 @@
 		},
 		"default_popup": "pageAction/index.html"
 	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["contentScript.js"],
+			"run_at": "document_start"
+		}
+	],
 	
 	"applications": {
 		"gecko": {
