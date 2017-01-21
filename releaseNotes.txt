@@ -1,12 +1,13 @@
 Version 0.3.6:
 	changes:
-		- 
+		- only last bit of image values are changes also in non persistent mode
 	
 	new features:
 		- 
 	
 	fixes:
-		- 
+		- faking webGL
+		- added readPixels for webGL2
 
 Version 0.3.5
 	new features:
