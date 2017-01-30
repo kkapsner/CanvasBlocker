@@ -16,7 +16,7 @@
 			"name": "whiteList",
 			"title": "White list",
 			"type": "string",
-			"value": "kkapsner.de"
+			"value": ""
 		},
 		{
 			"name": "blackList",
