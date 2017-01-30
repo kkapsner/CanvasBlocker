@@ -9,6 +9,7 @@ Version 0.3.6:
 	fixes:
 		- faking webGL
 		- added readPixels for webGL2
+		- removed error message when notification can not be closed
 
 Version 0.3.5
 	new features:
