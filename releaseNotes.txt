@@ -10,6 +10,7 @@ Version 0.3.6:
 		- faking webGL
 		- added readPixels for webGL2
 		- removed error message when notification can not be closed
+		- about:blank pages are treated with respect to the opening page
 
 Version 0.3.5
 	new features:
