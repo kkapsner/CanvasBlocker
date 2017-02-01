@@ -13,8 +13,4 @@ Die verschiedenen Blockiermoden sind:
 <li>alles erlauben: Ignoriere alle Listen und erlaube die &lt;canvas&gt;-API auf allen Webseiten.</li>
 </ul>
 
-Derzeit ist als Standard nur meine Domain (kkapsner.de) auf der Whitelist.
-
 Falls Sie Fehler finden oder Verbesserungvorschläge haben, teilen Sie mir das bitte auf https://github.com/kkapsner/CanvasBlocker/issues mit.
-
-Eine hochgradig experimentelle Version für Android ist verfügbar unter https://github.com/kkapsner/CanvasBlocker/tree/android

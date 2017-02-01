@@ -3,9 +3,6 @@ Version 0.3.6:
 		- only last bit of image values are changes also in non persistent mode
 		- removed default entry in white list
 	
-	new features:
-		- 
-	
 	fixes:
 		- faking webGL
 		- added readPixels for webGL2
