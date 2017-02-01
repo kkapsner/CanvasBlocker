@@ -12,6 +12,7 @@ Version 0.3.6:
 		- removed error message when notification can not be closed
 		- about:blank pages are treated with respect to the opening page
 		- removed memory leak
+		- persistent rnd same for all tabs/windows with e10s enabled
 
 Version 0.3.5
 	new features:
