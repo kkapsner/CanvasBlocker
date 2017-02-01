@@ -1,3 +1,13 @@
+Version 0.3.7:
+	changes:
+		- 
+	
+	new features:
+		- 
+	
+	fixes:
+		- 
+
 Version 0.3.6:
 	changes:
 		- only last bit of image values are changes also in non persistent mode
