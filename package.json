@@ -154,8 +154,8 @@
 	"version": "0.3.7-Development",
 	
 	"engines": {
-		"firefox": ">=38.0a1",
-		"fennec": ">=38.0a1"
+		"firefox": ">=45.7.0",
+		"fennec": ">=45.7.0"
 	},
 	"permissions": {
 		"private-browsing": true,
