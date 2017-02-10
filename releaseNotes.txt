@@ -6,7 +6,7 @@ Version 0.3.7:
 		- 
 	
 	fixes:
-		- 
+		- fake at input was broken
 
 Version 0.3.6:
 	changes:
