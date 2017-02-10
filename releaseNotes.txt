@@ -7,6 +7,7 @@ Version 0.3.7:
 	
 	fixes:
 		- fake at input was broken
+		- did not work at all in Firefox 45.7.0 (ESR)
 
 Version 0.3.6:
 	changes:
