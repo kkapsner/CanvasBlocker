@@ -31,6 +31,16 @@
 	"rng_options.persistent": "persistent",
 	"rng_options.non persistent": "nicht persistent",
 	"rng_title": "Zufallszahlengenerator",
+
+	"persistentRndStorage_title": "Persistenter Speicher",
+	"persistentRndStorage_description": "Speichert die Informationen für den persistenten Zufallszahlengenerator über einen Neustart hinweg.",
+	
+	"storePersistentRnd_title": "Persistente Daten speichern",
+	"storePersistentRnd_description": "Ob Daten für den persistenten Zufallszahlengenerator gespeichert werden sollen.",
+	
+	"clearPersistentRnd_title": "Persistenten Speicher leeren",
+	"clearPersistentRnd_description": "Löscht alle Daten für den persistenten Zufallszahlengenerator.",
+	"clearPersistentRnd_label": "Leeren",
 	
 	"disableNotifications": "Benachrichtigungen deaktivieren",
 	"displayCallingStack": "Aufrufestack anzeigen",

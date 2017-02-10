@@ -3,7 +3,7 @@ Version 0.3.7:
 		- 
 	
 	new features:
-		- 
+		- data for persistent random number generator can be stored
 	
 	fixes:
 		- fake at input was broken

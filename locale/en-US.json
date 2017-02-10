@@ -29,8 +29,18 @@
 	
 	"rng_description": "",
 	"rng_options.persistent": "persistent",
-	"rng.non persistent": "non persistent",
+	"rng_options.non persistent": "non persistent",
 	"rng_title": "Random number generator",
+	
+	"persistentRndStorage_title": "Persistent storage",
+	"persistentRndStorage_description": "Stores the data for the persistent random number generator for usage after restart.",
+	
+	"storePersistentRnd_title": "Store persistent data",
+	"storePersistentRnd_description": "If data for the persistent random number generator should be stored.",
+	
+	"clearPersistentRnd_title": "Clear persistent random storage",
+	"clearPersistentRnd_description": "Deletes all data for the persistent random number generator.",
+	"clearPersistentRnd_label": "Clear",
 
 	"disableNotifications": "disable notifications",
 	"displayCallingStack": "display calling stack",

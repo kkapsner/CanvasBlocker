@@ -95,6 +95,24 @@
 			]
 		},
 		{
+			"name": "persistentRndStorage",
+			"title": "Persistent storage",
+			"type": "string",
+			"value": ""
+		},
+		{
+			"name": "storePersistentRnd",
+			"title": "Store persistent data",
+			"type": "bool",
+			"value": false
+		},
+		{
+			"name": "clearPersistentRnd",
+			"title": "Clear persistent random storage",
+			"type": "control",
+			"label": "Clear"
+		},
+		{
 			"name": "askOnlyOnce",
 			"title": "Ask only once",
 			"type": "bool",
