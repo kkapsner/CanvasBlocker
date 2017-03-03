@@ -169,11 +169,11 @@
 	"main": "lib/main.js",
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.3.7-Development",
+	"version": "0.3.8-Development",
 	
 	"engines": {
-		"firefox": ">=45.7.0",
-		"fennec": ">=45.7.0"
+		"firefox": ">=45.0a1",
+		"fennec": ">=45.0"
 	},
 	"permissions": {
 		"private-browsing": true,
