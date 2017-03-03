@@ -172,8 +172,8 @@
 	"version": "0.3.7-Release",
 	
 	"engines": {
-		"firefox": ">=45.7.0",
-		"fennec": ">=45.7.0"
+		"firefox": ">=45.0a1",
+		"fennec": ">=45.0"
 	},
 	"permissions": {
 		"private-browsing": true,
