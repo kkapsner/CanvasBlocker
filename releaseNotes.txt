@@ -1,13 +1,12 @@
 Version 0.3.7:
-	changes:
-		- 
-	
 	new features:
 		- data for persistent random number generator can be stored
 	
 	fixes:
 		- fake at input was broken
 		- did not work at all in Firefox 45.7.0 (ESR)
+		- disabled WebGL created error
+		- ask for permission was broken
 
 Version 0.3.6:
 	changes:
