@@ -6,7 +6,7 @@ Version 0.3.8:
 		- 
 	
 	fixes:
-		- 
+		- prevented error when canvas has size zero
 
 Version 0.3.7:
 	new features:
