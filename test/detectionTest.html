@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Detection Test</title>
+	<style>
+		.notRun {
+			color: lightgray;
+		}
+		.loud .status{
+			color: red;
+		}
+		.stealthy .status{
+			color: darkgreen;
+		}
+		.failed {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+<ul id="tests"></ul>
+<script>
+var addTest = (function(){
+	var stati = [
+		{className: "notRun", text: "not run"},
+		{className: "loud", text: "CB detected"},
+		{className: "stealthy", text: "CB not detected"},
+		{className: "failed", text: "test failed"}
+	];
+	var ul = document.getElementById("tests");
+	return function addTest(name, func){
+		var logs = [];
+		function log(){
+			for (var i = 0; i < arguments.length; i += 1){
+				logs.push(arguments[i]);
+			}
+		}
+		var status = 0;
+		try {
+			status = func(log)? 1: 2;
+		}
+		catch (e){
+			status = 3;
+		}
+		var li = document.createElement("li");
+		li.className = stati[status].className;
+		var nameNode = document.createElement("span");
+		nameNode.className = "name";
+		nameNode.textContent = name;
+		nameNode.title = func.toString();
+		li.appendChild(nameNode);
+		li.appendChild(document.createTextNode(": "));
+		var statusNode = document.createElement("span");
+		statusNode.className = "status";
+		statusNode.textContent = stati[status].text;
+		statusNode.title = logs.join("\n");
+		li.appendChild(statusNode);
+		ul.appendChild(li);
+	}
+}());
+
+addTest("function length", function(){return CanvasRenderingContext2D.prototype.getImageData.length === 0;});
+addTest("error provocation 1", function(log){
+	var canvas = document.createElement('canvas');
+	var ctx = canvas.getContext("2d");
+	var canvasBlocker = false;
+	try{
+		ctx.getImageData(0, 0, 0, 0);
+	}
+	catch (err){
+		try {
+			log(err.name);
+		}
+		catch (e){
+			canvasBlocker = true;
+		}
+	}
+	return canvasBlocker;
+});
+addTest("error provocation 2", function(log){
+	var canvas = document.createElement('canvas');
+	canvas.width = 0;
+	var ctx = canvas.getContext("2d");
+	var canvasBlocker = false;
+	try{
+		ctx.getImageData(0, 0, 1, 1);
+	}
+	catch (err){
+		try {
+			log(err.name);
+		}
+		catch (e){
+			canvasBlocker = true;
+		}
+	}
+	return canvasBlocker;
+});
+addTest("error provocation 3", function(log){
+	var canvasBlocker = false;
+	try{
+		CanvasRenderingContext2D.prototype.getImageData.apply(undefined, [0, 0, 1, 1]);
+	}
+	catch (err){
+		try {
+			log(err.name);
+		}
+		catch (e){
+			canvasBlocker = true;
+		}
+	}
+	return canvasBlocker;
+});
+</script>
+</body>
+</html>

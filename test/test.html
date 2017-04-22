@@ -9,12 +9,14 @@
 	<h1>top Test</h1>
 	<img class="display" width="100%"><br>
 	Hash: <span class="hash"></span>
+	<button>refresh</button>
 </div>
 <div id="iframe">
 	<h1>iFrame Test. Thanks to DocumentRoot.</h1>
 	<img class="display" width="100%"><br>
 	Hash: <span class="hash"></span>
 	<iframe sandbox="allow-same-origin" style="display:none"></iframe>
+	<button>refresh</button>
 </div>
 <script>
 (function(){
@@ -33,7 +35,9 @@
 	}
 	
 	show(document.getElementById("top"), topTest());
+	document.querySelector("#top button").addEventListener("click", function(){show(document.getElementById("top"), topTest());});
 	show(document.getElementById("iframe"), iframeTest());
+	document.querySelector("#iframe button").addEventListener("click", function(){show(document.getElementById("iframe"), iframeTest());});
 }());
 
 function draw(canvas){
