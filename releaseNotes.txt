@@ -8,6 +8,7 @@ Version 0.3.8:
 	fixes:
 		- prevented error when canvas has size zero
 		- frame script was not loaded in the first tab that was restored from the last session
+		- prevented error when wrong object is passed to the faked functions
 
 Version 0.3.7:
 	new features:
