@@ -3,7 +3,7 @@ Version 0.3.8:
 		- 
 	
 	new features:
-		- 
+		- added embedded WebExtension to store the preferences for the transition
 	
 	fixes:
 		- prevented error when canvas has size zero

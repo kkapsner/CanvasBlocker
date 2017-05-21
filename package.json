@@ -172,11 +172,12 @@
 	"version": "0.3.8-Development",
 	
 	"engines": {
-		"firefox": ">=45.0a1",
-		"fennec": ">=45.0"
+		"firefox": ">=50.0",
+		"fennec": ">=50.0"
 	},
 	"permissions": {
 		"private-browsing": true,
 		"multiprocess": true
-	}
+	},
+	"hasEmbeddedWebExtension": true
 }
