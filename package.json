@@ -169,7 +169,7 @@
 	"main": "lib/main.js",
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
-	"version": "0.3.8-Development",
+	"version": "0.4.0-Development",
 	
 	"engines": {
 		"firefox": ">=50.0",
