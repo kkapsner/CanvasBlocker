@@ -1,0 +1,313 @@
+{
+	"addon_title": {
+		"message": "CanvasBlocker",
+		"description": ""
+	},
+	"addon_description": {
+		"message": "Ändert die JS-API zum Ändern von <canvas> um Canvas-Fingerprinting zu verhindern.",
+		"description": ""
+	},
+	
+	"allowPDFCanvas_description": {
+		"message": "Die native pdf.js verwendet <canvas> um den Inhalt von PDFs anzuzeigen. Wenn viele Nachfragedialoge erscheinen oder die PDF-Ansicht nicht funktioniert, müssen diese erlaubt werden.",
+		"description": ""
+	},
+	"allowPDFCanvas_title": {
+		"message": "<canvas> in PDFs erlauben",
+		"description": ""
+	},
+	"askForInvisiblePermission": {
+		"message": "Wollen Sie unsichtbare <canvas> erlauben?",
+		"description": ""
+	},
+	"askForInvisibleInputPermission": {
+		"message": "Wollen Sie das Schreiben in ein unsichtbares <canvas> erlauben?",
+		"description": ""
+	},
+	"askForInvisibleReadoutPermission": {
+		"message": "Wollen Sie das Auslesen von unsichtbaren <canvas> erlauben?",
+		"description": ""
+	},
+	"askForPermission": {
+		"message": "Wollen Sie <canvas> erlauben?",
+		"description": ""
+	},
+	"askForInputPermission": {
+		"message": "Wollen Sie das Schreiben in ein <canvas> erlauben?",
+		"description": ""
+	},
+	"askForReadoutPermission": {
+		"message": "Wollen Sie das Auslesen von <canvas> erlauben?",
+		"description": ""
+	},
+	"askForVisiblePermission": {
+		"message": "Wollen Sie das rot umrandete <canvas> erlauben?",
+		"description": ""
+	},
+	"askForVisibleInputPermission": {
+		"message": "Wollen Sie das Schreiben in das rot umrandete <canvas> erlauben?",
+		"description": ""
+	},
+	"askForVisibleReadoutPermission": {
+		"message": "Wollen Sie das Auslesen des rot umrandeten <canvas> erlauben?",
+		"description": ""
+	},
+	"askOnlyOnce_description": {
+		"message": "Wenn der Blockiermodus des Canvas Blockers auf \"um Erlaubnis fragen\" oder \"bei Auslese-API um Erlaubnis fragen\" gesetzt ist, erscheint jedes mal ein Abfragedialog, wenn eine Seite versucht, die (Auslese-)API aufzurufen. Diese Einstellung versucht diese Abfrage nur einmal pro Seite anzuzeigen, unabhängig davon wie oft die API aufgerufen wird. Es können trotzdem mehrere Dialoge pro Seite erscheinen.",
+		"description": ""
+	},
+	"askOnlyOnce_title": {
+		"message": "Nur einmal nachfragen",
+		"description": ""
+	},
+	"blackList_description": {
+		"message": "Domänen oder URLs, die die <canvas>-API niemals verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"description": ""
+	},
+	"blackList_title": {
+		"message": "Blacklist",
+		"description": ""
+	},
+	
+	"blockMode_description": {
+		"message": "",
+		"description": ""
+	},
+	"blockMode_options.allow everything": {
+		"message": "alles erlauben",
+		"description": ""
+	},
+	"blockMode_options.allow only white list": {
+		"message": "nur Einträge der Whitelist erlauben",
+		"description": ""
+	},
+	"blockMode_options.ask for permission": {
+		"message": "um Erlaubnis fragen",
+		"description": ""
+	},
+	"blockMode_options.ask for readout API permission": {
+		"message": "bei Auslese-API um Erlaubnis fragen",
+		"description": ""
+	},
+	"blockMode_options.block everything": {
+		"message": "alles blockieren",
+		"description": ""
+	},
+	"blockMode_options.block only black list": {
+		"message": "nur Einträge der Blacklist blockieren",
+		"description": ""
+	},
+	"blockMode_options.block readout API": {
+		"message": "Auslese-API blockieren",
+		"description": ""
+	},
+	"blockMode_options.fake readout API": {
+		"message": "Auslese-API vortäuschen",
+		"description": ""
+	},
+	"blockMode_options.fake input API": {
+		"message": "Bei Ausgabe vortäuschen",
+		"description": ""
+	},
+	"blockMode_title": {
+		"message": "Blockiermodus",
+		"description": ""
+	},
+	
+	"maxFakeSize_description": {
+		"message": "Canvas, die eine größere Fläche als die hier angegebene Zahl haben, werden nicht vorgetäuscht. (Null eingeben, um es zu deaktivieren.)",
+		"description": ""
+	},
+	"maxFakeSize_title": {
+		"message": "Maximale Vortäuschgröße",
+		"description": ""
+	},
+	
+	"rng_description": {
+		"message": "",
+		"description": ""
+	},
+	"rng_options.persistent": {
+		"message": "persistent",
+		"description": ""
+	},
+	"rng_options.non persistent": {
+		"message": "nicht persistent",
+		"description": ""
+	},
+	"rng_title": {
+		"message": "Zufallszahlengenerator",
+		"description": ""
+	},
+
+	"persistentRndStorage_title": {
+		"message": "Persistenter Speicher",
+		"description": ""
+	},
+	"persistentRndStorage_description": {
+		"message": "Speichert die Informationen für den persistenten Zufallszahlengenerator über einen Neustart hinweg.",
+		"description": ""
+	},
+	
+	"storePersistentRnd_title": {
+		"message": "Persistente Daten speichern",
+		"description": ""
+	},
+	"storePersistentRnd_description": {
+		"message": "Ob Daten für den persistenten Zufallszahlengenerator gespeichert werden sollen.",
+		"description": ""
+	},
+	
+	"clearPersistentRnd_title": {
+		"message": "Persistenten Speicher leeren",
+		"description": ""
+	},
+	"clearPersistentRnd_description": {
+		"message": "Löscht alle Daten für den persistenten Zufallszahlengenerator.",
+		"description": ""
+	},
+	"clearPersistentRnd_label": {
+		"message": "Leeren",
+		"description": ""
+	},
+	
+	"disableNotifications": {
+		"message": "Benachrichtigungen deaktivieren",
+		"description": ""
+	},
+	"displayCallingStack": {
+		"message": "Aufrufestack anzeigen",
+		"description": ""
+	},
+	"displayFullURL": {
+		"message": "URL anzeigen",
+		"description": ""
+	},
+	"enableStackList_description": {
+		"message": "",
+		"description": ""
+	},
+	"enableStackList_title": {
+		"message": "Dateispezifische Whitelist verwenden",
+		"description": ""
+	},
+	
+	"fakedReadout": {
+		"message": "Auslese vorgetäuscht auf {url}",
+		"description": ""
+	},
+	"fakedInput": {
+		"message": "Bei Ausgabe vorgetäuscht auf {url}",
+		"description": ""
+	},
+	
+	"ignoreList_description": {
+		"message": "Domänen oder URLs, bei denen keine Benachrichtigungen angezeigt werden sollen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"description": ""
+	},
+	"ignoreList_title": {
+		"message": "Ignorierliste",
+		"description": ""
+	},
+	"ignorelistDomain": {
+		"message": "verschweige Domain",
+		"description": ""
+	},
+	"ignorelistURL": {
+		"message": "ignoriere URL",
+		"description": ""
+	},
+	"inputIgnoreDomain": {
+		"message": "Geben Sie die Domain ein, die zur Ignorierliste hinzugefügt werden soll:",
+		"description": ""
+	},
+	"inputWhitelistDomain": {
+		"message": "Geben Sie die URL RegExp ein, die erlaubt werden soll:",
+		"description": ""
+	},
+	"inputWhitelistURL": {
+		"message": "Geben Sie die Domain ein, die erlaubt werden soll:",
+		"description": ""
+	},
+	"settings": {
+		"message": "Einstellungen",
+		"description": ""
+	},
+	"showCallingFile_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCallingFile_title": {
+		"message": "Aufrufende Datei anzeigen",
+		"description": ""
+	},
+	"showCompleteCallingStack_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCompleteCallingStack_title": {
+		"message": "Kompletten Aufrufestack anzeigen",
+		"description": ""
+	},
+	"showNotifications_description": {
+		"message": "Benachrichtigungen anzeigen, wenn der Blockiermodus auf \"Auslese-API vortäuschen\" gesetzt ist.",
+		"description": ""
+	},
+	"showNotifications_title": {
+		"message": "Benachrichtigungen anzeigen",
+		"description": ""
+	},
+	"notificationDisplayTime_description": {
+		"message": "Anzahl der Sekunden, die die Benachrichtigungen angezeigt werden sollen. (Null eingeben, um die Benachrichtigungen nicht automatisch zu schließen.)",
+		"description": ""
+	},
+	"notificationDisplayTime_title": {
+		"message": "Benachrichtigungsanzeigezeit",
+		"description": ""
+	},
+	"sourceOutput": {
+		"message": "Aufrufende Datei",
+		"description": ""
+	},
+	"stackEntryOutput": {
+		"message": "{url} Zeile {line} Spalte {column}",
+		"description": ""
+	},
+	"stackList_description": {
+		"message": "JS-Dateien, die die <canvas>-API verwenden dürfen. Die Angabe muss hier im JSON-Format vorliegen. Beispiel: [{\"url\": \"http://domain/datei1.js\"}, {\"url\": \"http://domain/datei2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"description": ""
+	},
+	"stackList_title": {
+		"message": "Dateispezifische Whitelist",
+		"description": ""
+	},
+	"whiteList_description": {
+		"message": "Domänen oder URLs, die die <canvas>-API verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"description": ""
+	},
+	"whiteList_title": {
+		"message": "Whitelist",
+		"description": ""
+	},
+	"whitelistDomain": {
+		"message": "erlaube Domain",
+		"description": ""
+	},
+	"whitelistURL": {
+		"message": "erlaube URL",
+		"description": ""
+	},
+	
+	"showReleaseNotes_title": {
+		"message": "Versionsinformationen",
+		"description": ""
+	},
+	"showReleaseNotes_description": {
+		"message": "",
+		"description": ""
+	},
+	"showReleaseNotes_label": {
+		"message": "Anzeigen",
+		"description": ""
+	}
+}

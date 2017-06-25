@@ -1,0 +1,317 @@
+{
+	"addon_title": {
+		"message": "CanvasBlocker",
+		"description": ""
+	},
+	"addon_description": {
+		"message": "Changes the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
+		"description": ""
+	},
+	
+	"allowPDFCanvas_description": {
+		"message": "Firefox's native PDF reader uses the API to display PDF content. If too many ask dialogs appear or the PDF reader does not work at all, these have to be allowed.",
+		"description": ""
+	},
+	"allowPDFCanvas_title": {
+		"message": "Allow canvas in PDFs",
+		"description": ""
+	},
+	"askForInvisiblePermission": {
+		"message": "Do you want to allow invisible <canvas>?",
+		"description": ""
+	},
+	"askForInvisibleInputPermission": {
+		"message": "Do you want to allow invisible <canvas> input?",
+		"description": ""
+	},
+	"askForInvisibleReadoutPermission": {
+		"message": "Do you want to allow invisible <canvas> readout?",
+		"description": ""
+	},
+	"askForPermission": {
+		"message": "Do you want to allow <canvas>?",
+		"description": ""
+	},
+	"askForPermission": {
+		"message": "Do you want to allow <canvas> input?",
+		"description": ""
+	},
+	"askForReadoutPermission": {
+		"message": "Do you want to allow <canvas> readout?",
+		"description": ""
+	},
+	"askForVisiblePermission": {
+		"message": "Do you want to allow the red bordered <canvas>?",
+		"description": ""
+	},
+	"askForVisiblePermission": {
+		"message": "Do you want to allow input in the red bordered <canvas>?",
+		"description": ""
+	},
+	"askForVisibleReadoutPermission": {
+		"message": "Do you want to allow the readout of the red bordered <canvas>?",
+		"description": ""
+	},
+	"askOnlyOnce_description": {
+		"message": "When Canvas Blocker's Block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.",
+		"description": ""
+	},
+	"askOnlyOnce_title": {
+		"message": "Ask only once",
+		"description": ""
+	},
+	"blackList_description": {
+		"message": "Domains or URLs where the <canvas>-API should always be blocked. To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"blackList_title": {
+		"message": "Black list",
+		"description": ""
+	},
+	
+	"blockMode_description": {
+		"message": "",
+		"description": ""
+	},
+	"blockMode_options.allow everything": {
+		"message": "allow everything",
+		"description": ""
+	},
+	"blockMode_options.allow only white list": {
+		"message": "allow only white list",
+		"description": ""
+	},
+	"blockMode_options.ask for permission": {
+		"message": "ask for permission",
+		"description": ""
+	},
+	"blockMode_options.ask for readout API permission": {
+		"message": "ask for readout API permission",
+		"description": ""
+	},
+	"blockMode_options.block everything": {
+		"message": "block everything",
+		"description": ""
+	},
+	"blockMode_options.block only black list": {
+		"message": "block only black list",
+		"description": ""
+	},
+	"blockMode_options.block readout API": {
+		"message": "block readout API",
+		"description": ""
+	},
+	"blockMode_options.fake readout API": {
+		"message": "fake readout API",
+		"description": ""
+	},
+	"blockMode_options.fake input API": {
+		"message": "fake at input",
+		"description": ""
+	},
+	"blockMode_title": {
+		"message": "Block mode",
+		"description": ""
+	},
+	
+	"maxFakeSize_description": {
+		"message": "Canvas with a bigger area than this number will not be faked. (Enter zero to disable.)",
+		"description": ""
+	},
+	"maxFakeSize_title": {
+		"message": "Maximal fake size",
+		"description": ""
+	},
+	
+	"rng_description": {
+		"message": "",
+		"description": ""
+	},
+	"rng_options.persistent": {
+		"message": "persistent",
+		"description": ""
+	},
+	"rng_options.non persistent": {
+		"message": "non persistent",
+		"description": ""
+	},
+	"rng_title": {
+		"message": "Random number generator",
+		"description": ""
+	},
+	
+	"persistentRndStorage_title": {
+		"message": "Persistent storage",
+		"description": ""
+	},
+	"persistentRndStorage_description": {
+		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"description": ""
+	},
+	
+	"storePersistentRnd_title": {
+		"message": "Store persistent data",
+		"description": ""
+	},
+	"storePersistentRnd_description": {
+		"message": "If data for the persistent random number generator should be stored.",
+		"description": ""
+	},
+	
+	"clearPersistentRnd_title": {
+		"message": "Clear persistent random storage",
+		"description": ""
+	},
+	"clearPersistentRnd_description": {
+		"message": "Deletes all data for the persistent random number generator.",
+		"description": ""
+	},
+	"clearPersistentRnd_label": {
+		"message": "Clear",
+		"description": ""
+	},
+
+	"disableNotifications": {
+		"message": "disable notifications",
+		"description": ""
+	},
+	"displayCallingStack": {
+		"message": "display calling stack",
+		"description": ""
+	},
+	"displayFullURL": {
+		"message": "display full URL",
+		"description": ""
+	},
+	"enableStackList_description": {
+		"message": "",
+		"description": ""
+	},
+	"enableStackList_title": {
+		"message": "Use file specific white list",
+		"description": ""
+	},
+	
+	"fakedReadout": {
+		"message": "Faked readout on {url}",
+		"description": ""
+	},
+	"fakedInput": {
+		"message": "Faked at input on {url}",
+		"description": ""
+	},
+	
+	"ignoreList_description": {
+		"message": "Domains or URLs where no notification will be shown. To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"ignoreList_title": {
+		"message": "Ignore list",
+		"description": ""
+	},
+	"ignorelistDomain": {
+		"message": "silence domain",
+		"description": ""
+	},
+	"ignorelistURL": {
+		"message": "ignore URL",
+		"description": ""
+	},
+	"inputIgnoreDomain": {
+		"message": "Input domain to add to ignore list:",
+		"description": ""
+	},
+	"inputWhitelistDomain": {
+		"message": "Input URL RegExp to add to white list:",
+		"description": ""
+	},
+	"inputWhitelistURL": {
+		"message": "Input domain to add to white list:",
+		"description": ""
+	},
+	"settings": {
+		"message": "settings",
+		"description": ""
+	},
+	"showCallingFile_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCallingFile_title": {
+		"message": "Show calling file",
+		"description": ""
+	},
+	"showCompleteCallingStack_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCompleteCallingStack_title": {
+		"message": "Display complete calling stack",
+		"description": ""
+	},
+	"showNotifications_description": {
+		"message": "Show a notification when the block mode is set to \"fake readout API\".",
+		"description": ""
+	},
+	"showNotifications_title": {
+		"message": "Show notifications",
+		"description": ""
+	},
+	"notificationDisplayTime_description": {
+		"message": "Number of seconds the notifications are shown. (Enter zero to disable automatic closing.)",
+		"description": ""
+	},
+	"notificationDisplayTime_title": {
+		"message": "Notification display time",
+		"description": ""
+	},
+	"sourceOutput": {
+		"message": "Calling file",
+		"description": ""
+	},
+	"stackEntryOutput": {
+		"message": "{url} line {line} column {column}",
+		"description": ""
+	},
+	"stackList_description": {
+		"message": "JS files which are allowed to use the <canvas>-API. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"description": ""
+	},
+	"stackList_title": {
+		"message": "File specific white list",
+		"description": ""
+	},
+	"whilteList_title": {
+		"message": "White list",
+		"description": ""
+	},
+	"whiteList_description": {
+		"message": "Domains or URLs where the <canvas>-API should not be blocked. To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"whitelist": {
+		"message": "whitelist",
+		"description": ""
+	},
+	"whitelistDomain": {
+		"message": "whitelist domain",
+		"description": ""
+	},
+	"whitelistURL": {
+		"message": "whitelist URL",
+		"description": ""
+	},
+	
+	"showReleaseNotes_title": {
+		"message": "Release notes",
+		"description": ""
+	},
+	"showReleaseNotes_description": {
+		"message": "",
+		"description": ""
+	},
+	"showReleaseNotes_label": {
+		"message": "Show",
+		"description": ""
+	}
+}
