@@ -1,6 +1,9 @@
 Version 0.4.0:
+	todos:
+		- import settings in content script (have to wait for the new API to register content scripts)
+		- check if webGL is still working
 	changes:
-		- 
+		- switched to webExtension
 	
 	new features:
 		- 
