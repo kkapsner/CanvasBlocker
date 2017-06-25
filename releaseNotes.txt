@@ -6,7 +6,7 @@ Version 0.4.0:
 		- 
 	
 	fixes:
-		- 
+		- ask mode did not work for input types
 
 Version 0.3.8:
 	changes:
