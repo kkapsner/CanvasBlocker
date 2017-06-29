@@ -115,7 +115,7 @@
 	},
 	
 	"maxFakeSize_description": {
-		"message": "Canvas with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device. CAUTION: This lowers the savety of the addon, therefore it is highly recommended not to set this value below 100 000.",
+		"message": "Canvas with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device. CAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 100 000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
