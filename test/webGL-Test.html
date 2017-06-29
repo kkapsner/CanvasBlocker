@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+<canvas id="canvas" width="10" height="10"></canvas>
+<span id="output"></span>
+<script>
+(function(){
+	var canvas = document.getElementById('canvas');
+	var gl = canvas.getContext('webgl');
+	var pixels = new Uint8Array(gl.drawingBufferWidth * gl.drawingBufferHeight * 4);
+	gl.readPixels(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight, gl.RGBA, gl.UNSIGNED_BYTE, pixels);
+	var values = [];
+	for (var i = 0; i < pixels.length; i += 1){
+		values[pixels[i]] = (values[pixels[i]] || 0) + 1;
+	}
+	document.getElementById("output").textContent = JSON.stringify(values);
+}());
+</script>
+</body></html>

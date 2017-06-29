@@ -1,7 +1,6 @@
 Version 0.4.0:
 	todos:
 		- import settings in content script (have to wait for the new API to register content scripts)
-		- check if webGL is still working
 		- add notification actions to page action popup
 	changes:
 		- switched to webExtension
@@ -12,6 +11,7 @@ Version 0.4.0:
 	
 	fixes:
 		- ask mode did not work for input types
+		- allow page scripts to overwrite the faked funtions
 
 Version 0.3.8:
 	changes:
