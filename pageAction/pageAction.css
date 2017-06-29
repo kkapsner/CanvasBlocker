@@ -1,0 +1,10 @@
+.template {
+	display: none;
+}
+
+#prints {
+	min-width: 400px;
+}
+.print {
+	white-space: pre;
+}

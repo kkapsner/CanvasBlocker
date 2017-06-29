@@ -2,8 +2,10 @@ Version 0.4.0:
 	todos:
 		- import settings in content script (have to wait for the new API to register content scripts)
 		- check if webGL is still working
+		- add notification actions to page action popup
 	changes:
 		- switched to webExtension
+		- notifications are now done via page action
 	
 	new features:
 		- 

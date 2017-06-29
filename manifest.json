@@ -34,6 +34,14 @@
 		"browser_style": true,
 		"page": "options/options.html"
 	},
+	"page_action": {
+		"browser_style": true,
+		"default_icon": {
+			"19": "pageAction/printed19.png",
+			"38": "pageAction/printed38.png"
+		},
+		"default_popup": "pageAction/pageAction.html"
+	},
 	"author": "Korbinian Kapsner",
 	"license": "MPL 2.0",
 	"permissions": [
