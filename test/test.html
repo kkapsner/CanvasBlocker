@@ -34,9 +34,11 @@
 		});
 	}
 	
-	show(document.getElementById("top"), topTest());
+	if (location.search !== "?notInitial"){
+		show(document.getElementById("top"), topTest());
+		show(document.getElementById("iframe"), iframeTest());
+	}
 	document.querySelector("#top button").addEventListener("click", function(){show(document.getElementById("top"), topTest());});
-	show(document.getElementById("iframe"), iframeTest());
 	document.querySelector("#iframe button").addEventListener("click", function(){show(document.getElementById("iframe"), iframeTest());});
 }());
 
