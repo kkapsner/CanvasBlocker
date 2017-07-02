@@ -109,12 +109,12 @@ document.body.appendChild(table);
 		"type": "bool",
 		"value": true
 	},
-	{
-		"name": "notificationDisplayTime",
-		"title": "notification display time",
-		"type": "integer",
-		"value": 30
-	},
+	// {
+		// "name": "notificationDisplayTime",
+		// "title": "notification display time",
+		// "type": "integer",
+		// "value": 30
+	// },
 	{
 		"name": "ignoreList",
 		"title": "Ignore list",
@@ -161,7 +161,7 @@ document.body.appendChild(table);
 			html += '<input type="text"' + inputAttributes + ' value="' + pref.value + '">';
 			break;
 		case "bool":
-			html += '<input type="checkbox"' + inputAttributes + (pref.value? ' checked="checked"': "") + '>';
+			html += '<input type="checkbox" style="display: inline"' + inputAttributes + (pref.value? ' checked="checked"': "") + '>';
 			break;
 		case "menulist":
 			html += '<select' + inputAttributes + '>' +

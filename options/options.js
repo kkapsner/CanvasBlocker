@@ -20,30 +20,39 @@
 	
 	Array.from(document.querySelectorAll("input.setting, select.setting")).forEach(function(input){
 		var storageName = input.dataset.storageName;
-		browser.storage.local.get(storageName).then(function(value){
-			// console.log(storageName, "got storage value", value);
-			if (value.hasOwnProperty(storageName)){
-				input.value = value[storageName];
-			}
-		});
-		
-		input.addEventListener("change", function(){
-			var value;
-			if (this.type === "checkbox"){
-				value = this.checked;
-			}
-			else {
-				value = this.value;
-			}
-			var obj = {};
-			obj[storageName] = value;
-			browser.storage.local.set(obj);
-		});
+		if (input.type === "checkbox"){
+			browser.storage.local.get(storageName).then(function(value){
+				// console.log(storageName, "got storage value", value);
+				if (value.hasOwnProperty(storageName)){
+					input.checked = value[storageName];
+				}
+			});
+			
+			input.addEventListener("click", function(){
+				var value = this.checked;
+				var obj = {};
+				obj[storageName] = value;
+				browser.storage.local.set(obj);
+			});}
+		else {
+			browser.storage.local.get(storageName).then(function(value){
+				// console.log(storageName, "got storage value", value);
+				if (value.hasOwnProperty(storageName)){
+					input.value = value[storageName];
+				}
+			});
+			
+			input.addEventListener("change", function(){
+				var value = this.value;
+				var obj = {};
+				obj[storageName] = value;
+				browser.storage.local.set(obj);
+			});
+		}
 	});
 	
 	var callbacks = {
 		showReleaseNotes: function(){
-			console.log("sdsdsdsd");
 			window.open("../releaseNotes.txt", "_blank");
 		},
 		clearPersistentRnd: function(){
@@ -60,9 +69,19 @@
 		});
 	});
 	
-	browser.storage.onChanged.addListener(function(data){
-		Object.keys(data).forEach(function(storageName){
-			
-		});
+	browser.storage.onChanged.addListener(function(change, area){
+		if (area === "local"){
+			Object.keys(change).forEach(function(key){
+				var input = document.querySelector(".setting[data-storage-name=" + key + "]");
+				if (input){
+					if (input.type === "checkbox"){
+						input.checked = change[key].newValue;
+					}
+					else {
+						input.value = change[key].newValue;
+					}
+				}
+			});
+		}
 	});
 }());	
