@@ -7,7 +7,12 @@
 	"homepage": "https://github.com/kkapsner/CanvasBlocker/",
 	"version": "0.4.0-Development",
 	"background": {
-		"scripts": ["lib/main.js"]
+		"scripts": [
+			"lib/defaultSettings.js",
+			"lib/require.js",
+			"lib/lists.js",
+			"lib/main.js"
+		]
 	},
 	"content_scripts": [{
 		"matches": ["<all_urls>"],

@@ -56,8 +56,8 @@
 			window.open("../releaseNotes.txt", "_blank");
 		},
 		clearPersistentRnd: function(){
-			browser.runtime.sendMessage({"canvasBlocker-clear-domain-rnd": true});
 			browser.storage.local.set({persistentRndStorage: ""});
+			browser.runtime.sendMessage({"canvasBlocker-clear-domain-rnd": true});
 		}
 	};
 	Array.from(document.querySelectorAll("button.setting")).forEach(function(button){
