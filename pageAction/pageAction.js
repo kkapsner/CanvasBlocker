@@ -33,6 +33,7 @@ Promise.all([
 	}
 	
 	const lists = require("./lists");
+	lists.updateAll();
 	const {parseErrorStack} = require("./callingStack");
 	var actionsCallbacks = {
 		displayFullURL: function({url}){
