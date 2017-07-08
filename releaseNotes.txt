@@ -7,7 +7,8 @@ Version 0.4.0:
 	
 	new features:
 		- information of all fake events in one tab are visible
-		- new setting to enable the inspection of the content of the faked canvas 
+		- new setting to enable the inspection of the content of the faked canvas
+		- settings page now only shows settings that are useful within the given settings set
 	
 	fixes:
 		- ask mode did not work for input types
