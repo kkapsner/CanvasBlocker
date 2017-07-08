@@ -115,7 +115,7 @@
 	},
 	
 	"maxFakeSize_description": {
-		"message": "Canvas with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device. CAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 100 000.",
+		"message": "Canvas with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 100 000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
@@ -299,6 +299,19 @@
 	},
 	"whitelistURL": {
 		"message": "whitelist URL",
+		"description": ""
+	},
+	
+	"inspectImage": {
+		"message": "inspect image",
+		"description": ""
+	},
+	"storeImageForInspection_title": {
+		"message": "Store image for inspection",
+		"description": ""
+	},
+	"storeImageForInspection_description": {
+		"message": "Enables the storage of the content of the faked canvas.\nCAUTION: This may lead to a lot of memory consumption.",
 		"description": ""
 	},
 	

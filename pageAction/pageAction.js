@@ -122,6 +122,12 @@ Promise.all([
 					button.addEventListener("click", function(){actionsCallbacks[key](data);});
 					actions.appendChild(button);
 				});
+				if (notification.dataURL){
+					var button = document.createElement("button");
+					button.textContent = browser.i18n.getMessage("inspectImage");
+					button.addEventListener("click", function(){document.body.innerHTML = "<img src=" + notification.dataURL + ">";});
+					actions.appendChild(button);
+				}
 				li.appendChild(actions);
 				
 				ul.appendChild(li);
