@@ -124,7 +124,7 @@
 	},
 	
 	"rng_description": {
-		"message": "",
+		"message": "nicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -307,7 +307,7 @@
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Aktiviert die Speicherung des Inhaltes der vorgetäuschtend Canvas.\nACHTUNG: Dies kann zu einem hohen Speicherverbrauch führen.",
+		"message": "Aktiviert die Speicherung des Inhaltes der vorgetäuschten Canvas.\nACHTUNG: Dies kann zu einem hohen Speicherverbrauch führen.",
 		"description": ""
 	},
 	

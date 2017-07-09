@@ -124,7 +124,7 @@
 	},
 	
 	"rng_description": {
-		"message": "",
+		"message": "non persistent: the random numbers will be determined freshly for each faking action.\npersistent: the random number will only be determined once for every domain.",
 		"description": ""
 	},
 	"rng_options.persistent": {
