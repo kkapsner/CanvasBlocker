@@ -15,9 +15,6 @@ Version 0.4.0:
 		- allow page scripts to overwrite the faked funtions
 
 Version 0.3.8:
-	changes:
-		- 
-	
 	new features:
 		- added embedded WebExtension to store the preferences for the transition
 	
