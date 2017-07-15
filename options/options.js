@@ -54,6 +54,11 @@ browser.storage.local.get().then(function(data){
 	var callbacks = {
 		showReleaseNotes: function(){
 			window.open("../releaseNotes.txt", "_blank");
+			// would be nicer but is not supported in fennec
+			// browser.windows.create({
+				// url: "../releaseNotes.txt",
+				// type: "popup"
+			// });
 		},
 		clearPersistentRnd: function(){
 			browser.storage.local.set({persistentRndStorage: ""});
