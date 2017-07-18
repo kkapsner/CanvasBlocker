@@ -4,10 +4,22 @@
 
 body {
 	margin: 5px;
+	white-space: nowrap;
 }
 
 #prints {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+button.inspectImage {
+	display: none;
+}
+.imageAvailable button.inspectImage {
+	display: initial;
+}
+
+img {
+	border: 1px solid black;
 }

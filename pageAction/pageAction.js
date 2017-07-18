@@ -15,6 +15,25 @@ function modalPrompt(message, defaultValue){
 	});
 }
 
+function log(...args){
+	function leftPad(str, char, pad){
+		str = "" + str;
+		return char.repeat(pad - str.length) + str;
+	}
+	args.unshift("page action script:");
+	var now = new Date();
+	args.unshift(
+		now.getFullYear() + "-" +
+		leftPad(now.getMonth() + 1, "0", 2) + "-" +
+		leftPad(now.getDate(), "0", 2) + " " +
+		leftPad(now.getHours(), "0", 2) + ":" +
+		leftPad(now.getMinutes(), "0", 2) + ":" +
+		leftPad(now.getSeconds(), "0", 2) + "." + 
+		leftPad(now.getMilliseconds(), "0", 3) 
+	);
+	console.log.apply(console, args);
+}
+
 Promise.all([
 	browser.tabs.query({active: true, currentWindow: true}),
 	browser.storage.local.get().then(function(data){
@@ -41,6 +60,9 @@ Promise.all([
 		},
 		displayCallingStack: function({errorStack}){
 			alert(parseErrorStack(errorStack));
+		},
+		inspectImage:  function({dataURL}){
+			document.body.innerHTML = "<img src=" + dataURL + ">";
 		},
 		ignorelistDomain: function({url}){
 			var domain = url.host;
@@ -86,8 +108,8 @@ Promise.all([
 	var tab = tabs[0];
 	browser.runtime.onMessage.addListener(function(data){
 		if (Array.isArray(data["canvasBlocker-notifications"])){
+			log("got notifications", data);
 			var ul = document.getElementById("prints");
-			ul.innerHTML = "";
 			data["canvasBlocker-notifications"].forEach(function(notification){
 				console.log(notification);
 				
@@ -115,18 +137,19 @@ Promise.all([
 				
 				var actions = document.createElement("span");
 				actions.className = "actions";
-				var data = {url, errorStack: notification.errorStack, notification};
-				Object.keys(actionsCallbacks).forEach(function(key){
+				var data = {url, errorStack: notification.errorStack, notification, dataURL: notification.dataURL};
+				Object.keys(actionsCallbacks).forEach(function(key, i){
 					var button = document.createElement("button");
+					button.className = key;
 					button.textContent = browser.i18n.getMessage(key);
 					button.addEventListener("click", function(){actionsCallbacks[key](data);});
 					actions.appendChild(button);
+					if (i % 3 === 2){
+						actions.appendChild(document.createElement("br"));
+					}
 				});
 				if (notification.dataURL){
-					var button = document.createElement("button");
-					button.textContent = browser.i18n.getMessage("inspectImage");
-					button.addEventListener("click", function(){document.body.innerHTML = "<img src=" + notification.dataURL + ">";});
-					actions.appendChild(button);
+					actions.classList.add("imageAvailable");
 				}
 				li.appendChild(actions);
 				
@@ -134,12 +157,17 @@ Promise.all([
 			});
 		}
 	});
+	log("clearing the display");
+	var ul = document.getElementById("prints");
+	ul.innerHTML = "";
+	log("request notifications from tab", tab.id);
 	browser.tabs.sendMessage(
 		tab.id,
 		{
 			"canvasBlocker-sendNotifications": tab.id
 		}
 	);
+	log("waiting for notifications");
 }).catch(function(e){
 	console.error(e);
 });
