@@ -32,15 +32,14 @@ var addTest = (function(){
 	return function addTest(name, func){
 		var logs = [];
 		function log(){
-			for (var i = 0; i < arguments.length; i += 1){
-				logs.push(arguments[i]);
-			}
+			logs.push(Array.prototype.slice.call(arguments).join(" "));
 		}
 		var status = 0;
 		try {
 			status = func(log)? 1: 2;
 		}
 		catch (e){
+			console.log(e);
 			status = 3;
 		}
 		var li = document.createElement("li");
@@ -60,7 +59,24 @@ var addTest = (function(){
 	}
 }());
 
-addTest("function length", function(){return CanvasRenderingContext2D.prototype.getImageData.length === 0;});
+addTest("function length", function(log){
+	if (CanvasRenderingContext2D.prototype.getImageData.length !== 4){
+		log("expected 4 parameters for getImageData - got", CanvasRenderingContext2D.prototype.getImageData.length);
+		return true;
+	}
+	else {
+		return false;
+	}
+});
+addTest("function code", function(log){
+	if (!CanvasRenderingContext2D.prototype.getImageData.toString().match(/^\s*function getImageData\s*\(\)\s*\{\s*\[native code\]\s*\}\s*$/)){
+		log("unexpected function code:", CanvasRenderingContext2D.prototype.getImageData.toString());
+		return true;
+	}
+	else {
+		return false;
+	}
+});
 addTest("function name", function(){return CanvasRenderingContext2D.prototype.getImageData.name !== "getImageData"});
 addTest("error provocation 1", function(log){
 	var canvas = document.createElement('canvas');
@@ -111,6 +127,30 @@ addTest("error provocation 3", function(log){
 		}
 	}
 	return canvasBlocker;
+});
+function testKnownPixelValue(size, log){
+	var canvas = document.createElement("canvas");
+	canvas.height = size;
+	canvas.width = size;
+	var context = canvas.getContext("2d");
+	context.fillStyle = "rgba(0, 127, 255, 1)";
+	var pixelValues = [0, 127, 255, 255];
+	context.fillRect(0, 0, canvas.width, canvas.height);
+	var p = context.getImageData(0, 0, canvas.width, canvas.height).data;
+	for (var i = 0; i < p.length; i += 1){
+		if (p[i] !== pixelValues[i%4]){
+			log("wrong value", p[i], "at", i, "expected", pixelValues[i%4]);
+			return true;
+		}
+	}
+	return false;
+
+}
+addTest("known pixel value test 1", function(log){
+	return testKnownPixelValue(1, log);
+});
+addTest("known pixel value test 10", function(log){
+	return testKnownPixelValue(10, log);
 });
 </script>
 </body>
