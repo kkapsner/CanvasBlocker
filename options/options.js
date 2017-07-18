@@ -44,6 +44,9 @@ browser.storage.local.get().then(function(data){
 			
 			input.addEventListener("change", function(){
 				var value = this.value;
+				if (this.type === "number"){
+					value = parseFloat(value);
+				}
 				var obj = {};
 				obj[storageName] = value;
 				browser.storage.local.set(obj);
