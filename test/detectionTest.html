@@ -144,13 +144,40 @@ function testKnownPixelValue(size, log){
 		}
 	}
 	return false;
-
 }
 addTest("known pixel value test 1", function(log){
 	return testKnownPixelValue(1, log);
 });
 addTest("known pixel value test 10", function(log){
 	return testKnownPixelValue(10, log);
+});
+addTest("double readout test", function(log){
+	var canvas = document.createElement("canvas");
+	var context = canvas.getContext("2d");
+	var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+	for (var i = 0; i < imageData.data.length; i += 1){
+		if (i % 4 !== 3){
+			imageData.data[i] = Math.floor(256 * Math.random());
+		}
+		else {
+			imageData.data[i] = 255;
+		}
+	}
+	context.putImageData(imageData, 0, 0);
+	
+	var imageData1 = context.getImageData(0, 0, canvas.width, canvas.height);
+	var imageData2 = context.getImageData(0, 0, canvas.width, canvas.height);
+	for (var i = 0; i < imageData2.data.length; i += 1){
+		if (imageData1.data[i] !== imageData2.data[i]){
+			log("mismatch at", i, ":",
+				imageData1.data[i], "(", imageData1.data[i].toString(2), ")",
+				"!=",
+				imageData2.data[i], "(", imageData2.data[i].toString(2), ")",
+				"| original:", imageData.data[i], "(", imageData.data[i].toString(2), ")");
+			return true;
+		}
+	}
+	return false;
 });
 </script>
 </body>
