@@ -1,14 +1,18 @@
 Version 0.4.0:
 	todos:
 		- import settings in content script (have to wait for the new API to register content scripts)
+		
 	changes:
 		- switched to webExtension
 		- notifications are now done via page action
+		- minimal and maximal fake size are now respected in all fakeable functions
 	
 	new features:
 		- information of all fake events in one tab are visible
-		- new setting to enable the inspection of the content of the faked canvas
 		- settings page now only shows settings that are useful within the given settings set
+		- new preferences:
+			* minimal fake size
+			* setting to enable the inspection of the content of the faked canvas
 	
 	fixes:
 		- ask mode did not work for input types

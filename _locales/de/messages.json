@@ -114,6 +114,15 @@
 		"description": ""
 	},
 	
+	"minFakeSize_description": {
+		"message": "Canvas, die eine kleiner oder gleich große Fläche als die hier angegebene Zahl haben, werden nicht vorgetäuscht. Dies ist ein parameter, der die Detektion des Addons erschweren soll.\nACHTUNG: Dies verringert die Sicherheit des Addons. Deswegen wird stark empfohlen, diesen Wert nicht unter 100 zu setzen.",
+		"description": ""
+	},
+	"minFakeSize_title": {
+		"message": "Minimale Vortäuschgröße",
+		"description": ""
+	},
+	
 	"maxFakeSize_description": {
 		"message": "Canvas, die eine größere Fläche als die hier angegebene Zahl haben, werden nicht vorgetäuscht. (Null eingeben, um es zu deaktivieren.) Dies ist ein Leistungsparameter, der das Einfrieren des Browsers verringern kann und der an die Rechenleistung des Gerätes angepasst sein soll.\nACHTUNG: Dies verringert die Sicherheit des Addons. Deswegen wird stark empfohlen, diesen Wert nicht unter 100 000 zu setzen.",
 		"description": ""

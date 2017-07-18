@@ -114,6 +114,15 @@
 		"description": ""
 	},
 	
+	"minFakeSize_description": {
+		"message": "Canvas with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
+		"description": ""
+	},
+	"minFakeSize_title": {
+		"message": "Minimal fake size",
+		"description": ""
+	},
+	
 	"maxFakeSize_description": {
 		"message": "Canvas with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 100 000.",
 		"description": ""

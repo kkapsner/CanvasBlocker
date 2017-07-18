@@ -70,6 +70,15 @@ document.body.appendChild(table);
 		}
 	},
 	{
+		"name": "minFakeSize",
+		"title": "Minimal fake size",
+		"type": "integer",
+		"value": 1,
+		"displayDependencies": {
+			"blockMode": ["fakeReadout", "fakeInput"]
+		}
+	},
+	{
 		"name": "maxFakeSize",
 		"title": "Maximal fake size",
 		"type": "integer",
