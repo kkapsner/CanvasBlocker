@@ -342,7 +342,7 @@
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "To finde the cause for an error a detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.",
+		"message": "To find the cause for an error a detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.",
 		"description": ""
 	},
 	"logLevel_options.none": {
