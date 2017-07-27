@@ -335,5 +335,38 @@
 	"showReleaseNotes_label": {
 		"message": "Show",
 		"description": ""
+	},
+	
+	"logLevel_title": {
+		"message": "Logging level",
+		"description": ""
+	},
+	"logLevel_description": {
+		"message": "To finde the cause for an error a detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.",
+		"description": ""
+	},
+	"logLevel_options.none": {
+		"message": "none",
+		"description": ""
+	},
+	"logLevel_options.error": {
+		"message": "error",
+		"description": ""
+	},
+	"logLevel_options.warning": {
+		"message": "warning",
+		"description": ""
+	},
+	"logLevel_options.message": {
+		"message": "message",
+		"description": ""
+	},
+	"logLevel_options.notice": {
+		"message": "notice",
+		"description": ""
+	},
+	"logLevel_options.verbose": {
+		"message": "verbose",
+		"description": ""
 	}
 }

@@ -331,5 +331,38 @@
 	"showReleaseNotes_label": {
 		"message": "Anzeigen",
 		"description": ""
+	},
+	
+	"logLevel_title": {
+		"message": "Aufzeichnungslevel",
+		"description": ""
+	},
+	"logLevel_description": {
+		"message": "Für eine Fehlersuche ist eine detaillierte Aufzeichnung der Addon-Aktivitäten hilfreich. Mit diesem Parameter kann der Grad der Detailliertheit dieser Aufzeichnung eingestellt werden.",
+		"description": ""
+	},
+	"logLevel_options.none": {
+		"message": "nichts",
+		"description": ""
+	},
+	"logLevel_options.error": {
+		"message": "Fehler",
+		"description": ""
+	},
+	"logLevel_options.warning": {
+		"message": "Warnungen",
+		"description": ""
+	},
+	"logLevel_options.message": {
+		"message": "Nachrichten",
+		"description": ""
+	},
+	"logLevel_options.notice": {
+		"message": "Notizen",
+		"description": ""
+	},
+	"logLevel_options.verbose": {
+		"message": "ausführlich",
+		"description": ""
 	}
 }

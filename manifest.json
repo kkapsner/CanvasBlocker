@@ -10,6 +10,7 @@
 		"scripts": [
 			"lib/defaultSettings.js",
 			"lib/require.js",
+			"lib/logging.js",
 			"lib/lists.js",
 			"lib/main.js"
 		]
@@ -21,6 +22,8 @@
 		"js": [
 			"lib/defaultSettings.js",
 			"lib/require.js",
+			
+			"lib/logging.js",
 			
 			"lib/modifiedAPI.js",
 			"lib/randomSupplies.js",

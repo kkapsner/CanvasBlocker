@@ -220,6 +220,38 @@ document.body.appendChild(table);
 		"title": "Release notes",
 		"type": "control",
 		"label": "Show"
+	},
+	{
+		"name": "logLevel",
+		"title": "logging level",
+		"type": "menulist",
+		"value": 1,
+		"options": [
+			{
+				"value": 0,
+				"label": "none"
+			},
+			{
+				"value": 1,
+				"label": "error"
+			},
+			{
+				"value": 25,
+				"label": "warning"
+			},
+			{
+				"value": 50,
+				"label": "message"
+			},
+			{
+				"value": 75,
+				"label": "notice"
+			},
+			{
+				"value": 100,
+				"label": "verbose"
+			}
+		]
 	}
 ].forEach(function(pref){
 	var html = '<td><div class="content"><span class="title">__MSG_' + pref.name + '_title__</span><div class="description">__MSG_' + pref.name + '_description__</div></div></td><td><div class="content">';
@@ -235,9 +267,9 @@ document.body.appendChild(table);
 			html += '<input type="checkbox" style="display: inline"' + inputAttributes + (pref.value? ' checked="checked"': "") + '>';
 			break;
 		case "menulist":
-			html += '<select' + inputAttributes + '>' +
+			html += '<select' + inputAttributes + 'data-type="' + (typeof pref.value) + '">' +
 				pref.options.map(function(option){
-					if (option.value){
+					if (option.value !== ""){
 						return '<option value="' + option.value + '"' + (option.value === pref.value? " selected": "") + '>__MSG_' + pref.name + '_options.' + option.label + '__</option>';
 					}
 					else {
@@ -250,13 +282,13 @@ document.body.appendChild(table);
 			html += '<button' + inputAttributes + '">__MSG_' + pref.name + '_label__</button>';
 			break;
 		default:
-			console.log("Unknown preference type: " + pref.type);
+			logging.warning("Unknown preference type: " + pref.type);
 	}
 	html += "</div></td>";
 	var tr = document.createElement("tr");
 	tr.setting = pref;
 	tr.className = "settingRow";
 	tr.innerHTML = html;
-	console.log(html);
+	logging.verbose(html);
 	table.appendChild(tr);
 });

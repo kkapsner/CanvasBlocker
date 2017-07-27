@@ -1,7 +1,13 @@
+/* jslint moz: true */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 browser.storage.local.get().then(function(data){
 	Object.keys(data).forEach(function(key){
 		settings[key] = data[key];
 	});
+	settings.isStillDefault = false;
+	logging.clearQueue();
 	return settings;
 }).then(function(settings){
 	function traverse(node, func){
@@ -10,6 +16,7 @@ browser.storage.local.get().then(function(data){
 	}
 	
 	// getting the translation of all the messages
+	message("transate all messages");
 	traverse(document.body, function(node){
 		if (node.nodeType == 3){
 			var lines = node.nodeValue.replace(/\b__MSG_(.+)__\b/g, function(m, key){
@@ -28,12 +35,14 @@ browser.storage.local.get().then(function(data){
 		}
 	});
 	
+	message("register events to store changes in local storage");
 	Array.from(document.querySelectorAll("input.setting, select.setting")).forEach(function(input){
 		var storageName = input.dataset.storageName;
 		if (input.type === "checkbox"){
 			input.checked = settings[storageName];
 			
 			input.addEventListener("click", function(){
+				message("changed setting", storageName, ":", this.checked);
 				var value = this.checked;
 				var obj = {};
 				obj[storageName] = value;
@@ -44,9 +53,10 @@ browser.storage.local.get().then(function(data){
 			
 			input.addEventListener("change", function(){
 				var value = this.value;
-				if (this.type === "number"){
+				if (this.type === "number" || this.dataset.type === "number"){
 					value = parseFloat(value);
 				}
+				message("changed setting", storageName, ":", value);
 				var obj = {};
 				obj[storageName] = value;
 				browser.storage.local.set(obj);
@@ -56,6 +66,7 @@ browser.storage.local.get().then(function(data){
 	
 	var callbacks = {
 		showReleaseNotes: function(){
+			verbose("open release notes");
 			window.open("../releaseNotes.txt", "_blank");
 			// would be nicer but is not supported in fennec
 			// browser.windows.create({
@@ -64,7 +75,10 @@ browser.storage.local.get().then(function(data){
 			// });
 		},
 		clearPersistentRnd: function(){
+			message("clear persistent rnd storage");
+			notice("empty storage");
 			browser.storage.local.set({persistentRndStorage: ""});
+			notice("send message to main script");
 			browser.runtime.sendMessage({"canvasBlocker-clear-domain-rnd": true});
 		}
 	};
@@ -78,13 +92,14 @@ browser.storage.local.get().then(function(data){
 	});
 	
 	function updateDisplay(){
+		notice("update display");
 		document.querySelectorAll("tr.settingRow").forEach(function(row){
+			verbose("evaluate display dependencies for", row.setting);
 			var displayDependencies = row.setting.displayDependencies;
 			if (displayDependencies){
 				row.classList[(
 					(Array.isArray(displayDependencies)? displayDependencies: [displayDependencies]).some(function(displayDependency){
 						return Object.keys(displayDependency).every(function(key){
-							console.log(key, displayDependency[key], settings[key]);
 							return displayDependency[key].indexOf(settings[key]) !== -1;
 						});
 					})
