@@ -88,6 +88,7 @@ addTest("error provocation 1", function(log){
 	catch (err){
 		try {
 			log(err.name);
+			log(err.toString());
 		}
 		catch (e){
 			canvasBlocker = true;
@@ -102,10 +103,12 @@ addTest("error provocation 2", function(log){
 	var canvasBlocker = false;
 	try{
 		ctx.getImageData(0, 0, 1, 1);
+		log("no error provoked");
 	}
 	catch (err){
 		try {
 			log(err.name);
+			log(err.toString());
 		}
 		catch (e){
 			canvasBlocker = true;
@@ -121,6 +124,7 @@ addTest("error provocation 3", function(log){
 	catch (err){
 		try {
 			log(err.name);
+			log(err.toString());
 		}
 		catch (e){
 			canvasBlocker = true;
