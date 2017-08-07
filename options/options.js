@@ -16,7 +16,7 @@ browser.storage.local.get().then(function(data){
 	}
 	
 	// getting the translation of all the messages
-	message("transate all messages");
+	logging.message("transate all messages");
 	traverse(document.body, function(node){
 		if (node.nodeType == 3){
 			var lines = node.nodeValue.replace(/\b__MSG_(.+)__\b/g, function(m, key){
@@ -35,14 +35,14 @@ browser.storage.local.get().then(function(data){
 		}
 	});
 	
-	message("register events to store changes in local storage");
+	logging.message("register events to store changes in local storage");
 	Array.from(document.querySelectorAll("input.setting, select.setting")).forEach(function(input){
 		var storageName = input.dataset.storageName;
 		if (input.type === "checkbox"){
 			input.checked = settings[storageName];
 			
 			input.addEventListener("click", function(){
-				message("changed setting", storageName, ":", this.checked);
+				logging.message("changed setting", storageName, ":", this.checked);
 				var value = this.checked;
 				var obj = {};
 				obj[storageName] = value;
@@ -56,7 +56,7 @@ browser.storage.local.get().then(function(data){
 				if (this.type === "number" || this.dataset.type === "number"){
 					value = parseFloat(value);
 				}
-				message("changed setting", storageName, ":", value);
+				logging.message("changed setting", storageName, ":", value);
 				var obj = {};
 				obj[storageName] = value;
 				browser.storage.local.set(obj);
@@ -66,7 +66,7 @@ browser.storage.local.get().then(function(data){
 	
 	var callbacks = {
 		showReleaseNotes: function(){
-			verbose("open release notes");
+			logging.verbose("open release notes");
 			window.open("../releaseNotes.txt", "_blank");
 			// would be nicer but is not supported in fennec
 			// browser.windows.create({
@@ -75,10 +75,10 @@ browser.storage.local.get().then(function(data){
 			// });
 		},
 		clearPersistentRnd: function(){
-			message("clear persistent rnd storage");
-			notice("empty storage");
+			logging.message("clear persistent rnd storage");
+			logging.notice("empty storage");
 			browser.storage.local.set({persistentRndStorage: ""});
-			notice("send message to main script");
+			logging.notice("send message to main script");
 			browser.runtime.sendMessage({"canvasBlocker-clear-domain-rnd": true});
 		}
 	};
@@ -92,9 +92,9 @@ browser.storage.local.get().then(function(data){
 	});
 	
 	function updateDisplay(){
-		notice("update display");
+		logging.notice("update display");
 		document.querySelectorAll("tr.settingRow").forEach(function(row){
-			verbose("evaluate display dependencies for", row.setting);
+			logging.verbose("evaluate display dependencies for", row.setting);
 			var displayDependencies = row.setting.displayDependencies;
 			if (displayDependencies){
 				row.classList[(
