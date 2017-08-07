@@ -6,6 +6,7 @@ Version 0.4.0:
 		- switched to webExtension
 		- notifications are now done via page action
 		- minimal and maximal fake size are now respected in all fakeable functions
+		- fake readout now fakes one pixel at once and no longer one single channel
 	
 	new features:
 		- information of all fake events in one tab are visible
@@ -13,6 +14,8 @@ Version 0.4.0:
 		- new preferences:
 			* minimal fake size
 			* setting to enable the inspection of the content of the faked canvas
+			* new random number generator "constant"
+			* setting to not fake the most frequent colors in a canvas
 	
 	fixes:
 		- ask mode did not work for input types

@@ -131,6 +131,15 @@ document.body.appendChild(table);
 		}
 	},
 	{
+		"name": "ignoreFrequentColors",
+		"title": "Ignore most frequent colors",
+		"type": "integer",
+		"value": 0,
+		"displayDependencies": {
+			"blockMode": ["fakeReadout"]
+		}
+	},
+	{
 		"name": "askOnlyOnce",
 		"title": "Ask only once",
 		"type": "bool",

@@ -184,6 +184,15 @@
 		"description": ""
 	},
 	
+	"ignoreFrequentColors_title": {
+		"message": "Ignoriere die häufigsten Farben",
+		"description": ""
+	},
+	"ignoreFrequentColors_description": {
+		"message": "Anzahl der Farben, die pro Canvas nicht vorgetäuscht werden sollen. Dies ist ein Parameter, der die Detektion des Addons erschweren soll.\nACHTUNG: Dies kann die Geschwindigkeit des Addons beeinträchtigen, da für jedes Bild die Farbstatistik berechnet werden muss. Außerdem kann es die Sicherheit des Addons verringern, wenn der Wert zu hoch gestellt wird. Deswegen wird stark empfohlen, diesen Wert nicht über 3 zu setzen.",
+		"description": ""
+	},
+	
 	"disableNotifications": {
 		"message": "Benachrichtigungen deaktivieren",
 		"description": ""

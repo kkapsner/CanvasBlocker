@@ -25,6 +25,7 @@
 			
 			"lib/logging.js",
 			
+			"lib/colorStatistics.js",
 			"lib/modifiedAPI.js",
 			"lib/randomSupplies.js",
 			"lib/intercept.js",
