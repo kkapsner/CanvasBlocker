@@ -133,11 +133,15 @@
 	},
 	
 	"rng_description": {
-		"message": "nicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
+		"message": "nicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\nkonstant: innerhalb einer Webseite wird eine Farbe immer gleich verändert.\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
 		"description": ""
 	},
 	"rng_options.persistent": {
 		"message": "persistent",
+		"description": ""
+	},
+	"rng_options.constant": {
+		"message": "konstant",
 		"description": ""
 	},
 	"rng_options.non persistent": {

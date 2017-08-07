@@ -133,11 +133,15 @@
 	},
 	
 	"rng_description": {
-		"message": "non persistent: the random numbers will be determined freshly for each faking action.\npersistent: the random number will only be determined once for every domain.",
+		"message": "non persistent: the random numbers will be determined freshly for each faking action.\nconstant: within one web page a color will always be faked to the same color.\npersistent: the random number will only be determined once for every domain.",
 		"description": ""
 	},
 	"rng_options.persistent": {
 		"message": "persistent",
+		"description": ""
+	},
+	"rng_options.constant": {
+		"message": "constant",
 		"description": ""
 	},
 	"rng_options.non persistent": {

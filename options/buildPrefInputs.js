@@ -98,6 +98,10 @@ document.body.appendChild(table);
 				"label": "non persistent"
 			},
 			{
+				"value": "constant",
+				"label": "constant"
+			},
+			{
 				"value": "persistent",
 				"label": "persistent"
 			}
