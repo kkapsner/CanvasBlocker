@@ -193,6 +193,15 @@
 		"description": ""
 	},
 
+	"useCanvasCache_title": {
+		"message": "Use canvas cache",
+		"description": ""
+	},
+	"useCanvasCache_description": {
+		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvas are read several times but decreases it for big canvas.",
+		"description": ""
+	},
+
 	"disableNotifications": {
 		"message": "disable notifications",
 		"description": ""

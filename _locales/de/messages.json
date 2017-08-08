@@ -193,6 +193,15 @@
 		"description": ""
 	},
 	
+	"useCanvasCache_title": {
+		"message": "Zwischenspeicher für Canvas verwenden",
+		"description": ""
+	},
+	"useCanvasCache_description": {
+		"message": "Aktiviert den Canvas-Zwischenspeicher. Dies kann die Detektion des Addons verhindern und kann die Geschwindigkeit des Addons erhöhen, wenn kleine Canvas oft ausgelesen werden. Für große Canvas wird die Geschwindigkeit leider reduziert.",
+		"description": ""
+	},
+	
 	"disableNotifications": {
 		"message": "Benachrichtigungen deaktivieren",
 		"description": ""

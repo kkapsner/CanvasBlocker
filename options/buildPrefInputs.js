@@ -140,6 +140,15 @@ document.body.appendChild(table);
 		}
 	},
 	{
+		"name": "useCanvasCache",
+		"title": "Use canvas cache",
+		"type": "bool",
+		"value": true,
+		"displayDependencies": {
+			"blockMode": ["fakeReadout"]
+		}
+	},
+	{
 		"name": "askOnlyOnce",
 		"title": "Ask only once",
 		"type": "bool",
