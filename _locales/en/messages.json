@@ -8,6 +8,15 @@
 		"description": ""
 	},
 	
+	"displayAdvancedSettings_title": {
+		"message": "Expert mode",
+		"description": ""
+	},
+	"displayAdvancedSettings_description": {
+		"message": "Displays additional settings.",
+		"description": ""
+	},
+	
 	"allowPDFCanvas_description": {
 		"message": "Firefox's native PDF reader uses the API to display PDF content. If too many ask dialogs appear or the PDF reader does not work at all, these have to be allowed.",
 		"description": ""
@@ -192,7 +201,7 @@
 		"message": "Number of colors that should not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
 		"description": ""
 	},
-
+	
 	"useCanvasCache_title": {
 		"message": "Use canvas cache",
 		"description": ""

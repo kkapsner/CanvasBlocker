@@ -8,6 +8,15 @@
 		"description": ""
 	},
 	
+	"displayAdvancedSettings_title": {
+		"message": "Expertenmodus",
+		"description": ""
+	},
+	"displayAdvancedSettings_description": {
+		"message": "Zeigt weitere Einstellungsmöglichkeiten an.",
+		"description": ""
+	},
+	
 	"allowPDFCanvas_description": {
 		"message": "Die native pdf.js verwendet <canvas> um den Inhalt von PDFs anzuzeigen. Wenn viele Nachfragedialoge erscheinen oder die PDF-Ansicht nicht funktioniert, müssen diese erlaubt werden.",
 		"description": ""

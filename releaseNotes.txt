@@ -17,6 +17,7 @@ Version 0.4.0:
 			* new random number generator "constant"
 			* setting to not fake the most frequent colors in a canvas
 			* setting to enable canvas cache
+			* setting to hide expert settings
 	
 	fixes:
 		- ask mode did not work for input types

@@ -4,6 +4,12 @@ document.body.appendChild(table);
 
 [
 	{
+		"name": "displayAdvancedSettings",
+		"title": "Display advanced settings",
+		"type": "bool",
+		"value": false
+	},
+	{
 		"name": "blockMode",
 		"title": "block mode",
 		"type": "menulist",
@@ -75,7 +81,8 @@ document.body.appendChild(table);
 		"type": "integer",
 		"value": 1,
 		"displayDependencies": {
-			"blockMode": ["fakeReadout", "fakeInput"]
+			"blockMode": ["fakeReadout", "fakeInput"],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	{
@@ -84,7 +91,8 @@ document.body.appendChild(table);
 		"type": "integer",
 		"value": 0,
 		"displayDependencies": {
-			"blockMode": ["fakeReadout", "fakeInput"]
+			"blockMode": ["fakeReadout", "fakeInput"],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	{
@@ -107,7 +115,8 @@ document.body.appendChild(table);
 			}
 		],
 		"displayDependencies": {
-			"blockMode": ["fakeReadout", "fakeInput"]
+			"blockMode": ["fakeReadout", "fakeInput"],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	{
@@ -117,7 +126,8 @@ document.body.appendChild(table);
 		"value": false,
 		"displayDependencies": {
 			"blockMode": ["fakeReadout", "fakeInput"],
-			"rng": ["persistent"]
+			"rng": ["persistent"],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	{
@@ -127,7 +137,8 @@ document.body.appendChild(table);
 		"label": "Clear",
 		"displayDependencies": {
 			"blockMode": ["fakeReadout", "fakeInput"],
-			"rng": ["persistent"]
+			"rng": ["persistent"],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	{
@@ -136,7 +147,8 @@ document.body.appendChild(table);
 		"type": "integer",
 		"value": 0,
 		"displayDependencies": {
-			"blockMode": ["fakeReadout"]
+			"blockMode": ["fakeReadout"],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	{
@@ -145,7 +157,8 @@ document.body.appendChild(table);
 		"type": "bool",
 		"value": true,
 		"displayDependencies": {
-			"blockMode": ["fakeReadout"]
+			"blockMode": ["fakeReadout"],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	{
@@ -173,7 +186,8 @@ document.body.appendChild(table);
 		"value": false,
 		"displayDependencies": {
 			"blockMode": ["fakeReadout", "fakeInput"],
-			"showNotifications": [true]
+			"showNotifications": [true],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	// {
@@ -201,7 +215,8 @@ document.body.appendChild(table);
 		"type": "bool",
 		"value": false,
 		"displayDependencies": {
-			"blockMode": ["askReadout", "ask"]
+			"blockMode": ["askReadout", "ask"],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	{
@@ -212,10 +227,12 @@ document.body.appendChild(table);
 		"displayDependencies": [
 			{
 				"blockMode": ["fakeReadout", "fakeInput"],
-				"showNotifications": [true]
+				"showNotifications": [true],
+				"displayAdvancedSettings": [true]
 			},
 			{
-				"blockMode": ["askReadout", "ask"]
+				"blockMode": ["askReadout", "ask"],
+				"displayAdvancedSettings": [true]
 			}
 		]
 	},{
@@ -224,7 +241,8 @@ document.body.appendChild(table);
 		"type": "bool",
 		"value": false,
 		"displayDependencies": {
-			"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"]
+			"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"],
+			"displayAdvancedSettings": [true]
 		}
 	},
 	{
@@ -233,7 +251,8 @@ document.body.appendChild(table);
 		"type": "string",
 		"value": "",
 		"displayDependencies": {
-			"enableStackList": [true]
+			"enableStackList": [true],
+			"displayAdvancedSettings": [true]
 		}
 		
 	},
@@ -273,7 +292,10 @@ document.body.appendChild(table);
 				"value": 100,
 				"label": "verbose"
 			}
-		]
+		],
+		"displayDependencies": {
+			"displayAdvancedSettings": [true]
+		}
 	}
 ].forEach(function(pref){
 	var html = '<td><div class="content"><span class="title">__MSG_' + pref.name + '_title__</span><div class="description">__MSG_' + pref.name + '_description__</div></div></td><td><div class="content">';
