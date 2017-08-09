@@ -1,10 +1,6 @@
 {
 	"name": "CanvasBlocker",
-	"title": "__MSG_addon_title__",
-	"id": "CanvasBlocker@kkapsner.de",
-	"keywords": "privacy, canvas, fingerprinting",
 	"description": "__MSG_addon_description__",
-	"homepage": "https://github.com/kkapsner/CanvasBlocker/",
 	"version": "0.4.0-Development",
 	"background": {
 		"scripts": [
@@ -52,14 +48,11 @@
 		"default_popup": "pageAction/pageAction.html"
 	},
 	"author": "Korbinian Kapsner",
-	"license": "MPL 2.0",
 	"permissions": [
 		"<all_urls>",
 		"storage",
 		"tabs",
-		"activeTab",
-		"declarativeContentScript",
-		"events"
+		"activeTab"
 	],
 	
 	"applications": {
