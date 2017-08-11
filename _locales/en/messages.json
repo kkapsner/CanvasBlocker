@@ -202,6 +202,15 @@
 		"description": ""
 	},
 	
+	"fakeAlphaChannel_title": {
+		"message": "Fakt the alpha channel",
+		"description": ""
+	},
+	"fakeAlphaChannel_description": {
+		"message": "Activates the faking of the alhpa channel (transparency).",
+		"description": ""
+	},
+	
 	"useCanvasCache_title": {
 		"message": "Use canvas cache",
 		"description": ""
