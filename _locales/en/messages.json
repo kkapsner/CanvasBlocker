@@ -203,11 +203,11 @@
 	},
 	
 	"fakeAlphaChannel_title": {
-		"message": "Fakt the alpha channel",
+		"message": "Fake the alpha channel",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Activates the faking of the alhpa channel (transparency).",
+		"message": "Activates the faking of the alpha channel (transparency).",
 		"description": ""
 	},
 	

@@ -18,7 +18,7 @@ Version 0.4.0:
 			* setting to not fake the most frequent colors in a canvas
 			* setting to enable canvas cache
 			* setting to hide expert settings
-			* setting to control if the alpha channel should be faked as wel
+			* setting to control if the alpha channel should be faked as well
 	
 	fixes:
 		- ask mode did not work for input types
