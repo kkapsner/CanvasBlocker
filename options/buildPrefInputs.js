@@ -152,6 +152,16 @@ document.body.appendChild(table);
 		}
 	},
 	{
+		"name": "fakeAlphaChannel",
+		"title": "Fake the alpha channel",
+		"type": "bool",
+		"value": false,
+		"displayDependencies": {
+			"blockMode": ["fakeReadout"],
+			"displayAdvancedSettings": [true]
+		}
+	},
+	{
 		"name": "useCanvasCache",
 		"title": "Use canvas cache",
 		"type": "bool",
