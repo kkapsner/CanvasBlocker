@@ -2,6 +2,10 @@
 	"name": "CanvasBlocker",
 	"description": "__MSG_addon_description__",
 	"version": "0.4.0-Development",
+	"icons": {
+		"48": "icons/icon.svg",
+		"96": "icons/icon.svg"
+	},
 	"background": {
 		"scripts": [
 			"lib/defaultSettings.js",
@@ -43,8 +47,8 @@
 	"page_action": {
 		"browser_style": true,
 		"default_icon": {
-			"19": "pageAction/printed19.png",
-			"38": "pageAction/printed38.png"
+			"19": "icons/pageAction-printed.svg",
+			"38": "icons/pageAction-printed.svg"
 		},
 		"default_popup": "pageAction/pageAction.html"
 	},
