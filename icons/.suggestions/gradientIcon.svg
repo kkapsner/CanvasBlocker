@@ -30,7 +30,7 @@
      id="namedview9"
      showgrid="false"
      inkscape:zoom="2.4583333"
-     inkscape:cx="-31.076441"
+     inkscape:cx="-108.97475"
      inkscape:cy="27.965862"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -46,8 +46,12 @@
          id="stop3861" />
       <stop
          id="stop3867"
-         offset="0.7037037"
+         offset="0.64554304"
          style="stop-color:#ff0000;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0.87873006"
+         id="stop3761" />
       <stop
          style="stop-color:#ff0000;stop-opacity:1;"
          offset="1"
@@ -103,7 +107,7 @@
      inkscape:transform-center-x="6.3789923"
      inkscape:transform-center-y="2.4991519" />
   <path
-     style="opacity:0.65;fill:url(#linearGradient3865);fill-opacity:1;stroke:#ff0000;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     style="opacity:0.59999999999999998;fill:url(#linearGradient3865);fill-opacity:1;stroke:#ff0000;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      d="M 47.999998,3.0000001 47.999998,93 26.146646,93 C 13.326198,93 2.9999999,83.26899 2.9999999,71.1875 l 0,-46.375 c 0,-12.081491 10.3261981,-21.8124999 23.1466461,-21.8124999 l 21.853352,0 z"
      id="rect3826-9"
      inkscape:connector-curvature="0" />
