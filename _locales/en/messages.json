@@ -41,7 +41,7 @@
 		"message": "Do you want to allow <canvas>?",
 		"description": ""
 	},
-	"askForPermission": {
+	"askForInputPermission": {
 		"message": "Do you want to allow <canvas> input?",
 		"description": ""
 	},
@@ -53,7 +53,7 @@
 		"message": "Do you want to allow the red bordered <canvas>?",
 		"description": ""
 	},
-	"askForVisiblePermission": {
+	"askForVisibleInputPermission": {
 		"message": "Do you want to allow input in the red bordered <canvas>?",
 		"description": ""
 	},
