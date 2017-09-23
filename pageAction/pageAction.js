@@ -55,7 +55,10 @@ Promise.all([
 			alert(parseErrorStack(errorStack));
 		},
 		inspectImage:  function({dataURL}){
-			document.body.innerHTML = "<img src=" + dataURL + ">";
+			document.body.innerHTML = "";
+			var img = document.createElement("img");
+			img.src = dataURL;
+			document.body.appendChild(img);
 		},
 		ignorelistDomain: function({url}){
 			var domain = url.host;
