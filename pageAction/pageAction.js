@@ -18,11 +18,11 @@ Promise.all([
 	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("./logging");
 	setLogPrefix("page action script");
 	
-	function modalPrompt(message, defaultValue){
+	function modalPrompt(messageText, defaultValue){
 		message("open modal prompt");
 		return new Promise(function(resolve, reject){
 			document.body.innerHTML = "";
-			document.body.appendChild(document.createTextNode(message));
+			document.body.appendChild(document.createTextNode(messageText));
 			var input = document.createElement("input");
 			input.value = defaultValue;
 			document.body.appendChild(input);
