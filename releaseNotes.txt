@@ -1,12 +1,10 @@
 Version 0.4.0:
-	todos:
-		- import settings in content script (have to wait for the new API to register content scripts)
-		
 	changes:
 		- switched to webExtension
 		- notifications are now done via page action
 		- minimal and maximal fake size are now respected in all fakeable functions
 		- fake readout now fakes one pixel at once and no longer one single channel
+		- new icon (special thanks to Thorin-Oakenpants)
 	
 	new features:
 		- information of all fake events in one tab are visible
@@ -23,6 +21,7 @@ Version 0.4.0:
 	fixes:
 		- ask mode did not work for input types
 		- allow page scripts to overwrite the faked funtions
+		- getImageData also faked when using fakeInput mode
 
 Version 0.3.8:
 	new features:

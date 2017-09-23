@@ -12,3 +12,7 @@ The different block modes are:
 <li>block only black list: Block the &lt;canvas&gt; API only for websites on the black list.</li>
 <li>allow everything: Ignore all lists and allow the &lt;canvas&gt; API on all websites.</li>
 </ul>
+
+Special thanks to:
+ * spodermenpls for finding all the typos
+ * Thorin-Oakenpants for the icon idea
