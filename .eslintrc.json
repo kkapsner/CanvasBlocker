@@ -20,6 +20,6 @@
         "constructor-super": "warn",
         "valid-typeof": "warn",
         "brace-style": "warn",
-        "strict": "warn"
+        "strict": ["warn", "function"]
     }
 }
