@@ -68,7 +68,7 @@ Version 0.3.4:
 		- different fake modes show independent notifications
 	
 	fixes:
-		- bug in readPixels (prevented google street view to work)
+		- bug in readPixels (prevented Google Street View to work)
 		- performance issues
 		- German translations
 
