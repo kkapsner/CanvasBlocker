@@ -62,7 +62,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "Wenn der Blockiermodus des Canvas Blockers auf \"um Erlaubnis fragen\" oder \"bei Auslese-API um Erlaubnis fragen\" gesetzt ist, erscheint jedes mal ein Abfragedialog, wenn eine Seite versucht, die (Auslese-)API aufzurufen. Diese Einstellung versucht diese Abfrage nur einmal pro Seite anzuzeigen, unabhängig davon wie oft die API aufgerufen wird. Es können trotzdem mehrere Dialoge pro Seite erscheinen.",
+		"message": "Wenn der Blockiermodus des Canvas Blockers auf \"um Erlaubnis fragen\" oder \"bei Auslese-API um Erlaubnis fragen\" gesetzt ist, erscheint jedes Mal ein Abfragedialog, wenn eine Seite versucht, die (Auslese-)API aufzurufen. Diese Einstellung versucht diese Abfrage nur einmal pro Seite anzuzeigen, unabhängig davon wie oft die API aufgerufen wird. Es können trotzdem mehrere Dialoge pro Seite erscheinen.",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
