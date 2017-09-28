@@ -7,6 +7,7 @@ browser.storage.local.get().then(function(data){
 		settings[key] = data[key];
 	});
 	settings.isStillDefault = false;
+	logging.setPrefix("options page");
 	logging.clearQueue();
 	return settings;
 }).then(function(settings){
