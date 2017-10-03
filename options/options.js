@@ -21,7 +21,7 @@
 		}
 		
 		// getting the translation of all the messages
-		logging.message("transate all messages");
+		logging.message("translate all messages");
 		traverse(document.body, function(node){
 			if (node.nodeType === 3){
 				var lines = node.nodeValue.replace(/\b__MSG_(.+)__\b/g, function(m, key){
