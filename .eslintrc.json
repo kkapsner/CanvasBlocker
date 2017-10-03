@@ -11,15 +11,25 @@
         },
         "sourceType": "script"
     },
+    "extends": "eslint:recommended",
+    "globals": {
+        "exportFunction": false,
+        "settings": false
+    },
     "rules": {
+        "brace-style": ["warn", "stroustrup", {"allowSingleLine": true}],
+        "eqeqeq": "warn",
         "no-const-assign": "warn",
         "no-this-before-super": "warn",
         "no-undef": "warn",
         "no-unreachable": "warn",
-        "no-unused-vars": "warn",
+        "no-unused-vars": "off",
+        "no-trailing-spaces": ["warn", {"skipBlankLines": true}],
+        "no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
         "constructor-super": "warn",
         "valid-typeof": "warn",
-        "brace-style": "warn",
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
         "strict": ["warn", "function"]
     }
 }

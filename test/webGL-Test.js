@@ -1,8 +1,10 @@
 (function(){
-	var canvas = document.createElement('canvas');
+	"use strict";
+	
+	var canvas = document.createElement("canvas");
 	canvas.width = 11;
 	canvas.height = 13;
-	var gl = canvas.getContext('webgl');
+	var gl = canvas.getContext("webgl");
 	
 	// paint it completely black
 	gl.clearColor(0, 0, 0, 1);

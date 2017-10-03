@@ -1,5 +1,7 @@
 
 (function(){
+	"use strict";
+	
 	function show(container, url){
 		container.querySelector(".display").src = url;
 		var buffer = new TextEncoder("utf-8").encode(url);
@@ -23,12 +25,14 @@
 }());
 
 function draw(canvas){
+	"use strict";
+	
 	canvas.setAttribute("width", 220);
 	canvas.setAttribute("height", 30);
 	
 	var fp_text = "BrowserLeaks,com <canvas> 10";
 	
-	var ctx = canvas.getContext('2d');
+	var ctx = canvas.getContext("2d");
 	ctx.textBaseline = "top";
 	ctx.font = "14px 'Arial'";
 	ctx.textBaseline = "alphabetic";
@@ -43,26 +47,29 @@ function draw(canvas){
 }
 
 function topTest(){
+	"use strict";
+	
 	// create window canvas
-	var canvas = document.createElement('canvas');
+	var canvas = document.createElement("canvas");
 	// draw image in window canvas
 	draw(canvas);
 	return canvas.toDataURL();
 }
 
 function iframeTest(){
+	"use strict";
 
 	// create window canvas
-	var canvas = document.createElement('canvas');
+	var canvas = document.createElement("canvas");
 
 	// draw image in window canvas
 	draw(canvas);
 
 	// create iframe canvas and ctx
-	var iframe_canvas = document.querySelector("#iframe iframe").contentDocument.createElement('canvas');
+	var iframe_canvas = document.querySelector("#iframe iframe").contentDocument.createElement("canvas");
 	iframe_canvas.setAttribute("width", 220);
 	iframe_canvas.setAttribute("height", 30);
-	var iframe_ctx = iframe_canvas.getContext('2d');
+	var iframe_ctx = iframe_canvas.getContext("2d");
 
 	// copy image from window canvas to iframe ctx
 	iframe_ctx.drawImage(canvas, 0, 0);

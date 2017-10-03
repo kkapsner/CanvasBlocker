@@ -1,5 +1,7 @@
-
+/* eslint no-console: off */
 var addTest = (function(){
+	"use strict";
+
 	var stati = [
 		{className: "notRun", text: "not run"},
 		{className: "loud", text: "CB detected"},
@@ -34,10 +36,12 @@ var addTest = (function(){
 		statusNode.title = logs.join("\n");
 		li.appendChild(statusNode);
 		ul.appendChild(li);
-	}
+	};
 }());
 
 addTest("function length", function(log){
+	"use strict";
+	
 	if (CanvasRenderingContext2D.prototype.getImageData.length !== 4){
 		log("expected 4 parameters for getImageData - got", CanvasRenderingContext2D.prototype.getImageData.length);
 		return true;
@@ -47,6 +51,8 @@ addTest("function length", function(log){
 	}
 });
 addTest("function code", function(log){
+	"use strict";
+	
 	if (!CanvasRenderingContext2D.prototype.getImageData.toString().match(/^\s*function getImageData\s*\(\)\s*\{\s*\[native code\]\s*\}\s*$/)){
 		log("unexpected function code:", CanvasRenderingContext2D.prototype.getImageData.toString());
 		return true;
@@ -55,9 +61,15 @@ addTest("function code", function(log){
 		return false;
 	}
 });
-addTest("function name", function(){return CanvasRenderingContext2D.prototype.getImageData.name !== "getImageData"});
+addTest("function name", function(){
+	"use strict";
+	
+	return CanvasRenderingContext2D.prototype.getImageData.name !== "getImageData";
+});
 addTest("error provocation 1", function(log){
-	var canvas = document.createElement('canvas');
+	"use strict";
+	
+	var canvas = document.createElement("canvas");
 	var ctx = canvas.getContext("2d");
 	var canvasBlocker = false;
 	try{
@@ -75,7 +87,9 @@ addTest("error provocation 1", function(log){
 	return canvasBlocker;
 });
 addTest("error provocation 2", function(log){
-	var canvas = document.createElement('canvas');
+	"use strict";
+	
+	var canvas = document.createElement("canvas");
 	canvas.width = 0;
 	var ctx = canvas.getContext("2d");
 	var canvasBlocker = false;
@@ -95,6 +109,8 @@ addTest("error provocation 2", function(log){
 	return canvasBlocker;
 });
 addTest("error provocation 3", function(log){
+	"use strict";
+	
 	var canvasBlocker = false;
 	try{
 		CanvasRenderingContext2D.prototype.getImageData.apply(undefined, [0, 0, 1, 1]);
@@ -111,6 +127,8 @@ addTest("error provocation 3", function(log){
 	return canvasBlocker;
 });
 function testKnownPixelValue(size, log){
+	"use strict";
+	
 	var canvas = document.createElement("canvas");
 	canvas.height = size;
 	canvas.width = size;
@@ -128,16 +146,22 @@ function testKnownPixelValue(size, log){
 	return false;
 }
 addTest("known pixel value test 1", function(log){
+	"use strict";
+	
 	return testKnownPixelValue(1, log);
 });
 addTest("known pixel value test 10", function(log){
+	"use strict";
+	
 	return testKnownPixelValue(10, log);
 });
 addTest("double readout test", function(log){
+	"use strict";
+	
 	var canvas = document.createElement("canvas");
 	var context = canvas.getContext("2d");
 	var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-	for (var i = 0; i < imageData.data.length; i += 1){
+	for (let i = 0; i < imageData.data.length; i += 1){
 		if (i % 4 !== 3){
 			imageData.data[i] = Math.floor(256 * Math.random());
 		}
@@ -149,7 +173,7 @@ addTest("double readout test", function(log){
 	
 	var imageData1 = context.getImageData(0, 0, canvas.width, canvas.height);
 	var imageData2 = context.getImageData(0, 0, canvas.width, canvas.height);
-	for (var i = 0; i < imageData2.data.length; i += 1){
+	for (let i = 0; i < imageData2.data.length; i += 1){
 		if (imageData1.data[i] !== imageData2.data[i]){
 			log("mismatch at", i, ":",
 				imageData1.data[i], "(", imageData1.data[i].toString(2), ")",
@@ -163,10 +187,12 @@ addTest("double readout test", function(log){
 	return false;
 });
 addTest("readout - in - out test", function(log){
+	"use strict";
+	
 	var canvas = document.createElement("canvas");
 	var context = canvas.getContext("2d");
 	var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-	for (var i = 0; i < imageData.data.length; i += 1){
+	for (let i = 0; i < imageData.data.length; i += 1){
 		if (i % 4 !== 3){
 			imageData.data[i] = Math.floor(256 * Math.random());
 		}
@@ -181,7 +207,7 @@ addTest("readout - in - out test", function(log){
 	var context2 = canvas2.getContext("2d");
 	context2.putImageData(imageData1, 0, 0);
 	var imageData2 = context2.getImageData(0, 0, canvas.width, canvas.height);
-	for (var i = 0; i < imageData2.data.length; i += 1){
+	for (let i = 0; i < imageData2.data.length; i += 1){
 		if (imageData1.data[i] !== imageData2.data[i]){
 			log("mismatch at", i, ":",
 				imageData1.data[i], "(", imageData1.data[i].toString(2), ")",

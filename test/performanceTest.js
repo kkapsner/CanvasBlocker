@@ -1,5 +1,7 @@
 
 var createLog = function(){
+	"use strict";
+	
 	var div = document.getElementById("log");
 	
 	return function createLog(){
@@ -19,6 +21,8 @@ var createLog = function(){
 }();
 
 var performTest = function(){
+	"use strict";
+	
 	return function performTest(name, func, innerRunLength, outerRunLength){
 		var log = createLog();
 		log("test " + name);
@@ -59,12 +63,14 @@ var performTest = function(){
 }();
 
 function draw(canvas){
+	"use strict";
+	
 	canvas.setAttribute("width", 220);
 	canvas.setAttribute("height", 30);
 	
 	var fp_text = "BrowserLeaks,com <canvas> 10";
 	
-	var ctx = canvas.getContext('2d');
+	var ctx = canvas.getContext("2d");
 	ctx.textBaseline = "top";
 	ctx.font = "14px 'Arial'";
 	ctx.textBaseline = "alphabetic";
@@ -79,11 +85,13 @@ function draw(canvas){
 }
 
 var fingerprintTest = function(){
+	"use strict";
+	
 	var canvas;
 	return {
 		prepare: function(){
 			// create window canvas
-			canvas = document.createElement('canvas');
+			canvas = document.createElement("canvas");
 			// draw image in window canvas
 			draw(canvas);
 		},
@@ -94,6 +102,8 @@ var fingerprintTest = function(){
 }();
 
 var randomImageTest = function(){
+	"use strict";
+	
 	var canvas;
 	
 	return {
