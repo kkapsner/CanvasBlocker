@@ -13,13 +13,51 @@ body {
 	margin: 0;
 }
 
-button.inspectImage {
-	display: none;
-}
-.imageAvailable button.inspectImage {
-	display: initial;
+img {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
 }
 
-img {
-	border: 1px solid black;
+.notifications {
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+.collapsable {
+	position: relative;
+	margin: 0;
+}
+.collapsable.collapsed .collapser {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	box-sizing: border-box;
+}
+.collapsable .collapser {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+}
+.collapsable .collapser .more {
+	display: none;
+}
+.collapsable.collapsed .collapser .more {
+	display: inline;
+}
+.collapsable.collapsed .collapser .less {
+	display: none;
+}
+.collapsable .collapser .less {
+	display: inline;
+}
+.collapsable.collapsed .collapsing {
+	height: 0px;
+}
+.collapsable .collapsing {
+	height: initial;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
 }

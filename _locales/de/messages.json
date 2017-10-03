@@ -8,6 +8,15 @@
 		"description": ""
 	},
 	
+	"more": {
+		"message": "mehr",
+		"description": ""
+	},
+	"less": {
+		"message": "weniger",
+		"description": ""
+	},
+	
 	"displayAdvancedSettings_title": {
 		"message": "Expertenmodus",
 		"description": ""

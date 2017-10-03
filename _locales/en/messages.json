@@ -7,6 +7,15 @@
 		"message": "Changes the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
 		"description": ""
 	},
+
+	"more": {
+		"message": "more",
+		"description": ""
+	},
+	"less": {
+		"message": "less",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expert mode",
