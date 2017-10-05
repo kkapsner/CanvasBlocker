@@ -208,15 +208,6 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
-		// {
-			// "name": "notificationDisplayTime",
-			// "title": "notification display time",
-			// "type": "integer",
-			// "value": 30,
-			// "displayDependencies": {
-				// "blockMode": ["fakeReadout", "fakeInput"]
-			// }
-		// },
 		{
 			"name": "ignoreList",
 			"title": "Ignore list",
@@ -253,7 +244,8 @@
 					"displayAdvancedSettings": [true]
 				}
 			]
-		},{
+		},
+		{
 			"name": "enableStackList",
 			"title": "Use file specific scoped white list",
 			"type": "bool",
@@ -316,8 +308,14 @@
 			}
 		}
 	].forEach(function(pref){
-		var html = "<td><div class=\"content\"><span class=\"title\">__MSG_" + pref.name + "_title__</span><div class=\"description\">__MSG_" + pref.name + "_description__</div></div></td><td><div class=\"content\">";
-		var inputAttributes = " data-storage-name=\"" + pref.name + "\" data-storage-type=\"" + pref.type + "\" class=\"setting\"";
+		var html = "<td><div class=\"content\">" +
+			"<span class=\"title\">__MSG_" + pref.name + "_title__</span>" +
+			"<div class=\"description\">__MSG_" + pref.name + "_description__</div>" +
+			"</div></td><td><div class=\"content\">";
+		var inputAttributes =
+			" data-storage-name=\"" + pref.name + "\"" +
+			" data-storage-type=\"" + pref.type + "\"" +
+			" class=\"setting\"";
 		switch (pref.type){
 			case "integer":
 				html += "<input type=\"number\"" + inputAttributes + " value=\"" + pref.value + "\">";
@@ -326,13 +324,20 @@
 				html += "<input type=\"text\"" + inputAttributes + " value=\"" + pref.value + "\">";
 				break;
 			case "bool":
-				html += "<input type=\"checkbox\" style=\"display: inline\"" + inputAttributes + (pref.value? " checked=\"checked\"": "") + ">";
+				html += "<input type=\"checkbox\" style=\"display: inline\"" +
+					inputAttributes +
+					(pref.value? " checked=\"checked\"": "") +
+					">";
 				break;
 			case "menulist":
 				html += "<select" + inputAttributes + "data-type=\"" + (typeof pref.value) + "\">" +
 					pref.options.map(function(option){
 						if (option.value !== ""){
-							return "<option value=\"" + option.value + "\"" + (option.value === pref.value? " selected": "") + ">__MSG_" + pref.name + "_options." + option.label + "__</option>";
+							return "<option value=\"" + option.value + "\"" +
+								(option.value === pref.value? " selected": "") +
+								">" +
+								"__MSG_" + pref.name + "_options." + option.label + "__" +
+								"</option>";
 						}
 						else {
 							return "<option disabled>----------------</option>";

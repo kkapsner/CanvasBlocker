@@ -74,11 +74,6 @@
 			showReleaseNotes: function(){
 				logging.verbose("open release notes");
 				window.open("../releaseNotes.txt", "_blank");
-				// would be nicer but is not supported in fennec
-				// browser.windows.create({
-					// url: "../releaseNotes.txt",
-					// type: "popup"
-				// });
 			},
 			clearPersistentRnd: function(){
 				logging.message("clear persistent rnd storage");
@@ -104,7 +99,11 @@
 				var displayDependencies = row.setting.displayDependencies;
 				if (displayDependencies){
 					row.classList[(
-						(Array.isArray(displayDependencies)? displayDependencies: [displayDependencies]).some(function(displayDependency){
+						(
+							Array.isArray(displayDependencies)?
+								displayDependencies:
+								[displayDependencies]
+						).some(function(displayDependency){
 							return Object.keys(displayDependency).every(function(key){
 								return displayDependency[key].indexOf(settings[key]) !== -1;
 							});

@@ -17,19 +17,24 @@
         "settings": false
     },
     "rules": {
-        "brace-style": ["warn", "stroustrup", {"allowSingleLine": true}],
-        "eqeqeq": "warn",
+        "brace-style": ["error", "stroustrup", {"allowSingleLine": true}],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "constructor-super": "warn",
+        "eqeqeq": "error",
+        "max-len": ["warn", 120],
+        "max-lines": ["warn", 200],
         "no-const-assign": "warn",
         "no-this-before-super": "warn",
-        "no-undef": "warn",
+        "no-undef": "error",
         "no-unreachable": "warn",
         "no-unused-vars": "off",
-        "no-trailing-spaces": ["warn", {"skipBlankLines": true}],
-        "no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
-        "constructor-super": "warn",
+        "no-trailing-spaces": ["error", {"skipBlankLines": true}],
+        "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+        "indent": ["error", "tab", {"SwitchCase": 1}],
+        "space-in-parens": ["error", "never"],
         "valid-typeof": "warn",
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
-        "strict": ["warn", "function"]
+        "strict": ["error", "function"]
     }
 }
