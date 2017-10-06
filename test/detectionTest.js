@@ -53,7 +53,9 @@ addTest("function length", function(log){
 addTest("function code", function(log){
 	"use strict";
 	
-	if (!CanvasRenderingContext2D.prototype.getImageData.toString().match(/^\s*function getImageData\s*\(\)\s*\{\s*\[native code\]\s*\}\s*$/)){
+	if (!CanvasRenderingContext2D.prototype.getImageData.toString().match(
+		/^\s*function getImageData\s*\(\)\s*\{\s*\[native code\]\s*\}\s*$/
+	)){
 		log("unexpected function code:", CanvasRenderingContext2D.prototype.getImageData.toString());
 		return true;
 	}

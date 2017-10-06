@@ -20,8 +20,12 @@
 		show(document.getElementById("top"), topTest());
 		show(document.getElementById("iframe"), iframeTest());
 	}
-	document.querySelector("#top button").addEventListener("click", function(){show(document.getElementById("top"), topTest());});
-	document.querySelector("#iframe button").addEventListener("click", function(){show(document.getElementById("iframe"), iframeTest());});
+	document.querySelector("#top button").addEventListener("click", function(){
+		show(document.getElementById("top"), topTest());
+	});
+	document.querySelector("#iframe button").addEventListener("click", function(){
+		show(document.getElementById("iframe"), iframeTest());
+	});
 }());
 
 function draw(canvas){

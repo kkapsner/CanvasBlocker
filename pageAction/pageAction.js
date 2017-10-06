@@ -122,7 +122,10 @@ Promise.all([
 			data["canvasBlocker-notifications"].forEach(function(notification){
 				verbose(notification);
 				notification.url = new URL(notification.url);
-				domainNotification(notification.url.hostname, notification.messageId).addNotification(new Notification(notification));
+				domainNotification(
+					notification.url.hostname,
+					notification.messageId
+				).addNotification(new Notification(notification));
 			});
 		}
 	});
