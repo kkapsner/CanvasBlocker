@@ -1,7 +1,7 @@
 {
 	"name": "CanvasBlocker",
 	"description": "__MSG_addon_description__",
-	"version": "0.4.0-Development",
+	"version": "0.4.1-Development",
 	"icons": {
 		"48": "icons/icon.svg",
 		"96": "icons/icon.svg"
@@ -63,7 +63,7 @@
 	"applications": {
 		"gecko": {
 			"id": "CanvasBlocker@kkapsner.de",
-			"strict_min_version": "50.0"
+			"strict_min_version": "55.0"
 		}
 	},
 	"default_locale": "en",
