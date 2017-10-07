@@ -1,17 +1,6 @@
-Version 0.4.1:
-	todos:
-		- get rid of the .innerHTML assigments
-		- better and saver settings system
-		- improve design of page action display
-	
-	changes:
-		- 
-	
-	new features:
-		- 
-	
+Version 0.4.0.1:
 	fixes:
-		- 
+		- some web pages are broken (e.g. twitch.tv)
 
 Version 0.4.0:
 	changes:
