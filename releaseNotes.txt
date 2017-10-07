@@ -13,6 +13,10 @@ Version 0.4.1:
 	fixes:
 		- 
 
+Version 0.4.0.1:
+	fixes:
+		- some web pages are broken (e.g. twitch.tv)
+
 Version 0.4.0:
 	changes:
 		- switched to webExtension
