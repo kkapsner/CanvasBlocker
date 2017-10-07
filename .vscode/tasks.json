@@ -15,7 +15,9 @@
 			"osx": {
 				"command": "eslint"
 			},
-			"args": ["./"],
+			"args": [
+				"./"
+			],
 			"presentation": {
 				"echo": true,
 				"reveal": "silent",
@@ -23,6 +25,57 @@
 				"panel": "shared"
 			},
 			"problemMatcher": "$eslint-stylish"
+		},
+		{
+			"taskName": "run",
+			"type": "shell",
+			"windows": {
+				"command": "web-ext"
+			},
+			"linux": {
+				"command": "web-ext"
+			},
+			"osx": {
+				"command": "web-ext"
+			},
+			"args": [
+				"run",
+				"-f",
+				"nightly",
+				"--url",
+				"http://canvasblocker.local/test/"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"taskName": "build",
+			"type": "shell",
+			"windows": {
+				"command": "web-ext"
+			},
+			"linux": {
+				"command": "web-ext"
+			},
+			"osx": {
+				"command": "web-ext"
+			},
+			"args": [
+				"build",
+				"--overwrite-dest"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
 		}
 	]
 }
