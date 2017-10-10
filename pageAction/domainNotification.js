@@ -84,7 +84,7 @@
 		node.appendChild(document.createTextNode(" ("));
 		var countSpan = document.createElement("span");
 		countSpan.className = "count";
-		countSpan.innerHTML = "0";
+		countSpan.textContent = "0";
 		node.appendChild(countSpan);
 		node.appendChild(document.createTextNode(") "));
 
@@ -107,7 +107,7 @@
 		}).join("\n");
 
 		node.querySelectorAll(".count").forEach(function(countSpan){
-			countSpan.innerHTML = notifications.length;
+			countSpan.textContent = notifications.length;
 		});
 	};
 

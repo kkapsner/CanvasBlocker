@@ -10,14 +10,21 @@
 	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("./logging");
 
 	scope.createCollapser = function(){
-		const more = browser.i18n.getMessage("more");
-		const less = browser.i18n.getMessage("less");
+		const messages = {
+			more: browser.i18n.getMessage("more"),
+			less: browser.i18n.getMessage("less")
+		};
 
 		return function createCollapser(container){
 			var collapser = document.createElement("span");
 			collapser.className = "collapser";
 
-			collapser.innerHTML = `<span class="more">${more}</span><span class="less">${less}</span>`;
+			["more", "less"].forEach(function(type){
+				var span = document.createElement("span");
+				span.className = type;
+				span.textContent = messages[type];
+				collapser.appendChild(span);
+			});
 
 			container.appendChild(collapser);
 			collapser.addEventListener("click", function(){
