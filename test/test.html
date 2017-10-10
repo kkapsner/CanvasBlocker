@@ -7,15 +7,31 @@
 <body>
 <div id="top">
 	<h1>top Test</h1>
-	<img class="display" width="100%"><br>
+	<img class="display"><br>
 	Hash: <span class="hash"></span>
 	<button>refresh</button>
 </div>
 <div id="iframe">
 	<h1>iFrame Test. Thanks to DocumentRoot.</h1>
-	<img class="display" width="100%"><br>
+	<img class="display"><br>
 	Hash: <span class="hash"></span>
 	<iframe sandbox="allow-same-origin" style="display:none"></iframe>
+	<button>refresh</button>
+</div>
+</div>
+<div id="iframe2">
+	<h1>iFrame Test 2 - with URL</h1>
+	<img class="display"><br>
+	Hash: <span class="hash"></span>
+	<iframe src="?" sandbox="allow-same-origin" style="display:none"></iframe>
+	<button>refresh</button>
+</div>
+</div>
+<div id="iframe3">
+	<h1>iFrame Test 3 - violating SOP</h1>
+	<img class="display"><br>
+	Hash: <span class="hash"></span>
+	<iframe src="http://example.org" style="display:none"></iframe>
 	<button>refresh</button>
 </div>
 <script src="test.js"></script>

@@ -17,14 +17,26 @@
 	}
 	
 	if (location.search !== "?notInitial"){
-		show(document.getElementById("top"), topTest());
-		show(document.getElementById("iframe"), iframeTest());
+		try {show(document.getElementById("top"), topTest());}
+		catch (e){console.error(e);}
+		try {show(document.getElementById("iframe"), iframeTest(document.querySelector("#iframe iframe")));}
+		catch (e){console.error(e);}
+		try {show(document.getElementById("iframe2"), iframeTest(document.querySelector("#iframe2 iframe")));}
+		catch (e){console.error(e);}
+		try {show(document.getElementById("iframe3"), iframeTest(document.querySelector("#iframe3 iframe")));}
+		catch (e){console.error(e);}
 	}
 	document.querySelector("#top button").addEventListener("click", function(){
 		show(document.getElementById("top"), topTest());
 	});
 	document.querySelector("#iframe button").addEventListener("click", function(){
-		show(document.getElementById("iframe"), iframeTest());
+		show(document.getElementById("iframe"), iframeTest(document.querySelector("#iframe iframe")));
+	});
+	document.querySelector("#iframe2 button").addEventListener("click", function(){
+		show(document.getElementById("iframe2"), iframeTest(document.querySelector("#iframe2 iframe")));
+	});
+	document.querySelector("#iframe3 button").addEventListener("click", function(){
+		show(document.getElementById("iframe3"), iframeTest(document.querySelector("#iframe3 iframe")));
 	});
 }());
 
@@ -60,7 +72,7 @@ function topTest(){
 	return canvas.toDataURL();
 }
 
-function iframeTest(){
+function iframeTest(iframe){
 	"use strict";
 
 	// create window canvas
@@ -70,7 +82,7 @@ function iframeTest(){
 	draw(canvas);
 
 	// create iframe canvas and ctx
-	var iframe_canvas = document.querySelector("#iframe iframe").contentDocument.createElement("canvas");
+	var iframe_canvas = iframe.contentDocument.createElement("canvas");
 	iframe_canvas.setAttribute("width", 220);
 	iframe_canvas.setAttribute("height", 30);
 	var iframe_ctx = iframe_canvas.getContext("2d");
