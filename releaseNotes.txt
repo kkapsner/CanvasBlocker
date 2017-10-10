@@ -13,6 +13,11 @@ Version 0.4.1:
 	fixes:
 		- 
 
+Version 0.4.0.2:
+	fixes:
+		- some web pages were still broken with specific settings (e.g. twitch.tv)
+		- webGl was not faked any more
+
 Version 0.4.0.1:
 	fixes:
 		- some web pages are broken (e.g. twitch.tv)
