@@ -11,7 +11,7 @@ Version 0.4.1:
 		- 
 	
 	fixes:
-		- 
+		- unnecessary check for context type in getImageData broke websites
 
 Version 0.4.0.2:
 	fixes:
