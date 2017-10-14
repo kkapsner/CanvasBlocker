@@ -51,9 +51,9 @@
 		const node = document.createElement("li");
 		node.className = "domainPrints collapsable collapsed";
 		node.appendChild(this.textNode());
+		node.appendChild(document.createElement("br"));
 		createCollapser(node);
 		node.appendChild(this.notificationsNode());
-		node.appendChild(this.actionsNode());
 		
 		this.node = function(){
 			return node;
@@ -69,6 +69,7 @@
 
 	DomainNotification.prototype.textNode = function textNode(){
 		const node = document.createElement("span");
+		node.className = "text";
 		this.textNode = function(){
 			return node;
 		};
@@ -77,7 +78,8 @@
 		while (messageParts.length){
 			var urlSpan = document.createElement("span");
 			urlSpan.textContent = this.domain;
-			urlSpan.className = "url";
+			urlSpan.className = "url hasHiddenActions";
+			urlSpan.appendChild(this.actionsNode());
 			node.appendChild(urlSpan);
 			node.appendChild(document.createTextNode(messageParts.shift()));
 		}
@@ -113,6 +115,7 @@
 
 	DomainNotification.prototype.actionsNode = function actionsNode(){
 		const node = document.createElement("div");
+		node.className = "actions";
 		createActionButtons(node, actions, this.domain);
 		this.actionsNode = function(){
 			return node;

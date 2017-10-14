@@ -29,6 +29,7 @@ Promise.all([
 		document.getElementById("globalActions"),
 		[{
 			name: "disableNotifications",
+			isIcon: true,
 			callback: function(){
 				browser.storage.local.set({showNotifications: false});
 				window.close();
@@ -53,6 +54,7 @@ Promise.all([
 	[
 		{
 			name: "ignorelistDomain",
+			isIcon: true,
 			callback: function(domain){
 				modalPrompt(
 					browser.i18n.getMessage("inputIgnoreDomain"),
@@ -67,6 +69,7 @@ Promise.all([
 		},
 		{
 			name: "whitelistDomain",
+			isIcon: true,
 			callback: function(domain){
 				modalPrompt(
 					browser.i18n.getMessage("inputWhitelistURL"),
@@ -87,18 +90,21 @@ Promise.all([
 	[
 		{
 			name: "displayFullURL",
+			isIcon: true,
 			callback: function({url}){
 				alert(url.href);
 			}
 		},
 		{
 			name: "displayCallingStack",
+			isIcon: true,
 			callback: function({errorStack}){
 				alert(parseErrorStack(errorStack));
 			}
 		},
 		{
 			name: "whitelistURL",
+			isIcon: true,
 			callback: function({url}){
 				modalPrompt(
 					browser.i18n.getMessage("inputWhitelistDomain"),

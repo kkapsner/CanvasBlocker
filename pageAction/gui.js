@@ -39,8 +39,17 @@
 	scope.createActionButtons = function createActionButtons(container, actions, data){
 		actions.forEach(function(action, i){
 			var button = document.createElement("button");
-			button.className = action.name;
-			button.textContent = browser.i18n.getMessage(action.name);
+			button.className = action.name + " action";
+			button.title = browser.i18n.getMessage(action.name);
+			if (action.isIcon || action.icon){
+				button.classList.add("isIcon");
+				var img = document.createElement("img");
+				button.appendChild(img);
+				img.src = "../icons/" + (action.icon || `pageAction-${action.name}.svg`);
+			}
+			else {
+				button.textContent = button.title;
+			}
 			button.addEventListener("click", action.callback.bind(undefined, data));
 			container.appendChild(button);
 			if (i % 3 === 2){

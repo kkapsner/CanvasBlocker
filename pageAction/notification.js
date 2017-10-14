@@ -22,20 +22,34 @@
 		node(){
 			const node = document.createElement("li");
 
-			node.appendChild(document.createTextNode(this.timestamp.toLocaleString() + ": " + this.functionName + " "));
+			node.appendChild(document.createTextNode(this.timestamp.toLocaleString() + ": "));
+			node.appendChild(this.textNode());
 			if (this.dataURL){
 				node.className = "notification collapsable collapsed";
+				node.appendChild(document.createElement("br"));
 				createCollapser(node);
 				const img = document.createElement("img");
 				img.src = this.dataURL;
-				img.className = "collapsing";
+				img.className = "fakedCanvasContent collapsing";
 				node.appendChild(img);
 			}
-			node.appendChild(this.actionsNode());
 
 			this.node = function(){
 				return node;
 			};
+			return node;
+		}
+
+		textNode(){
+			const node = document.createElement("span");
+			node.className = "text hasHiddenActions";
+			this.textNode = function(){
+				return node;
+			};
+			node.textContent = this.functionName;
+			node.title = this.url.href;
+			node.appendChild(this.actionsNode());
+	
 			return node;
 		}
 
