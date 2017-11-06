@@ -13,8 +13,7 @@
     },
     "extends": "eslint:recommended",
     "globals": {
-        "exportFunction": false,
-        "settings": false
+        "exportFunction": false
     },
     "rules": {
         "brace-style": ["error", "stroustrup", {"allowSingleLine": true}],

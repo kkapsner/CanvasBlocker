@@ -8,8 +8,9 @@
 	},
 	"background": {
 		"scripts": [
-			"lib/defaultSettings.js",
 			"lib/require.js",
+			"lib/settingDefinitions.js",
+			"lib/settings.js",
 			"lib/logging.js",
 			"lib/lists.js",
 			"lib/main.js"
@@ -20,8 +21,9 @@
 		"all_frames": true,
 		"run_at": "document_start",
 		"js": [
-			"lib/defaultSettings.js",
 			"lib/require.js",
+			"lib/settingDefinitions.js",
+			"lib/settings.js",
 			
 			"lib/logging.js",
 			

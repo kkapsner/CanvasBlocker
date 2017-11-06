@@ -91,39 +91,39 @@
 		"message": "",
 		"description": ""
 	},
-	"blockMode_options.allow everything": {
+	"blockMode_options.allowEverything": {
 		"message": "alles erlauben",
 		"description": ""
 	},
-	"blockMode_options.allow only white list": {
+	"blockMode_options.block": {
 		"message": "nur Einträge der Whitelist erlauben",
 		"description": ""
 	},
-	"blockMode_options.ask for permission": {
+	"blockMode_options.ask": {
 		"message": "um Erlaubnis fragen",
 		"description": ""
 	},
-	"blockMode_options.ask for readout API permission": {
+	"blockMode_options.askReadout": {
 		"message": "bei Auslese-API um Erlaubnis fragen",
 		"description": ""
 	},
-	"blockMode_options.block everything": {
+	"blockMode_options.blockEverything": {
 		"message": "alles blockieren",
 		"description": ""
 	},
-	"blockMode_options.block only black list": {
+	"blockMode_options.allow": {
 		"message": "nur Einträge der Blacklist blockieren",
 		"description": ""
 	},
-	"blockMode_options.block readout API": {
+	"blockMode_options.blockReadout": {
 		"message": "Auslese-API blockieren",
 		"description": ""
 	},
-	"blockMode_options.fake readout API": {
+	"blockMode_options.fakeReadout": {
 		"message": "Auslese-API vortäuschen",
 		"description": ""
 	},
-	"blockMode_options.fake input API": {
+	"blockMode_options.fakeInput": {
 		"message": "Bei Ausgabe vortäuschen",
 		"description": ""
 	},
@@ -162,7 +162,7 @@
 		"message": "konstant",
 		"description": ""
 	},
-	"rng_options.non persistent": {
+	"rng_options.nonPersistent": {
 		"message": "nicht persistent",
 		"description": ""
 	},
@@ -185,7 +185,7 @@
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "Ob Daten für den persistenten Zufallszahlengenerator gespeichert werden sollen.",
+		"message": "Ob Daten für den persistenten Zufallszahlengenerator gespeichert werden sollen. Ansonsten werden die Daten beim Beenden des Browsers verworfen.",
 		"description": ""
 	},
 	
@@ -390,27 +390,27 @@
 		"message": "Für eine Fehlersuche ist eine detaillierte Aufzeichnung der Addon-Aktivitäten hilfreich. Mit diesem Parameter kann der Grad der Detailliertheit dieser Aufzeichnung eingestellt werden.",
 		"description": ""
 	},
-	"logLevel_options.none": {
+	"logLevel_options.0": {
 		"message": "nichts",
 		"description": ""
 	},
-	"logLevel_options.error": {
+	"logLevel_options.1": {
 		"message": "Fehler",
 		"description": ""
 	},
-	"logLevel_options.warning": {
+	"logLevel_options.25": {
 		"message": "Warnungen",
 		"description": ""
 	},
-	"logLevel_options.message": {
+	"logLevel_options.50": {
 		"message": "Nachrichten",
 		"description": ""
 	},
-	"logLevel_options.notice": {
+	"logLevel_options.75": {
 		"message": "Notizen",
 		"description": ""
 	},
-	"logLevel_options.verbose": {
+	"logLevel_options.100": {
 		"message": "ausführlich",
 		"description": ""
 	}

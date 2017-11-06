@@ -1,8 +1,4 @@
 Version 0.4.1:
-	todos:
-		- get rid of the .innerHTML assigments
-		- better and saver settings system
-	
 	changes:
 		- improved design of the page action display
 		- 

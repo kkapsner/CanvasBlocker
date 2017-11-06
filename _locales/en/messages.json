@@ -91,39 +91,39 @@
 		"message": "",
 		"description": ""
 	},
-	"blockMode_options.allow everything": {
+	"blockMode_options.allowEverything": {
 		"message": "allow everything",
 		"description": ""
 	},
-	"blockMode_options.allow only white list": {
+	"blockMode_options.block": {
 		"message": "allow only white list",
 		"description": ""
 	},
-	"blockMode_options.ask for permission": {
+	"blockMode_options.ask": {
 		"message": "ask for permission",
 		"description": ""
 	},
-	"blockMode_options.ask for readout API permission": {
+	"blockMode_options.askReadout": {
 		"message": "ask for readout API permission",
 		"description": ""
 	},
-	"blockMode_options.block everything": {
+	"blockMode_options.blockEverything": {
 		"message": "block everything",
 		"description": ""
 	},
-	"blockMode_options.block only black list": {
+	"blockMode_options.allow": {
 		"message": "block only black list",
 		"description": ""
 	},
-	"blockMode_options.block readout API": {
+	"blockMode_options.blockReadout": {
 		"message": "block readout API",
 		"description": ""
 	},
-	"blockMode_options.fake readout API": {
+	"blockMode_options.fakeReadout": {
 		"message": "fake readout API",
 		"description": ""
 	},
-	"blockMode_options.fake input API": {
+	"blockMode_options.fakeInput": {
 		"message": "fake at input",
 		"description": ""
 	},
@@ -162,7 +162,7 @@
 		"message": "constant",
 		"description": ""
 	},
-	"rng_options.non persistent": {
+	"rng_options.nonPersistent": {
 		"message": "non persistent",
 		"description": ""
 	},
@@ -185,7 +185,7 @@
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "If data for the persistent random number generator should be stored.",
+		"message": "If data for the persistent random number generator should be stored. Otherwise it is discarded on browser shutdown.",
 		"description": ""
 	},
 	
@@ -394,27 +394,27 @@
 		"message": "To find the cause for an error a detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.",
 		"description": ""
 	},
-	"logLevel_options.none": {
+	"logLevel_options.0": {
 		"message": "none",
 		"description": ""
 	},
-	"logLevel_options.error": {
+	"logLevel_options.1": {
 		"message": "error",
 		"description": ""
 	},
-	"logLevel_options.warning": {
+	"logLevel_options.25": {
 		"message": "warning",
 		"description": ""
 	},
-	"logLevel_options.message": {
+	"logLevel_options.50": {
 		"message": "message",
 		"description": ""
 	},
-	"logLevel_options.notice": {
+	"logLevel_options.75": {
 		"message": "notice",
 		"description": ""
 	},
-	"logLevel_options.verbose": {
+	"logLevel_options.100": {
 		"message": "verbose",
 		"description": ""
 	}
