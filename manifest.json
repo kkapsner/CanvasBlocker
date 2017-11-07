@@ -65,7 +65,7 @@
 	"applications": {
 		"gecko": {
 			"id": "CanvasBlocker@kkapsner.de",
-			"strict_min_version": "55.0"
+			"strict_min_version": "52.4.1"
 		}
 	},
 	"default_locale": "en",
