@@ -23,98 +23,192 @@
 			}
 		},
 		{
-			"name": "minFakeSize",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout", "fakeInput"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
-			"name": "maxFakeSize",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout", "fakeInput"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
-			"name": "rng",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout", "fakeInput"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
-			"name": "storePersistentRnd",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout", "fakeInput"],
-				"rng": ["persistent"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
-			"name": "persistentRndClearInterval",
-			"inputs": ["persistentRndClearIntervalValue", "persistentRndClearIntervalUnit"],
-			"displayDependencies": {
-				"blockMode": ["fakeReadout", "fakeInput"],
-				"rng": ["persistent"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
-			"name": "clearPersistentRnd",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout", "fakeInput"],
-				"rng": ["persistent"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
-			"name": "ignoreFrequentColors",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
-			"name": "fakeAlphaChannel",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
-			"name": "useCanvasCache",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
 			"name": "askOnlyOnce",
 			"displayDependencies": {
 				"blockMode": ["askReadout", "ask"]
 			}
 		},
 		{
-			"name": "showNotifications",
+			"name": "askDenyMode",
 			"displayDependencies": {
-				"blockMode": ["fakeReadout", "fakeInput"]
-			}
-		},
-		{
-			"name": "storeImageForInspection",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout", "fakeInput"],
-				"showNotifications": [true],
+				"blockMode": ["askReadout", "ask"],
 				"displayAdvancedSettings": [true]
 			}
 		},
 		{
+			"name": "minFakeSize",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "maxFakeSize",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "rng",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "storePersistentRnd",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"rng": ["persistent"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"rng": ["persistent"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "persistentRndClearInterval",
+			"inputs": ["persistentRndClearIntervalValue", "persistentRndClearIntervalUnit"],
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"rng": ["persistent"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"rng": ["persistent"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "clearPersistentRnd",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"rng": ["persistent"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"rng": ["persistent"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "ignoreFrequentColors",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "fakeAlphaChannel",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "useCanvasCache",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "showNotifications",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"]
+				}
+			]
+		},
+		{
+			"name": "storeImageForInspection",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"showNotifications": [true],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"showNotifications": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
 			"name": "ignoreList",
-			"displayDependencies": {
-				"blockMode": ["fakeReadout", "fakeInput"],
-				"showNotifications": [true]
-			}
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"showNotifications": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"showNotifications": [true]
+				}
+			]
 		},
 		{
 			"name": "showCallingFile",

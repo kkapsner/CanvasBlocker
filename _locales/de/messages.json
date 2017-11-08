@@ -78,6 +78,22 @@
 		"message": "Nur einmal nachfragen",
 		"description": ""
 	},
+	"askDenyMode_title":{
+		"message": "Nachfrageverweigerungsmodus",
+		"description": ""
+	},
+	"askDenyMode_description":{
+		"message": "Welcher Modus soll gewählt werden, wenn die Erlaubnis verweigert wird.",
+		"description": ""
+	},
+	"askDenyMode_options.block":{
+		"message": "blockieren",
+		"description": ""
+	},
+	"askDenyMode_options.fake":{
+		"message": "vortäuschen",
+		"description": ""
+	},
 	"blackList_description": {
 		"message": "Domänen oder URLs, die die <canvas>-API niemals verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""

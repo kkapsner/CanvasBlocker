@@ -6,9 +6,11 @@ Version 0.4.1:
 	
 	new features:
 		- setting to set an interval to clear the persistent random generator data
+		- setting for the ask deny mode
 	
 	fixes:
 		- unnecessary check for context type in getImageData broke websites
+		- getContext was not asked in ask mode.
 
 Version 0.4.0.2:
 	fixes:

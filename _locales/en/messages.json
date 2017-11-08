@@ -78,6 +78,22 @@
 		"message": "Ask only once",
 		"description": ""
 	},
+	"askDenyMode_title":{
+		"message": "Ask deny mode",
+		"description": ""
+	},
+	"askDenyMode_description":{
+		"message": "Which mode should be used when the permission is denied.",
+		"description": ""
+	},
+	"askDenyMode_options.block":{
+		"message": "block",
+		"description": ""
+	},
+	"askDenyMode_options.fake":{
+		"message": "fake",
+		"description": ""
+	},
 	"blackList_description": {
 		"message": "Domains or URLs where the <canvas>-API should always be blocked. To add multiple entries, separate them by commas.",
 		"description": ""
