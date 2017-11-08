@@ -1,10 +1,11 @@
 Version 0.4.1:
 	changes:
 		- improved design of the page action display
-		- 
+		- Enabled Firefox ESR
+		- persistent random generator data is always stored in the settings but cleared on restart if the store flag is not set 
 	
 	new features:
-		- 
+		- setting to set an interval to clear the persistent random generator data
 	
 	fixes:
 		- unnecessary check for context type in getImageData broke websites

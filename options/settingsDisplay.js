@@ -52,6 +52,15 @@
 			}
 		},
 		{
+			"name": "persistentRndClearInterval",
+			"inputs": ["persistentRndClearIntervalValue", "persistentRndClearIntervalUnit"],
+			"displayDependencies": {
+				"blockMode": ["fakeReadout", "fakeInput"],
+				"rng": ["persistent"],
+				"displayAdvancedSettings": [true]
+			}
+		},
+		{
 			"name": "clearPersistentRnd",
 			"displayDependencies": {
 				"blockMode": ["fakeReadout", "fakeInput"],

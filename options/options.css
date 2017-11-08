@@ -26,3 +26,12 @@ input[type=""], input[type="text"], input[type="number"], select {
 	width: 100%;
 	box-sizing: border-box;
 }
+*.multiple2 {
+	width: 50% !important;
+}
+*.multiple3 {
+	width: 33% !important;
+}
+*.multiple4 {
+	width: 25% !important;
+}

@@ -13,6 +13,7 @@
 			"lib/settings.js",
 			"lib/logging.js",
 			"lib/lists.js",
+			"lib/persistentRndStorage.js",
 			"lib/main.js"
 		]
 	},

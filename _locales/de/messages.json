@@ -189,6 +189,43 @@
 		"description": ""
 	},
 	
+	"persistentRndClearInterval_title": {
+		"message": "Löschintervall der persistenten Daten",
+		"description": ""
+	},
+	"persistentRndClearInterval_description": {
+		"message": "Nach dem eingestellten Intervall werden die persistenten Daten automatisch gelöscht. (Null eingeben, um es zu deaktivieren.)",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.seconds": {
+		"message": "Sekunden",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.minutes": {
+		"message": "Minuten",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.hours": {
+		"message": "Stunden",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.days": {
+		"message": "Tage",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.weeks": {
+		"message": "Wochen",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.months": {
+		"message": "Monate",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.years": {
+		"message": "Jahre",
+		"description": ""
+	},
+	
 	"clearPersistentRnd_title": {
 		"message": "Persistenten Speicher leeren",
 		"description": ""

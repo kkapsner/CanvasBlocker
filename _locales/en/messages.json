@@ -189,6 +189,43 @@
 		"description": ""
 	},
 	
+	"persistentRndClearInterval_title": {
+		"message": "Clear interval of the persistent data",
+		"description": ""
+	},
+	"persistentRndClearInterval_description": {
+		"message": "After the specified interval the persistent data is cleared automatically. (Enter zero to disable.)",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.seconds": {
+		"message": "seconds",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.minutes": {
+		"message": "minutes",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.hours": {
+		"message": "hours",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.days": {
+		"message": "days",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.weeks": {
+		"message": "weeks",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.months": {
+		"message": "months",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.years": {
+		"message": "years",
+		"description": ""
+	},
+	
 	"clearPersistentRnd_title": {
 		"message": "Clear persistent random storage",
 		"description": ""

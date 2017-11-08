@@ -31,7 +31,13 @@
 	settingsDisplay.forEach(function(display){
 		var setting = settings.getDefinition(display.name);
 		if (!setting){
-			if (callbacks[display.name]){
+			if (display.inputs){
+				setting = {
+					name: display.name,
+					inputs: display.inputs.map(settings.getDefinition)
+				};
+			}
+			else if (callbacks[display.name]){
 				setting = {
 					name: display.name,
 					action: callbacks[display.name]

@@ -140,6 +140,14 @@
 		if (setting.action){
 			interaction = createButton(setting);
 		}
+		else if (setting.inputs){
+			interaction = document.createElement("span");
+			setting.inputs.forEach(function(inputSetting){
+				var input = createInput(inputSetting);
+				input.classList.add("multiple" + setting.inputs.length);
+				interaction.appendChild(input);
+			});
+		}
 		else {
 			interaction = createInput(setting);
 		}
