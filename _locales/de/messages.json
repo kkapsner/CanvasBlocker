@@ -70,12 +70,24 @@
 		"message": "Wollen Sie das Auslesen des rot umrandeten <canvas> erlauben?",
 		"description": ""
 	},
-	"askOnlyOnce_description": {
-		"message": "Wenn der Blockiermodus des Canvas Blockers auf \"um Erlaubnis fragen\" oder \"bei Auslese-API um Erlaubnis fragen\" gesetzt ist, erscheint jedes Mal ein Abfragedialog, wenn eine Seite versucht, die (Auslese-)API aufzurufen. Diese Einstellung versucht diese Abfrage nur einmal pro Seite anzuzeigen, unabhängig davon wie oft die API aufgerufen wird. Es können trotzdem mehrere Dialoge pro Seite erscheinen.",
-		"description": ""
-	},
 	"askOnlyOnce_title": {
 		"message": "Nur einmal nachfragen",
+		"description": ""
+	},
+	"askOnlyOnce_description": {
+		"message": "Wenn der Blockiermodus des Canvas Blockers auf \"um Erlaubnis fragen\" oder \"bei Auslese-API um Erlaubnis fragen\" gesetzt ist, erscheint jedes Mal ein Abfragedialog wenn eine Seite versucht, die (Auslese-)API aufzurufen. Diese Einstellung versucht diese Abfrage nur einmal pro Seite anzuzeigen, unabhängig davon wie oft die API aufgerufen wird. Es können trotzdem mehrere Dialoge pro Seite erscheinen.\nNein: es wird jedes mal gefragt\nIndividuell: jeder API-Typ (Context, Eingabe, Auslese) wird separat abgefragt\nKombiniert: alle API-Typen werden zusammen abgefragt",
+		"description": ""
+	},
+	"askOnlyOnce_options.no": {
+		"message": "nein",
+		"description": ""
+	},
+	"askOnlyOnce_options.individual": {
+		"message": "individuell",
+		"description": ""
+	},
+	"askOnlyOnce_options.combined": {
+		"message": "kombiniert",
 		"description": ""
 	},
 	"askDenyMode_title":{

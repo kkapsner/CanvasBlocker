@@ -70,12 +70,24 @@
 		"message": "Do you want to allow the readout of the red bordered <canvas>?",
 		"description": ""
 	},
-	"askOnlyOnce_description": {
-		"message": "When Canvas Blocker's Block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.",
-		"description": ""
-	},
 	"askOnlyOnce_title": {
 		"message": "Ask only once",
+		"description": ""
+	},
+	"askOnlyOnce_description": {
+		"message": "When Canvas Blocker's Block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\nNo: asking every time\nIndividual: each API-type (context, input, readout) has to be confirmed seperately\ncombined: all API-types get confirmed together",
+		"description": ""
+	},
+	"askOnlyOnce_options.no": {
+		"message": "no",
+		"description": ""
+	},
+	"askOnlyOnce_options.individual": {
+		"message": "individual",
+		"description": ""
+	},
+	"askOnlyOnce_options.combined": {
+		"message": "combined",
 		"description": ""
 	},
 	"askDenyMode_title":{
