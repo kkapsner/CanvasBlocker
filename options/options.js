@@ -26,7 +26,11 @@
 	};
 	
 	var table = document.createElement("table");
-	table.className = "settings";
+	table.className = "settings " + (settings.displayDescriptions? "display": "hide") + "Descriptions";
+	settings.on("displayDescriptions", function(){
+		table.className = "settings " + (settings.displayDescriptions? "display": "hide") + "Descriptions";
+	});
+	
 	document.body.appendChild(table);
 	settingsDisplay.forEach(function(display){
 		var setting = settings.getDefinition(display.name);

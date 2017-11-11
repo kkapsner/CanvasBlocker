@@ -26,6 +26,15 @@
 		"description": ""
 	},
 	
+	"displayDescriptions_title": {
+		"message": "Beschreibungen anzeigen",
+		"description": ""
+	},
+	"displayDescriptions_description": {
+		"message": "Zeigt die Beschreibungen der Einstellungen an.",
+		"description": ""
+	},
+	
 	"allowPDFCanvas_description": {
 		"message": "Die native pdf.js verwendet <canvas> um den Inhalt von PDFs anzuzeigen. Wenn viele Nachfragedialoge erscheinen oder die PDF-Ansicht nicht funktioniert, müssen diese erlaubt werden.",
 		"description": ""

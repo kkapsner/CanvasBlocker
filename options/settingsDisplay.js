@@ -8,6 +8,9 @@
 			"name": "displayAdvancedSettings"
 		},
 		{
+			"name": "displayDescriptions"
+		},
+		{
 			"name": "blockMode"
 		},
 		{

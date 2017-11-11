@@ -1,7 +1,9 @@
 .settings {
-	table-layout: fixed;
 	width: 100%;
 	border-spacing: 0;
+}
+.settings.displayDescriptions {
+	table-layout: fixed;
 }
 .settings * {
 	vertical-align: top;
@@ -12,12 +14,46 @@
 }
 
 .settings .settingRow .content {
-	overflow: hidden;
+	overflow: visible;
 	padding: 0.5em 0;
 	border-top: 1px solid #c1c1c1;
+	position: relative;
 }
 
-.settings .settingRow .description {
+.settings.hideDescriptions .settingRow .info {
+	margin: 0 0.5em;
+	border-radius: 100%;
+	background-color: gray;
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+	text-align: center;
+	line-height: 1em;
+	font-weight: bold;
+	color: white;
+}
+.settings.hideDescriptions .settingRow .info::after {
+	content: "i";
+}
+.settings.hideDescriptions .settingRow .info .description {
+	display: none;
+}
+.settings.hideDescriptions .settingRow .info:hover .description {
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	top: 90%;
+	left: 5%;
+	max-width: 90%;
+	z-index: 10;
+	border: 1px solid black;
+	color: black;
+	background-color: lightgrey;
+	padding: 0.5em;
+	text-align: left;
+	font-weight: normal;
+}
+.settings.displayDescriptions .settingRow .description {
 	color: graytext;
 	margin-inline-start: 2em;
 	white-space: pre-wrap;

@@ -24,11 +24,17 @@
 		title.textContent = browser.i18n.getMessage(setting.name + "_title");
 		c.appendChild(title);
 
-		var description = document.createElement("div");
-		description.className = "description";
-		description.textContent = browser.i18n.getMessage(setting.name + "_description");
-		c.appendChild(description);
+		var descriptionText = browser.i18n.getMessage(setting.name + "_description");
+		if (descriptionText){
+			var info = document.createElement("div");
+			info.className = "info";
+			c.appendChild(info);
 
+			var description = document.createElement("div");
+			description.className = "description";
+			description.textContent = descriptionText;
+			info.appendChild(description);
+		}
 		return c;
 	}
 
