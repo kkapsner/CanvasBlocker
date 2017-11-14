@@ -22,6 +22,10 @@
 			settings.persistentRndStorage = "";
 			logging.notice("send message to main script");
 			browser.runtime.sendMessage({"canvasBlocker-clear-domain-rnd": true});
+		},
+		exportSettings: function(){
+			logging.verbose("open settings export");
+			window.open("export.html", "_blank");
 		}
 	};
 	

@@ -1,3 +1,10 @@
+Version 0.4.2
+	new features:
+		- added settings export and import
+	
+	fixes:
+		- settings are sometimes not fast enough loaded
+
 Version 0.4.1:
 	changes:
 		- improved design of the page action display

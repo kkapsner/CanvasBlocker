@@ -491,5 +491,14 @@
 	"logLevel_options.100": {
 		"message": "verbose",
 		"description": ""
+	},
+	
+	"exportSettings_title": {
+		"message": "Export settings",
+		"description": ""
+	},
+	"exportSettings_label": {
+		"message": "Show",
+		"description": ""
 	}
 }

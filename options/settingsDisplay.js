@@ -257,6 +257,12 @@
 			"displayDependencies": {
 				"displayAdvancedSettings": [true]
 			}
+		},
+		{
+			"name": "exportSettings",
+			"displayDependencies": {
+				"displayAdvancedSettings": [true]
+			}
 		}
 	];
 	

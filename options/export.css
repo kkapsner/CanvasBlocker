@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+#settings {
+	width: 100%;
+	box-sizing: border-box;
+	height: 95%;
+}
+#settings.invalid {
+	background-color: pink;
+}

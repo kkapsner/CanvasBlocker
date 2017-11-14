@@ -487,5 +487,14 @@
 	"logLevel_options.100": {
 		"message": "ausführlich",
 		"description": ""
+	},
+
+	"exportSettings_title": {
+		"message": "Einstellungen exportieren",
+		"description": ""
+	},
+	"exportSettings_label": {
+		"message": "Anzeigen",
+		"description": ""
 	}
 }
