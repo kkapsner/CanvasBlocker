@@ -1,3 +1,16 @@
+Version 0.4.3:
+	todos:
+		- 
+	
+	changes:
+		- 
+	
+	new features:
+		- 
+	
+	fixes:
+		- 
+
 Version 0.4.2
 	new features:
 		- added settings export and import
