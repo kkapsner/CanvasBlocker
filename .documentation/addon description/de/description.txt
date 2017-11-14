@@ -1,16 +1,16 @@
-Dieses Add-on ermöglicht es Nutzern, Webseiten davon abzuhalten, sie über die Javascript &lt;canvas&gt;-API zu identifizieren. Nutzer können auswählen, ob die &lt;canvas&gt;-API komplett auf bestimmten oder allen Seiten blockiert wird (dies wird die Funktionalität einiger Seiten beeinträchtigen) oder nur die identifikationsfreundliche Auslese-API zu blockieren oder dort falsche Werte vorzutäuschen. Nähere Informationen zum &lt;canvas&gt;-fingerprinting können Sie auf http://www.browserleaks.com/canvas finden.
+Dieses Add-on ermöglicht es Nutzern, Webseiten davon abzuhalten, sie über die Javascript canvas-API zu identifizieren. Nutzer können auswählen, ob die canvas-API komplett auf bestimmten oder allen Seiten blockiert wird (dies wird die Funktionalität einiger Seiten beeinträchtigen) oder nur die identifikationsfreundliche Auslese-API zu blockieren oder dort falsche Werte vorzutäuschen. Nähere Informationen zum canvas-fingerprinting können Sie auf http://www.browserleaks.com/canvas finden.
 
 Die verschiedenen Blockiermodi sind:
 <ul>
-<li>Auslese-API blockieren: Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die &lt;canvas&gt;-API zur Darstellung verwenden, aber die Auslese-API darf nicht verwendet werden.</li>
-<li>Auslese-API vortäuschen: Standardeinstellung und mein Favorit! Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die &lt;canvas&gt;-API zur Darstellung verwenden, aber die Auslese-API gibt zufällige Werte zurück, sodass das Fingerprinting immer einen anderen Wert liefert.</li>
+<li>Auslese-API blockieren: Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die canvas-API zur Darstellung verwenden, aber die Auslese-API darf nicht verwendet werden.</li>
+<li>Auslese-API vortäuschen: Standardeinstellung und mein Favorit! Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die canvas-API zur Darstellung verwenden, aber die Auslese-API gibt zufällige Werte zurück, sodass das Fingerprinting immer einen anderen Wert liefert.</li>
 <li>Bei Ausgabe vortäuschen: Bei der Darstellung von Text werden die beschriebenen Pixel leicht verändert. Dies erschwert die Detektion des Add-ons, aber ist weniger sicher. Bei WebGL-Canvas ist das Verhalten identisch zu "Auslese-API vortäuschen".</li>
-<li>bei Auslese-API um Erlaubnis fragen: Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die &lt;canvas&gt;-API zur Darstellung verwenden, aber der Nutzer wird jedes Mal um Erlaubnis gefragt, wenn die Webseite die Readout-API verwenden möchte.</li>
-<li>alles blockieren: Ignoriert alle Listen und blockiert die &lt;canvas&gt;-API auf allen Webseiten.</li>
-<li>nur Einträge der Whitelist erlauben: Nur Seiten, die in der Whitelist gelistet sind, dürfen die &lt;canvas&gt;-API verwenden.</li>
-<li>um Erlaubnis fragen: Wenn eine Seite weder auf der Whitelist noch auf der Blacklist gelistet ist, wird der Nutzer gefragt, ob die Webseite die &lt;canvas&gt;-API verwenden darf, wenn sie benutzt wird.</li>
-<li>nur Einträge der Blacklist blockieren: Blockiere die &lt;canvas&gt;-API nur auf den Seiten der Blacklist.</li>
-<li>alles erlauben: Ignoriere alle Listen und erlaube die &lt;canvas&gt;-API auf allen Webseiten.</li>
+<li>bei Auslese-API um Erlaubnis fragen: Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die canvas-API zur Darstellung verwenden, aber der Nutzer wird jedes Mal um Erlaubnis gefragt, wenn die Webseite die Readout-API verwenden möchte.</li>
+<li>alles blockieren: Ignoriert alle Listen und blockiert die canvas-API auf allen Webseiten.</li>
+<li>nur Einträge der Whitelist erlauben: Nur Seiten, die in der Whitelist gelistet sind, dürfen die canvas-API verwenden.</li>
+<li>um Erlaubnis fragen: Wenn eine Seite weder auf der Whitelist noch auf der Blacklist gelistet ist, wird der Nutzer gefragt, ob die Webseite die canvas-API verwenden darf, wenn sie benutzt wird.</li>
+<li>nur Einträge der Blacklist blockieren: Blockiere die canvas-API nur auf den Seiten der Blacklist.</li>
+<li>alles erlauben: Ignoriere alle Listen und erlaube die canvas-API auf allen Webseiten.</li>
 </ul>
 
 Falls Sie Fehler finden oder Verbesserungsvorschläge haben, teilen Sie mir das bitte auf https://github.com/kkapsner/CanvasBlocker/issues mit.
