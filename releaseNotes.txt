@@ -9,7 +9,7 @@ Version 0.4.3:
 		- 
 	
 	fixes:
-		- 
+		- page action was not always showing
 
 Version 0.4.2
 	new features:
