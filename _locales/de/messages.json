@@ -493,6 +493,10 @@
 		"message": "Einstellungen exportieren",
 		"description": ""
 	},
+	"exportSettings_description": {
+		"message": "",
+		"description": ""
+	},
 	"exportSettings_label": {
 		"message": "Anzeigen",
 		"description": ""
