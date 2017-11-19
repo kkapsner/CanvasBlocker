@@ -71,6 +71,7 @@ button.action img {
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
+	image-rendering: -moz-crisp-edges;
 }
 
 .notifications {
