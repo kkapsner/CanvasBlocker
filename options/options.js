@@ -26,6 +26,11 @@
 		exportSettings: function(){
 			logging.verbose("open settings export");
 			window.open("export.html", "_blank");
+		},
+		resetSettings: function(){
+			if (window.confirm(browser.i18n.getMessage("resetSettings_confirm"))){
+				browser.storage.local.clear();
+			}
 		}
 	};
 	

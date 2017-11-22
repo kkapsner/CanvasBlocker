@@ -500,5 +500,22 @@
 	"exportSettings_label": {
 		"message": "Anzeigen",
 		"description": ""
+	},
+	
+	"resetSettings_title": {
+		"message": "Einstellungen zurücksetzen",
+		"description": ""
+	},
+	"resetSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"resetSettings_label": {
+		"message": "Zurücksetzen",
+		"description": ""
+	},
+	"resetSettings_confirm": {
+		"message": "Sind Sie sicher, dass Sie alle Einstellungen zurücksetzen wollen?",
+		"description": ""
 	}
 }

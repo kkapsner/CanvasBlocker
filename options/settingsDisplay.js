@@ -263,6 +263,12 @@
 			"displayDependencies": {
 				"displayAdvancedSettings": [true]
 			}
+		},
+		{
+			"name": "resetSettings",
+			"displayDependencies": {
+				"displayAdvancedSettings": [true]
+			}
 		}
 	];
 	

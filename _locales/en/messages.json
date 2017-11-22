@@ -504,5 +504,22 @@
 	"exportSettings_label": {
 		"message": "Show",
 		"description": ""
+	},
+
+	"resetSettings_title": {
+		"message": "Reset settings",
+		"description": ""
+	},
+	"resetSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"resetSettings_label": {
+		"message": "Reset",
+		"description": ""
+	},
+	"resetSettings_confirm": {
+		"message": "Are you sure you want to reset all settings?",
+		"description": ""
 	}
 }
