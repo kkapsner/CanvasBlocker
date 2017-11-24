@@ -188,7 +188,7 @@
 	},
 	
 	"rng_description": {
-		"message": "non persistent: the random numbers will be determined freshly for each faking action.\nconstant: within one web page a color will always be faked to the same color.\npersistent: the random number will only be determined once for every domain.",
+		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\nnon persistent: the random numbers will be determined freshly for each faking action.\nconstant: within one web page a color will always be faked to the same color.\npersistent: the random number will only be determined once for every domain.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -201,6 +201,10 @@
 	},
 	"rng_options.nonPersistent": {
 		"message": "non persistent",
+		"description": ""
+	},
+	"rng_options.white": {
+		"message": "none (completely white)",
 		"description": ""
 	},
 	"rng_title": {

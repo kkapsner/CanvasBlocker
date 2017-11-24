@@ -6,10 +6,12 @@ Version 0.4.3:
 		- 
 	
 	new features:
-		- 
+		- reset settings
+		- new white random generator - creates output similar to Tor browser
 	
 	fixes:
 		- page action was not always showing
+		- waiting for settings created error messages in browser console
 
 Version 0.4.2
 	new features:

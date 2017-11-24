@@ -3,7 +3,9 @@
 	"use strict";
 	
 	function show(container, url){
-		container.querySelector(".display").src = url;
+		var display = container.querySelector(".display");
+		display.src = url;
+		display.title = url;
 		var buffer = new TextEncoder("utf-8").encode(url);
 		crypto.subtle.digest("SHA-256", buffer).then(function(hash){
 			var chunks = [];

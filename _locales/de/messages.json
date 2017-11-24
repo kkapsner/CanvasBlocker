@@ -188,7 +188,7 @@
 	},
 	
 	"rng_description": {
-		"message": "nicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\nkonstant: innerhalb einer Webseite wird eine Farbe immer gleich verändert.\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
+		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuchen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\nnicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\nkonstant: innerhalb einer Webseite wird eine Farbe immer gleich verändert.\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -201,6 +201,10 @@
 	},
 	"rng_options.nonPersistent": {
 		"message": "nicht persistent",
+		"description": ""
+	},
+	"rng_options.white": {
+		"message": "nichts (komplett weiß)",
 		"description": ""
 	},
 	"rng_title": {
