@@ -168,6 +168,28 @@
 		"message": "Blockiermodus",
 		"description": ""
 	},
+
+	"urlSettings_title": {
+		"message": "Seitenspezifische Einstellungen",
+		"description": ""
+	},
+	"urlSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	
+	"url_title": {
+		"message": "URL",
+		"description": ""
+	},
+	"url_description": {
+		"message": "",
+		"description": ""
+	},
+	"inputURL": {
+		"message": "Input domain or URL RegExp:",
+		"description": ""
+	},
 	
 	"minFakeSize_description": {
 		"message": "Canvas, die eine kleiner oder gleich große Fläche als die hier angegebene Zahl haben, werden nicht vorgetäuscht. Dies ist ein Parameter, der die Detektion des Addons erschweren soll.\nACHTUNG: Dies verringert die Sicherheit des Addons. Deswegen wird stark empfohlen, diesen Wert nicht über 100 zu setzen.",

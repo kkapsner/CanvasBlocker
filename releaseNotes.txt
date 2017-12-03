@@ -8,6 +8,7 @@ Version 0.4.3:
 	new features:
 		- reset settings
 		- new white random generator - creates output similar to Tor browser
+		- blockMode and showNotifications can now be chosen url specific 
 	
 	fixes:
 		- page action was not always showing

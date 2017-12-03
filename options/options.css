@@ -1,6 +1,7 @@
 .settings {
 	width: 100%;
 	border-spacing: 0;
+	border-collapse: collapse;
 }
 .settings.displayDescriptions {
 	table-layout: fixed;
@@ -70,4 +71,45 @@ input[type=""], input[type="text"], input[type="number"], select {
 }
 *.multiple4 {
 	width: 25% !important;
+}
+
+.urlValues {
+	padding-right: 1em;
+	position: relative;
+}
+.urlValues.collapsed table {
+	display: none;
+}
+.urlValues.expanded table {
+	display: block;
+	margin: 0.5em auto;
+}
+.urlValues table caption {
+	text-align: center;
+	font-weight: bold;
+	white-space: nowrap;
+}
+.urlValues table td {
+	vertical-align: middle;
+}
+.urlValues table .reset, .urlValues table .add, .urlValues table .url {
+	cursor: pointer;
+}
+.urlValues .collapser {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	width: 1em;
+	height: 1em;
+	cursor: pointer;
+}
+.urlValues.collapsed .collapser::after {
+	content: "\25B6";
+}
+.urlValues.expanded .collapser::after {
+	content: "\25BC";
+}
+.urlValues .notSpecifiedForUrl {
+	opacity: 0.5;
 }

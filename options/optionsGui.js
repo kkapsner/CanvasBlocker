@@ -66,12 +66,11 @@
 				input.value = value;
 				return input;
 			},
-			updateCallback: function(input, setting){
-				input.value = setting.get();
+			updateCallback: function(input, value){
+				input.value = value;
 				return input.value;
 			},
-			changeCallback: function(input, setting){
-				setting.set(parseFloat(input.value));
+			getValue: function(input){
 				return parseFloat(input.value);
 			}
 		},
@@ -81,12 +80,11 @@
 				input.value = value;
 				return input;
 			},
-			updateCallback: function(input, setting){
-				input.value = setting.get();
+			updateCallback: function(input, value){
+				input.value = value;
 				return input.value;
 			},
-			changeCallback: function(input, setting){
-				setting.set(input.value);
+			getValue: function(input){
 				return input.value;
 			}
 		},
@@ -97,38 +95,110 @@
 				input.style.display = "inline";
 				return input;
 			},
-			updateCallback: function(input, setting){
-				input.checked = setting.get();
+			updateCallback: function(input, value){
+				input.checked = value;
 				return input.checked;
 			},
-			changeCallback: function(input, setting){
-				setting.set(input.checked);
+			getValue: function(input){
 				return input.checked;
 			}
-		}
+		},
+		object: false
 	};
 
-	function createInput(setting){
+	function createInput(setting, url = ""){
 		var type = inputTypes[typeof setting.defaultValue];
 		var input;
 		if (setting.options){
 			input = createSelect(setting);
 		}
 		else {
-			input = document.createElement("input");
 			if (type){
+				input = document.createElement("input");
 				type.input(input, setting.defaultValue);
 			}
 		}
 		if (type){
-			setting.on(function(){type.updateCallback(input, setting);});
+			setting.on(function(){type.updateCallback(input, setting.get(url));}, url);
 			input.addEventListener("change", function(){
-				var value = type.changeCallback(input, setting);
+				var value = type.getValue(input);
+				setting.set(value, url);
 				logging.message("changed setting", setting.name, ":", value);
 				
 			});
 		}
-		return input;
+		if (setting.urlSpecific && url === ""){
+			let container = document.createElement("div");
+			container.className = "urlValues collapsed";
+			container.appendChild(input);
+			var collapser = document.createElement("span");
+			collapser.classList.add("collapser");
+			container.appendChild(collapser);
+			collapser.addEventListener("click", function(){
+				container.classList.toggle("collapsed");
+				container.classList.toggle("expanded");
+			});
+			let urlTable = document.createElement("table");
+			let caption = document.createElement("caption");
+			caption.textContent = browser.i18n.getMessage(setting.urlContainer.name + "_title");
+			urlTable.appendChild(caption);
+			let body = document.createElement("tbody");
+			urlTable.appendChild(body);
+			let foot = document.createElement("tfoot");
+			let footRow = document.createElement("tr");
+			let footCell = document.createElement("td");
+			footCell.colSpan = 3;
+			let footPlus = document.createElement("span");
+			footPlus.classList.add("add");
+			footPlus.textContent = "+";
+			footPlus.addEventListener("click", function(){
+				var url = prompt(browser.i18n.getMessage("inputURL")).trim();
+				if (url){
+					setting.set(setting.get(url), url);
+				}
+			});
+			footCell.appendChild(footPlus);
+			footRow.appendChild(footCell);
+			foot.appendChild(footRow);
+			urlTable.appendChild(foot);
+			container.appendChild(urlTable);
+
+			setting.urlContainer.on(function({newValue}){
+				body.innerHTML = "";
+				newValue.forEach(function(entry){
+					let row = document.createElement("tr");
+					let urlCell = document.createElement("td");
+					urlCell.classList.add("url");
+					urlCell.addEventListener("click", function(){
+						var url = prompt(browser.i18n.getMessage("inputURL"), entry.url).trim();
+						if (url){
+							entry.url = url;
+							setting.urlContainer.refresh();
+						}
+					});
+					urlCell.textContent = entry.url;
+					row.appendChild(urlCell);
+					let input = createInput(setting, entry.url);
+					type.updateCallback(input, setting.get(entry.url));
+					if (!entry.hasOwnProperty(setting.name)){
+						input.classList.add("notSpecifiedForUrl");
+					}
+					let inputCell = document.createElement("td");
+					inputCell.appendChild(input);
+					row.appendChild(inputCell);
+					let clearCell = document.createElement("td");
+					clearCell.className = "reset";
+					clearCell.textContent = "\xD7";
+					clearCell.addEventListener("click", function(){
+						setting.reset(entry.url);
+					});
+					row.appendChild(clearCell);
+					body.appendChild(row);
+				});
+			});
+			return container;
+		}
+		return input || document.createElement("span");
 	}
 
 	function createButton(setting){
@@ -158,7 +228,7 @@
 			interaction = createInput(setting);
 		}
 
-		interaction.className = "setting";
+		interaction.classList.add("setting");
 		interaction.dataset.storageName = setting.name;
 		interaction.dataset.storageType = typeof setting.defaultValue;
 

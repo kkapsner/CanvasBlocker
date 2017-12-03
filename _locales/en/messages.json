@@ -169,6 +169,28 @@
 		"description": ""
 	},
 	
+	"urlSettings_title": {
+		"message": "Site specific settings",
+		"description": ""
+	},
+	"urlSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	
+	"url_title": {
+		"message": "URL",
+		"description": ""
+	},
+	"url_description": {
+		"message": "",
+		"description": ""
+	},
+	"inputURL": {
+		"message": "Input domain or URL RegExp:",
+		"description": ""
+	},
+
 	"minFakeSize_description": {
 		"message": "Canvas with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
 		"description": ""
