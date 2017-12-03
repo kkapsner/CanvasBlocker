@@ -3,7 +3,7 @@ Version 0.4.3:
 		- 
 	
 	changes:
-		- 
+		- hide white, black and ignore list as they can be done with the url specific settings. They are still present and working in the background.
 	
 	new features:
 		- reset settings

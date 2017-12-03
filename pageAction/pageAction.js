@@ -5,7 +5,6 @@
 	"use strict";
 
 	const settings = require("./settings");
-	const lists = require("./lists");
 	const {parseErrorStack} = require("./callingStack");
 	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("./logging");
 	setLogPrefix("page action script");
@@ -55,7 +54,7 @@
 						domain
 					).then(function(domain){
 						if (domain){
-							lists.appendTo("ignore", domain);
+							settings.set("showNotifications", false, domain);
 						}
 						window.close();
 					});
@@ -70,7 +69,7 @@
 						domain
 					).then(function(domain){
 						if (domain){
-							lists.appendTo("white", domain);
+							settings.set("blockMode", "allow", domain);
 						}
 						window.close();
 					});
@@ -105,7 +104,7 @@
 						"^" + url.href.replace(/([\\+*?[^\]$(){}=!|.])/g, "\\$1") + "$"
 					).then(function(url){
 						if (url){
-							lists.appendTo("white", url);
+							settings.set("blockMode", "allow", url);
 						}
 						window.close();
 					});

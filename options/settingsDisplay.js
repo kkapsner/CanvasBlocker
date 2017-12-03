@@ -13,18 +13,18 @@
 		{
 			"name": "blockMode"
 		},
-		{
-			"name": "whiteList",
-			"displayDependencies": {
-				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"]
-			}
-		},
-		{
-			"name": "blackList",
-			"displayDependencies": {
-				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "ask", "allow"]
-			}
-		},
+		// {
+		// 	"name": "whiteList",
+		// 	"displayDependencies": {
+		// 		"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"]
+		// 	}
+		// },
+		// {
+		// 	"name": "blackList",
+		// 	"displayDependencies": {
+		// 		"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "ask", "allow"]
+		// 	}
+		// },
 		{
 			"name": "askOnlyOnce",
 			"displayDependencies": {
@@ -199,20 +199,20 @@
 				}
 			]
 		},
-		{
-			"name": "ignoreList",
-			"displayDependencies": [
-				{
-					"blockMode": ["fakeReadout", "fakeInput"],
-					"showNotifications": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"],
-					"showNotifications": [true]
-				}
-			]
-		},
+		// {
+		// 	"name": "ignoreList",
+		// 	"displayDependencies": [
+		// 		{
+		// 			"blockMode": ["fakeReadout", "fakeInput"],
+		// 			"showNotifications": [true]
+		// 		},
+		// 		{
+		// 			"blockMode": ["askReadout", "ask"],
+		// 			"askDenyMode": ["fake"],
+		// 			"showNotifications": [true]
+		// 		}
+		// 	]
+		// },
 		{
 			"name": "showCallingFile",
 			"displayDependencies": {
