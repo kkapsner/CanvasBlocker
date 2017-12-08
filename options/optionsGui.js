@@ -148,13 +148,17 @@
 			let footRow = document.createElement("tr");
 			let footCell = document.createElement("td");
 			footCell.colSpan = 3;
+			let newInput = document.createElement("input");
+			newInput.title = browser.i18n.getMessage("inputURL");
+			footCell.appendChild(newInput);
 			let footPlus = document.createElement("span");
 			footPlus.classList.add("add");
 			footPlus.textContent = "+";
 			footPlus.addEventListener("click", function(){
-				var url = prompt(browser.i18n.getMessage("inputURL")).trim();
+				var url = newInput.value.trim();
 				if (url){
 					setting.set(setting.get(url), url);
+					newInput.value = "";
 				}
 			});
 			footCell.appendChild(footPlus);
@@ -170,11 +174,24 @@
 					let urlCell = document.createElement("td");
 					urlCell.classList.add("url");
 					urlCell.addEventListener("click", function(){
-						var url = prompt(browser.i18n.getMessage("inputURL"), entry.url).trim();
-						if (url){
-							entry.url = url;
-							setting.urlContainer.refresh();
-						}
+						var input = document.createElement("input");
+						input.classList.add("urlInput");
+						input.style.width = urlCell.clientWidth + "px";
+						input.style.height = urlCell.clientHeight + "px";
+						urlCell.innerHTML = "";
+						urlCell.appendChild(input);
+						input.title = browser.i18n.getMessage("inputURL");
+						input.value = entry.url;
+						input.focus();
+						input.addEventListener("blur", function(){
+							var url = input.value.trim();
+							if (url){
+								entry.url = url;
+								setting.urlContainer.refresh();
+							}
+							urlCell.removeChild(input);
+							urlCell.textContent = entry.url;
+						});
 					});
 					urlCell.textContent = entry.url;
 					row.appendChild(urlCell);

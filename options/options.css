@@ -94,6 +94,14 @@ input[type=""], input[type="text"], input[type="number"], select {
 }
 .urlValues table .reset, .urlValues table .add, .urlValues table .url {
 	cursor: pointer;
+	margin: 0 0.2em;
+}
+.urlValues table .url {
+	min-width: 4em;
+}
+.urlValues table .urlInput {
+	padding: 1px;
+	margin: -1px;
 }
 .urlValues .collapser {
 	position: absolute;
