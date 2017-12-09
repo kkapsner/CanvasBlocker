@@ -135,13 +135,21 @@ function testKnownPixelValue(size, log){
 	canvas.height = size;
 	canvas.width = size;
 	var context = canvas.getContext("2d");
-	context.fillStyle = "rgba(0, 127, 255, 1)";
-	var pixelValues = [0, 127, 255, 255];
-	context.fillRect(0, 0, canvas.width, canvas.height);
+	var imageData = new ImageData(canvas.width, canvas.height);
+	var pixelValues = imageData.data;
+	for (let i = 0; i < imageData.data.length; i += 1){
+		if (i % 4 !== 3){
+			pixelValues[i] = Math.floor(256 * Math.random());
+		}
+		else {
+			pixelValues[i] = 255;
+		}
+	}
+	context.putImageData(imageData, 0, 0);
 	var p = context.getImageData(0, 0, canvas.width, canvas.height).data;
 	for (var i = 0; i < p.length; i += 1){
-		if (p[i] !== pixelValues[i%4]){
-			log("wrong value", p[i], "at", i, "expected", pixelValues[i%4]);
+		if (p[i] !== pixelValues[i]){
+			log("wrong value", p[i], "at", i, "expected", pixelValues[i]);
 			return true;
 		}
 	}
