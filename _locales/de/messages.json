@@ -359,6 +359,10 @@
 		"description": ""
 	},
 	
+	"preBlock": {
+		"message": "API auf {url} blockiert, weil die CanvasBlocker-Einstellungen nicht rechtzeitig geladen wurden.",
+		"description": ""
+	},
 	"fakedReadout": {
 		"message": "Auslese vorgetäuscht auf {url}",
 		"description": ""
