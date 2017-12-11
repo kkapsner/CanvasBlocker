@@ -14,6 +14,7 @@ Version 0.4.3:
 	fixes:
 		- page action was not always showing
 		- waiting for settings created error messages in browser console
+		- do not show notifications when canvas faking was aborted
 
 Version 0.4.2
 	new features:
