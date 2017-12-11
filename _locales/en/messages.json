@@ -311,6 +311,15 @@
 		"description": ""
 	},
 	
+	"minColors_title": {
+		"message": "Minimal number of colors",
+		"description": ""
+	},
+	"minColors_description": {
+		"message": "Number of colors that a canvas must have to be faked.\nCAUTION: This can lower the safety of the addon, therefore it is highly recommended not to set this value above 10.",
+		"description": ""
+	},
+	
 	"fakeAlphaChannel_title": {
 		"message": "Fake the alpha channel",
 		"description": ""

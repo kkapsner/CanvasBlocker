@@ -144,6 +144,20 @@
 			]
 		},
 		{
+			"name": "minColors",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
 			"name": "fakeAlphaChannel",
 			"displayDependencies": [
 				{

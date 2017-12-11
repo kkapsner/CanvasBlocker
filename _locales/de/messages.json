@@ -311,6 +311,15 @@
 		"description": ""
 	},
 	
+	"minColors_title": {
+		"message": "Minimale Anzahl an Farben",
+		"description": ""
+	},
+	"minColors_description": {
+		"message": "Anzahl der Farben, die ein Canvas aufweisen muss, damit es vorgetäuscht wird. Dies ist ein Parameter, der die Detektion des Addons erschweren soll.\nACHTUNG: Dies kann die Sicherheit des Addons beeinträchtigen. Deswegen wird stark empfohlen, diesen Wert nicht über 10 zu setzen.",
+		"description": ""
+	},
+	
 	"fakeAlphaChannel_title": {
 		"message": "Alpha-Kanal auch vortäuschen",
 		"description": ""

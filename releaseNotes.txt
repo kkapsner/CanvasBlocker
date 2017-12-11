@@ -8,7 +8,8 @@ Version 0.4.3:
 	new features:
 		- reset settings
 		- new white random generator - creates output similar to Tor browser
-		- blockMode and showNotifications can now be chosen url specific 
+		- blockMode and showNotifications can now be chosen url specific
+		- new setting to ignore canvas with only few colors
 	
 	fixes:
 		- page action was not always showing
