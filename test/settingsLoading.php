@@ -55,7 +55,8 @@
 				secondFingerprint = fingerPrint();
 				if (firstFingerprint === secondFingerprint){
 					hash(firstFingerprint).then(function(hash){
-						document.body.appendChild(document.createTextNode("fingerprint consistent (" + firstFingerprint + ") -> good!"));
+						document.body.appendChild(document.createTextNode("fingerprint consistent (" + hash + ") -> good!"));
+						document.body.style.backgroundColor = "green";
 					});
 				}
 				else {
@@ -68,6 +69,7 @@
 		}
 		else {
 			document.body.textContent = "context API blocked";
+			document.body.style.backgroundColor = "orange";
 		}
 	</script>
 </body></html>
