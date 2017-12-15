@@ -1,3 +1,10 @@
+Version 0.4.3c:
+	known issues:
+		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.4.3a instead or wait for Firefox 59 which provides the required API to solve this issue once and for all
+	
+	fixes:
+		- display of about:blank broken in Waterfox
+	
 Version 0.4.3b:
 	known issues:
 		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.4.3a instead or wait for Firefox 59 which provides the required API to solve this issue once and for all
