@@ -1,10 +1,17 @@
+Version 0.4.3b:
+	known issues:
+		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.4.3a instead or wait for Firefox 59 which provides the required API to solve this issue once and for all
+	
+	changes:
+		- if settings are not loaded fast enough the loading is forced
+	
 Version 0.4.3a:
 	known issues:
 		- due to API blocking some web pages may break. Use 0.4.3b instead.
 	
 	changes:
 		- hide white, black and ignore list as they can be done with the url specific settings. They are still present and working in the background.
-		- if settings are not loaded fast enough the loading is not force but all APIs are blocked
+		- if settings are not loaded fast enough the loading is not forced but all APIs are blocked
 	
 	new features:
 		- reset settings
