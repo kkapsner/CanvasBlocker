@@ -4,6 +4,7 @@ Version 0.4.3c:
 	
 	fixes:
 		- display of about:blank broken in Waterfox
+		- pinned tabs were not loaded and JS not executed in some cases
 	
 Version 0.4.3b:
 	known issues:
