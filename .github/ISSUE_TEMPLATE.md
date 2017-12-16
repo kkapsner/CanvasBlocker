@@ -34,5 +34,6 @@
 * Operating System and version (desktop or mobile):
 
 ## Your Settings
-<!--- Copy your CanvasBlocker settings (can be retrieved by checking the expert mode -> export settings) here. -->
+<!--- Copy your CanvasBlocker settings here. -->
+<!-- They can be retrieved by checking the expert mode and going to export settings. -->
 <!--- You may consider deleting personal data - especially the "persistentRndStorage". -->
