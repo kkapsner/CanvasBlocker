@@ -25,6 +25,7 @@
 
 ## Context
 <!--- How has this issue affected you? What are you trying to accomplish? -->
+<!--- Did you reproduce the problem with a fresh Firefox profile? -->
 <!--- Providing context helps us come up with a solution that is most useful in the real world. -->
 
 ## Your Environment
@@ -32,6 +33,7 @@
 * CanvasBlocker Version used:
 * Firefox version incl. 32- or 64-bit:
 * Operating System and version (desktop or mobile):
+* Installed addons:
 
 ## Your Settings
 <!--- Copy your CanvasBlocker settings here. -->
