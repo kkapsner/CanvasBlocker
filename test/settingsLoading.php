@@ -3,7 +3,7 @@
 <head>
 	<title>Test</title>
 	<script>
-		console.log("starting first fingerprint");
+		console.log(new Date(), "starting first fingerprint");
 		function fingerPrint(){
 			"use strict";var canvas = document.createElement("canvas");
 			canvas.setAttribute("width", 220);
@@ -50,9 +50,9 @@
 		if (firstFingerprint){
 			document.body.textContent = "context API not blocked";
 			window.setTimeout(function(){
-				console.log("starting second fingerprint");
+				console.log(new Date(), "starting second fingerprint");
 				document.body.appendChild(document.createElement("br"));
-				secondFingerprint = fingerPrint();
+				var secondFingerprint = fingerPrint();
 				if (firstFingerprint === secondFingerprint){
 					hash(firstFingerprint).then(function(hash){
 						document.body.appendChild(document.createTextNode("fingerprint consistent (" + hash + ") -> good!"));
