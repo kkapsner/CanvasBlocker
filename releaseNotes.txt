@@ -1,6 +1,6 @@
 Version 0.4.4:
 	changes:
-		-
+		- show white, black and ignore list again, but only in export mode
 	
 	new features:
 		-
