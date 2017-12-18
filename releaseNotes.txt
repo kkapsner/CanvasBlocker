@@ -1,12 +1,12 @@
-Version 0.4.4:
-	changes:
-		- show white, black and ignore list again, but only in export mode
+Version 0.4.3d:
+	known issues:
+		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.4.3a instead or wait for Firefox 59 which provides the required API to solve this issue once and for all
 	
-	new features:
-		-
+	changes:
+		- show white, black and ignore list again, but only in expert mode
 	
 	fixes:
-		-
+		- Firefox consumed 100% CPU and could not be closed
 
 Version 0.4.3c:
 	known issues:
