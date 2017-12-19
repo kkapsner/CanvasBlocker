@@ -1,6 +1,10 @@
+Version 0.4.4a:
+	known issues:
+		- due to API blocking some web pages may break. Use 0.4.4 instead.
+	
 Version 0.4.4:
 	known issues:
-		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.4.3a instead or wait for Firefox 59 which provides the required API to solve this issue once and for all
+		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.4.4a instead or wait for Firefox 59 which provides the required API to solve this issue once and for all
 	
 	changes:
 		- show white, black and ignore list again, but only in expert mode
