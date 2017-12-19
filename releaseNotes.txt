@@ -7,6 +7,7 @@ Version 0.4.4:
 	
 	fixes:
 		- Firefox consumed 100% CPU and could not be closed
+		- Unknown setting breaks Firefox completely
 
 Version 0.4.3c:
 	known issues:
