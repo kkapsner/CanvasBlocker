@@ -1,3 +1,17 @@
+Version 0.4.4b:
+	known issues:
+		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.4.4a instead or wait for Firefox 59 which provides the required API to solve this issue once and for all
+	
+	changes:
+		- if settings are not loaded fast enough the loading is forced
+
+Version 0.4.4a:
+	known issues:
+		- due to API blocking some web pages may break. Use 0.4.4 instead.
+	
+	changes:
+		- if settings are not loaded fast enough the loading is not forced but all APIs are blocked
+
 Version 0.4.4:
 	known issues:
 		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.4.3a instead or wait for Firefox 59 which provides the required API to solve this issue once and for all
