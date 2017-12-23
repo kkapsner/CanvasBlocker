@@ -23,15 +23,30 @@
 
 		createActionButtons(
 			document.getElementById("globalActions"),
-			[{
-				name: "disableNotifications",
-				isIcon: true,
-				callback: function(){
-					settings.showNotifications = false;
-					window.close();
+			[
+				{
+					name: "showOptions",
+					isIcon: true,
+					callback: function(){
+						if (browser.runtime && browser.runtime.openOptionsPage){
+							browser.runtime.openOptionsPage();
+						}
+						else {
+							window.open(browser.extension.getURL("options/options.html"), "_blank");
+						}
+					}
+				},
+				{
+					name: "disableNotifications",
+					isIcon: true,
+					callback: function(){
+						settings.showNotifications = false;
+						window.close();
+					}
 				}
-			}],
-			undefined
+			],
+			undefined,
+			true
 		);
 		
 		if (!tabs.length){

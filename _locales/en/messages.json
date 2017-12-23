@@ -342,6 +342,10 @@
 		"message": "disable notifications",
 		"description": ""
 	},
+	"showOptions": {
+		"message": "display settings",
+		"description": ""
+	},
 	"displayCallingStack": {
 		"message": "display calling stack",
 		"description": ""

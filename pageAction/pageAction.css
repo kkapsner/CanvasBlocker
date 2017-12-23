@@ -67,6 +67,10 @@ button.action img {
 	text-align: right;
 }
 
+#globalActions .action {
+	margin-bottom: 4px;
+}
+
 .notifications .fakedCanvasContent {
 	display: block;
 	width: 100%;

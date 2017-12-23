@@ -36,7 +36,7 @@
 	}();
 
 		
-	scope.createActionButtons = function createActionButtons(container, actions, data){
+	scope.createActionButtons = function createActionButtons(container, actions, data, horizontal){
 		actions.forEach(function(action, i){
 			var button = document.createElement("button");
 			button.className = action.name + " action";
@@ -52,7 +52,7 @@
 			}
 			button.addEventListener("click", action.callback.bind(undefined, data));
 			container.appendChild(button);
-			if (i % 3 === 2){
+			if (horizontal || i % 3 === 2){
 				container.appendChild(document.createElement("br"));
 			}
 		});

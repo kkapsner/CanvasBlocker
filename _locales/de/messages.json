@@ -342,6 +342,10 @@
 		"message": "Benachrichtigungen deaktivieren",
 		"description": ""
 	},
+	"showOptions": {
+		"message": "Einstellungen anzeigen",
+		"description": ""
+	},
 	"displayCallingStack": {
 		"message": "Aufrufestack anzeigen",
 		"description": ""
