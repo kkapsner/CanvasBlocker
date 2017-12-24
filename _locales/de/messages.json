@@ -17,6 +17,18 @@
 		"description": ""
 	},
 	
+	"options": {
+		"message": "CanvasBlocker Einstellungen",
+		"description": ""
+	},
+	"optionsIntroduction": {
+		"message": "Über diese Seite können Sie die Einstellungen des Add-ons CanvasBlocker verändern.",
+		"description": ""
+	},
+	"installedNotice": {
+		"message": "CanvasBlocker wurde installiert oder aktualisiert. Wenn Sie diese Seite in Zukunft erreichen wollen, erstellen Sie bitte ein Lesezeichen.",
+		"description": ""
+	},
 	
 	"section_asking": {
 		"message": "Nachfragen",

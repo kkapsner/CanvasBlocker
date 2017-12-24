@@ -34,6 +34,27 @@
 		}
 	};
 	
+	if (window === window.top){
+		let head = document.createElement("header");
+		let heading = document.createElement("h1");
+		heading.textContent = browser.i18n.getMessage("options");
+		head.appendChild(heading);
+		
+		let introduction = document.createElement("div");
+		introduction.textContent = browser.i18n.getMessage("optionsIntroduction");
+		head.appendChild(introduction);
+		
+		if (window.location.search === "?installed"){
+			let bookmarkingNotice = document.createElement("div");
+			bookmarkingNotice.className = "installedNotice";
+			bookmarkingNotice.textContent = browser.i18n.getMessage("installedNotice");
+			head.appendChild(bookmarkingNotice);
+		}
+		
+		document.body.appendChild(head);
+		document.body.classList.add("standalone");
+	}
+	
 	var table = document.createElement("table");
 	table.className = "settings " + (settings.displayDescriptions? "display": "hide") + "Descriptions";
 	settings.on("displayDescriptions", function(){
