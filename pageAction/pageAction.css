@@ -63,11 +63,11 @@ button.action img {
 	right: 0;
 	top: 0;
 	width: 23px;
-	height: 100%;
 	text-align: right;
+	line-height: 0;
 }
 
-#globalActions .action {
+#globalActions .action img {
 	margin-bottom: 4px;
 }
 
