@@ -17,6 +17,32 @@
 		"description": ""
 	},
 	
+	
+	"section_asking": {
+		"message": "Nachfragen",
+		"description": ""
+	},
+	"section_faking": {
+		"message": "Vortäuschen",
+		"description": ""
+	},
+	"section_notifications": {
+		"message": "Benachrichtigungen",
+		"description": ""
+	},
+	"section_lists": {
+		"message": "Listen",
+		"description": ""
+	},
+	"section_misc": {
+		"message": "Gemischtes",
+		"description": ""
+	},
+	"section_settings": {
+		"message": "Einstellungen",
+		"description": ""
+	},
+	
 	"displayAdvancedSettings_title": {
 		"message": "Expertenmodus",
 		"description": ""

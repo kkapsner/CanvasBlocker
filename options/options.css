@@ -10,8 +10,20 @@
 	vertical-align: top;
 }
 
-.settings .settingRow.hidden {
+.settings .hidden {
 	display: none;
+}
+
+.settings td, .settings th {
+	margin: 0;
+	padding: 0;
+}
+
+.settings .section h2 {
+	border: 1px #c1c1c1 solid;
+	border-radius: 0.5em ;
+	padding: 0.2em 0.5em;
+	margin: 0.7em 1px 0.2em;
 }
 
 .settings .settingRow .content {
@@ -19,6 +31,17 @@
 	padding: 0.5em 0;
 	border-top: 1px solid #c1c1c1;
 	position: relative;
+}
+
+.settings .settingRow td:first-child .content {
+	margin-left: 0.6em;
+}
+.settings .settingRow td:last-child .content {
+	margin-right: 0.6em;
+}
+
+.settings .section + .settingRow .content {
+	border-top: 0 solid black;
 }
 
 .settings.hideDescriptions .settingRow .info {

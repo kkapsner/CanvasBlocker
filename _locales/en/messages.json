@@ -17,6 +17,32 @@
 		"description": ""
 	},
 	
+	
+	"section_asking": {
+		"message": "Asking",
+		"description": ""
+	},
+	"section_faking": {
+		"message": "Faking",
+		"description": ""
+	},
+	"section_notifications": {
+		"message": "Notifications",
+		"description": ""
+	},
+	"section_lists": {
+		"message": "Lists",
+		"description": ""
+	},
+	"section_misc": {
+		"message": "Misc",
+		"description": ""
+	},
+	"section_settings": {
+		"message": "Settings",
+		"description": ""
+	},
+	
 	"displayAdvancedSettings_title": {
 		"message": "Expert mode",
 		"description": ""

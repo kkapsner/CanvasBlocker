@@ -39,48 +39,88 @@
 	settings.on("displayDescriptions", function(){
 		table.className = "settings " + (settings.displayDescriptions? "display": "hide") + "Descriptions";
 	});
-	
 	document.body.appendChild(table);
-	settingsDisplay.forEach(function(display){
-		var setting = settings.getDefinition(display.name);
-		if (!setting){
-			if (display.inputs){
-				setting = {
-					name: display.name,
-					inputs: display.inputs.map(settings.getDefinition)
-				};
-			}
-			else if (callbacks[display.name]){
-				setting = {
-					name: display.name,
-					action: callbacks[display.name]
-				};
-			}
+	
+	let lastSection = null;
+	let addSection = function addSection(name){
+		let body = document.createElement("tbody");
+		if (name){
+			let row = document.createElement("tr");
+			row.className = "section";
+			let cell = document.createElement("td");
+			cell.colSpan = 2;
+			row.appendChild(cell);
+			let heading = document.createElement("h2");
+			heading.textContent = browser.i18n.getMessage("section_" + name);
+			cell.appendChild(heading);
+			body.appendChild(row);
 		}
-		if (setting){
-			var row = optionsGui.createSettingRow(setting);
-			table.appendChild(row);
-			if (display.displayDependencies){
-				var displayDependencies = display.displayDependencies;
-				displayDependencies = Array.isArray(displayDependencies)?
-					displayDependencies:
-					[displayDependencies];
-				var computeDependencies = function(){
-					logging.verbose("evaluate display dependencies for", setting);
-					row.classList[(
-						displayDependencies.some(function(displayDependency){
-							return Object.keys(displayDependency).every(function(key){
-								return displayDependency[key].indexOf(settings[key]) !== -1;
-							});
-						})
-					)? "remove": "add"]("hidden");
-				};
-				computeDependencies();
-				displayDependencies.forEach(function(displayDependency){
-					Object.keys(displayDependency).forEach(function(name){
-						settings.on(name, computeDependencies);
+		table.appendChild(body);
+		let rows = [];
+		let section = {
+			addRow: function(row){
+				rows.push(row);
+				body.appendChild(row);
+			},
+			updateDisplay: function(){
+				body.classList[(
+					rows.some(function(row){
+						return !row.classList.contains("hidden");
+					})
+				)? "remove": "add"]("hidden");
+			}
+		};
+		lastSection = section;
+	};
+	addSection();
+	
+	settingsDisplay.forEach(function(display){
+		if (typeof display === "string"){
+			addSection(display);
+		}
+		else {
+			var setting = settings.getDefinition(display.name);
+			if (!setting){
+				if (display.inputs){
+					setting = {
+						name: display.name,
+						inputs: display.inputs.map(settings.getDefinition)
+					};
+				}
+				else if (callbacks[display.name]){
+					setting = {
+						name: display.name,
+						action: callbacks[display.name]
+					};
+				}
+			}
+			if (setting){
+				var row = optionsGui.createSettingRow(setting);
+				let section = lastSection;
+				section.addRow(row);
+				if (display.displayDependencies){
+					var displayDependencies = display.displayDependencies;
+					displayDependencies = Array.isArray(displayDependencies)?
+						displayDependencies:
+						[displayDependencies];
+					var computeDependencies = function(){
+						logging.verbose("evaluate display dependencies for", setting);
+						row.classList[(
+							displayDependencies.some(function(displayDependency){
+								return Object.keys(displayDependency).every(function(key){
+									return displayDependency[key].indexOf(settings[key]) !== -1;
+								});
+							})
+						)? "remove": "add"]("hidden");
+						section.updateDisplay();
+					};
+					computeDependencies();
+					displayDependencies.forEach(function(displayDependency){
+						Object.keys(displayDependency).forEach(function(name){
+							settings.on(name, computeDependencies);
+						});
 					});
-				});
+				}
 			}
 		}
 	});

@@ -13,20 +13,7 @@
 		{
 			"name": "blockMode"
 		},
-		{
-			"name": "whiteList",
-			"displayDependencies": {
-				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"],
-				"displayAdvancedSettings": [true]
-			}
-		},
-		{
-			"name": "blackList",
-			"displayDependencies": {
-				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "ask", "allow"],
-				"displayAdvancedSettings": [true]
-			}
-		},
+		"asking",
 		{
 			"name": "askOnlyOnce",
 			"displayDependencies": {
@@ -40,6 +27,7 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
+		"faking",
 		{
 			"name": "minFakeSize",
 			"displayDependencies": [
@@ -187,6 +175,7 @@
 				}
 			]
 		},
+		"notifications",
 		{
 			"name": "showNotifications",
 			"displayDependencies": [
@@ -252,6 +241,7 @@
 				}
 			]
 		},
+		"lists",
 		{
 			"name": "enableStackList",
 			"displayDependencies": {
@@ -268,6 +258,21 @@
 			
 		},
 		{
+			"name": "whiteList",
+			"displayDependencies": {
+				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"],
+				"displayAdvancedSettings": [true]
+			}
+		},
+		{
+			"name": "blackList",
+			"displayDependencies": {
+				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "ask", "allow"],
+				"displayAdvancedSettings": [true]
+			}
+		},
+		"misc",
+		{
 			"name": "showReleaseNotes"
 		},
 		{
@@ -276,6 +281,7 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
+		"settings",
 		{
 			"name": "exportSettings",
 			"displayDependencies": {
