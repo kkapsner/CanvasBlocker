@@ -6,7 +6,7 @@ Version 0.4.5:
 		-
 	
 	fixes:
-		-
+		- prevent possible double faking
 
 Version 0.4.4b:
 	known issues:
