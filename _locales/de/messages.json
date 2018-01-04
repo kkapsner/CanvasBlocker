@@ -153,6 +153,20 @@
 		"message": "vortäuschen",
 		"description": ""
 	},
+	
+	"showCanvasWhileAsking_title":{
+		"message": "Canvas-Inhalt anzeigen",
+		"description": ""
+	},
+	"showCanvasWhileAsking_description":{
+		"message": "Wenn möglich wird der Inhalt des Canvas angezeigt, bei dem um Erlaubnis gefragt wird.",
+		"description": ""
+	},
+	"showCanvasWhileAsking_message":{
+		"message": "Die Webseite will den Inhalt des folgenden Canvas auslesen:",
+		"description": ""
+	},
+	
 	"blackList_description": {
 		"message": "Domänen oder URLs, die die <canvas>-API niemals verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""

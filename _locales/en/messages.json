@@ -153,6 +153,20 @@
 		"message": "fake",
 		"description": ""
 	},
+	
+	"showCanvasWhileAsking_title":{
+		"message": "Show canvas content",
+		"description": ""
+	},
+	"showCanvasWhileAsking_description":{
+		"message": "Shows the content of the canvas for which the permission is asked if possible.",
+		"description": ""
+	},
+	"showCanvasWhileAsking_message":{
+		"message": "The web page wants to read the content of the following canvas:",
+		"description": ""
+	},
+	
 	"blackList_description": {
 		"message": "Domains or URLs where the <canvas>-API should always be blocked. To add multiple entries, separate them by commas.",
 		"description": ""

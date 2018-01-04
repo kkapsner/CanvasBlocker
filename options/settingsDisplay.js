@@ -27,6 +27,13 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
+		{
+			"name": "showCanvasWhileAsking",
+			"displayDependencies": {
+				"blockMode": ["askReadout", "ask"],
+				"displayAdvancedSettings": [true]
+			}
+		},
 		"faking",
 		{
 			"name": "minFakeSize",
