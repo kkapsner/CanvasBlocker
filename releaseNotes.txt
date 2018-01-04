@@ -7,6 +7,7 @@ Version 0.4.5:
 	
 	fixes:
 		- prevent possible double faking
+		- asking did not work in some cases (auto deny)
 
 Version 0.4.4b:
 	known issues:
