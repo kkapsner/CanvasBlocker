@@ -55,7 +55,7 @@ header .bookmarkNotice {
 	margin-right: 0.6em;
 }
 
-.settings .section + .settingRow .content {
+.settings .section + .settingRow .content, .settings .settingRow.firstVisible .content {
 	border-top: 0 solid black;
 }
 

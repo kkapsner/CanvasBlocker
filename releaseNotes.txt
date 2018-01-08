@@ -5,6 +5,7 @@ Version 0.4.5:
 	new features:
 		- Added way to inspect canvas content in ask mode while being asked
 		- Open options page on install or update if the options page cannot be accessed in another way
+		- Added sections in options
 	
 	fixes:
 		- prevent possible double faking

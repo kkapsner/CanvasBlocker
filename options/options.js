@@ -88,11 +88,20 @@
 				body.appendChild(row);
 			},
 			updateDisplay: function(){
-				body.classList[(
-					rows.some(function(row){
-						return !row.classList.contains("hidden");
-					})
-				)? "remove": "add"]("hidden");
+				var anyVisible = false;
+				rows.forEach(function(row){
+					var isHidden = row.classList.contains("hidden");
+					if (!isHidden){
+						if (anyVisible){
+							row.classList.remove("firstVisible");
+						}
+						else {
+							anyVisible = true;
+							row.classList.add("firstVisible");
+						}
+					}
+				});
+				body.classList[anyVisible? "remove": "add"]("hidden");
 			}
 		};
 		lastSection = section;
