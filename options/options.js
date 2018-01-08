@@ -44,11 +44,15 @@
 		introduction.textContent = browser.i18n.getMessage("optionsIntroduction");
 		head.appendChild(introduction);
 		
-		if (window.location.search === "?installed"){
-			let bookmarkingNotice = document.createElement("div");
-			bookmarkingNotice.className = "installedNotice";
-			bookmarkingNotice.textContent = browser.i18n.getMessage("installedNotice");
-			head.appendChild(bookmarkingNotice);
+		if (window.location.search){
+			let noticeName = window.location.search.substr(1).trim() + "Notice";
+			let notice = browser.i18n.getMessage(noticeName);
+			if (notice){
+				let bookmarkingNotice = document.createElement("div");
+				bookmarkingNotice.className = noticeName + " bookmarkNotice";
+				bookmarkingNotice.textContent = notice;
+				head.appendChild(bookmarkingNotice);
+			}
 		}
 		
 		document.body.appendChild(head);

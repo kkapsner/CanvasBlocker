@@ -25,8 +25,12 @@
 		"message": "This page provides a way to change the settings of the CanvasBlocker add-on.",
 		"description": ""
 	},
-	"installedNotice": {
-		"message": "CanvasBlocker was installed or updated. If you want to be able to access this page in the future, please bookmark it.",
+	"installNotice": {
+		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"description": ""
+	},
+	"updateNotice": {
+		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it, please bookmark it.",
 		"description": ""
 	},
 	

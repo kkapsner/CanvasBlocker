@@ -25,8 +25,12 @@
 		"message": "Über diese Seite können Sie die Einstellungen des Add-ons CanvasBlocker verändern.",
 		"description": ""
 	},
-	"installedNotice": {
-		"message": "CanvasBlocker wurde installiert oder aktualisiert. Wenn Sie diese Seite in Zukunft erreichen wollen, erstellen Sie bitte ein Lesezeichen.",
+	"installNotice": {
+		"message": "CanvasBlocker wurde installiert. Wenn Sie diese Seite in Zukunft erreichen wollen, erstellen Sie bitte ein Lesezeichen.",
+		"description": ""
+	},
+	"updateNotice": {
+		"message": "CanvasBlocker wurde aktualisiert. Wenn Sie diese Seite in Zukunft erreichen wollen und noch kein Lesezeichen erstellt ahben, erstellen Sie bitte eines.",
 		"description": ""
 	},
 	
