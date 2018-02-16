@@ -8,6 +8,7 @@ Version 0.4.5:
 		- Added sections in options
 	
 	fixes:
+		- long clearing periods did not work
 		- prevent possible double faking
 		- asking did not work in some cases (auto deny)
 
