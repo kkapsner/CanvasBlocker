@@ -3,6 +3,7 @@ Version 0.4.5:
 		- added isPointInPath and isPointInStroke to the readout-API list 
 	
 	new features:
+		- Options page can be opened from page action
 		- Added way to inspect canvas content in ask mode while being asked
 		- Open options page on install or update if the options page cannot be accessed in another way
 		- Added sections in options
