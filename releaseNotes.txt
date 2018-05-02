@@ -1,3 +1,13 @@
+Version 0.4.6:
+	changes:
+		-
+	
+	new features:
+		-
+	
+	fixes:
+		-
+
 Version 0.4.5b:
 	known issues:
 		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.4.4a instead or use Firefox >= 59 which provides the required API to solve this issue once and for all
