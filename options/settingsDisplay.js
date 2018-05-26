@@ -182,6 +182,20 @@
 				}
 			]
 		},
+		{
+			"name": "apiWhiteList",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
 		"notifications",
 		{
 			"name": "showNotifications",

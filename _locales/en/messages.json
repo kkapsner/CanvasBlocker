@@ -393,6 +393,15 @@
 		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvas are read several times but decreases it for big canvas.",
 		"description": ""
 	},
+	
+	"apiWhiteList_title": {
+		"message": "API whitelist",
+		"description": ""
+	},
+	"apiWhiteList_description": {
+		"message": "Allows certain parts of the canvas API.",
+		"description": ""
+	},
 
 	"disableNotifications": {
 		"message": "disable notifications",

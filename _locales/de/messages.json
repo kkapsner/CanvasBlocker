@@ -394,6 +394,15 @@
 		"description": ""
 	},
 	
+	"apiWhiteList_title": {
+		"message": "API Whitelist",
+		"description": ""
+	},
+	"apiWhiteList_description": {
+		"message": "Erlaubt ausgewählte Teile der Canvas-API.",
+		"description": ""
+	},
+	
 	"disableNotifications": {
 		"message": "Benachrichtigungen deaktivieren",
 		"description": ""

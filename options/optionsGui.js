@@ -127,6 +127,47 @@
 				
 			});
 		}
+		else if (setting.keys){
+			input = document.createElement("table");
+			setting.keys.forEach(function(key){
+				let row = document.createElement("tr");
+				
+				let nameCell = document.createElement("td");
+				nameCell.textContent = key;
+				row.appendChild(nameCell);
+				
+				let keyType = inputTypes[typeof setting.defaultKeyValue];
+				let keyInput = document.createElement("input");
+				keyType.input(keyInput, setting.defaultKeyValue);
+				
+				let inputCell = document.createElement("td");
+				inputCell.appendChild(keyInput);
+				row.appendChild(inputCell);
+				
+				setting.on(function(){
+					var container = setting.get(url);
+					keyType.updateCallback(
+						keyInput,
+						container && container.hasOwnProperty(key)?
+							container[key]:
+							setting.defaultKeyValue,
+						url
+					);
+				});
+				keyInput.addEventListener("change", function(){
+					var value = keyType.getValue(keyInput);
+					var container = setting.get(url);
+					if (!container){
+						container = setting.defaultValue;
+					}
+					container[key] = value;
+					setting.set(container, url);
+					logging.message("changed setting", setting.name, "(", key, "):", value);
+				});
+				input.appendChild(row);
+			});
+		}
+		
 		if (setting.urlSpecific && url === ""){
 			let container = document.createElement("div");
 			container.className = "urlValues collapsed";
