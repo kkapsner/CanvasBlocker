@@ -1,3 +1,13 @@
+Version 0.4.6:
+	changes:
+		-
+	
+	new features:
+		-
+	
+	fixes:
+		-
+
 Version 0.4.5c:
 	new features:
 		- Added setting to whitelist parts of the canvas API
