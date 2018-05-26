@@ -16,3 +16,4 @@ The different block modes are:
 Special thanks to:
  * spodermenpls for finding all the typos
  * Thorin-Oakenpants for the icon idea
+ * anthologist for the italian translation
