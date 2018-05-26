@@ -2,7 +2,7 @@
 (function(){
 	"use strict";
 	
-	function show(container, url){
+	function show(container, {url, isPointInPath}){
 		var display = container.querySelector(".display");
 		display.src = url;
 		display.title = url;
@@ -16,6 +16,7 @@
 				return "0".repeat(8 - chunk.length) + chunk;
 			}).join("");
 		});
+		container.querySelector(".isPointInPath").textContent = isPointInPath;
 	}
 	
 	if (location.search !== "?notInitial"){
@@ -64,14 +65,29 @@ function draw(canvas){
 	return ctx;
 }
 
+function getIsPointInPath(ctx){
+	"use strict";
+	ctx.beginPath();
+	ctx.moveTo(20, 19);
+	ctx.lineTo(40, 19);
+	ctx.lineTo(30, 30);
+	ctx.closePath();
+	ctx.stroke();
+	
+	return ctx.isPointInPath(30, 19);
+}
+
 function topTest(){
 	"use strict";
 	
 	// create window canvas
 	var canvas = document.createElement("canvas");
 	// draw image in window canvas
-	draw(canvas);
-	return canvas.toDataURL();
+	var ctx = draw(canvas);
+	return {
+		url: canvas.toDataURL(),
+		isPointInPath: getIsPointInPath(ctx)
+	};
 }
 
 function iframeTest(iframe){
@@ -92,5 +108,8 @@ function iframeTest(iframe){
 	// copy image from window canvas to iframe ctx
 	iframe_ctx.drawImage(canvas, 0, 0);
 
-	return iframe_canvas.toDataURL();
+	return {
+		url: iframe_canvas.toDataURL(),
+		isPointInPath: getIsPointInPath(iframe_ctx)
+	};
 }

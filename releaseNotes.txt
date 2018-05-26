@@ -6,7 +6,7 @@ Version 0.4.6:
 		- Added setting to whitelist parts of the canvas API
 	
 	fixes:
-		-
+		- respect resistFingerPrinting setting in isPointInPath and isPointInStroke
 
 Version 0.4.5b:
 	known issues:
