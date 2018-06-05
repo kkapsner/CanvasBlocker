@@ -17,3 +17,6 @@ Special thanks to:
  * spodermenpls for finding all the typos
  * Thorin-Oakenpants for the icon idea
  * anthologist for the italian translation
+
+If you want to support this addon you can donate to the following bitcoin address:
+	159Y9BLcfHyrp6wj6f3syEuk92xkRVTiie
