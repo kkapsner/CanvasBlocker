@@ -292,6 +292,24 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
+		"Audio-API",
+		{
+			"name": "protectAudio"
+		},
+		{
+			"name": "audioFakeRate",
+			"displayDependencies": {
+				"protectAudio": [true],
+				"displayAdvancedSettings": [true]
+			}
+		},
+		{
+			"name": "audioNoiseLevel",
+			"displayDependencies": {
+				"protectAudio": [true],
+				"displayAdvancedSettings": [true]
+			}
+		},
 		"misc",
 		{
 			"name": "showReleaseNotes"

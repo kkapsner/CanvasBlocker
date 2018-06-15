@@ -7,7 +7,7 @@
 		"message": "Changes the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
 		"description": ""
 	},
-
+	
 	"more": {
 		"message": "more",
 		"description": ""
@@ -56,6 +56,10 @@
 	},
 	"section_settings": {
 		"message": "Settings",
+		"description": ""
+	},
+	"section_audio-api":{
+		"message": "Audio API",
 		"description": ""
 	},
 	
@@ -246,7 +250,7 @@
 		"message": "Input domain or URL RegExp:",
 		"description": ""
 	},
-
+	
 	"minFakeSize_description": {
 		"message": "Canvas with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
 		"description": ""
@@ -402,7 +406,7 @@
 		"message": "Allows certain parts of the canvas API.",
 		"description": ""
 	},
-
+	
 	"disableNotifications": {
 		"message": "disable notifications",
 		"description": ""
@@ -434,6 +438,10 @@
 	},
 	"fakedReadout": {
 		"message": "Faked readout on {url}",
+		"description": ""
+	},
+	"fakedAudioReadout": {
+		"message": "Faked audio readout on {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -555,6 +563,75 @@
 		"description": ""
 	},
 	
+	"protectaudio_title": {
+		"message": "Protect audio API",
+		"description": ""
+	},
+	"protectaudio_description": {
+		"message": "If the audio API should be protected as well",
+		"description": ""
+	},
+	"audiofakerate_title": {
+		"message": "Buffer fake rate",
+		"description": ""
+	},
+	"audiofakerate_description": {
+		"message": "How many of the values per read request should be faked.",
+		"description": ""
+	},
+	"audiofakerate_options.1": {
+		"message": "1 value",
+		"description": ""
+	},
+	"audiofakerate_options.10": {
+		"message": "10 values",
+		"description": ""
+	},
+	"audiofakerate_options.100": {
+		"message": "100 values",
+		"description": ""
+	},
+	"audiofakerate_options.1000": {
+		"message": "1000 values",
+		"description": ""
+	},
+	"audiofakerate_options.0.1%": {
+		"message": "0.1% of the values",
+		"description": ""
+	},
+	"audiofakerate_options.1%": {
+		"message": "1% of the values",
+		"description": ""
+	},
+	"audionoiselevel_title": {
+		"message": "Noise level",
+		"description": ""
+	},
+	"audionoiselevel_description": {
+		"message": "",
+		"description": ""
+	},
+	"audionoiselevel_options.minimal": {
+		"message": "minimal",
+		"description": ""
+	},
+	"audionoiselevel_options.low": {
+		"message": "low",
+		"description": ""
+	},
+	"audionoiselevel_options.medium": {
+		"message": "medium",
+		"description": ""
+	},
+	"audionoiselevel_options.high": {
+		"message": "high",
+		"description": ""
+	},
+	"audionoiselevel_options.maximal": {
+		"message": "maximal",
+		"description": ""
+	},
+	
 	"showReleaseNotes_title": {
 		"message": "Release notes",
 		"description": ""
@@ -613,7 +690,7 @@
 		"message": "Show",
 		"description": ""
 	},
-
+	
 	"resetSettings_title": {
 		"message": "Reset settings",
 		"description": ""

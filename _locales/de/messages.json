@@ -58,6 +58,10 @@
 		"message": "Einstellungen",
 		"description": ""
 	},
+	"section_audio-api":{
+		"message": "Audio API",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expertenmodus",
@@ -224,7 +228,7 @@
 		"message": "Blockiermodus",
 		"description": ""
 	},
-
+	
 	"urlSettings_title": {
 		"message": "Seitenspezifische Einstellungen",
 		"description": ""
@@ -289,7 +293,7 @@
 		"message": "Zufallszahlengenerator",
 		"description": ""
 	},
-
+	
 	"persistentRndStorage_title": {
 		"message": "Persistenter Speicher",
 		"description": ""
@@ -436,6 +440,10 @@
 		"message": "Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
+	"fakedAudioReadout": {
+		"message": "Audioauslese vorgetäuscht auf {url}",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "Bei Ausgabe vorgetäuscht auf {url}",
 		"description": ""
@@ -555,6 +563,75 @@
 		"description": ""
 	},
 	
+	"protectaudio_title": {
+		"message": "Audio-API beschützen",
+		"description": ""
+	},
+	"protectaudio_description": {
+		"message": "Ob die Audio-API auch beschützt werden soll.",
+		"description": ""
+	},
+	"audiofakerate_title": {
+		"message": "Buffer Vortäuschrate",
+		"description": ""
+	},
+	"audiofakerate_description": {
+		"message": "Wie viele Werte pro Leseanfrage vorgetäuscht werden sollen.",
+		"description": ""
+	},
+	"audiofakerate_options.1": {
+		"message": "1 Wert",
+		"description": ""
+	},
+	"audiofakerate_options.10": {
+		"message": "10 Werte",
+		"description": ""
+	},
+	"audiofakerate_options.100": {
+		"message": "100 Werte",
+		"description": ""
+	},
+	"audiofakerate_options.1000": {
+		"message": "1000 Werte",
+		"description": ""
+	},
+	"audiofakerate_options.0.1%": {
+		"message": "0.1% der Werte",
+		"description": ""
+	},
+	"audiofakerate_options.1%": {
+		"message": "1% der Werte",
+		"description": ""
+	},
+	"audionoiselevel_title": {
+		"message": "Rauschlevel",
+		"description": ""
+	},
+	"audionoiselevel_description": {
+		"message": "",
+		"description": ""
+	},
+	"audionoiselevel_options.minimal": {
+		"message": "minimal",
+		"description": ""
+	},
+	"audionoiselevel_options.low": {
+		"message": "niedrig",
+		"description": ""
+	},
+	"audionoiselevel_options.medium": {
+		"message": "mittel",
+		"description": ""
+	},
+	"audionoiselevel_options.high": {
+		"message": "hoch",
+		"description": ""
+	},
+	"audionoiselevel_options.maximal": {
+		"message": "maximal",
+		"description": ""
+	},
+	
 	"showReleaseNotes_title": {
 		"message": "Versionsinformationen",
 		"description": ""
@@ -600,7 +677,7 @@
 		"message": "ausführlich",
 		"description": ""
 	},
-
+	
 	"exportSettings_title": {
 		"message": "Einstellungen exportieren",
 		"description": ""

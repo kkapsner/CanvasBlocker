@@ -1,3 +1,4 @@
+
 {
 	"name": "CanvasBlocker",
 	"description": "__MSG_addon_description__",
@@ -30,6 +31,7 @@
 			
 			"lib/colorStatistics.js",
 			"lib/webgl.js",
+			"lib/modifiedAudioAPI.js",
 			"lib/modifiedAPI.js",
 			"lib/randomSupplies.js",
 			"lib/intercept.js",

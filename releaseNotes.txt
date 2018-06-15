@@ -1,9 +1,9 @@
 Version 0.4.6:
 	changes:
-		-
+		- Changes in the random supply API
 	
 	new features:
-		-
+		- Can protect Audio API
 	
 	fixes:
 		-
