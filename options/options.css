@@ -91,6 +91,7 @@ header .bookmarkNotice {
 	padding: 0.5em;
 	text-align: left;
 	font-weight: normal;
+	white-space: pre-wrap;
 }
 .settings.displayDescriptions .settingRow .description {
 	color: graytext;
