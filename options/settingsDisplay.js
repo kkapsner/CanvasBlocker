@@ -298,17 +298,35 @@
 		},
 		{
 			"name": "audioFakeRate",
-			"displayDependencies": {
-				"protectAudio": [true],
-				"displayAdvancedSettings": [true]
-			}
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask", "allow"],
+					"askDenyMode": ["fake"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
 		},
 		{
 			"name": "audioNoiseLevel",
-			"displayDependencies": {
-				"protectAudio": [true],
-				"displayAdvancedSettings": [true]
-			}
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask", "allow"],
+					"askDenyMode": ["fake"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
 		},
 		"misc",
 		{
