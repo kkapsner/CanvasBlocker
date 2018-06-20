@@ -135,6 +135,18 @@
 		"message": "Wollen Sie das Auslesen des rot umrandeten <canvas> erlauben?",
 		"description": ""
 	},
+	"askForAudioPermission": {
+		"message": "Wollen Sie die Audio-API erlauben?",
+		"description": ""
+	},
+	"askForAudioInputPermission": {
+		"message": "Wollen Sie das Schreiben in über die Audio-API erlauben?",
+		"description": ""
+	},
+	"askForAudioReadoutPermission": {
+		"message": "Wollen Sie das Auslesen über die Audio-API erlauben?",
+		"description": ""
+	},
 	"askOnlyOnce_title": {
 		"message": "Nur einmal nachfragen",
 		"description": ""

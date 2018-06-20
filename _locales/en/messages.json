@@ -135,6 +135,18 @@
 		"message": "Do you want to allow the readout of the red bordered <canvas>?",
 		"description": ""
 	},
+	"askForAudioPermission": {
+		"message": "Do you want to allow the audio API?",
+		"description": ""
+	},
+	"askForAudioInputPermission": {
+		"message": "Do you want to allow audio-API input?",
+		"description": ""
+	},
+	"askForAudioReadoutPermission": {
+		"message": "Do you want to allow audio readout?",
+		"description": ""
+	},
 	"askOnlyOnce_title": {
 		"message": "Ask only once",
 		"description": ""
