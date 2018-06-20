@@ -328,6 +328,40 @@
 				}
 			]
 		},
+		{
+			"name": "audioUseFixedIndices",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask", "allow"],
+					"askDenyMode": ["fake"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "audioFixedIndices",
+			"displayDependencies": [
+				{
+					"audioUseFixedIndices": [true],
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"audioUseFixedIndices": [true],
+					"blockMode": ["askReadout", "ask", "allow"],
+					"askDenyMode": ["fake"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
 		"misc",
 		{
 			"name": "showReleaseNotes"

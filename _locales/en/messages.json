@@ -653,6 +653,22 @@
 		"message": "maximal",
 		"description": ""
 	},
+	"audiousefixedindices_title": {
+		"message": "Use fixed indices",
+		"description": ""
+	},
+	"audiousefixedindices_description": {
+		"message": "If some of the used indices should be always faked.",
+		"description": ""
+	},
+	"audiofixedindices_title": {
+		"message": "Fixed indices",
+		"description": ""
+	},
+	"audiofixedindices_description": {
+		"message": "The indices that are always faked. Enter separated by comma.",
+		"description": ""
+	},
 	
 	"showReleaseNotes_title": {
 		"message": "Release notes",

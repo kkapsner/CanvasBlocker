@@ -653,6 +653,22 @@
 		"message": "maximal",
 		"description": ""
 	},
+	"audiousefixedindices_title": {
+		"message": "Feste Indizes verwenden",
+		"description": ""
+	},
+	"audiousefixedindices_description": {
+		"message": "Ob einige der Indizes immer vorgetäuscht werden sollen.",
+		"description": ""
+	},
+	"audiofixedindices_title": {
+		"message": "Feste Indizes",
+		"description": ""
+	},
+	"audiofixedindices_description": {
+		"message": "Die Indizes, die immer vorgetäuscht werden sollen. Kommasepariert eingeben.",
+		"description": ""
+	},
 	
 	"showReleaseNotes_title": {
 		"message": "Versionsinformationen",
