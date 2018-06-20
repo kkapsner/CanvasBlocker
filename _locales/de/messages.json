@@ -17,6 +17,16 @@
 		"description": ""
 	},
 	
+	"input": {
+		"message": "Eingabe",
+		"description": ""
+	},
+	
+	"readout": {
+		"message": "Auslese",
+		"description": ""
+	},
+	
 	"options": {
 		"message": "CanvasBlocker Einstellungen",
 		"description": ""

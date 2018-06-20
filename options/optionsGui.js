@@ -131,6 +131,16 @@
 			input = document.createElement("table");
 			setting.keys.forEach(function(key){
 				let row = document.createElement("tr");
+				if (typeof key === "object"){
+					let cell = document.createElement("td");
+					cell.colSpan = 2;
+					let h = document.createElement("h" + (2 + (key.level || 1)));
+					h.textContent = key.message? browser.i18n.getMessage(key.message): key.name;
+					cell.appendChild(h);
+					row.appendChild(cell);
+					input.appendChild(row);
+					return;
+				}
 				
 				let nameCell = document.createElement("td");
 				nameCell.textContent = key;
