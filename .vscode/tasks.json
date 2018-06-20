@@ -4,7 +4,7 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"taskName": "eslint",
+			"label": "eslint",
 			"type": "shell",
 			"windows": {
 				"command": "eslint"
@@ -27,7 +27,7 @@
 			"problemMatcher": "$eslint-stylish"
 		},
 		{
-			"taskName": "run",
+			"label": "run",
 			"type": "shell",
 			"windows": {
 				"command": "web-ext"
@@ -54,7 +54,7 @@
 			"problemMatcher": []
 		},
 		{
-			"taskName": "run current",
+			"label": "run current",
 			"type": "shell",
 			"windows": {
 				"command": "web-ext"
@@ -79,7 +79,7 @@
 			"problemMatcher": []
 		},
 		{
-			"taskName": "run esr",
+			"label": "run esr",
 			"type": "shell",
 			"windows": {
 				"command": "web-ext"
@@ -106,7 +106,7 @@
 			"problemMatcher": []
 		},
 		{
-			"taskName": "build",
+			"label": "build",
 			"type": "shell",
 			"windows": {
 				"command": "web-ext"
