@@ -653,6 +653,14 @@
 		"message": "maximal",
 		"description": ""
 	},
+	"useaudiocache_title": {
+		"message": "Use audio cache",
+		"description": ""
+	},
+	"useaudiocache_description": {
+		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"description": ""
+	},
 	"audiousefixedindices_title": {
 		"message": "Use fixed indices",
 		"description": ""

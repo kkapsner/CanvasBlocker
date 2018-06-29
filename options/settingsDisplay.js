@@ -329,6 +329,22 @@
 			]
 		},
 		{
+			"name": "useAudioCache",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask", "allow"],
+					"askDenyMode": ["fake"],
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
 			"name": "audioUseFixedIndices",
 			"displayDependencies": [
 				{

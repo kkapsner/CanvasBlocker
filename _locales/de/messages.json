@@ -653,6 +653,14 @@
 		"message": "maximal",
 		"description": ""
 	},
+	"useAudioCache_title": {
+		"message": "Zwischenspeicher für Audio verwenden",
+		"description": ""
+	},
+	"useAudioCache_description": {
+		"message": "Aktiviert den Audio-Zwischenspeicher. Dies kann die Detektion des Addons verhindern aber reduziert die Geschwindigkeit des Addons.",
+		"description": ""
+	},
 	"audiousefixedindices_title": {
 		"message": "Feste Indizes verwenden",
 		"description": ""
