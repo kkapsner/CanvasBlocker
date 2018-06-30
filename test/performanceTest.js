@@ -32,9 +32,14 @@ var performTest = function(){
 		var min = Number.POSITIVE_INFINITY;
 		var max = 0;
 		var outerI = 0;
+		if (func.prepareOnce){
+			func.prepareOnce();
+		}
 		function run(){
 			for (var i = 0; i < innerRunLength; i += 1){
-				func.prepare();
+				if (func.prepare){
+					func.prepare();
+				}
 				var start = performance.now();
 				func.test();
 				var end = performance.now();
