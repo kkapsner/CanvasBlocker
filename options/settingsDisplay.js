@@ -402,6 +402,7 @@
 			}
 		}
 	];
+	settingsDisplay.displayHidden = "displayHiddenSettings";
 	
 	if ((typeof module) !== "undefined"){
 		module.exports = settingsDisplay;

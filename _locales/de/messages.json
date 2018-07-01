@@ -91,6 +91,15 @@
 		"description": ""
 	},
 	
+	"displayHiddenSettings_title": {
+		"message": "Versteckte Einstellungen anzeigen",
+		"description": ""
+	},
+	"displayHiddenSettings_description": {
+		"message": "Aktivieren, um versteckte Einstellungen anzuzeigen.",
+		"description": ""
+	},
+	
 	"allowPDFCanvas_description": {
 		"message": "Die native pdf.js verwendet <canvas> um den Inhalt von PDFs anzuzeigen. Wenn viele Nachfragedialoge erscheinen oder die PDF-Ansicht nicht funktioniert, müssen diese erlaubt werden.",
 		"description": ""

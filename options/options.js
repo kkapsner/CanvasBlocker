@@ -66,6 +66,9 @@
 	});
 	document.body.appendChild(table);
 	
+	const displayHidden = settings.getDefinition(settingsDisplay.displayHidden);
+	table.appendChild(optionsGui.createThead(displayHidden));
+	
 	let lastSection = null;
 	let addSection = function addSection(name){
 		let body = document.createElement("tbody");
@@ -73,7 +76,7 @@
 			let row = document.createElement("tr");
 			row.className = "section";
 			let cell = document.createElement("td");
-			cell.colSpan = 2;
+			cell.colSpan = 3;
 			row.appendChild(cell);
 			let heading = document.createElement("h2");
 			heading.textContent = browser.i18n.getMessage("section_" + name);
@@ -108,6 +111,7 @@
 	};
 	addSection();
 	
+	const {hide: hideContainer} = settings.getContainers();
 	settingsDisplay.forEach(function(display){
 		if (typeof display === "string"){
 			addSection(display);
@@ -129,32 +133,69 @@
 				}
 			}
 			if (setting){
-				var row = optionsGui.createSettingRow(setting);
-				let section = lastSection;
-				section.addRow(row);
-				if (display.displayDependencies){
-					var displayDependencies = display.displayDependencies;
-					displayDependencies = Array.isArray(displayDependencies)?
-						displayDependencies:
-						[displayDependencies];
-					var computeDependencies = function(){
-						logging.verbose("evaluate display dependencies for", setting);
-						row.classList[(
-							displayDependencies.some(function(displayDependency){
-								return Object.keys(displayDependency).every(function(key){
-									return displayDependency[key].indexOf(settings[key]) !== -1;
-								});
-							})
-						)? "remove": "add"]("hidden");
-						section.updateDisplay();
-					};
-					computeDependencies();
-					displayDependencies.forEach(function(displayDependency){
-						Object.keys(displayDependency).forEach(function(name){
-							settings.on(name, computeDependencies);
+				let hideChangeListeners = [];
+				setting.setHide = function setHide(value){
+					if (hideContainer){
+						hideContainer.setHideByName(display.name, value);
+						if (computeDependencies){
+							computeDependencies();
+						}
+					}
+				};
+				setting.onHideChange = function(listener){
+					hideChangeListeners.push(listener);
+				};
+				setting.getHide = function getHide(){
+					if (hideContainer){
+						return hideContainer.getHideByName(display.name);
+					}
+					else {
+						return false;
+					}
+				};
+				if (hideContainer){
+					hideContainer.onHideChange(display.name, function(value){
+						if (computeDependencies){
+							computeDependencies();
+						}
+						hideChangeListeners.forEach(function(listener){
+							listener(value);
 						});
 					});
 				}
+				
+				var row = optionsGui.createSettingRow(setting);
+				let section = lastSection;
+				section.addRow(row);
+				if (!display.displayDependencies){
+					display.displayDependencies = {};
+				}
+				var displayDependencies = display.displayDependencies;
+				displayDependencies = Array.isArray(displayDependencies)?
+					displayDependencies:
+					[displayDependencies];
+				var computeDependencies = function(){
+					logging.verbose("evaluate display dependencies for", setting);
+					row.classList[(
+						(
+							displayHidden.get() ||
+							!setting.getHide()
+						) &&
+						displayDependencies.some(function(displayDependency){
+							return Object.keys(displayDependency).every(function(key){
+								return displayDependency[key].indexOf(settings[key]) !== -1;
+							});
+						})
+					)? "remove": "add"]("hidden");
+					section.updateDisplay();
+				};
+				computeDependencies();
+				displayDependencies.forEach(function(displayDependency){
+					Object.keys(displayDependency).forEach(function(name){
+						settings.on(name, computeDependencies);
+					});
+				});
+				displayHidden.on(computeDependencies);
 			}
 		}
 	});

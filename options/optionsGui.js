@@ -303,10 +303,36 @@
 		c.appendChild(interaction);
 		return c;
 	}
-
+	
+	function createHide(setting){
+		var label = document.createElement("label");
+		label.className = "content hideContent";
+		var input = document.createElement("input");
+		input.type = "checkbox";
+		input.className = "hide";
+		input.checked = setting.getHide();
+		input.addEventListener("change", function(){
+			setting.setHide(this.checked);
+		});
+		setting.onHideChange(function(value){
+			input.checked = value;
+		});
+		
+		label.appendChild(input);
+		var display = document.createElement("span");
+		display.className = "display";
+		label.appendChild(display);
+		return label;
+	}
+	
 	function createSettingRow(setting){
 		var tr = document.createElement("tr");
 		tr.className = "settingRow";
+		
+		var hide = document.createElement("td");
+		hide.className = "hideColumn";
+		hide.appendChild(createHide(setting));
+		tr.appendChild(hide);
 
 		var left = document.createElement("td");
 		left.appendChild(createDescription(setting));
@@ -320,4 +346,29 @@
 	}
 
 	scope.createSettingRow = createSettingRow;
+	
+	function createThead(displayHidden){
+		const tHead = document.createElement("thead");
+		const headRow = document.createElement("tr");
+		const hideHeadCell = document.createElement("td");
+		hideHeadCell.className = "hideColumn";
+		hideHeadCell.title = browser.i18n.getMessage(displayHidden.name + "_description");
+		const label = document.createElement("label");
+		const input = createInput(displayHidden);
+		input.className = "displayHidden";
+		label.appendChild(input);
+		const display = document.createElement("span");
+		display.className = "display";
+		label.appendChild(display);
+		hideHeadCell.appendChild(label);
+		headRow.appendChild(hideHeadCell);
+		
+		const restHeadCell = document.createElement("td");
+		restHeadCell.colSpan = 2;
+		headRow.appendChild(restHeadCell);
+		tHead.appendChild(headRow);
+		return tHead;
+	}
+	
+	scope.createThead = createThead;
 }());

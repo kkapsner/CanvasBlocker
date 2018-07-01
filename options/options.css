@@ -42,13 +42,14 @@ header .bookmarkNotice {
 }
 
 .settings .settingRow .content {
+	display: block;
 	overflow: visible;
 	padding: 0.5em 0;
 	border-top: 1px solid #c1c1c1;
 	position: relative;
 }
 
-.settings .settingRow td:first-child .content {
+.settings .settingRow td:first-child .content, td.hideColumn label {
 	margin-left: 0.6em;
 }
 .settings .settingRow td:last-child .content {
@@ -159,4 +160,30 @@ input[type=""], input[type="text"], input[type="number"], select {
 }
 .urlValues .notSpecifiedForUrl {
 	opacity: 0.5;
+}
+
+td.hideColumn {
+	width: 35px;
+}
+
+.content.hideContent {
+	position: relative;
+}
+.content .hide, .displayHidden {
+	opacity: 0;
+	position: absolute;
+}
+.content .hide ~ .display, .displayHidden ~ .display {
+	display: inline-block;
+	margin-right: 5px;
+	width: 30px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+}
+.content .hide ~ .display, .displayHidden ~ .display {
+	background-image: url(visible.svg);
+}
+.content .hide:checked ~ .display, .displayHidden:checked ~ .display {
+	background-image: url(notVisible.svg);
 }

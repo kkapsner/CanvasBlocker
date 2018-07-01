@@ -5,6 +5,7 @@ Version 0.4.6:
 	
 	new features:
 		- Can protect Audio API
+		- Settings can be hidden
 	
 	fixes:
 		-
