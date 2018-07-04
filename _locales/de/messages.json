@@ -634,6 +634,14 @@
 		"message": "1% der Werte",
 		"description": ""
 	},
+	"audiofakerate_options.10%": {
+		"message": "10% der Werte",
+		"description": ""
+	},
+	"audiofakerate_options.100%": {
+		"message": "100% der Werte",
+		"description": ""
+	},
 	"audionoiselevel_title": {
 		"message": "Rauschlevel",
 		"description": ""

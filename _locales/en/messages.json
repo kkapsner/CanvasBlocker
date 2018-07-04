@@ -634,6 +634,14 @@
 		"message": "1% of the values",
 		"description": ""
 	},
+	"audiofakerate_options.10%": {
+		"message": "10% of the values",
+		"description": ""
+	},
+	"audiofakerate_options.100%": {
+		"message": "100% of the values",
+		"description": ""
+	},
 	"audionoiselevel_title": {
 		"message": "Noise level",
 		"description": ""
