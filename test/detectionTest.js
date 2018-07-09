@@ -68,6 +68,50 @@ addTest("function name", function(){
 	
 	return CanvasRenderingContext2D.prototype.getImageData.name !== "getImageData";
 });
+addTest("property descriptor", function(log){
+	"use strict";
+	
+	var descriptor = Object.getOwnPropertyDescriptor(CanvasRenderingContext2D.prototype, "getImageData");
+	var desiredDescriptor = {
+		value: function getImageData(x, y, w, h){},
+		writable: true,
+		enumerable: true,
+		configurable: true
+	};
+	
+	return Object.keys(desiredDescriptor).reduce(function(pass, key){
+		function keyLog(type, expected, got){
+			log("wrong " + type + " for ", key, "- expected:", expected, "- got:", got);
+		}
+		var desiredValue = desiredDescriptor[key];
+		var value = descriptor[key];
+		var keyPass = false;
+		if ((typeof desiredValue) === (typeof value)){
+			if ((typeof desiredValue) === "function"){
+				if (value.name !== desiredValue.name){
+					keyPass = true;
+					keyLog("function name", desiredValue.name, value.name);
+					
+				}
+				if (value.length !== desiredValue.length){
+					keyPass = true;
+					keyLog("function length", desiredValue.length, value.length);
+				}
+			}
+			else {
+				if (desiredValue !== value){
+					keyPass = true;
+					keyLog("value", desiredValue, value);
+				}
+			}
+		}
+		else {
+			keyPass = true;
+			keyLog("type", typeof desiredValue, typeof value);
+		}
+		return pass || keyPass;
+	}, false);
+});
 addTest("error provocation 1", function(log){
 	"use strict";
 	
@@ -121,6 +165,37 @@ addTest("error provocation 3", function(log){
 		try {
 			log(err.name);
 			log(err.toString());
+		}
+		catch (e){
+			canvasBlocker = true;
+		}
+	}
+	return canvasBlocker;
+});
+addTest("error properties", function(log){
+	"use strict";
+	
+	var canvasBlocker = false;
+	try{
+		CanvasRenderingContext2D.prototype.getImageData.apply(undefined, [0, 0, 1, 1]);
+	}
+	catch (err){
+		try {
+			var name = "TypeError";
+			if (err.name !== name && err instanceof TypeError){
+				log("Error name wrong. Expected: ", name, "- got:", err.name);
+				canvasBlocker = true;
+			}
+			var start = "@" + location.href.replace(/\.html$/, ".js");
+			if (!err.stack.startsWith(start)){
+				log("Error stack starts wrong. Expected:", start, "- got :", err.stack.split(/\n/g, 2)[0]);
+				canvasBlocker = true;
+			}
+			var message = "'getImageData' called on an object that does not implement interface CanvasRenderingContext2D.";
+			if (err.message !== message){
+				log("Error message wrong. Expected: ", message, "- got:", err.message);
+				canvasBlocker = true;
+			}
 		}
 		catch (e){
 			canvasBlocker = true;
