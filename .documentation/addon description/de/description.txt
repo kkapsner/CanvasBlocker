@@ -2,7 +2,7 @@ Dieses Add-on ermöglicht es Nutzern, Webseiten davon abzuhalten, sie über die 
 
 Die verschiedenen Blockiermodi sind:
 <ul>
-<li>Auslese-API blockieren: Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die canvas-API zur Darstellung verwenden, aber die Auslese-API darf nicht verwendet werden.</li>
+<li>Auslese-API blockieren: Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die canvas-API zur Darstellung verwenden, aber die Auslese-API darf nicht verwendet werden. Dies kann das korrekte Funktionieren von Webseiten wie z.B. google-Maps verhinden.</li>
 <li>Auslese-API vortäuschen: Standardeinstellung und mein Favorit! Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die canvas-API zur Darstellung verwenden, aber die Auslese-API gibt zufällige Werte zurück, sodass das Fingerprinting immer einen anderen Wert liefert.</li>
 <li>Bei Ausgabe vortäuschen: Bei der Darstellung von Text werden die beschriebenen Pixel leicht verändert. Dies erschwert die Detektion des Add-ons, aber ist weniger sicher. Bei WebGL-Canvas ist das Verhalten identisch zu "Auslese-API vortäuschen".</li>
 <li>bei Auslese-API um Erlaubnis fragen: Alle Webseiten, die nicht auf der Whitelist oder Blacklist gelistet sind, können die canvas-API zur Darstellung verwenden, aber der Nutzer wird jedes Mal um Erlaubnis gefragt, wenn die Webseite die Readout-API verwenden möchte.</li>
