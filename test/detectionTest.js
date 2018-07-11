@@ -71,45 +71,64 @@ addTest("function name", function(){
 addTest("property descriptor", function(log){
 	"use strict";
 	
-	var descriptor = Object.getOwnPropertyDescriptor(CanvasRenderingContext2D.prototype, "getImageData");
-	var desiredDescriptor = {
-		value: function getImageData(x, y, w, h){},
-		writable: true,
-		enumerable: true,
-		configurable: true
-	};
+	const properties = [
+		{
+			object: CanvasRenderingContext2D.prototype,
+			name: "getImageData",
+			descriptor: {
+				value: function getImageData(x, y, w, h){},
+				writable: true,
+				enumerable: true,
+				configurable: true
+			}
+		},
+		{
+			object: HTMLCanvasElement.prototype,
+			name: "toDataURL",
+			descriptor: {
+				value: function toDataURL(){},
+				writable: true,
+				enumerable: true,
+				configurable: true
+			}
+		},
+	];
 	
-	return Object.keys(desiredDescriptor).reduce(function(pass, key){
-		function keyLog(type, expected, got){
-			log("wrong " + type + " for ", key, "- expected:", expected, "- got:", got);
-		}
-		var desiredValue = desiredDescriptor[key];
-		var value = descriptor[key];
-		var keyPass = false;
-		if ((typeof desiredValue) === (typeof value)){
-			if ((typeof desiredValue) === "function"){
-				if (value.name !== desiredValue.name){
-					keyPass = true;
-					keyLog("function name", desiredValue.name, value.name);
-					
+	return properties.reduce(function(pass, property){
+		const desiredDescriptor = property.descriptor;
+		const descriptor = Object.getOwnPropertyDescriptor(property.object, property.name);
+		return Object.keys(desiredDescriptor).reduce(function(pass, key){
+			function keyLog(type, expected, got){
+				log(property.name + ": wrong " + type + " for ", key, "- expected:", expected, "- got:", got);
+			}
+			var desiredValue = desiredDescriptor[key];
+			var value = descriptor[key];
+			var keyPass = false;
+			if ((typeof desiredValue) === (typeof value)){
+				if ((typeof desiredValue) === "function"){
+					if (value.name !== desiredValue.name){
+						keyPass = true;
+						keyLog("function name", desiredValue.name, value.name);
+						
+					}
+					if (value.length !== desiredValue.length){
+						keyPass = true;
+						keyLog("function length", desiredValue.length, value.length);
+					}
 				}
-				if (value.length !== desiredValue.length){
-					keyPass = true;
-					keyLog("function length", desiredValue.length, value.length);
+				else {
+					if (desiredValue !== value){
+						keyPass = true;
+						keyLog("value", desiredValue, value);
+					}
 				}
 			}
 			else {
-				if (desiredValue !== value){
-					keyPass = true;
-					keyLog("value", desiredValue, value);
-				}
+				keyPass = true;
+				keyLog("type", typeof desiredValue, typeof value);
 			}
-		}
-		else {
-			keyPass = true;
-			keyLog("type", typeof desiredValue, typeof value);
-		}
-		return pass || keyPass;
+			return pass || keyPass;
+		}, false) || pass;
 	}, false);
 });
 addTest("error provocation 1", function(log){
@@ -191,7 +210,8 @@ addTest("error properties", function(log){
 				log("Error stack starts wrong. Expected:", start, "- got :", err.stack.split(/\n/g, 2)[0]);
 				canvasBlocker = true;
 			}
-			var message = "'getImageData' called on an object that does not implement interface CanvasRenderingContext2D.";
+			var message = "'getImageData' called on an object that " +
+				"does not implement interface CanvasRenderingContext2D.";
 			if (err.message !== message){
 				log("Error message wrong. Expected: ", message, "- got:", err.message);
 				canvasBlocker = true;
