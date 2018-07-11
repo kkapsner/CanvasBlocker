@@ -2,19 +2,28 @@
 (function(){
 	"use strict";
 	
-	function show(container, {url, isPointInPath}){
+	function hashToString(hash){
+		var chunks = [];
+		(new Uint32Array(hash)).forEach(function(num){
+			chunks.push(num.toString(16));
+		});
+		return chunks.map(function(chunk){
+			return "0".repeat(8 - chunk.length) + chunk;
+		}).join("");
+	}
+	
+	function show(container, {url, imageData, isPointInPath}){
 		var display = container.querySelector(".display");
 		display.src = url;
 		display.title = url;
 		var buffer = new TextEncoder("utf-8").encode(url);
-		crypto.subtle.digest("SHA-256", buffer).then(function(hash){
-			var chunks = [];
-			(new Uint32Array(hash)).forEach(function(num){
-				chunks.push(num.toString(16));
-			});
-			container.querySelector(".hash").textContent = chunks.map(function(chunk){
-				return "0".repeat(8 - chunk.length) + chunk;
-			}).join("");
+		Promise.all([
+			crypto.subtle.digest("SHA-256", buffer),
+			crypto.subtle.digest("SHA-256", imageData.data)
+		]).then(function(hashes){
+			container.querySelector(".hash").textContent =
+				hashToString(hashes[0]) + " / " +
+				hashToString(hashes[1]);
 		});
 		container.querySelector(".isPointInPath").textContent = isPointInPath;
 	}
@@ -86,6 +95,7 @@ function topTest(){
 	var ctx = draw(canvas);
 	return {
 		url: canvas.toDataURL(),
+		imageData: ctx.getImageData(0, 0, canvas.width, canvas.height),
 		isPointInPath: getIsPointInPath(ctx)
 	};
 }
@@ -110,6 +120,7 @@ function iframeTest(iframe){
 
 	return {
 		url: iframe_canvas.toDataURL(),
+		imageData: iframe_ctx.getImageData(0, 0, iframe_canvas.width, iframe_canvas.height),
 		isPointInPath: getIsPointInPath(iframe_ctx)
 	};
 }
