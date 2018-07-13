@@ -8,7 +8,7 @@ Version 0.4.6:
 		- Settings can be hidden
 	
 	fixes:
-		-
+		- make function replacements not detectable
 
 Version 0.4.5c:
 	new features:

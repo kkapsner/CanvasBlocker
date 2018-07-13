@@ -32,6 +32,7 @@
 			"lib/colorStatistics.js",
 			"lib/webgl.js",
 			"lib/hash.js",
+			"lib/modifiedAPIFunctions.js",
 			"lib/modifiedAudioAPI.js",
 			"lib/modifiedAPI.js",
 			"lib/randomSupplies.js",
