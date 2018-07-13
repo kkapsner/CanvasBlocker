@@ -467,6 +467,10 @@
 		"message": "API blocked on {url} because CanvasBlocker-settings were not loaded in time.",
 		"description": ""
 	},
+	"blocked": {
+		"message": "API blocked on {url}.",
+		"description": ""
+	},
 	"fakedReadout": {
 		"message": "Faked readout on {url}",
 		"description": ""

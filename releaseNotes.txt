@@ -2,6 +2,7 @@ Version 0.4.6:
 	changes:
 		- Changes in the random supply API
 		- Added grouping to API white list
+		- Show page action when API is blocked
 	
 	new features:
 		- Can protect Audio API
