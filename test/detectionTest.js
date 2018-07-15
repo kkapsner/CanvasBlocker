@@ -36,8 +36,51 @@ var addTest = (function(){
 		statusNode.title = logs.join("\n");
 		li.appendChild(statusNode);
 		ul.appendChild(li);
+		return li;
 	};
 }());
+
+function checkPropertyDescriptor(object, name, expectedDescriptor, log){
+	"use strict";
+	var descriptor = Object.getOwnPropertyDescriptor(object, name);
+	var detected = false;
+	
+	function logProperty(desc, got, expected){
+		log("Wrong", desc, "for", name, "- got:", got, "- expected: ", expected);
+	}
+	function compare(desc, getter){
+		var got = getter(descriptor);
+		var expected = getter(expectedDescriptor);
+		
+		if ((typeof expected) === "function"){
+			if (got.name !== expected.name){
+				detected = true;
+				logProperty(desc + " (function name)", expected.name, got.name);
+			}
+			if (got.length !== expected.length){
+				detected = true;
+				logProperty(desc + " (function length)", expected.length, got.length);
+			}
+			const re = "^\\s*function " + expected.name + "\\s*\\(\\)\\s*\\{\\s*\\[native code\\]\\s*\\}\\s*$";
+			if (!got.toString().match(new RegExp(re))){
+				detected = true;
+				logProperty(desc + " (function string)", re, got.toString());
+			}
+		}
+		else if (got !== expected){
+			logProperty(desc, got, expected);
+			detected = true;
+		}
+	}
+	
+	compare("descriptor type", function(v){return typeof v;});
+	if (descriptor){
+		Object.keys(descriptor).forEach(function(key){
+			compare(key, function(v){return v[key];});
+		});
+	}
+	return detected;
+}
 
 addTest("function length", function(log){
 	"use strict";
@@ -52,21 +95,49 @@ addTest("function length", function(log){
 });
 addTest("function code", function(log){
 	"use strict";
-	
-	if (!CanvasRenderingContext2D.prototype.getImageData.toString().match(
-		/^\s*function getImageData\s*\(\)\s*\{\s*\[native code\]\s*\}\s*$/
-	)){
+	var codeDetected = false;
+	if (
+		!CanvasRenderingContext2D.prototype.getImageData.toString().match(
+			/^\s*function getImageData\s*\(\)\s*\{\s*\[native code\]\s*\}\s*$/
+		)
+	){
 		log("unexpected function code:", CanvasRenderingContext2D.prototype.getImageData.toString());
-		return true;
+		codeDetected = true;
 	}
-	else {
-		return false;
+	if (
+		!HTMLCanvasElement.prototype.toDataURL.toString().match(
+			/^\s*function toDataURL\s*\(\)\s*\{\s*\[native code\]\s*\}\s*$/
+		)
+	){
+		log("unexpected function code:", HTMLCanvasElement.prototype.toDataURL.toString());
+		codeDetected = true;
 	}
+	return codeDetected;
+});
+addTest("toString modified", function(log){
+	"use strict";
+	return checkPropertyDescriptor(
+		HTMLCanvasElement.prototype.toDataURL,
+		"toString",
+		undefined,
+		log
+	) | checkPropertyDescriptor(
+		Object.prototype,
+		"toString",
+		{
+			value: function toString(){},
+			writable: true,
+			enumerable: false,
+			configurable: true
+		},
+		log
+	);
 });
 addTest("function name", function(){
 	"use strict";
 	
-	return CanvasRenderingContext2D.prototype.getImageData.name !== "getImageData";
+	return HTMLCanvasElement.prototype.toDataURL.name !== "toDataURL" ||
+		CanvasRenderingContext2D.prototype.getImageData.name !== "getImageData";
 });
 addTest("property descriptor", function(log){
 	"use strict";
@@ -95,40 +166,7 @@ addTest("property descriptor", function(log){
 	];
 	
 	return properties.reduce(function(pass, property){
-		const desiredDescriptor = property.descriptor;
-		const descriptor = Object.getOwnPropertyDescriptor(property.object, property.name);
-		return Object.keys(desiredDescriptor).reduce(function(pass, key){
-			function keyLog(type, expected, got){
-				log(property.name + ": wrong " + type + " for ", key, "- expected:", expected, "- got:", got);
-			}
-			var desiredValue = desiredDescriptor[key];
-			var value = descriptor[key];
-			var keyPass = false;
-			if ((typeof desiredValue) === (typeof value)){
-				if ((typeof desiredValue) === "function"){
-					if (value.name !== desiredValue.name){
-						keyPass = true;
-						keyLog("function name", desiredValue.name, value.name);
-						
-					}
-					if (value.length !== desiredValue.length){
-						keyPass = true;
-						keyLog("function length", desiredValue.length, value.length);
-					}
-				}
-				else {
-					if (desiredValue !== value){
-						keyPass = true;
-						keyLog("value", desiredValue, value);
-					}
-				}
-			}
-			else {
-				keyPass = true;
-				keyLog("type", typeof desiredValue, typeof value);
-			}
-			return pass || keyPass;
-		}, false) || pass;
+		return checkPropertyDescriptor(property.object, property.name, property.descriptor, log) || pass;
 	}, false);
 });
 addTest("error provocation 1", function(log){
@@ -288,6 +326,34 @@ addTest("double readout test", function(log){
 			);
 			return true;
 		}
+	}
+	return false;
+});
+addTest("double readout test (toDataURL)", function(log){
+	"use strict";
+	
+	var canvas = document.createElement("canvas");
+	var context = canvas.getContext("2d");
+	var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+	for (let i = 0; i < imageData.data.length; i += 1){
+		if (i % 4 !== 3){
+			imageData.data[i] = Math.floor(256 * Math.random());
+		}
+		else {
+			imageData.data[i] = 255;
+		}
+	}
+	context.putImageData(imageData, 0, 0);
+	
+	var dataURL1 = canvas.toDataURL();
+	var dataURL2 = canvas.toDataURL();
+	if (dataURL1 !== dataURL2){
+		log("data URL missmatch:",
+			dataURL1,
+			"!=",
+			dataURL2
+		);
+		return true;
 	}
 	return false;
 });
