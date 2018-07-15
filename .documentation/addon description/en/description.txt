@@ -13,4 +13,11 @@ The different block modes are:
 <li>allow everything: Ignore all lists and allow the canvas API on all websites.</li>
 </ul>
 
+Protected "fingerprinting" APIs:
+	<ul>
+		<li>canvas 2d</li>
+		<li>webGL</li>
+		<li>audio</li>
+	</ul>
+
 Please report issues and feature requests at https://github.com/kkapsner/CanvasBlocker/issues

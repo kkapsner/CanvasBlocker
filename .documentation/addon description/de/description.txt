@@ -13,4 +13,11 @@ Die verschiedenen Blockiermodi sind:
 <li>alles erlauben: Ignoriere alle Listen und erlaube die canvas-API auf allen Webseiten.</li>
 </ul>
 
+Geschütze "Fingerprinting"-APIs:
+	<ul>
+		<li>canvas 2d</li>
+		<li>webGL</li>
+		<li>audio</li>
+	</ul>
+
 Falls Sie Fehler finden oder Verbesserungsvorschläge haben, teilen Sie mir das bitte auf https://github.com/kkapsner/CanvasBlocker/issues mit.
