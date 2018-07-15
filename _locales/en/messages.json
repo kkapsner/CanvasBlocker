@@ -699,6 +699,15 @@
 		"description": ""
 	},
 	
+	"blockRequestsFromDataURL_title": {
+		"message": "Block requests from data URL pages",
+		"description": ""
+	},
+	"blockRequestsFromDataURL_description": {
+		"message": "Data URL pages cannot be protected agains fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking requests from them prevents the real fingerprint to reach any server.",
+		"description": ""
+	},
+	
 	"showReleaseNotes_title": {
 		"message": "Release notes",
 		"description": ""

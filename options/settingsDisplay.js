@@ -380,6 +380,12 @@
 		},
 		"misc",
 		{
+			"name": "blockRequestsFromDataURL",
+			"displayDependencies": {
+				"displayAdvancedSettings": [true]
+			}
+		},
+		{
 			"name": "showReleaseNotes"
 		},
 		{

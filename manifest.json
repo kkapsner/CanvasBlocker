@@ -2,7 +2,7 @@
 {
 	"name": "CanvasBlocker",
 	"description": "__MSG_addon_description__",
-	"version": "0.4.6alpha",
+	"version": "0.5.0",
 	"icons": {
 		"48": "icons/icon.svg",
 		"96": "icons/icon.svg"
@@ -15,6 +15,7 @@
 			"lib/logging.js",
 			"lib/lists.js",
 			"lib/persistentRndStorage.js",
+			"lib/dataUrls.js",
 			"lib/main.js"
 		]
 	},
@@ -65,7 +66,9 @@
 		"<all_urls>",
 		"storage",
 		"tabs",
-		"activeTab"
+		"activeTab",
+		"webRequest",
+		"webRequestBlocking"
 	],
 	
 	"applications": {
