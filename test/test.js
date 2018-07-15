@@ -94,8 +94,8 @@ function topTest(){
 	// draw image in window canvas
 	var ctx = draw(canvas);
 	return {
-		url: canvas.toDataURL(),
 		imageData: ctx.getImageData(0, 0, canvas.width, canvas.height),
+		url: canvas.toDataURL(),
 		isPointInPath: getIsPointInPath(ctx)
 	};
 }
@@ -119,8 +119,8 @@ function iframeTest(iframe){
 	iframe_ctx.drawImage(canvas, 0, 0);
 
 	return {
-		url: iframe_canvas.toDataURL(),
 		imageData: iframe_ctx.getImageData(0, 0, iframe_canvas.width, iframe_canvas.height),
+		url: iframe_canvas.toDataURL(),
 		isPointInPath: getIsPointInPath(iframe_ctx)
 	};
 }
