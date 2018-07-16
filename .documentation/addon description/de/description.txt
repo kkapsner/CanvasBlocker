@@ -13,7 +13,7 @@ Die verschiedenen Blockiermodi sind:
 <li>alles erlauben: Ignoriere alle Listen und erlaube die canvas-API auf allen Webseiten.</li>
 </ul>
 
-Geschütze "Fingerprinting"-APIs:
+Geschützte "Fingerprinting"-APIs:
 	<ul>
 		<li>canvas 2d</li>
 		<li>webGL</li>
