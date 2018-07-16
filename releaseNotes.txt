@@ -1,3 +1,16 @@
+Version 0.5.1:
+	changes:
+		- 
+	
+	new features:
+		- 
+	
+	fixes:
+		- 
+	
+	known issues:
+		- if a data URL request is blocked the page action button appears but shows no content
+
 Version 0.5.0.1b:
 	known issues:
 		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.5.0a instead or use Firefox >= 59 which provides the required API to solve this issue once and for all
