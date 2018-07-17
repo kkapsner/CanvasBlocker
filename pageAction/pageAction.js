@@ -12,6 +12,7 @@
 	const domainNotification = require("./domainNotification");
 	const Notification = require("./Notification");
 	const {createActionButtons, modalPrompt} = require("./gui");
+	const lists = require("./lists");
 
 	Promise.all([
 		browser.tabs.query({active: true, currentWindow: true}),
@@ -98,6 +99,25 @@
 						}
 					});
 				}
+			},
+			{
+				name: "whitelistDomainTemporarily",
+				isIcon: true,
+				callback: function(domain){
+					modalPrompt(
+						browser.i18n.getMessage("inputSessionWhitelistURL"),
+						domain
+					).then(function(domain){
+						if (domain){
+							lists.appendTo("sessionWhite", domain).then(function(){
+								window.close();
+							});
+						}
+						else {
+							window.close();
+						}
+					});
+				}
 			}
 		].forEach(function(domainAction){
 			domainNotification.addAction(domainAction);
@@ -129,6 +149,25 @@
 					).then(function(url){
 						if (url){
 							settings.set("blockMode", "allow", url).then(function(){
+								window.close();
+							});
+						}
+						else {
+							window.close();
+						}
+					});
+				}
+			},
+			{
+				name: "whitelistURLTemporarily",
+				isIcon: true,
+				callback: function({url}){
+					modalPrompt(
+						browser.i18n.getMessage("inputSessionWhitelistDomain"),
+						"^" + url.href.replace(/([\\+*?[^\]$(){}=!|.])/g, "\\$1") + "$"
+					).then(function(url){
+						if (url){
+							lists.appendTo("sessionWhite", url).then(function(){
 								window.close();
 							});
 						}

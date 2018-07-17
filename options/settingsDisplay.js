@@ -280,6 +280,13 @@
 			}
 		},
 		{
+			"name": "sessionWhiteList",
+			"displayDependencies": {
+				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"],
+				"displayAdvancedSettings": [true]
+			}
+		},
+		{
 			"name": "blackList",
 			"displayDependencies": {
 				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "ask", "allow"],

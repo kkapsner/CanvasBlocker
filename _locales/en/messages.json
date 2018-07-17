@@ -512,6 +512,14 @@
 		"message": "Input domain to add to white list:",
 		"description": ""
 	},
+	"inputSessionWhitelistDomain": {
+		"message": "Input URL RegExp to add to the session white list:",
+		"description": ""
+	},
+	"inputSessionWhitelistURL": {
+		"message": "Input domain to add to the session white list:",
+		"description": ""
+	},
 	"settings": {
 		"message": "settings",
 		"description": ""
@@ -582,6 +590,24 @@
 	},
 	"whitelistURL": {
 		"message": "whitelist URL",
+		"description": ""
+	},
+	
+	"sessionWhiteList_title": {
+		"message": "Session white list",
+		"description": ""
+	},
+	"sessionWhiteList_description": {
+		"message": "Domains or URLs where the <canvas>-API should not be blocked in the current session. To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	
+	"whitelistDomainTemporarily": {
+		"message": "whitelist domain temporarily",
+		"description": ""
+	},
+	"whitelistURLTemporarily": {
+		"message": "whitelist URL temporarily",
 		"description": ""
 	},
 	

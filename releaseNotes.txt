@@ -3,7 +3,7 @@ Version 0.5.1:
 		- 
 	
 	new features:
-		- 
+		- new setting: session white list that is cleared on addon load (= browser start)
 	
 	fixes:
 		- Changes made in the page action were not saved in all Firefox versions
