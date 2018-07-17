@@ -40,8 +40,9 @@
 					name: "disableNotifications",
 					isIcon: true,
 					callback: function(){
-						settings.showNotifications = false;
-						window.close();
+						settings.set("showNotifications", false).then(function(){
+							window.close();
+						});
 					}
 				}
 			],
@@ -69,9 +70,13 @@
 						domain
 					).then(function(domain){
 						if (domain){
-							settings.set("showNotifications", false, domain);
+							settings.set("showNotifications", false, domain).then(function(){
+								window.close();
+							});
 						}
-						window.close();
+						else {
+							window.close();
+						}
 					});
 				}
 			},
@@ -84,9 +89,13 @@
 						domain
 					).then(function(domain){
 						if (domain){
-							settings.set("blockMode", "allow", domain);
+							settings.set("blockMode", "allow", domain).then(function(){
+								window.close();
+							});
 						}
-						window.close();
+						else {
+							window.close();
+						}
 					});
 				}
 			}
@@ -119,9 +128,13 @@
 						"^" + url.href.replace(/([\\+*?[^\]$(){}=!|.])/g, "\\$1") + "$"
 					).then(function(url){
 						if (url){
-							settings.set("blockMode", "allow", url);
+							settings.set("blockMode", "allow", url).then(function(){
+								window.close();
+							});
 						}
-						window.close();
+						else {
+							window.close();
+						}
 					});
 				}
 			}

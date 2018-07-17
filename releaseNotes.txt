@@ -6,7 +6,7 @@ Version 0.5.1:
 		- 
 	
 	fixes:
-		- 
+		- Changes made in the page action were not saved in all Firefox versions
 	
 	known issues:
 		- if a data URL request is blocked the page action button appears but shows no content
