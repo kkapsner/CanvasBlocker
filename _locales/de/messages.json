@@ -725,12 +725,12 @@
 		"description": ""
 	},
 	
-	"blockRequestsFromDataURL_title": {
-		"message": "Anfragen von Data-URL Seiten blockieren",
+	"blockDataURLs_title": {
+		"message": "Data-URL Seiten blockieren",
 		"description": ""
 	},
-	"blockRequestsFromDataURL_description": {
-		"message": "Data-URL Seiten können nicht gegen Fingerprinting geschützt werden (siehe https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Indem Anfragen von Data-URL Seiten blockiert werden kann verhindert werden, dass der echte Fingerabdruck zu irgendeinem Server gelangt.",
+	"blockDataURLs_description": {
+		"message": "Data-URL Seiten können nicht gegen Fingerprinting geschützt werden (siehe https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Indem Data-URL Seiten blockiert werden kann verhindert werden, dass der echte Fingerabdruck zu irgendeinem Server gelangt.",
 		"description": ""
 	},
 	

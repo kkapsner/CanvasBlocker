@@ -381,7 +381,7 @@
 		},
 		"misc",
 		{
-			"name": "blockRequestsFromDataURL",
+			"name": "blockDataURLs",
 			"displayDependencies": {
 				"displayAdvancedSettings": [true]
 			}

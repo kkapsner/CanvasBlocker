@@ -725,12 +725,12 @@
 		"description": ""
 	},
 	
-	"blockRequestsFromDataURL_title": {
-		"message": "Block requests from data URL pages",
+	"blockDataURLs_title": {
+		"message": "Block data URL pages",
 		"description": ""
 	},
-	"blockRequestsFromDataURL_description": {
-		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking requests from them prevents the real fingerprint to reach any server.",
+	"blockDataURLs_description": {
+		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking them prevents the real fingerprint to reach any server.",
 		"description": ""
 	},
 	

@@ -1,15 +1,16 @@
 Version 0.5.1:
 	changes:
-		- 
+		- instead of blocking requests from data URLs they are blocked themselfes
 	
 	new features:
 		- new setting: session white list that is cleared on addon load (= browser start)
 	
 	fixes:
 		- Changes made in the page action were not saved in all Firefox versions
+		- Blocking requests data URLs blocked too much
 	
 	known issues:
-		- if a data URL request is blocked the page action button appears but shows no content
+		- if a data URL is blocked the page action button does not appear
 
 Version 0.5.0.1b:
 	known issues:
