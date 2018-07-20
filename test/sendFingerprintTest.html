@@ -7,6 +7,7 @@
 			<button>submit</button>
 		</form>
 		<script>
+		const origin = "iframe";
 		function draw(canvas){
 			"use strict";
 			
@@ -80,7 +81,7 @@
 					if (this.readyState === 4){
 						const status = this.status;
 						if (status === 200 || status === 304) {
-							console.log("Sending xhr successful:", this);
+							console.log("Sending xhr successful from", origin, ":", data);
 						}
 						else {
 							console.log("Sending xhr failed:", this);
