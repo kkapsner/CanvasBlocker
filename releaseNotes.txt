@@ -1,3 +1,17 @@
+Version 0.5.1.1b:
+	known issues:
+		- force setting loadings may result in non working plugins or not opening direct image links. Use 0.5.1.1a instead or use Firefox >= 59 which provides the required API to solve this issue once and for all
+	
+	changes:
+		- if settings are not loaded fast enough the loading is forced
+
+Version 0.5.1.1a:
+	known issues:
+		- due to API blocking some web pages may break. Use 0.5.1.1b instead.
+	
+	changes:
+		- if settings are not loaded fast enough the loading is not forced but all APIs are blocked
+
 Version 0.5.1.1:
 	fixes:
 		- blocking blob: scheme broke some pages unnecessarily
