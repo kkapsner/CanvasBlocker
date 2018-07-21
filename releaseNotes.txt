@@ -45,7 +45,7 @@ Version 0.5.1a:
 
 Version 0.5.1:
 	changes:
-		- instead of blocking requests from data URLs they are blocked themselfes
+		- instead of blocking requests from data URLs they are blocked themselves
 	
 	new features:
 		- new setting: session white list that is cleared on addon load (= browser start)
