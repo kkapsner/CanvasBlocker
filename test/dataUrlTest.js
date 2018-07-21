@@ -7,7 +7,7 @@
 	
 	document.getElementById("code").textContent = iframeCode;
 	
-	var blob = new Blob([iframeCode], {type : 'text/html'});
+	var blob = new Blob([iframeCode], {type: "text/html"});
 	var newurl = window.URL.createObjectURL(blob);
 	document.getElementById("blobIframe").src = newurl;
 }());
