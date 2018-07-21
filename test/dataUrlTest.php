@@ -25,6 +25,8 @@
 			)
 		);
 	?>"></iframe>
+	<h1>blob iFrame</h1>
+	<iframe id="blobIframe"></iframe>
 	<h1>Data-URL object</h1>
 	<object
 		type="invalid"
