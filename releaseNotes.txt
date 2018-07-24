@@ -7,6 +7,7 @@ Version 0.5.2:
 	
 	fixes:
 		- optimized CSP
+		- in Firefox ESR (52) iFrames with a blob-URL cannot be protected -> they have to blockes there as well
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
