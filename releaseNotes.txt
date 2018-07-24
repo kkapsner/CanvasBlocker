@@ -6,7 +6,7 @@ Version 0.5.2:
 		- 
 	
 	fixes:
-		- 
+		- optimized CSP
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
