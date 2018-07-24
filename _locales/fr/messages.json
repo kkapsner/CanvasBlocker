@@ -228,7 +228,7 @@
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "Demander la permission,
+		"message": "Demander la permission",
 		"description": ""
 	},
 	"blockMode_options.askReadout": {
@@ -283,7 +283,7 @@
 	},
 	
 	"minFakeSize_description": {
-		"message": "Canevas, ayant une surface plus petite ou égale à ce nombre-ci, ne sera pas falsifié. C'est un paramètre qui devrait rendre la détection de l'extension par un tiers plus difficile. \ nToutefois : cela réduit la sécurité de l'extension. Par conséquent, il est fortement recommandé de ne pas définir cette valeur au-dessus du chiffre 100.",
+		"message": "Canevas, ayant une surface plus petite ou égale à ce nombre-ci, ne sera pas falsifié. C'est un paramètre qui devrait rendre la détection de l'extension par un tiers plus difficile. \nToutefois : cela réduit la sécurité de l'extension. Par conséquent, il est fortement recommandé de ne pas définir cette valeur au-dessus du chiffre 100.",
 		"description": ""
 	},
 	"minFakeSize_title": {
@@ -292,7 +292,7 @@
 	},
 	
 	"maxFakeSize_description": {
-		"message": "Les <Canvas> qui auront une plus grande surface que le nombre indiqué ne seront pas falsifiés. (Zéro sert à désactiver).  Il s'agit d'un paramètre de performance qui peut réduire le gel du navigateur et doit être adapté à la puissance de calcul de l'appareil. \ nAttention : cela réduit la sécurité de l'extension. Il est fortement recommandé de ne pas fixer cette valeur en dessous de 1 000 000 000",
+		"message": "Les <Canvas> qui auront une plus grande surface que le nombre indiqué ne seront pas falsifiés. (Zéro sert à désactiver).  Il s'agit d'un paramètre de performance qui peut réduire le gel du navigateur et doit être adapté à la puissance de calcul de l'appareil. \nAttention : cela réduit la sécurité de l'extension. Il est fortement recommandé de ne pas fixer cette valeur en dessous de 1 000 000 000",
 		"description": ""
 	},
 	"maxFakeSize_title": {
