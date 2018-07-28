@@ -3,11 +3,13 @@ Version 0.5.2:
 		- 
 	
 	new features:
-		- 
+		- separate persistent random numbers for incognito windows
+			(resets when closing all incognito windows - like cookies do)
 	
 	fixes:
 		- optimized CSP
 		- in Firefox ESR (52) iFrames with a blob-URL cannot be protected -> they have to be blocked there as well
+		- broken when using with Random Agent Spoofer
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
