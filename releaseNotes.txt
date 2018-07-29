@@ -5,6 +5,7 @@ Version 0.5.2:
 	new features:
 		- separate persistent random numbers for incognito windows
 			(resets when closing all incognito windows - like cookies do)
+		- added toolbar icon
 	
 	fixes:
 		- optimized CSP

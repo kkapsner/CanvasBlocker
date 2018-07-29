@@ -1,0 +1,43 @@
+body {
+	padding: 1em;
+}
+
+div {
+	display: block;
+}
+
+.action {
+	display: block;
+	padding: 0.5em;
+	background-color: white;
+	border: 1px solid #e0e0e0;
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	height: auto;
+	z-index: 1;
+	position: relative;
+}
+
+.action + .action {
+	border-top-width: 0;
+}
+
+.action:first-child {
+	border-radius: 3px 3px 0 0;
+}
+
+.action:last-child {
+	border-radius: 0 0 3px 3px;
+}
+
+.action:active, .action:hover, .action:focus {
+	z-index: 10;
+	background-color: #eaeaea;
+}
+
+.action img {
+	vertical-align: middle;
+	max-height: 19px;
+	margin-right: 0.25em;
+}

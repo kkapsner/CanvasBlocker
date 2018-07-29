@@ -808,5 +808,18 @@
 	"resetSettings_confirm": {
 		"message": "Sind Sie sicher, dass Sie alle Einstellungen zurücksetzen wollen?",
 		"description": ""
+	},
+	
+	"browserAction_settings": {
+		"message": "Einstellungen",
+		"description": ""
+	},
+	"browserAction_test": {
+		"message": "Testen",
+		"description": ""
+	},
+	"browserAction_reportIssue": {
+		"message": "Problem melden",
+		"description": ""
 	}
 }

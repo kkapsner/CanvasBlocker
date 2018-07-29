@@ -53,6 +53,15 @@
 		"browser_style": true,
 		"page": "options/options.html"
 	},
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": {
+			"19": "icons/icon.svg",
+			"38": "icons/icon.svg"
+		},
+		"default_title": "CanvasBlocker",
+		"default_popup": "browserAction/browserAction.html"
+	},
 	"page_action": {
 		"browser_style": true,
 		"default_icon": {
