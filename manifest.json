@@ -56,8 +56,8 @@
 	"browser_action": {
 		"browser_style": true,
 		"default_icon": {
-			"19": "icons/icon.svg",
-			"38": "icons/icon.svg"
+			"19": "icons/browserAction-notPrinted.svg",
+			"38": "icons/browserAction-notPrinted.svg"
 		},
 		"default_title": "CanvasBlocker",
 		"default_popup": "browserAction/browserAction.html"

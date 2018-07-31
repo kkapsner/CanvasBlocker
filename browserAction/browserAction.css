@@ -17,6 +17,7 @@ div {
 	height: auto;
 	z-index: 1;
 	position: relative;
+	white-space: nowrap;
 }
 
 .action + .action {
