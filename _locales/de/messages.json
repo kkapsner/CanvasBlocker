@@ -818,6 +818,10 @@
 		"message": "Testen",
 		"description": ""
 	},
+	"browserAction_review": {
+		"message": "Bewerten",
+		"description": ""
+	},
 	"browserAction_reportIssue": {
 		"message": "Problem melden",
 		"description": ""

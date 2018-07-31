@@ -38,7 +38,7 @@ div {
 }
 
 .action img {
-	vertical-align: middle;
+	vertical-align: text-bottom;
 	max-height: 19px;
 	margin-right: 0.25em;
 }

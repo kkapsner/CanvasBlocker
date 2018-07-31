@@ -818,6 +818,10 @@
 		"message": "Test",
 		"description": ""
 	},
+	"browserAction_review": {
+		"message": "Review",
+		"description": ""
+	},
 	"browserAction_reportIssue": {
 		"message": "Report issue",
 		"description": ""

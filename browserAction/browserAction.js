@@ -33,6 +33,13 @@
 				}
 			},
 			{
+				label: "review",
+				icon: browser.extension.getURL("icons/browserAction-review.svg"),
+				action: function(){
+					window.open("https://addons.mozilla.org/de/firefox/addon/canvasblocker/reviews/", "_blank");
+				}
+			},
+			{
 				label: "reportIssue",
 				icon: browser.extension.getURL("icons/browserAction-reportIssue.svg"),
 				action: function(){
