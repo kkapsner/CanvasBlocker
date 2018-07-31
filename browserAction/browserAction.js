@@ -36,7 +36,7 @@
 				label: "review",
 				icon: browser.extension.getURL("icons/browserAction-review.svg"),
 				action: function(){
-					window.open("https://addons.mozilla.org/de/firefox/addon/canvasblocker/reviews/", "_blank");
+					window.open("https://addons.mozilla.org/firefox/addon/canvasblocker/reviews/", "_blank");
 				}
 			},
 			{
