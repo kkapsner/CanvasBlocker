@@ -19,6 +19,10 @@ header .bookmarkNotice .dontShowOptionsOnUpdate {
 	font-size: 0.8em;
 }
 
+header .bookmarkNotice .dontShowOptionsOnUpdate input {
+	vertical-align: sub;
+}
+
 .settings {
 	width: 100%;
 	border-spacing: 0;
