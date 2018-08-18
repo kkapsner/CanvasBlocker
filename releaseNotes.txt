@@ -3,7 +3,7 @@ Version 0.5.3:
 		- 
 	
 	new features:
-		- 
+		- display version in options page
 	
 	fixes:
 		- 

@@ -187,3 +187,9 @@ td.hideColumn {
 .content .hide:checked ~ .display, .displayHidden:checked ~ .display {
 	background-image: url(notVisible.svg);
 }
+
+.version {
+	text-align: right;
+	color: gray;
+	font-size: 0.8em;
+}
