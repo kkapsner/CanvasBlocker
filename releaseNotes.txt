@@ -6,7 +6,8 @@ Version 0.5.3:
 		- display version in options page
 	
 	fixes:
-		- 
+		- CSP did not work properly for worker-src
+		- detection if the options page was displayed in a separate tab did not work reliably
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

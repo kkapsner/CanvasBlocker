@@ -34,30 +34,44 @@
 		}
 	};
 	
-	if (window === window.top){
-		let head = document.createElement("header");
-		let heading = document.createElement("h1");
-		heading.textContent = browser.i18n.getMessage("options");
-		head.appendChild(heading);
-		
-		let introduction = document.createElement("div");
-		introduction.textContent = browser.i18n.getMessage("optionsIntroduction");
-		head.appendChild(introduction);
-		
-		if (window.location.search){
-			let noticeName = window.location.search.substr(1).trim() + "Notice";
-			let notice = browser.i18n.getMessage(noticeName);
-			if (notice){
-				let bookmarkingNotice = document.createElement("div");
-				bookmarkingNotice.className = noticeName + " bookmarkNotice";
-				bookmarkingNotice.textContent = notice;
-				head.appendChild(bookmarkingNotice);
+	new Promise(function(resolve){
+		const port = browser.runtime.connect();
+		port.onMessage.addListener(function(data){
+			if (data.hasOwnProperty("tabId")){
+				logging.notice("my tab id is", data.tabId);
+				port.disconnect();
+				resolve(data.tabId);
 			}
-		}
+		});
+	}).then(function(tabId){
+		return browser.tabs.get(tabId);
+	}).then(function(tab){
+		let head = document.createElement("header");
+		document.body.insertBefore(head, document.body.firstChild);
 		
-		document.body.appendChild(head);
-		document.body.classList.add("standalone");
-	}
+		if (tab.url === window.location.href){
+			let heading = document.createElement("h1");
+			heading.textContent = browser.i18n.getMessage("options");
+			head.appendChild(heading);
+			
+			let introduction = document.createElement("div");
+			introduction.textContent = browser.i18n.getMessage("optionsIntroduction");
+			head.appendChild(introduction);
+			
+			if (window.location.search){
+				let noticeName = window.location.search.substr(1).trim() + "Notice";
+				let notice = browser.i18n.getMessage(noticeName);
+				if (notice){
+					let bookmarkingNotice = document.createElement("div");
+					bookmarkingNotice.className = noticeName + " bookmarkNotice";
+					bookmarkingNotice.textContent = notice;
+					head.appendChild(bookmarkingNotice);
+				}
+			}
+			
+			document.body.classList.add("standalone");
+		}
+	});
 	
 	var table = document.createElement("table");
 	table.className = "settings " + (settings.displayDescriptions? "display": "hide") + "Descriptions";
