@@ -65,7 +65,30 @@
 					let bookmarkingNotice = document.createElement("div");
 					bookmarkingNotice.className = noticeName + " bookmarkNotice";
 					bookmarkingNotice.textContent = notice;
+					
+					const dontShowAgain = document.createElement("label");
+					dontShowAgain.className = "dontShowOptionsOnUpdate";
+					const dontShowAgainInput = document.createElement("input");
+					dontShowAgainInput.type = "checkbox";
+					settings.onloaded(function(){
+						dontShowAgainInput.checked = settings.dontShowOptionsOnUpdate;
+					});
+					dontShowAgainInput.addEventListener("change", function(){
+						settings.dontShowOptionsOnUpdate = this.checked;
+					});
+					dontShowAgain.appendChild(dontShowAgainInput);
+					dontShowAgain.appendChild(
+						document.createTextNode(
+							browser.i18n.getMessage("dontShowOptionsOnUpdate")
+						)
+					);
+					bookmarkingNotice.appendChild(dontShowAgain);
+					
 					head.appendChild(bookmarkingNotice);
+					
+					const newUrl = new URL(window.location.href);
+					newUrl.search = "";
+					window.history.pushState({}, "", newUrl.href);
 				}
 			}
 			

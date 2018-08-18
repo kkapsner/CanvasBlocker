@@ -43,6 +43,10 @@
 		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it, please bookmark it.",
 		"description": ""
 	},
+	"dontShowOptionsOnUpdate":{
+		"message": "Don't show again on update.",
+		"description": ""
+	},
 	"openInTab": {
 		"message": "Open in separate tab",
 		"description": ""

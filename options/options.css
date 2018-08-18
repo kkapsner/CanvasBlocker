@@ -13,6 +13,12 @@ header .bookmarkNotice {
 	color: #880000;
 }
 
+header .bookmarkNotice .dontShowOptionsOnUpdate {
+	display: block;
+	margin-top: 0.5em;
+	font-size: 0.8em;
+}
+
 .settings {
 	width: 100%;
 	border-spacing: 0;
