@@ -188,6 +188,17 @@ td.hideColumn {
 	background-image: url(notVisible.svg);
 }
 
+.optionsLink {
+	text-align: right;
+	font-size: 0.8em;
+}
+.optionsLink a {
+	text-decoration: none;
+}
+.optionsLink a:hover {
+	text-decoration: underline;
+}
+
 .version {
 	text-align: right;
 	color: gray;

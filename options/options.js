@@ -71,6 +71,16 @@
 			
 			document.body.classList.add("standalone");
 		}
+		else {
+			const linkDiv = document.createElement("div");
+			linkDiv.className = "optionsLink";
+			const link = document.createElement("a");
+			link.href = window.location.href;
+			link.target = "_blank";
+			link.textContent = browser.i18n.getMessage("openInTab");
+			linkDiv.appendChild(link);
+			head.appendChild(linkDiv);
+		}
 	});
 	
 	var table = document.createElement("table");

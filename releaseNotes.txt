@@ -4,6 +4,7 @@ Version 0.5.3:
 	
 	new features:
 		- display version in options page
+		- added link to open options page in separate tab
 	
 	fixes:
 		- CSP did not work properly for worker-src

@@ -43,6 +43,10 @@
 		"message": "CanvasBlocker wurde aktualisiert. Wenn Sie diese Seite in Zukunft erreichen wollen und noch kein Lesezeichen erstellt haben, erstellen Sie bitte eines.",
 		"description": ""
 	},
+	"openInTab": {
+		"message": "In separatem Tab öffnen",
+		"description": ""
+	},
 	
 	"section_asking": {
 		"message": "Nachfragen",
