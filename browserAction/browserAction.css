@@ -18,6 +18,7 @@ div {
 	z-index: 1;
 	position: relative;
 	white-space: nowrap;
+	color: #505050;
 }
 
 .action + .action {

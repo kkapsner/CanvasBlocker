@@ -10,6 +10,7 @@ Version 0.5.3:
 	fixes:
 		- CSP did not work properly for worker-src
 		- detection if the options page was displayed in a separate tab did not work reliably
+		- popup text not readable in some dark themes
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

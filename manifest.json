@@ -54,20 +54,14 @@
 		"page": "options/options.html"
 	},
 	"browser_action": {
-		"browser_style": true,
-		"default_icon": {
-			"19": "icons/browserAction-notPrinted.svg",
-			"38": "icons/browserAction-notPrinted.svg"
-		},
+		"browser_style": false,
+		"default_icon": "icons/browserAction-notPrinted.svg",
 		"default_title": "CanvasBlocker",
 		"default_popup": "browserAction/browserAction.html"
 	},
 	"page_action": {
-		"browser_style": true,
-		"default_icon": {
-			"19": "icons/pageAction-printed.svg",
-			"38": "icons/pageAction-printed.svg"
-		},
+		"browser_style": false,
+		"default_icon": "icons/pageAction-printed.svg",
 		"default_popup": "pageAction/pageAction.html"
 	},
 	"author": "Korbinian Kapsner",
