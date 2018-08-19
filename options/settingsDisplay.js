@@ -192,28 +192,12 @@
 		},
 		"notifications",
 		{
-			"name": "showNotifications",
-			"displayDependencies": [
-				{
-					"blockMode": ["fakeReadout", "fakeInput"]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"]
-				}
-			]
+			"name": "showNotifications"
 		},
 		{
 			"name": "storeImageForInspection",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
-					"showNotifications": [true],
-					"displayAdvancedSettings": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"],
 					"showNotifications": [true],
 					"displayAdvancedSettings": [true]
 				}
@@ -223,13 +207,6 @@
 			"name": "ignoreList",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
-					"showNotifications": [true],
-					"displayAdvancedSettings": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"],
 					"showNotifications": [true],
 					"displayAdvancedSettings": [true]
 				}
@@ -246,12 +223,6 @@
 			"name": "showCompleteCallingStack",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
-					"showNotifications": [true],
-					"displayAdvancedSettings": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
 					"displayAdvancedSettings": [true]
 				}
 			]
