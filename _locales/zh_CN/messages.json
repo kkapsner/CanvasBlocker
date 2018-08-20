@@ -1,0 +1,829 @@
+{
+	"addon_title": {
+		"message": "CanvasBlocker",
+		"description": ""
+	},
+	"addon_description": {
+		"message": "改变修改 <canvas> 的 JS-API 来预防画布（Canvas）指纹跟踪。",
+		"description": ""
+	},
+	
+	"more": {
+		"message": "更多",
+		"description": ""
+	},
+	"less": {
+		"message": "更少",
+		"description": ""
+	},
+	
+	"input": {
+		"message": "输入",
+		"description": ""
+	},
+	
+	"readout": {
+		"message": "取出",
+		"description": ""
+	},
+	
+	"options": {
+		"message": "CanvasBlocker 选项",
+		"description": ""
+	},
+	"optionsIntroduction": {
+		"message": "此页面提供选项来更改 CanvasBlocker 扩展的设置。",
+		"description": ""
+	},
+	"installNotice": {
+		"message": "CanvasBlocker 已安装。如果",
+		"description": ""
+	},
+	"updateNotice": {
+		"message": "CanvasBlocker 已更新。如果您想在之后查阅此页面，您可以将此页加入书签。",
+		"description": ""
+	},
+	
+	"section_asking": {
+		"message": "询问",
+		"description": ""
+	},
+	"section_faking": {
+		"message": "伪造",
+		"description": ""
+	},
+	"section_notifications": {
+		"message": "通知",
+		"description": ""
+	},
+	"section_lists": {
+		"message": "列表",
+		"description": ""
+	},
+	"section_misc": {
+		"message": "其他",
+		"description": ""
+	},
+	"section_settings": {
+		"message": "设置",
+		"description": ""
+	},
+	"section_audio-api":{
+		"message": "音频 API",
+		"description": ""
+	},
+	
+	"displayAdvancedSettings_title": {
+		"message": "专家模式",
+		"description": ""
+	},
+	"displayAdvancedSettings_description": {
+		"message": "显示额外设置",
+		"description": ""
+	},
+	
+	"displayDescriptions_title": {
+		"message": "显示说明",
+		"description": ""
+	},
+	"displayDescriptions_description": {
+		"message": "显示设置的说明。",
+		"description": ""
+	},
+	
+	"displayHiddenSettings_title": {
+		"message": "显示隐藏设置",
+		"description": ""
+	},
+	"displayHiddenSettings_description": {
+		"message": "显示已隐藏的设置。",
+		"description": ""
+	},
+	
+	"allowPDFCanvas_description": {
+		"message": "Firefox 自带的 PDF 阅读器（pdf.js）使用该 API 显示 PDF 内容。如果出现了太多的询问对话框，或者 PDF 阅读器功能失效，则您需要在对话框中允许。",
+		"description": ""
+	},
+	"allowPDFCanvas_title": {
+		"message": "允许 PDF 文件中的 Canvas",
+		"description": ""
+	},
+	"askForInvisiblePermission": {
+		"message": "是否允许不可见的 <canvas>？",
+		"description": ""
+	},
+	"askForInvisibleInputPermission": {
+		"message": "是否允许不可见的 <canvas> 输入？",
+		"description": ""
+	},
+	"askForInvisibleReadoutPermission": {
+		"message": "是否允许不可见的 <canvas> 取出？",
+		"description": ""
+	},
+	"askForPermission": {
+		"message": "是否允许 <canvas>?",
+		"description": ""
+	},
+	"askForInputPermission": {
+		"message": "是否允许 <canvas> 输入？",
+		"description": ""
+	},
+	"askForReadoutPermission": {
+		"message": "是否允许 <canvas> 取出？",
+		"description": ""
+	},
+	"askForVisiblePermission": {
+		"message": "是否允许加红边框的 <canvas>?",
+		"description": ""
+	},
+	"askForVisibleInputPermission": {
+		"message": "是否允许输入红边框的 <canvas>?",
+		"description": ""
+	},
+	"askForVisibleReadoutPermission": {
+		"message": "是否允许取出红边框的 <canvas>?",
+		"description": ""
+	},
+	"askForAudioPermission": {
+		"message": "是否允许音频 API？",
+		"description": ""
+	},
+	"askForAudioInputPermission": {
+		"message": "是否允许音频 API 输入？",
+		"description": ""
+	},
+	"askForAudioReadoutPermission": {
+		"message": "是否允许音频取出？",
+		"description": ""
+	},
+	"askOnlyOnce_title": {
+		"message": "只询问一次",
+		"description": ""
+	},
+	"askOnlyOnce_description": {
+		"message": "当 Canvas Blocker 的阻止模式设为“询问权限”或“询问取出 API 权限”时，每次页面尝试访问有关 API 或取出 API 时将出现一个对话框。此设置是为了尽量只对每个页面的若干次尝试只显示一个对话框。不过，在某些页面上，本扩展仍可能显示多条确认信息。\n否：询问每个尝试\n分别：每种 API 尝试（上下文、输入、取出）分别确认\n组合：一次确认所有种类的 API",
+		"description": ""
+	},
+	"askOnlyOnce_options.no": {
+		"message": "否",
+		"description": ""
+	},
+	"askOnlyOnce_options.individual": {
+		"message": "分别",
+		"description": ""
+	},
+	"askOnlyOnce_options.combined": {
+		"message": "组合",
+		"description": ""
+	},
+	"askDenyMode_title":{
+		"message": "询问拒绝模式",
+		"description": ""
+	},
+	"askDenyMode_description":{
+		"message": "权限被拒绝时的模式。",
+		"description": ""
+	},
+	"askDenyMode_options.block":{
+		"message": "阻止",
+		"description": ""
+	},
+	"askDenyMode_options.fake":{
+		"message": "伪造",
+		"description": ""
+	},
+	
+	"showCanvasWhileAsking_title":{
+		"message": "显示 Canvas 内容",
+		"description": ""
+	},
+	"showCanvasWhileAsking_description":{
+		"message": "询问权限时尽可能显示 Canvas 的内容。",
+		"description": ""
+	},
+	"showCanvasWhileAsking_message":{
+		"message": "该网页想要读取下列画布（Canvas）的内容：",
+		"description": ""
+	},
+	
+	"blackList_description": {
+		"message": "始终阻止 <canvas> API 的域名或 URL。多项请使用英文逗号分隔。",
+		"description": ""
+	},
+	"blackList_title": {
+		"message": "黑名单",
+		"description": ""
+	},
+	
+	"blockMode_description": {
+		"message": "",
+		"description": ""
+	},
+	"blockMode_options.allowEverything": {
+		"message": "全部允许",
+		"description": ""
+	},
+	"blockMode_options.block": {
+		"message": "仅允许白名单",
+		"description": ""
+	},
+	"blockMode_options.ask": {
+		"message": "询问权限",
+		"description": ""
+	},
+	"blockMode_options.askReadout": {
+		"message": "询问取出 API 权限",
+		"description": ""
+	},
+	"blockMode_options.blockEverything": {
+		"message": "全部阻止",
+		"description": ""
+	},
+	"blockMode_options.allow": {
+		"message": "仅阻止黑名单",
+		"description": ""
+	},
+	"blockMode_options.blockReadout": {
+		"message": "阻止取出 API",
+		"description": ""
+	},
+	"blockMode_options.fakeReadout": {
+		"message": "伪造取出 API",
+		"description": ""
+	},
+	"blockMode_options.fakeInput": {
+		"message": "输入时伪造",
+		"description": ""
+	},
+	"blockMode_title": {
+		"message": "阻止模式",
+		"description": ""
+	},
+	
+	"urlSettings_title": {
+		"message": "各站点分别设置",
+		"description": ""
+	},
+	"urlSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	
+	"url_title": {
+		"message": "URL",
+		"description": ""
+	},
+	"url_description": {
+		"message": "",
+		"description": ""
+	},
+	"inputURL": {
+		"message": "输入域名或网址（URL）的正则表达式：",
+		"description": ""
+	},
+	
+	"minFakeSize_description": {
+		"message": "面积小于或等于该数字的画布（Canvas）不会被伪造。这是一个预防检测的参数。\n注意：这将降低本扩展所带来的安全性，因此强烈建议此值不要高于 100。",
+		"description": ""
+	},
+	"minFakeSize_title": {
+		"message": "最小伪造大小",
+		"description": ""
+	},
+	
+	"maxFakeSize_description": {
+		"message": "面积大于该数字的画布（Canvas）不会被伪造。输入 0 则禁用此参数。此参数是为性能考虑，可以预防浏览器卡死，应根据设备的性能调整。\n注意：过低的数字将降低本扩展所带来的安全性，因此强烈建议此值不要低于 1 000 000。",
+		"description": ""
+	},
+	"maxFakeSize_title": {
+		"message": "最大伪造大小",
+		"description": ""
+	},
+	
+	"rng_description": {
+		"message": "无（全白）：返回一个完全是白色的图像。使用此选项时，“伪造 alpha 通道”选项应该激活配合。注意：使用“输入时伪造”模式时不应使用。\n非持久化：每个伪造行动都确定新的随机数。\n不变：同一个网页中，一个颜色总被伪造成另一个相同的颜色。\n持久化：对每个域名只确定一次随机数。",
+		"description": ""
+	},
+	"rng_options.persistent": {
+		"message": "持久化",
+		"description": ""
+	},
+	"rng_options.constant": {
+		"message": "不变",
+		"description": ""
+	},
+	"rng_options.nonPersistent": {
+		"message": "非持久化",
+		"description": ""
+	},
+	"rng_options.white": {
+		"message": "无（全白）",
+		"description": ""
+	},
+	"rng_title": {
+		"message": "随机数生成器",
+		"description": ""
+	},
+	
+	"persistentRndStorage_title": {
+		"message": "持久化存储",
+		"description": ""
+	},
+	"persistentRndStorage_description": {
+		"message": "存储随机数生成器的持久化数据以供浏览器重启后使用。",
+		"description": ""
+	},
+	
+	"storePersistentRnd_title": {
+		"message": "存储持久化数据",
+		"description": ""
+	},
+	"storePersistentRnd_description": {
+		"message": "如果没有存储随机数生成器的持久化数据，相应数据在浏览器关闭时丢弃。",
+		"description": ""
+	},
+	
+	"persistentRndClearInterval_title": {
+		"message": "持久化数据的清除间隔",
+		"description": ""
+	},
+	"persistentRndClearInterval_description": {
+		"message": "持久化数据在指定间隔后自动清除（输入 0 则禁用清除）",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.seconds": {
+		"message": "秒",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.minutes": {
+		"message": "分钟",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.hours": {
+		"message": "小时",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.days": {
+		"message": "天",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.weeks": {
+		"message": "周",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.months": {
+		"message": "月",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.years": {
+		"message": "年",
+		"description": ""
+	},
+	
+	"clearPersistentRnd_title": {
+		"message": "清除持久化的随机存储",
+		"description": ""
+	},
+	"clearPersistentRnd_description": {
+		"message": "删除所有随机数生成器持久化的数据",
+		"description": ""
+	},
+	"clearPersistentRnd_label": {
+		"message": "清除",
+		"description": ""
+	},
+	
+	"ignoreFrequentColors_title": {
+		"message": "忽略最常见的颜色",
+		"description": ""
+	},
+	"ignoreFrequentColors_description": {
+		"message": "每个画布（Canvas）前多少个最常见的颜色不被伪造。这是一个预防检测的参数。\n注意：这将降低本扩展的性能，因为需要对每个图像统计颜色数。此外，这可能降低本扩展所带来的安全性，因此强烈建议此值不要高于 3。",
+		"description": ""
+	},
+	
+	"minColors_title": {
+		"message": "颜色数至少",
+		"description": ""
+	},
+	"minColors_description": {
+		"message": "伪造的画布（Canvas）至少有多少种颜色。\n注意：这将降低本扩展所带来的安全性，因此强烈建议此值不要高于 10。",
+		"description": ""
+	},
+	
+	"fakeAlphaChannel_title": {
+		"message": "伪造 alpha 通道",
+		"description": ""
+	},
+	"fakeAlphaChannel_description": {
+		"message": "激活对 alpha 通道（透明度）的伪造。",
+		"description": ""
+	},
+	
+	"useCanvasCache_title": {
+		"message": "使用 Canvas 缓存",
+		"description": ""
+	},
+	"useCanvasCache_description": {
+		"message": "启用 Canvas 缓存。这可以预防检测，并在小画布（Canvas）被数次读取时增加性能，但对于大画布则降低性能。",
+		"description": ""
+	},
+	
+	"apiWhiteList_title": {
+		"message": "API 白名单",
+		"description": ""
+	},
+	"apiWhiteList_description": {
+		"message": "允许部分 Canvas API。",
+		"description": ""
+	},
+	
+	"disableNotifications": {
+		"message": "禁用通知",
+		"description": ""
+	},
+	"showOptions": {
+		"message": "显示设置",
+		"description": ""
+	},
+	"displayCallingStack": {
+		"message": "显示调用堆栈",
+		"description": ""
+	},
+	"displayFullURL": {
+		"message": "显示完整 URL",
+		"description": ""
+	},
+	"enableStackList_description": {
+		"message": "",
+		"description": ""
+	},
+	"enableStackList_title": {
+		"message": "使用指定白名单文件",
+		"description": ""
+	},
+	
+	"preBlock": {
+		"message": "{url} 上的 API 调用已阻止，因为 CanvasBlocker 的设置未能及时加载。",
+		"description": ""
+	},
+	"blocked": {
+		"message": "{url} 上的 API 调用已阻止。",
+		"description": ""
+	},
+	"fakedReadout": {
+		"message": "{url} 上的取出已伪造",
+		"description": ""
+	},
+	"fakedAudioReadout": {
+		"message": "{url} 上的音频取出已伪造",
+		"description": ""
+	},
+	"fakedInput": {
+		"message": "{url} 上的画布输入已伪造",
+		"description": ""
+	},
+	
+	"ignoreList_description": {
+		"message": "不需要显示通知的域名或 URL。多项请使用英文逗号分隔。",
+		"description": ""
+	},
+	"ignoreList_title": {
+		"message": "忽略列表",
+		"description": ""
+	},
+	"ignorelistDomain": {
+		"message": "静默域名",
+		"description": ""
+	},
+	"ignorelistURL": {
+		"message": "忽略 URL",
+		"description": ""
+	},
+	"inputIgnoreDomain": {
+		"message": "输入域名来添加到忽略列表：",
+		"description": ""
+	},
+	"inputWhitelistDomain": {
+		"message": "输入 URL 的正则表达式来添加到白名单：",
+		"description": ""
+	},
+	"inputWhitelistURL": {
+		"message": "输入域名来添加到白名单：",
+		"description": ""
+	},
+	"inputSessionWhitelistDomain": {
+		"message": "输入 URL 的正则表达式来添加到会话级白名单：",
+		"description": ""
+	},
+	"inputSessionWhitelistURL": {
+		"message": "输入域名来添加到会话级白名单：",
+		"description": ""
+	},
+	"settings": {
+		"message": "设置",
+		"description": ""
+	},
+	"showCallingFile_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCallingFile_title": {
+		"message": "显示调用文件",
+		"description": ""
+	},
+	"showCompleteCallingStack_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCompleteCallingStack_title": {
+		"message": "显示完整调用堆栈",
+		"description": ""
+	},
+	"showNotifications_description": {
+		"message": "阻止模式设为“伪造取出 API”时显示一个通知。",
+		"description": ""
+	},
+	"showNotifications_title": {
+		"message": "显示通知",
+		"description": ""
+	},
+	"notificationDisplayTime_description": {
+		"message": "通知显示几秒（输入 0 则禁用自动关闭通知）",
+		"description": ""
+	},
+	"notificationDisplayTime_title": {
+		"message": "通知持续时间",
+		"description": ""
+	},
+	"sourceOutput": {
+		"message": "调用文件",
+		"description": ""
+	},
+	"stackEntryOutput": {
+		"message": "{url}, 行 {line} 列 {column}",
+		"description": ""
+	},
+	"stackList_description": {
+		"message": "用来定义允许使用 <canvas> API 的 JS 文件。白名单文件需为 JSON 格式。范例：[{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"description": ""
+	},
+	"stackList_title": {
+		"message": "使用指定白名单文件",
+		"description": ""
+	},
+	"whiteList_title": {
+		"message": "白名单",
+		"description": ""
+	},
+	"whiteList_description": {
+		"message": "应该阻止使用 <canvas> API 的域名或 URL。多项请使用英文逗号分隔。",
+		"description": ""
+	},
+	"whitelist": {
+		"message": "白名单",
+		"description": ""
+	},
+	"whitelistDomain": {
+		"message": "白名单域名",
+		"description": ""
+	},
+	"whitelistURL": {
+		"message": "白名单 URL",
+		"description": ""
+	},
+	
+	"sessionWhiteList_title": {
+		"message": "会话级白名单",
+		"description": ""
+	},
+	"sessionWhiteList_description": {
+		"message": "本次会话期间拦截 <canvas> API 使用的域名或 URL。多项请使用英文逗号分隔。",
+		"description": ""
+	},
+	
+	"whitelistDomainTemporarily": {
+		"message": "临时白名单域名",
+		"description": ""
+	},
+	"whitelistURLTemporarily": {
+		"message": "临时白名单 URL",
+		"description": ""
+	},
+	
+	"inspectImage": {
+		"message": "察看图像",
+		"description": ""
+	},
+	"storeImageForInspection_title": {
+		"message": "存储图像以备察看",
+		"description": ""
+	},
+	"storeImageForInspection_description": {
+		"message": "开始存储已伪造的画布内容。\n注意：这可能消耗大量内存！",
+		"description": ""
+	},
+	
+	"protectaudio_title": {
+		"message": "保护音频 API",
+		"description": ""
+	},
+	"protectaudio_description": {
+		"message": "如果可行，音频 API 也应该被保护。",
+		"description": ""
+	},
+	"audiofakerate_title": {
+		"message": "缓冲器伪造率",
+		"description": ""
+	},
+	"audiofakerate_description": {
+		"message": "每个读取请求的值应该伪造多少。",
+		"description": ""
+	},
+	"audiofakerate_options.1": {
+		"message": "1 个值",
+		"description": ""
+	},
+	"audiofakerate_options.10": {
+		"message": "10 个值",
+		"description": ""
+	},
+	"audiofakerate_options.100": {
+		"message": "100 个值",
+		"description": ""
+	},
+	"audiofakerate_options.1000": {
+		"message": "1000 个值",
+		"description": ""
+	},
+	"audiofakerate_options.0.1%": {
+		"message": "0.1% 的值",
+		"description": ""
+	},
+	"audiofakerate_options.1%": {
+		"message": "1% 的值",
+		"description": ""
+	},
+	"audiofakerate_options.10%": {
+		"message": "10% 的值",
+		"description": ""
+	},
+	"audiofakerate_options.100%": {
+		"message": "100% 的值",
+		"description": ""
+	},
+	"audionoiselevel_title": {
+		"message": "噪声级别",
+		"description": ""
+	},
+	"audionoiselevel_description": {
+		"message": "",
+		"description": ""
+	},
+	"audionoiselevel_options.minimal": {
+		"message": "最低",
+		"description": ""
+	},
+	"audionoiselevel_options.low": {
+		"message": "低",
+		"description": ""
+	},
+	"audionoiselevel_options.medium": {
+		"message": "中等",
+		"description": ""
+	},
+	"audionoiselevel_options.high": {
+		"message": "高",
+		"description": ""
+	},
+	"audionoiselevel_options.maximal": {
+		"message": "最高",
+		"description": ""
+	},
+	"useaudiocache_title": {
+		"message": "使用音频缓存",
+		"description": ""
+	},
+	"useaudiocache_description": {
+		"message": "启用音频缓存。这可以预防检测，但将降低性能。",
+		"description": ""
+	},
+	"audiousefixedindices_title": {
+		"message": "使用固定指数",
+		"description": ""
+	},
+	"audiousefixedindices_description": {
+		"message": "始终使用指定的指数来伪造。",
+		"description": ""
+	},
+	"audiofixedindices_title": {
+		"message": "固定指数",
+		"description": ""
+	},
+	"audiofixedindices_description": {
+		"message": "始终使用指定的指数来伪造。多项请使用英文逗号分隔。",
+		"description": ""
+	},
+	
+	"blockDataURLs_title": {
+		"message": "阻止 data URL 形成页面",
+		"description": ""
+	},
+	"blockDataURLs_description": {
+		"message": "Data URL 形成的页面我们还不能阻拦其进行指纹识别（详见 https://bugzilla.mozilla.org/show_bug.cgi?id=1475831）。拦截这些页面能防止真实指纹泄露。",
+		"description": ""
+	},
+	
+	"showReleaseNotes_title": {
+		"message": "发行说明",
+		"description": ""
+	},
+	"showReleaseNotes_description": {
+		"message": "",
+		"description": ""
+	},
+	"showReleaseNotes_label": {
+		"message": "显示",
+		"description": ""
+	},
+	
+	"logLevel_title": {
+		"message": "日志级别",
+		"description": ""
+	},
+	"logLevel_description": {
+		"message": "此参数控制日志记录的详细程度。",
+		"description": ""
+	},
+	"logLevel_options.0": {
+		"message": "无",
+		"description": ""
+	},
+	"logLevel_options.1": {
+		"message": "错误",
+		"description": ""
+	},
+	"logLevel_options.25": {
+		"message": "警告",
+		"description": ""
+	},
+	"logLevel_options.50": {
+		"message": "信息",
+		"description": ""
+	},
+	"logLevel_options.75": {
+		"message": "注意",
+		"description": ""
+	},
+	"logLevel_options.100": {
+		"message": "详细",
+		"description": ""
+	},
+	
+	"exportSettings_title": {
+		"message": "导出设置",
+		"description": ""
+	},
+	"exportSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"exportSettings_label": {
+		"message": "显示",
+		"description": ""
+	},
+	
+	"resetSettings_title": {
+		"message": "重置设置",
+		"description": ""
+	},
+	"resetSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"resetSettings_label": {
+		"message": "重置",
+		"description": ""
+	},
+	"resetSettings_confirm": {
+		"message": "确定重置所有设置？",
+		"description": ""
+	},
+	
+	"browserAction_settings": {
+		"message": "设置",
+		"description": ""
+	},
+	"browserAction_test": {
+		"message": "测试",
+		"description": ""
+	},
+	"browserAction_review": {
+		"message": "评论",
+		"description": ""
+	},
+	"browserAction_reportIssue": {
+		"message": "反馈问题",
+		"description": ""
+	}
+}
