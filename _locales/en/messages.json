@@ -556,6 +556,46 @@
 		"message": "Show notifications",
 		"description": ""
 	},
+	"highlightPageAction_description": {
+		"message": "Highlight the page action icon for better visibility.",
+		"description": ""
+	},
+	"highlightPageAction_title": {
+		"message": "Highlight page action icon",
+		"description": ""
+	},
+	"highlightPageAction_options.none": {
+		"message": "no highlight",
+		"description": ""
+	},
+	"highlightPageAction_options.color": {
+		"message": "color",
+		"description": ""
+	},
+	"highlightPageAction_options.blink": {
+		"message": "blink",
+		"description": ""
+	},
+	"highlightBrowserAction_description": {
+		"message": "",
+		"description": ""
+	},
+	"highlightBrowserAction_title": {
+		"message": "Change toolbar icon on notification",
+		"description": ""
+	},
+	"highlightBrowserAction_options.none": {
+		"message": "change nothing",
+		"description": ""
+	},
+	"highlightBrowserAction_options.color": {
+		"message": "change color",
+		"description": ""
+	},
+	"highlightBrowserAction_options.blink": {
+		"message": "blink",
+		"description": ""
+	},
 	"notificationDisplayTime_description": {
 		"message": "Number of seconds the notifications are shown. (Enter zero to disable automatic closing.)",
 		"description": ""

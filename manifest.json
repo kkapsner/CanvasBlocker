@@ -16,6 +16,7 @@
 			"lib/lists.js",
 			"lib/persistentRndStorage.js",
 			"lib/dataUrls.js",
+			"lib/notification.js",
 			"lib/main.js"
 		]
 	},

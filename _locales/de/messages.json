@@ -556,6 +556,46 @@
 		"message": "Benachrichtigungen anzeigen",
 		"description": ""
 	},
+	"highlightPageAction_description": {
+		"message": "Page-Action Icon für eine erhöhte Sichtbarkeit hervorheben.",
+		"description": ""
+	},
+	"highlightPageAction_title": {
+		"message": "Page-Action Icon hervorheben",
+		"description": ""
+	},
+	"highlightBrowserAction_description": {
+		"message": "",
+		"description": ""
+	},
+	"highlightPageAction_options.none": {
+		"message": "nicht hervorheben",
+		"description": ""
+	},
+	"highlightPageAction_options.color": {
+		"message": "Farbe",
+		"description": ""
+	},
+	"highlightPageAction_options.blink": {
+		"message": "blinken",
+		"description": ""
+	},
+	"highlightBrowserAction_title": {
+		"message": "Toolbar Icon bei Benachrichtigung ändern",
+		"description": ""
+	},
+	"highlightBrowserAction_options.none": {
+		"message": "nichts ändern",
+		"description": ""
+	},
+	"highlightBrowserAction_options.color": {
+		"message": "Farbe ändern",
+		"description": ""
+	},
+	"highlightBrowserAction_options.blink": {
+		"message": "blinken",
+		"description": ""
+	},
 	"notificationDisplayTime_description": {
 		"message": "Anzahl der Sekunden, die die Benachrichtigungen angezeigt werden sollen. (Null eingeben, um die Benachrichtigungen nicht automatisch zu schließen.)",
 		"description": ""

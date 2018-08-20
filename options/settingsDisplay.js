@@ -195,6 +195,17 @@
 			"name": "showNotifications"
 		},
 		{
+			"name": "highlightPageAction",
+			"displayDependencies": [
+				{
+					"showNotifications": [true]
+				}
+			]
+		},
+		{
+			"name": "highlightBrowserAction"
+		},
+		{
 			"name": "storeImageForInspection",
 			"displayDependencies": [
 				{

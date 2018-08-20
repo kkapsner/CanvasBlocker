@@ -6,6 +6,8 @@ Version 0.5.3:
 		- display version in options page
 		- added link to open options page in separate tab
 		- added option "Don't show again on update." for options page
+		- added option to highlight page action icon
+		- added option to control browser action icon on notifications
 	
 	fixes:
 		- CSP did not work properly for worker-src
