@@ -363,6 +363,9 @@
 		},
 		"misc",
 		{
+			"name": "theme"
+		},
+		{
 			"name": "blockDataURLs",
 			"displayDependencies": {
 				"displayAdvancedSettings": [true]
