@@ -9,6 +9,7 @@ Version 0.5.3:
 		- added option to highlight page action icon
 		- added option to control browser action icon on notifications
 		- added theme for browser action popup
+		- added badge
 	
 	fixes:
 		- CSP did not work properly for worker-src

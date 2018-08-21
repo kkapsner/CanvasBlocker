@@ -564,10 +564,6 @@
 		"message": "Page-Action Icon hervorheben",
 		"description": ""
 	},
-	"highlightBrowserAction_description": {
-		"message": "",
-		"description": ""
-	},
 	"highlightPageAction_options.none": {
 		"message": "nicht hervorheben",
 		"description": ""
@@ -578,6 +574,18 @@
 	},
 	"highlightPageAction_options.blink": {
 		"message": "blinken",
+		"description": ""
+	},
+	"displayBadge_description": {
+		"message": "",
+		"description": ""
+	},
+	"displayBadge_title": {
+		"message": "Badge anzeigen",
+		"description": ""
+	},
+	"highlightBrowserAction_description": {
+		"message": "",
 		"description": ""
 	},
 	"highlightBrowserAction_title": {

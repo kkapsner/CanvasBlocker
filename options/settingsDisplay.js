@@ -203,6 +203,9 @@
 			]
 		},
 		{
+			"name": "displayBadge"
+		},
+		{
 			"name": "highlightBrowserAction"
 		},
 		{

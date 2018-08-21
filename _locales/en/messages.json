@@ -576,6 +576,14 @@
 		"message": "blink",
 		"description": ""
 	},
+	"displayBadge_description": {
+		"message": "",
+		"description": ""
+	},
+	"displayBadge_title": {
+		"message": "Display badge",
+		"description": ""
+	},
 	"highlightBrowserAction_description": {
 		"message": "",
 		"description": ""
