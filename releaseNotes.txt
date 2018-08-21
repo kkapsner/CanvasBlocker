@@ -16,6 +16,7 @@ Version 0.5.3:
 		- popup text not readable in some dark themes
 		- display conditions for notification settings
 		- page action not useable with a lot of notifications
+		- blocking of blob-worker broke some pages
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
