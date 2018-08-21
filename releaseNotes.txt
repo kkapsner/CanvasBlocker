@@ -14,6 +14,7 @@ Version 0.5.3:
 		- detection if the options page was displayed in a separate tab did not work reliably
 		- popup text not readable in some dark themes
 		- display conditions for notification settings
+		- page action not useable with a lot of notifications
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

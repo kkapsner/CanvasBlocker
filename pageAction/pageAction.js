@@ -185,14 +185,26 @@
 		browser.runtime.onMessage.addListener(function(data){
 			if (Array.isArray(data["canvasBlocker-notifications"])){
 				message("got notifications");
-				data["canvasBlocker-notifications"].forEach(function(notification){
-					verbose(notification);
-					notification.url = new URL(notification.url);
-					domainNotification(
-						notification.url.hostname,
-						notification.messageId
-					).addNotification(new Notification(notification));
-				});
+				const notifications = data["canvasBlocker-notifications"];
+				let i = 0;
+				const length = notifications.length;
+				const tick = window.setInterval(function(){
+					if (i >= length){
+						window.clearInterval(tick);
+					}
+					else {
+						for (var delta = 0; delta < 20 && i + delta < length; delta += 1){
+							let notification = notifications[i + delta];
+							verbose(notification);
+							notification.url = new URL(notification.url);
+							domainNotification(
+								notification.url.hostname,
+								notification.messageId
+							).addNotification(new Notification(notification));
+						}
+						i += delta;
+					}
+				}, 1);
 			}
 		});
 		message("request notifications from tab", tab.id);
