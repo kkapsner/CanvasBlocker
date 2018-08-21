@@ -773,6 +773,27 @@
 		"description": ""
 	},
 	
+	"theme_title": {
+		"message": "Theme",
+		"description": ""
+	},
+	"theme_description": {
+		"message": "",
+		"description": ""
+	},
+	"theme_options.default": {
+		"message": "default",
+		"description": ""
+	},
+	"theme_options.light": {
+		"message": "light",
+		"description": ""
+	},
+	"theme_options.dark": {
+		"message": "dark",
+		"description": ""
+	},
+	
 	"blockDataURLs_title": {
 		"message": "Block data URL pages",
 		"description": ""

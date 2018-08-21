@@ -1,5 +1,6 @@
 body {
-	padding: 1em;
+	padding: 0.5em;
+	margin: 0;
 }
 
 div {
@@ -9,8 +10,8 @@ div {
 .action {
 	display: block;
 	padding: 0.5em;
-	background-color: white;
-	border: 1px solid #e0e0e0;
+	background-color: transparent;
+	border: 1px solid currentColor;
 	cursor: pointer;
 	width: 100%;
 	text-align: left;
@@ -18,7 +19,7 @@ div {
 	z-index: 1;
 	position: relative;
 	white-space: nowrap;
-	color: #505050;
+	color: currentColor;
 }
 
 .action + .action {
@@ -35,11 +36,14 @@ div {
 
 .action:active, .action:hover, .action:focus {
 	z-index: 10;
-	background-color: #eaeaea;
 }
 
-.action img {
+.action .icon {
 	vertical-align: text-bottom;
-	max-height: 19px;
+	height: 19px;
+	width: 19px;
 	margin-right: 0.25em;
+	background-color: currentColor;
+	mask-size: 100%;
+	display: inline-block;
 }

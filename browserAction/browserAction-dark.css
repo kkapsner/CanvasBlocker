@@ -1,0 +1,12 @@
+body {
+	background-color: rgb(74, 74, 79);
+	color: rgb(249, 249, 250);
+}
+
+.action {
+	border-color: rgb(92, 92, 97);
+}
+
+.action:active, .action:hover, .action:focus {
+	background-color: rgb(92, 92, 97);
+}

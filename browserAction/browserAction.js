@@ -9,6 +9,16 @@
 	logging.message("Opened browser action");
 	
 	settings.onloaded(function(){
+		// load theme
+		var themeLink = document.createElement("link");
+		themeLink.href = `browserAction-${settings.theme}.css`;
+		themeLink.rel = "stylesheet";
+		themeLink.type = "text/css";
+		document.head.appendChild(themeLink);
+		settings.on("theme", function(){
+			themeLink.href = `browserAction-${settings.theme}.css`;
+		});
+		
 		var actions = document.getElementById("actions");
 		
 		[
@@ -55,8 +65,9 @@
 			var actionButton = document.createElement("button");
 			actionButton.className = "action";
 			
-			var icon = document.createElement("img");
-			icon.src = action.icon;
+			var icon = document.createElement("span");
+			icon.className = "icon";
+			icon.style.maskImage = "url(" + action.icon + ")";
 			
 			actionButton.appendChild(icon);
 			

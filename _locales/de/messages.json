@@ -773,6 +773,27 @@
 		"description": ""
 	},
 	
+	"theme_title": {
+		"message": "Theme",
+		"description": ""
+	},
+	"theme_description": {
+		"message": "",
+		"description": ""
+	},
+	"theme_options.default": {
+		"message": "Standard",
+		"description": ""
+	},
+	"theme_options.light": {
+		"message": "hell",
+		"description": ""
+	},
+	"theme_options.dark": {
+		"message": "dunkel",
+		"description": ""
+	},
+	
 	"blockDataURLs_title": {
 		"message": "Data-URL Seiten blockieren",
 		"description": ""
