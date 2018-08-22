@@ -57,7 +57,7 @@
 	"browser_action": {
 		"browser_style": false,
 		"default_icon": "icons/browserAction-notPrinted.svg",
-		"default_title": "CanvasBlocker",
+		"default_title": "__MSG_browserAction_title_default__",
 		"default_popup": "browserAction/browserAction.html"
 	},
 	"page_action": {

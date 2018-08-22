@@ -8,6 +8,19 @@
 		"description": ""
 	},
 	
+	"browserAction_title_default": {
+		"message": "CanvasBlocker",
+		"description": ""
+	},
+	"browserAction_title_notified": {
+		"message": "CanvasBlocker\n\nprotection successful for:",
+		"description": ""
+	},
+	"browserAction_title_protectedAPIs": {
+		"message": "\n  \u00B7 {api}",
+		"description": ""
+	},
+	
 	"more": {
 		"message": "more",
 		"description": ""
