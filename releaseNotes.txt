@@ -280,7 +280,7 @@ Version 0.4.0:
 	
 	fixes:
 		- ask mode did not work for input types
-		- allow page scripts to overwrite the faked funtions
+		- allow page scripts to overwrite the faked functions
 		- getImageData also faked when using fakeInput mode
 
 Version 0.3.8:

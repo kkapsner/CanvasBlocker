@@ -30,7 +30,7 @@
 			collapser.addEventListener("click", function(){
 				container.classList.toggle("collapsed");
 			});
-			container.classList.add("collapsable");
+			container.classList.add("collapsible");
 			container.classList.add("collapsed");
 		};
 	}();

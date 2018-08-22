@@ -49,7 +49,7 @@
 
 	DomainNotification.prototype.node = function node(){
 		const node = document.createElement("li");
-		node.className = "domainPrints collapsable collapsed";
+		node.className = "domainPrints collapsible collapsed";
 		node.appendChild(this.textNode());
 		node.appendChild(document.createElement("br"));
 		createCollapser(node);

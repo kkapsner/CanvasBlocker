@@ -25,7 +25,7 @@
 			node.appendChild(document.createTextNode(this.timestamp.toLocaleString() + ": "));
 			node.appendChild(this.textNode());
 			if (this.dataURL){
-				node.className = "notification collapsable collapsed";
+				node.className = "notification collapsible collapsed";
 				node.appendChild(document.createElement("br"));
 				createCollapser(node);
 				const img = document.createElement("img");

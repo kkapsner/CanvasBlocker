@@ -169,7 +169,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When Canvas Blocker's Block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\nNo: asking every time\nIndividual: each API-type (context, input, readout) has to be confirmed seperately\ncombined: all API-types get confirmed together",
+		"message": "When Canvas Blocker's Block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\nNo: asking every time\nIndividual: each API-type (context, input, readout) has to be confirmed separately\ncombined: all API-types get confirmed together",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -680,103 +680,103 @@
 		"description": ""
 	},
 	
-	"protectaudio_title": {
+	"protectAudio_title": {
 		"message": "Protect audio API",
 		"description": ""
 	},
-	"protectaudio_description": {
+	"protectAudio_description": {
 		"message": "If the audio API should be protected as well",
 		"description": ""
 	},
-	"audiofakerate_title": {
+	"audioFakeRate_title": {
 		"message": "Buffer fake rate",
 		"description": ""
 	},
-	"audiofakerate_description": {
+	"audioFakeRate_description": {
 		"message": "How many of the values per read request should be faked.",
 		"description": ""
 	},
-	"audiofakerate_options.1": {
+	"audioFakeRate_options.1": {
 		"message": "1 value",
 		"description": ""
 	},
-	"audiofakerate_options.10": {
+	"audioFakeRate_options.10": {
 		"message": "10 values",
 		"description": ""
 	},
-	"audiofakerate_options.100": {
+	"audioFakeRate_options.100": {
 		"message": "100 values",
 		"description": ""
 	},
-	"audiofakerate_options.1000": {
+	"audioFakeRate_options.1000": {
 		"message": "1000 values",
 		"description": ""
 	},
-	"audiofakerate_options.0.1%": {
+	"audioFakeRate_options.0.1%": {
 		"message": "0.1% of the values",
 		"description": ""
 	},
-	"audiofakerate_options.1%": {
+	"audioFakeRate_options.1%": {
 		"message": "1% of the values",
 		"description": ""
 	},
-	"audiofakerate_options.10%": {
+	"audioFakeRate_options.10%": {
 		"message": "10% of the values",
 		"description": ""
 	},
-	"audiofakerate_options.100%": {
+	"audioFakeRate_options.100%": {
 		"message": "100% of the values",
 		"description": ""
 	},
-	"audionoiselevel_title": {
+	"audioNoiseLevel_title": {
 		"message": "Noise level",
 		"description": ""
 	},
-	"audionoiselevel_description": {
+	"audioNoiseLevel_description": {
 		"message": "",
 		"description": ""
 	},
-	"audionoiselevel_options.minimal": {
+	"audioNoiseLevel_options.minimal": {
 		"message": "minimal",
 		"description": ""
 	},
-	"audionoiselevel_options.low": {
+	"audioNoiseLevel_options.low": {
 		"message": "low",
 		"description": ""
 	},
-	"audionoiselevel_options.medium": {
+	"audioNoiseLevel_options.medium": {
 		"message": "medium",
 		"description": ""
 	},
-	"audionoiselevel_options.high": {
+	"audioNoiseLevel_options.high": {
 		"message": "high",
 		"description": ""
 	},
-	"audionoiselevel_options.maximal": {
+	"audioNoiseLevel_options.maximal": {
 		"message": "maximal",
 		"description": ""
 	},
-	"useaudiocache_title": {
+	"useAudioCache_title": {
 		"message": "Use audio cache",
 		"description": ""
 	},
-	"useaudiocache_description": {
+	"useAudioCache_description": {
 		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
 		"description": ""
 	},
-	"audiousefixedindices_title": {
+	"audioUseFixedIndices_title": {
 		"message": "Use fixed indices",
 		"description": ""
 	},
-	"audiousefixedindices_description": {
+	"audioUseFixedIndices_description": {
 		"message": "If some of the used indices should be always faked.",
 		"description": ""
 	},
-	"audiofixedindices_title": {
+	"audioFixedIndices_title": {
 		"message": "Fixed indices",
 		"description": ""
 	},
-	"audiofixedindices_description": {
+	"audioFixedIndices_description": {
 		"message": "The indices that are always faked. Enter separated by comma.",
 		"description": ""
 	},

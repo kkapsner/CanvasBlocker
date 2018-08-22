@@ -39,11 +39,11 @@
 		// Start audio processing
 		pxi_oscillator.start(0);
 		context.startRendering();
-		context.oncomplete = function(evnt) {
+		context.oncomplete = function(event) {
 			var str = "";
 			var copyTest = new Float32Array(44100);
-			evnt.renderedBuffer.copyFromChannel(copyTest, 0);
-			var getTest = evnt.renderedBuffer.getChannelData(0);
+			event.renderedBuffer.copyFromChannel(copyTest, 0);
+			var getTest = event.renderedBuffer.getChannelData(0);
 			Promise.all([
 				crypto.subtle.digest("SHA-256", getTest),
 				crypto.subtle.digest("SHA-256", copyTest),

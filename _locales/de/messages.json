@@ -309,7 +309,7 @@
 	},
 	
 	"rng_description": {
-		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuchen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\nnicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\nkonstant: innerhalb einer Webseite wird eine Farbe immer gleich verändert.\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
+		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuschen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\nnicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\nkonstant: innerhalb einer Webseite wird eine Farbe immer gleich verändert.\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -680,79 +680,79 @@
 		"description": ""
 	},
 	
-	"protectaudio_title": {
+	"protectAudio_title": {
 		"message": "Audio-API beschützen",
 		"description": ""
 	},
-	"protectaudio_description": {
+	"protectAudio_description": {
 		"message": "Ob die Audio-API auch beschützt werden soll.",
 		"description": ""
 	},
-	"audiofakerate_title": {
+	"audioFakeRate_title": {
 		"message": "Buffer Vortäuschrate",
 		"description": ""
 	},
-	"audiofakerate_description": {
+	"audioFakeRate_description": {
 		"message": "Wie viele Werte pro Leseanfrage vorgetäuscht werden sollen.",
 		"description": ""
 	},
-	"audiofakerate_options.1": {
+	"audioFakeRate_options.1": {
 		"message": "1 Wert",
 		"description": ""
 	},
-	"audiofakerate_options.10": {
+	"audioFakeRate_options.10": {
 		"message": "10 Werte",
 		"description": ""
 	},
-	"audiofakerate_options.100": {
+	"audioFakeRate_options.100": {
 		"message": "100 Werte",
 		"description": ""
 	},
-	"audiofakerate_options.1000": {
+	"audioFakeRate_options.1000": {
 		"message": "1000 Werte",
 		"description": ""
 	},
-	"audiofakerate_options.0.1%": {
+	"audioFakeRate_options.0.1%": {
 		"message": "0.1% der Werte",
 		"description": ""
 	},
-	"audiofakerate_options.1%": {
+	"audioFakeRate_options.1%": {
 		"message": "1% der Werte",
 		"description": ""
 	},
-	"audiofakerate_options.10%": {
+	"audioFakeRate_options.10%": {
 		"message": "10% der Werte",
 		"description": ""
 	},
-	"audiofakerate_options.100%": {
+	"audioFakeRate_options.100%": {
 		"message": "100% der Werte",
 		"description": ""
 	},
-	"audionoiselevel_title": {
+	"audioNoiseLevel_title": {
 		"message": "Rauschlevel",
 		"description": ""
 	},
-	"audionoiselevel_description": {
+	"audioNoiseLevel_description": {
 		"message": "",
 		"description": ""
 	},
-	"audionoiselevel_options.minimal": {
+	"audioNoiseLevel_options.minimal": {
 		"message": "minimal",
 		"description": ""
 	},
-	"audionoiselevel_options.low": {
+	"audioNoiseLevel_options.low": {
 		"message": "niedrig",
 		"description": ""
 	},
-	"audionoiselevel_options.medium": {
+	"audioNoiseLevel_options.medium": {
 		"message": "mittel",
 		"description": ""
 	},
-	"audionoiselevel_options.high": {
+	"audioNoiseLevel_options.high": {
 		"message": "hoch",
 		"description": ""
 	},
-	"audionoiselevel_options.maximal": {
+	"audioNoiseLevel_options.maximal": {
 		"message": "maximal",
 		"description": ""
 	},
@@ -764,19 +764,19 @@
 		"message": "Aktiviert den Audio-Zwischenspeicher. Dies kann die Detektion des Addons verhindern aber reduziert die Geschwindigkeit des Addons.",
 		"description": ""
 	},
-	"audiousefixedindices_title": {
+	"audioUseFixedIndices_title": {
 		"message": "Feste Indizes verwenden",
 		"description": ""
 	},
-	"audiousefixedindices_description": {
+	"audioUseFixedIndices_description": {
 		"message": "Ob einige der Indizes immer vorgetäuscht werden sollen.",
 		"description": ""
 	},
-	"audiofixedindices_title": {
+	"audioFixedIndices_title": {
 		"message": "Feste Indizes",
 		"description": ""
 	},
-	"audiofixedindices_description": {
+	"audioFixedIndices_description": {
 		"message": "Die Indizes, die immer vorgetäuscht werden sollen. Kommasepariert eingeben.",
 		"description": ""
 	},
