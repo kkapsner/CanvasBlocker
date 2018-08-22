@@ -1,6 +1,6 @@
 Version 0.5.3:
 	changes:
-		- 
+		- removed active support for Firefox < 60
 	
 	new features:
 		- display version in options page
