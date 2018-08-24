@@ -513,6 +513,16 @@
 		"message": "Ignorierliste",
 		"description": ""
 	},
+	
+	"ignoredAPIs_title": {
+		"message": "Ignorierte APIs",
+		"description": ""
+	},
+	"ignoredAPIs_description": {
+		"message": "Für die ausgewählten APIs werden keinerlei Benachrichtigungen angezeigt.",
+		"description": ""
+	},
+	
 	"ignorelistDomain": {
 		"message": "verschweige Domain",
 		"description": ""

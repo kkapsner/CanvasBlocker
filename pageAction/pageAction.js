@@ -195,6 +195,9 @@
 					else {
 						for (var delta = 0; delta < 20 && i + delta < length; delta += 1){
 							let notification = notifications[i + delta];
+							if (settings.ignoredAPIs[notification.api]){
+								continue;
+							}
 							verbose(notification);
 							notification.url = new URL(notification.url);
 							domainNotification(

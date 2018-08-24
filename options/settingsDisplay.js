@@ -236,6 +236,23 @@
 			]
 		},
 		{
+			"name": "ignoredAPIs",
+			"displayDependencies": [
+				{
+					"showNotifications": [true],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"displayBadge": [true],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"highlightBrowserAction": ["color", "blink"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
 			"name": "showCallingFile",
 			"displayDependencies": {
 				"blockMode": ["askReadout", "ask"],
