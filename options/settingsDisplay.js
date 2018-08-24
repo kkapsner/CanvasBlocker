@@ -224,6 +224,14 @@
 				{
 					"showNotifications": [true],
 					"displayAdvancedSettings": [true]
+				},
+				{
+					"displayBadge": [true],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"highlightBrowserAction": ["color", "blink"],
+					"displayAdvancedSettings": [true]
 				}
 			]
 		},
