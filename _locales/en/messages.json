@@ -791,7 +791,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices should be always faked.",
+		"message": "If some of the used indices should always be faked.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {

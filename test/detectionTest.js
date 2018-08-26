@@ -2,7 +2,7 @@
 var addTest = (function(){
 	"use strict";
 
-	var stati = [
+	var statusDefinitions = [
 		{className: "notRun", text: "not run"},
 		{className: "loud", text: "CB detected"},
 		{className: "stealthy", text: "CB not detected"},
@@ -23,7 +23,7 @@ var addTest = (function(){
 			status = 3;
 		}
 		var li = document.createElement("li");
-		li.className = stati[status].className;
+		li.className = statusDefinitions[status].className;
 		var nameNode = document.createElement("span");
 		nameNode.className = "name";
 		nameNode.textContent = name;
@@ -32,7 +32,7 @@ var addTest = (function(){
 		li.appendChild(document.createTextNode(": "));
 		var statusNode = document.createElement("span");
 		statusNode.className = "status";
-		statusNode.textContent = stati[status].text;
+		statusNode.textContent = statusDefinitions[status].text;
 		statusNode.title = logs.join("\n");
 		li.appendChild(statusNode);
 		ul.appendChild(li);
