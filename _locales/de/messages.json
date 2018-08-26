@@ -93,6 +93,10 @@
 		"message": "Audio API",
 		"description": ""
 	},
+	"section_history-api":{
+		"message": "History API",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expertenmodus",
@@ -175,6 +179,18 @@
 	},
 	"askForAudioReadoutPermission": {
 		"message": "Wollen Sie das Auslesen über die Audio-API erlauben?",
+		"description": ""
+	},
+	"askForHistoryPermission": {
+		"message": "Wollen Sie die History-API erlauben?",
+		"description": ""
+	},
+	"askForHistoryInputPermission": {
+		"message": "Wollen Sie das Schreiben in über die History-API erlauben?",
+		"description": ""
+	},
+	"askForHistoryReadoutPermission": {
+		"message": "Wollen Sie das Auslesen über die History-API erlauben?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -500,6 +516,10 @@
 		"message": "Audioauslese vorgetäuscht auf {url}",
 		"description": ""
 	},
+	"fakedHistoryReadout": {
+		"message": "History-Auslese vorgetäuscht auf {url}",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "Bei Ausgabe vorgetäuscht auf {url}",
 		"description": ""
@@ -801,6 +821,15 @@
 	},
 	"audioFixedIndices_description": {
 		"message": "Die Indizes, die immer vorgetäuscht werden sollen. Kommasepariert eingeben.",
+		"description": ""
+	},
+	
+	"historyLengthThreshold_title": {
+		"message": "History-Längenschwellwert",
+		"description": ""
+	},
+	"historyLengthThreshold_description": {
+		"message": "Maximale Länge der Browser-History, die der Web-Seite mitgeteilt wird.",
 		"description": ""
 	},
 	

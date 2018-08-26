@@ -93,6 +93,10 @@
 		"message": "Audio API",
 		"description": ""
 	},
+	"section_history-api":{
+		"message": "History API",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expert mode",
@@ -175,6 +179,18 @@
 	},
 	"askForAudioReadoutPermission": {
 		"message": "Do you want to allow audio readout?",
+		"description": ""
+	},
+	"askForHistoryPermission": {
+		"message": "Do you want to allow the history API?",
+		"description": ""
+	},
+	"askForHistoryInputPermission": {
+		"message": "Do you want to allow history-API input?",
+		"description": ""
+	},
+	"askForHistoryReadoutPermission": {
+		"message": "Do you want to allow history readout?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -500,6 +516,10 @@
 		"message": "Faked audio readout on {url}",
 		"description": ""
 	},
+	"fakedHistoryReadout": {
+		"message": "Faked history readout on {url}",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "Faked at input on {url}",
 		"description": ""
@@ -800,6 +820,15 @@
 	},
 	"audioFixedIndices_description": {
 		"message": "The indices that are always faked. Enter separated by comma.",
+		"description": ""
+	},
+	
+	"historyLengthThreshold_title": {
+		"message": "History length threshold",
+		"description": ""
+	},
+	"historyLengthThreshold_description": {
+		"message": "Maximal length of the history that is reported to the web site.",
 		"description": ""
 	},
 	

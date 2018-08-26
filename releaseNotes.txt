@@ -11,6 +11,7 @@ Version 0.5.3:
 		- added theme for browser action popup
 		- added badge
 		- added option to ignore APIs
+		- added protection for history length
 	
 	fixes:
 		- CSP did not work properly for worker-src

@@ -390,6 +390,13 @@
 				}
 			]
 		},
+		"History-API",
+		{
+			"name": "historyLengthThreshold",
+			"displayDependencies": {
+				"displayAdvancedSettings": [true]
+			}
+		},
 		"misc",
 		{
 			"name": "theme"

@@ -96,22 +96,28 @@ addTest("function length", function(log){
 addTest("function code", function(log){
 	"use strict";
 	var codeDetected = false;
-	if (
-		!CanvasRenderingContext2D.prototype.getImageData.toString().match(
-			/^\s*function getImageData\s*\(\)\s*\{\s*\[native code\]\s*\}\s*$/
-		)
-	){
-		log("unexpected function code:", CanvasRenderingContext2D.prototype.getImageData.toString());
-		codeDetected = true;
+	function checkFunctionCode(func, expectedName){
+		log("checking", expectedName);
+		if (!func.toString().match(
+			new RegExp("^\\s*function " + expectedName + "\\s*\\(\\)\\s*\\{\\s*\\[native code\\]\\s*\\}\\s*$")
+		)){
+			log("unexpected function code:", func.toString());
+			return true;
+		}
+		return false;
 	}
-	if (
-		!HTMLCanvasElement.prototype.toDataURL.toString().match(
-			/^\s*function toDataURL\s*\(\)\s*\{\s*\[native code\]\s*\}\s*$/
-		)
-	){
-		log("unexpected function code:", HTMLCanvasElement.prototype.toDataURL.toString());
-		codeDetected = true;
-	}
+	codeDetected = checkFunctionCode(
+		CanvasRenderingContext2D.prototype.getImageData,
+		"getImageData"
+	) || codeDetected;
+	codeDetected = checkFunctionCode(
+		HTMLCanvasElement.prototype.toDataURL,
+		"toDataURL"
+	) || codeDetected;
+	codeDetected = checkFunctionCode(
+		history.__lookupGetter__("length"),
+		"get length"
+	) || codeDetected;
 	return codeDetected;
 });
 addTest("toString modified", function(log){

@@ -37,6 +37,7 @@
 			"lib/hash.js",
 			"lib/modifiedAPIFunctions.js",
 			"lib/modifiedAudioAPI.js",
+			"lib/modifiedHistoryAPI.js",
 			"lib/modifiedAPI.js",
 			"lib/randomSupplies.js",
 			"lib/intercept.js",
