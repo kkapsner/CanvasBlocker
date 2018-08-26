@@ -97,6 +97,10 @@
 		"message": "History API",
 		"description": ""
 	},
+	"section_window-api":{
+		"message": "Window API",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expertenmodus",
@@ -191,6 +195,18 @@
 	},
 	"askForHistoryReadoutPermission": {
 		"message": "Wollen Sie das Auslesen über die History-API erlauben?",
+		"description": ""
+	},
+	"askForWindowPermission": {
+		"message": "Wollen Sie die Window-API erlauben?",
+		"description": ""
+	},
+	"askForWindowInputPermission": {
+		"message": "Wollen Sie das Schreiben in über die Window-API erlauben?",
+		"description": ""
+	},
+	"askForWindowReadoutPermission": {
+		"message": "Wollen Sie das Auslesen über die Window-API erlauben?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -520,6 +536,10 @@
 		"message": "History-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
+	"fakedWindowReadout": {
+		"message": "Window-Auslese vorgetäuscht auf {url}",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "Bei Ausgabe vorgetäuscht auf {url}",
 		"description": ""
@@ -830,6 +850,15 @@
 	},
 	"historyLengthThreshold_description": {
 		"message": "Maximale Länge der Browser-History, die der Web-Seite mitgeteilt wird.",
+		"description": ""
+	},
+	
+	"protectWindow_title": {
+		"message": "Window-API beschützen",
+		"description": ""
+	},
+	"protectWindow_description": {
+		"message": "Es werden window.opener und window.name beschützt. Dies kann manche Webseiten unbrauchbar machen.",
 		"description": ""
 	},
 	

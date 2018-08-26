@@ -3,7 +3,7 @@
 <head>
 	<title>Test</title>
 	<script>
-		console.log(new Date(), "starting first fingerprint");
+		console.log(new Date(), "starting first fingerprint", window.name);
 		function fingerPrint(){
 			"use strict";var canvas = document.createElement("canvas");
 			canvas.setAttribute("width", 220);
@@ -50,7 +50,7 @@
 		if (firstFingerprint){
 			document.body.textContent = "context API not blocked";
 			window.setTimeout(function(){
-				console.log(new Date(), "starting second fingerprint");
+				console.log(new Date(), "starting second fingerprint", window.name);
 				document.body.appendChild(document.createElement("br"));
 				var secondFingerprint = fingerPrint();
 				if (firstFingerprint === secondFingerprint){

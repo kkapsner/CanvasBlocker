@@ -38,6 +38,7 @@
 			"lib/modifiedAPIFunctions.js",
 			"lib/modifiedAudioAPI.js",
 			"lib/modifiedHistoryAPI.js",
+			"lib/modifiedWindowAPI.js",
 			"lib/modifiedAPI.js",
 			"lib/randomSupplies.js",
 			"lib/intercept.js",

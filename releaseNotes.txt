@@ -12,6 +12,7 @@ Version 0.5.3:
 		- added badge
 		- added option to ignore APIs
 		- added protection for history length
+		- added protection for window name and opener
 	
 	fixes:
 		- CSP did not work properly for worker-src

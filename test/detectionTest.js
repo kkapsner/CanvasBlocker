@@ -118,6 +118,14 @@ addTest("function code", function(log){
 		history.__lookupGetter__("length"),
 		"get length"
 	) || codeDetected;
+	codeDetected = checkFunctionCode(
+		window.__lookupGetter__("name"),
+		"get name"
+	) || codeDetected;
+	codeDetected = checkFunctionCode(
+		window.__lookupSetter__("name"),
+		"set name"
+	) || codeDetected;
 	return codeDetected;
 });
 addTest("toString modified", function(log){
@@ -393,6 +401,22 @@ addTest("readout - in - out test", function(log){
 			);
 			return true;
 		}
+	}
+	return false;
+});
+
+addTest("window name change", function(log){
+	"use strict";
+	
+	var oldName = window.name;
+	log("old name:", oldName);
+	var newName = oldName + " added";
+	log("new name:", newName);
+	window.name = newName;
+	
+	if (window.name !== newName){
+		log("window name not set:", window.name);
+		return true;
 	}
 	return false;
 });

@@ -19,6 +19,7 @@ Geschützte "Fingerprinting"-APIs:
 		<li>webGL</li>
 		<li>audio</li>
 		<li>history</li>
+		<li>window (standardmäßig deaktiviert)</li>
 	</ul>
 
 Falls Sie Fehler finden oder Verbesserungsvorschläge haben, teilen Sie mir das bitte auf https://github.com/kkapsner/CanvasBlocker/issues mit.

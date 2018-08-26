@@ -97,6 +97,10 @@
 		"message": "History API",
 		"description": ""
 	},
+	"section_window-api":{
+		"message": "Window API",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expert mode",
@@ -191,6 +195,18 @@
 	},
 	"askForHistoryReadoutPermission": {
 		"message": "Do you want to allow history readout?",
+		"description": ""
+	},
+	"askForWindowPermission": {
+		"message": "Do you want to allow the window API?",
+		"description": ""
+	},
+	"askForWindowInputPermission": {
+		"message": "Do you want to allow window-API input?",
+		"description": ""
+	},
+	"askForWindowReadoutPermission": {
+		"message": "Do you want to allow window readout?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -520,6 +536,10 @@
 		"message": "Faked history readout on {url}",
 		"description": ""
 	},
+	"fakedWindowReadout": {
+		"message": "Faked window readout on {url}",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "Faked at input on {url}",
 		"description": ""
@@ -829,6 +849,15 @@
 	},
 	"historyLengthThreshold_description": {
 		"message": "Maximal length of the history that is reported to the web site.",
+		"description": ""
+	},
+	
+	"protectWindow_title": {
+		"message": "Protect Window API",
+		"description": ""
+	},
+	"protectWindow_description": {
+		"message": "window.opener and window.name will be protected. This can render some web pages unusable.",
 		"description": ""
 	},
 	

@@ -397,6 +397,13 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
+		"Window-API",
+		{
+			"name": "protectWindow",
+			"displayDependencies": {
+				"displayAdvancedSettings": [true]
+			}
+		},
 		"misc",
 		{
 			"name": "theme"
