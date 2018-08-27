@@ -1,6 +1,7 @@
 Version 0.5.3:
 	changes:
 		- removed active support for Firefox < 60
+		- maximal 250 notifications per domain and type will be rendered
 	
 	new features:
 		- display version in options page

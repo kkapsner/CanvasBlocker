@@ -29,6 +29,10 @@
 		"message": "less",
 		"description": ""
 	},
+	"pleaseWait": {
+		"message": "Please wait...",
+		"description": ""
+	},
 	
 	"input": {
 		"message": "input",

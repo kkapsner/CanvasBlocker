@@ -13,6 +13,7 @@
 	
 	const addToContainer = function(){
 		const container = document.getElementById("prints");
+		container.querySelector("li").textContent = browser.i18n.getMessage("pleaseWait");
 		var first = true;
 
 		return function addToContainer(domainNotification){
@@ -27,6 +28,7 @@
 	const DomainNotification = function DomainNotification(domain, messageId){
 		this.domain = domain;
 		this.messageId = messageId;
+		this.extraNotifications = 0;
 		addToContainer(this);
 		this.update();
 	};
@@ -40,9 +42,22 @@
 	};
 
 	DomainNotification.prototype.addNotification = function addNotification(notification){
-		this.notifications().push(notification);
-		this.notificationsNode().appendChild(notification.node());
+		if (this.notifications().length > 250){
+			this.addMore();
+		}
+		else {
+			this.notifications().push(notification);
+			this.notificationsNode().appendChild(notification.node());
+		}
 		this.update();
+	};
+	
+	DomainNotification.prototype.addMore = function addMore(){
+		this.notificationsNode().appendChild(document.createTextNode("..."));
+		this.extraNotifications += 1;
+		this.addMore = function addMore(){
+			this.extraNotifications += 1;
+		};
 	};
 
 	// DOM node creation functions
@@ -100,16 +115,16 @@
 		}).filter(function(url, i, urls){
 			return urls.indexOf(url) === i;
 		}).join("\n");
-		node.querySelectorAll(".url").forEach(function(urlSpan){
-			urlSpan.title = urls;
+		node.querySelectorAll(".url").forEach((urlSpan) => {
+			urlSpan.title = urls + (this.extraNotifications? "\n...": "");
 		});
 		
 		node.title = notifications.map(function(notification){
 			return notification.timestamp + ": " + notification.functionName;
-		}).join("\n");
+		}).join("\n") + this.extraNotifications? "\n...": "";
 
-		node.querySelectorAll(".count").forEach(function(countSpan){
-			countSpan.textContent = notifications.length;
+		node.querySelectorAll(".count").forEach((countSpan) => {
+			countSpan.textContent = notifications.length + this.extraNotifications;
 		});
 	};
 

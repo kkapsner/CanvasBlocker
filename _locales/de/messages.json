@@ -29,6 +29,10 @@
 		"message": "weniger",
 		"description": ""
 	},
+	"pleaseWait": {
+		"message": "Bitte warten...",
+		"description": ""
+	},
 	
 	"input": {
 		"message": "Eingabe",
