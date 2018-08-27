@@ -178,7 +178,7 @@
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Wollen Sie das Schreiben in über die Audio-API erlauben?",
+		"message": "Wollen Sie das Schreiben über die Audio-API erlauben?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
@@ -190,7 +190,7 @@
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Wollen Sie das Schreiben in über die History-API erlauben?",
+		"message": "Wollen Sie das Schreiben über die History-API erlauben?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
@@ -202,7 +202,7 @@
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Wollen Sie das Schreiben in über die Window-API erlauben?",
+		"message": "Wollen Sie das Schreiben über die Window-API erlauben?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
