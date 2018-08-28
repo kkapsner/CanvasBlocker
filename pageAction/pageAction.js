@@ -18,6 +18,16 @@
 		browser.tabs.query({active: true, currentWindow: true}),
 		settings.loaded
 	]).then(function(values){
+		// load theme
+		var themeLink = document.createElement("link");
+		themeLink.href = `pageAction-${settings.theme}.css`;
+		themeLink.rel = "stylesheet";
+		themeLink.type = "text/css";
+		document.head.appendChild(themeLink);
+		settings.on("theme", function(){
+			themeLink.href = `pageAction-${settings.theme}.css`;
+		});
+		
 		const tabs = values[0];
 		
 		notice("create global action buttons");

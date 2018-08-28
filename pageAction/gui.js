@@ -52,7 +52,7 @@
 			}
 			button.addEventListener("click", action.callback.bind(undefined, data));
 			container.appendChild(button);
-			if (horizontal || i % 3 === 2){
+			if (horizontal){
 				container.appendChild(document.createElement("br"));
 			}
 		});

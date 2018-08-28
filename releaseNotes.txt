@@ -9,7 +9,7 @@ Version 0.5.3:
 		- added option "Don't show again on update." for options page
 		- added option to highlight page action icon
 		- added option to control browser action icon on notifications
-		- added theme for browser action popup
+		- added theme for browser and page action popup
 		- added badge
 		- added option to ignore APIs
 		- added protection for history length

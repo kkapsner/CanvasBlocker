@@ -8,7 +8,6 @@ body {
 	padding-right: 23px;
 	white-space: nowrap;
 	position: relative;
-	color: black;
 }
 
 #prints {
@@ -36,12 +35,10 @@ button.action img {
 .hasHiddenActions {
 	position: relative;
 	display: inline-block;
-	color: darkblue;
 }
 .hasHiddenActions:hover {
 	padding: 3px;
 	margin: -3px;
-	background-color: #f6f6f6;
 	z-index: 10;
 }
 .hasHiddenActions .actions {
@@ -50,9 +47,9 @@ button.action img {
 	top: 100%;
 	left: 0px;
 	border-top-width: 0;
-	background-color: #f6f6f6;
 	padding: 2px 1px 1px 1px;
 	line-height: 0;
+	white-space: nowrap;
 }
 .hasHiddenActions:hover .actions{
 	display: block;
@@ -97,7 +94,6 @@ button.action img {
 }
 .collapsible .collapser {
 	cursor: pointer;
-	color: blue;
 	text-decoration: underline;
 }
 .collapsible .collapser .more {
