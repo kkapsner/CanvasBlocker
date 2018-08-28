@@ -13,7 +13,7 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": "CanvasBlocker\n\nprotection successful for:",
+		"message": "CanvasBlocker \n\nprotection successful for:",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
