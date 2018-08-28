@@ -29,7 +29,7 @@
 	<iframe id="blobIframe"></iframe>
 	<h1>Data-URL object</h1>
 	<object
-		type="invalid"
+		type="text/html"
 		data="data:invalid;base64&#x2c;<?php
 			echo base64_encode(
 				str_replace(
@@ -42,7 +42,7 @@
 	></object>
 	<h1>Data-URL embed</h1>
 	<embed
-		type="invalid"
+		type="text/html"
 		src="data:invalid;base64&#x2c;<?php
 			echo base64_encode(
 				str_replace(
