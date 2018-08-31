@@ -865,6 +865,10 @@
 		"message": "Es werden window.opener und window.name beschützt. Dies kann manche Webseiten unbrauchbar machen.",
 		"description": ""
 	},
+	"protectWindow_askReCaptchaException": {
+		"message": "Wenn die Window-API beschützt wird, funktioniert reCAPTCHA nicht mehr. Wollen Sie dafür eine Ausnahme hinzufügen?",
+		"description": ""
+	},
 	
 	"theme_title": {
 		"message": "Theme",
