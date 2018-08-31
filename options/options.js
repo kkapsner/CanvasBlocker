@@ -260,19 +260,21 @@
 		const reCaptchaEntry = "^https://www\\.google\\.com/recaptcha/api2/(?:b?frame|anchor).*$";
 		const {url: urlContainer} = settings.getContainers();
 		settings.on("protectWindow", function({newValue}){
-			const urlValue = urlContainer.get();
-			const matching = urlValue.filter(function(entry){
-				return entry.url = reCaptchaEntry;
-			});
-			if (
-				newValue &&
-				(
-					matching.length === 0 ||
-					matching[0].protectWindow
-				 ) &&
-				window.confirm(browser.i18n.getMessage("protectWindow_askReCaptchaException"))
-			){
-				settings.set("protectWindow", false, reCaptchaEntry);
+			if (newValue){
+				const urlValue = urlContainer.get();
+				const matching = urlValue.filter(function(entry){
+					return entry.url === reCaptchaEntry;
+				});
+				if (
+					newValue &&
+					(
+						matching.length === 0 ||
+						matching[0].protectWindow
+					) &&
+					window.confirm(browser.i18n.getMessage("protectWindow_askReCaptchaException"))
+				){
+					settings.set("protectWindow", false, reCaptchaEntry);
+				}
 			}
 		});
 	});
