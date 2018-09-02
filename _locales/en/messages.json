@@ -953,8 +953,17 @@
 		"message": "",
 		"description": ""
 	},
-	"exportSettings_label": {
-		"message": "Show",
+	
+	"inspectSettings_label": {
+		"message": "Inspect",
+		"description": ""
+	},
+	"saveSettings_label": {
+		"message": "Save",
+		"description": ""
+	},
+	"loadSettings_label": {
+		"message": "Load",
 		"description": ""
 	},
 	

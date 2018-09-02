@@ -3,7 +3,7 @@ Version 0.5.4:
 		- 
 	
 	new features:
-		- 
+		- added save/load directly to/from file option
 	
 	fixes:
 		- 

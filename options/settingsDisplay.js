@@ -426,9 +426,7 @@
 		"settings",
 		{
 			"name": "exportSettings",
-			"displayDependencies": {
-				"displayAdvancedSettings": [true]
-			}
+			"actions": ["inspectSettings", "saveSettings", "loadSettings"]
 		},
 		{
 			"name": "resetSettings",

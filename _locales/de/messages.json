@@ -954,8 +954,17 @@
 		"message": "",
 		"description": ""
 	},
-	"exportSettings_label": {
+	
+	"inspectSettings_label": {
 		"message": "Anzeigen",
+		"description": ""
+	},
+	"saveSettings_label": {
+		"message": "Speichern",
+		"description": ""
+	},
+	"loadSettings_label": {
+		"message": "Laden",
 		"description": ""
 	},
 	

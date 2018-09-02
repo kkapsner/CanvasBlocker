@@ -23,9 +23,63 @@
 			logging.notice("send message to main script");
 			browser.runtime.sendMessage({"canvasBlocker-clear-domain-rnd": true});
 		},
-		exportSettings: function(){
-			logging.verbose("open settings export");
+		inspectSettings: function(){
+			logging.verbose("open settings inspection");
 			window.open("export.html", "_blank");
+		},
+		saveSettings: function(){
+			logging.verbose("save settings");
+			const data = {};
+			settings.forEach(function(def){
+				data[def.name] = def.get();
+			});
+			const blob = new Blob([JSON.stringify(data, null, "\t")], {type: "application/json"});
+			const link = document.createElement("a");
+			link.href = window.URL.createObjectURL(blob);
+			link.target = "_blank";
+			link.download = "CanvasBlocker-settings.json";
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+		},
+		loadSettings: function(){
+			logging.verbose("load settings");
+			new Promise(function(resolve, reject){
+				const input = document.createElement("input");
+				input.type = "file";
+				input.addEventListener("change", function(){
+					if (this.files.length){
+						var file = this.files[0];
+						var reader = new FileReader();
+						reader.onload = function(result){
+							resolve(this.result);
+						};
+						reader.onerror = function(err){
+							reject(err);
+						};
+						reader.readAsText(this.files[0]);
+					}
+				});
+				input.click();
+			}).then(function(text){
+				return JSON.parse(text);
+			}).then(function(json){
+				const keys = Object.keys(json);
+				keys.forEach(function(key){
+					const setting = settings.getDefinition(key);
+					if (!settings){
+						throw new Error("Unknown setting " + key + ".");
+					}
+					if (!setting.fixed && setting.invalid(json[key])){
+						throw new Error("Invalid value " + json[key] + " for " + key + ".");
+					}
+				});
+				keys.forEach(function(key){
+					settings[key] = json[key];
+				});
+			}).catch(function(err){
+				alert(err);
+			});
 		},
 		resetSettings: function(){
 			if (window.confirm(browser.i18n.getMessage("resetSettings_confirm"))){
@@ -170,6 +224,19 @@
 					setting = {
 						name: display.name,
 						inputs: display.inputs.map(settings.getDefinition)
+					};
+				}
+				else if (display.actions){
+					setting = {
+						name: display.name,
+						actions: display.actions.map(function(action){
+							return {
+								name: action,
+								action: callbacks[action]
+							};
+						}).filter(function(action){
+							return action.action;
+						})
 					};
 				}
 				else if (callbacks[display.name]){

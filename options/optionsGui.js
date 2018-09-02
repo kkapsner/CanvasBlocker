@@ -284,6 +284,13 @@
 		if (setting.action){
 			interaction = createButton(setting);
 		}
+		else if (setting.actions){
+			interaction = document.createElement("span");
+			setting.actions.forEach(function(action){
+				var button = createButton(action);
+				interaction.appendChild(button);
+			});
+		}
 		else if (setting.inputs){
 			interaction = document.createElement("span");
 			setting.inputs.forEach(function(inputSetting){
