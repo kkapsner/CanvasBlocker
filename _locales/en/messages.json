@@ -105,6 +105,10 @@
 		"message": "Window API",
 		"description": ""
 	},
+	"section_DOMRect-api":{
+		"message": "DOMRect API",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expert mode",
@@ -211,6 +215,18 @@
 	},
 	"askForWindowReadoutPermission": {
 		"message": "Do you want to allow window readout?",
+		"description": ""
+	},
+	"askForDOMRectPermission": {
+		"message": "Do you want to allow the DOMRect API?",
+		"description": ""
+	},
+	"askForDOMRectInputPermission": {
+		"message": "Do you want to allow DOMRect-API input?",
+		"description": ""
+	},
+	"askForDOMRectReadoutPermission": {
+		"message": "Do you want to allow DOMRect readout?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -544,6 +560,10 @@
 		"message": "Faked window readout on {url}",
 		"description": ""
 	},
+	"fakedDOMRectReadout": {
+		"message": "Faked DOMRect readout on {url}",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "Faked at input on {url}",
 		"description": ""
@@ -866,6 +886,15 @@
 	},
 	"protectWindow_askReCaptchaException": {
 		"message": "Protecting the window API breaks reCAPTCHA. Do you want to add an exception for it?",
+		"description": ""
+	},
+	
+	"protectDOMRect_title": {
+		"message": "Protect DOMRect API",
+		"description": ""
+	},
+	"protectDOMRect_description": {
+		"message": "This protects against the \"getClientRects()\" fingerprinting and several similar methods.",
 		"description": ""
 	},
 	
