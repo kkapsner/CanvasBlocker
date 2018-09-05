@@ -105,6 +105,10 @@
 		"message": "Window API",
 		"description": ""
 	},
+	"section_DOMRect-api":{
+		"message": "DOMRect API",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expertenmodus",
@@ -211,6 +215,18 @@
 	},
 	"askForWindowReadoutPermission": {
 		"message": "Wollen Sie das Auslesen über die Window-API erlauben?",
+		"description": ""
+	},
+	"askForDOMRectPermission": {
+		"message": "Wollen Sie die DOMRect-API erlauben?",
+		"description": ""
+	},
+	"askForDOMRectInputPermission": {
+		"message": "Wollen Sie das Schreiben über die DOMRect-API erlauben?",
+		"description": ""
+	},
+	"askForDOMRectReadoutPermission": {
+		"message": "Wollen Sie das Auslesen über die DOMRect-API erlauben?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -544,6 +560,10 @@
 		"message": "Window-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
+	"fakedDOMRectReadout": {
+		"message": "DOMRect-Auslese vorgetäuscht auf {url}",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "Bei Ausgabe vorgetäuscht auf {url}",
 		"description": ""
@@ -695,12 +715,12 @@
 		"message": "Dateispezifische Whitelist",
 		"description": ""
 	},
-	"whiteList_description": {
-		"message": "Domänen oder URLs, die die <canvas>-API verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
-		"description": ""
-	},
 	"whiteList_title": {
 		"message": "Whitelist",
+		"description": ""
+	},
+	"whiteList_description": {
+		"message": "Domänen oder URLs, die die <canvas>-API verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	"whitelist": {
@@ -716,12 +736,12 @@
 		"description": ""
 	},
 	
-	"sessionWhiteList_description": {
-		"message": "Domänen oder URLs, die die <canvas>-API in der aktuellen Sitzung verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
-		"description": ""
-	},
 	"sessionWhiteList_title": {
 		"message": "Sitzungs-Whitelist",
+		"description": ""
+	},
+	"sessionWhiteList_description": {
+		"message": "Domänen oder URLs, die die <canvas>-API in der aktuellen Sitzung verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	
@@ -867,6 +887,24 @@
 	},
 	"protectWindow_askReCaptchaException": {
 		"message": "Wenn die Window-API beschützt wird, funktioniert reCAPTCHA nicht mehr. Wollen Sie dafür eine Ausnahme hinzufügen?",
+		"description": ""
+	},
+	
+	"protectDOMRect_title": {
+		"message": "DOMRect-API beschützen",
+		"description": ""
+	},
+	"protectDOMRect_description": {
+		"message": "Beschützt vor dem \"getClientRects()\" Fingerprint und einige andere ähnliche Methoden.",
+		"description": ""
+	},
+	
+	"domRectIntegerFactor_title": {
+		"message": "DOMRect Ganzzahlfaktor",
+		"description": ""
+	},
+	"domRectIntegerFactor_description": {
+		"message": "Ein Bruchteil eines Pixels kann durch CSS kontrolliert wurden. Eigenschaften eines DOMRect, die multipliziert mit diesem Faktor eine ganze Zahl ergeben, dürfen nicht verändert werden um eine Detection zu verhindern.",
 		"description": ""
 	},
 	
