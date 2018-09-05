@@ -58,11 +58,21 @@
 		performTest();
 	}
 	iframe.addEventListener("load", function(){
-		createTest("getClientRects", function(element){
+		createTest("Element.getClientRects", function(element){
 			return element.getClientRects()[0];
 		});
-		createTest("getBoundingClientRect", function(element){
+		createTest("Element.getBoundingClientRect", function(element){
 			return element.getBoundingClientRect();
+		});
+		createTest("Range.getClientRects", function(element){
+			var range = document.createRange();
+			range.selectNode(element);
+			return range.getClientRects()[0];
+		});
+		createTest("Range.getBoundingClientRect", function(element){
+			var range = document.createRange();
+			range.selectNode(element);
+			return range.getBoundingClientRect();
 		});
 	});
 }());
