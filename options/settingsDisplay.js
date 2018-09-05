@@ -411,6 +411,13 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
+		{
+			"name": "domRectIntegerFactor",
+			"displayDependencies": {
+				"protectDOMRect": [true],
+				"displayAdvancedSettings": [true]
+			}
+		},
 		"misc",
 		{
 			"name": "theme"

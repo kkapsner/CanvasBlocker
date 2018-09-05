@@ -898,6 +898,15 @@
 		"description": ""
 	},
 	
+	"domRectIntegerFactor_title": {
+		"message": "DOMRect integer factor",
+		"description": ""
+	},
+	"domRectIntegerFactor_description": {
+		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"description": ""
+	},
+	
 	"theme_title": {
 		"message": "Theme",
 		"description": ""
