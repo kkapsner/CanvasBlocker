@@ -13,6 +13,14 @@ The different block modes are:
 <li>allow everything: Ignore all lists and allow the &lt;canvas&gt; API on all websites.</li>
 </ul>
 
+Protected "fingerprinting" APIs:
+ * canvas 2d
+ * webGL
+ * audio
+ * history
+ * window (disabled by default)
+ * DOMRect
+
 Special thanks to:
  * spodermenpls for finding all the typos
  * Thorin-Oakenpants for the icon idea
