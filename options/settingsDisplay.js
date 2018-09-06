@@ -404,6 +404,20 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
+		"DOMRect-API",
+		{
+			"name": "protectDOMRect",
+			"displayDependencies": {
+				"displayAdvancedSettings": [true]
+			}
+		},
+		{
+			"name": "domRectIntegerFactor",
+			"displayDependencies": {
+				"protectDOMRect": [true],
+				"displayAdvancedSettings": [true]
+			}
+		},
 		"misc",
 		{
 			"name": "theme"

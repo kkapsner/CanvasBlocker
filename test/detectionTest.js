@@ -177,6 +177,16 @@ addTest("property descriptor", function(log){
 				configurable: true
 			}
 		},
+		{
+			object: Element.prototype,
+			name: "getClientRects",
+			descriptor: {
+				value: function getClientRects(){},
+				writable: true,
+				enumerable: true,
+				configurable: true
+			}
+		},
 	];
 	
 	return properties.reduce(function(pass, property){
@@ -419,4 +429,91 @@ addTest("window name change", function(log){
 		return true;
 	}
 	return false;
+});
+
+function checkDOMRectData(rect, data, log){
+	"use strict";
+	
+	var detected = false;
+	["x", "y", "width", "height"].forEach(function(property){
+		if (data[property] !== rect[property]){
+			log("Wrong value for", property, ":", data[property], "!=", rect[property]);
+			detected = true;
+		}
+	});
+	return detected;
+}
+
+function getRectByData(data){
+	"use strict";
+	
+	var el = document.createElement("div");
+	el.style.cssText = "position: fixed;" +
+		"left: " + data.x + "px; " +
+		"top: " + data.y + "px; " +
+		"width: " + data.width + "px; " +
+		"height: " + data.height + "px;";
+	
+	document.body.appendChild(el);
+	var rect = el.getBoundingClientRect();
+	document.body.removeChild(el);
+	return rect;
+}
+
+addTest("self created DOMRect", function(log){
+	"use strict";
+	
+	var data = {
+		x: Math.PI,
+		y: Math.E,
+		width: Math.LOG10E,
+		height: Math.LOG2E
+	};
+	var rect = new DOMRect(data.x, data.y, data.width, data.height);
+	return checkDOMRectData(rect, data, log);
+});
+
+addTest("known DOMRect", function(log){
+	"use strict";
+	
+	var data = {
+		x: 1 + 1/4,
+		y: 2,
+		width: 3,
+		height: 4
+	};
+	
+	var rect = getRectByData(data);
+	
+	return checkDOMRectData(rect, data, log);
+});
+addTest("changed DOMRect", function(log){
+	"use strict";
+	
+	var data = {
+		x: Math.PI,
+		y: 2,
+		width: 3,
+		height: 4
+	};
+	
+	var rect = getRectByData(data);
+	rect.x = Math.PI;
+	
+	return checkDOMRectData(rect, data, log);
+});
+addTest("recreated DOMRect", function(log){
+	"use strict";
+	
+	var data = {
+		x: Math.PI,
+		y: Math.E,
+		width: Math.LOG10E,
+		height: Math.LOG2E
+	};
+	
+	var rect = getRectByData(data);
+	var rect2 = getRectByData(rect);
+	
+	return checkDOMRectData(rect2, rect, log);
 });

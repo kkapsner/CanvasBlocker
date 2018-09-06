@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOMRect test</title>
+	<style>
+		#iframe {
+			position: absolute;
+			top: -2000%;
+		}
+		.template {
+			display: none;
+		}
+		.test {
+			display: inline-block;
+			margin: 1em;
+		}
+		.test .data table {
+			border-collapse: collapse;
+		}
+		.test .data th {
+			padding: 0.4em;
+		}
+		.test .data td{
+			border: 1px solid #c7c7c7;
+			padding: 0.4em;
+		}
+	</style>
+</head>
+<body>
+<h1>DOMRect test</h1>
+<iframe id="iframe" src="domRectIFrame.html"></iframe>
+<div id="tests">
+	<div class="test">
+		<h2 class="title"></h2>
+		Hash: <span class="hash"></span><br>
+		Data: <span class="data"></span><br>
+		<button>refresh</button>
+	</div>
+</div>
+<script src="domRectTest.js"></script>
+</body>
+</html>

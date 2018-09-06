@@ -20,6 +20,7 @@ Protected "fingerprinting" APIs:
 		<li>audio</li>
 		<li>history</li>
 		<li>window (disabled by default)</li>
+		<li>DOMRect</li>
 	</ul>
 
 Please report issues and feature requests at https://github.com/kkapsner/CanvasBlocker/issues

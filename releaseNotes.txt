@@ -4,6 +4,7 @@ Version 0.5.4:
 	
 	new features:
 		- added save/load directly to/from file option
+		- added protection for DOMRect (getClientRects)
 	
 	fixes:
 		- window and audio API were always blocked when using any of the "block ..." modes
