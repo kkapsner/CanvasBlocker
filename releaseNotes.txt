@@ -7,7 +7,7 @@ Version 0.5.4:
 		- added protection for DOMRect (getClientRects)
 	
 	fixes:
-		- 
+		- window and audio API were always blocked when using any of the "block ..." modes
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
