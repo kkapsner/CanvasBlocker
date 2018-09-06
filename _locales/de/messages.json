@@ -895,7 +895,7 @@
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "Beschützt vor dem \"getClientRects()\" Fingerprint und einige andere ähnliche Methoden.",
+		"message": "Beschützt vor dem \"getClientRects()\" Fingerprint und einigen anderen ähnlichen Methoden.",
 		"description": ""
 	},
 	
@@ -904,7 +904,7 @@
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
-		"message": "Ein Bruchteil eines Pixels kann durch CSS kontrolliert wurden. Eigenschaften eines DOMRect, die multipliziert mit diesem Faktor eine ganze Zahl ergeben, dürfen nicht verändert werden um eine Detection zu verhindern.",
+		"message": "Ein Bruchteil eines Pixels kann durch CSS kontrolliert werden. Eigenschaften eines DOMRect, die multipliziert mit diesem Faktor eine ganze Zahl ergeben, dürfen nicht verändert werden um eine Detektion zu verhindern.",
 		"description": ""
 	},
 	
