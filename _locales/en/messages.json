@@ -186,11 +186,11 @@
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio-API input?",
+		"message": "Do you want to allow audio API input?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio readout?",
+		"message": "Do you want to allow audio API readout?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
@@ -198,11 +198,11 @@
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history-API input?",
+		"message": "Do you want to allow history API input?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history readout?",
+		"message": "Do you want to allow history API readout?",
 		"description": ""
 	},
 	"askForWindowPermission": {
@@ -210,11 +210,11 @@
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window-API input?",
+		"message": "Do you want to allow window API input?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window readout?",
+		"message": "Do you want to allow window API readout?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
@@ -222,11 +222,11 @@
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect-API input?",
+		"message": "Do you want to allow DOMRect API input?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect readout?",
+		"message": "Do you want to allow DOMRect API readout?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
