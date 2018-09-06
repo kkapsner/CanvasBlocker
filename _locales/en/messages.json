@@ -491,7 +491,7 @@
 		"description": ""
 	},
 	"apiWhiteList_description": {
-		"message": "Allows certain parts of the canvas API.",
+		"message": "Allows certain parts of the APIs. When ticking a checkbox this feature of the API will not be protected.",
 		"description": ""
 	},
 	

@@ -491,7 +491,7 @@
 		"description": ""
 	},
 	"apiWhiteList_description": {
-		"message": "Erlaubt ausgewählte Teile der Canvas-API.",
+		"message": "Erlaubt ausgewählte Teile der APIs. Wenn eine Boxen markiert wird, wird dieser Teil der API nicht geschützt.",
 		"description": ""
 	},
 	
