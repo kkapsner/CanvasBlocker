@@ -1,6 +1,6 @@
 Version 0.5.4:
 	changes:
-		- 
+		- converted "API whitelist" to "protected API features" (automatic settings migration)
 	
 	new features:
 		- added save/load directly to/from file option

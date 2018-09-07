@@ -184,7 +184,7 @@
 			]
 		},
 		{
-			"name": "apiWhiteList",
+			"name": "protectedAPIFeatures",
 			"displayDependencies": [
 				{
 					"displayAdvancedSettings": [true]

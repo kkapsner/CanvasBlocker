@@ -502,12 +502,12 @@
 		"description": ""
 	},
 	
-	"apiWhiteList_title": {
-		"message": "API Whitelist",
+	"protectedAPIFeatures_title": {
+		"message": "Geschützte API Funktionen",
 		"description": ""
 	},
-	"apiWhiteList_description": {
-		"message": "Erlaubt ausgewählte Teile der APIs. Wenn eine der Boxen markiert wird, wird dieser Teil der API nicht geschützt.",
+	"protectedAPIFeatures_description": {
+		"message": "Liste der geschützten Funktionen der APIs. Wenn eine der Boxen demarkiert wird, wird dieser Teil der API nicht geschützt.",
 		"description": ""
 	},
 	
