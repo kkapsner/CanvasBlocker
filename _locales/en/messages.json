@@ -351,7 +351,7 @@
 		"description": ""
 	},
 	"inputURL": {
-		"message": "Input domain or URL RegExp:",
+		"message": "Input domain or URL \"RegExp\":",
 		"description": ""
 	},
 	
@@ -599,7 +599,7 @@
 		"description": ""
 	},
 	"inputWhitelistDomain": {
-		"message": "Input URL RegExp to add to white list:",
+		"message": "Input URL \"RegExp\" to add to white list:",
 		"description": ""
 	},
 	"inputWhitelistURL": {
@@ -607,7 +607,7 @@
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Input URL RegExp to add to the session white list:",
+		"message": "Input URL \"RegExp\" to add to the session white list:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {

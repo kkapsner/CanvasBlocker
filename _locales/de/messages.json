@@ -351,7 +351,7 @@
 		"description": ""
 	},
 	"inputURL": {
-		"message": "Domain oder URL RegExp eingeben:",
+		"message": "Domain oder URL \"RegExp\" eingeben:",
 		"description": ""
 	},
 	
@@ -600,7 +600,7 @@
 		"description": ""
 	},
 	"inputWhitelistDomain": {
-		"message": "Geben Sie die URL RegExp ein, die erlaubt werden soll:",
+		"message": "Geben Sie die URL \"RegExp\" ein, die erlaubt werden soll:",
 		"description": ""
 	},
 	"inputWhitelistURL": {
@@ -608,7 +608,7 @@
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Geben Sie die URL RegExp ein, die für diese Sitzung erlaubt werden soll:",
+		"message": "Geben Sie die URL \"RegExp\" ein, die für diese Sitzung erlaubt werden soll:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
