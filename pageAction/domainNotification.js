@@ -25,12 +25,25 @@
 		};
 	}();
 
-	const DomainNotification = function DomainNotification(domain, messageId){
+	const DomainNotification = function DomainNotification(domain, messageId, count = 0){
+		if (domain instanceof URL){
+			this.urls().add(domain.href);
+			domain = domain.hostname;
+		}
 		this.domain = domain;
 		this.messageId = messageId;
+		this.count = count;
 		this.extraNotifications = 0;
 		addToContainer(this);
 		this.update();
+	};
+	
+	DomainNotification.prototype.urls = function urls(){
+		const urls = new Set();
+		this.urls = function(){
+			return urls;
+		};
+		return urls;
 	};
 	
 	DomainNotification.prototype.notifications = function notifications(){
@@ -47,6 +60,7 @@
 		}
 		else {
 			this.notifications().push(notification);
+			this.urls().add(notification.url.href);
 			this.notificationsNode().appendChild(notification.node());
 		}
 		this.update();
@@ -77,6 +91,7 @@
 	};
 	DomainNotification.prototype.update = function update(){
 		this.updateTextNode();
+		this.node().classList[this.notifications().length? "remove": "add"]("empty");
 		this.notifications().forEach(function(notification){
 			notification.update();
 		});
@@ -110,28 +125,29 @@
 	DomainNotification.prototype.updateTextNode = function updateTextNode(){
 		const node = this.textNode();
 		const notifications = this.notifications();
-		const urls = notifications.map(function(not){
-			return not.url;
-		}).filter(function(url, i, urls){
-			return urls.indexOf(url) === i;
-		}).join("\n");
+		const urls = Array.from(this.urls()).join("\n");
 		node.querySelectorAll(".url").forEach((urlSpan) => {
-			urlSpan.title = urls + (this.extraNotifications? "\n...": "");
+			urlSpan.title = urls;
 		});
 		
 		node.title = notifications.map(function(notification){
 			return notification.timestamp + ": " + notification.functionName;
-		}).join("\n") + this.extraNotifications? "\n...": "";
+		}).join("\n") + (this.extraNotifications? "\n...": "");
 
 		node.querySelectorAll(".count").forEach((countSpan) => {
-			countSpan.textContent = notifications.length + this.extraNotifications;
+			if (this.count){
+				countSpan.textContent = this.count;
+			}
+			else {
+				countSpan.textContent = notifications.length + this.extraNotifications;
+			}
 		});
 	};
 
 	DomainNotification.prototype.actionsNode = function actionsNode(){
 		const node = document.createElement("div");
 		node.className = "actions";
-		createActionButtons(node, actions, this.domain);
+		createActionButtons(node, actions, {domain: this.domain, urls: this.urls()});
 		this.actionsNode = function(){
 			return node;
 		};
@@ -148,11 +164,17 @@
 	};
 
 	const domains = new Map();
-	const domainNotification = function(domain, messageId){
+	const domainNotification = function(url, messageId, count = 0){
+		const domain = url.hostname;
 		var domainNotification = domains.get(domain + messageId);
 		if (!domainNotification){
-			domainNotification = new DomainNotification(domain, messageId);
+			domainNotification = new DomainNotification(url, messageId, count);
 			domains.set(domain + messageId, domainNotification);
+		}
+		else {
+			domainNotification.count += count;
+			domainNotification.urls().add(url.href);
+			domainNotification.update();
 		}
 		return domainNotification;
 	};

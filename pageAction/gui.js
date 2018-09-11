@@ -57,13 +57,30 @@
 			}
 		});
 	};
-
 	
+	scope.modalChoice = function modalChoice(messageText, choices){
+		message("open modal choice");
+		return new Promise(function(resolve, reject){
+			document.body.innerHTML = "";
+			document.body.className = "modal";
+			document.body.appendChild(document.createTextNode(messageText));
+			choices.forEach(function(choice){
+				const button = document.createElement("button");
+				button.addEventListener("click", function(){
+					resolve(choice.value || choice);
+					message("modal choice closed with value", choice.value || choice);
+				});
+				button.appendChild(document.createTextNode(choice.text || choice));
+				document.body.appendChild(button);
+			});
+		});
+	};
 	
 	scope.modalPrompt = function modalPrompt(messageText, defaultValue){
 		message("open modal prompt");
 		return new Promise(function(resolve, reject){
 			document.body.innerHTML = "";
+			document.body.className = "modal";
 			document.body.appendChild(document.createTextNode(messageText));
 			var input = document.createElement("input");
 			input.value = defaultValue;

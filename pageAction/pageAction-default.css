@@ -14,3 +14,11 @@ body {
 .hasHiddenActions:hover, .hasHiddenActions .actions {
 	background-color: rgb(236, 237, 236);
 }
+
+.modal button {
+	border-color: rgb(236, 237, 236);
+}
+
+.modal button:active, .modal button:hover, .modal button:focus {
+	background-color: rgb(236, 237, 236);
+}

@@ -1,10 +1,12 @@
 Version 0.5.4:
 	changes:
 		- converted "API whitelist" to "protected API features" (automatic settings migration)
+		- notification details are not stored by default
 	
 	new features:
 		- added save/load directly to/from file option
 		- added protection for DOMRect (getClientRects)
+		- added setting to control if notification details should be stored
 	
 	fixes:
 		- window and audio API were always blocked when using any of the "block ..." modes

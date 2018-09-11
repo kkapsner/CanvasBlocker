@@ -210,10 +210,20 @@
 			"name": "highlightBrowserAction"
 		},
 		{
+			"name": "storeNotificationData",
+			"displayDependencies": [
+				{
+					"showNotifications": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
 			"name": "storeImageForInspection",
 			"displayDependencies": [
 				{
 					"showNotifications": [true],
+					"storeNotificationData": [true],
 					"displayAdvancedSettings": [true]
 				}
 			]

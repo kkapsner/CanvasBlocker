@@ -11,7 +11,7 @@
 
 	const domainNotification = require("./domainNotification");
 	const Notification = require("./Notification");
-	const {createActionButtons, modalPrompt} = require("./gui");
+	const {createActionButtons, modalPrompt, modalChoice} = require("./gui");
 	const lists = require("./lists");
 
 	Promise.all([
@@ -69,19 +69,44 @@
 			throw new Error("tooManyTabsFound");
 		}
 		
-
+		function domainOrUrlPicker(domain, urls, selectText, urlInputText){
+			const choices = Array.from(urls).map(function(url){
+				return {
+					text: url,
+					value: "^" + url.replace(/([\\+*?[^\]$(){}=!|.])/g, "\\$1") + "$"
+				};
+			});
+			choices.unshift(domain);
+			return modalChoice(
+				selectText,
+				choices
+			).then(function(choice){
+				if (choice.startsWith("^")){
+					return modalPrompt(
+						urlInputText,
+						choice
+					);
+				}
+				else {
+					return choice;
+				}
+			});
+		}
+		
 		verbose("registering domain actions");
 		[
 			{
-				name: "ignorelistDomain",
+				name: "ignorelist",
 				isIcon: true,
-				callback: function(domain){
-					modalPrompt(
-						browser.i18n.getMessage("inputIgnoreDomain"),
-						domain
-					).then(function(domain){
-						if (domain){
-							settings.set("showNotifications", false, domain).then(function(){
+				callback: function({domain, urls}){
+					domainOrUrlPicker(
+						domain,
+						urls,
+						browser.i18n.getMessage("selectIgnore"),
+						browser.i18n.getMessage("inputIgnoreURL")
+					).then(function(choice){
+						if (choice){
+							settings.set("showNotifications", false, choice).then(function(){
 								window.close();
 							});
 						}
@@ -92,15 +117,17 @@
 				}
 			},
 			{
-				name: "whitelistDomain",
+				name: "whitelist",
 				isIcon: true,
-				callback: function(domain){
-					modalPrompt(
-						browser.i18n.getMessage("inputWhitelistURL"),
-						domain
-					).then(function(domain){
-						if (domain){
-							settings.set("blockMode", "allow", domain).then(function(){
+				callback: function({domain, urls}){
+					domainOrUrlPicker(
+						domain,
+						urls,
+						browser.i18n.getMessage("selectWhitelist"),
+						browser.i18n.getMessage("inputWhitelistURL")
+					).then(function(choice){
+						if (choice){
+							settings.set("blockMode", "allow", choice).then(function(){
 								window.close();
 							});
 						}
@@ -111,15 +138,17 @@
 				}
 			},
 			{
-				name: "whitelistDomainTemporarily",
+				name: "whitelistTemporarily",
 				isIcon: true,
-				callback: function(domain){
-					modalPrompt(
-						browser.i18n.getMessage("inputSessionWhitelistURL"),
-						domain
-					).then(function(domain){
-						if (domain){
-							lists.appendTo("sessionWhite", domain).then(function(){
+				callback: function({domain, urls}){
+					domainOrUrlPicker(
+						domain,
+						urls,
+						browser.i18n.getMessage("selectSessionWhitelist"),
+						browser.i18n.getMessage("inputSessionWhitelistURL")
+					).then(function(choice){
+						if (choice){
+							lists.appendTo("sessionWhite", choice).then(function(){
 								window.close();
 							});
 						}
@@ -148,44 +177,6 @@
 				callback: function({errorStack}){
 					alert(parseErrorStack(errorStack));
 				}
-			},
-			{
-				name: "whitelistURL",
-				isIcon: true,
-				callback: function({url}){
-					modalPrompt(
-						browser.i18n.getMessage("inputWhitelistDomain"),
-						"^" + url.href.replace(/([\\+*?[^\]$(){}=!|.])/g, "\\$1") + "$"
-					).then(function(url){
-						if (url){
-							settings.set("blockMode", "allow", url).then(function(){
-								window.close();
-							});
-						}
-						else {
-							window.close();
-						}
-					});
-				}
-			},
-			{
-				name: "whitelistURLTemporarily",
-				isIcon: true,
-				callback: function({url}){
-					modalPrompt(
-						browser.i18n.getMessage("inputSessionWhitelistDomain"),
-						"^" + url.href.replace(/([\\+*?[^\]$(){}=!|.])/g, "\\$1") + "$"
-					).then(function(url){
-						if (url){
-							lists.appendTo("sessionWhite", url).then(function(){
-								window.close();
-							});
-						}
-						else {
-							window.close();
-						}
-					});
-				}
 			}
 		].forEach(function(action){
 			Notification.addAction(action);
@@ -193,7 +184,20 @@
 		
 		var tab = tabs[0];
 		browser.runtime.onMessage.addListener(function(data){
-			if (Array.isArray(data["canvasBlocker-notifications"])){
+			if (data["canvasBlocker-notificationCounter"]){
+				const url = new URL(data.url);
+				Object.keys(data["canvasBlocker-notificationCounter"]).forEach(function(key){
+					const notification = domainNotification(
+						url,
+						key,
+						data["canvasBlocker-notificationCounter"][key]
+					);
+				});
+			}
+			if (
+				Array.isArray(data["canvasBlocker-notifications"]) &&
+				data["canvasBlocker-notifications"].length
+			){
 				message("got notifications");
 				const notifications = data["canvasBlocker-notifications"];
 				let i = 0;
@@ -205,13 +209,14 @@
 					else {
 						for (var delta = 0; delta < 20 && i + delta < length; delta += 1){
 							let notification = notifications[i + delta];
+							verbose(notification);
 							if (settings.ignoredAPIs[notification.api]){
 								continue;
 							}
 							verbose(notification);
 							notification.url = new URL(notification.url);
 							domainNotification(
-								notification.url.hostname,
+								notification.url,
 								notification.messageId
 							).addNotification(new Notification(notification));
 						}

@@ -594,24 +594,52 @@
 		"message": "ignore URL",
 		"description": ""
 	},
+	"selectIgnore": {
+		"message": "Select domain or URL to add to ignore list:",
+		"description": ""
+	},
+	"inputIgnore": {
+		"message": "Input domain or URL \"RegExp\" to add to ignore list:",
+		"description": ""
+	},
 	"inputIgnoreDomain": {
 		"message": "Input domain to add to ignore list:",
 		"description": ""
 	},
-	"inputWhitelistDomain": {
-		"message": "Input URL \"RegExp\" to add to white list:",
+	"inputIgnoreURL": {
+		"message": "Input URL \"RegExp\" to add to ignore list:",
 		"description": ""
 	},
-	"inputWhitelistURL": {
+	"selectWhitelist": {
+		"message": "Select domain or URL to add to white list:",
+		"description": ""
+	},
+	"inputWhitelist": {
+		"message": "Input domain or URL \"RegExp\" to add to white list:",
+		"description": ""
+	},
+	"inputWhitelistDomain": {
 		"message": "Input domain to add to white list:",
 		"description": ""
 	},
+	"inputWhitelistURL": {
+		"message": "Input URL \"RegExp\" to add to white list:",
+		"description": ""
+	},
+	"selectSessionWhitelist": {
+		"message": "Select domain or URL to add to the session white list:",
+		"description": ""
+	},
+	"inputSessionWhitelist": {
+		"message": "Input domain or URL \"RegExp\" to add to the session white list:",
+		"description": ""
+	},
 	"inputSessionWhitelistDomain": {
-		"message": "Input URL \"RegExp\" to add to the session white list:",
+		"message": "Input domain to add to the session white list:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
-		"message": "Input domain to add to the session white list:",
+		"message": "Input URL \"RegExp\" to add to the session white list:",
 		"description": ""
 	},
 	"settings": {
@@ -750,6 +778,15 @@
 	},
 	"whitelistURLTemporarily": {
 		"message": "whitelist URL temporarily",
+		"description": ""
+	},
+	
+	"storeNotificationData_title": {
+		"message": "Store detail data of the notifications",
+		"description": ""
+	},
+	"storeNotificationData_description": {
+		"message": "",
 		"description": ""
 	},
 	
