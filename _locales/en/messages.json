@@ -782,6 +782,14 @@
 		"message": "whitelist URL",
 		"description": ""
 	},
+	"ignorelist": {
+		"message": "ignore",
+		"description": ""
+	},
+	"whitelistTemporarily": {
+		"message": "whitelist temporarily",
+		"description": ""
+	},
 	
 	"sessionWhiteList_title": {
 		"message": "Session white list",

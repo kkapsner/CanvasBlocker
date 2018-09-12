@@ -783,6 +783,14 @@
 		"message": "erlaube URL",
 		"description": ""
 	},
+	"ignorelist": {
+		"message": "ignorieren",
+		"description": ""
+	},
+	"whitelistTemporarily": {
+		"message": "temporär erlauben",
+		"description": ""
+	},
 	
 	"sessionWhiteList_title": {
 		"message": "Sitzungs-Whitelist",
