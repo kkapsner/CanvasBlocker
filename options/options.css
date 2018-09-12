@@ -60,10 +60,10 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 }
 
 .settings .settingRow td:first-child .content, td.hideColumn label {
-	margin-left: 0.6em;
+	margin-left: 10px;
 }
 .settings .settingRow td:last-child .content {
-	margin-right: 0.6em;
+	margin-right: 10px;
 }
 
 .settings .section + .settingRow .content, .settings .settingRow.firstVisible .content {
@@ -108,6 +108,7 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	color: graytext;
 	margin-inline-start: 2em;
 	white-space: pre-wrap;
+	padding-right: 5px;
 }
 input[type=""], input[type="text"], input[type="number"], select {
 	width: 100%;
@@ -173,7 +174,7 @@ input[type=""], input[type="text"], input[type="number"], select {
 }
 
 td.hideColumn {
-	width: 35px;
+	width: 45px;
 }
 
 .content.hideContent {
