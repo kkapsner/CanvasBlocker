@@ -198,14 +198,17 @@
 		
 		if (setting.urlSpecific && url === ""){
 			let container = document.createElement("div");
-			container.className = "urlValues collapsed";
+			container.className = "urlValues " + (setting.getExpand()? "expanded": "collapsed");
 			container.appendChild(input);
 			var collapser = document.createElement("span");
 			collapser.classList.add("collapser");
 			container.appendChild(collapser);
 			collapser.addEventListener("click", function(){
-				container.classList.toggle("collapsed");
-				container.classList.toggle("expanded");
+				setting.setExpand(!setting.getExpand());
+			});
+			setting.onExpandChange(function(value){
+				container.classList[value? "remove": "add"]("collapsed");
+				container.classList[value? "add": "remove"]("expanded");
 			});
 			let urlTable = document.createElement("table");
 			let caption = document.createElement("caption");

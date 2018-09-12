@@ -212,7 +212,7 @@
 	};
 	addSection();
 	
-	const {hide: hideContainer} = settings.getContainers();
+	const {hide: hideContainer, expand: expandContainer} = settings.getContainers();
 	settingsDisplay.forEach(function(display){
 		if (typeof display === "string"){
 			addSection(display);
@@ -248,6 +248,7 @@
 			}
 			if (setting){
 				setting.display = display;
+				
 				let hideChangeListeners = [];
 				setting.setHide = function setHide(value){
 					if (hideContainer){
@@ -274,6 +275,31 @@
 							computeDependencies();
 						}
 						hideChangeListeners.forEach(function(listener){
+							listener(value);
+						});
+					});
+				}
+				
+				let expandChangeListeners = [];
+				setting.setExpand = function setExpand(value){
+					if (expandContainer){
+						expandContainer.setExpandByName(display.name, value);
+					}
+				};
+				setting.onExpandChange = function(listener){
+					expandChangeListeners.push(listener);
+				};
+				setting.getExpand = function getExpand(){
+					if (expandContainer){
+						return expandContainer.getExpandByName(display.name);
+					}
+					else {
+						return false;
+					}
+				};
+				if (expandContainer){
+					expandContainer.onExpandChange(display.name, function(value){
+						expandChangeListeners.forEach(function(listener){
 							listener(value);
 						});
 					});
