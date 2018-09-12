@@ -296,6 +296,10 @@
 		"message": "",
 		"description": ""
 	},
+	"blockMode_urlSpecific": {
+		"message": "To set individual block modes for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired block mode.",
+		"description": ""
+	},
 	"blockMode_options.allowEverything": {
 		"message": "allow everything",
 		"description": ""
@@ -670,12 +674,20 @@
 		"message": "Show a notification when the block mode is set to \"fake readout API\".",
 		"description": ""
 	},
+	"showNotifications_urlSpecific": {
+		"message": "To deactivate notifications for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
 	"showNotifications_title": {
 		"message": "Show notifications",
 		"description": ""
 	},
 	"highlightPageAction_description": {
 		"message": "Highlight the page action icon for better visibility.",
+		"description": ""
+	},
+	"highlightPageAction_urlSpecific": {
+		"message": "",
 		"description": ""
 	},
 	"highlightPageAction_title": {
@@ -703,6 +715,10 @@
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
+		"message": "",
+		"description": ""
+	},
+	"highlightBrowserAction_urlSpecific": {
 		"message": "",
 		"description": ""
 	},
@@ -815,6 +831,10 @@
 		"message": "If the audio API should be protected as well",
 		"description": ""
 	},
+	"protectAudio_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
 	"audioFakeRate_title": {
 		"message": "Buffer fake rate",
 		"description": ""
@@ -925,6 +945,10 @@
 		"message": "window.opener and window.name will be protected. This can render some web pages unusable.",
 		"description": ""
 	},
+	"protectWindow_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
 	"protectWindow_askReCaptchaException": {
 		"message": "Protecting the window API breaks reCAPTCHA. Do you want to add an exception for it?",
 		"description": ""
@@ -936,6 +960,10 @@
 	},
 	"protectDOMRect_description": {
 		"message": "This protects against the \"getClientRects()\" fingerprinting and several similar methods.",
+		"description": ""
+	},
+	"protectDOMRect_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
 		"description": ""
 	},
 	

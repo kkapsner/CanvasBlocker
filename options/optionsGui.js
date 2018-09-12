@@ -25,6 +25,12 @@
 		c.appendChild(title);
 
 		var descriptionText = browser.i18n.getMessage(setting.name + "_description");
+		if (setting.urlSpecific){
+			const urlSpecificDescription = browser.i18n.getMessage(setting.name + "_urlSpecific");
+			if (urlSpecificDescription){
+				descriptionText += (descriptionText? "\n\n": "") + urlSpecificDescription;
+			}
+		}
 		if (descriptionText){
 			var info = document.createElement("div");
 			info.className = "info";

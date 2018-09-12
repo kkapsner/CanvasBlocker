@@ -296,6 +296,10 @@
 		"message": "",
 		"description": ""
 	},
+	"blockMode_urlSpecific": {
+		"message": "Um individuelle Blockiermodi für bestimmte Webseiten festzulegen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und wählen Sie den gewünschten Blockiermodus.",
+		"description": ""
+	},
 	"blockMode_options.allowEverything": {
 		"message": "alles erlauben",
 		"description": ""
@@ -671,12 +675,20 @@
 		"message": "Benachrichtigungen anzeigen, wenn der Blockiermodus auf \"Auslese-API vortäuschen\" gesetzt ist.",
 		"description": ""
 	},
+	"showNotifications_urlSpecific": {
+		"message": "Um Benachrichtigungen für bestimmte Webseiten zu deaktivieren, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen sie das zugehörige Häkchen.",
+		"description": ""
+	},
 	"showNotifications_title": {
 		"message": "Benachrichtigungen anzeigen",
 		"description": ""
 	},
 	"highlightPageAction_description": {
 		"message": "Page-Action Icon für eine erhöhte Sichtbarkeit hervorheben.",
+		"description": ""
+	},
+	"highlightPageAction_urlSpecific": {
+		"message": "",
 		"description": ""
 	},
 	"highlightPageAction_title": {
@@ -704,6 +716,10 @@
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
+		"message": "",
+		"description": ""
+	},
+	"highlightBrowserAction_urlSpecific": {
 		"message": "",
 		"description": ""
 	},
@@ -816,6 +832,10 @@
 		"message": "Ob die Audio-API auch beschützt werden soll.",
 		"description": ""
 	},
+	"protectAudio_urlSpecific": {
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
+		"description": ""
+	},
 	"audioFakeRate_title": {
 		"message": "Buffer Vortäuschrate",
 		"description": ""
@@ -926,6 +946,10 @@
 		"message": "Es werden window.opener und window.name beschützt. Dies kann manche Webseiten unbrauchbar machen.",
 		"description": ""
 	},
+	"protectWindow_urlSpecific": {
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
+		"description": ""
+	},
 	"protectWindow_askReCaptchaException": {
 		"message": "Wenn die Window-API beschützt wird, funktioniert reCAPTCHA nicht mehr. Wollen Sie dafür eine Ausnahme hinzufügen?",
 		"description": ""
@@ -937,6 +961,10 @@
 	},
 	"protectDOMRect_description": {
 		"message": "Beschützt vor dem \"getClientRects()\" Fingerprint und einigen anderen ähnlichen Methoden.",
+		"description": ""
+	},
+	"protectDOMRect_urlSpecific": {
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
 	
