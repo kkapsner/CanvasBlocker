@@ -37,34 +37,6 @@
 		},
 		"faking",
 		{
-			"name": "minFakeSize",
-			"displayDependencies": [
-				{
-					"blockMode": ["fakeReadout", "fakeInput"],
-					"displayAdvancedSettings": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"],
-					"displayAdvancedSettings": [true]
-				}
-			]
-		},
-		{
-			"name": "maxFakeSize",
-			"displayDependencies": [
-				{
-					"blockMode": ["fakeReadout", "fakeInput"],
-					"displayAdvancedSettings": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"],
-					"displayAdvancedSettings": [true]
-				}
-			]
-		},
-		{
 			"name": "rng",
 			"displayDependencies": [
 				{
@@ -127,70 +99,6 @@
 				}
 			]
 		},
-		{
-			"name": "ignoreFrequentColors",
-			"displayDependencies": [
-				{
-					"blockMode": ["fakeReadout"],
-					"displayAdvancedSettings": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"],
-					"displayAdvancedSettings": [true]
-				}
-			]
-		},
-		{
-			"name": "minColors",
-			"displayDependencies": [
-				{
-					"blockMode": ["fakeReadout"],
-					"displayAdvancedSettings": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"],
-					"displayAdvancedSettings": [true]
-				}
-			]
-		},
-		{
-			"name": "fakeAlphaChannel",
-			"displayDependencies": [
-				{
-					"blockMode": ["fakeReadout"],
-					"displayAdvancedSettings": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"],
-					"displayAdvancedSettings": [true]
-				}
-			]
-		},
-		{
-			"name": "useCanvasCache",
-			"displayDependencies": [
-				{
-					"blockMode": ["fakeReadout"],
-					"displayAdvancedSettings": [true]
-				},
-				{
-					"blockMode": ["askReadout", "ask"],
-					"askDenyMode": ["fake"],
-					"displayAdvancedSettings": [true]
-				}
-			]
-		},
-		{
-			"name": "protectedAPIFeatures",
-			"displayDependencies": [
-				{
-					"displayAdvancedSettings": [true]
-				}
-			]
-		},
 		"notifications",
 		{
 			"name": "showNotifications"
@@ -214,16 +122,6 @@
 			"displayDependencies": [
 				{
 					"showNotifications": [true],
-					"displayAdvancedSettings": [true]
-				}
-			]
-		},
-		{
-			"name": "storeImageForInspection",
-			"displayDependencies": [
-				{
-					"showNotifications": [true],
-					"storeNotificationData": [true],
 					"displayAdvancedSettings": [true]
 				}
 			]
@@ -314,9 +212,123 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
+		"Canvas-API",
+		{
+			"name": "protectedAPIFeatures",
+			"displayedSection": "Canvas-API",
+			"displayDependencies": [
+				{
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "minFakeSize",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "maxFakeSize",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout", "fakeInput"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "ignoreFrequentColors",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "minColors",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "fakeAlphaChannel",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "useCanvasCache",
+			"displayDependencies": [
+				{
+					"blockMode": ["fakeReadout"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["askReadout", "ask"],
+					"askDenyMode": ["fake"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "storeImageForInspection",
+			"displayDependencies": [
+				{
+					"showNotifications": [true],
+					"storeNotificationData": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
 		"Audio-API",
 		{
 			"name": "protectAudio"
+		},
+		{
+			"name": "protectedAPIFeatures",
+			"displayedSection": "Audio-API",
+			"displayDependencies": [
+				{
+					"protectAudio": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
 		},
 		{
 			"name": "audioFakeRate",
@@ -402,6 +414,15 @@
 		},
 		"History-API",
 		{
+			"name": "protectedAPIFeatures",
+			"displayedSection": "History-API",
+			"displayDependencies": [
+				{
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
 			"name": "historyLengthThreshold",
 			"displayDependencies": {
 				"displayAdvancedSettings": [true]
@@ -409,17 +430,31 @@
 		},
 		"Window-API",
 		{
-			"name": "protectWindow",
-			"displayDependencies": {
-				"displayAdvancedSettings": [true]
-			}
+			"name": "protectWindow"
+		},
+		{
+			"name": "protectedAPIFeatures",
+			"displayedSection": "Window-API",
+			"displayDependencies": [
+				{
+					"protectWindow": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
 		},
 		"DOMRect-API",
 		{
-			"name": "protectDOMRect",
-			"displayDependencies": {
-				"displayAdvancedSettings": [true]
-			}
+			"name": "protectDOMRect"
+		},
+		{
+			"name": "protectedAPIFeatures",
+			"displayedSection": "DOMRect-API",
+			"displayDependencies": [
+				{
+					"protectDOMRect": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
 		},
 		{
 			"name": "domRectIntegerFactor",

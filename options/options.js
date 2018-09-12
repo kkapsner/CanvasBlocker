@@ -247,6 +247,7 @@
 				}
 			}
 			if (setting){
+				setting.display = display;
 				let hideChangeListeners = [];
 				setting.setHide = function setHide(value){
 					if (hideContainer){

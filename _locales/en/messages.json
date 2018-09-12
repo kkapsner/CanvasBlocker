@@ -93,6 +93,10 @@
 		"message": "Settings",
 		"description": ""
 	},
+	"section_canvas-api":{
+		"message": "Canvas API",
+		"description": ""
+	},
 	"section_audio-api":{
 		"message": "Audio API",
 		"description": ""

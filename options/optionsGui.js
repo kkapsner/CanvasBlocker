@@ -129,7 +129,19 @@
 		}
 		else if (setting.keys){
 			input = document.createElement("table");
+			let inSection = false;
 			setting.keys.forEach(function(key){
+				if (setting.display.displayedSection){
+					if (typeof key === "object"){
+						if (key.level === 1){
+							inSection = key.name === setting.display.displayedSection;
+							return;
+						}
+					}
+					if (!inSection){
+						return;
+					}
+				}
 				let row = document.createElement("tr");
 				if (typeof key === "object"){
 					let cell = document.createElement("td");
