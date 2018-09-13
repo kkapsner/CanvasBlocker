@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Ändert die JS-API zum Ändern von <canvas> um Canvas-Fingerprinting zu verhindern.",
+		"message": "Verändert einige JS-APIs um Fingerprinting zu verhindern.",
 		"description": ""
 	},
 	
@@ -49,7 +49,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "Über diese Seite können Sie die Einstellungen des Add-ons CanvasBlocker verändern.",
+		"message": "Über diese Seite können Sie die Einstellungen des Add-ons anpassen.",
 		"description": ""
 	},
 	"installNotice": {
@@ -238,7 +238,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "Wenn der Blockiermodus des Canvas Blockers auf \"um Erlaubnis fragen\" oder \"bei Auslese-API um Erlaubnis fragen\" gesetzt ist, erscheint jedes Mal ein Abfragedialog wenn eine Seite versucht, die (Auslese-)API aufzurufen. Diese Einstellung versucht diese Abfrage nur einmal pro Seite anzuzeigen, unabhängig davon wie oft die API aufgerufen wird. Es können trotzdem mehrere Dialoge pro Seite erscheinen.\nNein: es wird jedes mal gefragt\nIndividuell: jeder API-Typ (Context, Eingabe, Auslese) wird separat abgefragt\nKombiniert: alle API-Typen werden zusammen abgefragt",
+		"message": "Wenn der Blockiermodus des CanvasBlockers auf \"um Erlaubnis fragen\" oder \"bei Auslese-API um Erlaubnis fragen\" gesetzt ist, erscheint jedes Mal ein Abfragedialog wenn eine Seite versucht, die (Auslese-)API aufzurufen. Diese Einstellung versucht diese Abfrage nur einmal pro Seite anzuzeigen, unabhängig davon wie oft die API aufgerufen wird. Es können trotzdem mehrere Dialoge pro Seite erscheinen.\n\nNein: es wird jedes mal gefragt\n\nIndividuell: jeder API-Typ (Context, Eingabe, Auslese) wird separat abgefragt\n\nKombiniert: alle API-Typen werden zusammen abgefragt",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -284,7 +284,7 @@
 	},
 	
 	"blackList_description": {
-		"message": "Domänen oder URLs, die die <canvas>-API niemals verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"message": "Domains oder URLs, die die APIs unter keinerlei Umständen nutzen dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	"blackList_title": {
@@ -382,7 +382,7 @@
 	},
 	
 	"rng_description": {
-		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuschen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\nnicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\nkonstant: innerhalb einer Webseite wird eine Farbe immer gleich verändert.\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
+		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuschen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\n\nnicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\n\nkonstant: innerhalb einer Webseite wird eine Farbe immer gleich verändert.\n\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -511,7 +511,7 @@
 	},
 	
 	"protectedAPIFeatures_title": {
-		"message": "Geschützte API Funktionen",
+		"message": "Geschützte API-Funktionen",
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
@@ -553,11 +553,11 @@
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Auslese vorgetäuscht auf {url}",
+		"message": "Canvas-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Audioauslese vorgetäuscht auf {url}",
+		"message": "Audio-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
@@ -578,7 +578,7 @@
 	},
 	
 	"ignoreList_description": {
-		"message": "Domänen oder URLs, bei denen keine Benachrichtigungen angezeigt werden sollen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"message": "Domains oder URLs, bei denen keine Benachrichtigungen angezeigt werden sollen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	"ignoreList_title": {
@@ -756,7 +756,7 @@
 		"description": ""
 	},
 	"stackList_description": {
-		"message": "JS-Dateien, die die <canvas>-API verwenden dürfen. Die Angabe muss hier im JSON-Format vorliegen. Beispiel: [{\"url\": \"http://domain/datei1.js\"}, {\"url\": \"http://domain/datei2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"message": "JS-Dateien, die alle APIs nutzen dürfen. Die Angabe muss hier im JSON-Format vorliegen. Beispiel: [{\"url\": \"http://domain/datei1.js\"}, {\"url\": \"http://domain/datei2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
 		"description": ""
 	},
 	"stackList_title": {
@@ -768,7 +768,7 @@
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domänen oder URLs, die die <canvas>-API verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"message": "Domains oder URLs, die alle APIs nutzen dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	"whitelist": {
@@ -797,16 +797,16 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domänen oder URLs, die die <canvas>-API in der aktuellen Sitzung verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"message": "Domains oder URLs, die während der aktuellen Sitzung alle APIs nutzen dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	
 	"whitelistDomainTemporarily": {
-		"message": "erlaube Domain übergangsweise",
+		"message": "erlaube Domain temporär",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "erlaube URL übergangsweise",
+		"message": "erlaube URL temporär",
 		"description": ""
 	},
 	
@@ -828,7 +828,7 @@
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Aktiviert die Speicherung des Inhaltes der vorgetäuschten Canvas.\nACHTUNG: Dies kann zu einem hohen Speicherverbrauch führen.",
+		"message": "Aktiviert die Speicherung des Inhalts der vorgetäuschten Canvas.\nACHTUNG: Dies kann zu einem hohen Speicherverbrauch führen.",
 		"description": ""
 	},
 	
@@ -917,7 +917,7 @@
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Aktiviert den Audio-Zwischenspeicher. Dies kann die Detektion des Addons verhindern aber reduziert die Geschwindigkeit des Addons.",
+		"message": "Aktiviert den Audio-Zwischenspeicher. Dies kann die Detektion des Addons verhindern, reduziert aber seine Geschwindigkeit.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
@@ -942,7 +942,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximale Länge der Browser-History, die der Web-Seite mitgeteilt wird.",
+		"message": "Maximale Länge der Browser-History, die der Webseite mitgeteilt wird.",
 		"description": ""
 	},
 	

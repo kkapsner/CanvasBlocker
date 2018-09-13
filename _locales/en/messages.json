@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Changes the JS-API for modifying <canvas> to prevent Canvas-Fingerprinting.",
+		"message": "Alters some JS APIs to prevent fingerprinting.",
 		"description": ""
 	},
 	
@@ -57,11 +57,11 @@
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it, please bookmark it.",
+		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate":{
-		"message": "Don't show again on update.",
+		"message": "Don't show up again after update.",
 		"description": ""
 	},
 	"openInTab": {
@@ -238,7 +238,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When Canvas Blocker's Block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\nNo: asking every time\nIndividual: each API-type (context, input, readout) has to be confirmed separately\ncombined: all API-types get confirmed together",
+		"message": "When CanvasBlocker's Block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -258,7 +258,7 @@
 		"description": ""
 	},
 	"askDenyMode_description":{
-		"message": "Which mode should be used when the permission is denied.",
+		"message": "Which mode shall be used when the permission is denied.",
 		"description": ""
 	},
 	"askDenyMode_options.block":{
@@ -284,7 +284,7 @@
 	},
 	
 	"blackList_description": {
-		"message": "Domains or URLs where the <canvas>-API should always be blocked. To add multiple entries, separate them by commas.",
+		"message": "Domains or URLs where all APIs shall always be blocked. To add multiple entries, separate them by commas.",
 		"description": ""
 	},
 	"blackList_title": {
@@ -305,7 +305,7 @@
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only white list",
+		"message": "allow only whitelist",
 		"description": ""
 	},
 	"blockMode_options.ask": {
@@ -321,7 +321,7 @@
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only black list",
+		"message": "block only blacklist",
 		"description": ""
 	},
 	"blockMode_options.blockReadout": {
@@ -382,7 +382,7 @@
 	},
 	
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\nnon persistent: the random numbers will be determined freshly for each faking action.\nconstant: within one web page a color will always be faked to the same color.\npersistent: the random number will only be determined once for every domain.",
+		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action.\n\nconstant: within one web page a color will always be faked to the same color.\n\npersistent: the random number will only be determined once for every domain.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -420,7 +420,7 @@
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "If data for the persistent random number generator should be stored. Otherwise it is discarded on browser shutdown.",
+		"message": "If data for the persistent random number generator shall be stored. Otherwise it is discarded on browser shutdown.",
 		"description": ""
 	},
 	
@@ -479,7 +479,7 @@
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that should not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
 		"description": ""
 	},
 	
@@ -540,7 +540,7 @@
 		"description": ""
 	},
 	"enableStackList_title": {
-		"message": "Use file specific white list",
+		"message": "Use file specific whitelist",
 		"description": ""
 	},
 	
@@ -553,7 +553,7 @@
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Faked readout on {url}",
+		"message": "Faked canvas readout on {url}",
 		"description": ""
 	},
 	"fakedAudioReadout": {
@@ -578,7 +578,7 @@
 	},
 	
 	"ignoreList_description": {
-		"message": "Domains or URLs where no notification will be shown. To add multiple entries, separate them by commas.",
+		"message": "Domains or URLs where no notifications shall be shown. To add multiple entries, separate them by commas.",
 		"description": ""
 	},
 	"ignoreList_title": {
@@ -619,35 +619,35 @@
 		"description": ""
 	},
 	"selectWhitelist": {
-		"message": "Select domain or URL to add to white list:",
+		"message": "Select domain or URL to add to whitelist:",
 		"description": ""
 	},
 	"inputWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to white list:",
+		"message": "Input domain or URL \"RegExp\" to add to whitelist:",
 		"description": ""
 	},
 	"inputWhitelistDomain": {
-		"message": "Input domain to add to white list:",
+		"message": "Input domain to add to whitelist:",
 		"description": ""
 	},
 	"inputWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to white list:",
+		"message": "Input URL \"RegExp\" to add to whitelist:",
 		"description": ""
 	},
 	"selectSessionWhitelist": {
-		"message": "Select domain or URL to add to the session white list:",
+		"message": "Select domain or URL to add to the session whitelist:",
 		"description": ""
 	},
 	"inputSessionWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to the session white list:",
+		"message": "Input domain or URL \"RegExp\" to add to the session whitelist:",
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Input domain to add to the session white list:",
+		"message": "Input domain to add to the session whitelist:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to the session white list:",
+		"message": "Input URL \"RegExp\" to add to the session whitelist:",
 		"description": ""
 	},
 	"settings": {
@@ -755,19 +755,19 @@
 		"description": ""
 	},
 	"stackList_description": {
-		"message": "JS files which are allowed to use the <canvas>-API. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"message": "JS files which are allowed to use all APIs. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
 		"description": ""
 	},
 	"stackList_title": {
-		"message": "File specific white list",
+		"message": "File specific whitelist",
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "White list",
+		"message": "Whitelist",
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domains or URLs where the <canvas>-API should not be blocked. To add multiple entries, separate them by commas.",
+		"message": "Domains or URLs which shall be allowed to use all APIs. To add multiple entries, separate them by commas.",
 		"description": ""
 	},
 	"whitelist": {
@@ -792,11 +792,11 @@
 	},
 	
 	"sessionWhiteList_title": {
-		"message": "Session white list",
+		"message": "Session whitelist",
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs where the <canvas>-API should not be blocked in the current session. To add multiple entries, separate them by commas.",
+		"message": "Domains or URLs which shall be allowed to use all APIs during the current session. To add multiple entries, separate them by commas.",
 		"description": ""
 	},
 	
@@ -836,7 +836,7 @@
 		"description": ""
 	},
 	"protectAudio_description": {
-		"message": "If the audio API should be protected as well",
+		"message": "If the audio API shall be protected as well",
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
@@ -848,7 +848,7 @@
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "How many of the values per read request should be faked.",
+		"message": "How many of the values per read request shall be faked.",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
@@ -924,7 +924,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices should always be faked.",
+		"message": "If some of the used indices shall always be faked.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
@@ -941,7 +941,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximal length of the history that is reported to the web site.",
+		"message": "Maximal length of the history that is reported to the website.",
 		"description": ""
 	},
 	
@@ -950,7 +950,7 @@
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "window.opener and window.name will be protected. This can render some web pages unusable.",
+		"message": "window.opener and window.name will be protected. This can render some webpages unusable.",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
@@ -980,7 +980,7 @@
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
-		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
 		"description": ""
 	},
 	
