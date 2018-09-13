@@ -13,6 +13,7 @@ Version 0.5.4:
 	fixes:
 		- window and audio API were always blocked when using any of the "block ..." modes
 		- canvas content was not stored to be displayed when wanted
+		- hovering over toolbar icon created error in the browser console
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
