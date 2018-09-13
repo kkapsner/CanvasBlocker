@@ -49,7 +49,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "Über diese Seite können Sie die Einstellungen des Add-ons CanvasBlocker verändern.",
+		"message": "Über diese Seite können Sie die Einstellungen des Add-ons anpassen.",
 		"description": ""
 	},
 	"installNotice": {
@@ -284,7 +284,7 @@
 	},
 	
 	"blackList_description": {
-		"message": "Domänen oder URLs, die die <canvas>-API niemals verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"message": "Domains oder URLs, die die APIs unter keinerlei Umständen nutzen dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	"blackList_title": {
@@ -578,7 +578,7 @@
 	},
 	
 	"ignoreList_description": {
-		"message": "Domänen oder URLs, bei denen keine Benachrichtigungen angezeigt werden sollen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"message": "Domains oder URLs, bei denen keine Benachrichtigungen angezeigt werden sollen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	"ignoreList_title": {
@@ -756,7 +756,7 @@
 		"description": ""
 	},
 	"stackList_description": {
-		"message": "JS-Dateien, die die <canvas>-API verwenden dürfen. Die Angabe muss hier im JSON-Format vorliegen. Beispiel: [{\"url\": \"http://domain/datei1.js\"}, {\"url\": \"http://domain/datei2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"message": "JS-Dateien, die alle APIs nutzen dürfen. Die Angabe muss hier im JSON-Format vorliegen. Beispiel: [{\"url\": \"http://domain/datei1.js\"}, {\"url\": \"http://domain/datei2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
 		"description": ""
 	},
 	"stackList_title": {
@@ -768,7 +768,7 @@
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domänen oder URLs, die alle APIs verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"message": "Domains oder URLs, die alle APIs nutzen dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	"whitelist": {
@@ -797,7 +797,7 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domänen oder URLs, die alle APIs in der aktuellen Sitzung verwenden dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"message": "Domains oder URLs, die während der aktuellen Sitzung alle APIs nutzen dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	
