@@ -767,7 +767,7 @@
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domains or URLs where all APIs shall not be blocked. To add multiple entries, separate them by commas.",
+		"message": "Domains or URLs which shall be allowed to use all APIs. To add multiple entries, separate them by commas.",
 		"description": ""
 	},
 	"whitelist": {
@@ -796,7 +796,7 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs where all APIs shall not be blocked during the current session. To add multiple entries, separate them by commas.",
+		"message": "Domains or URLs which shall be allowed to use all APIs during the current session. To add multiple entries, separate them by commas.",
 		"description": ""
 	},
 	
