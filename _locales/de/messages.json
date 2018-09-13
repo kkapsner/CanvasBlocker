@@ -1033,7 +1033,7 @@
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "Für eine Fehlersuche ist eine detaillierte Aufzeichnung der Addon-Aktivitäten hilfreich. Mit diesem Parameter kann der Grad der Detailliertheit dieser Aufzeichnung eingestellt werden.",
+		"message": "Für eine Fehlersuche ist eine detaillierte Aufzeichnung der Addon-Aktivitäten hilfreich. Mit diesem Parameter kann der Grad der Detailliertheit dieser Aufzeichnung eingestellt werden.\nDie Aufzeichnung kann in der Browser-Konsole (Strg+Umschalt+J) und der Web-Konsole (Strg+Umschalt+K) eingesehen werden.",
 		"description": ""
 	},
 	"logLevel_options.0": {
