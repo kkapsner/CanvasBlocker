@@ -12,6 +12,7 @@
 			"lib/require.js",
 			"lib/logging.js",
 			"lib/settingDefinitions.js",
+			"lib/settingContainers.js",
 			"lib/settingsMigration.js",
 			"lib/settings.js",
 			"lib/lists.js",
@@ -31,6 +32,7 @@
 			"lib/logging.js",
 			
 			"lib/settingDefinitions.js",
+			"lib/settingContainers.js",
 			"lib/settings.js",
 			
 			"lib/colorStatistics.js",
