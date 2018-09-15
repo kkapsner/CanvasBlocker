@@ -10,10 +10,10 @@
 	"background": {
 		"scripts": [
 			"lib/require.js",
+			"lib/logging.js",
 			"lib/settingDefinitions.js",
 			"lib/settingsMigration.js",
 			"lib/settings.js",
-			"lib/logging.js",
 			"lib/lists.js",
 			"lib/persistentRndStorage.js",
 			"lib/dataUrls.js",
@@ -28,10 +28,10 @@
 		"run_at": "document_start",
 		"js": [
 			"lib/require.js",
+			"lib/logging.js",
+			
 			"lib/settingDefinitions.js",
 			"lib/settings.js",
-			
-			"lib/logging.js",
 			
 			"lib/colorStatistics.js",
 			"lib/webgl.js",
