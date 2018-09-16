@@ -49,11 +49,11 @@
 	},
 	
 	"options": {
-		"message": "CanvasBlocker Einstellungen",
+		"message": "Einstellungen",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "Über diese Seite können Sie die Einstellungen des Add-ons anpassen.",
+		"message": "Auf dieser Seite können Sie die CanvasBlocker-Einstellungen anpassen.",
 		"description": ""
 	},
 	"installNotice": {
@@ -532,7 +532,7 @@
 		"description": ""
 	},
 	"displayCallingStack": {
-		"message": "Aufrufestack anzeigen",
+		"message": "Aufrufstack anzeigen",
 		"description": ""
 	},
 	"displayFullURL": {
@@ -672,7 +672,7 @@
 		"description": ""
 	},
 	"showCompleteCallingStack_title": {
-		"message": "Kompletten Aufrufestack anzeigen",
+		"message": "Kompletten Aufrufstack anzeigen",
 		"description": ""
 	},
 	"showNotifications_description": {
@@ -849,7 +849,7 @@
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Buffer Vortäuschrate",
+		"message": "Buffer-Vortäuschrate",
 		"description": ""
 	},
 	"audioFakeRate_description": {
@@ -937,7 +937,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "Die Indizes, die immer vorgetäuscht werden sollen. Kommasepariert eingeben.",
+		"message": "Die Indizes, die immer vorgetäuscht werden sollen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
 	
@@ -981,7 +981,7 @@
 	},
 	
 	"domRectIntegerFactor_title": {
-		"message": "DOMRect Ganzzahlfaktor",
+		"message": "DOMRect-Ganzzahlfaktor",
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
@@ -1037,7 +1037,7 @@
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "Für eine Fehlersuche ist eine detaillierte Aufzeichnung der Addon-Aktivitäten hilfreich. Mit diesem Parameter kann der Grad der Detailliertheit dieser Aufzeichnung eingestellt werden.\nDie Aufzeichnung kann in der Browser-Konsole (Strg+Umschalt+J) und der Web-Konsole (Strg+Umschalt+K) eingesehen werden.",
+		"message": "Für eine Fehlersuche ist eine detaillierte Aufzeichnung der Addon-Aktivitäten hilfreich. Mit diesem Parameter kann der Grad der Detailliertheit dieser Aufzeichnung eingestellt werden.\n\nDie Aufzeichnung kann in der Browser-Konsole (Strg+Umschalt+J) und der Web-Konsole (Strg+Umschalt+K) eingesehen werden.",
 		"description": ""
 	},
 	"logLevel_options.0": {
