@@ -10,6 +10,7 @@ Version 0.5.4:
 		- added protection for DOMRect (getClientRects)
 		- added setting to control if notification details should be stored
 		- state of the arrow for url specific values is saved
+		- browser action icon gets grayed out if the page is whitelisted
 	
 	fixes:
 		- window and audio API were always blocked when using any of the "block ..." modes
