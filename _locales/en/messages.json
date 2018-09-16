@@ -49,11 +49,11 @@
 	},
 	
 	"options": {
-		"message": "CanvasBlocker options",
+		"message": "Settings",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "This page provides a way to change the settings of the CanvasBlocker add-on.",
+		"message": "On this page you can adjust the settings of CanvasBlocker.",
 		"description": ""
 	},
 	"installNotice": {
@@ -146,11 +146,11 @@
 	},
 	
 	"allowPDFCanvas_description": {
-		"message": "Firefox's native PDF reader uses the API to display PDF content. If too many ask dialogs appear or the PDF reader does not work at all, these have to be allowed.",
+		"message": "Firefox's native PDF reader uses the Canvas API to display PDF content. If too many ask dialogs appear or the PDF reader does not work at all, these have to be allowed.",
 		"description": ""
 	},
 	"allowPDFCanvas_title": {
-		"message": "Allow canvas in PDFs",
+		"message": "Allow canvases in PDFs",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -242,7 +242,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's Block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
+		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -279,11 +279,11 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_description":{
-		"message": "Shows the content of the canvas for which the permission is asked if possible.",
+		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message":{
-		"message": "The web page wants to read the content of the following canvas:",
+		"message": "The webpage wants to read the content of the following canvas:",
 		"description": ""
 	},
 	
@@ -292,7 +292,7 @@
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Black list",
+		"message": "Blacklist",
 		"description": ""
 	},
 	
@@ -368,7 +368,7 @@
 	},
 	
 	"minFakeSize_description": {
-		"message": "Canvas with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
+		"message": "Canvases with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
 		"description": ""
 	},
 	"minFakeSize_title": {
@@ -377,7 +377,7 @@
 	},
 	
 	"maxFakeSize_description": {
-		"message": "Canvas with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 1 000 000.",
+		"message": "Canvases with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 1 000 000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
@@ -510,7 +510,7 @@
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvas are read several times but decreases it for big canvas.",
+		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvases are read several times, but decreases it for big canvases.",
 		"description": ""
 	},
 	
@@ -519,7 +519,7 @@
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "List of protected API features. When unticking a checkbox this feature of the API will not be protected.",
+		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
 		"description": ""
 	},
 	
@@ -549,7 +549,7 @@
 	},
 	
 	"preBlock": {
-		"message": "API blocked on {url} because CanvasBlocker-settings were not loaded in time.",
+		"message": "API blocked on {url} because CanvasBlocker settings were not loaded in time.",
 		"description": ""
 	},
 	"blocked": {
@@ -936,7 +936,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "The indices that are always faked. Enter separated by comma.",
+		"message": "The indices that are always faked. To add multiple entries, separate them by commas.",
 		"description": ""
 	},
 	
@@ -1036,7 +1036,7 @@
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "To find the cause of an error, detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.\nThe logging can be viewed in the Browser Console (Ctrl+Shift+J) and the Web Console (Ctrl+Shift+K).",
+		"message": "To find the cause of an error, detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.\n\nThe logging can be viewed in the Browser Console (Ctrl+Shift+J) and the Web Console (Ctrl+Shift+K).",
 		"description": ""
 	},
 	"logLevel_options.0": {
