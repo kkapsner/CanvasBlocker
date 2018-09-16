@@ -146,7 +146,7 @@
 	},
 	
 	"allowPDFCanvas_description": {
-		"message": "Firefox's native PDF reader uses the Canvas API to display PDF content. If too many ask dialogs appear or the PDF reader does not work at all, these have to be allowed.",
+		"message": "Firefox's native PDF reader uses canvases to display PDF content. If too many ask dialogs appear or the PDF reader does not work at all, these have to be allowed.",
 		"description": ""
 	},
 	"allowPDFCanvas_title": {
