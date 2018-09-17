@@ -4,6 +4,7 @@ Version 0.5.4:
 		- notification details are not stored by default
 		- settings page reorganized
 		- audio API notifies on every call
+		- made audio cache url specific
 	
 	new features:
 		- added save/load directly to/from file option
