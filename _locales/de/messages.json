@@ -925,7 +925,7 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Einige Webseiten verwenden ein sehr schlecht geschriebenes Audio-Fingerprinting-Skript, das den Firefox verlangsamt. Um den Zwischenspeicher für bestimmte Seiten zu deaktivieren, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
+		"message": "Einige Webseiten verwenden ein sehr schlecht geschriebenes Audio-Fingerprinting-Skript, das Firefox verlangsamt. Um den Zwischenspeicher für bestimmte Seiten zu deaktivieren, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
