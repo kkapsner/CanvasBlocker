@@ -37,6 +37,10 @@
 		"message": "Bitte warten...",
 		"description": ""
 	},
+	"search": {
+		"message": "Suchen",
+		"description": ""
+	},
 	
 	"input": {
 		"message": "Eingabe",

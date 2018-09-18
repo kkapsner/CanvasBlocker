@@ -375,7 +375,7 @@
 
 	scope.createSettingRow = createSettingRow;
 	
-	function createThead(displayHidden){
+	function createThead(displayHidden, restContent){
 		const tHead = document.createElement("thead");
 		const headRow = document.createElement("tr");
 		const hideHeadCell = document.createElement("td");
@@ -393,6 +393,9 @@
 		
 		const restHeadCell = document.createElement("td");
 		restHeadCell.colSpan = 2;
+		if (restContent){
+			restHeadCell.appendChild(restContent);
+		}
 		headRow.appendChild(restHeadCell);
 		tHead.appendChild(headRow);
 		return tHead;

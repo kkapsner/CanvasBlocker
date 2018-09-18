@@ -10,6 +10,8 @@
 	const optionsGui = require("./optionsGui");
 	const settings = require("./settings");
 	const settingsDisplay = require("./settingsDisplay");
+	const search = require("./search");
+	const settingStrings = require("./settingStrings");
 
 	var callbacks = {
 		showReleaseNotes: function(){
@@ -168,7 +170,26 @@
 	document.body.appendChild(table);
 	
 	const displayHidden = settings.getDefinition(settingsDisplay.displayHidden);
-	table.appendChild(optionsGui.createThead(displayHidden));
+	table.appendChild(
+		optionsGui.createThead(
+			displayHidden,
+			search.init()
+		)
+	);
+	search.on(function({search, results, lastResults}){
+		lastResults.forEach(function(node){
+			node.classList.remove("found");
+		});
+		if (search){
+			document.body.classList.add("searching");
+			results.forEach(function(node){
+				node.classList.add("found");
+			});
+		}
+		else {
+			document.body.classList.remove("searching");
+		}
+	});
 	
 	let lastSection = null;
 	let addSection = function addSection(name){
@@ -192,10 +213,16 @@
 				body.appendChild(row);
 			},
 			updateDisplay: function(){
+				const searchMode = document.body.classList.contains("searching");
 				var anyVisible = false;
 				rows.forEach(function(row){
 					var isHidden = row.classList.contains("hidden");
 					if (!isHidden){
+						if (searchMode){
+							if (!row.classList.contains("found")){
+								return;
+							}
+						}
 						if (anyVisible){
 							row.classList.remove("firstVisible");
 						}
@@ -208,6 +235,8 @@
 				body.classList[anyVisible? "remove": "add"]("hidden");
 			}
 		};
+		
+		search.on(function(){section.updateDisplay();});
 		lastSection = section;
 	};
 	addSection();
@@ -306,6 +335,9 @@
 				}
 				
 				var row = optionsGui.createSettingRow(setting);
+				settingStrings.getStrings(setting).forEach(function(string){
+					search.register(string, row);
+				});
 				let section = lastSection;
 				section.addRow(row);
 				if (!display.displayDependencies){

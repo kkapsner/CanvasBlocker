@@ -28,7 +28,7 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	border-spacing: 0;
 	border-collapse: collapse;
 }
-.settings.displayDescriptions {
+.settings {
 	table-layout: fixed;
 }
 .settings * {
@@ -214,4 +214,18 @@ td.hideColumn {
 	text-align: right;
 	color: gray;
 	font-size: 0.8em;
+}
+
+#search {
+	box-sizing: border-box;
+	width: 100%;
+	border: none;
+	background-color: transparent;
+}
+.searching .settingRow {
+	display: none;
+}
+
+.searching .settingRow.found {
+	display: table-row;
 }
