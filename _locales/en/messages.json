@@ -140,6 +140,11 @@
 		"description": ""
 	},
 	
+	"hideSetting": {
+		"message": "Click here to hide this setting.",
+		"description": ""
+	},
+	
 	"displayHiddenSettings_title": {
 		"message": "Display hidden settings",
 		"description": ""

@@ -177,12 +177,17 @@ td.hideColumn {
 	width: 45px;
 }
 
+.hideContent {
+	cursor: pointer;
+}
+
 .content.hideContent {
 	position: relative;
 }
 .content .hide, .displayHidden {
 	opacity: 0;
 	position: absolute;
+	cursor: pointer;
 }
 .content .hide ~ .display, .displayHidden ~ .display {
 	display: inline-block;
@@ -218,9 +223,7 @@ td.hideColumn {
 
 #search {
 	box-sizing: border-box;
-	width: 100%;
-	border: none;
-	background-color: transparent;
+	width: calc(100% - 10px);
 }
 .searching .settingRow {
 	display: none;

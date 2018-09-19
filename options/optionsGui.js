@@ -335,6 +335,7 @@
 	function createHide(setting){
 		var label = document.createElement("label");
 		label.className = "content hideContent";
+		label.title = browser.i18n.getMessage("hideSetting");
 		var input = document.createElement("input");
 		input.type = "checkbox";
 		input.className = "hide";
@@ -382,6 +383,7 @@
 		hideHeadCell.className = "hideColumn";
 		hideHeadCell.title = browser.i18n.getMessage(displayHidden.name + "_description");
 		const label = document.createElement("label");
+		label.className = "hideContent";
 		const input = createInput(displayHidden);
 		input.className = "displayHidden";
 		label.appendChild(input);

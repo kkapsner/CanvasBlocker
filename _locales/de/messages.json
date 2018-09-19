@@ -140,6 +140,11 @@
 		"description": ""
 	},
 	
+	"hideSetting": {
+		"message": "Hier klicken, um diese Einstellung zu verbergen.",
+		"description": ""
+	},
+	
 	"displayHiddenSettings_title": {
 		"message": "Versteckte Einstellungen anzeigen",
 		"description": ""
