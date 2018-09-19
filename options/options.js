@@ -176,11 +176,15 @@
 			search.init()
 		)
 	);
+	const searchOnly = window.location.search === "?searchOnly";
+	if (searchOnly){
+		document.body.classList.add("searching");
+	}
 	search.on(function({search, results, lastResults}){
 		lastResults.forEach(function(node){
 			node.classList.remove("found");
 		});
-		if (search){
+		if (search || searchOnly){
 			document.body.classList.add("searching");
 			results.forEach(function(node){
 				node.classList.add("found");
