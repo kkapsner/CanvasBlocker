@@ -752,14 +752,6 @@
 		"message": "blinken",
 		"description": ""
 	},
-	"notificationDisplayTime_description": {
-		"message": "Anzahl der Sekunden, die die Benachrichtigungen angezeigt werden sollen. (Null eingeben, um die Benachrichtigungen nicht automatisch zu schließen.)",
-		"description": ""
-	},
-	"notificationDisplayTime_title": {
-		"message": "Benachrichtigungsanzeigezeit",
-		"description": ""
-	},
 	"sourceOutput": {
 		"message": "Aufrufende Datei",
 		"description": ""

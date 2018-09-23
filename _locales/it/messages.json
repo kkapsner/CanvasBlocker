@@ -428,14 +428,6 @@
 		"message": "Mostra notifiche",
 		"description": ""
 	},
-	"notificationDisplayTime_description": {
-		"message": "Numero di secondi di durata della notifica. (Zero per disattivare la chiusura automatica.)",
-		"description": ""
-	},
-	"notificationDisplayTime_title": {
-		"message": "Durata della notifica",
-		"description": ""
-	},
 	"sourceOutput": {
 		"message": "File di chiamata",
 		"description": ""

@@ -154,14 +154,6 @@
 		"description": ""
 	},
 	
-	"allowPDFCanvas_description": {
-		"message": "Firefox's native PDF reader uses canvases to display PDF content. If too many ask dialogs appear or the PDF reader does not work at all, these have to be allowed.",
-		"description": ""
-	},
-	"allowPDFCanvas_title": {
-		"message": "Allow canvases in PDFs",
-		"description": ""
-	},
 	"askForInvisiblePermission": {
 		"message": "Do you want to allow invisible <canvas>?",
 		"description": ""

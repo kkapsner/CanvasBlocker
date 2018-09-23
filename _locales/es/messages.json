@@ -626,14 +626,6 @@
 		"message": "centellear",
 		"description": ""
 	},
-	"notificationDisplayTime_description": {
-		"message": "Número de segundos que se muestran las notificaciones (introduzca un cero para desactivar el cierre automático).",
-		"description": ""
-	},
-	"notificationDisplayTime_title": {
-		"message": "Tiempo de exhibición de las notificaciones",
-		"description": ""
-	},
 	"sourceOutput": {
 		"message": "Archivo de llamada",
 		"description": ""

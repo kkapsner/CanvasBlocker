@@ -548,14 +548,6 @@
 		"message": "显示通知",
 		"description": ""
 	},
-	"notificationDisplayTime_description": {
-		"message": "通知显示几秒（输入 0 则禁用自动关闭通知）",
-		"description": ""
-	},
-	"notificationDisplayTime_title": {
-		"message": "通知持续时间",
-		"description": ""
-	},
 	"sourceOutput": {
 		"message": "调用文件",
 		"description": ""

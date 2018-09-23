@@ -540,14 +540,6 @@
 		"message": "Afficher les notifications",
 		"description": ""
 	},
-	"notificationDisplayTime_description": {
-		"message": "Nombre de secondes pendant lesquelles les notifications doivent être affichées. (Zéro permet de ne pas fermer les avis automatiquement.)",
-		"description": ""
-	},
-	"notificationDisplayTime_title": {
-		"message": "Temps d'affichage des notifications",
-		"description": ""
-	},
 	"sourceOutput": {
 		"message": "Appel d'un fichier",
 		"description": ""
