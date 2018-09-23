@@ -121,14 +121,6 @@
 		"description": ""
 	},
 	
-	"allowPDFCanvas_description": {
-		"message": "El lector de PDF integrado de Firefox usa la API para mostrar el contenido de los PDF. Si aparecen demasiados cuadros de diálogo o si no funciona el lector de PDF en absoluto, tiene que permitir esto.",
-		"description": ""
-	},
-	"allowPDFCanvas_title": {
-		"message": "Permitir canvas en los PDF",
-		"description": ""
-	},
 	"askForInvisiblePermission": {
 		"message": "¿Quiere permitir los <canvas> invisibles?",
 		"description": ""
@@ -290,14 +282,6 @@
 		"description": ""
 	},
 	
-	"url_title": {
-		"message": "URL",
-		"description": ""
-	},
-	"url_description": {
-		"message": "",
-		"description": ""
-	},
 	"inputURL": {
 		"message": "Introduzca un dominio o RegExp de URL:",
 		"description": ""
@@ -681,10 +665,6 @@
 		"description": ""
 	},
 	
-	"inspectImage": {
-		"message": "inspeccionar la imagen",
-		"description": ""
-	},
 	"storeImageForInspection_title": {
 		"message": "Guardar la imagen para inspeccionarla",
 		"description": ""

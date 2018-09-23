@@ -100,14 +100,6 @@
 		"description": ""
 	},
 	
-	"allowPDFCanvas_description": {
-		"message": "Le fichier pdf.js (JavaScript) utilise <canvas> pour afficher le contenu des PDF. Si de nombreuses boîtes de dialogue apparaissent ou si la vue de PDF ne fonctionne pas, canvas doit être autorisé.",
-		"description": ""
-	},
-	"allowPDFCanvas_title": {
-		"message": "Autoriser Canvas dans les fichiers PDF",
-		"description": ""
-	},
 	"askForInvisiblePermission": {
 		"message": "Voulez-vous autoriser l'utilisation de <canvas> invisible ?",
 		"description": ""
@@ -269,14 +261,6 @@
 		"description": ""
 	},
 	
-	"url_title": {
-		"message": "URL",
-		"description": ""
-	},
-	"url_description": {
-		"message": "",
-		"description": ""
-	},
 	"inputURL": {
 		"message": "Input domain or URL RegExp:",
 		"description": ""
@@ -577,10 +561,6 @@
 		"description": ""
 	},
 	
-	"inspectImage": {
-		"message": "Visionner l'image",
-		"description": ""
-	},
 	"storeImageForInspection_title": {
 		"message": "Enregistrer l'image pour la visualiser",
 		"description": ""

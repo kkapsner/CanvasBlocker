@@ -154,14 +154,6 @@
 		"description": ""
 	},
 	
-	"allowPDFCanvas_description": {
-		"message": "Die native pdf.js verwendet <canvas> um den Inhalt von PDFs anzuzeigen. Wenn viele Nachfragedialoge erscheinen oder die PDF-Ansicht nicht funktioniert, müssen diese erlaubt werden.",
-		"description": ""
-	},
-	"allowPDFCanvas_title": {
-		"message": "<canvas> in PDFs erlauben",
-		"description": ""
-	},
 	"askForInvisiblePermission": {
 		"message": "Wollen Sie unsichtbare <canvas> erlauben?",
 		"description": ""
@@ -363,14 +355,6 @@
 		"description": ""
 	},
 	
-	"url_title": {
-		"message": "URL",
-		"description": ""
-	},
-	"url_description": {
-		"message": "",
-		"description": ""
-	},
 	"inputURL": {
 		"message": "Domain oder URL \"RegExp\" eingeben:",
 		"description": ""
@@ -824,10 +808,6 @@
 		"description": ""
 	},
 	
-	"inspectImage": {
-		"message": "Bild betrachten",
-		"description": ""
-	},
 	"storeImageForInspection_title": {
 		"message": "Bild für Betrachtung speichern",
 		"description": ""

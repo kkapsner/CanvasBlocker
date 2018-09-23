@@ -35,14 +35,6 @@
 		"description": ""
 	},
 	
-	"allowPDFCanvas_description": {
-		"message": "Il lettore PDF nativo di Firefox usa le API per visualizzare i PDF. Se compaiono troppe finestre di interazione o il lettore PDF non funziona proprio, allora devono essere permesse.",
-		"description": ""
-	},
-	"allowPDFCanvas_title": {
-		"message": "Permetti canvas nei PDF",
-		"description": ""
-	},
 	"askForInvisiblePermission": {
 		"message": "Vuoi permettere i <canvas> invisibili?",
 		"description": ""
@@ -178,14 +170,6 @@
 		"description": ""
 	},
 	
-	"url_title": {
-		"message": "URL",
-		"description": ""
-	},
-	"url_description": {
-		"message": "",
-		"description": ""
-	},
 	"inputURL": {
 		"message": "Inserisci dominio o RegExp URL:",
 		"description": ""
@@ -465,10 +449,6 @@
 		"description": ""
 	},
 	
-	"inspectImage": {
-		"message": "ispeziona immagine",
-		"description": ""
-	},
 	"storeImageForInspection_title": {
 		"message": "Memorizza immagine per ispezione",
 		"description": ""

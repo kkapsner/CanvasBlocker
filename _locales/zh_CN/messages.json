@@ -100,14 +100,6 @@
 		"description": ""
 	},
 	
-	"allowPDFCanvas_description": {
-		"message": "Firefox 自带的 PDF 阅读器（pdf.js）使用该 API 显示 PDF 内容。如果出现了太多的询问对话框，或者 PDF 阅读器功能失效，则您需要在对话框中允许。",
-		"description": ""
-	},
-	"allowPDFCanvas_title": {
-		"message": "允许 PDF 文件中的 Canvas",
-		"description": ""
-	},
 	"askForInvisiblePermission": {
 		"message": "是否允许不可见的 <canvas>？",
 		"description": ""
@@ -269,14 +261,6 @@
 		"description": ""
 	},
 	
-	"url_title": {
-		"message": "URL",
-		"description": ""
-	},
-	"url_description": {
-		"message": "",
-		"description": ""
-	},
 	"inputURL": {
 		"message": "输入域名或网址（URL）的正则表达式：",
 		"description": ""
@@ -603,10 +587,6 @@
 		"description": ""
 	},
 	
-	"inspectImage": {
-		"message": "察看图像",
-		"description": ""
-	},
 	"storeImageForInspection_title": {
 		"message": "存储图像以备察看",
 		"description": ""

@@ -355,14 +355,6 @@
 		"description": ""
 	},
 	
-	"url_title": {
-		"message": "URL",
-		"description": ""
-	},
-	"url_description": {
-		"message": "",
-		"description": ""
-	},
 	"inputURL": {
 		"message": "Input domain or URL \"RegExp\":",
 		"description": ""
@@ -743,14 +735,6 @@
 		"message": "blink",
 		"description": ""
 	},
-	"notificationDisplayTime_description": {
-		"message": "Number of seconds the notifications are shown. (Enter zero to disable automatic closing.)",
-		"description": ""
-	},
-	"notificationDisplayTime_title": {
-		"message": "Notification display time",
-		"description": ""
-	},
 	"sourceOutput": {
 		"message": "Calling file",
 		"description": ""
@@ -823,10 +807,6 @@
 		"description": ""
 	},
 	
-	"inspectImage": {
-		"message": "inspect image",
-		"description": ""
-	},
 	"storeImageForInspection_title": {
 		"message": "Store image for inspection",
 		"description": ""
