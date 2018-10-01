@@ -119,7 +119,9 @@
 			},
 			"args": [
 				"build",
-				"--overwrite-dest"
+				"--overwrite-dest",
+				"--ignore-files",
+				"test"
 			],
 			"presentation": {
 				"echo": true,
