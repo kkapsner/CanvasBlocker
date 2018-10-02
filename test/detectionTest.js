@@ -1,4 +1,4 @@
-/* eslint no-console: off */
+/* eslint no-console: off, max-lines: off */
 var addTest = (function(){
 	"use strict";
 
@@ -116,15 +116,15 @@ addTest("function code", function(log){
 	) || codeDetected;
 	codeDetected = checkFunctionCode(
 		history.__lookupGetter__("length"),
-		"get length"
+		"(get )?length"
 	) || codeDetected;
 	codeDetected = checkFunctionCode(
 		window.__lookupGetter__("name"),
-		"get name"
+		"(get )?name"
 	) || codeDetected;
 	codeDetected = checkFunctionCode(
 		window.__lookupSetter__("name"),
-		"set name"
+		"(set )?name"
 	) || codeDetected;
 	return codeDetected;
 });
@@ -147,11 +147,41 @@ addTest("toString modified", function(log){
 		log
 	);
 });
-addTest("function name", function(){
+addTest("function name", function(log){
 	"use strict";
 	
-	return HTMLCanvasElement.prototype.toDataURL.name !== "toDataURL" ||
-		CanvasRenderingContext2D.prototype.getImageData.name !== "getImageData";
+	function checkName({func, expectedName}){
+		if (func.name !== expectedName){
+			log("unexpected function name: " + func.name + " !== " + expectedName);
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	return [
+		{
+			func: HTMLCanvasElement.prototype.toDataURL,
+			expectedName: "toDataURL"
+		},
+		{
+			func: CanvasRenderingContext2D.prototype.getImageData,
+			expectedName: "getImageData"
+		},
+		{
+			func: history.__lookupGetter__("length"),
+			expectedName: "get length"
+		},
+		{
+			func: window.__lookupGetter__("name"),
+			expectedName: "get name"
+		},
+		{
+			func: window.__lookupSetter__("name"),
+			expectedName: "set name"
+		},
+	].map(checkName).some(function(b){return b;});
 });
 addTest("property descriptor", function(log){
 	"use strict";
