@@ -1,12 +1,14 @@
 Version 0.5.5:
 	changes:
-		- 
+		- DOMRect uses double cache (value and complete DOMRect)
 	
 	new features:
 		- 
 	
 	fixes:
 		- Google images did not work for some users
+		- page action was not showing on Firefox Android
+		- wrong content script does no longer trigger the settings load forcing
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
