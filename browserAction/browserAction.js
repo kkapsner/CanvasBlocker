@@ -79,5 +79,21 @@
 			actionButton.addEventListener("click", action.action);
 			actions.appendChild(actionButton);
 		});
+		
+		var search = document.createElement("input");
+		search.placeholder = browser.i18n.getMessage("search");
+		search.className = "search action";
+		actions.appendChild(search);
+		search.focus();
+		
+		search.addEventListener("keyup", function(event){
+			if ([10, 13].indexOf(event.keyCode) !== -1){
+				window.open(browser.extension.getURL(
+					"options/options.html" +
+					"?search=" +
+					encodeURIComponent(this.value)
+				));
+			}
+		});
 	});
 }());

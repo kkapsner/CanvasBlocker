@@ -12,7 +12,8 @@
 	const settingsDisplay = require("./settingsDisplay");
 	const search = require("./search");
 	const settingStrings = require("./settingStrings");
-
+	const searchParameters = new URLSearchParams(window.location.search);
+	
 	var callbacks = {
 		showReleaseNotes: function(){
 			logging.verbose("open release notes");
@@ -118,8 +119,8 @@
 			introduction.textContent = browser.i18n.getMessage("optionsIntroduction");
 			head.appendChild(introduction);
 			
-			if (window.location.search){
-				let noticeName = window.location.search.substr(1).trim() + "Notice";
+			if (searchParameters.has("notice")){
+				let noticeName = searchParameters.get("notice") + "Notice";
 				let notice = browser.i18n.getMessage(noticeName);
 				if (notice){
 					let bookmarkingNotice = document.createElement("div");
@@ -174,15 +175,19 @@
 	document.body.appendChild(table);
 	
 	const displayHidden = settings.getDefinition(settingsDisplay.displayHidden);
+	const searchInput = search.init();
 	table.appendChild(
 		optionsGui.createThead(
 			displayHidden,
-			search.init()
+			searchInput
 		)
 	);
-	const searchOnly = window.location.search === "?searchOnly";
+	const searchOnly = searchParameters.has("searchOnly");
 	if (searchOnly){
 		document.body.classList.add("searching");
+	}
+	if (searchParameters.has("search")){
+		searchInput.value = searchParameters.get("search");
 	}
 	search.on(function({search, results, lastResults}){
 		lastResults.forEach(function(node){
@@ -412,4 +417,6 @@
 			}
 		});
 	});
+	
+	searchInput.search();
 }());

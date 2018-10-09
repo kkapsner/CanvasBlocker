@@ -47,3 +47,9 @@ div {
 	mask-size: 100%;
 	display: inline-block;
 }
+
+.search {
+	box-sizing: border-box;
+	padding-left: calc(0.5em + 19px + 0.25em);
+	cursor: initial;
+}
