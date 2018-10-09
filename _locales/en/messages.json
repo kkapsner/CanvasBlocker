@@ -1058,6 +1058,19 @@
 		"description": ""
 	},
 	
+	"openSettingSanitation_title": {
+		"message": "Setting sanitation",
+		"description": ""
+	},
+	"openSettingSanitation_description": {
+		"message": "",
+		"description": ""
+	},
+	"openSettingSanitation_label": {
+		"message": "Open",
+		"description": ""
+	},
+	
 	"inspectSettings_label": {
 		"message": "Inspect",
 		"description": ""
@@ -1102,6 +1115,103 @@
 	},
 	"browserAction_reportIssue": {
 		"message": "Report issue",
+		"description": ""
+	},
+	
+	"sanitation_title": {
+		"message": "Setting sanitation",
+		"description": ""
+	},
+	"sanitation_description": {
+		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advices for suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"description": ""
+	},
+	"sanitation_nothingToComplain": {
+		"message": "Nothing to complain.",
+		"description": ""
+	},
+	"sanitation_ruleset.unnecessaryURLValue": {
+		"message": "Unnecessary URL values",
+		"description": ""
+	},
+	"sanitation_ruleset.disabledFeatures": {
+		"message": "Disabled features",
+		"description": ""
+	},
+	"sanitation_ruleset.blockMode": {
+		"message": "Block mode",
+		"description": ""
+	},
+	"sanitation_ruleset.thresholds": {
+		"message": "Thresholds",
+		"description": ""
+	},
+	"sanitation_ruleset.performance": {
+		"message": "Performance",
+		"description": ""
+	},
+	"sanitation_error.unnecessaryURLValue": {
+		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
+		"description": ""
+	},
+	"sanitation_resolution.removeURLValue": {
+		"message": "remove URL value",
+		"description": ""
+	},
+	"sanitation_error.disabledFeatures": {
+		"message": "All features of {api} are disabled but the protection is enabled.",
+		"description": ""
+	},
+	"sanitation_resolution.disableMainFlag": {
+		"message": "disable main flag",
+		"description": ""
+	},
+	"sanitation_resolution.enableFeatures": {
+		"message": "enable features",
+		"description": ""
+	},
+	"sanitation_error.badBlockMode": {
+		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"description": ""
+	},
+	"sanitation_resolution.switchToFakeReadout": {
+		"message": "switch to \"fake readout\"",
+		"description": ""
+	},
+	"sanitation_error.blockModeVsProtection": {
+		"message": "With blocking mode \"{blockMode}\" the {api} protection is not working.",
+		"description": ""
+	},
+	"sanitation_resolution.disableFlag": {
+		"message": "disable \"{flag}\"",
+		"description": ""
+	},
+	"sanitation_error.fakeInputWithWhiteRng": {
+		"message": "Do not use white random number generator with \"{blockMode}\".",
+		"description": ""
+	},
+	"sanitation_resolution.switchToNonPersistendRng": {
+		"message": "switch to \"non persistend\" rng",
+		"description": ""
+	},
+	"sanitation_error.valueTooLow": {
+		"message": "\"{setting}\" should not be lower than {value}.",
+		"description": ""
+	},
+	"sanitation_error.valueTooHigh": {
+		"message": "\"{setting}\" should not be higher than {value}.",
+		"description": ""
+	},
+	"sanitation_resolution.setTo": {
+		"message": "set to {value}",
+		"description": ""
+	},
+	"sanitation_error.storeNotificationData": {
+		"message": "Storing notification data may lead to slow performance.",
+		"description": ""
+	},
+	"sanitation_error.storeImage": {
+		"message": "Storing the image for inspection has a high RAM footprint.",
 		"description": ""
 	}
 }

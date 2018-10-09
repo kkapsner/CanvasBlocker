@@ -484,6 +484,9 @@
 		},
 		"settings",
 		{
+			"name": "openSettingSanitation"
+		},
+		{
 			"name": "exportSettings",
 			"actions": ["inspectSettings", "saveSettings", "loadSettings"]
 		},

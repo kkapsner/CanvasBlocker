@@ -1,0 +1,15 @@
+.resolutions {
+	display: block;
+}
+
+.complaint.high {
+	background-color: red;
+}
+
+.complaint.medium {
+	background-color: orange;
+}
+
+.complaint.low {
+	background-color: yellow;
+}

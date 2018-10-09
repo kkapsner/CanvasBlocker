@@ -29,6 +29,10 @@
 			logging.verbose("open settings inspection");
 			window.open("export.html", "_blank");
 		},
+		openSettingSanitation: function(){
+			logging.verbose("open settings sanitation");
+			window.open("sanitize.html", "_blank");
+		},
 		saveSettings: function(){
 			logging.verbose("save settings");
 			const data = {};

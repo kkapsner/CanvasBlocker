@@ -3,7 +3,7 @@ Version 0.5.5:
 		- DOMRect uses double cache (value and complete DOMRect)
 	
 	new features:
-		- 
+		- added settings sanitation page
 	
 	fixes:
 		- Google images did not work for some users

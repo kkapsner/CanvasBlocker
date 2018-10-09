@@ -7,7 +7,6 @@
 		"message": "Verändert einige JS-APIs um Fingerprinting zu verhindern.",
 		"description": ""
 	},
-	
 	"browserAction_title_default": {
 		"message": "CanvasBlocker",
 		"description": ""
@@ -24,7 +23,6 @@
 		"message": "\n  \u00B7 {api}",
 		"description": ""
 	},
-	
 	"more": {
 		"message": "mehr",
 		"description": ""
@@ -41,17 +39,14 @@
 		"message": "Suchen",
 		"description": ""
 	},
-	
 	"input": {
 		"message": "Eingabe",
 		"description": ""
 	},
-	
 	"readout": {
 		"message": "Auslese",
 		"description": ""
 	},
-	
 	"options": {
 		"message": "Einstellungen",
 		"description": ""
@@ -68,7 +63,7 @@
 		"message": "CanvasBlocker wurde aktualisiert. Wenn Sie diese Seite in Zukunft erreichen wollen und noch kein Lesezeichen erstellt haben, erstellen Sie bitte eines.",
 		"description": ""
 	},
-	"dontShowOptionsOnUpdate":{
+	"dontShowOptionsOnUpdate": {
 		"message": "Bei Aktualisierung nicht wieder anzeigen.",
 		"description": ""
 	},
@@ -76,7 +71,6 @@
 		"message": "In separatem Tab öffnen",
 		"description": ""
 	},
-	
 	"section_asking": {
 		"message": "Nachfragen",
 		"description": ""
@@ -101,27 +95,26 @@
 		"message": "Einstellungen",
 		"description": ""
 	},
-	"section_canvas-api":{
+	"section_canvas-api": {
 		"message": "Canvas API",
 		"description": ""
 	},
-	"section_audio-api":{
+	"section_audio-api": {
 		"message": "Audio API",
 		"description": ""
 	},
-	"section_history-api":{
+	"section_history-api": {
 		"message": "History API",
 		"description": ""
 	},
-	"section_window-api":{
+	"section_window-api": {
 		"message": "Window API",
 		"description": ""
 	},
-	"section_DOMRect-api":{
+	"section_DOMRect-api": {
 		"message": "DOMRect API",
 		"description": ""
 	},
-	
 	"displayAdvancedSettings_title": {
 		"message": "Expertenmodus",
 		"description": ""
@@ -130,7 +123,6 @@
 		"message": "Zeigt weitere Einstellungsmöglichkeiten an.",
 		"description": ""
 	},
-	
 	"displayDescriptions_title": {
 		"message": "Beschreibungen anzeigen",
 		"description": ""
@@ -139,12 +131,10 @@
 		"message": "Zeigt die Beschreibungen der Einstellungen an.",
 		"description": ""
 	},
-	
 	"hideSetting": {
 		"message": "Hier klicken, um diese Einstellung zu verbergen.",
 		"description": ""
 	},
-	
 	"displayHiddenSettings_title": {
 		"message": "Versteckte Einstellungen anzeigen",
 		"description": ""
@@ -153,7 +143,6 @@
 		"message": "Aktivieren, um versteckte Einstellungen anzuzeigen.",
 		"description": ""
 	},
-	
 	"askForInvisiblePermission": {
 		"message": "Wollen Sie unsichtbare <canvas> erlauben?",
 		"description": ""
@@ -258,36 +247,34 @@
 		"message": "kombiniert",
 		"description": ""
 	},
-	"askDenyMode_title":{
+	"askDenyMode_title": {
 		"message": "Nachfrageverweigerungsmodus",
 		"description": ""
 	},
-	"askDenyMode_description":{
+	"askDenyMode_description": {
 		"message": "Welcher Modus soll gewählt werden, wenn die Erlaubnis verweigert wird.",
 		"description": ""
 	},
-	"askDenyMode_options.block":{
+	"askDenyMode_options.block": {
 		"message": "blockieren",
 		"description": ""
 	},
-	"askDenyMode_options.fake":{
+	"askDenyMode_options.fake": {
 		"message": "vortäuschen",
 		"description": ""
 	},
-	
-	"showCanvasWhileAsking_title":{
+	"showCanvasWhileAsking_title": {
 		"message": "Canvas-Inhalt anzeigen",
 		"description": ""
 	},
-	"showCanvasWhileAsking_description":{
+	"showCanvasWhileAsking_description": {
 		"message": "Wenn möglich wird der Inhalt des Canvas angezeigt, bei dem um Erlaubnis gefragt wird.",
 		"description": ""
 	},
-	"showCanvasWhileAsking_message":{
+	"showCanvasWhileAsking_message": {
 		"message": "Die Webseite will den Inhalt des folgenden Canvas auslesen:",
 		"description": ""
 	},
-	
 	"blackList_description": {
 		"message": "Domains oder URLs, die die APIs unter keinerlei Umständen nutzen dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
@@ -296,7 +283,6 @@
 		"message": "Blacklist",
 		"description": ""
 	},
-	
 	"blockMode_description": {
 		"message": "",
 		"description": ""
@@ -345,7 +331,6 @@
 		"message": "Blockiermodus",
 		"description": ""
 	},
-	
 	"urlSettings_title": {
 		"message": "Seitenspezifische Werte",
 		"description": ""
@@ -354,12 +339,10 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"inputURL": {
 		"message": "Domain oder URL \"RegExp\" eingeben:",
 		"description": ""
 	},
-	
 	"minFakeSize_description": {
 		"message": "Canvas, die eine kleiner oder gleich große Fläche als die hier angegebene Zahl haben, werden nicht vorgetäuscht. Dies ist ein Parameter, der die Detektion des Addons erschweren soll.\nACHTUNG: Dies verringert die Sicherheit des Addons. Deswegen wird stark empfohlen, diesen Wert nicht über 100 zu setzen.",
 		"description": ""
@@ -368,7 +351,6 @@
 		"message": "Minimale Vortäuschgröße",
 		"description": ""
 	},
-	
 	"maxFakeSize_description": {
 		"message": "Canvas, die eine größere Fläche als die hier angegebene Zahl haben, werden nicht vorgetäuscht. (Null eingeben, um es zu deaktivieren.) Dies ist ein Leistungsparameter, der das Einfrieren des Browsers verringern kann und der an die Rechenleistung des Gerätes angepasst sein soll.\nACHTUNG: Dies verringert die Sicherheit des Addons. Deswegen wird stark empfohlen, diesen Wert nicht unter 1 000 000 zu setzen.",
 		"description": ""
@@ -377,7 +359,6 @@
 		"message": "Maximale Vortäuschgröße",
 		"description": ""
 	},
-	
 	"rng_description": {
 		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuschen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\n\nnicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\n\nkonstant: innerhalb einer Webseite wird eine Farbe immer gleich verändert.\n\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
 		"description": ""
@@ -402,7 +383,6 @@
 		"message": "Zufallszahlengenerator",
 		"description": ""
 	},
-	
 	"persistentRndStorage_title": {
 		"message": "Persistenter Speicher",
 		"description": ""
@@ -411,7 +391,6 @@
 		"message": "Speichert die Informationen für den persistenten Zufallszahlengenerator über einen Neustart hinweg.",
 		"description": ""
 	},
-	
 	"storePersistentRnd_title": {
 		"message": "Persistente Daten speichern",
 		"description": ""
@@ -420,7 +399,6 @@
 		"message": "Ob Daten für den persistenten Zufallszahlengenerator gespeichert werden sollen. Ansonsten werden die Daten beim Beenden des Browsers verworfen.",
 		"description": ""
 	},
-	
 	"persistentRndClearInterval_title": {
 		"message": "Löschintervall der persistenten Daten",
 		"description": ""
@@ -457,7 +435,6 @@
 		"message": "Jahre",
 		"description": ""
 	},
-	
 	"clearPersistentRnd_title": {
 		"message": "Persistenten Speicher leeren",
 		"description": ""
@@ -470,7 +447,6 @@
 		"message": "Leeren",
 		"description": ""
 	},
-	
 	"ignoreFrequentColors_title": {
 		"message": "Ignoriere die häufigsten Farben",
 		"description": ""
@@ -479,7 +455,6 @@
 		"message": "Anzahl der Farben, die pro Canvas nicht vorgetäuscht werden sollen. Dies ist ein Parameter, der die Detektion des Addons erschweren soll.\nACHTUNG: Dies kann die Geschwindigkeit des Addons beeinträchtigen, da für jedes Bild die Farbstatistik berechnet werden muss. Außerdem kann es die Sicherheit des Addons verringern, wenn der Wert zu hoch gestellt wird. Deswegen wird stark empfohlen, diesen Wert nicht über 3 zu setzen.",
 		"description": ""
 	},
-	
 	"minColors_title": {
 		"message": "Minimale Anzahl an Farben",
 		"description": ""
@@ -488,7 +463,6 @@
 		"message": "Anzahl der Farben, die ein Canvas aufweisen muss, damit es vorgetäuscht wird. Dies ist ein Parameter, der die Detektion des Addons erschweren soll.\nACHTUNG: Dies kann die Sicherheit des Addons beeinträchtigen. Deswegen wird stark empfohlen, diesen Wert nicht über 10 zu setzen.",
 		"description": ""
 	},
-	
 	"fakeAlphaChannel_title": {
 		"message": "Alpha-Kanal auch vortäuschen",
 		"description": ""
@@ -497,7 +471,6 @@
 		"message": "Aktiviert das Vortäuschen des Alpha-Kanals (Transparenz).",
 		"description": ""
 	},
-	
 	"useCanvasCache_title": {
 		"message": "Zwischenspeicher für Canvas verwenden",
 		"description": ""
@@ -506,7 +479,6 @@
 		"message": "Aktiviert den Canvas-Zwischenspeicher. Dies kann die Detektion des Addons verhindern und kann die Geschwindigkeit des Addons erhöhen, wenn kleine Canvas oft ausgelesen werden. Für große Canvas wird die Geschwindigkeit leider reduziert.",
 		"description": ""
 	},
-	
 	"protectedAPIFeatures_title": {
 		"message": "Geschützte API-Funktionen",
 		"description": ""
@@ -515,7 +487,6 @@
 		"message": "Liste der geschützten Funktionen der APIs. Wenn eine der Boxen demarkiert wird, wird dieser Teil der API nicht geschützt.",
 		"description": ""
 	},
-	
 	"disableNotifications": {
 		"message": "Benachrichtigungen deaktivieren",
 		"description": ""
@@ -540,7 +511,6 @@
 		"message": "Dateispezifische Whitelist verwenden",
 		"description": ""
 	},
-	
 	"preBlock": {
 		"message": "API auf {url} blockiert, weil die CanvasBlocker-Einstellungen nicht rechtzeitig geladen wurden.",
 		"description": ""
@@ -573,7 +543,6 @@
 		"message": "Bei Ausgabe vorgetäuscht auf {url}",
 		"description": ""
 	},
-	
 	"ignoreList_description": {
 		"message": "Domains oder URLs, bei denen keine Benachrichtigungen angezeigt werden sollen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
@@ -582,7 +551,6 @@
 		"message": "Ignorierliste",
 		"description": ""
 	},
-	
 	"ignoredAPIs_title": {
 		"message": "Ignorierte APIs",
 		"description": ""
@@ -591,7 +559,6 @@
 		"message": "Für die ausgewählten APIs werden keinerlei Benachrichtigungen angezeigt.",
 		"description": ""
 	},
-	
 	"ignorelistDomain": {
 		"message": "verschweige Domain",
 		"description": ""
@@ -780,7 +747,6 @@
 		"message": "temporär erlauben",
 		"description": ""
 	},
-	
 	"sessionWhiteList_title": {
 		"message": "Sitzungs-Whitelist",
 		"description": ""
@@ -789,7 +755,6 @@
 		"message": "Domains oder URLs, die während der aktuellen Sitzung alle APIs nutzen dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
-	
 	"whitelistDomainTemporarily": {
 		"message": "erlaube Domain temporär",
 		"description": ""
@@ -798,7 +763,6 @@
 		"message": "erlaube URL temporär",
 		"description": ""
 	},
-	
 	"storeNotificationData_title": {
 		"message": "Details der Benachrichtigungen speichern",
 		"description": ""
@@ -807,7 +771,6 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"storeImageForInspection_title": {
 		"message": "Bild für Betrachtung speichern",
 		"description": ""
@@ -816,7 +779,6 @@
 		"message": "Aktiviert die Speicherung des Inhalts der vorgetäuschten Canvas.\nACHTUNG: Dies kann zu einem hohen Speicherverbrauch führen.",
 		"description": ""
 	},
-	
 	"protectAudio_title": {
 		"message": "Audio-API beschützen",
 		"description": ""
@@ -925,7 +887,6 @@
 		"message": "Die Indizes, die immer vorgetäuscht werden sollen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
 		"description": ""
 	},
-	
 	"historyLengthThreshold_title": {
 		"message": "History-Längenschwellwert",
 		"description": ""
@@ -934,7 +895,6 @@
 		"message": "Maximale Länge der Browser-History, die der Webseite mitgeteilt wird.",
 		"description": ""
 	},
-	
 	"protectWindow_title": {
 		"message": "Window-API beschützen",
 		"description": ""
@@ -951,7 +911,6 @@
 		"message": "Wenn die Window-API beschützt wird, funktioniert reCAPTCHA nicht mehr. Wollen Sie dafür eine Ausnahme hinzufügen?",
 		"description": ""
 	},
-	
 	"protectDOMRect_title": {
 		"message": "DOMRect-API beschützen",
 		"description": ""
@@ -964,7 +923,6 @@
 		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
-	
 	"domRectIntegerFactor_title": {
 		"message": "DOMRect-Ganzzahlfaktor",
 		"description": ""
@@ -973,7 +931,6 @@
 		"message": "Ein Bruchteil eines Pixels kann durch CSS kontrolliert werden. Eigenschaften eines DOMRect, die multipliziert mit diesem Faktor eine ganze Zahl ergeben, dürfen nicht verändert werden um eine Detektion zu verhindern.",
 		"description": ""
 	},
-	
 	"theme_title": {
 		"message": "Theme",
 		"description": ""
@@ -994,7 +951,6 @@
 		"message": "dunkel",
 		"description": ""
 	},
-	
 	"blockDataURLs_title": {
 		"message": "Data-URL Seiten blockieren",
 		"description": ""
@@ -1003,7 +959,6 @@
 		"message": "Data-URL Seiten können nicht gegen Fingerprinting geschützt werden (siehe https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Indem Data-URL Seiten blockiert werden kann verhindert werden, dass der echte Fingerabdruck zu irgendeinem Server gelangt.",
 		"description": ""
 	},
-	
 	"showReleaseNotes_title": {
 		"message": "Versionsinformationen",
 		"description": ""
@@ -1016,7 +971,6 @@
 		"message": "Anzeigen",
 		"description": ""
 	},
-	
 	"logLevel_title": {
 		"message": "Aufzeichnungslevel",
 		"description": ""
@@ -1049,7 +1003,6 @@
 		"message": "ausführlich",
 		"description": ""
 	},
-	
 	"exportSettings_title": {
 		"message": "Einstellungen exportieren",
 		"description": ""
@@ -1058,7 +1011,18 @@
 		"message": "",
 		"description": ""
 	},
-	
+	"openSettingSanitation_title": {
+		"message": "Einstellungsüberprüfung",
+		"description": ""
+	},
+	"openSettingSanitation_description": {
+		"message": "",
+		"description": ""
+	},
+	"openSettingSanitation_label": {
+		"message": "Öffnen",
+		"description": ""
+	},
 	"inspectSettings_label": {
 		"message": "Anzeigen",
 		"description": ""
@@ -1071,7 +1035,6 @@
 		"message": "Laden",
 		"description": ""
 	},
-	
 	"resetSettings_title": {
 		"message": "Einstellungen zurücksetzen",
 		"description": ""
@@ -1088,7 +1051,6 @@
 		"message": "Sind Sie sicher, dass Sie alle Einstellungen zurücksetzen wollen?",
 		"description": ""
 	},
-	
 	"browserAction_settings": {
 		"message": "Einstellungen",
 		"description": ""
@@ -1103,6 +1065,102 @@
 	},
 	"browserAction_reportIssue": {
 		"message": "Problem melden",
+		"description": ""
+	},
+	"sanitation_title": {
+		"message": "Einstellungsüberprüfung",
+		"description": ""
+	},
+	"sanitation_description": {
+		"message": "Diese Seite hilft schlechte Konfigurationen in den Einstellungen von CanvasBlocker zu finden. Sie gibt auch Hinweise für nicht optimale Einstellungen. Es wird aber nicht empfohlen, die Vorschläge blind umzusetzen.",
+		"description": ""
+	},
+	"sanitation_nothingToComplain": {
+		"message": "Keine Beschwerden.",
+		"description": ""
+	},
+	"sanitation_ruleset.unnecessaryURLValue": {
+		"message": "Unnötige URL-Werte",
+		"description": ""
+	},
+	"sanitation_ruleset.disabledFeatures": {
+		"message": "Deaktivierte Funktionen",
+		"description": ""
+	},
+	"sanitation_ruleset.blockMode": {
+		"message": "Blockiermodus",
+		"description": ""
+	},
+	"sanitation_ruleset.thresholds": {
+		"message": "Schwellwerte",
+		"description": ""
+	},
+	"sanitation_ruleset.performance": {
+		"message": "Leistung",
+		"description": ""
+	},
+	"sanitation_error.unnecessaryURLValue": {
+		"message": "Der URL-Wert für \"{url}\" ist identisch zur globalen Einstellung für \"{setting-title}\".",
+		"description": ""
+	},
+	"sanitation_resolution.removeURLValue": {
+		"message": "URL-Wert entfernen",
+		"description": ""
+	},
+	"sanitation_error.disabledFeatures": {
+		"message": "Alle Funktionen der {api} sind deaktiviert, aber der Schutz ist eingeschaltet.",
+		"description": ""
+	},
+	"sanitation_resolution.disableMainFlag": {
+		"message": "Hauptschalter deaktivieren",
+		"description": ""
+	},
+	"sanitation_resolution.enableFeatures": {
+		"message": "Funktionen aktivieren",
+		"description": ""
+	},
+	"sanitation_error.badBlockMode": {
+		"message": "Es werden die \"vortäuschen\" und \"fragen\" Blockiermodi empfohlen.",
+		"description": ""
+	},
+	"sanitation_resolution.switchToFakeReadout": {
+		"message": "zu \"Auslese vortäuschen\" wechseln",
+		"description": ""
+	},
+	"sanitation_error.blockModeVsProtection": {
+		"message": "Der {api}-Schutz funktioniert nicht im Blockiermodus \"{blockMode}\".",
+		"description": ""
+	},
+	"sanitation_resolution.disableFlag": {
+		"message": "deaktiviere \"{flag}\"",
+		"description": ""
+	},
+	"sanitation_error.fakeInputWithWhiteRng": {
+		"message": "Der weiße Zufallszahlengenerator soll nicht mit \"{blockMode}\" verwendet werden.",
+		"description": ""
+	},
+	"sanitation_resolution.switchToNonPersistendRng": {
+		"message": "wechsle zu \"nicht persistent\"",
+		"description": ""
+	},
+	"sanitation_error.valueTooLow": {
+		"message": "\"{setting}\" soll nicht niedriger als {value} sein.",
+		"description": ""
+	},
+	"sanitation_error.valueTooHigh": {
+		"message": "\"{setting}\" soll nicht höher als {value} sein.",
+		"description": ""
+	},
+	"sanitation_resolution.setTo": {
+		"message": "auf {value} setzen",
+		"description": ""
+	},
+	"sanitation_error.storeNotificationData": {
+		"message": "Die Benachrichtigungsdetails zu speichern kann zu reduzierter Leistung führen.",
+		"description": ""
+	},
+	"sanitation_error.storeImage": {
+		"message": "Bilder für Betrachtung zu speichern hat einen hohen RAM Verbrauch.",
 		"description": ""
 	}
 }
