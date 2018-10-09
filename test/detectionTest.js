@@ -4,8 +4,8 @@ var addTest = (function(){
 
 	var statusDefinitions = [
 		{className: "notRun", text: "not run"},
-		{className: "loud", text: "CB detected"},
-		{className: "stealthy", text: "CB not detected"},
+		{className: "loud", text: "API tampering detected"},
+		{className: "stealthy", text: "no API tampering detected"},
 		{className: "failed", text: "test failed"}
 	];
 	var ul = document.getElementById("tests");

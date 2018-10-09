@@ -19,7 +19,14 @@
 </head>
 <body>
 <h1>Detection test</h1>
-Checks if the addon can be detected by websites.
+Checks if the addon can be detected by websites. To check if CanvasBlocker was really detected you should run this test with the following configurations (the difference between 2. and 3. tells the detection of CanvasBlocker):
+<ol>
+	<li>all addons enabled</li>
+	<li>all addons disabled</li>
+	<li>CanvasBlocker enabled but all other addons disabled</li>
+	<li>CanvasBlocker disabled</li>
+</ol>
+<h2>Tests</h2> 
 <ul id="tests"></ul>
 <script src="detectionTest.js"></script>
 </body>
