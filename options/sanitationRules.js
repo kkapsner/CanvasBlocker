@@ -225,7 +225,7 @@
 						resolutions: [{
 							label: setToLabel.replace(/{value}/g, "10"),
 							callback: function(){
-								settings.ignoreFrequentColors = 10;
+								settings.minColors = 10;
 							}
 						}]
 					});
