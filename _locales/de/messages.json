@@ -1139,7 +1139,7 @@
 		"message": "Der weiße Zufallszahlengenerator soll nicht mit \"{blockMode}\" verwendet werden.",
 		"description": ""
 	},
-	"sanitation_resolution.switchToNonPersistendRng": {
+	"sanitation_resolution.switchToNonPersistentRng": {
 		"message": "wechsle zu \"nicht persistent\"",
 		"description": ""
 	},
@@ -1160,7 +1160,7 @@
 		"description": ""
 	},
 	"sanitation_error.storeImage": {
-		"message": "Bilder für Betrachtung zu speichern hat einen hohen RAM Verbrauch.",
+		"message": "Bilder für Betrachtung zu speichern führt zu einem hohen RAM-Verbrauch.",
 		"description": ""
 	}
 }

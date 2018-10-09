@@ -1123,7 +1123,7 @@
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advices for suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advice on suboptimal settings. But it is not recommended to blindly correct all suggestions.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
@@ -1190,8 +1190,8 @@
 		"message": "Do not use white random number generator with \"{blockMode}\".",
 		"description": ""
 	},
-	"sanitation_resolution.switchToNonPersistendRng": {
-		"message": "switch to \"non persistend\" rng",
+	"sanitation_resolution.switchToNonPersistentRng": {
+		"message": "switch to \"non persistent\" rng",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {

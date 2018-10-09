@@ -159,7 +159,7 @@
 							.replace(/{blockMode}/g, blockModeName),
 						severity: "low",
 						resolutions: [switchMode, {
-							label: browser.i18n.getMessage("sanitation_resolution.switchToNonPersistendRng"),
+							label: browser.i18n.getMessage("sanitation_resolution.switchToNonPersistentRng"),
 							callback: function(){
 								settings.rng = "nonPersistent";
 							}
