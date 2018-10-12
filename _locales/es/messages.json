@@ -13,10 +13,10 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": "\n\nprotección exitosa para:",
+		"message": "\n\nprotegido con éxito de:",
 		"description": ""
 	},
-		"browserAction_title_whitelisted": {
+	"browserAction_title_whitelisted": {
 		"message": " (Las API permitidas para {url})",
 		"description": ""
 	},
@@ -361,7 +361,7 @@
 	},
 	
 	"minFakeSize_description": {
-		"message": "Los «canvas» con un área menor o igual que este número no se falsearán. Es un parámetro para prevenir la detección.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor mayor que 100.",
+		"message": "Los «canvas» con un área menor o igual que este número no se falsean. Es un parámetro para prevenir la detección.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor mayor que 100.",
 		"description": ""
 	},
 	"minFakeSize_title": {
@@ -370,7 +370,7 @@
 	},
 	
 	"maxFakeSize_description": {
-		"message": "Los «canvas» con un área mayor que este número no se falsear (introduzca un cero para deshabilitarlo). Es un parámetro de rendimiento que puede prevenir bloqueos del navegador y debe ajustarse a la potencia de cálculo del dispositivo.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor menor que 1000000.",
+		"message": "Los «canvas» con un área mayor que este número no se falsean (introduzca un cero para deshabilitarlo). Es un parámetro de rendimiento que puede prevenir bloqueos del navegador y debe ajustarse a la potencia de cálculo del dispositivo.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor menor que 1000000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
@@ -926,7 +926,7 @@
 	},
 	
 	"historyLengthThreshold_title": {
-		"message": "Umbral de longitud de «history»",
+		"message": "Umbral de longitud del historial",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
@@ -1057,7 +1057,20 @@
 		"message": "",
 		"description": ""
 	},
-
+	
+	"openSettingSanitation_title": {
+		"message": "Configuración del saneado",
+		"description": ""
+	},
+	"openSettingSanitation_description": {
+		"message": "",
+		"description": ""
+	},
+	"openSettingSanitation_label": {
+		"message": "Abrir",
+		"description": ""
+	},
+	
 	"inspectSettings_label": {
 		"message": "Inspeccionar",
 		"description": ""
@@ -1103,5 +1116,102 @@
 	"browserAction_reportIssue": {
 		"message": "Notificar problemas",
 		"description": ""
-	}
+	},
+	
+	"sanitation_title": {
+		"message": "Saneado de la configuración",
+		"description": ""
+	},
+	"sanitation_description": {
+		"message": "Esta página le ayuda a encontrar ajustes incorrectos en la configuración de CanvasBlocker. También le avisa de ajustes no óptimos. No se recomienda seguir ciegamente todas las sugerencias.",
+		"description": ""
+	},
+	"sanitation_nothingToComplain": {
+		"message": "Nada que objetar.",
+		"description": ""
+	},
+	"sanitation_ruleset.unnecessaryURLValue": {
+		"message": "Valores de URL innecesarios",
+		"description": ""
+	},
+	"sanitation_ruleset.disabledFeatures": {
+		"message": "Opciones deshabilitadas",
+		"description": ""
+	},
+	"sanitation_ruleset.blockMode": {
+		"message": "Modo de bloqueo",
+		"description": ""
+	},
+	"sanitation_ruleset.thresholds": {
+		"message": "Umbrales",
+		"description": ""
+	},
+	"sanitation_ruleset.performance": {
+		"message": "Rendimiento",
+		"description": ""
+	},
+	"sanitation_error.unnecessaryURLValue": {
+		"message": "El valor del URL para \"{url}\" es el mismo que el de la opción global para \"{setting-title}\".",
+		"description": ""
+	},
+	"sanitation_resolution.removeURLValue": {
+		"message": "borrar el valor del URL",
+		"description": ""
+	},
+	"sanitation_error.disabledFeatures": {
+		"message": "Todas las opciones de {api} están deshabilitadas pero la protección está habilitada.",
+		"description": ""
+	},
+	"sanitation_resolution.disableMainFlag": {
+		"message": "deshabilitar la opción principal",
+		"description": ""
+	},
+	"sanitation_resolution.enableFeatures": {
+		"message": "habilitar opciones",
+		"description": ""
+	},
+	"sanitation_error.badBlockMode": {
+		"message": "Se recomienda usar los modos de bloqueo \"falsear\" o \"preguntar\".",
+		"description": ""
+	},
+	"sanitation_resolution.switchToFakeReadout": {
+		"message": "cambiar a \"falsear la lectura\"",
+		"description": ""
+	},
+	"sanitation_error.blockModeVsProtection": {
+		"message": "Con el modo de bloqueo \"{blockMode}\", no funciona la protección {api}.",
+		"description": ""
+	},
+	"sanitation_resolution.disableFlag": {
+		"message": "deshabilitar \"{flag}\"",
+		"description": ""
+	},
+	"sanitation_error.fakeInputWithWhiteRng": {
+		"message": "No usar el generador de números aleatorios blanco con \"{blockMode}\".",
+		"description": ""
+	},
+	"sanitation_resolution.switchToNonPersistentRng": {
+		"message": "cambiar al generador de números aleatorios \"no persistente\"",
+		"description": ""
+	},
+	"sanitation_error.valueTooLow": {
+		"message": "\"{setting}\" no debe ser menor que {value}.",
+		"description": ""
+	},
+	"sanitation_error.valueTooHigh": {
+		"message": "\"{setting}\" no debe ser mayor que {value}.",
+		"description": ""
+	},
+	"sanitation_resolution.setTo": {
+		"message": "asignar el valor {value}",
+		"description": ""
+	},
+	"sanitation_error.storeNotificationData": {
+		"message": "Almacenar datos de notificaciones puede causar un rendimiento bajo.",
+		"description": ""
+	},
+	"sanitation_error.storeImage": {
+		"message": "Almacenar imágenes para su inspección usa una gran cantidad de RAM.",
+		"description": ""
+	}	
 }
