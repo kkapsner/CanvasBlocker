@@ -130,6 +130,27 @@
 				"panel": "shared"
 			},
 			"problemMatcher": []
+		},
+		{
+			"label": "open git UI",
+			"type": "shell",
+			"windows": {
+				"command": "git-cola"
+			},
+			"linux": {
+				"command": "git-cola"
+			},
+			"osx": {
+				"command": "git-cola"
+			},
+			"args": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
 		}
 	]
 }
