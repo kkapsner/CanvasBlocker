@@ -1,3 +1,16 @@
+Version 0.5.6:
+	changes:
+		- 
+	
+	new features:
+		- 
+	
+	fixes:
+		- 
+	
+	known issues:
+		- if a data URL is blocked the page action button does not appear
+
 Version 0.5.5:
 	changes:
 		- DOMRect uses double cache (value and complete DOMRect)
