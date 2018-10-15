@@ -28,6 +28,7 @@ Special thanks to:
  * Maleficient for the French translation
  * yfdyh000 for the Chinese translation
  * micrococo for the Spanish translation
+ * STim99 for the Russian translation
 
 If you want to support this addon you can donate to the following bitcoin address:
 	159Y9BLcfHyrp6wj6f3syEuk92xkRVTiie
