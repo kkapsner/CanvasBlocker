@@ -200,7 +200,7 @@
 			let container = document.createElement("div");
 			container.className = "urlValues " + (setting.getExpand()? "expanded": "collapsed");
 			container.appendChild(input);
-			var collapser = document.createElement("span");
+			var collapser = document.createElement("button");
 			collapser.classList.add("collapser");
 			container.appendChild(collapser);
 			collapser.addEventListener("click", function(){
@@ -227,6 +227,7 @@
 				if (url){
 					setting.set(setting.get(url), url);
 					newInput.value = "";
+					newInput.focus();
 				}
 			};
 			newInput.addEventListener("keypress", function(event){
@@ -235,7 +236,7 @@
 				}
 			});
 			footCell.appendChild(newInput);
-			let footPlus = document.createElement("span");
+			let footPlus = document.createElement("button");
 			footPlus.classList.add("add");
 			footPlus.textContent = "+";
 			footPlus.addEventListener("click", addURLSetting);
@@ -282,11 +283,13 @@
 					inputCell.appendChild(input);
 					row.appendChild(inputCell);
 					let clearCell = document.createElement("td");
-					clearCell.className = "reset";
-					clearCell.textContent = "\xD7";
-					clearCell.addEventListener("click", function(){
+					let clearButton = document.createElement("button");
+					clearButton.className = "reset";
+					clearButton.textContent = "\xD7";
+					clearButton.addEventListener("click", function(){
 						setting.reset(entry.url);
 					});
+					clearCell.appendChild(clearButton);
 					row.appendChild(clearCell);
 					body.appendChild(row);
 				});

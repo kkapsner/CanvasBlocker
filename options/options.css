@@ -125,7 +125,7 @@ input[type=""], input[type="text"], input[type="number"], select {
 }
 
 .urlValues {
-	padding-right: 1em;
+	padding-right: 1.15em;
 	position: relative;
 }
 .urlValues.collapsed table {
@@ -146,6 +146,9 @@ input[type=""], input[type="text"], input[type="number"], select {
 .urlValues table .reset, .urlValues table .add, .urlValues table .url {
 	cursor: pointer;
 	margin: 0 0.2em;
+	padding: 0;
+	border: none;
+	background-color: transparent;
 }
 .urlValues table .url {
 	min-width: 4em;
@@ -160,8 +163,11 @@ input[type=""], input[type="text"], input[type="number"], select {
 	right: 0;
 	text-align: center;
 	width: 1em;
-	height: 1em;
+	height: 2em;
 	cursor: pointer;
+	padding: 0;
+	border: none;
+	background-color: transparent;
 }
 .urlValues.collapsed .collapser::after {
 	content: "\25B6";
