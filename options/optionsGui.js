@@ -222,17 +222,23 @@
 			footCell.colSpan = 3;
 			let newInput = document.createElement("input");
 			newInput.title = browser.i18n.getMessage("inputURL");
-			footCell.appendChild(newInput);
-			let footPlus = document.createElement("span");
-			footPlus.classList.add("add");
-			footPlus.textContent = "+";
-			footPlus.addEventListener("click", function(){
+			const addURLSetting = function(){
 				var url = newInput.value.trim();
 				if (url){
 					setting.set(setting.get(url), url);
 					newInput.value = "";
 				}
+			};
+			newInput.addEventListener("keypress", function(event){
+				if ([10, 13].indexOf(event.keyCode) !== -1){
+					addURLSetting();
+				}
 			});
+			footCell.appendChild(newInput);
+			let footPlus = document.createElement("span");
+			footPlus.classList.add("add");
+			footPlus.textContent = "+";
+			footPlus.addEventListener("click", addURLSetting);
 			footCell.appendChild(footPlus);
 			footRow.appendChild(footCell);
 			foot.appendChild(footRow);
