@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "Изменяет некоторые API JS для предотвращения снятия цифровых отпечатков.",
 		"description": ""
 	},
 	
@@ -13,11 +13,11 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\nзащита успешна для:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " (API, белый список для {url})",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -26,19 +26,19 @@
 	},
 	
 	"more": {
-		"message": "more",
+		"message": "еще",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "меньше",
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "Подождите...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "Поиск",
 		"description": ""
 	},
 	
@@ -48,57 +48,57 @@
 	},
 	
 	"readout": {
-		"message": "readout",
+		"message": "считывание",
 		"description": ""
 	},
 	
 	"options": {
-		"message": "Settings",
+		"message": "Настройки",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "На этой странице вы можете настроить параметры CanvasBlocker.",
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "CanvasBlocker установлен. Если вы хотите иметь доступ к этой странице в будущем, добавьте ее в закладки.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlocker обновлен. Если вы хотите иметь доступ к этой странице в будущем и еще не добавили ее в закладки, добавьте ее в закладки.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate":{
-		"message": "Don't show up again after update.",
+		"message": "Не показывать снова после обновления.",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "Открыть в отдельной вкладке",
 		"description": ""
 	},
 	
 	"section_asking": {
-		"message": "Asking",
+		"message": "Asking (спрашивать)",
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "Фейковые данные",
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "Уведомления",
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "Списки",
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "Прочие",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "Настройки",
 		"description": ""
 	},
 	"section_canvas-api":{
@@ -123,119 +123,119 @@
 	},
 	
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "Экспертный режим",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "Отображение дополнительных параметров.",
 		"description": ""
 	},
 	
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "Отображать описания",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "Отображает описания настроек.",
 		"description": ""
 	},
 	
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "Нажмите здесь, чтобы скрыть эту настройку.",
 		"description": ""
 	},
 	
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "Отобразить скрытые настройки",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "Активируйте, чтобы отобразить скрытые настройки.",
 		"description": ""
 	},
 	
 	"askForInvisiblePermission": {
-		"message": "Do you want to allow invisible <canvas>?",
+		"message": "Вы хотите разрешить невидимый <canvas>?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Do you want to allow invisible <canvas> input?",
+		"message": "Вы хотите разрешить невидимый <canvas> input(ввод)?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "Do you want to allow invisible <canvas> readout?",
+		"message": "Вы хотите разрешить невидимый <canvas> readout(считывание)?",
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "Вы хотите разрешить <canvas>?",
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "Do you want to allow <canvas> input?",
+		"message": "Вы хотите разрешить <canvas> input(ввод)?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Do you want to allow <canvas> readout?",
+		"message": "Вы хотите разрешить <canvas> readout(считывание)?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "Do you want to allow the red bordered <canvas>?",
+		"message": "Вы хотите разрешить красную рамку для <canvas>?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Do you want to allow input in the red bordered <canvas>?",
+		"message": "Вы хотите разрешить input(запись) красной рамки для <canvas>?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "Do you want to allow the readout of the red bordered <canvas>?",
+		"message": "Вы хотите разрешить readout(считывание) красной рамки для <canvas>?",
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "Вы хотите разрешить audio API?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio API input?",
+		"message": "Вы хотите разрешить audio API input(ввод)?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio API readout?",
+		"message": "Вы хотите разрешить audio API readout(считывание)?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "Вы хотите разрешить the history API?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "Вы хотите разрешить history API input(ввод)?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "Вы хотите разрешить history API readout(считывание)?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "Вы хотите разрешить window API?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window API input?",
+		"message": "Вы хотите разрешить window API input(ввод)?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window API readout?",
+		"message": "Вы хотите разрешить window API readout(считывание)?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "Вы хотите разрешить the DOMRect API?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect API input?",
+		"message": "Вы хотите разрешить DOMRect API input(ввод)?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "Вы хотите разрешить DOMRect API readout(считывание)?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -243,57 +243,57 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
+		"message": "Когда в CanvasBlocker в режиме блокировать и установлено значение «запрашивать разрешение» или «запрашивать разрешение для API для чтения(readout)», сообщение подтверждения будет появляться каждый раз, когда страница пытается получить доступ к API или readout(считывание) API. Этот параметр пытается отобразить сообщение подтверждения только один раз для каждой страницы независимо от того, сколько раз страница пытается получить доступ к API. Тем не менее, несколько сообщений с подтверждением все еще могут отображаться на некоторых страницах.\n\nНет: каждый раз спрашивать\n\nИндивидуальный: каждый тип API (context(контекст), input(ввод), readout(считывание)) должен быть определен отдельно\n\n Комбинированный: все типы API будут подтверждены вместе",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "нет",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
-		"message": "individual",
+		"message": "индивидуальный",
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "комбинированный",
 		"description": ""
 	},
 	"askDenyMode_title":{
-		"message": "Ask deny mode",
+		"message": "Режим если отказ",
 		"description": ""
 	},
 	"askDenyMode_description":{
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "Какой режим следует использовать, когда разрешение отклонено.",
 		"description": ""
 	},
 	"askDenyMode_options.block":{
-		"message": "block",
+		"message": "блокировать",
 		"description": ""
 	},
 	"askDenyMode_options.fake":{
-		"message": "fake",
+		"message": "фейк",
 		"description": ""
 	},
 	
 	"showCanvasWhileAsking_title":{
-		"message": "Show canvas content",
+		"message": "Показывать содержимое canvas",
 		"description": ""
 	},
 	"showCanvasWhileAsking_description":{
-		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
+		"message": "Показывать содержимое canvas, для которого запрашивается разрешение, если это возможно.",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message":{
-		"message": "The webpage wants to read the content of the following canvas:",
+		"message": "Веб-страница хочет прочитать содержимое следующего canvas:",
 		"description": ""
 	},
 	
 	"blackList_description": {
-		"message": "Domains or URLs where all APIs shall always be blocked. To add multiple entries, separate them by commas.",
+		"message": "Домены или URL-адреса, где все API всегда должны быть заблокированы. Чтобы добавить несколько записей, разделите их запятыми.",
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "Черный список",
 		"description": ""
 	},
 	
@@ -302,52 +302,52 @@
 		"description": ""
 	},
 	"blockMode_urlSpecific": {
-		"message": "To set individual block modes for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired block mode.",
+		"message": "Чтобы установить режим блокировать для определенных веб-сайтов, щелкните по черной стрелке, чтобы открыть меню, добавить домен или URL-адрес, нажав кнопку \"+\" и выбрав желаемый режим блокировки.",
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "разрешить все",
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "разрешить только белый список",
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "ask for permission",
+		"message": "попросить разрешения",
 		"description": ""
 	},
 	"blockMode_options.askReadout": {
-		"message": "ask for readout API permission",
+		"message": "попросить разрешения для readout(считывание) API",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "блокировать все",
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "блокировать только черный список",
 		"description": ""
 	},
 	"blockMode_options.blockReadout": {
-		"message": "block readout API",
+		"message": "блокировать readout(считывание) API",
 		"description": ""
 	},
 	"blockMode_options.fakeReadout": {
-		"message": "fake readout API",
+		"message": "подделывать readout(считывание) API",
 		"description": ""
 	},
 	"blockMode_options.fakeInput": {
-		"message": "fake at input",
+		"message": "подделывать для input(ввод)",
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "Режим блокировки",
 		"description": ""
 	},
 	
 	"urlSettings_title": {
-		"message": "Site specific values",
+		"message": "Сайты с конкретными значениями",
 		"description": ""
 	},
 	"urlSettings_description": {
@@ -356,180 +356,180 @@
 	},
 	
 	"inputURL": {
-		"message": "Input domain or URL \"RegExp\":",
+		"message": "Введите домен в URL \"RegExp\":",
 		"description": ""
 	},
 	
 	"minFakeSize_description": {
-		"message": "Canvases with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
+		"message": "<canvas> с меньшей или равной площадью, чем это число, не будут подделаны. Это параметр для предотвращения обнаружения.\nВНИМАНИЕ: Это снижает безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение выше 100.",
 		"description": ""
 	},
 	"minFakeSize_title": {
-		"message": "Minimal fake size",
+		"message": "Минимальный размер, который будет подделан",
 		"description": ""
 	},
 	
 	"maxFakeSize_description": {
-		"message": "Canvases with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 1 000 000.",
+		"message": "<canvas> с большей площадью, чем это число не будут подделаны. (Введите ноль, чтобы отключить.) Это параметр для производительности, который может предотвратить зависания браузера и должен быть настроен на вычислительную мощность устройства.\nВНИМАНИЕ: это снижает безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение ниже 1 000 000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
-		"message": "Maximal fake size",
+		"message": "Максимальный размер, который будет подделан",
 		"description": ""
 	},
 	
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action.\n\nconstant: within one web page a color will always be faked to the same color.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "отсутствут (полностью белый): возвращается полностью белое изображение. При этом должна быть активирована опция \"подделать альфа-канал\". ВНИМАНИЕ: не используйте это с режимом \"подделать для input(ввод)\".\n\nнепостоянный: случайные значения будут определяться заново для каждого действия подделки.\n\nконстантный: в пределах одной веб-страницы цвет всегда будет подделан на тот же цвет.\n\nпостоянный: случайное число будет определено только один раз для каждого домена.",
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "persistent",
+		"message": "постоянный",
 		"description": ""
 	},
 	"rng_options.constant": {
-		"message": "constant",
+		"message": "константный",
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "non persistent",
+		"message": "непостоянный",
 		"description": ""
 	},
 	"rng_options.white": {
-		"message": "none (completely white)",
+		"message": "отсутствут (полностью белый)",
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "Генератор случайных чисел",
 		"description": ""
 	},
 	
 	"persistentRndStorage_title": {
-		"message": "Persistent storage",
+		"message": "Постоянное хранение",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"message": "Сохраняет данные для генератора постоянных случайных чисел для использования после перезапуска",
 		"description": ""
 	},
 	
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "Сохранять постоянные данные",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "If data for the persistent random number generator shall be stored. Otherwise it is discarded on browser shutdown.",
+		"message": "Сохранять данные для постоянного генератора случайных чисел. В противном случае он сбрасываются при завершении работы браузера.",
 		"description": ""
 	},
 	
 	"persistentRndClearInterval_title": {
-		"message": "Clear interval of the persistent data",
+		"message": "Интервал отчистки постоянных данных",
 		"description": ""
 	},
 	"persistentRndClearInterval_description": {
-		"message": "After the specified interval the persistent data is cleared automatically. (Enter zero to disable.)",
+		"message": "По истечении заданного интервала постоянные данные очищаются автоматически. (Введите ноль, чтобы отключить.)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "секунд",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "минут",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "часов",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "дней",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "недель",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "месяцы",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "лет",
 		"description": ""
 	},
 	
 	"clearPersistentRnd_title": {
-		"message": "Clear persistent random storage",
+		"message": "Отчистить хранилище постоянных случайных данных",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Deletes all data for the persistent random number generator.",
+		"message": "Удаляет все данные для генератора постоянных случайных чисел.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "Отчистить",
 		"description": ""
 	},
 	
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "Игнорировать наиболее часто используемые цвета",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "Количество цветов, которые не подделываются на <canvas>. Это параметр для предотвращения обнаружения.\nВНИМАНИЕ: это может снизить производительность дополнения, потому что статистика цвета должна быть рассчитана для каждого изображения, также это может снизить безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение выше 3.",
 		"description": ""
 	},
 	
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "Минимальное количество цветов",
 		"description": ""
 	},
 	"minColors_description": {
-		"message": "Number of colors that a canvas must have to be faked.\nCAUTION: This can lower the safety of the addon, therefore it is highly recommended not to set this value above 10.",
+		"message": "Количество цветов, которые необходимо подделать в <canvas>.\nВНИМАНИЕ: это может снизить безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение выше 10.",
 		"description": ""
 	},
 	
 	"fakeAlphaChannel_title": {
-		"message": "Fake the alpha channel",
+		"message": "Подделать альфа-канал",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Activates the faking of the alpha channel (transparency).",
+		"message": "Активирует подделывание Альфа-канала (прозрачность).",
 		"description": ""
 	},
 	
 	"useCanvasCache_title": {
-		"message": "Use canvas cache",
+		"message": "Использовать кеш - canvas",
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvases are read several times, but decreases it for big canvases.",
+		"message": "Включает кэш <canvas>. Это может предотвратить обнаружение и увеличить производительность при чтении небольших <canvas> несколько раз, но уменьшает его для больших <canvas>.",
 		"description": ""
 	},
 	
 	"protectedAPIFeatures_title": {
-		"message": "Protected API features",
+		"message": "Защищенные функции API",
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
+		"message": "Список защищенных функций API. При снятии флажка эта функция API не будет защищена.",
 		"description": ""
 	},
 	
 	"disableNotifications": {
-		"message": "disable notifications",
+		"message": "отключить уведомления",
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "показать настройки",
 		"description": ""
 	},
 	"displayCallingStack": {
-		"message": "display calling stack",
+		"message": "показать стек вызовов",
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "показать полный URL",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -537,118 +537,118 @@
 		"description": ""
 	},
 	"enableStackList_title": {
-		"message": "Use file specific whitelist",
+		"message": "Использовать файловый белый список",
 		"description": ""
 	},
 	
 	"preBlock": {
-		"message": "API blocked on {url} because CanvasBlocker settings were not loaded in time.",
+		"message": "API заблокирован на {url}, поскольку параметры CanvasBlocker вовремя не загрузились.",
 		"description": ""
 	},
 	"blocked": {
-		"message": "API blocked on {url}.",
+		"message": "API заблокирован на {url}.",
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Faked canvas readout on {url}",
+		"message": "Подделан canvas readout(чтение) на {url}",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Faked audio readout on {url}",
+		"message": "Подделан audio readout(чтение) на {url}",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Faked history readout on {url}",
+		"message": "Подделан history readout(чтение) на {url}",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Faked window readout on {url}",
+		"message": "Подделан window readout(чтение) на {url}",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "Faked DOMRect readout on {url}",
+		"message": "Подделан DOMRect readout(чтение) на {url}",
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "Faked at input on {url}",
+		"message": "Подделан input(ввод) на {url}",
 		"description": ""
 	},
 	
 	"ignoreList_description": {
-		"message": "Domains or URLs where no notifications shall be shown. To add multiple entries, separate them by commas.",
+		"message": "Домены или URL-адреса, где не должны отображаться уведомления. Чтобы добавить несколько записей, разделите их запятыми.",
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "Игнорируемый список сайтов",
 		"description": ""
 	},
 	
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "Игнорируемые API",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
-		"message": "No notifications will be displayed for the selected APIs.",
+		"message": "Уведомления для выбранных API отображаться не будут.",
 		"description": ""
 	},
 	"ignorelistDomain": {
-		"message": "silence domain",
+		"message": "тихий домен",
 		"description": ""
 	},
 	"ignorelistURL": {
-		"message": "ignore URL",
+		"message": "игнорируемый URL-адрес",
 		"description": ""
 	},
 	"selectIgnore": {
-		"message": "Select domain or URL to add to ignore list:",
+		"message": "Выберите домен или URL для добавления в список игнорируемых:",
 		"description": ""
 	},
 	"inputIgnore": {
-		"message": "Input domain or URL \"RegExp\" to add to ignore list:",
+		"message": "Введите домен или URL \"RegExp\" для добавления в список игнорируемых:",
 		"description": ""
 	},
 	"inputIgnoreDomain": {
-		"message": "Input domain to add to ignore list:",
+		"message": "Введите домен для добавления в список игнорируемых:",
 		"description": ""
 	},
 	"inputIgnoreURL": {
-		"message": "Input URL \"RegExp\" to add to ignore list:",
+		"message": "Введите URL \"RegExp\" для добавления в список игнорируемых::",
 		"description": ""
 	},
 	"selectWhitelist": {
-		"message": "Select domain or URL to add to whitelist:",
+		"message": "Выберите домен или URL для добавления в белый список:",
 		"description": ""
 	},
 	"inputWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to whitelist:",
+		"message": "Введите домен или URL \"RegExp\" для добавления в белый список:",
 		"description": ""
 	},
 	"inputWhitelistDomain": {
-		"message": "Input domain to add to whitelist:",
+		"message": "Введите домен для добавления в белый список:",
 		"description": ""
 	},
 	"inputWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to whitelist:",
+		"message": "Введите URL \"RegExp\" для добавления в белый список:",
 		"description": ""
 	},
 	"selectSessionWhitelist": {
-		"message": "Select domain or URL to add to the session whitelist:",
+		"message": "Выберите домен или URL для добавления в белый список для этой сессии:",
 		"description": ""
 	},
 	"inputSessionWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to the session whitelist:",
+		"message": "Введите URL \"RegExp\" для добавления в белый список для этой сессии:",
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Input domain to add to the session whitelist:",
+		"message": "Выберите домен для добавления в белый список для этой сессии:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to the session whitelist:",
+		"message": "Введите URL \"RegExp\" для добавления в белый список для этой сессии:",
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "настройки",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -656,7 +656,7 @@
 		"description": ""
 	},
 	"showCallingFile_title": {
-		"message": "Show calling file",
+		"message": "Показать вызывающий файл",
 		"description": ""
 	},
 	"showCompleteCallingStack_description": {
@@ -664,23 +664,23 @@
 		"description": ""
 	},
 	"showCompleteCallingStack_title": {
-		"message": "Display complete calling stack",
+		"message": "Показать полный стек вызовов",
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Show a notification when the block mode is set to \"fake readout API\".",
+		"message": "Показывать уведомление, когда режим блокировки установлен в \"подделывать readout(чтение) API\".",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
-		"message": "To deactivate notifications for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы отключить уведомления для определенных сайтов, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL затем нажмите на \"+\" и снимите галочку.",
 		"description": ""
 	},
 	"showNotifications_title": {
-		"message": "Show notifications",
+		"message": "Показать уведомления",
 		"description": ""
 	},
 	"highlightPageAction_description": {
-		"message": "Highlight the page action icon for better visibility.",
+		"message": "Подсветить активный значок на странице для лучшей видимости.",
 		"description": ""
 	},
 	"highlightPageAction_urlSpecific": {
@@ -688,19 +688,19 @@
 		"description": ""
 	},
 	"highlightPageAction_title": {
-		"message": "Highlight page action icon",
+		"message": "Подсветить активный значок на странице",
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "без подсветки",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "цветом",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "blink",
+		"message": "мигать",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -708,7 +708,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Display badge",
+		"message": "Отображать значок",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -720,86 +720,86 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Change toolbar icon on notification",
+		"message": "Менять значок панели инструментов в уведомлении",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "ничего не менять",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "менять цвет",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "blink",
+		"message": "мигать",
 		"description": ""
 	},
 	"sourceOutput": {
-		"message": "Calling file",
+		"message": "Вызывающий файл",
 		"description": ""
 	},
 	"stackEntryOutput": {
-		"message": "{url} line {line} column {column}",
+		"message": "{url} строка {line} колонка {column}",
 		"description": ""
 	},
 	"stackList_description": {
-		"message": "JS files which are allowed to use all APIs. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"message": "JS файлы, которым разрешено использовать все API. Входные данные должны быть в формате JSON. Пример:[{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
 		"description": ""
 	},
 	"stackList_title": {
-		"message": "File specific whitelist",
+		"message": "Белый список файлов",
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "Белый список",
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs. To add multiple entries, separate them by commas.",
+		"message": "Домены или URL-адреса, которым разрешено использовать все API. Чтобы добавить несколько записей, разделите их запятыми.",
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "белый список",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "whitelist domain",
+		"message": "белый список доменов",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "whitelist URL",
+		"message": "URL белого списка",
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "игнорировать",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "whitelist temporarily",
+		"message": "белый список (временно)",
 		"description": ""
 	},
 	
 	"sessionWhiteList_title": {
-		"message": "Session whitelist",
+		"message": "Белый список этой сессий",
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs during the current session. To add multiple entries, separate them by commas.",
+		"message": "Домены или URL-адреса, которым разрешено использовать все API в течение текущей сессии. Чтобы добавить несколько записей, разделите их запятыми.",
 		"description": ""
 	},
 	
 	"whitelistDomainTemporarily": {
-		"message": "whitelist domain temporarily",
+		"message": "белый список доменов (временно)",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "whitelist URL temporarily",
+		"message": "белый список URL (временно)",
 		"description": ""
 	},
 	
 	"storeNotificationData_title": {
-		"message": "Store detail data of the notifications",
+		"message": "Показывать подробные данные уведомлений",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -808,68 +808,68 @@
 	},
 	
 	"storeImageForInspection_title": {
-		"message": "Store image for inspection",
+		"message": "Хранить изображение для просмотра",
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Enables the storage of the content of the faked canvas.\nCAUTION: This may lead to a lot of memory consumption.",
+		"message": "Позволяет хранить содержимое подделанного canvas.\nВНИМАНИЕ: это может привести к большому потреблению памяти.",
 		"description": ""
 	},
 	
 	"protectAudio_title": {
-		"message": "Protect audio API",
+		"message": "Защищать audio API",
 		"description": ""
 	},
 	"protectAudio_description": {
-		"message": "If the audio API shall be protected as well",
+		"message": "Если the audio API также должен быть защищен",
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы исключить определенные сайты из этой защиты, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\" и снимите галочку.",
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Buffer fake rate",
+		"message": "Количество поддлаемых значение",
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "How many of the values per read request shall be faked.",
+		"message": "Сколько значений на запрос чтения должно быть подделано.",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1 значение",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10 значений",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100 значений",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000 значений",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "0,1% от значений",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "1% от значений",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "10% от значений",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "100% от значений",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "Уровень шума",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
@@ -877,104 +877,104 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "минимальный",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "низкий",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "средний",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "высокий",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "максимальный",
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "Использовать кэш аудио",
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"message": "Включает кэш аудио. Это может предотвратить обнаружение, но снижает производительность.",
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Some pages use a very poorly written audio fingerprinting script which will cause Firefox to slow down. To disable the cache for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "На некоторых страницах используется очень плохо написанный звуковой скрипт, который приводит к тому что Firefox начинает медленно работать. Чтобы отключить кэш для определенных сайтов, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\" и снимите с него галочку.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "Использовать фиксированные индексы",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices shall always be faked.",
+		"message": "Если некоторые из используемых индексов всегда должны быть подделаны.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
-		"message": "Fixed indices",
+		"message": "Фиксированные индексы",
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "The indices that are always faked. To add multiple entries, separate them by commas.",
+		"message": "Индексы, которые всегда подделываются. Чтобы добавить несколько записей, разделите их запятыми.",
 		"description": ""
 	},
 	
 	"historyLengthThreshold_title": {
-		"message": "History length threshold",
+		"message": "Порог длины истории",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximal length of the history that is reported to the website.",
+		"message": "Максимальная длина истории, которая сообщается сайту.",
 		"description": ""
 	},
 	
 	"protectWindow_title": {
-		"message": "Protect window API",
+		"message": "Защищать window API",
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "window.opener and window.name will be protected. This can render some webpages unusable.",
+		"message": "window.opener и window.name будут защищены. Это может сделать некоторые веб-страницы непригодными для использования.",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы исключить определенные сайты из этой защиты, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\" и снимите галочку",
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "Protecting the window API breaks reCAPTCHA. Do you want to add an exception for it?",
+		"message": "Защита window API нарушает reCAPTCHA. Вы хотите добавить исключение для него?",
 		"description": ""
 	},
 	
 	"protectDOMRect_title": {
-		"message": "Protect DOMRect API",
+		"message": "Защищать DOMRect API",
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "This protects against the \"getClientRects()\" fingerprinting and several similar methods.",
+		"message": "Это защищает от снятия отпечатков \"getClientRects()\" и нескольких подобных методов.",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы исключить определенные сайты из этой защиты, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\" и снимите галочку.",
 		"description": ""
 	},
 	
 	"domRectIntegerFactor_title": {
-		"message": "DOMRect integer factor",
+		"message": "DOMRect целочисленный коэффициент",
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
-		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"message": "С помощью CSS можно управлять некоторой частью пикселя. Чтобы предотвратить обнаружение, значения DOMRect, которые умножаются на этот коэффициент, целые числа не будут изменены.",
 		"description": ""
 	},
 	
 	"theme_title": {
-		"message": "Theme",
+		"message": "Тема",
 		"description": ""
 	},
 	"theme_description": {
@@ -982,15 +982,15 @@
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "стандартная",
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "светлая",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "темная",
 		"description": ""
 	},
 	
@@ -999,12 +999,12 @@
 		"description": ""
 	},
 	"blockDataURLs_description": {
-		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking them prevents the real fingerprint to reach any server.",
+		"message": "Data URL cтраницы не могут быть защищены от снятия цифровых отпечатков (см. https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Их блокирование  предотвращает отправку реального цифрового отпечатка.",
 		"description": ""
 	},
 	
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "Примечания к выпуску",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1012,45 +1012,45 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Show",
+		"message": "Показать",
 		"description": ""
 	},
 	
 	"logLevel_title": {
-		"message": "Logging level",
+		"message": "Уровень ведения логов",
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "To find the cause of an error, detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.\n\nThe logging can be viewed in the Browser Console (Ctrl+Shift+J) and the Web Console (Ctrl+Shift+K).",
+		"message": "Чтобы найти причину ошибки, полезно подробное ведение журнала действий дополнения. Этот параметр управляет уровнем детализации журнала.\n\nЗапись журнала можно просмотреть в консоли браузера (Ctrl+Shift+J) и веб-консоли (Ctrl+Shift+K).",
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "none",
+		"message": "none (нет)",
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "error (ошибка)",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "warning (предупреждение)",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "message (сообщение)",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "notice (уведомление)",
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "verbose",
+		"message": "verbose (подробный)",
 		"description": ""
 	},
 	
 	"exportSettings_title": {
-		"message": "Export settings",
+		"message": "Экспорт настроек",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1059,7 +1059,7 @@
 	},
 	
 	"openSettingSanitation_title": {
-		"message": "Setting sanitation",
+		"message": "Санитария настроек",
 		"description": ""
 	},
 	"openSettingSanitation_description": {
@@ -1067,25 +1067,25 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Open",
+		"message": "Открыть",
 		"description": ""
 	},
 	
 	"inspectSettings_label": {
-		"message": "Inspect",
+		"message": "Посмотреть",
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "Сохранить",
 		"description": ""
 	},
 	"loadSettings_label": {
-		"message": "Load",
+		"message": "Загрузить",
 		"description": ""
 	},
 	
 	"resetSettings_title": {
-		"message": "Reset settings",
+		"message": "Сброс настроек",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1093,65 +1093,65 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reset",
+		"message": "Сброс",
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Are you sure you want to reset all settings?",
+		"message": "Вы уверены, что хотите сбросить все настройки?",
 		"description": ""
 	},
 	
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "Настройки",
 		"description": ""
 	},
 	"browserAction_test": {
-		"message": "Test",
+		"message": "Проверка",
 		"description": ""
 	},
 	"browserAction_review": {
-		"message": "Review",
+		"message": "Отзыв",
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Report issue",
+		"message": "Сообщить о проблеме",
 		"description": ""
 	},
 	
 	"sanitation_title": {
-		"message": "Setting sanitation",
+		"message": "Санитария настроек",
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advice on suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"message": "Эта страница помогает найти неправильные конфигурации в параметрах CanvasBlocker. Он также дает советы по неоптимальным настройкам. Но не рекомендуется слепо исправлять все предложения.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Nothing to complain.",
+		"message": "Жалоб нет",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
-		"message": "Unnecessary URL values",
+		"message": "Ненужные значения URL",
 		"description": ""
 	},
 	"sanitation_ruleset.disabledFeatures": {
-		"message": "Disabled features",
+		"message": "Отключенные функции",
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "Режим блокирования",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
-		"message": "Thresholds",
+		"message": "Пределы",
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "Производительность",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
+		"message": "Значение URL для \"{url}\" совпадает с глобальным значением для \"{setting-title}\".",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
@@ -1159,59 +1159,59 @@
 		"description": ""
 	},
 	"sanitation_error.disabledFeatures": {
-		"message": "All features of {api} are disabled but the protection is enabled.",
+		"message": "Все функции {api} отключены, но защита включена.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
-		"message": "disable main flag",
+		"message": "отключить главный флаг",
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "включить функции",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
-		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"message": "Рекомендуется использовать режимы блокировки \"подделывать\" или \"попросить разрешения\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToFakeReadout": {
-		"message": "switch to \"fake readout\"",
+		"message": "переключиться на \"подделывать readout(считывание)\"",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
-		"message": "With blocking mode \"{blockMode}\" the {api} protection is not working.",
+		"message": "В режиме блокировки \"{block Mode}\" защита {api} не работает.",
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
-		"message": "disable \"{flag}\"",
+		"message": "отключить \"{flag}\"",
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "Do not use white random number generator with \"{blockMode}\".",
+		"message": "Не используйте генератор случайных чисел белого с \"{blockMode}\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "switch to \"non persistent\" rng",
+		"message": "переключиться на \"непостоянный\" ГСЧ",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
-		"message": "\"{setting}\" should not be lower than {value}.",
+		"message": "\"{setting}\" не должно быть ниже {value}.",
 		"description": ""
 	},
 	"sanitation_error.valueTooHigh": {
-		"message": "\"{setting}\" should not be higher than {value}.",
+		"message": "\"{setting}\" не должно превышать {value}.",
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
-		"message": "set to {value}",
+		"message": "установить на {value}",
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
-		"message": "Storing notification data may lead to slow performance.",
+		"message": "Показывать подробные данные уведомлений может привести к снижению производительности.",
 		"description": ""
 	},
 	"sanitation_error.storeImage": {
-		"message": "Storing the image for inspection has a high RAM footprint.",
+		"message": "Хранить изображение для просмотра потребляет много ОЗУ",
 		"description": ""
 	}
 }
