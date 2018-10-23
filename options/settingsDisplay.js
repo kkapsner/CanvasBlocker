@@ -18,20 +18,20 @@
 		{
 			"name": "askOnlyOnce",
 			"displayDependencies": {
-				"blockMode": ["askReadout", "ask"]
+				"blockMode": ["ask"]
 			}
 		},
 		{
 			"name": "askDenyMode",
 			"displayDependencies": {
-				"blockMode": ["askReadout", "ask"],
+				"blockMode": ["ask"],
 				"displayAdvancedSettings": [true]
 			}
 		},
 		{
 			"name": "showCanvasWhileAsking",
 			"displayDependencies": {
-				"blockMode": ["askReadout", "ask"],
+				"blockMode": ["ask"],
 				"displayAdvancedSettings": [true]
 			}
 		},
@@ -40,11 +40,11 @@
 			"name": "rng",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				}
@@ -54,12 +54,12 @@
 			"name": "storePersistentRnd",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"rng": ["persistent"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"rng": ["persistent"],
 					"displayAdvancedSettings": [true]
@@ -71,12 +71,12 @@
 			"inputs": ["persistentRndClearIntervalValue", "persistentRndClearIntervalUnit"],
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"rng": ["persistent"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"rng": ["persistent"],
 					"displayAdvancedSettings": [true]
@@ -87,12 +87,12 @@
 			"name": "clearPersistentRnd",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"rng": ["persistent"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"rng": ["persistent"],
 					"displayAdvancedSettings": [true]
@@ -163,7 +163,7 @@
 		{
 			"name": "showCallingFile",
 			"displayDependencies": {
-				"blockMode": ["askReadout", "ask"],
+				"blockMode": ["ask"],
 				"displayAdvancedSettings": [true]
 			}
 		},
@@ -179,7 +179,7 @@
 		{
 			"name": "enableStackList",
 			"displayDependencies": {
-				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"],
+				"blockMode": ["fake", "block", "ask"],
 				"displayAdvancedSettings": [true]
 			}
 		},
@@ -194,25 +194,28 @@
 		{
 			"name": "whiteList",
 			"displayDependencies": {
-				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"],
+				"blockMode": ["fake", "block", "ask"],
 				"displayAdvancedSettings": [true]
 			}
 		},
 		{
 			"name": "sessionWhiteList",
 			"displayDependencies": {
-				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "block", "ask"],
+				"blockMode": ["fake", "block", "ask"],
 				"displayAdvancedSettings": [true]
 			}
 		},
 		{
 			"name": "blackList",
 			"displayDependencies": {
-				"blockMode": ["blockReadout", "fakeReadout", "fakeInput", "askReadout", "ask", "allow"],
+				"blockMode": ["block", "fake", "ask", "allow"],
 				"displayAdvancedSettings": [true]
 			}
 		},
 		"Canvas-API",
+		{
+			"name": "protectedCanvasPart"
+		},
 		{
 			"name": "protectedAPIFeatures",
 			"displayedSection": "Canvas-API",
@@ -226,11 +229,11 @@
 			"name": "minFakeSize",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				}
@@ -240,11 +243,11 @@
 			"name": "maxFakeSize",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				}
@@ -254,11 +257,12 @@
 			"name": "ignoreFrequentColors",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout"],
+					"blockMode": ["fake"],
+					"protectedCanvasPart": ["readout"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				}
@@ -268,11 +272,12 @@
 			"name": "minColors",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout"],
+					"blockMode": ["fake"],
+					"protectedCanvasPart": ["readout"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				}
@@ -282,11 +287,12 @@
 			"name": "fakeAlphaChannel",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout"],
+					"blockMode": ["fake"],
+					"protectedCanvasPart": ["readout"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				}
@@ -296,11 +302,12 @@
 			"name": "useCanvasCache",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout"],
+					"blockMode": ["fake"],
+					"protectedCanvasPart": ["readout"],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"displayAdvancedSettings": [true]
 				}
@@ -334,12 +341,12 @@
 			"name": "audioFakeRate",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask", "allow"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]
@@ -350,12 +357,12 @@
 			"name": "audioNoiseLevel",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask", "allow"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]
@@ -366,12 +373,12 @@
 			"name": "useAudioCache",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask", "allow"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]
@@ -382,12 +389,12 @@
 			"name": "audioUseFixedIndices",
 			"displayDependencies": [
 				{
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]
 				},
 				{
-					"blockMode": ["askReadout", "ask", "allow"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]
@@ -399,13 +406,13 @@
 			"displayDependencies": [
 				{
 					"audioUseFixedIndices": [true],
-					"blockMode": ["fakeReadout", "fakeInput"],
+					"blockMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]
 				},
 				{
 					"audioUseFixedIndices": [true],
-					"blockMode": ["askReadout", "ask", "allow"],
+					"blockMode": ["ask"],
 					"askDenyMode": ["fake"],
 					"protectAudio": [true],
 					"displayAdvancedSettings": [true]

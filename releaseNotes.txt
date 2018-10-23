@@ -1,12 +1,13 @@
 Version 0.5.6:
 	changes:
-		- 
+		- removed *Readout and *Input block modes (use protectedCanvasPart instead)
 	
 	new features:
 		- options gui improvements
 			- url specific values can be added by hitting enter in the input
 			- highlight "hide" icon when "tabing" to it
 			- made url specific values manageable with "tabing"
+		- added setting "protected canvas part" to decouple block mode from part
 	
 	fixes:
 		- 

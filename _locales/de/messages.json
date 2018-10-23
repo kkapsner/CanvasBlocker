@@ -303,10 +303,6 @@
 		"message": "um Erlaubnis fragen",
 		"description": ""
 	},
-	"blockMode_options.askReadout": {
-		"message": "bei Auslese-API um Erlaubnis fragen",
-		"description": ""
-	},
 	"blockMode_options.blockEverything": {
 		"message": "alles blockieren",
 		"description": ""
@@ -315,20 +311,32 @@
 		"message": "nur Einträge der Blacklist blockieren",
 		"description": ""
 	},
-	"blockMode_options.blockReadout": {
-		"message": "Auslese-API blockieren",
-		"description": ""
-	},
-	"blockMode_options.fakeReadout": {
-		"message": "Auslese-API vortäuschen",
-		"description": ""
-	},
-	"blockMode_options.fakeInput": {
-		"message": "Bei Ausgabe vortäuschen",
+	"blockMode_options.fake": {
+		"message": "vortäuschen",
 		"description": ""
 	},
 	"blockMode_title": {
 		"message": "Blockiermodus",
+		"description": ""
+	},
+	"protectedCanvasPart_title": {
+		"message": "Beschützer Teil der Canvas-API",
+		"description": ""
+	},
+	"protectedCanvasPart_description": {
+		"message": "Auslese: die Auslese-Funktionen der Canvas-API werden beschützt.\n\nEingabe: die Ausgabe-Funktionen der Canvas-API werden beschützt. Mit dem Blockiermodus \"vortäuschen\" wird bei der Darstellung von Text die beschriebenen Pixel leicht verändert. Dies erschwert die Detektion des Add-ons, ist aber weniger sicher. Bei WebGL-Canvas ist das Verhalten identisch zu \"Auslese\".\n\nAlles: sowohl Auslese- als auch Eingabe-Funktionen werden beschützt. Es wird empfohlen diese nicht mit dem Blockiermodus \"vortäuschen\" zu verwenden, da es die Wahrscheinlichkeit erhöht detektiert zu werden.",
+		"description": ""
+	},
+	"protectedCanvasPart_options.input": {
+		"message": "Eingabe",
+		"description": ""
+	},
+	"protectedCanvasPart_options.readout": {
+		"message": "Auslese",
+		"description": ""
+	},
+	"protectedCanvasPart_options.everything": {
+		"message": "Alles",
 		"description": ""
 	},
 	"urlSettings_title": {
@@ -1123,8 +1131,8 @@
 		"message": "Es werden die \"vortäuschen\" und \"fragen\" Blockiermodi empfohlen.",
 		"description": ""
 	},
-	"sanitation_resolution.switchToFakeReadout": {
-		"message": "zu \"Auslese vortäuschen\" wechseln",
+	"sanitation_resolution.switchToFake": {
+		"message": "zu \"vortäuschen\" wechseln",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
@@ -1136,11 +1144,23 @@
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "Der weiße Zufallszahlengenerator soll nicht mit \"{blockMode}\" verwendet werden.",
+		"message": "Der weiße Zufallszahlengenerator soll nicht mit \"{blockMode}\" verwendet werden, wenn \"{protectedCanvasPart}\" beschützt wird.",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectReadout": {
+		"message": "\"Auslese\" beschützen",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
 		"message": "wechsle zu \"nicht persistent\"",
+		"description": ""
+	},
+	"sanitation_error.fakeEverythingInCanvas": {
+		"message": "Beschützen Sie nicht \"{protectedCanvasPart}\" im Blockiermodus \"{blockMode}\".",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectInput": {
+		"message": "\"Eingabe\" beschützen",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {

@@ -317,10 +317,6 @@
 		"message": "ask for permission",
 		"description": ""
 	},
-	"blockMode_options.askReadout": {
-		"message": "ask for readout API permission",
-		"description": ""
-	},
 	"blockMode_options.blockEverything": {
 		"message": "block everything",
 		"description": ""
@@ -329,20 +325,33 @@
 		"message": "block only blacklist",
 		"description": ""
 	},
-	"blockMode_options.blockReadout": {
-		"message": "block readout API",
-		"description": ""
-	},
-	"blockMode_options.fakeReadout": {
-		"message": "fake readout API",
-		"description": ""
-	},
-	"blockMode_options.fakeInput": {
-		"message": "fake at input",
+	"blockMode_options.fake": {
+		"message": "fake",
 		"description": ""
 	},
 	"blockMode_title": {
 		"message": "Block mode",
+		"description": ""
+	},
+	
+	"protectedCanvasPart_title": {
+		"message": "Protected part of the canvas API",
+		"description": ""
+	},
+	"protectedCanvasPart_description": {
+		"message": "readout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With fake blocking mode on display of text the drawn pixels get modified slightly. This makes the detection of the add-on harder but is less secure. On WebGL-canvas the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"description": ""
+	},
+	"protectedCanvasPart_options.input": {
+		"message": "input",
+		"description": ""
+	},
+	"protectedCanvasPart_options.readout": {
+		"message": "readout",
+		"description": ""
+	},
+	"protectedCanvasPart_options.everything": {
+		"message": "everything",
 		"description": ""
 	},
 	
@@ -1174,8 +1183,8 @@
 		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
 		"description": ""
 	},
-	"sanitation_resolution.switchToFakeReadout": {
-		"message": "switch to \"fake readout\"",
+	"sanitation_resolution.switchToFake": {
+		"message": "switch to \"fake\"",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
@@ -1187,11 +1196,23 @@
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "Do not use white random number generator with \"{blockMode}\".",
+		"message": "Do not use white random number generator with \"{blockMode}\" and protecting \"{protectedCanvasPart}\".",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectReadout": {
+		"message": "switch to protect readout",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
 		"message": "switch to \"non persistent\" rng",
+		"description": ""
+	},
+	"sanitation_error.fakeEverythingInCanvas": {
+		"message": "Do not use protect \"{protectedCanvasPart}\" in blocking mode \"{blockMode}\".",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectInput": {
+		"message": "switch to protect input",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {

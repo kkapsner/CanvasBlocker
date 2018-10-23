@@ -117,53 +117,68 @@
 		{
 			name: "blockMode",
 			check: function(errorCallback){
-				const switchMode = {
-					label: browser.i18n.getMessage("sanitation_resolution.switchToFakeReadout"),
-					callback: function(){
-						settings.blockMode = "fakeReadout";
-					}
-				};
 				const blockMode = settings.blockMode;
-				const blockModeName = browser.i18n.getMessage("blockMode_options." + blockMode);
+				const protectedCanvasPart = settings.protectedCanvasPart;
 				if (!blockMode.match("^fake|^ask")){
 					errorCallback({
 						message: browser.i18n.getMessage("sanitation_error.badBlockMode"),
 						severity: "medium",
-						resolutions: [switchMode]
-					});
-				}
-				["Audio", "Window", "DOMRect"].forEach(function(api){
-					const mainFlag = "protect" + api;
-					if (settings[mainFlag]){
-						if (["fakeInput"].indexOf(blockMode) !== -1){
-							const blockModeName = browser.i18n.getMessage("blockMode_options." + blockMode);
-							errorCallback({
-								message: browser.i18n.getMessage("sanitation_error.blockModeVsProtection")
-									.replace(/{blockMode}/g, blockModeName)
-									.replace(/{api}/g, browser.i18n.getMessage("section_" + api + "-api")),
-								severity: "high",
-								resolutions: [switchMode, {
-									label: browser.i18n.getMessage("sanitation_resolution.disableFlag")
-										.replace(/{flag}/g, browser.i18n.getMessage(mainFlag + "_title")),
-									callback: function(){
-										settings[mainFlag] = false;
-									}
-								}]
-							});
-						}
-					}
-				});
-				if (blockMode === "fakeInput" && settings.rng === "white"){
-					errorCallback({
-						message: browser.i18n.getMessage("sanitation_error.fakeInputWithWhiteRng")
-							.replace(/{blockMode}/g, blockModeName),
-						severity: "low",
-						resolutions: [switchMode, {
-							label: browser.i18n.getMessage("sanitation_resolution.switchToNonPersistentRng"),
+						resolutions: [{
+							label: browser.i18n.getMessage("sanitation_resolution.switchToFake"),
 							callback: function(){
-								settings.rng = "nonPersistent";
+								settings.blockMode = "fake";
 							}
 						}]
+					});
+				}
+				if (blockMode === "fake" && protectedCanvasPart === "input" && settings.rng === "white"){
+					errorCallback({
+						message: browser.i18n.getMessage("sanitation_error.fakeInputWithWhiteRng")
+							.replace(/{blockMode}/g, browser.i18n.getMessage("blockMode_options." + blockMode))
+							.replace(
+								/{protectedCanvasPart}/g,
+								browser.i18n.getMessage("protectedCanvasPart_options." + settings.protectedCanvasPart)
+							),
+						severity: "low",
+						resolutions: [
+							{
+								label: browser.i18n.getMessage("sanitation_resolution.switchToProtectReadout"),
+								callback: function(){
+									settings.protectedCanvasPart = "readout";
+								}
+							},
+							{
+								label: browser.i18n.getMessage("sanitation_resolution.switchToNonPersistentRng"),
+								callback: function(){
+									settings.rng = "nonPersistent";
+								}
+							}
+						]
+					});
+				}
+				if (blockMode === "fake" && protectedCanvasPart === "everything"){
+					errorCallback({
+						message: browser.i18n.getMessage("sanitation_error.fakeEverythingInCanvas")
+							.replace(/{blockMode}/g, browser.i18n.getMessage("blockMode_options." + blockMode))
+							.replace(
+								/{protectedCanvasPart}/g,
+								browser.i18n.getMessage("protectedCanvasPart_options." + settings.protectedCanvasPart)
+							),
+						severity: "low",
+						resolutions: [
+							{
+								label: browser.i18n.getMessage("sanitation_resolution.switchToProtectReadout"),
+								callback: function(){
+									settings.protectedCanvasPart = "readout";
+								}
+							},
+							{
+								label: browser.i18n.getMessage("sanitation_resolution.switchToProtectInput"),
+								callback: function(){
+									settings.protectedCanvasPart = "input";
+								}
+							}
+						]
 					});
 				}
 			}
