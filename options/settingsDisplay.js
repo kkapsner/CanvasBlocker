@@ -258,7 +258,7 @@
 			"displayDependencies": [
 				{
 					"blockMode": ["fake"],
-					"protectedCanvasPart": ["readout"],
+					"protectedCanvasPart": ["readout", "everything"],
 					"displayAdvancedSettings": [true]
 				},
 				{
@@ -273,7 +273,7 @@
 			"displayDependencies": [
 				{
 					"blockMode": ["fake"],
-					"protectedCanvasPart": ["readout"],
+					"protectedCanvasPart": ["readout", "everything"],
 					"displayAdvancedSettings": [true]
 				},
 				{
@@ -288,7 +288,7 @@
 			"displayDependencies": [
 				{
 					"blockMode": ["fake"],
-					"protectedCanvasPart": ["readout"],
+					"protectedCanvasPart": ["readout", "everything"],
 					"displayAdvancedSettings": [true]
 				},
 				{
@@ -303,7 +303,7 @@
 			"displayDependencies": [
 				{
 					"blockMode": ["fake"],
-					"protectedCanvasPart": ["readout"],
+					"protectedCanvasPart": ["readout", "everything"],
 					"displayAdvancedSettings": [true]
 				},
 				{
