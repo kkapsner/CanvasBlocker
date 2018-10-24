@@ -339,7 +339,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "readout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With fake blocking mode on display of text the drawn pixels get modified slightly. This makes the detection of the add-on harder but is less secure. On WebGL-canvas the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "readout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text . This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
