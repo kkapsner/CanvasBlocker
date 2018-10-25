@@ -99,6 +99,22 @@
 				}
 			]
 		},
+		{
+			"name": "sharePersistentRndBetweenDomains",
+			"displayDependencies": [
+				{
+					"blockMode": ["fake"],
+					"rng": ["persistent"],
+					"displayAdvancedSettings": [true]
+				},
+				{
+					"blockMode": ["ask"],
+					"askDenyMode": ["fake"],
+					"rng": ["persistent"],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
 		"notifications",
 		{
 			"name": "showNotifications"

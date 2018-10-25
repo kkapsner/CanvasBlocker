@@ -455,6 +455,18 @@
 		"message": "Leeren",
 		"description": ""
 	},
+	"sharePersistentRndBetweenDomains_title": {
+		"message": "Persistente Zufallszahlen zwischen Domains teilen",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_description": {
+		"message": "ACHTUNG: diese Einstellung macht den Browser 100% eindeutig identifizierbar und ist damit eine Gefährdung Ihrer Privatsphäre.",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_confirmMessage": {
+		"message": "Sind Sie sicher, dass sie die persistenten Zufallszahlen zwischen Domains teilen wollen?\nACHTUNG: dies macht den Browser 100% eindeutig identifizierbar und ist damit eine Gefährdung Ihrer Privatsphäre.",
+		"description": ""
+	},
 	"ignoreFrequentColors_title": {
 		"message": "Ignoriere die häufigsten Farben",
 		"description": ""
@@ -1107,6 +1119,10 @@
 		"message": "Leistung",
 		"description": ""
 	},
+	"sanitation_ruleset.privacy": {
+		"message": "Privatsphäre",
+		"description": ""
+	},
 	"sanitation_error.unnecessaryURLValue": {
 		"message": "Der URL-Wert für \"{url}\" ist identisch zur globalen Einstellung für \"{setting-title}\".",
 		"description": ""
@@ -1181,6 +1197,10 @@
 	},
 	"sanitation_error.storeImage": {
 		"message": "Bilder für Betrachtung zu speichern führt zu einem hohen RAM-Verbrauch.",
+		"description": ""
+	},
+	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
+		"message": "Teilen Sie die persistenten Zufallszahlen nicht zwischen Domains, da dies den Browser 100% eindeutig identifizierbar macht.",
 		"description": ""
 	}
 }

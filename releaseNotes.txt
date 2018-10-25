@@ -8,6 +8,7 @@ Version 0.5.6:
 			- highlight "hide" icon when "tabing" to it
 			- made url specific values manageable with "tabing"
 		- added setting "protected canvas part" to decouple block mode from part
+		- added "share persistent randomness between domains"
 	
 	fixes:
 		- constant rng did not work properly when protecting input

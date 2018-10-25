@@ -128,9 +128,13 @@
 			setting.on(function(){type.updateCallback(input, setting.get(url));}, url);
 			input.addEventListener("change", function(){
 				var value = type.getValue(input);
-				setting.set(value, url);
-				logging.message("changed setting", setting.name, ":", value);
-				
+				if (setting.set(value, url)){
+					logging.message("changed setting", setting.name, ":", value);
+				}
+				else {
+					type.updateCallback(input, setting.get(url));
+					logging.message("setting", setting.name, "was not changed");
+				}
 			});
 		}
 		else if (setting.keys){
@@ -189,8 +193,20 @@
 						container = setting.defaultValue;
 					}
 					container[key] = value;
-					setting.set(container, url);
-					logging.message("changed setting", setting.name, "(", key, "):", value);
+					if (setting.set(container, url)){
+						logging.message("changed setting", setting.name, "(", key, "):", value);
+					}
+					else {
+						container = setting.get(url);
+						keyType.updateCallback(
+							keyInput,
+							container && container.hasOwnProperty(key)?
+								container[key]:
+								setting.defaultKeyValue,
+							url
+						);
+						logging.message("setting", setting.name, "(", key, ") was not changed");
+					}
 				});
 				input.appendChild(row);
 			});

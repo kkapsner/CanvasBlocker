@@ -254,6 +254,8 @@
 	};
 	addSection();
 	
+	const beforeChangeEventListeners = {};
+	
 	const {hide: hideContainer, expand: expandContainer} = settings.getContainers();
 	settingsDisplay.forEach(function(display){
 		if (typeof display === "string"){
@@ -290,6 +292,22 @@
 			}
 			if (setting){
 				setting.display = display;
+				
+				let originalSet = setting.set;
+				if (originalSet){
+					const eventListeners = [];
+					beforeChangeEventListeners[setting.name] = eventListeners;
+					setting.set = function(...args){
+						if (eventListeners.every(function(listener){
+							return listener.call(setting, ...args);
+						})){
+							return originalSet.apply(this, args);
+						}
+						else {
+							return false;
+						}
+					}
+				}
 				
 				let hideChangeListeners = [];
 				setting.setHide = function setHide(value){
@@ -415,6 +433,14 @@
 					settings.set("protectWindow", false, reCaptchaEntry);
 				}
 			}
+		});
+		beforeChangeEventListeners.sharePersistentRndBetweenDomains.push(function(value){
+			if (value){
+				if (!confirm(browser.i18n.getMessage("sharePersistentRndBetweenDomains_confirmMessage"))){
+					return false;
+				}
+			}
+			return true;
 		});
 	});
 	

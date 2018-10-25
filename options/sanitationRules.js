@@ -279,5 +279,23 @@
 				}
 			}
 		},
+		{
+			name: "privacy",
+			check: function(errorCallback){
+				if (settings.sharePersistentRndBetweenDomains){
+					errorCallback({
+						message: browser.i18n.getMessage("sanitation_error.doNotSharePersistentRndBetweenDomains"),
+						severity: "high",
+						resolutions: [{
+							label: browser.i18n.getMessage("sanitation_resolution.disableFlag")
+								.replace(/{flag}/g, browser.i18n.getMessage("sharePersistentRndBetweenDomains_title")),
+							callback: function(){
+								settings.sharePersistentRndBetweenDomains = false;
+							}
+						}]
+					});
+				}
+			}
+		},
 	];
 }());

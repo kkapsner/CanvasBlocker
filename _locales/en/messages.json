@@ -339,7 +339,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "readout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text . This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "readout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
@@ -477,6 +477,19 @@
 	},
 	"clearPersistentRnd_label": {
 		"message": "Clear",
+		"description": ""
+	},
+	
+	"sharePersistentRndBetweenDomains_title": {
+		"message": "Share persistent randomness between domains",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_description": {
+		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_confirmMessage": {
+		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
 		"description": ""
 	},
 	
@@ -1159,6 +1172,10 @@
 		"message": "Performance",
 		"description": ""
 	},
+	"sanitation_ruleset.privacy": {
+		"message": "Privacy",
+		"description": ""
+	},
 	"sanitation_error.unnecessaryURLValue": {
 		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
 		"description": ""
@@ -1233,6 +1250,10 @@
 	},
 	"sanitation_error.storeImage": {
 		"message": "Storing the image for inspection has a high RAM footprint.",
+		"description": ""
+	},
+	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
+		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
 		"description": ""
 	}
 }
