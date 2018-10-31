@@ -317,10 +317,6 @@
 		"message": "pedir permiso",
 		"description": ""
 	},
-	"blockMode_options.askReadout": {
-		"message": "pedir permiso para la API de lectura",
-		"description": ""
-	},
 	"blockMode_options.blockEverything": {
 		"message": "bloquear todo",
 		"description": ""
@@ -329,20 +325,33 @@
 		"message": "bloquear solo lo de la lista negra",
 		"description": ""
 	},
-	"blockMode_options.blockReadout": {
-		"message": "bloquear la API de lectura",
-		"description": ""
-	},
-	"blockMode_options.fakeReadout": {
-		"message": "falsear la API de lectura",
-		"description": ""
-	},
-	"blockMode_options.fakeInput": {
-		"message": "falsear a la entrada",
+	"blockMode_options.fake": {
+		"message": "falsear",
 		"description": ""
 	},
 	"blockMode_title": {
 		"message": "Modo de bloqueo",
+		"description": ""
+	},
+	
+	"protectedCanvasPart_title": {
+		"message": "Parte protegida de la API de canvas",
+		"description": ""
+	},
+	"protectedCanvasPart_description": {
+		"message": "lectura: las funciones de lectura de la API de canvas están protegidas.\n\nentrada: las funciones de entrada de la API de canvas están protegidas. En el modo de bloqueo «falsear», los píxeles dibujados son modificados ligeramente al mostrar texto. Esto dificulta la detección del complemento pero es menos seguro. Con los «canvas» de WebGL, el comportamiento es idéntico a «lectura».\n\ntodo: las funciones tanto de lectura como la entrada están protegidas. No se recomienda usar esto con el modo de bloqueo «falsear» ya que aumenta la probabilidad de ser detectado.",
+		"description": ""
+	},
+	"protectedCanvasPart_options.input": {
+		"message": "entrada",
+		"description": ""
+	},
+	"protectedCanvasPart_options.readout": {
+		"message": "lectura",
+		"description": ""
+	},
+	"protectedCanvasPart_options.everything": {
+		"message": "todo",
 		"description": ""
 	},
 	
@@ -468,6 +477,19 @@
 	},
 	"clearPersistentRnd_label": {
 		"message": "Limpiar",
+		"description": ""
+	},
+	
+	"sharePersistentRndBetweenDomains_title": {
+		"message": "Compartir la aleatoriedad persistente entre dominios",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_description": {
+		"message": "PRECAUCIÓN: este ajuste hace al navegador 100% rastreable y es, por tanto, una amenaza para su privacidad.",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_confirmMessage": {
+		"message": "¿Seguro que quiere compartir la aleatoriedad persistente entre dominios?\nPRECAUCIÓN: esto hace al nevegador 100% rastreable y es, por tanto, una amenaza para su privacidad.",
 		"description": ""
 	},
 	
@@ -1059,7 +1081,7 @@
 	},
 	
 	"openSettingSanitation_title": {
-		"message": "Configuración del saneado",
+		"message": "Saneado de la configuración",
 		"description": ""
 	},
 	"openSettingSanitation_description": {
@@ -1150,8 +1172,12 @@
 		"message": "Rendimiento",
 		"description": ""
 	},
+	"sanitation_ruleset.privacy": {
+		"message": "Privacidad",
+		"description": ""
+	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "El valor del URL para \"{url}\" es el mismo que el de la opción global para \"{setting-title}\".",
+		"message": "El valor del URL para «{url}» es el mismo que el de la opción global para «{setting-title}».",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
@@ -1171,35 +1197,47 @@
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
-		"message": "Se recomienda usar los modos de bloqueo \"falsear\" o \"preguntar\".",
+		"message": "Se recomienda usar los modos de bloqueo «falsear» o «preguntar».",
 		"description": ""
 	},
-	"sanitation_resolution.switchToFakeReadout": {
-		"message": "cambiar a \"falsear la lectura\"",
+	"sanitation_resolution.switchToFake": {
+		"message": "cambiar a «falsear»",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
-		"message": "Con el modo de bloqueo \"{blockMode}\", no funciona la protección {api}.",
+		"message": "Con el modo de bloqueo «{blockMode}», no funciona la protección {api}.",
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
-		"message": "deshabilitar \"{flag}\"",
+		"message": "deshabilitar «{flag}»",
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "No usar el generador de números aleatorios blanco con \"{blockMode}\".",
+		"message": "No usar el generador de números aleatorios blanco con «{blockMode}».",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectReadout": {
+		"message": "cambiar para proteger la lectura",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "cambiar al generador de números aleatorios \"no persistente\"",
+		"message": "cambiar al generador de números aleatorios «no persistente»",
 		"description": ""
 	},
+	"sanitation_error.fakeEverythingInCanvas": {
+		"message": "No usar la protección «{protectedCanvasPart}» en el modo de bloqueo «{blockMode}».",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectInput": {
+		"message": "cambiar para proteger la entrada",
+		"description": ""
+	},	
 	"sanitation_error.valueTooLow": {
-		"message": "\"{setting}\" no debe ser menor que {value}.",
+		"message": "«{setting}» no debe ser menor que {value}.",
 		"description": ""
 	},
 	"sanitation_error.valueTooHigh": {
-		"message": "\"{setting}\" no debe ser mayor que {value}.",
+		"message": "«{setting}» no debe ser mayor que {value}.",
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
@@ -1213,5 +1251,9 @@
 	"sanitation_error.storeImage": {
 		"message": "Almacenar imágenes para su inspección usa una gran cantidad de RAM.",
 		"description": ""
-	}	
+	},
+	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
+		"message": "No compartir la aleatoriedad persistente entre dominios porque hace al navegador 100% rastreable.",
+		"description": ""
+	}
 }
