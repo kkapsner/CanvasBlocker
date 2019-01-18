@@ -12,6 +12,8 @@ Version 0.5.6:
 	
 	fixes:
 		- constant rng did not work properly when protecting input
+		- some display inconsistencies
+		- optional parameter on isPointInPath and isPointInStroke were broken
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
