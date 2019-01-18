@@ -656,7 +656,7 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Benachrichtigungen anzeigen, wenn der Blockiermodus auf \"Auslese-API vortäuschen\" gesetzt ist.",
+		"message": "Benachrichtigungen anzeigen, wenn der Blockiermodus auf \"Auslese-API vortäuschen\" gesetzt ist. Sie werden über den Icon in der Adresszeile und den Badge auf dem CanvasBlocker-Icon benachrichtigt.",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {

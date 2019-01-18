@@ -690,7 +690,7 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Show a notification when the block mode is set to \"fake readout API\".",
+		"message": "Show a notification when the block mode is set to \"fake readout API\". You get notified with the the icon in the address bar and the badge on the CanvasBlocker icon.",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
