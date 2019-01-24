@@ -21,7 +21,7 @@
         "constructor-super": "warn",
         "eqeqeq": "error",
         "max-len": ["warn", {"code": 120, "tabWidth": 4}],
-        "max-lines": ["warn", {"max": 400, "skipBlankLines": true, "skipComments": true}],
+        "max-lines": ["warn", {"max": 500, "skipBlankLines": true, "skipComments": true}],
         "max-params": ["warn", 4],
         "no-const-assign": "warn",
         "no-this-before-super": "warn",

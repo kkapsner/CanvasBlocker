@@ -306,7 +306,7 @@
 						else {
 							return false;
 						}
-					}
+					};
 				}
 				
 				let hideChangeListeners = [];
