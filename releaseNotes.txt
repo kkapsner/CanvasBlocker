@@ -1,6 +1,6 @@
 Version 0.5.7:
 	changes:
-		- 
+		- reset settings no longer only available in expert mode
 	
 	new features:
 		- 

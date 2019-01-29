@@ -514,10 +514,7 @@
 			"actions": ["inspectSettings", "saveSettings", "loadSettings"]
 		},
 		{
-			"name": "resetSettings",
-			"displayDependencies": {
-				"displayAdvancedSettings": [true]
-			}
+			"name": "resetSettings"
 		}
 	];
 	settingsDisplay.displayHidden = "displayHiddenSettings";
