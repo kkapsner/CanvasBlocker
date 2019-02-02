@@ -1,5 +1,8 @@
 Dieses Add-on ermöglicht es Nutzern, Webseiten davon abzuhalten, sie über Javascript APIs zu identifizieren. Nutzer können auswählen, ob die APIs komplett auf bestimmten oder allen Seiten blockiert werden (dies wird die Funktionalität einiger Seiten beeinträchtigen) oder bei den identifikationsfreundlichen Auslese-Funktionen falsche Werte vorzutäuschen.
 
+<b>WICHTIG</b>: Sie sollten nur ein Addon/eine Einstellung aktiv haben, die eine API beschützt. Ansonsten können Sie massive Performanceprobleme bekommen. (Z.B. EclipsedMoon für Palemoon hat 'canvas.poison', was bekanntermaßen Probleme verursacht: https://github.com/kkapsner/CanvasBlocker/issues/253#issuecomment-459499290)
+privacy.resistFingerprinting kann aber problemlos aktiviert werden.
+
 Nähere Informationen zum Fingerprinting können Sie finden auf:
 	<ul>
 		<li>&lt;canvas&gt;: http://www.browserleaks.com/canvas</li>

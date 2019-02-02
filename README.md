@@ -1,5 +1,8 @@
 This add-on allows users to prevent websites from using the some Javascript APIs to fingerprint them. Users can choose to block the APIs entirely on some or all websites (which may break some websites) or just block or fake its fingerprinting-friendly readout API.
 
+**IMPORTANT**: you should only have ONE addon/setting set that protects an API. Otherwise you could face massive performance issues. (E.g. EclipsedMoon for Palemoon has 'canvas.poison' which is known to cause issues: https://github.com/kkapsner/CanvasBlocker/issues/253#issuecomment-459499290)
+But setting privacy.resistFingerprinting to true is fine.
+
 More information on fingerprinting can be found at:
  * &lt;canvas&gt;: http://www.browserleaks.com/canvas
  * audio:
