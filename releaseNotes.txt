@@ -2,11 +2,8 @@ Version 0.5.7:
 	changes:
 		- reset settings no longer only available in expert mode
 	
-	new features:
-		- 
-	
 	fixes:
-		- 
+		- protection for history length did not work
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
