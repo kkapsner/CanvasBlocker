@@ -3,7 +3,7 @@ Version 0.5.8:
 		- 
 	
 	new features:
-		- 
+		- Added cache for getChannelData
 	
 	fixes:
 		- after reset the hidden settings and expanded views were not reset

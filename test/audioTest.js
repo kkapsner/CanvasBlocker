@@ -16,7 +16,7 @@
 	var pxi_output;
 	var pxi_full_buffer;
 	function run_pxi_fp(){
-		var context = new window.OfflineAudioContext(1, 44100, 44100);
+		var context = new window.OfflineAudioContext(2, 44100, 44100);
 
 		// Create oscillator
 		var pxi_oscillator = context.createOscillator();
@@ -44,14 +44,14 @@
 			var copyTest = new Float32Array(44100);
 			event.renderedBuffer.copyFromChannel(copyTest, 0);
 			var getTest = event.renderedBuffer.getChannelData(0);
-			Promise.all([
-				crypto.subtle.digest("SHA-256", getTest),
-				crypto.subtle.digest("SHA-256", copyTest),
-			]).then(function(hashes){
-				container.querySelector(".hash").textContent =
-					byteArrayToHex(hashes[0]) +
-					" / " +
-					byteArrayToHex(hashes[1]);
+			var getTest2 = event.renderedBuffer.getChannelData(0);
+			var getTest3 = event.renderedBuffer.getChannelData(1);
+			Promise.all([getTest, getTest2, getTest3, copyTest].map(function(array){
+				return crypto.subtle.digest("SHA-256", array);
+			})).then(function(hashes){
+				container.querySelector(".hash").innerHTML = hashes.map(byteArrayToHex).map(function(hash){
+					return "<li>" + hash + "</li>";
+				}).join("");
 			});
 			var sum = 0;
 			for (var i = 4500; i < 5000; i += 1) {
