@@ -1,9 +1,11 @@
 Version 0.5.8:
 	changes:
-		- 
+		- audio faking will not alter buffers with only zero values
 	
 	new features:
-		- Added cache for getChannelData
+		- added combined cache for getChannelData and copyFromChannel:
+			- better performance
+			- prevent double faking => prevent detection
 	
 	fixes:
 		- after reset the hidden settings and expanded views were not reset
