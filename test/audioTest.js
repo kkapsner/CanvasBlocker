@@ -12,16 +12,48 @@
 	}
 	
 	var container = document.getElementById("test");
+	var hashContainer = container.querySelector(".hashes");
+	var hashSets = Object.create(null);
 	
-	var pxi_output;
-	var pxi_full_buffer;
-	function run_pxi_fp(){
+	function createSet(set){
+		if (!hashSets[set]){
+			var setContainer = document.createElement("tbody");
+			hashContainer.appendChild(setContainer);
+			var nameRow = document.createElement("tr");
+			setContainer.appendChild(nameRow);
+			var nameContainer = document.createElement("th");
+			nameRow.appendChild(nameContainer);
+			nameContainer.colSpan = 2;
+			nameContainer.textContent = set;
+			hashSets[set] = setContainer;
+		}
+	}
+	
+	function displayData(data, set, title){
+		createSet(set);
+		var container = document.createElement("tr");
+		
+		var titleNode = document.createElement("td");
+		titleNode.textContent = title;
+		container.appendChild(titleNode);
+		
+		var hashNode = document.createElement("td");
+		hashNode.textContent = "calculating hash";
+		container.appendChild(hashNode);
+		
+		crypto.subtle.digest("SHA-256", data).then(function(hash){
+			hashNode.textContent = byteArrayToHex(hash);
+		});
+		hashSets[set].appendChild(container);
+	}
+	
+	function getAudioContext(frequency = 1e4){
 		var context = new window.OfflineAudioContext(2, 44100, 44100);
-
+		
 		// Create oscillator
 		var pxi_oscillator = context.createOscillator();
 		pxi_oscillator.type = "triangle";
-		pxi_oscillator.frequency.value = 1e4;
+		pxi_oscillator.frequency.value = frequency;
 
 		// Create and configure compressor
 		var pxi_compressor = context.createDynamicsCompressor();
@@ -35,32 +67,81 @@
 		// Connect nodes
 		pxi_oscillator.connect(pxi_compressor);
 		pxi_compressor.connect(context.destination);
-
-		// Start audio processing
+		
 		pxi_oscillator.start(0);
+		
+		return context;
+	}
+	
+	function createEmptyData(){
+		var emptyArray = new Float32Array(44100);
+		displayData(emptyArray, "empty buffer", "no API involved");
+		
+		var emptyContext = new OfflineAudioContext(1, 44100, 44100);
+		var emptyBuffer = emptyContext.createBuffer(1, 44100, 44100);
+		
+		var emptyCopy = new Float32Array(44100);
+		emptyBuffer.copyFromChannel(emptyCopy, 0);
+		displayData(emptyCopy, "empty buffer", "copyFromChannel - first");
+		
+		var emptyData = emptyBuffer.getChannelData(0);
+		displayData(emptyData, "empty buffer", "getChannelData - first");
+		displayData(emptyBuffer.getChannelData(0), "empty buffer", "getChannelData - second");
+		
+		var emptyCopy2 = new Float32Array(44100);
+		emptyBuffer.copyFromChannel(emptyCopy2, 0);
+		displayData(emptyCopy2, "empty buffer", "copyFromChannel - second");
+	}
+	
+	function createHashData(frequency = 1e4){
+		
+		var context = getAudioContext(frequency);
+		
+		var setName = " (" + frequency + " Hz)";
+		createSet(setName);
+		
+		// Start audio processing
 		context.startRendering();
-		context.oncomplete = function(event) {
-			var str = "";
+		context.oncomplete = function(event){
+			var chunkTest = new Float32Array(44100);
+			var number = new Float32Array(100);
+			for (var i = 0; i < 44100; i += number.length){
+				event.renderedBuffer.copyFromChannel(number, 0, i);
+				chunkTest.set(number, i);
+			}
+			displayData(chunkTest, setName, "copyFromChannel - chunks");
+			
 			var copyTest = new Float32Array(44100);
 			event.renderedBuffer.copyFromChannel(copyTest, 0);
+			displayData(copyTest, setName, "copyFromChannel - first");
+			
+			
 			var getTest = event.renderedBuffer.getChannelData(0);
-			var getTest2 = event.renderedBuffer.getChannelData(0);
-			var getTest3 = event.renderedBuffer.getChannelData(1);
-			Promise.all([getTest, getTest2, getTest3, copyTest].map(function(array){
-				return crypto.subtle.digest("SHA-256", array);
-			})).then(function(hashes){
-				container.querySelector(".hash").innerHTML = hashes.map(byteArrayToHex).map(function(hash){
-					return "<li>" + hash + "</li>";
-				}).join("");
-			});
-			var sum = 0;
-			for (var i = 4500; i < 5000; i += 1) {
-				sum += Math.abs(getTest[i]);
+			displayData(getTest, setName, "getChannelData - first");
+			displayData(event.renderedBuffer.getChannelData(0), setName, "getChannelData - second readout");
+			displayData(event.renderedBuffer.getChannelData(1), setName, "getChannelData - second channel");
+			
+			var copyTest2 = new Float32Array(44100);
+			event.renderedBuffer.copyFromChannel(copyTest2, 0);
+			displayData(copyTest2, setName, "copyFromChannel - second");
+			
+			if (frequency === 1e4){
+				var sum = 0;
+				for (var i = 4500; i < 5000; i += 1) {
+					sum += Math.abs(getTest[i]);
+				}
+				container.querySelector(".sum").textContent = sum;
 			}
-			container.querySelector(".sum").textContent = sum;
-			pxi_compressor.disconnect();
 		};
 	}
-	run_pxi_fp();
-	container.querySelector("button").addEventListener("click", run_pxi_fp);
+	
+	function createAllHashData(){
+		hashContainer.innerHTML = "";
+		hashSets = Object.create(null);
+		createEmptyData();
+		createHashData(1e4);
+		createHashData(2e4);
+	}
+	createAllHashData();
+	container.querySelector("button").addEventListener("click", createAllHashData);
 }());
