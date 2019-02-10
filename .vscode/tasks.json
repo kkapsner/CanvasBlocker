@@ -106,6 +106,33 @@
 			"problemMatcher": []
 		},
 		{
+			"label": "run beta",
+			"type": "shell",
+			"windows": {
+				"command": "web-ext"
+			},
+			"linux": {
+				"command": "web-ext"
+			},
+			"osx": {
+				"command": "web-ext"
+			},
+			"args": [
+				"run",
+				"-f",
+				"firefox-beta",
+				"--url",
+				"http://canvasblocker.local/test/"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
 			"label": "build",
 			"type": "shell",
 			"windows": {
