@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>Test</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link href="testIcon.svg" type="image/png" rel="icon">
+	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
 	<script>
 		console.log(new Date(), "starting first fingerprint", window.name);
 		function fingerPrint(){
