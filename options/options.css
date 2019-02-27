@@ -238,6 +238,6 @@ td.hideColumn {
 	display: none;
 }
 
-.searching .settingRow.found {
+.searching .settingRow.found:not(.hidden) {
 	display: table-row;
 }

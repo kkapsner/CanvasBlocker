@@ -6,7 +6,7 @@ Version 0.5.9:
 		- added protection for navigator properties
 	
 	fixes:
-		- 
+		- search could show hidden settings
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
