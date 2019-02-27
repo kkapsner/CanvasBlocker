@@ -107,6 +107,7 @@
 	}).then(function(tabId){
 		return browser.tabs.get(tabId);
 	}).then(function(tab){
+		document.querySelector("head title").textContent = browser.i18n.getMessage("options_title");
 		let head = document.createElement("header");
 		document.body.insertBefore(head, document.body.firstChild);
 		

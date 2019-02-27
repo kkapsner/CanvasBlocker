@@ -51,6 +51,10 @@
 		"message": "Einstellungen",
 		"description": ""
 	},
+	"options_title": {
+		"message": "CanvasBlocker Einstellungen",
+		"description": ""
+	},
 	"optionsIntroduction": {
 		"message": "Auf dieser Seite können Sie die CanvasBlocker-Einstellungen anpassen.",
 		"description": ""
