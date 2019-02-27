@@ -1050,7 +1050,7 @@
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "In this page you can set the navigator settings. If using a preset you should always use a operating system and browser preset. After selecting these you can still make modifications.",
+		"message": "On this page you can set the navigator settings. If using a preset you should always use an operating system and browser preset. After selecting these you can still make modifications.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
