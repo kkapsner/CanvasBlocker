@@ -37,6 +37,7 @@ Beschützte "Fingerprinting"-APIs:
 		<li>history</li>
 		<li>window (standardmäßig deaktiviert)</li>
 		<li>DOMRect</li>
+		<li>navigator (standardmäßig deaktiviert)</li>
 	</ul>
 
 Falls Sie Fehler finden oder Verbesserungsvorschläge haben, teilen Sie mir das bitte auf https://github.com/kkapsner/CanvasBlocker/issues mit.

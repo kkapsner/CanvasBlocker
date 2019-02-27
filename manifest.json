@@ -19,6 +19,7 @@
 			"lib/persistentRndStorage.js",
 			"lib/dataUrls.js",
 			"lib/notification.js",
+			"lib/navigator.js",
 			"lib/main.js"
 		]
 	},
@@ -43,6 +44,8 @@
 			"lib/modifiedHistoryAPI.js",
 			"lib/modifiedWindowAPI.js",
 			"lib/modifiedDOMRectAPI.js",
+			"lib/navigator.js",
+			"lib/modifiedNavigatorAPI.js",
 			"lib/modifiedAPI.js",
 			"lib/randomSupplies.js",
 			"lib/intercept.js",

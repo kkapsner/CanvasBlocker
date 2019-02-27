@@ -119,6 +119,10 @@
 		"message": "DOMRect-API",
 		"description": ""
 	},
+	"section_Navigator-api": {
+		"message": "Navigator-API",
+		"description": ""
+	},
 	"displayAdvancedSettings_title": {
 		"message": "Expertenmodus",
 		"description": ""
@@ -229,6 +233,18 @@
 	},
 	"askForDOMRectReadoutPermission": {
 		"message": "Wollen Sie das Auslesen über die DOMRect-API erlauben?",
+		"description": ""
+	},
+	"askForNavigatorPermission": {
+		"message": "Wollen Sie die Navigator-API erlauben?",
+		"description": ""
+	},
+	"askForNavigatorInputPermission": {
+		"message": "Wollen Sie das Schreiben über die Navigator-API erlauben?",
+		"description": ""
+	},
+	"askForNavigatorReadoutPermission": {
+		"message": "Wollen Sie das Auslesen über die Navigator-API erlauben?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -565,6 +581,10 @@
 	},
 	"fakedDOMRectReadout": {
 		"message": "DOMRect-Auslese vorgetäuscht auf {url}",
+		"description": ""
+	},
+	"fakedNavigatorReadout": {
+		"message": "Navigator-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -957,6 +977,50 @@
 	},
 	"domRectIntegerFactor_description": {
 		"message": "Ein Bruchteil eines Pixels kann durch CSS kontrolliert werden. Eigenschaften eines DOMRect, die multipliziert mit diesem Faktor eine ganze Zahl ergeben, dürfen nicht verändert werden um eine Detektion zu verhindern.",
+		"description": ""
+	},
+	"protectNavigator_title": {
+		"message": "Navigator-API beschützen",
+		"description": ""
+	},
+	"protectNavigator_description": {
+		"message": "Dies ermöglicht Änderungen an der Navigator-API. Diesen Schutz zu aktivieren ändert standardmäßig noch nichts. Öffnen Sie die Navigatoreinstellungen um die gewünschten Änderungen durchzuführen.",
+		"description": ""
+	},
+	"openNavigatorSettings_title": {
+		"message": "Navigatoreinstellungen",
+		"description": ""
+	},
+	"openNavigatorSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"openNavigatorSettings_label": {
+		"message": "Öffnen",
+		"description": ""
+	},
+	"navigatorSettings_title": {
+		"message": "CanvasBlocker Navigatoreinstellungen",
+		"description": ""
+	},
+	"navigatorSettings_description": {
+		"message": "Auf dieser Seite können Sie die Navigatoreinstellungen festlegen. Wenn Sie eine Voreinstellung verwenden möchten, sollten Sie immer sowohl eine Betriebssystem- als auch eine Browservoreinstellung verwenden. Danach können Sie Ihre individuellen Änderungen vornehmen.",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.os": {
+		"message": "Betriebssystemvoreinstellungen",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.browser": {
+		"message": "Browservoreinstellungen",
+		"description": ""
+	},
+	"navigatorSettings_values": {
+		"message": "Navigatorwerte",
+		"description": ""
+	},
+	"navigatorSettings_reset": {
+		"message": "Zurücksetzen",
 		"description": ""
 	},
 	"theme_title": {

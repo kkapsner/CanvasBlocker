@@ -21,6 +21,7 @@
 		<li>history</li>
 		<li>window (disabled by default)</li>
 		<li>DOMRect</li>
+		<li>navigator (disabled by default)</li>
 	</ul>
 	
 Сообщите о проблемах и пожеланиях на странице https://github.com/kkapsner/CanvasBlocker/issues.

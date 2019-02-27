@@ -125,6 +125,10 @@
 		"message": "DOMRect API",
 		"description": ""
 	},
+	"section_Navigator-api":{
+		"message": "Navigator API",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expert mode",
@@ -240,6 +244,18 @@
 	},
 	"askForDOMRectReadoutPermission": {
 		"message": "Do you want to allow DOMRect API readout?",
+		"description": ""
+	},
+	"askForNavigatorPermission": {
+		"message": "Do you want to allow the navigator API?",
+		"description": ""
+	},
+	"askForNavigatorInputPermission": {
+		"message": "Do you want to allow navigator API input?",
+		"description": ""
+	},
+	"askForNavigatorReadoutPermission": {
+		"message": "Do you want to allow navigator API readout?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -597,6 +613,10 @@
 	},
 	"fakedDOMRectReadout": {
 		"message": "Faked DOMRect readout on {url}",
+		"description": ""
+	},
+	"fakedNavigatorReadout": {
+		"message": "Faked navigator readout on {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -1000,6 +1020,53 @@
 	},
 	"domRectIntegerFactor_description": {
 		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"description": ""
+	},
+	
+	"protectNavigator_title": {
+		"message": "Protect navigator API",
+		"description": ""
+	},
+	"protectNavigator_description": {
+		"message": "This page allows for changes in the navigator API. Enabling this protection does not change anything by default. Open the navigator settings to specify the changes you want to have there.",
+		"description": ""
+	},
+	
+	"openNavigatorSettings_title": {
+		"message": "Navigator settings",
+		"description": ""
+	},
+	"openNavigatorSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"openNavigatorSettings_label": {
+		"message": "Open",
+		"description": ""
+	},
+	
+	"navigatorSettings_title": {
+		"message": "CanvasBlocker navigator settings",
+		"description": ""
+	},
+	"navigatorSettings_description": {
+		"message": "In this page you can set the navigator settings. If using a preset you should always use a operating system and browser preset. After selecting these you can still make modifications.",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.os": {
+		"message": "Operating system presets",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.browser": {
+		"message": "Browser presets",
+		"description": ""
+	},
+	"navigatorSettings_values": {
+		"message": "Navigator values",
+		"description": ""
+	},
+	"navigatorSettings_reset": {
+		"message": "Reset",
 		"description": ""
 	},
 	

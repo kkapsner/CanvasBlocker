@@ -35,6 +35,7 @@ API para «huellas digitales» protegidas:
 		<li>history</li>
 		<li>window (deshabilitada por defecto)</li>
 		<li>DOMRect</li>
+		<li>navigator (deshabilitada por defecto)</li>
 	</ul>
 
 Puede informar sobre problemas y solicitar funciones en https://github.com/kkapsner/CanvasBlocker/issues

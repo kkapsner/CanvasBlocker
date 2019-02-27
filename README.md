@@ -27,6 +27,7 @@ Protected "fingerprinting" APIs:
  * history
  * window (disabled by default)
  * DOMRect
+ * navigator (disabled by default)
 
 Special thanks to:
  * spodermenpls for finding all the typos

@@ -486,6 +486,28 @@
 				"displayAdvancedSettings": [true]
 			}
 		},
+		"Navigator-API",
+		{
+			"name": "protectNavigator"
+		},
+		{
+			"name": "protectedAPIFeatures",
+			"displayedSection": "Navigator-API",
+			"displayDependencies": [
+				{
+					"protectNavigator": [true],
+					"displayAdvancedSettings": [true]
+				}
+			]
+		},
+		{
+			"name": "openNavigatorSettings",
+			"displayDependencies": [
+				{
+					"protectNavigator": [true]
+				}
+			]
+		},
 		"misc",
 		{
 			"name": "theme"

@@ -15,6 +15,10 @@
 	const searchParameters = new URLSearchParams(window.location.search);
 	
 	var callbacks = {
+		openNavigatorSettings: function(){
+			logging.verbose("open navigator settings");
+			window.open("navigator.html", "_blank");
+		},
 		showReleaseNotes: function(){
 			logging.verbose("open release notes");
 			window.open("../releaseNotes.txt", "_blank");
