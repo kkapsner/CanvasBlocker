@@ -331,6 +331,10 @@
 		"message": "Auslese: die Auslese-Funktionen der Canvas-API werden beschützt.\n\nEingabe: die Ausgabe-Funktionen der Canvas-API werden beschützt. Mit dem Blockiermodus \"vortäuschen\" werden bei der Darstellung von Text die beschriebenen Pixel leicht verändert. Dies erschwert die Detektion des Add-ons, ist aber weniger sicher. Bei WebGL-Canvas ist das Verhalten identisch zu \"Auslese\".\n\nAlles: sowohl Auslese- als auch Eingabe-Funktionen werden beschützt. Es wird empfohlen diese nicht mit dem Blockiermodus \"vortäuschen\" zu verwenden, da es die Wahrscheinlichkeit erhöht detektiert zu werden.",
 		"description": ""
 	},
+	"protectedCanvasPart_urlSpecific": {
+		"message": "Um individuell Teile für bestimmte Webseiten zu schützen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und wählen Sie den gewünschten Teil.",
+		"description": ""
+	},
 	"protectedCanvasPart_options.input": {
 		"message": "Eingabe",
 		"description": ""
