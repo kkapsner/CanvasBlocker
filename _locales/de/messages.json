@@ -100,23 +100,23 @@
 		"description": ""
 	},
 	"section_canvas-api": {
-		"message": "Canvas API",
+		"message": "Canvas-API",
 		"description": ""
 	},
 	"section_audio-api": {
-		"message": "Audio API",
+		"message": "Audio-API",
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "History API",
+		"message": "History-API",
 		"description": ""
 	},
 	"section_window-api": {
-		"message": "Window API",
+		"message": "Window-API",
 		"description": ""
 	},
 	"section_DOMRect-api": {
-		"message": "DOMRect API",
+		"message": "DOMRect-API",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
