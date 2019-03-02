@@ -1,5 +1,9 @@
 Este complemento permite a los usuarios impedir que los sitios web usen algunas API de JavaScript para crear huellas digitales para ellos. Los usuarios pueden elegir entre bloquear las API por completo en algunos sitios web o en todos (lo que puede romper algunos) o falsear su API de lectura para crear huellas digitales.
 
+<b>IMPORTANTE</b>: solo debe tener UN complemento/configuración activo para proteger una API. De lo contrario, puede sufrir enormes problemas de rendimiento (p. ej. EclipseMoon para Palemoon tiene «canvas.poison», del que se sabe que causa problemas: https://github.com/kkapsner/CanvasBlocker/issues/253#issuecomment-459499290).
+
+Aunque poner privacy.resistFingerprinting a «true» no importa.
+
 Puede encontrar más información sobre huellas digitales en:
 	<ul>
 		<li> &lt;canvas&gt;: http://www.browserleaks.com/canvas</li>

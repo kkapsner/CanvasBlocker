@@ -56,6 +56,10 @@
 		"message": "Configuración",
 		"description": ""
 	},
+	"options_title": {
+		"message": "Configuración de CanvasBlocker",
+		"description": ""
+	},	
 	"optionsIntroduction": {
 		"message": "En esta página puede ajustar la configuración de CanvasBlocker.",
 		"description": ""
@@ -121,6 +125,10 @@
 		"message": "API de DOMRect",
 		"description": ""
 	},
+	"section_Navigator-api":{
+		"message": "API de navigator",
+		"description": ""
+	},	
 
 	"displayAdvancedSettings_title": {
 		"message": "Modo para expertos",
@@ -199,7 +207,7 @@
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "¿Quiere permitir la lectura de audio?",
+		"message": "¿Quiere permitir la lectura para la API de audio?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
@@ -238,6 +246,18 @@
 		"message": "¿Quiere permitir la lectura para la API de DOMRect?",
 		"description": ""
 	},
+	"askForNavigatorPermission": {
+		"message": "¿Quiere permitir la API de navigator?",
+		"description": ""
+	},
+	"askForNavigatorInputPermission": {
+		"message": "¿Quiere permitir la entrada para la API de navigator?",
+		"description": ""
+	},
+	"askForNavigatorReadoutPermission": {
+		"message": "¿Quiere permitir la lectura para la API de navigator?",
+		"description": ""
+	},	
 	"askOnlyOnce_title": {
 		"message": "Pregunar una sola vez",
 		"description": ""
@@ -342,6 +362,10 @@
 		"message": "lectura: las funciones de lectura de la API de canvas están protegidas.\n\nentrada: las funciones de entrada de la API de canvas están protegidas. En el modo de bloqueo «falsear», los píxeles dibujados son modificados ligeramente al mostrar texto. Esto dificulta la detección del complemento pero es menos seguro. Con los «canvas» de WebGL, el comportamiento es idéntico a «lectura».\n\ntodo: las funciones tanto de lectura como la entrada están protegidas. No se recomienda usar esto con el modo de bloqueo «falsear» ya que aumenta la probabilidad de ser detectado.",
 		"description": ""
 	},
+	"protectedCanvasPart_urlSpecific": {
+		"message": "Para proteger partes concretas de sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y seleccione la parte deseada.",
+		"description": ""
+	},
 	"protectedCanvasPart_options.input": {
 		"message": "entrada",
 		"description": ""
@@ -356,7 +380,7 @@
 	},
 	
 	"urlSettings_title": {
-		"message": "Configuración de sitios específicos",
+		"message": "Valores específicos para sitios",
 		"description": ""
 	},
 	"urlSettings_description": {
@@ -534,7 +558,7 @@
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "Lista de funciones protegidas de la API. Al desmarcar esta casilla, la función de la API queda desprotegida.",
+		"message": "Lista de funciones protegidas de la API. Al desmarcar una casilla, la función de la API queda desprotegida.",
 		"description": ""
 	},
 
@@ -591,6 +615,10 @@
 		"message": "Lectura de DOMRect falseada en {url}",
 		"description": ""
 	},	
+		"fakedNavigatorReadout": {
+		"message": "Lectura de navigator falseada en {url}",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "Falseado a la entrada en {url}",
 		"description": ""
@@ -626,15 +654,15 @@
 		"description": ""
 	},
 	"inputIgnore": {
-		"message": "Introduzca el dominio o «RegExp» de URL a añadir a la lista blanca:",
+		"message": "Introduzca el dominio o «RegExp» de URL a añadir a la lista de ignorados:",
 		"description": ""
 	},
 	"inputIgnoreDomain": {
-		"message": "Introduzca el dominio a añadir a la lista blanca:",
+		"message": "Introduzca el dominio a añadir a la lista de ignorados:",
 		"description": ""
 	},
 	"inputIgnoreURL": {
-		"message": "Introduzca la «RegExp» de URL a añadir a la lista blanca:",
+		"message": "Introduzca la «RegExp» de URL a añadir a la lista de ignorados:",
 		"description": ""
 	},
 	"selectWhitelist": {
@@ -690,7 +718,7 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Mostrar una notificación cuando el modo de bloqueo sea «falsear la API de lectura».",
+		"message": "Mostrar una notificación cuando el modo de bloqueo sea «falsear la API de lectura». Recibirá la notificación con el icono de la barra de direcciones y la insignia en el icono de CanvasBlocker.",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
@@ -948,11 +976,11 @@
 	},
 	
 	"historyLengthThreshold_title": {
-		"message": "Umbral de longitud del historial",
+		"message": "Tamaño máximo del historial",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Longitud máxima del historial que se reporta al sitio web.",
+		"message": "Tamaño máximo del historial que se reporta al sitio web.",
 		"description": ""
 	},
 
@@ -992,6 +1020,54 @@
 	},
 	"domRectIntegerFactor_description": {
 		"message": "Alguna fracción de un píxel puede ser controlada con CSS. Para prevenir la detección, los valores de un DOMRect que multiplicados por este factor sean números enteros no serán modificados.",
+		"description": ""
+	},
+	
+	"protectNavigator_title": {
+		"message": "Proteger la API de navigator",
+		"description": ""
+	},
+	"protectNavigator_description": {
+		"message": "Esta página permite cambios en la API de navigator. Habilitar esta protección no cambia nada por defecto. Abra la configuración de navigator para especificar allí los cambios que desee.",
+		"description": ""
+	},
+	
+	
+	"openNavigatorSettings_title": {
+		"message": "Configuración de navigator",
+		"description": ""
+	},
+	"openNavigatorSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"openNavigatorSettings_label": {
+		"message": "Abrir",
+		"description": ""
+	},
+
+	"navigatorSettings_title": {
+		"message": "Configuración de CanvasBlocker para navigator",
+		"description": ""
+	},
+	"navigatorSettings_description": {
+		"message": "En esta página puede cambiar la configuración de navigator. Si usa un preajuste, debe usar siempre uno para sistema operativo y otro para el navegador. Después de seleccionarlos, todavía puede hacer modificaciones.",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.os": {
+		"message": "Preajustes del sistema operativo",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.browser": {
+		"message": "Preajustes del navegador",
+		"description": ""
+	},
+	"navigatorSettings_values": {
+		"message": "Valores para navigator",
+		"description": ""
+	},
+	"navigatorSettings_reset": {
+		"message": "Reiniciar",
 		"description": ""
 	},
 	
@@ -1043,7 +1119,7 @@
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "Para encontrar la causa de un error, el registro detallado de la actividad del complemento es útil. Este parámetro controla el nivel de detalle del registro.\n\nEl registro se puede ver en la consola del navegador (Ctrl+Mayús+J) y en la consola web (Ctrl+Mayús+K).",
+		"message": "Para encontrar la causa de un error, es útil el registro detallado de la actividad del complemento. Este parámetro controla el nivel de detalle del registro.\n\nEl registro se puede ver en la consola del navegador (Ctrl+Mayús+J) y en la consola web (Ctrl+Mayús+K).",
 		"description": ""
 	},
 	"logLevel_options.0": {
@@ -1205,7 +1281,7 @@
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
-		"message": "Con el modo de bloqueo «{blockMode}», no funciona la protección {api}.",
+		"message": "Con el modo de bloqueo «{blockMode}», no funciona la protección para {api}.",
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
@@ -1213,7 +1289,7 @@
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "No usar el generador de números aleatorios blanco con «{blockMode}».",
+		"message": "No usar el generador de números aleatorios blanco con «{blockMode}» y la protección «{protectedCanvasPart}».",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
