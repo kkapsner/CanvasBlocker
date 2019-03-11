@@ -13,6 +13,7 @@
 	const search = require("./search");
 	const settingStrings = require("./settingStrings");
 	const searchParameters = new URLSearchParams(window.location.search);
+	const settingsMigration = require("./settingsMigration");
 	
 	var callbacks = {
 		openNavigatorSettings: function(){
@@ -75,6 +76,13 @@
 			}).then(function(text){
 				return JSON.parse(text);
 			}).then(function(json){
+				while (settingsMigration.transitions.hasOwnProperty(json.storageVersion)){
+					let oldVersion = json.storageVersion;
+					json = settingsMigration.transitions[json.storageVersion](json);
+					if (oldVersion === json.storageVersion){
+						break;
+					}
+				}
 				const keys = Object.keys(json);
 				keys.forEach(function(key){
 					const setting = settings.getDefinition(key);

@@ -6,6 +6,7 @@
 
 	const settings = require("./settings");
 	const logging = require("./logging");
+	const settingsMigration = require("./settingsMigration");
 	const input = document.getElementById("settings");
 	settings.onloaded(function(){
 		var data = {};
@@ -18,7 +19,14 @@
 			try {
 				var newSettings = JSON.parse(this.value);
 				var isValid = true;
-
+				
+				while (settingsMigration.transitions.hasOwnProperty(newSettings.storageVersion)){
+					let oldVersion = newSettings.storageVersion;
+					newSettings = settingsMigration.transitions[newSettings.storageVersion](newSettings);
+					if (oldVersion === newSettings.storageVersion){
+						break;
+					}
+				}
 				
 				Object.entries(newSettings).forEach(function(entry){
 					const [name, value] = entry;
@@ -51,6 +59,15 @@
 			catch (e){
 				logging.warning("Invalid JSON:", e);
 				this.classList.add("invalid");
+			}
+		});
+		input.addEventListener("blur", function(){
+			if (!this.classList.contains("invalid")){
+				var data = {};
+				settings.forEach(function(def){
+					data[def.name] = def.get();
+				});
+				input.value = JSON.stringify(data, null, "\t");
 			}
 		});
 	});
