@@ -72,5 +72,5 @@
 		update(){}
 	}
 	Notification.addAction = addAction;
-	window.scope.Notification = Notification;
+	require.register("./Notification", Notification);
 }());

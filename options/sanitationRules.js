@@ -9,8 +9,7 @@
 		scope = exports;
 	}
 	else {
-		scope = {};
-		window.scope.sanitationRules = scope;
+		scope = require.register("./sanitationRules", {});
 	}
 	
 	const settings = require("./settings");

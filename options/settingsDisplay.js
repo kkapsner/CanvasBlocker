@@ -545,6 +545,6 @@
 		module.exports = settingsDisplay;
 	}
 	else {
-		window.scope.settingsDisplay = settingsDisplay;
+		require.register("./settingsDisplay", settingsDisplay);
 	}
 }());

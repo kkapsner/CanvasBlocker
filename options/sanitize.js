@@ -5,6 +5,7 @@
 	"use strict";
 	
 	const settings = require("./settings");
+	const sanitationRules = require("./sanitationRules");
 	
 	var title = document.createElement("h1");
 	title.className = "title";
@@ -18,7 +19,6 @@
 	
 	settings.onloaded(function(){
 		const list = document.createElement("ul");
-		const sanitationRules = require("./sanitationRules");
 		sanitationRules.ruleset.forEach(function(ruleset){
 			const rulesetContainer = document.createElement("li");
 			rulesetContainer.textContent = browser.i18n.getMessage("sanitation_ruleset." + ruleset.name);

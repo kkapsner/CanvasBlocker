@@ -1,6 +1,6 @@
 Version 0.5.9:
 	changes:
-		- 
+		- code cleanup
 	
 	new features:
 		- added protection for navigator properties

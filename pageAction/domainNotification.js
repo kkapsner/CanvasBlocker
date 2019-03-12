@@ -179,5 +179,5 @@
 		return domainNotification;
 	};
 	domainNotification.addAction = addAction;
-	window.scope.domainNotification = domainNotification;
+	require.register("./domainNotification", domainNotification);
 }());

@@ -9,8 +9,7 @@
 		scope = exports;
 	}
 	else {
-		scope = {};
-		window.scope.optionsGui = scope;
+		scope = require.register("./optionsGui", {});
 	}
 
 	const logging = require("./logging");

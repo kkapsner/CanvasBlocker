@@ -5,7 +5,7 @@
 (function(){
 	"use strict";
 
-	const scope = window.scope.gui = {};
+	const scope = require.register("./gui", {});
 	
 	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("./logging");
 
