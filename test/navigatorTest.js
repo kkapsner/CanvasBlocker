@@ -22,7 +22,7 @@ var createLog = function(){
 
 var log = createLog();
 
-log("user agent equal between server and client: " + (serverUserAgent === navigator.userAgent));
+log("user agent equal between server and client: " + (window.serverUserAgent === navigator.userAgent));
 
 Object.keys(navigator.__proto__).sort().forEach(function(property){
 	"use strict";

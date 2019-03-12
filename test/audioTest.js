@@ -107,9 +107,9 @@
 		context.oncomplete = function(event){
 			var chunkTest = new Float32Array(44100);
 			var number = new Float32Array(100);
-			for (var i = 0; i < 44100; i += number.length){
-				event.renderedBuffer.copyFromChannel(number, 0, i);
-				chunkTest.set(number, i);
+			for (var chunkI = 0; chunkI < 44100; chunkI += number.length){
+				event.renderedBuffer.copyFromChannel(number, 0, chunkI);
+				chunkTest.set(number, chunkI);
 			}
 			displayData(chunkTest, setName, "copyFromChannel - chunks");
 			
