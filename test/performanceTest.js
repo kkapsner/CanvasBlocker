@@ -53,7 +53,8 @@ var performTest = function(){
 			var totalRunI = outerI * innerRunLength;
 			line(
 				"finished run " + totalRunI + " from " + (innerRunLength * outerRunLength) +
-				" -> average: " + (time / totalRunI).toFixed(2) + "ms" +
+				" -> average: " + (time / totalRunI).toFixed(2) +
+				"(\u00B1" + Math.sqrt((time2 - time * time / totalRunI) / totalRunI).toFixed(2) + ") ms " +
 				"(min: " + min.toFixed(2) + "ms, max: " + max.toFixed(2) + "ms)"
 			);
 			if (outerI < outerRunLength){
