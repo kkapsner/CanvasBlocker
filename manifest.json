@@ -30,6 +30,7 @@
 		"run_at": "document_start",
 		"js": [
 			"lib/require.js",
+			"lib/extension.js",
 			"lib/logging.js",
 			
 			"lib/settingDefinitions.js",
