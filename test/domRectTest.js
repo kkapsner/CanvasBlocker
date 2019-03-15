@@ -18,17 +18,22 @@
 	function getElements(){
 		const doc = iframe.contentDocument;
 		
-		return Array.from(doc.querySelectorAll("*[id^=rect]"));
+		return Array.from(doc.querySelectorAll(".testRect"));
 	}
 	
 	function createTest(title, callback){
 		const properties = ["x", "y", "width", "height", "top", "left", "right", "bottom"];
 		function performTest(){
-			const rects = getElements().map(callback);
+			const rects = getElements().map(function(element){
+				return {
+					name: element.dataset.name,
+					data: callback(element)
+				};
+			});
 			const data = new Float64Array(rects.length * properties.length);
 			rects.forEach(function(rect, i){
 				properties.forEach(function(property, j){
-					data[i * properties.length + j] = rect[property];
+					data[i * properties.length + j] = rect.data[property];
 				});
 			});
 			
@@ -37,18 +42,41 @@
 					output.querySelector(".hash").textContent = byteArrayToHex(hash);
 				});
 			
-			output.querySelector(".data").innerHTML = "<table><tr><th></th>" +
-				rects.map(function(rect, i){
-					return "<th>rect " + (i + 1) + "</th>";
+			function formatNumber(number){
+				const str = number.toString();
+				return "<span class=small>" + str.substring(0, str.length - 2) + "</span>" +
+					str.substring(str.length - 2);
+			}
+			var dataNode = output.querySelector(".data");
+			dataNode.innerHTML = "<table><tr><th></th>" +
+				rects.map(function(rect){
+					return "<th>" + rect.name + "</th>";
+				}).join("") +
+				"</tr><tr><th>hash</th>" +
+				rects.map(function(rect){
+					return "<td class=\"rectHash\" data-name=\"" + rect.name + "\"></td>";
 				}).join("") +
 				"</tr>" +
 				properties.map(function(property){
-					return "<tr><th>" + property + "</th>" + rects.map(function(rect, i){
-						return "<td>" + rect[property] + "</td>";
+					return "<tr><th>" + property + "</th>" + rects.map(function(rect){
+						return "<td class=\"value\" title=\"" + rect.data[property] + "\">" +
+							formatNumber(rect.data[property]) +
+							"</td>";
 					}).join("") + "</tr>";
 				}).join("") +
 				"</table>";
-			
+			rects.forEach(function(rect){
+				const data = new Float64Array(properties.length);
+				properties.forEach(function(property, i){
+					data[i] = rect.data[property];
+				});
+				
+				crypto.subtle.digest("SHA-256", data).then(function(hash){
+					dataNode.querySelector(
+						".rectHash[data-name=\"" + rect.name + "\"]"
+					).textContent = byteArrayToHex(hash);
+				});
+			});
 		}
 		const output = template.cloneNode(true);
 		output.querySelector(".title").textContent = title;

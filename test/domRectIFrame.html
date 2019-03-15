@@ -26,19 +26,43 @@
 	transform-origin: 0.1111px 0.2222px 0.3333px;
 }
 
+#select {
+	transform: rotate(1.23deg);
+}
+
+#progress {
+	transform: scale(3.14);
+	position: absolute;
+	top: 300px;
+	left: 200px;
+}
+
+#button {
+	padding: 4.937px;
+	margin: 9.876px;
+}
+
+.testRect {
+	outline: 2px dotted lightblue;
+}
 
 </style>
 </head>
 <body>
 
 <div id="inside">
-<h1 id="rect0">https://browserleaks.com<i>/rects</i></h4>
-<span id="rect1"><strong>Element.getClientRects (̿▀̿&thinsp;̿Ĺ̯̿̿▀̿ ̿)̄ </strong></span><br />
+<h1 data-name="rect 0" class="testRect">https://browserleaks.com<i>/rects</i></h1>
+<span data-name="rect 1" class="testRect"><strong>Element.getClientRects (̿▀̿&thinsp;̿Ĺ̯̿̿▀̿ ̿)̄ </strong></span><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span id="rect2">F i n g e r p r i n t i n g ?</span>
+<span data-name="rect 2" class="testRect">F i n g e r p r i n t i n g ?</span>
 </div>
+<select id="select" data-name="select" class="testRect">
+	<option>&minus;&#1726;-</option>
+</select>
+<progress id="progress" data-name="progress bar" class="testRect">test</progress>
+<button id="button" data-name="empty button" class="testRect"></button>
 </body>
 </html>
