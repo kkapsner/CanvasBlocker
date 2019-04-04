@@ -32,7 +32,7 @@ Protected "fingerprinting" APIs:
 Special thanks to:
  * spodermenpls for finding all the typos
  * Thorin-Oakenpants for the icon idea
- * anthologist for the Italian translation
+ * anthologist and unbranched for the Italian translation
  * Maleficient for the French translation
  * yfdyh000 for the Chinese translation
  * micrococo for the Spanish translation
