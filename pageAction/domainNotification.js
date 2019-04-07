@@ -5,6 +5,7 @@
 	"use strict";
 
 	const {createCollapser, createActionButtons} = require("./gui");
+	const extension = require("../lib/extension");
 
 	const actions = [];
 	const addAction = function addAction(action){
@@ -13,7 +14,7 @@
 	
 	const addToContainer = function(){
 		const container = document.getElementById("prints");
-		container.querySelector("li").textContent = browser.i18n.getMessage("pleaseWait");
+		container.querySelector("li").textContent = extension.getTranslation("pleaseWait");
 		var first = true;
 
 		return function addToContainer(domainNotification){
@@ -103,7 +104,7 @@
 		this.textNode = function(){
 			return node;
 		};
-		var messageParts = browser.i18n.getMessage(this.messageId).split(/\{url\}/g);
+		var messageParts = extension.getTranslation(this.messageId).split(/\{url\}/g);
 		node.appendChild(document.createTextNode(messageParts.shift()));
 		while (messageParts.length){
 			var urlSpan = document.createElement("span");
@@ -179,5 +180,10 @@
 		return domainNotification;
 	};
 	domainNotification.addAction = addAction;
-	require.register("./domainNotification", domainNotification);
+	if ((typeof module) !== "undefined"){
+		module.exports = domainNotification;
+	}
+	else {
+		require.register("./domainNotification", domainNotification);
+	}
 }());

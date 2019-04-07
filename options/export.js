@@ -4,9 +4,9 @@
 (function(){
 	"use strict";
 
-	const settings = require("./settings");
-	const logging = require("./logging");
-	const settingsMigration = require("./settingsMigration");
+	const settings = require("../lib/settings");
+	const logging = require("../lib/logging");
+	const settingsMigration = require("../lib/settingsMigration");
 	const input = document.getElementById("settings");
 	settings.onloaded(function(){
 		var data = {};

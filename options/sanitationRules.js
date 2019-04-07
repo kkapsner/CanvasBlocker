@@ -12,7 +12,7 @@
 		scope = require.register("./sanitationRules", {});
 	}
 	
-	const settings = require("./settings");
+	const settings = require("../lib/settings");
 	
 	scope.ruleset = [
 		{

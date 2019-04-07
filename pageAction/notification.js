@@ -72,5 +72,11 @@
 		update(){}
 	}
 	Notification.addAction = addAction;
-	require.register("./Notification", Notification);
+	
+	if ((typeof module) !== "undefined"){
+		module.exports = Notification;
+	}
+	else {
+		require.register("./Notification", Notification);
+	}
 }());

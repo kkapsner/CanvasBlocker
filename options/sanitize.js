@@ -4,7 +4,7 @@
 (function(){
 	"use strict";
 	
-	const settings = require("./settings");
+	const settings = require("../lib/settings");
 	const sanitationRules = require("./sanitationRules");
 	
 	var title = document.createElement("h1");

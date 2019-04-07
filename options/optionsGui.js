@@ -12,7 +12,7 @@
 		scope = require.register("./optionsGui", {});
 	}
 
-	const logging = require("./logging");
+	const logging = require("../lib/logging");
 
 	function createDescription(setting){
 		var c = document.createElement("div");

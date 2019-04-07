@@ -4,8 +4,8 @@
 (function(){
 	"use strict";
 	
-	const settings = require("./settings");
-	const navigator = require("./navigator");
+	const settings = require("../lib/settings");
+	const navigator = require("../lib/navigator");
 	
 	const title = document.createElement("h1");
 	title.className = "title";

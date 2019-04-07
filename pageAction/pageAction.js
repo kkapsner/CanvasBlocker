@@ -4,15 +4,15 @@
 (function(){
 	"use strict";
 
-	const settings = require("./settings");
-	const {parseErrorStack} = require("./callingStack");
-	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("./logging");
+	const settings = require("../lib/settings");
+	const {parseErrorStack} = require("../lib/callingStack");
+	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("../lib/logging");
 	setLogPrefix("page action script");
 
 	const domainNotification = require("./domainNotification");
 	const Notification = require("./Notification");
 	const {createActionButtons, modalPrompt, modalChoice} = require("./gui");
-	const lists = require("./lists");
+	const lists = require("../lib/lists");
 
 	Promise.all([
 		browser.tabs.query({active: true, currentWindow: true}),

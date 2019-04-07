@@ -5,14 +5,21 @@
 (function(){
 	"use strict";
 
-	const scope = require.register("./gui", {});
+	let scope;
+	if ((typeof exports) !== "undefined"){
+		scope = exports;
+	}
+	else {
+		scope = require.register("./gui", {});
+	}
 	
-	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("./logging");
+	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("../lib/logging");
+	const extension = require("../lib/extension");
 
 	scope.createCollapser = function(){
 		const messages = {
-			more: browser.i18n.getMessage("more"),
-			less: browser.i18n.getMessage("less")
+			more: extension.getTranslation("more"),
+			less: extension.getTranslation("less")
 		};
 
 		return function createCollapser(container){

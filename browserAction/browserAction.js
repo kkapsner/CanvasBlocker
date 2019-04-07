@@ -4,8 +4,8 @@
 (function(){
 	"use strict";
 	
-	const logging = require("./logging");
-	const settings = require("./settings");
+	const logging = require("../lib/logging");
+	const settings = require("../lib/settings");
 	logging.message("Opened browser action");
 	
 	settings.onloaded(function(){

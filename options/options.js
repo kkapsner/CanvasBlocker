@@ -4,16 +4,16 @@
 (function(){
 	"use strict";
 
-	const logging = require("./logging");
+	const logging = require("../lib/logging");
 	logging.setPrefix("options page");
 	
 	const optionsGui = require("./optionsGui");
-	const settings = require("./settings");
-	const settingsDisplay = require("./settingsDisplay");
-	const search = require("./search");
-	const settingStrings = require("./settingStrings");
+	const settings = require("../lib/settings");
+	const settingsDisplay = require("../lib/settingsDisplay");
+	const search = require("../lib/search");
+	const settingStrings = require("../lib/settingStrings");
 	const searchParameters = new URLSearchParams(window.location.search);
-	const settingsMigration = require("./settingsMigration");
+	const settingsMigration = require("../lib/settingsMigration");
 	
 	var callbacks = {
 		openNavigatorSettings: function(){
