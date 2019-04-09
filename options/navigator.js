@@ -4,19 +4,20 @@
 (function(){
 	"use strict";
 	
+	const extension = require("../lib/extension");
 	const settings = require("../lib/settings");
 	const navigator = require("../lib/navigator");
 	
 	const title = document.createElement("h1");
 	title.className = "title";
-	title.textContent = browser.i18n.getMessage("navigatorSettings_title");
+	title.textContent = extension.getTranslation("navigatorSettings_title");
 	document.body.appendChild(title);
 	
 	document.querySelector("head title").textContent = title.textContent;
 	
 	const description = document.createElement("div");
 	description.className = "description";
-	description.textContent = browser.i18n.getMessage("navigatorSettings_description");
+	description.textContent = extension.getTranslation("navigatorSettings_description");
 	document.body.appendChild(description);
 	
 	function presetSection(title, presets){
@@ -25,7 +26,7 @@
 		
 		const titleNode = document.createElement("h2");
 		titleNode.className = "title";
-		titleNode.textContent = browser.i18n.getMessage("navigatorSettings_presetSection." + title);
+		titleNode.textContent = extension.getTranslation("navigatorSettings_presetSection." + title);
 		container.appendChild(titleNode);
 		
 		const presetsList = document.createElement("ul");
@@ -171,7 +172,7 @@
 	document.body.appendChild(presetSection("browser", browserPresets));
 	
 	const valueTitle = document.createElement("h2");
-	valueTitle.textContent = browser.i18n.getMessage("navigatorSettings_values");
+	valueTitle.textContent = extension.getTranslation("navigatorSettings_values");
 	document.body.appendChild(valueTitle);
 	
 	const valueSection = document.createElement("table");
@@ -229,7 +230,7 @@
 	
 	const resetButton = document.createElement("button");
 	resetButton.className = "button";
-	resetButton.textContent = browser.i18n.getMessage("navigatorSettings_reset");
+	resetButton.textContent = extension.getTranslation("navigatorSettings_reset");
 	resetButton.addEventListener("click", function(){
 		settings.navigatorDetails = {};
 	});

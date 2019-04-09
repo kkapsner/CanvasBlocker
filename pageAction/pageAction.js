@@ -4,6 +4,7 @@
 (function(){
 	"use strict";
 
+	const extension = require("../lib/extension");
 	const settings = require("../lib/settings");
 	const {parseErrorStack} = require("../lib/callingStack");
 	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("../lib/logging");
@@ -102,8 +103,8 @@
 					domainOrUrlPicker(
 						domain,
 						urls,
-						browser.i18n.getMessage("selectIgnore"),
-						browser.i18n.getMessage("inputIgnoreURL")
+						extension.getTranslation("selectIgnore"),
+						extension.getTranslation("inputIgnoreURL")
 					).then(function(choice){
 						if (choice){
 							settings.set("showNotifications", false, choice).then(function(){
@@ -123,8 +124,8 @@
 					domainOrUrlPicker(
 						domain,
 						urls,
-						browser.i18n.getMessage("selectWhitelist"),
-						browser.i18n.getMessage("inputWhitelistURL")
+						extension.getTranslation("selectWhitelist"),
+						extension.getTranslation("inputWhitelistURL")
 					).then(function(choice){
 						if (choice){
 							settings.set("blockMode", "allow", choice).then(function(){
@@ -144,8 +145,8 @@
 					domainOrUrlPicker(
 						domain,
 						urls,
-						browser.i18n.getMessage("selectSessionWhitelist"),
-						browser.i18n.getMessage("inputSessionWhitelistURL")
+						extension.getTranslation("selectSessionWhitelist"),
+						extension.getTranslation("inputSessionWhitelistURL")
 					).then(function(choice){
 						if (choice){
 							lists.appendTo("sessionWhite", choice).then(function(){

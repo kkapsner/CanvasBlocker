@@ -7,8 +7,8 @@ const util = require("util");
 function getMessagesInContent(content){
 	const foundMessages = [];
 	[
-		/\b(?:_|browser.i18n.getMessage|notify)\(["']([^"']+)["']\s*(?:\)|,)/g,
-		/\b(?:messageId|name)\s*:\s*["']([^"']+)["']/g,
+		/\b(?:_|browser.i18n.getMessage|notify|extension)\(["']([^"']+)["']\s*(?:\)|,)/g,
+		/\b(?:messageId|name|getTranslation)\s*:\s*["']([^"']+)["']/g,
 	].forEach(function(re){
 		let match;
 		while ((match = re.exec(content)) !== null){

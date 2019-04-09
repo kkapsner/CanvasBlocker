@@ -47,7 +47,7 @@
 		actions.forEach(function(action, i){
 			var button = document.createElement("button");
 			button.className = action.name + " action";
-			button.title = browser.i18n.getMessage(action.name);
+			button.title = extension.getTranslation(action.name);
 			if (action.isIcon || action.icon){
 				button.classList.add("isIcon");
 				var img = document.createElement("img");

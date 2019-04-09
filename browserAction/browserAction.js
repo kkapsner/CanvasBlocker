@@ -4,6 +4,7 @@
 (function(){
 	"use strict";
 	
+	const extension = require("../lib/extension");
 	const logging = require("../lib/logging");
 	const settings = require("../lib/settings");
 	logging.message("Opened browser action");
@@ -73,7 +74,7 @@
 			
 			actionButton.appendChild(
 				document.createTextNode(
-					browser.i18n.getMessage("browserAction_" + action.label) || action.label
+					extension.getTranslation("browserAction_" + action.label) || action.label
 				)
 			);
 			actionButton.addEventListener("click", action.action);
@@ -81,7 +82,7 @@
 		});
 		
 		var search = document.createElement("input");
-		search.placeholder = browser.i18n.getMessage("search");
+		search.placeholder = extension.getTranslation("search");
 		search.className = "search action";
 		actions.appendChild(search);
 		search.focus();

@@ -11,7 +11,8 @@
 	else {
 		scope = require.register("./optionsGui", {});
 	}
-
+	
+	const extension = require("../lib/extension");
 	const logging = require("../lib/logging");
 
 	function createDescription(setting){
@@ -20,12 +21,12 @@
 
 		var title = document.createElement("span");
 		title.className = "title";
-		title.textContent = browser.i18n.getMessage(setting.name + "_title");
+		title.textContent = extension.getTranslation(setting.name + "_title");
 		c.appendChild(title);
 
-		var descriptionText = browser.i18n.getMessage(setting.name + "_description");
+		var descriptionText = extension.getTranslation(setting.name + "_description");
 		if (setting.urlSpecific){
-			const urlSpecificDescription = browser.i18n.getMessage(setting.name + "_urlSpecific");
+			const urlSpecificDescription = extension.getTranslation(setting.name + "_urlSpecific");
 			if (urlSpecificDescription){
 				descriptionText += (descriptionText? "\n\n": "") + urlSpecificDescription;
 			}
@@ -53,7 +54,7 @@
 				if (setting.defaultValue === value){
 					option.selected = true;
 				}
-				option.text = browser.i18n.getMessage(setting.name + "_options." + value) || value;
+				option.text = extension.getTranslation(setting.name + "_options." + value) || value;
 			}
 			else {
 				option.disabled = true;
@@ -156,7 +157,7 @@
 					let cell = document.createElement("td");
 					cell.colSpan = 2;
 					let h = document.createElement("h" + (2 + (key.level || 1)));
-					h.textContent = key.message? browser.i18n.getMessage(key.message): key.name;
+					h.textContent = key.message? extension.getTranslation(key.message): key.name;
 					cell.appendChild(h);
 					row.appendChild(cell);
 					input.appendChild(row);
@@ -227,7 +228,7 @@
 			});
 			let urlTable = document.createElement("table");
 			let caption = document.createElement("caption");
-			caption.textContent = browser.i18n.getMessage(setting.urlContainer.name + "_title");
+			caption.textContent = extension.getTranslation(setting.urlContainer.name + "_title");
 			urlTable.appendChild(caption);
 			let body = document.createElement("tbody");
 			urlTable.appendChild(body);
@@ -236,7 +237,7 @@
 			let footCell = document.createElement("td");
 			footCell.colSpan = 3;
 			let newInput = document.createElement("input");
-			newInput.title = browser.i18n.getMessage("inputURL");
+			newInput.title = extension.getTranslation("inputURL");
 			const addURLSetting = function(){
 				var url = newInput.value.trim();
 				if (url){
@@ -274,7 +275,7 @@
 						input.style.height = urlCell.clientHeight + "px";
 						urlCell.innerHTML = "";
 						urlCell.appendChild(input);
-						input.title = browser.i18n.getMessage("inputURL");
+						input.title = extension.getTranslation("inputURL");
 						input.value = entry.url;
 						input.focus();
 						input.addEventListener("blur", function(){
@@ -316,7 +317,7 @@
 
 	function createButton(setting){
 		var button = document.createElement("button");
-		button.textContent = browser.i18n.getMessage(setting.name + "_label");
+		button.textContent = extension.getTranslation(setting.name + "_label");
 		button.addEventListener("click", setting.action);
 		return button;
 	}
@@ -359,7 +360,7 @@
 	function createHide(setting){
 		var label = document.createElement("label");
 		label.className = "content hideContent";
-		label.title = browser.i18n.getMessage("hideSetting");
+		label.title = extension.getTranslation("hideSetting");
 		var input = document.createElement("input");
 		input.type = "checkbox";
 		input.className = "hide";
@@ -405,7 +406,7 @@
 		const headRow = document.createElement("tr");
 		const hideHeadCell = document.createElement("td");
 		hideHeadCell.className = "hideColumn";
-		hideHeadCell.title = browser.i18n.getMessage(displayHidden.name + "_description");
+		hideHeadCell.title = extension.getTranslation(displayHidden.name + "_description");
 		const label = document.createElement("label");
 		label.className = "hideContent";
 		const input = createInput(displayHidden);

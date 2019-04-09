@@ -12,6 +12,7 @@
 		scope = require.register("./sanitationRules", {});
 	}
 	
+	const extension = require("../lib/extension");
 	const settings = require("../lib/settings");
 	
 	scope.ruleset = [
@@ -20,11 +21,11 @@
 			check: function(errorCallback){
 				const {url: urlContainer} = settings.getContainers();
 				const containerValue = urlContainer.get();
-				const errorMessage = browser.i18n.getMessage("sanitation_error.unnecessaryURLValue");
+				const errorMessage = extension.getTranslation("sanitation_error.unnecessaryURLValue");
 				function createErrorMessage(setting, urlValue){
 					return errorMessage
 						.replace(/{setting-technical}/g, setting.name)
-						.replace(/{setting-title}/g, browser.i18n.getMessage(setting.name + "_title"))
+						.replace(/{setting-title}/g, extension.getTranslation(setting.name + "_title"))
 						.replace(/{url}/g, urlValue.url);
 				}
 				containerValue.forEach(function(urlValues){
@@ -39,7 +40,7 @@
 									message: createErrorMessage(setting, urlValues),
 									severity: "low",
 									resolutions: [{
-										label: browser.i18n.getMessage("sanitation_resolution.removeURLValue"),
+										label: extension.getTranslation("sanitation_resolution.removeURLValue"),
 										callback: function(){
 											setting.reset(urlValues.url);
 										}
@@ -54,9 +55,9 @@
 		{
 			name: "disabledFeatures",
 			check: function(errorCallback){
-				const errorMessage = browser.i18n.getMessage("sanitation_error.disabledFeatures");
+				const errorMessage = extension.getTranslation("sanitation_error.disabledFeatures");
 				function createErrorMessage(api){
-					return errorMessage.replace(/{api}/g, browser.i18n.getMessage("section_" + api.section));
+					return errorMessage.replace(/{api}/g, extension.getTranslation("section_" + api.section));
 				}
 				const protectedFeatures = settings.getDefinition("protectedAPIFeatures");
 				const protectedFeaturesValue = protectedFeatures.get();
@@ -91,7 +92,7 @@
 								severity: "high",
 								resolutions: [
 									{
-										label: browser.i18n.getMessage("sanitation_resolution.enableFeatures"),
+										label: extension.getTranslation("sanitation_resolution.enableFeatures"),
 										callback: function(){
 											const protectedFeaturesValue = protectedFeatures.get();
 											getSectionKeys(api.section).forEach(function(key){
@@ -101,7 +102,7 @@
 										}
 									},
 									{
-										label: browser.i18n.getMessage("sanitation_resolution.disableMainFlag"),
+										label: extension.getTranslation("sanitation_resolution.disableMainFlag"),
 										callback: function(){
 											settings.set(api.mainFlag, false);
 										}
@@ -120,10 +121,10 @@
 				const protectedCanvasPart = settings.protectedCanvasPart;
 				if (!blockMode.match("^fake|^ask")){
 					errorCallback({
-						message: browser.i18n.getMessage("sanitation_error.badBlockMode"),
+						message: extension.getTranslation("sanitation_error.badBlockMode"),
 						severity: "medium",
 						resolutions: [{
-							label: browser.i18n.getMessage("sanitation_resolution.switchToFake"),
+							label: extension.getTranslation("sanitation_resolution.switchToFake"),
 							callback: function(){
 								settings.blockMode = "fake";
 							}
@@ -132,22 +133,22 @@
 				}
 				if (blockMode === "fake" && protectedCanvasPart === "input" && settings.rng === "white"){
 					errorCallback({
-						message: browser.i18n.getMessage("sanitation_error.fakeInputWithWhiteRng")
-							.replace(/{blockMode}/g, browser.i18n.getMessage("blockMode_options." + blockMode))
+						message: extension.getTranslation("sanitation_error.fakeInputWithWhiteRng")
+							.replace(/{blockMode}/g, extension.getTranslation("blockMode_options." + blockMode))
 							.replace(
 								/{protectedCanvasPart}/g,
-								browser.i18n.getMessage("protectedCanvasPart_options." + settings.protectedCanvasPart)
+								extension.getTranslation("protectedCanvasPart_options." + settings.protectedCanvasPart)
 							),
 						severity: "low",
 						resolutions: [
 							{
-								label: browser.i18n.getMessage("sanitation_resolution.switchToProtectReadout"),
+								label: extension.getTranslation("sanitation_resolution.switchToProtectReadout"),
 								callback: function(){
 									settings.protectedCanvasPart = "readout";
 								}
 							},
 							{
-								label: browser.i18n.getMessage("sanitation_resolution.switchToNonPersistentRng"),
+								label: extension.getTranslation("sanitation_resolution.switchToNonPersistentRng"),
 								callback: function(){
 									settings.rng = "nonPersistent";
 								}
@@ -157,22 +158,22 @@
 				}
 				if (blockMode === "fake" && protectedCanvasPart === "everything"){
 					errorCallback({
-						message: browser.i18n.getMessage("sanitation_error.fakeEverythingInCanvas")
-							.replace(/{blockMode}/g, browser.i18n.getMessage("blockMode_options." + blockMode))
+						message: extension.getTranslation("sanitation_error.fakeEverythingInCanvas")
+							.replace(/{blockMode}/g, extension.getTranslation("blockMode_options." + blockMode))
 							.replace(
 								/{protectedCanvasPart}/g,
-								browser.i18n.getMessage("protectedCanvasPart_options." + settings.protectedCanvasPart)
+								extension.getTranslation("protectedCanvasPart_options." + settings.protectedCanvasPart)
 							),
 						severity: "low",
 						resolutions: [
 							{
-								label: browser.i18n.getMessage("sanitation_resolution.switchToProtectReadout"),
+								label: extension.getTranslation("sanitation_resolution.switchToProtectReadout"),
 								callback: function(){
 									settings.protectedCanvasPart = "readout";
 								}
 							},
 							{
-								label: browser.i18n.getMessage("sanitation_resolution.switchToProtectInput"),
+								label: extension.getTranslation("sanitation_resolution.switchToProtectInput"),
 								callback: function(){
 									settings.protectedCanvasPart = "input";
 								}
@@ -185,13 +186,13 @@
 		{
 			name: "thresholds",
 			check: function(errorCallback){
-				const setToLabel = browser.i18n.getMessage("sanitation_resolution.setTo");
-				const tooLowLabel = browser.i18n.getMessage("sanitation_error.valueTooLow");
-				const tooHighLabel = browser.i18n.getMessage("sanitation_error.valueTooHigh");
+				const setToLabel = extension.getTranslation("sanitation_resolution.setTo");
+				const tooLowLabel = extension.getTranslation("sanitation_error.valueTooLow");
+				const tooHighLabel = extension.getTranslation("sanitation_error.valueTooHigh");
 				if (settings.minFakeSize > 1e2){
 					errorCallback({
 						message: tooHighLabel
-							.replace(/{setting}/g, browser.i18n.getMessage("minFakeSize_title"))
+							.replace(/{setting}/g, extension.getTranslation("minFakeSize_title"))
 							.replace(/{value}/g, "100"),
 						severity: "high",
 						resolutions: [{
@@ -205,7 +206,7 @@
 				if (settings.maxFakeSize !== 0 && settings.maxFakeSize < 1e6){
 					errorCallback({
 						message: tooLowLabel
-							.replace(/{setting}/g, browser.i18n.getMessage("maxFakeSize_title"))
+							.replace(/{setting}/g, extension.getTranslation("maxFakeSize_title"))
 							.replace(/{value}/g, "1 000 000"),
 						severity: "high",
 						resolutions: [{
@@ -219,7 +220,7 @@
 				if (settings.ignoreFrequentColors > 3){
 					errorCallback({
 						message: tooHighLabel
-							.replace(/{setting}/g, browser.i18n.getMessage("ignoreFrequentColors_title"))
+							.replace(/{setting}/g, extension.getTranslation("ignoreFrequentColors_title"))
 							.replace(/{value}/g, "3"),
 						severity: "high",
 						resolutions: [{
@@ -233,7 +234,7 @@
 				if (settings.minColors > 10){
 					errorCallback({
 						message: tooHighLabel
-							.replace(/{setting}/g, browser.i18n.getMessage("minColors_title"))
+							.replace(/{setting}/g, extension.getTranslation("minColors_title"))
 							.replace(/{value}/g, "10"),
 						severity: "high",
 						resolutions: [{
@@ -249,14 +250,14 @@
 		{
 			name: "performance",
 			check: function(errorCallback){
-				const disableLabel = browser.i18n.getMessage("sanitation_resolution.disableFlag");
+				const disableLabel = extension.getTranslation("sanitation_resolution.disableFlag");
 				if (settings.storeNotificationData){
 					errorCallback({
-						message: browser.i18n.getMessage("sanitation_error.storeNotificationData"),
+						message: extension.getTranslation("sanitation_error.storeNotificationData"),
 						severity: "low",
 						resolutions: [{
 							label: disableLabel
-								.replace(/{flag}/g, browser.i18n.getMessage("storeNotificationData_title")),
+								.replace(/{flag}/g, extension.getTranslation("storeNotificationData_title")),
 							callback: function(){
 								settings.storeNotificationData = false;
 							}
@@ -264,11 +265,11 @@
 					});
 					if (settings.storeImageForInspection){
 						errorCallback({
-							message: browser.i18n.getMessage("sanitation_error.storeImage"),
+							message: extension.getTranslation("sanitation_error.storeImage"),
 							severity: "low",
 							resolutions: [{
 								label: disableLabel
-									.replace(/{flag}/g, browser.i18n.getMessage("storeImageForInspection_title")),
+									.replace(/{flag}/g, extension.getTranslation("storeImageForInspection_title")),
 								callback: function(){
 									settings.storeImageForInspection = false;
 								}
@@ -283,11 +284,11 @@
 			check: function(errorCallback){
 				if (settings.sharePersistentRndBetweenDomains){
 					errorCallback({
-						message: browser.i18n.getMessage("sanitation_error.doNotSharePersistentRndBetweenDomains"),
+						message: extension.getTranslation("sanitation_error.doNotSharePersistentRndBetweenDomains"),
 						severity: "high",
 						resolutions: [{
-							label: browser.i18n.getMessage("sanitation_resolution.disableFlag")
-								.replace(/{flag}/g, browser.i18n.getMessage("sharePersistentRndBetweenDomains_title")),
+							label: extension.getTranslation("sanitation_resolution.disableFlag")
+								.replace(/{flag}/g, extension.getTranslation("sharePersistentRndBetweenDomains_title")),
 							callback: function(){
 								settings.sharePersistentRndBetweenDomains = false;
 							}

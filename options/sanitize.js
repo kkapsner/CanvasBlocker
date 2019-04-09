@@ -4,24 +4,25 @@
 (function(){
 	"use strict";
 	
+	const extension = require("../lib/extension");
 	const settings = require("../lib/settings");
 	const sanitationRules = require("./sanitationRules");
 	
 	var title = document.createElement("h1");
 	title.className = "title";
-	title.textContent = browser.i18n.getMessage("sanitation_title");
+	title.textContent = extension.getTranslation("sanitation_title");
 	document.body.appendChild(title);
 	
 	var description = document.createElement("div");
 	description.className = "description";
-	description.textContent = browser.i18n.getMessage("sanitation_description");
+	description.textContent = extension.getTranslation("sanitation_description");
 	document.body.appendChild(description);
 	
 	settings.onloaded(function(){
 		const list = document.createElement("ul");
 		sanitationRules.ruleset.forEach(function(ruleset){
 			const rulesetContainer = document.createElement("li");
-			rulesetContainer.textContent = browser.i18n.getMessage("sanitation_ruleset." + ruleset.name);
+			rulesetContainer.textContent = extension.getTranslation("sanitation_ruleset." + ruleset.name);
 			
 			const rulesetErrors = document.createElement("ul");
 			let anyComplaint = false;
@@ -48,7 +49,7 @@
 			if (!anyComplaint){
 				const noComplaints = document.createElement("li");
 				noComplaints.className = "noComplaints";
-				noComplaints.textContent = browser.i18n.getMessage("sanitation_nothingToComplain");
+				noComplaints.textContent = extension.getTranslation("sanitation_nothingToComplain");
 				rulesetErrors.appendChild(noComplaints);
 			}
 			rulesetContainer.appendChild(rulesetErrors);

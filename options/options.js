@@ -3,7 +3,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 (function(){
 	"use strict";
-
+	
+	const extension = require("../lib/extension");
 	const logging = require("../lib/logging");
 	logging.setPrefix("options page");
 	
@@ -101,7 +102,7 @@
 			});
 		},
 		resetSettings: function(){
-			if (window.confirm(browser.i18n.getMessage("resetSettings_confirm"))){
+			if (window.confirm(extension.getTranslation("resetSettings_confirm"))){
 				browser.storage.local.clear();
 			}
 		}
@@ -119,22 +120,22 @@
 	}).then(function(tabId){
 		return browser.tabs.get(tabId);
 	}).then(function(tab){
-		document.querySelector("head title").textContent = browser.i18n.getMessage("options_title");
+		document.querySelector("head title").textContent = extension.getTranslation("options_title");
 		let head = document.createElement("header");
 		document.body.insertBefore(head, document.body.firstChild);
 		
 		if (tab.url === window.location.href){
 			let heading = document.createElement("h1");
-			heading.textContent = browser.i18n.getMessage("options");
+			heading.textContent = extension.getTranslation("options");
 			head.appendChild(heading);
 			
 			let introduction = document.createElement("div");
-			introduction.textContent = browser.i18n.getMessage("optionsIntroduction");
+			introduction.textContent = extension.getTranslation("optionsIntroduction");
 			head.appendChild(introduction);
 			
 			if (searchParameters.has("notice")){
 				let noticeName = searchParameters.get("notice") + "Notice";
-				let notice = browser.i18n.getMessage(noticeName);
+				let notice = extension.getTranslation(noticeName);
 				if (notice){
 					let bookmarkingNotice = document.createElement("div");
 					bookmarkingNotice.className = noticeName + " bookmarkNotice";
@@ -153,7 +154,7 @@
 					dontShowAgain.appendChild(dontShowAgainInput);
 					dontShowAgain.appendChild(
 						document.createTextNode(
-							browser.i18n.getMessage("dontShowOptionsOnUpdate")
+							extension.getTranslation("dontShowOptionsOnUpdate")
 						)
 					);
 					bookmarkingNotice.appendChild(dontShowAgain);
@@ -174,7 +175,7 @@
 			const link = document.createElement("a");
 			link.href = window.location.href;
 			link.target = "_blank";
-			link.textContent = browser.i18n.getMessage("openInTab");
+			link.textContent = extension.getTranslation("openInTab");
 			linkDiv.appendChild(link);
 			head.appendChild(linkDiv);
 		}
@@ -227,7 +228,7 @@
 			cell.colSpan = 3;
 			row.appendChild(cell);
 			let heading = document.createElement("h2");
-			heading.textContent = browser.i18n.getMessage("section_" + name);
+			heading.textContent = extension.getTranslation("section_" + name);
 			cell.appendChild(heading);
 			body.appendChild(row);
 		}
@@ -441,7 +442,7 @@
 						matching.length === 0 ||
 						matching[0].protectWindow
 					) &&
-					window.confirm(browser.i18n.getMessage("protectWindow_askReCaptchaException"))
+					window.confirm(extension.getTranslation("protectWindow_askReCaptchaException"))
 				){
 					settings.set("protectWindow", false, reCaptchaEntry);
 				}
@@ -449,7 +450,7 @@
 		});
 		beforeChangeEventListeners.sharePersistentRndBetweenDomains.push(function(value){
 			if (value){
-				if (!confirm(browser.i18n.getMessage("sharePersistentRndBetweenDomains_confirmMessage"))){
+				if (!confirm(extension.getTranslation("sharePersistentRndBetweenDomains_confirmMessage"))){
 					return false;
 				}
 			}
