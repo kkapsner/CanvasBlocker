@@ -16,7 +16,7 @@
 	<h1>Normal iFrame</h1>
 	<iframe src="sendFingerprintTest.html"></iframe>
 	<h1>Data-URL iFrame</h1>
-	<iframe id="iframe" src="data:invalid;base64&#x2c;<?php
+	<iframe id="iframe" src="data:text/html;base64&#x2c;<?php
 		echo base64_encode(
 			str_replace(
 				'const origin = "iframe";',
@@ -30,7 +30,7 @@
 	<h1>Data-URL object</h1>
 	<object
 		type="text/html"
-		data="data:invalid;base64&#x2c;<?php
+		data="data:text/html;base64&#x2c;<?php
 			echo base64_encode(
 				str_replace(
 					'const origin = "iframe";',
@@ -43,7 +43,7 @@
 	<h1>Data-URL embed</h1>
 	<embed
 		type="text/html"
-		src="data:invalid;base64&#x2c;<?php
+		src="data:text/html;base64&#x2c;<?php
 			echo base64_encode(
 				str_replace(
 					'const origin = "iframe";',
