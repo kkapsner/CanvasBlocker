@@ -9,6 +9,7 @@ Version 0.5.9:
 	fixes:
 		- search could show hidden settings
 		- faking audio did not work with white random generator
+		- enabled copying from settings description when they are "hidden"
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

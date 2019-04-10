@@ -71,7 +71,15 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 }
 
 .settings.hideDescriptions .settingRow .info {
-	margin: 0 0.5em;
+	margin: -0.5em 0;
+	width: 2em;
+	height: 100%;
+	display: inline-block;
+}
+.settings.hideDescriptions .settingRow .info::after {
+	font-family: Serif;
+	content: "i";
+	margin: 0.5em;
 	border-radius: 100%;
 	background-color: gray;
 	width: 1em;
@@ -81,9 +89,6 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	line-height: 1em;
 	font-weight: bold;
 	color: white;
-}
-.settings.hideDescriptions .settingRow .info::after {
-	content: "i";
 }
 .settings.hideDescriptions .settingRow .info .description {
 	display: none;
