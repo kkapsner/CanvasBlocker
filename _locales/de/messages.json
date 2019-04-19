@@ -1051,6 +1051,10 @@
 		"message": "Data-URL Seiten können nicht gegen Fingerprinting geschützt werden (siehe https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Indem Data-URL Seiten blockiert werden kann verhindert werden, dass der echte Fingerabdruck zu irgendeinem Server gelangt.",
 		"description": ""
 	},
+	"blockDataURLs_urlSpecific": {
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
+		"description": ""
+	},
 	"showReleaseNotes_title": {
 		"message": "Versionsinformationen",
 		"description": ""

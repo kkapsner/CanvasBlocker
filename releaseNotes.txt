@@ -5,6 +5,7 @@ Version 0.5.9:
 	new features:
 		- added protection for navigator properties
 		- added support to import older storage versions
+		- protection for data URLs can now be url specific
 	
 	fixes:
 		- search could show hidden settings

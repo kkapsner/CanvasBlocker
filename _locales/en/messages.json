@@ -1099,6 +1099,10 @@
 		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking them prevents the real fingerprint to reach any server.",
 		"description": ""
 	},
+	"blockDataURLs_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
 	
 	"showReleaseNotes_title": {
 		"message": "Release notes",
