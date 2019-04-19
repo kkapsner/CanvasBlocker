@@ -718,7 +718,7 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Shows a notification icon in the address bar when something is blocked or faked.",
+		"message": "Shows a notification icon in the address bar when something gets blocked or faked.",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
