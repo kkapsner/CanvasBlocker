@@ -67,7 +67,8 @@
 	
 	var inputTypes = {
 		number: {
-			input: function(input, value){
+			input: function(value){
+				const input = document.createElement("input");
 				input.type = "number";
 				input.value = value;
 				return input;
@@ -81,8 +82,16 @@
 			}
 		},
 		string: {
-			input: function(input, value){
-				input.type = "text";
+			input: function(value, setting){
+				let input;
+				if (setting && setting.display && setting.display.multiline){
+					input = document.createElement("textarea");
+					input.rows = 1;
+				}
+				else {
+					input = document.createElement("input");
+					input.type = "text";
+				}
 				input.value = value;
 				return input;
 			},
@@ -95,7 +104,8 @@
 			}
 		},
 		boolean: {
-			input: function(input, value){
+			input: function(value){
+				const input = document.createElement("input");
 				input.type = "checkbox";
 				input.checked = value;
 				input.style.display = "inline";
@@ -120,8 +130,7 @@
 		}
 		else {
 			if (type){
-				input = document.createElement("input");
-				type.input(input, setting.defaultValue);
+				input = type.input(setting.defaultValue, setting);
 			}
 		}
 		if (type){
@@ -169,8 +178,7 @@
 				row.appendChild(nameCell);
 				
 				let keyType = inputTypes[typeof setting.defaultKeyValue];
-				let keyInput = document.createElement("input");
-				keyType.input(keyInput, setting.defaultKeyValue);
+				let keyInput = keyType.input(setting.defaultKeyValue);
 				
 				let inputCell = document.createElement("td");
 				inputCell.appendChild(keyInput);

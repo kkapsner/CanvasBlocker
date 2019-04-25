@@ -115,9 +115,12 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	white-space: pre-wrap;
 	padding-right: 5px;
 }
-input[type=""], input[type="text"], input[type="number"], select {
+input[type=""], input[type="text"], input[type="number"], select, textarea {
 	width: 100%;
 	box-sizing: border-box;
+}
+textarea {
+	resize: vertical;
 }
 *.multiple2 {
 	width: 50% !important;

@@ -6,6 +6,7 @@ Version 0.5.9:
 		- added protection for navigator properties
 		- added support to import older storage versions
 		- protection for data URLs can now be url specific
+		- changed input of lists to textarea
 	
 	fixes:
 		- search could show hidden settings

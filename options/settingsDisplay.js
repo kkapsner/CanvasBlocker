@@ -144,6 +144,7 @@
 		},
 		{
 			"name": "ignoreList",
+			"multiline": true,
 			"displayDependencies": [
 				{
 					"showNotifications": [true],
@@ -201,6 +202,7 @@
 		},
 		{
 			"name": "stackList",
+			"multiline": true,
 			"displayDependencies": {
 				"enableStackList": [true],
 				"displayAdvancedSettings": [true]
@@ -209,6 +211,7 @@
 		},
 		{
 			"name": "whiteList",
+			"multiline": true,
 			"displayDependencies": {
 				"blockMode": ["fake", "block", "ask"],
 				"displayAdvancedSettings": [true]
@@ -216,6 +219,7 @@
 		},
 		{
 			"name": "sessionWhiteList",
+			"multiline": true,
 			"displayDependencies": {
 				"blockMode": ["fake", "block", "ask"],
 				"displayAdvancedSettings": [true]
@@ -223,6 +227,7 @@
 		},
 		{
 			"name": "blackList",
+			"multiline": true,
 			"displayDependencies": {
 				"blockMode": ["block", "fake", "ask", "allow"],
 				"displayAdvancedSettings": [true]
