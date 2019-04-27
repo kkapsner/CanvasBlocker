@@ -8,6 +8,7 @@ Version 0.5.9:
 		- added support to import older storage versions
 		- protection for data URLs can now be url specific
 		- changed input of lists to textarea
+		- added option to protect no part of the canvas API
 	
 	fixes:
 		- search could show hidden settings
