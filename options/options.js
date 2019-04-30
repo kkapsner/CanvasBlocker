@@ -30,7 +30,7 @@
 			logging.notice("empty storage");
 			settings.persistentRndStorage = "";
 			logging.notice("send message to main script");
-			browser.runtime.sendMessage({"canvasBlocker-clear-domain-rnd": true});
+			extension.message.send({"canvasBlocker-clear-domain-rnd": true});
 		},
 		inspectSettings: function(){
 			logging.verbose("open settings inspection");
