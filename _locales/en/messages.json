@@ -701,6 +701,18 @@
 		"message": "Input URL \"RegExp\" to add to the session whitelist:",
 		"description": ""
 	},
+	"selectWhitelistScope": {
+		"message": "What is the scope of the whitelisting?",
+		"description": ""
+	},
+	"whitelistOnlyAPI": {
+		"message": "Whitelist only the API \"{api}\".",
+		"description": ""
+	},
+	"whitelistAllAPIs": {
+		"message": "Whitelist all APIs.",
+		"description": ""
+	},
 	"settings": {
 		"message": "settings",
 		"description": ""

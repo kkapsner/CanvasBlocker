@@ -667,6 +667,18 @@
 		"message": "Geben Sie die URL \"RegExp\" ein, die für diese Sitzung erlaubt werden soll:",
 		"description": ""
 	},
+	"selectWhitelistScope": {
+		"message": "Was soll erlaubt werden?",
+		"description": ""
+	},
+	"whitelistOnlyAPI": {
+		"message": "Erlaube nur die \"{api}\" API.",
+		"description": ""
+	},
+	"whitelistAllAPIs": {
+		"message": "Erlaube alle APIs.",
+		"description": ""
+	},
 	"settings": {
 		"message": "Einstellungen",
 		"description": ""
