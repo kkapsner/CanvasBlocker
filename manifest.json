@@ -10,6 +10,7 @@
 	"background": {
 		"scripts": [
 			"lib/require.js",
+			"lib/extension.js",
 			"lib/logging.js",
 			"lib/settingDefinitions.js",
 			"lib/settingContainers.js",
