@@ -9,8 +9,6 @@ header {
 header .bookmarkNotice {
 	margin: 0.5em;
 	padding: 0.5em;
-	border: 1px dotted #880000;
-	color: #880000;
 }
 
 header .bookmarkNotice .dontShowOptionsOnUpdate {

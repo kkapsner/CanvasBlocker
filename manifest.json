@@ -62,7 +62,7 @@
 		]
 	}],
 	"options_ui": {
-		"browser_style": true,
+		"browser_style": false,
 		"page": "options/options.html"
 	},
 	"browser_action": {

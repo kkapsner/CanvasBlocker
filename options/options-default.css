@@ -1,0 +1,19 @@
+body {
+	color: rgb(60, 62, 60);
+	background-color: rgb(249, 250, 249);
+}
+
+a:link, a:visited, a:active {
+	color: blue;
+}
+
+header .bookmarkNotice {
+	border: 1px dotted #880000;
+	color: #880000;
+}
+
+input, textarea, select, button {
+	background-color: rgb(236, 237, 236);
+	color: rgb(60, 62, 60);
+	border-color: rgb(236, 237, 236);
+}

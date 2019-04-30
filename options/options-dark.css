@@ -1,0 +1,26 @@
+body {
+	background-color: rgb(74, 74, 79);
+	color: rgb(249, 249, 250);
+}
+
+a:link, a:visited, a:active {
+	color: lightblue;
+}
+
+header .bookmarkNotice {
+	border: 1px dotted #E72020;
+	color: #FF8E8E;
+}
+
+input, textarea, select, button {
+	background-color: rgb(53, 56, 54);
+	color: rgb(249, 249, 250);
+	border-color: rgb(53, 56, 54);
+}
+
+.content .hide ~ .display, .displayHidden ~ .display {
+	background-image: url(visible-dark.svg);
+}
+.content .hide:checked ~ .display, .displayHidden:checked ~ .display {
+	background-image: url(notVisible-dark.svg);
+}

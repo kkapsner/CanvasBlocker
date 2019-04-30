@@ -428,6 +428,16 @@
 	document.body.appendChild(version);
 	
 	settings.onloaded(function(){
+		// load theme
+		var themeLink = document.createElement("link");
+		themeLink.href = `options-${settings.theme}.css`;
+		themeLink.rel = "stylesheet";
+		themeLink.type = "text/css";
+		document.head.appendChild(themeLink);
+		settings.on("theme", function(){
+			themeLink.href = `options-${settings.theme}.css`;
+		});
+		
 		const reCaptchaEntry = "^https://www\\.google\\.com/recaptcha/api2/(?:b?frame|anchor).*$";
 		const {url: urlContainer} = settings.getContainers();
 		settings.on("protectWindow", function({newValue}){
