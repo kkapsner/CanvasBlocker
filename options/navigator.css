@@ -10,8 +10,6 @@
 
 .button {
 	display: inline-block;
-	border: none;
-	background-color: white;
 	border: 1px solid lightgray;
 	margin: 2px;
 	width: 7em;

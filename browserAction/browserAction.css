@@ -10,7 +10,9 @@ div {
 .action {
 	display: block;
 	padding: 0.5em;
+	margin: 0;
 	background-color: transparent;
+	background-image: none;
 	border: 1px solid currentColor;
 	cursor: pointer;
 	width: 100%;

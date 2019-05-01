@@ -174,9 +174,13 @@ textarea {
 	padding: 0;
 	border: none;
 	background-color: transparent;
+	background-image: none;
 }
 .urlValues.collapsed .collapser::after {
 	content: "\25B6";
+	display: inline-block;
+	height: 100%;
+	line-height: 0;
 }
 .urlValues.expanded .collapser::after {
 	content: "\25BC";
