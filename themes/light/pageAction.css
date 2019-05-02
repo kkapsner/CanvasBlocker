@@ -1,8 +1,3 @@
-body {
-	color: rgb(60, 62, 60);
-	background-color: rgb(249, 250, 249);
-}
-
 .collapsible .collapser {
 	color: blue;
 }
@@ -12,13 +7,13 @@ body {
 }
 
 .hasHiddenActions:hover, .hasHiddenActions .actions {
-	background-color: rgb(236, 237, 236);
+	background-color: rgb(240, 240, 240);
 }
 
 .modal button {
-	border-color: rgb(236, 237, 236);
+	border-color: rgb(240, 240, 240);
 }
 
 .modal button:active, .modal button:hover, .modal button:focus {
-	background-color: rgb(236, 237, 236);
+	background-color: rgb(240, 240, 240);
 }

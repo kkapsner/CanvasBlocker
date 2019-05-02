@@ -7,6 +7,7 @@
 	const extension = require("../lib/extension");
 	const settings = require("../lib/settings");
 	const navigator = require("../lib/navigator");
+	require("../lib/theme").init();
 	
 	const title = document.createElement("h1");
 	title.className = "title";

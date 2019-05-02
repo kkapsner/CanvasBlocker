@@ -1,0 +1,11 @@
+header .bookmarkNotice {
+	border: 1px dotted #E72020;
+	color: #FF8E8E;
+}
+
+.content .hide ~ .display, .displayHidden ~ .display {
+	background-image: url(visible.svg);
+}
+.content .hide:checked ~ .display, .displayHidden:checked ~ .display {
+	background-image: url(notVisible.svg);
+}

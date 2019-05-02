@@ -1091,7 +1091,11 @@
 		"description": ""
 	},
 	"theme_description": {
-		"message": "",
+		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"description": ""
+	},
+	"theme_options.auto": {
+		"message": "automatic",
 		"description": ""
 	},
 	"theme_options.default": {
@@ -1104,6 +1108,14 @@
 	},
 	"theme_options.dark": {
 		"message": "dark",
+		"description": ""
+	},
+	"theme_options.colorful": {
+		"message": "colorful",
+		"description": ""
+	},
+	"theme_options.none": {
+		"message": "none",
 		"description": ""
 	},
 	

@@ -6,6 +6,7 @@
 	
 	const extension = require("../lib/extension");
 	const settings = require("../lib/settings");
+	require("../lib/theme").init("sanitize");
 	const sanitationRules = require("./sanitationRules");
 	
 	var title = document.createElement("h1");

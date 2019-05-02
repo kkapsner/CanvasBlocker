@@ -7,19 +7,10 @@
 	const extension = require("../lib/extension");
 	const logging = require("../lib/logging");
 	const settings = require("../lib/settings");
+	require("../lib/theme").init("browserAction");
 	logging.message("Opened browser action");
 	
 	settings.onloaded(function(){
-		// load theme
-		var themeLink = document.createElement("link");
-		themeLink.href = `browserAction-${settings.theme}.css`;
-		themeLink.rel = "stylesheet";
-		themeLink.type = "text/css";
-		document.head.appendChild(themeLink);
-		settings.on("theme", function(){
-			themeLink.href = `browserAction-${settings.theme}.css`;
-		});
-		
 		var actions = document.getElementById("actions");
 		
 		[

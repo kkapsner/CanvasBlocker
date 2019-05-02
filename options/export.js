@@ -7,6 +7,7 @@
 	const settings = require("../lib/settings");
 	const logging = require("../lib/logging");
 	const settingsMigration = require("../lib/settingsMigration");
+	require("../lib/theme").init();
 	const input = document.getElementById("settings");
 	settings.onloaded(function(){
 		var data = {};

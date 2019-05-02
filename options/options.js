@@ -15,6 +15,7 @@
 	const settingStrings = require("../lib/settingStrings");
 	const searchParameters = new URLSearchParams(window.location.search);
 	const settingsMigration = require("../lib/settingsMigration");
+	require("./theme").init("options");
 	
 	var callbacks = {
 		openNavigatorSettings: function(){
@@ -154,7 +155,7 @@
 					dontShowAgain.appendChild(dontShowAgainInput);
 					dontShowAgain.appendChild(
 						document.createTextNode(
-							extension.getTranslation("dontShowOptionsOnUpdate")
+							" " + extension.getTranslation("dontShowOptionsOnUpdate")
 						)
 					);
 					bookmarkingNotice.appendChild(dontShowAgain);

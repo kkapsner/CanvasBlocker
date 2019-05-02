@@ -108,7 +108,7 @@
 				const input = document.createElement("input");
 				input.type = "checkbox";
 				input.checked = value;
-				input.style.display = "inline";
+				input.style.display = "inline-block";
 				return input;
 			},
 			updateCallback: function(input, value){

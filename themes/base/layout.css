@@ -1,0 +1,65 @@
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: sans-serif;
+	font-size: 10pt;
+}
+
+a:link, a:visited, a:active {
+	color: var(--link-color);
+}
+
+input, textarea, select, button {
+	background-color: var(--input-background-color);
+	color: var(--text-color);
+	border-color: var(--input-background-color);
+	border-radius: 3px;
+	padding: 1px;
+}
+
+button {
+	background-image: var(--button-background-image);
+	border-radius: 0px;
+	border: 1px solid lightgray;
+	margin: 2px;
+	min-width: 7em;
+	box-sizing: border-box;
+	padding: 0.25em 0.5em;
+	cursor: pointer;
+}
+
+button:focus {
+	border-style: dotted;
+}
+
+select, input[type=checkbox]{
+	-moz-appearance: none;
+	appearance: none;
+}
+
+select {
+	background-image: url("selectArrow.svg");
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+}
+
+input[type=checkbox]{
+	margin: 1.5px;
+	width: 15px;
+	height: 15px;
+	line-height: 11px;
+	border-style: inset;
+	border-width: 2px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+input[type=checkbox]:checked::before {
+	content: "\2713";
+	font-size: 100%;
+	line-height: 11px;
+	text-align: center;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	vertical-align: top;
+}
