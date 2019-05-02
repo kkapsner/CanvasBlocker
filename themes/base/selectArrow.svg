@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="selectArrow-dark.svg">
+   sodipodi:docname="selectArrow.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="-71.024296"
+     inkscape:cx="-70.51922"
      inkscape:cy="54.832316"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -56,7 +56,7 @@
      transform="translate(0,-291.70832)">
     <path
        style="opacity:0.5;fill:#a3a3a3;fill-opacity:1;stroke:none;stroke-width:0.5291667;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 6.8884137,293.36755 -0.9594253,0.87344 -1.0588099,-0.86505 -0.712205,0.64837 1.8566551,1.51689 1.6716308,-1.52181 z"
+       d="m 6.359247,293.36755 -0.9594253,0.87344 -1.0588099,-0.86505 -0.712205,0.64837 1.8566551,1.51689 1.6716308,-1.52181 z"
        id="rect817"
        inkscape:connector-curvature="0" />
   </g>

@@ -155,7 +155,7 @@
 					dontShowAgain.appendChild(dontShowAgainInput);
 					dontShowAgain.appendChild(
 						document.createTextNode(
-							extension.getTranslation("dontShowOptionsOnUpdate")
+							" " + extension.getTranslation("dontShowOptionsOnUpdate")
 						)
 					);
 					bookmarkingNotice.appendChild(dontShowAgain);

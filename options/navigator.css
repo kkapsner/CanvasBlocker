@@ -10,13 +10,7 @@
 
 .button {
 	display: inline-block;
-	border: 1px solid lightgray;
-	margin: 2px;
-	width: 7em;
-	box-sizing: border-box;
-	padding: 0.5em;
 	outline: none;
-	cursor: pointer;
 }
 .active .button {
 	border-color: red;

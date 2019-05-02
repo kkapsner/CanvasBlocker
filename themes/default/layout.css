@@ -1,57 +1,7 @@
 body {
-	color: rgb(60, 62, 60);
-	background-color: rgb(249, 250, 249);
-	font-family: sans-serif;
-	font-size: 10pt;
-}
-
-a:link, a:visited, a:active {
-	color: blue;
-}
-
-input, textarea, select, button {
-	background-color: rgb(249, 250, 249);
-	color: rgb(60, 62, 60);;
-	border-color: rgb(249, 250, 249);
-	border-radius: 3px;
-	padding: 1px;
-}
-
-button {
-	margin: 1px;
-	padding: 0px 10px;
-	background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.1) 100%);
-	border-radius: 0px;
-}
-
-select, input[type=checkbox]{
-	-moz-appearance: none;
-	appearance: none;
-}
-
-select {
-	background-image: url("selectArrow.svg");
-	background-position: 100% 50%;
-	background-repeat: no-repeat;
-}
-
-input[type=checkbox]{
-	margin: 1.5px;
-	width: 15px;
-	height: 15px;
-	line-height: 11px;
-	border-style: inset;
-	border-width: 2px;
-	vertical-align: middle;
-	overflow: hidden;
-}
-input[type=checkbox]:checked::before {
-	content: "\2713";
-	font-size: 100%;
-	line-height: 11px;
-	text-align: center;
-	display: inline-block;
-	height: 100%;
-	width: 100%;
-	vertical-align: top;
+	--text-color: rgb(60, 62, 60);
+	--background-color: rgb(249, 250, 249);
+	--link-color: blue;
+	--input-background-color: rgb(255, 255, 255);
+	--button-background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }

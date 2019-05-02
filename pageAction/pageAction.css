@@ -25,6 +25,7 @@ button.action.isIcon {
 	line-height: 0;
 	background-color: transparent;
 	background-image: none;
+	min-width: 0;
 }
 * + button.action.isIcon {
 	margin-left: 1px;

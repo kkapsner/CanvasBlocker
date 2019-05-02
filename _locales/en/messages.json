@@ -1082,6 +1082,10 @@
 		"message": "",
 		"description": ""
 	},
+	"theme_options.auto": {
+		"message": "automatic",
+		"description": ""
+	},
 	"theme_options.default": {
 		"message": "default",
 		"description": ""
@@ -1092,6 +1096,14 @@
 	},
 	"theme_options.dark": {
 		"message": "dark",
+		"description": ""
+	},
+	"theme_options.colorful": {
+		"message": "colorful",
+		"description": ""
+	},
+	"theme_options.none": {
+		"message": "none",
 		"description": ""
 	},
 	

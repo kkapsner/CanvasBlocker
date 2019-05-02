@@ -1,0 +1,11 @@
+.complaint.high {
+	background-color: rgb(247, 28, 236);
+}
+
+.complaint.medium {
+	background-color: rgb(65, 255, 223);
+}
+
+.complaint.low {
+	background-color: rgb(255, 255, 2);
+}

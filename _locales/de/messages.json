@@ -1035,6 +1035,10 @@
 		"message": "",
 		"description": ""
 	},
+	"theme_options.auto": {
+		"message": "automatisch",
+		"description": ""
+	},
 	"theme_options.default": {
 		"message": "Standard",
 		"description": ""
@@ -1045,6 +1049,14 @@
 	},
 	"theme_options.dark": {
 		"message": "dunkel",
+		"description": ""
+	},
+	"theme_options.colorful": {
+		"message": "farbenfroh",
+		"description": ""
+	},
+	"theme_options.none": {
+		"message": "keines",
 		"description": ""
 	},
 	"blockDataURLs_title": {
