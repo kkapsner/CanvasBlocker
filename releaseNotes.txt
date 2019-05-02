@@ -11,7 +11,7 @@ Version 0.5.9:
 		- changed input of lists to textarea
 		- added option to protect no part of the canvas API
 		- apply themes to all extension pages (options, page action, browser action, setting sanitation, setting inspection, navigator settings)
-		- theme for automatic detection of dark mode
+		- theme for automatic detection of dark mode (only works with Firefox >= 67)
 	
 	fixes:
 		- search could show hidden settings

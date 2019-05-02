@@ -1079,7 +1079,7 @@
 		"description": ""
 	},
 	"theme_description": {
-		"message": "",
+		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
 		"description": ""
 	},
 	"theme_options.auto": {
