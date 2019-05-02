@@ -156,6 +156,7 @@ textarea {
 	border: none;
 	background-color: transparent;
 	background-image: none;
+	min-width: 0;
 }
 .urlValues table .url {
 	min-width: 4em;
@@ -176,6 +177,7 @@ textarea {
 	border: none;
 	background-color: transparent;
 	background-image: none;
+	min-width: 0;
 }
 .urlValues.collapsed .collapser::after {
 	content: "\25B6";
