@@ -1,7 +1,0 @@
-.action {
-	border-color: rgb(255, 0, 255);
-}
-
-.action:active, .action:hover, .action:focus {
-	background-color: rgb(255, 196, 0);
-}

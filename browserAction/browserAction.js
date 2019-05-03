@@ -7,7 +7,7 @@
 	const extension = require("../lib/extension");
 	const logging = require("../lib/logging");
 	const settings = require("../lib/settings");
-	require("../lib/theme").init("browserAction");
+	require("../lib/theme").init();
 	logging.message("Opened browser action");
 	
 	settings.onloaded(function(){

@@ -4,4 +4,6 @@ body {
 	--text-color: rgb(102, 42, 34);
 	--link-color: rgb(5, 197, 188);
 	--button-background-image: linear-gradient(transparent 0%, rgba(255, 255, 255, 0.1) 100%);
+	--stacked-inputs-border-color: rgb(255, 0, 255);
+	--stacked-inputs-focus-color: rgb(255, 196, 0);
 }

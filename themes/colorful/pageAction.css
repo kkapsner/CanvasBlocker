@@ -9,11 +9,3 @@
 .hasHiddenActions:hover, .hasHiddenActions .actions {
 	background-color: rgb(208, 255, 0);
 }
-
-.modal button {
-	border-color: rgb(208, 255, 0);
-}
-
-.modal button:active, .modal button:hover, .modal button:focus {
-	background-color: rgb(208, 255, 0);
-}

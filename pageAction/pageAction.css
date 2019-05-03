@@ -5,7 +5,6 @@
 body {
 	margin: 0.5em;
 	padding: 2px;
-	padding-right: 23px;
 	padding-bottom: 1.5em;
 	white-space: nowrap;
 	position: relative;
@@ -15,6 +14,7 @@ body {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	float: left;
 }
 
 button.action.isIcon {
@@ -60,9 +60,7 @@ button.action img {
 
 
 #globalActions {
-	position: absolute;
-	right: 0;
-	top: 0;
+	float: right;
 	width: 23px;
 	text-align: right;
 	line-height: 0;
@@ -134,39 +132,6 @@ body.modal {
 	padding: 2px;
 }
 
-.modal input {
-	display: block;
-	box-sizing: border-box;
-	width: 100%;
-}
-
-.modal button {
-	display: block;
-	padding: 0.5em;
-	background-color: transparent;
-	border: 1px solid currentColor;
-	cursor: pointer;
-	width: 100%;
-	text-align: left;
-	height: auto;
-	z-index: 1;
-	position: relative;
-	white-space: nowrap;
-	color: currentColor;
-}
-
-.modal button + .modal button {
-	border-top-width: 0;
-}
-
-.modal button:first-child {
-	border-radius: 3px 3px 0 0;
-}
-
-.modal button:last-child {
-	border-radius: 0 0 3px 3px;
-}
-
-.modal button:active, .modal button:hover, .modal button:focus {
-	z-index: 10;
+body.modal .stackedInputs {
+	margin-top: 0.5em;
 }

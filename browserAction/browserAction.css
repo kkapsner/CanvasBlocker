@@ -7,39 +7,6 @@ div {
 	display: block;
 }
 
-.action {
-	display: block;
-	padding: 0.5em;
-	margin: 0;
-	background-color: transparent;
-	background-image: none;
-	border: 1px solid currentColor;
-	cursor: pointer;
-	width: 100%;
-	text-align: left;
-	height: auto;
-	z-index: 1;
-	position: relative;
-	white-space: nowrap;
-	color: currentColor;
-}
-
-.action + .action {
-	border-top-width: 0;
-}
-
-.action:first-child {
-	border-radius: 3px 3px 0 0;
-}
-
-.action:last-child {
-	border-radius: 0 0 3px 3px;
-}
-
-.action:active, .action:hover, .action:focus {
-	z-index: 10;
-}
-
 .action .icon {
 	vertical-align: text-bottom;
 	height: 19px;
@@ -50,8 +17,6 @@ div {
 	display: inline-block;
 }
 
-.search {
-	box-sizing: border-box;
+.action.search {
 	padding-left: calc(0.5em + 19px + 0.25em);
-	cursor: initial;
 }

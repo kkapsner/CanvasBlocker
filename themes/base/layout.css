@@ -63,3 +63,45 @@ input[type=checkbox]:checked::before {
 	width: 100%;
 	vertical-align: top;
 }
+
+/* Input stack */
+
+.stackedInputs > * {
+	display: block;
+	padding: 0.5em;
+	margin: 0;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid var(--stacked-inputs-border-color);
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	height: auto;
+	z-index: 1;
+	position: relative;
+	white-space: nowrap;
+	color: currentColor;
+}
+
+.stackedInputs > * + * {
+	border-top-width: 0;
+}
+
+.stackedInputs > *:first-child {
+	border-radius: 3px 3px 0 0;
+}
+
+.stackedInputs > *:last-child {
+	border-radius: 0 0 3px 3px;
+}
+
+.stackedInputs > *:active, .stackedInputs > *:hover, .stackedInputs > *:focus {
+	z-index: 10;
+	background-color: var(--stacked-inputs-focus-color);
+}
+
+.stackedInputs > input {
+	box-sizing: border-box;
+	cursor: initial;
+	background-color: var(--input-background-color);
+}

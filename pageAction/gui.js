@@ -71,6 +71,8 @@
 			document.body.innerHTML = "";
 			document.body.className = "modal";
 			document.body.appendChild(document.createTextNode(messageText));
+			const stack = document.createElement("div");
+			stack.className = "stackedInputs";
 			choices.forEach(function(choice){
 				const button = document.createElement("button");
 				button.addEventListener("click", function(){
@@ -78,8 +80,9 @@
 					message("modal choice closed with value", choice.value || choice);
 				});
 				button.appendChild(document.createTextNode(choice.text || choice));
-				document.body.appendChild(button);
+				stack.appendChild(button);
 			});
+			document.body.append(stack);
 		});
 	};
 	
@@ -89,16 +92,19 @@
 			document.body.innerHTML = "";
 			document.body.className = "modal";
 			document.body.appendChild(document.createTextNode(messageText));
-			var input = document.createElement("input");
+			const stack = document.createElement("div");
+			stack.className = "stackedInputs";
+			const input = document.createElement("input");
 			input.value = defaultValue;
-			document.body.appendChild(input);
-			var button = document.createElement("button");
+			stack.appendChild(input);
+			const button = document.createElement("button");
 			button.textContent = "OK";
 			button.addEventListener("click", function(){
 				resolve(input.value);
 				message("modal prompt closed with value", input.value);
 			});
-			document.body.appendChild(button);
+			stack.appendChild(button);
+			document.body.append(stack);
 		});
 	};
 }());
