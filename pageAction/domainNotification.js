@@ -26,7 +26,7 @@
 		};
 	}();
 
-	const DomainNotification = function DomainNotification(domain, messageId, count = 0){
+	const DomainNotification = function DomainNotification(domain, messageId, count = 0, api = ""){
 		if (domain instanceof URL){
 			this.urls().add(domain.href);
 			domain = domain.hostname;
@@ -34,6 +34,7 @@
 		this.domain = domain;
 		this.messageId = messageId;
 		this.count = count;
+		this.api = api;
 		this.extraNotifications = 0;
 		addToContainer(this);
 		this.update();
@@ -148,7 +149,7 @@
 	DomainNotification.prototype.actionsNode = function actionsNode(){
 		const node = document.createElement("div");
 		node.className = "actions";
-		createActionButtons(node, actions, {domain: this.domain, urls: this.urls()});
+		createActionButtons(node, actions, {domain: this.domain, urls: this.urls(), api: this.api});
 		this.actionsNode = function(){
 			return node;
 		};
@@ -165,11 +166,11 @@
 	};
 
 	const domains = new Map();
-	const domainNotification = function(url, messageId, count = 0){
+	const domainNotification = function(url, messageId, count = 0, api = ""){
 		const domain = url.hostname;
 		var domainNotification = domains.get(domain + messageId);
 		if (!domainNotification){
-			domainNotification = new DomainNotification(url, messageId, count);
+			domainNotification = new DomainNotification(url, messageId, count, api);
 			domains.set(domain + messageId, domainNotification);
 		}
 		else {

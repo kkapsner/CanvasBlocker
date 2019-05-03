@@ -538,7 +538,7 @@
 		},
 		{
 			"name": "exportSettings",
-			"actions": ["inspectSettings", "saveSettings", "loadSettings"]
+			"actions": ["inspectSettings", "inspectWhitelist", "saveSettings", "loadSettings"]
 		},
 		{
 			"name": "resetSettings"

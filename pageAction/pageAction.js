@@ -111,15 +111,53 @@
 			{
 				name: "whitelist",
 				isIcon: true,
-				callback: function({domain, urls}){
+				callback: function({domain, urls, api}){
+					const whitelistingSettings = {
+						all: {name: "blockMode", value: "allow"},
+						canvas: {name: "protectedCanvasPart", value: "nothing"},
+						audio: {name: "protectAudio", value: false},
+						domRect: {name: "protectDOMRect", value: false},
+						history: {name: "historyLengthThreshold", value: 10000},
+						navigator: {name: "protectNavigator", value: false},
+						windows: {name: "protectWindow", value: false}
+						
+					};
 					domainOrUrlPicker(
 						domain,
 						urls,
 						extension.getTranslation("selectWhitelist"),
 						extension.getTranslation("inputWhitelistURL")
 					).then(function(choice){
+						if (
+							api &&
+							whitelistingSettings[api]
+						){
+							return modalChoice(
+								extension.getTranslation("selectWhitelistScope"),
+								[
+									{
+										text: extension.getTranslation("whitelistOnlyAPI")
+											.replace(
+												/\{api\}/g,
+												extension.getTranslation("section_" + api + "-api")
+											),
+										value: api
+									},
+									{
+										text: extension.getTranslation("whitelistAllAPIs"),
+										value: "all"
+									}
+								]
+							).then(function(selection){
+								return {choice, setting: whitelistingSettings[selection]};
+							});
+						}
+						else {
+							return {choice, setting: whitelistingSettings.all};
+						}
+					}).then(function({choice, setting}){
 						if (choice){
-							settings.set("blockMode", "allow", choice).then(function(){
+							settings.set(setting.name, setting.value, choice).then(function(){
 								window.close();
 							});
 						}
@@ -149,6 +187,21 @@
 						}
 					});
 				}
+			},
+			{
+				name: "inspectWhitelist",
+				isIcon: true,
+				callback: function({domain, urls}){
+					window.open(
+						browser.extension.getURL(
+							"options/whitelist.html?domain=" +
+							encodeURIComponent(domain) +
+							"&urls=" +
+							encodeURIComponent(JSON.stringify(Array.from(urls.values())))
+						),
+						"_blank"
+					);
+				}
 			}
 		].forEach(function(domainAction){
 			domainNotification.addAction(domainAction);
@@ -175,14 +228,15 @@
 		});
 		
 		var tab = tabs[0];
-		browser.runtime.onMessage.addListener(function(data){
+		extension.message.on(function(data){
 			if (data["canvasBlocker-notificationCounter"]){
 				const url = new URL(data.url);
 				Object.keys(data["canvasBlocker-notificationCounter"]).forEach(function(key){
 					const notification = domainNotification(
 						url,
 						key,
-						data["canvasBlocker-notificationCounter"][key]
+						data["canvasBlocker-notificationCounter"][key].count,
+						data["canvasBlocker-notificationCounter"][key].api
 					);
 				});
 			}
@@ -209,7 +263,9 @@
 							notification.url = new URL(notification.url);
 							domainNotification(
 								notification.url,
-								notification.messageId
+								notification.messageId,
+								0,
+								notification.api
 							).addNotification(new Notification(notification));
 						}
 						i += delta;
