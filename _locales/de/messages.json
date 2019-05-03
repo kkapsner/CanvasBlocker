@@ -672,11 +672,11 @@
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Erlaube nur die \"{api}\" API.",
+		"message": "Erlaube nur die {api}",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Erlaube alle APIs.",
+		"message": "Erlaube alle APIs",
 		"description": ""
 	},
 	"settings": {
@@ -809,6 +809,10 @@
 	},
 	"whitelistTemporarily": {
 		"message": "temporär erlauben",
+		"description": ""
+	},
+	"inspectWhitelist": {
+		"message": "Erlaubnisse ansehen",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -959,6 +963,10 @@
 		"message": "Maximale Länge der Browser-History, die der Webseite mitgeteilt wird.",
 		"description": ""
 	},
+	"historyLengthThreshold_urlSpecific": {
+		"message": "Um diesen Wert für bestimmte Seiten zu ändern, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und geben Sie dort einen anderen Wert ein.",
+		"description": ""
+	},
 	"protectWindow_title": {
 		"message": "Window-API beschützen",
 		"description": ""
@@ -1001,6 +1009,10 @@
 	},
 	"protectNavigator_description": {
 		"message": "Dies ermöglicht Änderungen an der Navigator-API. Diesen Schutz zu aktivieren ändert standardmäßig noch nichts. Öffnen Sie die Navigatoreinstellungen um die gewünschten Änderungen durchzuführen.",
+		"description": ""
+	},
+	"protectNavigator_urlSpecific": {
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
@@ -1159,6 +1171,10 @@
 		"message": "Laden",
 		"description": ""
 	},
+	"inspectWhitelist_label": {
+		"message": "Erlaubnisse ansehen",
+		"description": ""
+	},
 	"resetSettings_title": {
 		"message": "Einstellungen zurücksetzen",
 		"description": ""
@@ -1305,6 +1321,14 @@
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
 		"message": "Teilen Sie die persistenten Zufallszahlen nicht zwischen Domains, da dies den Browser 100% eindeutig identifizierbar macht.",
+		"description": ""
+	},
+	"whitelist_inspection_title": {
+		"message": "CanvasBlocker Erlaubnisse ansehen",
+		"description": ""
+	},
+	"whitelist_all_apis": {
+		"message": "Alle APIs",
 		"description": ""
 	}
 }

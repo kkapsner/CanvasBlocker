@@ -706,11 +706,11 @@
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the API \"{api}\".",
+		"message": "Whitelist only the {api}",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs.",
+		"message": "Whitelist all APIs",
 		"description": ""
 	},
 	"settings": {
@@ -843,6 +843,10 @@
 	},
 	"whitelistTemporarily": {
 		"message": "whitelist temporarily",
+		"description": ""
+	},
+	"inspectWhitelist": {
+		"message": "inspect whitelist",
 		"description": ""
 	},
 	
@@ -999,6 +1003,10 @@
 		"message": "Maximal length of the history that is reported to the website.",
 		"description": ""
 	},
+	"historyLengthThreshold_urlSpecific": {
+		"message": "To change this value for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set a different value.",
+		"description": ""
+	},
 	
 	"protectWindow_title": {
 		"message": "Protect window API",
@@ -1045,6 +1053,10 @@
 	},
 	"protectNavigator_description": {
 		"message": "This page allows for changes in the navigator API. Enabling this protection does not change anything by default. Open the navigator settings to specify the changes you want to have there.",
+		"description": ""
+	},
+	"protectNavigator_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
 		"description": ""
 	},
 	
@@ -1212,6 +1224,10 @@
 		"message": "Load",
 		"description": ""
 	},
+	"inspectWhitelist_label": {
+		"message": "Inspect whitelist",
+		"description": ""
+	},
 	
 	"resetSettings_title": {
 		"message": "Reset settings",
@@ -1361,6 +1377,15 @@
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
 		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"description": ""
+	},
+	
+	"whitelist_inspection_title": {
+		"message": "CanvasBlocker whitelist inspection",
+		"description": ""
+	},
+	"whitelist_all_apis": {
+		"message": "All APIs",
 		"description": ""
 	}
 }

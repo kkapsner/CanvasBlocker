@@ -128,16 +128,6 @@
 						extension.getTranslation("selectWhitelist"),
 						extension.getTranslation("inputWhitelistURL")
 					).then(function(choice){
-						const allAPIs = {
-							choice,
-							setting: "blockMode",
-							settingValue: "allow"
-						};
-						const onlyAPI = {
-							choice,
-							setting: whitelistingSettings[api],
-							settingValue: false
-						};
 						if (
 							api &&
 							whitelistingSettings[api]
@@ -147,7 +137,10 @@
 								[
 									{
 										text: extension.getTranslation("whitelistOnlyAPI")
-											.replace(/\{api\}/g, api),
+											.replace(
+												/\{api\}/g,
+												extension.getTranslation("section_" + api + "-api")
+											),
 										value: api
 									},
 									{
@@ -193,6 +186,21 @@
 							window.close();
 						}
 					});
+				}
+			},
+			{
+				name: "inspectWhitelist",
+				isIcon: true,
+				callback: function({domain, urls}){
+					window.open(
+						browser.extension.getURL(
+							"options/whitelist.html?domain=" +
+							encodeURIComponent(domain) +
+							"&urls=" +
+							encodeURIComponent(JSON.stringify(Array.from(urls.values())))
+						),
+						"_blank"
+					);
 				}
 			}
 		].forEach(function(domainAction){

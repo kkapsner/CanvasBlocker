@@ -2,6 +2,7 @@ Version 0.5.9:
 	changes:
 		- code cleanup
 		- made history length threshold url specific
+		- made navigator protection url specific
 		- uniform themes
 	
 	new features:
@@ -12,6 +13,8 @@ Version 0.5.9:
 		- added option to protect no part of the canvas API
 		- apply themes to all extension pages (options, page action, browser action, setting sanitation, setting inspection, navigator settings)
 		- theme for automatic detection of dark mode (only works with Firefox >= 67)
+		- within the page action the used API can be whitelisted alone
+		- added overview page for whitelist
 	
 	fixes:
 		- search could show hidden settings

@@ -56,6 +56,10 @@
 			link.click();
 			document.body.removeChild(link);
 		},
+		inspectWhitelist: function(){
+			logging.verbose("open whitelist inspection");
+			window.open("whitelist.html", "_blank");
+		},
 		loadSettings: function(){
 			logging.verbose("load settings");
 			new Promise(function(resolve, reject){
