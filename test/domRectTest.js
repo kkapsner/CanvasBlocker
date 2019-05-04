@@ -80,7 +80,38 @@
 		}
 		const output = template.cloneNode(true);
 		output.querySelector(".title").textContent = title;
-		output.querySelector("button").addEventListener("click", performTest);
+		output.querySelector(".refresh").addEventListener("click", performTest);
+		output.querySelector(".performance").addEventListener("click", function(){
+			let count = 200;
+			return function(){
+				let duration = 0;
+				let i = 0;
+				while (duration < 1000){
+					const start = Date.now();
+					for (; i < count; i += 1){
+						const rects = getElements().map(function(element){
+							return {
+								name: element.dataset.name,
+								data: callback(element)
+							};
+						});
+						const data = new Float64Array(rects.length * properties.length);
+						rects.forEach(function(rect, i){
+							properties.forEach(function(property, j){
+								data[i * properties.length + j] = rect.data[property];
+							});
+						});
+					}
+					duration += Date.now() - start;
+					if (duration < 1000){
+						count += Math.ceil(
+							count * (1000 - duration) / 1000
+						);
+					}
+				}
+				alert((count / (duration / 1000)).toFixed(2) + " tests/s (" + count + " samples)");
+			};
+		}());
 		
 		container.appendChild(output);
 		performTest();
