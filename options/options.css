@@ -131,7 +131,7 @@ textarea {
 }
 
 .urlValues {
-	padding-right: 1.15em;
+	padding-right: 1.25em;
 	position: relative;
 }
 .urlValues.collapsed table {
@@ -171,7 +171,8 @@ textarea {
 	right: 0;
 	text-align: center;
 	width: 1em;
-	height: 2em;
+	height: 1.275em;
+	line-height: 1em;
 	cursor: pointer;
 	padding: 0;
 	border: none;
@@ -181,9 +182,6 @@ textarea {
 }
 .urlValues.collapsed .collapser::after {
 	content: "\25B6";
-	display: inline-block;
-	height: 100%;
-	line-height: 0;
 }
 .urlValues.expanded .collapser::after {
 	content: "\25BC";
