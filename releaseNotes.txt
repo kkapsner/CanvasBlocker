@@ -22,6 +22,7 @@ Version 0.5.9:
 		- enabled copying from settings description when they are "hidden"
 		- fixed description for "show notifications"
 		- improved DOMRect performance
+		- improved general performance when stack list is disabled
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
