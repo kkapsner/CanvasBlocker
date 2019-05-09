@@ -109,7 +109,11 @@
 						);
 					}
 				}
-				alert((count / (duration / 1000)).toFixed(2) + " tests/s (" + count + " samples)");
+				alert(
+					(count / (duration / 1000)).toFixed(2) + " tests/s\n" +
+					(duration * 1000 / count).toFixed(2) + " µs/test\n" +
+					"(" + count + " samples)"
+				);
 			};
 		}());
 		
