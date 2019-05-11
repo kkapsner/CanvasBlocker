@@ -1035,6 +1035,10 @@
 		"message": "Auf dieser Seite können Sie die Navigatoreinstellungen festlegen. Wenn Sie eine Voreinstellung verwenden möchten, sollten Sie immer sowohl eine Betriebssystem- als auch eine Browservoreinstellung verwenden. Danach können Sie Ihre individuellen Änderungen vornehmen.",
 		"description": ""
 	},
+	"navigatorSettings_disclaimer": {
+		"message": "ACHTUNG: der tatsächlich verwendete Browser kann nicht komplett vorgetäuscht werden, da es eine Vielzahl von Möglichkeiten gibt, diesen zu detektieren. Z.B. kann er immer über Funktionalitätstest und Browser spezifische Darstellung von HTML-Elementen bestimmt werden.",
+		"description": ""
+	},
 	"navigatorSettings_presetSection.os": {
 		"message": "Betriebssystemvoreinstellungen",
 		"description": ""

@@ -21,6 +21,11 @@
 	description.textContent = extension.getTranslation("navigatorSettings_description");
 	document.body.appendChild(description);
 	
+	const disclaimer = document.createElement("div");
+	disclaimer.className = "disclaimer";
+	disclaimer.textContent = extension.getTranslation("navigatorSettings_disclaimer");
+	document.body.appendChild(disclaimer);
+	
 	function presetSection(title, presets){
 		const container = document.createElement("div");
 		container.className = "presetSection";
