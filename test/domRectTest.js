@@ -83,6 +83,8 @@
 		output.querySelector(".refresh").addEventListener("click", performTest);
 		output.querySelector(".performance").addEventListener("click", function(){
 			let count = 200;
+			let totalCount = 0;
+			let totalDuration = 0;
 			return function(){
 				let duration = 0;
 				let i = 0;
@@ -109,10 +111,12 @@
 						);
 					}
 				}
+				totalCount += count;
+				totalDuration += duration;
 				alert(
-					(count / (duration / 1000)).toFixed(2) + " tests/s\n" +
-					(duration * 1000 / count).toFixed(2) + " µs/test\n" +
-					"(" + count + " samples)"
+					(totalCount / (totalDuration / 1000)).toFixed(2) + " tests/s\n" +
+					(totalDuration * 1000 / totalCount).toFixed(2) + " µs/test\n" +
+					"(" + totalCount + " samples)"
 				);
 			};
 		}());
