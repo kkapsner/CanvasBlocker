@@ -1036,7 +1036,7 @@
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
-		"message": "ACHTUNG: der tatsächlich verwendete Browser kann nicht komplett vorgetäuscht werden, da es eine Vielzahl von Möglichkeiten gibt, diesen zu detektieren. Z.B. kann er immer über Funktionalitätstest und Browser spezifische Darstellung von HTML-Elementen bestimmt werden.",
+		"message": "ACHTUNG: der tatsächlich verwendete Browser kann nicht komplett vorgetäuscht werden, da es eine Vielzahl von Möglichkeiten gibt, diesen zu detektieren. Z.B. kann er immer über Funktionalitätstests und die browser-spezifische Darstellung von HTML-Elementen bestimmt werden.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
