@@ -8,14 +8,23 @@ var createLog = function(){
 		var logDiv = document.createElement("div");
 		logDiv.className = "log";
 		div.appendChild(logDiv);
-		return function createLine(str){
-			var logLine = document.createElement("div");
-			logLine.className = "logLine";
-			logDiv.appendChild(logLine);
-			logLine.textContent = str;
-			return function updateLine(str){
+		return {
+			createButton: function createButton(text, callback){
+				var button = document.createElement("button");
+				button.className = "logButton";
+				logDiv.appendChild(button);
+				button.textContent = text;
+				button.addEventListener("click", callback);
+			},
+			createLine: function createLine(str, type = "div"){
+				var logLine = document.createElement(type);
+				logLine.className = "logLine";
+				logDiv.appendChild(logLine);
 				logLine.textContent = str;
-			};
+				return function updateLine(str){
+					logLine.textContent = str;
+				};
+			}
 		};
 	};
 }();
@@ -25,46 +34,53 @@ var performTest = function(){
 	
 	return function performTest(name, func, innerRunLength, outerRunLength){
 		var log = createLog();
-		log("test " + name);
-		var line = log("starting");
+		log.createLine("test " + name, "h3");
+		var line = log.createLine("");
 		var time = 0;
 		var time2 = 0;
 		var min = Number.POSITIVE_INFINITY;
 		var max = 0;
 		var outerI = 0;
+		var outerRunIncrease = outerRunLength;
 		if (func.prepareOnce){
 			func.prepareOnce();
 		}
-		function run(){
-			for (var i = 0; i < innerRunLength; i += 1){
-				if (func.prepare){
-					func.prepare();
+		log.createButton("measure", function(){
+			line("starting");
+			line2("");
+			function run(){
+				for (var i = 0; i < innerRunLength; i += 1){
+					if (func.prepare){
+						func.prepare();
+					}
+					var start = performance.now();
+					func.test();
+					var end = performance.now();
+					var duration = end - start;
+					min = Math.min(min, duration);
+					max = Math.max(max, duration);
+					time2 += duration * duration;
+					time += duration;
 				}
-				var start = performance.now();
-				func.test();
-				var end = performance.now();
-				var duration = end - start;
-				min = Math.min(min, duration);
-				max = Math.max(max, duration);
-				time2 += duration * duration;
-				time += duration;
+				outerI += 1;
+				var totalRunI = outerI * innerRunLength;
+				line(
+					"finished run " + totalRunI + " from " + (innerRunLength * outerRunLength) +
+					" -> average: " + (time / totalRunI).toFixed(2) +
+					"(\u00B1" + Math.sqrt((time2 - time * time / totalRunI) / totalRunI).toFixed(2) + ") ms " +
+					"(min: " + min.toFixed(2) + "ms, max: " + max.toFixed(2) + "ms)"
+				);
+				if (outerI < outerRunLength){
+					window.setTimeout(run, 10);
+				}
+				else {
+					outerRunLength += outerRunIncrease;
+					line2("finished");
+				}
 			}
-			outerI += 1;
-			var totalRunI = outerI * innerRunLength;
-			line(
-				"finished run " + totalRunI + " from " + (innerRunLength * outerRunLength) +
-				" -> average: " + (time / totalRunI).toFixed(2) +
-				"(\u00B1" + Math.sqrt((time2 - time * time / totalRunI) / totalRunI).toFixed(2) + ") ms " +
-				"(min: " + min.toFixed(2) + "ms, max: " + max.toFixed(2) + "ms)"
-			);
-			if (outerI < outerRunLength){
-				window.setTimeout(run, 10);
-			}
-			else {
-				log("finished");
-			}
-		}
-		window.setTimeout(run, 10);
+			window.setTimeout(run, 10);
+		});
+		var line2 = log.createLine("");
 	};
 }();
 
