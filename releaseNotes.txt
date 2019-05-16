@@ -23,6 +23,7 @@ Version 0.5.9:
 		- fixed description for "show notifications"
 		- improved DOMRect performance
 		- improved general performance when stack list is disabled
+		- preventing double interception (increased performance and reduced detectability)
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
