@@ -56,6 +56,23 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	border-top: 1px solid #c1c1c1;
 	position: relative;
 }
+.settings .settingRow.displayHiddenRow td {
+	position: relative;
+}
+.settings .settingRow.displayHiddenRow {
+	display: table-row;
+}
+.settings .settingRow.displayHiddenRow .content {
+	border-top: 0px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+}
+.settings .settingRow.displayHiddenRow td + td + td .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
 
 .settings .settingRow td:first-child .content, td.hideColumn label {
 	margin-left: 10px;

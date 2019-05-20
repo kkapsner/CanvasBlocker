@@ -411,28 +411,30 @@
 	
 	function createThead(displayHidden, restContent){
 		const tHead = document.createElement("thead");
-		const headRow = document.createElement("tr");
+		const searchRow = document.createElement("tr");
 		const hideHeadCell = document.createElement("td");
 		hideHeadCell.className = "hideColumn";
-		hideHeadCell.title = extension.getTranslation(displayHidden.name + "_description");
-		const label = document.createElement("label");
-		label.className = "hideContent";
-		const input = createInput(displayHidden);
-		input.className = "displayHidden";
-		label.appendChild(input);
-		const display = document.createElement("span");
-		display.className = "display";
-		label.appendChild(display);
-		hideHeadCell.appendChild(label);
-		headRow.appendChild(hideHeadCell);
+		searchRow.appendChild(hideHeadCell);
 		
 		const restHeadCell = document.createElement("td");
 		restHeadCell.colSpan = 2;
 		if (restContent){
 			restHeadCell.appendChild(restContent);
 		}
-		headRow.appendChild(restHeadCell);
-		tHead.appendChild(headRow);
+		searchRow.appendChild(restHeadCell);
+		tHead.appendChild(searchRow);
+		
+		const displayHiddenRow = document.createElement("tr");
+		displayHiddenRow.className = "settingRow displayHiddenRow";
+		displayHiddenRow.appendChild(hideHeadCell.cloneNode());
+		const displayHiddenDescription = document.createElement("td");
+		displayHiddenDescription.appendChild(createDescription(displayHidden));
+		displayHiddenRow.appendChild(displayHiddenDescription);
+
+		var displayHiddenInteraction = document.createElement("td");
+		displayHiddenInteraction.appendChild(createInteraction(displayHidden));
+		displayHiddenRow.appendChild(displayHiddenInteraction);
+		tHead.appendChild(displayHiddenRow);
 		return tHead;
 	}
 	

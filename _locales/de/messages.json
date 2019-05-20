@@ -144,11 +144,11 @@
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Versteckte Einstellungen anzeigen",
+		"message": "Verborgene Einstellungen anzeigen",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Aktivieren, um versteckte Einstellungen anzuzeigen.",
+		"message": "Aktivieren, um verborgene Einstellungen anzuzeigen.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
