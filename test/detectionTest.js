@@ -106,6 +106,7 @@ addTest("function code", function(log){
 		}
 		return false;
 	}
+	log("canvas functions");
 	codeDetected = checkFunctionCode(
 		CanvasRenderingContext2D.prototype.getImageData,
 		"getImageData"
@@ -114,10 +115,12 @@ addTest("function code", function(log){
 		HTMLCanvasElement.prototype.toDataURL,
 		"toDataURL"
 	) || codeDetected;
+	log("history getter");
 	codeDetected = checkFunctionCode(
 		history.__lookupGetter__("length"),
 		"(get )?length"
 	) || codeDetected;
+	log("window getters");
 	codeDetected = checkFunctionCode(
 		window.__lookupGetter__("name"),
 		"(get )?name"
@@ -126,6 +129,22 @@ addTest("function code", function(log){
 		window.__lookupSetter__("name"),
 		"(set )?name"
 	) || codeDetected;
+	log("navigator getters");
+	Object.keys(navigator.__proto__).forEach(function(property){
+		if (typeof navigator[property] === "string"){
+			codeDetected = checkFunctionCode(
+				navigator.__proto__.__lookupGetter__(property),
+				"(get )?" + property
+			) || codeDetected;
+		}
+	});
+	log("DOMRect getters");
+	["x", "y", "height", "width"].forEach(function(property){
+		codeDetected = checkFunctionCode(
+			DOMRect.prototype.__lookupGetter__(property),
+			"(get )?" + property
+		) || codeDetected;
+	});
 	return codeDetected;
 });
 addTest("toString modified", function(log){
