@@ -37,6 +37,12 @@
 		catch (e){console.error(e);}
 		try {show(document.getElementById("iframe3"), iframeTest(document.querySelector("#iframe3 iframe")));}
 		catch (e){console.error(e);}
+		try {show(document.getElementById("iframe4"), dynamicIframeTest1());}
+		catch (e){console.error(e);}
+		try {show(document.getElementById("iframe5"), dynamicIframeTest2());}
+		catch (e){console.error(e);}
+		try {show(document.getElementById("iframe6"), dynamicIframeTest3());}
+		catch (e){console.error(e);}
 	}
 	document.querySelector("#top button").addEventListener("click", function(){
 		show(document.getElementById("top"), topTest());
@@ -49,6 +55,15 @@
 	});
 	document.querySelector("#iframe3 button").addEventListener("click", function(){
 		show(document.getElementById("iframe3"), iframeTest(document.querySelector("#iframe3 iframe")));
+	});
+	document.querySelector("#iframe4 button").addEventListener("click", function(){
+		show(document.getElementById("iframe4"), dynamicIframeTest1());
+	});
+	document.querySelector("#iframe5 button").addEventListener("click", function(){
+		show(document.getElementById("iframe5"), dynamicIframeTest2());
+	});
+	document.querySelector("#iframe6 button").addEventListener("click", function(){
+		show(document.getElementById("iframe6"), dynamicIframeTest3());
 	});
 }());
 
@@ -100,7 +115,7 @@ function topTest(){
 	};
 }
 
-function iframeTest(iframe){
+function copyToDifferentDocumentTest(otherDocument){
 	"use strict";
 
 	// create window canvas
@@ -109,18 +124,58 @@ function iframeTest(iframe){
 	// draw image in window canvas
 	draw(canvas);
 
-	// create iframe canvas and ctx
-	var iframe_canvas = iframe.contentDocument.createElement("canvas");
-	iframe_canvas.setAttribute("width", 220);
-	iframe_canvas.setAttribute("height", 30);
-	var iframe_ctx = iframe_canvas.getContext("2d");
+	// create other canvas and context
+	var otherCanvas = otherDocument.createElement("canvas");
+	otherCanvas.setAttribute("width", 220);
+	otherCanvas.setAttribute("height", 30);
+	var otherContext = otherCanvas.getContext("2d");
 
-	// copy image from window canvas to iframe ctx
-	iframe_ctx.drawImage(canvas, 0, 0);
+	// copy image from window canvas to iframe context
+	otherContext.drawImage(canvas, 0, 0);
 
 	return {
-		imageData: iframe_ctx.getImageData(0, 0, iframe_canvas.width, iframe_canvas.height),
-		url: iframe_canvas.toDataURL(),
-		isPointInPath: getIsPointInPath(iframe_ctx)
+		imageData: otherContext.getImageData(0, 0, otherCanvas.width, otherCanvas.height),
+		url: otherCanvas.toDataURL(),
+		isPointInPath: getIsPointInPath(otherContext)
 	};
+}
+
+function iframeTest(iframe){
+	"use strict";
+	
+	return copyToDifferentDocumentTest(iframe.contentDocument);
+}
+
+function dynamicIframeTest1(){
+	"use strict";
+	
+	var length = frames.length;
+	var iframe = document.createElement("iframe");
+	document.body.appendChild(iframe);
+	var iframeWindow = frames[length];
+	document.body.removeChild(iframe);
+	return copyToDifferentDocumentTest(iframeWindow.document);
+}
+
+function dynamicIframeTest2(){
+	"use strict";
+	
+	var length = window.length;
+	var iframe = document.createElement("iframe");
+	document.body.appendChild(iframe);
+	var iframeWindow = window[length];
+	document.body.removeChild(iframe);
+	return copyToDifferentDocumentTest(iframeWindow.document);
+}
+
+function dynamicIframeTest3(){
+	"use strict";
+	
+	var length = window.length;
+	var div = document.createElement("div");
+	document.body.appendChild(div);
+	div.innerHTML = "<iframe></iframe>";
+	var iframeWindow = window[length];
+	document.body.removeChild(div);
+	return copyToDifferentDocumentTest(iframeWindow.document);
 }
