@@ -26,6 +26,7 @@ Version 0.5.9:
 		- improved general performance when stack list is disabled
 		- preventing double interception (increased performance and reduced detectability)
 		- detection over navigator and DOMRect getters was possible
+		- audio cache could break readout
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
