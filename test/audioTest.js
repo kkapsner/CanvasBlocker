@@ -95,6 +95,15 @@
 		displayData(emptyCopy2, "empty buffer", "copyFromChannel - second");
 	}
 	
+	function getIframeWindow(){
+		var l = window.length;
+		var iframe = document.createElement("iframe");
+		document.body.appendChild(iframe);
+		const iframeWindow = window[l];
+		document.body.removeChild(iframe);
+		return iframeWindow;
+	}
+	
 	function createHashData(frequency = 1e4){
 		
 		var context = getAudioContext(frequency);
@@ -105,6 +114,10 @@
 		// Start audio processing
 		context.startRendering();
 		context.oncomplete = function(event){
+			var copyTestIframe = new (getIframeWindow().Float32Array)(44100);
+			getIframeWindow().AudioBuffer.prototype.copyFromChannel.call(event.renderedBuffer, copyTestIframe, 0);
+			displayData(copyTestIframe, setName, "copyFromChannel - iframe");
+			
 			var chunkTest = new Float32Array(44100);
 			var number = new Float32Array(100);
 			for (var chunkI = 0; chunkI < 44100; chunkI += number.length){
