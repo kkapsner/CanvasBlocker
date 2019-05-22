@@ -151,5 +151,27 @@ var randomImageTest = function(){
 	};
 }();
 
+var innerHTMlTest = function(html, repeats){
+	"use strict";
+	
+	var div;
+	
+	return {
+		prepareOnce: function(){
+			div = document.createElement("div");
+			div.style.visibility = "hidden";
+			document.body.appendChild(div);
+		},
+		test: function randomImageTest(){
+			for (var i = repeats; i--;){
+				div.innerHTML = html;
+				div.innerHTML = "";
+			}
+		}
+	};
+};
+
 performTest("fingerprinting", fingerprintTest, 10, 100);
 performTest("big random image", randomImageTest, 10, 10);
+performTest("innerHTML (100 times)", innerHTMlTest("text <br>no iframe", 1000), 10, 30);
+performTest("innerHTML with iframe (20 times)", innerHTMlTest("text <br>iframe: <iframe></iframe>", 20), 10, 10);
