@@ -32,3 +32,23 @@ Object.keys(navigator.__proto__).sort().forEach(function(property){
 		log(property + ": " + value);
 	}
 });
+
+var section = document.createElement("h2");
+section.textContent = "Values in iFrame";
+document.getElementById("log").append(section);
+
+log = createLog();
+
+var iframe = document.createElement("iframe");
+document.body.appendChild(iframe);
+var iframeWindow = frames[frames.length - 1];
+
+Object.keys(navigator.__proto__).sort().forEach(function(property){
+	"use strict";
+	
+	var value = iframeWindow.navigator[property];
+	if ((typeof value) === "string"){
+		log(property + "@iframe: " + value);
+	}
+});
+document.body.removeChild(iframe);
