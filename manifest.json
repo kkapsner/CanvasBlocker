@@ -58,6 +58,7 @@
 			
 			"lib/lists.js",
 			"lib/check.js",
+			"lib/iframeProtection.js",
 			
 			"lib/frame.js"
 		]
