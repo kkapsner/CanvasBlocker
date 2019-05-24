@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>iFrame Test</title>
+		<link href="testIcon.svg" type="image/png" rel="icon">
+		<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	</head>
+	<body>
+		<script src="iframeTest.js"></script>
+		<iframe></iframe><script>
+		const iframe = window[0];
+		log("iframe in html:", compare(test(iframe), reference));
+		iframe.addEventListener("load", function(){
+			log("iframe after loading:", compare(test(iframe), reference));
+		});
+		document.write("<iframe></iframe><script>log(\"iframe and script in document.write:\", compare(test(window[1]), reference));<\/script>");
+		log("iframe in document.write:", compare(test(window[1]), reference));
+		document.write("<iframe></iframe>");
+		document.write("<script>log(\"iframe and script in separate document.write:\", compare(test(window[2]), reference));<\/script>");
+		"<iframe></iframe><script>log(\"iframe and script in fragmented document.write:\", compare(test(window[3]), reference));<\/script>".split(/(?=<)/).forEach(function(part){
+			document.write(part);
+		});
+		document.writeln("<iframe></iframe><script>log(\"iframe and script in document.writeln:\", compare(test(window[4]), reference));<\/script>");
+		document.write("<script src=\"iframeTest.js\"><\/script><iframe></iframe><script>log(\"script with src, iframe and script in document.write:\", compare(test(window[5]), reference));<\/script>");
+		window.addEventListener("load", function(){
+			// document.open();
+			document.write("<script src=\"iframeTest.js\"><\/script><iframe></iframe><script>log(\"reopened document: script with src, iframe and script in document.write:\", compare(test(window[0]), reference, true));<\/script>");
+			// document.close();
+		});
+		window.setTimeout(function(){
+			document.body.innerHTML = "<iframe></iframe>";
+			console.log("innerHTML after 1000ms:", compare(test(window[0]), reference));
+			document.body.innerHTML = "<h1>Iframe protection</h1>Open console to see results.";
+		}, 1000);
+		</script>
+	</body>
+</html>
