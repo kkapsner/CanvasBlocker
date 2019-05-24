@@ -359,11 +359,15 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "lectura: las funciones de lectura de la API de canvas están protegidas.\n\nentrada: las funciones de entrada de la API de canvas están protegidas. En el modo de bloqueo «falsear», los píxeles dibujados son modificados ligeramente al mostrar texto. Esto dificulta la detección del complemento pero es menos seguro. Con los «canvas» de WebGL, el comportamiento es idéntico a «lectura».\n\ntodo: las funciones tanto de lectura como la entrada están protegidas. No se recomienda usar esto con el modo de bloqueo «falsear» ya que aumenta la probabilidad de ser detectado.",
+		"message": "nada: ninguna función de la API de canvas está protegida\n\nlectura: las funciones de lectura de la API de canvas están protegidas.\n\nentrada: las funciones de entrada de la API de canvas están protegidas. En el modo de bloqueo «falsear», los píxeles dibujados son modificados ligeramente al mostrar texto. Esto dificulta la detección del complemento pero es menos seguro. Con los «canvas» de WebGL, el comportamiento es idéntico a «lectura».\n\ntodo: las funciones tanto de lectura como la entrada están protegidas. No se recomienda usar esto con el modo de bloqueo «falsear» ya que aumenta la probabilidad de ser detectado.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
 		"message": "Para proteger partes concretas de sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y seleccione la parte deseada.",
+		"description": ""
+	},
+	"protectedCanvasPart_options.nothing": {
+		"message": "nada",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
@@ -614,8 +618,8 @@
 	"fakedDOMRectReadout": {
 		"message": "Lectura de DOMRect falseada en {url}",
 		"description": ""
-	},	
-		"fakedNavigatorReadout": {
+	},
+	"fakedNavigatorReadout": {
 		"message": "Lectura de navigator falseada en {url}",
 		"description": ""
 	},
@@ -697,6 +701,18 @@
 		"message": "Introduzca la «RegExp» de URL a añadir a la lista blanca de la sesión:",
 		"description": ""
 	},
+	"selectWhitelistScope": {
+		"message": "¿Cuál es el alcance de la lista blanca?",
+		"description": ""
+	},
+	"whitelistOnlyAPI": {
+		"message": "Permitir solo {api}",
+		"description": ""
+	},
+	"whitelistAllAPIs": {
+		"message": "Permitir todas las API",
+		"description": ""
+	},
 	"settings": {
 		"message": "configuración",
 		"description": ""
@@ -718,7 +734,7 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Mostrar una notificación cuando el modo de bloqueo sea «falsear la API de lectura». Recibirá la notificación con el icono de la barra de direcciones y la insignia en el icono de CanvasBlocker.",
+		"message": "Muestra un icono de notificación en la barra de direcciones cuando se bloquea o falsea algo.",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
@@ -770,7 +786,7 @@
 		"description": ""
 	},	
 	"highlightBrowserAction_title": {
-		"message": "Cambio del icono de la barra de herramientas al hacer notificaciones",
+		"message": "Cambio del icono de la barra de herramientas al haber notificaciones",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
@@ -829,7 +845,11 @@
 		"message": "permitir temporalmente",
 		"description": ""
 	},
-		
+	"inspectWhitelist": {
+		"message": "inspeccionar la lista blanca",
+		"description": ""
+	},
+
 	"sessionWhiteList_title": {
 		"message": "Lista blanca de la sesión",
 		"description": ""
@@ -840,7 +860,7 @@
 	},
 	
 	"whitelistDomainTemporarily": {
-		"message": "permitr el dominio temporalmente",
+		"message": "permitir el dominio temporalmente",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
@@ -849,7 +869,7 @@
 	},
 	
 	"storeNotificationData_title": {
-		"message": "Guardar los datos de los detalles de las notificaciones",
+		"message": "Guardar datos detallados de las notificaciones",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -955,7 +975,7 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Algunas páginas usan guiones para crear huellas digitales muy mal escritos que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla. ",
+		"message": "Algunas páginas usan guiones para crear huellas digitales muy mal escritos que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
 		"description": ""
 	},	
 	"audioUseFixedIndices_title": {
@@ -963,7 +983,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "Si algunos de los índices usados debe ser siempre falseado.",
+		"message": "Si algunos de los índices usados debe ser siempre falseados.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
@@ -971,7 +991,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "Los índices que siempre se falsean. Introdúzcalos separados por comas.",
+		"message": "Los índices que siempre se falsean. Para añadir varias entradas, sepárelas con comas.",
 		"description": ""
 	},
 	
@@ -983,7 +1003,10 @@
 		"message": "Tamaño máximo del historial que se reporta al sitio web.",
 		"description": ""
 	},
-
+	"historyLengthThreshold_urlSpecific": {
+		"message": "Para cambiar este valor para sítios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y ponga un valor distinto.",
+		"description": ""
+	},
 	"protectWindow_title": {
 		"message": "Proteger la API de window",
 		"description": ""
@@ -1031,8 +1054,11 @@
 		"message": "Esta página permite cambios en la API de navigator. Habilitar esta protección no cambia nada por defecto. Abra la configuración de navigator para especificar allí los cambios que desee.",
 		"description": ""
 	},
-	
-	
+	"protectNavigator_urlSpecific": {
+		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casila.",
+		"description": ""
+	},
+
 	"openNavigatorSettings_title": {
 		"message": "Configuración de navigator",
 		"description": ""
@@ -1052,6 +1078,10 @@
 	},
 	"navigatorSettings_description": {
 		"message": "En esta página puede cambiar la configuración de navigator. Si usa un preajuste, debe usar siempre uno para sistema operativo y otro para el navegador. Después de seleccionarlos, todavía puede hacer modificaciones.",
+		"description": ""
+	},
+	"navigatorSettings_disclaimer": {
+		"message": "PRECAUCIÓN: el navegador en uso no puede falsearse por completo ya que hay multitud de formas para detectarlo. Por ejemplo, la detección de características y representación específica del navegador de elementos de HTML siempre van a dejar escapar información.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
@@ -1076,11 +1106,15 @@
 		"description": ""
 	},
 	"theme_description": {
-		"message": "",
+		"message": "El tema «automático» cambia a oscuro si el sistema usa un tema oscuro (requiere Firefox >= 67)",
+		"description": ""
+	},
+	"theme_options.auto": {
+		"message": "automático",
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "Por defecto",
+		"message": "por defecto",
 		"description": ""
 	},
 	"theme_options.light": {
@@ -1091,13 +1125,25 @@
 		"message": "oscuro",
 		"description": ""
 	},
-	
+	"theme_options.colorful": {
+		"message": "colorido",
+		"description": ""
+	},
+	"theme_options.none": {
+		"message": "ninguno",
+		"description": ""
+	},
+
 	"blockDataURLs_title": {
 		"message": "Bloquear las páginas de URL de datos",
 		"description": ""
 	},
 	"blockDataURLs_description": {
 		"message": "Las páginas de URL de datos no pueden protegerse contra la huella digital (vea https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Bloquearlas impide que la huella digital real llegue a cualquier servidor.",
+		"description": ""
+	},
+	"blockDataURLs_urlSpecific": {
+		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casila.",
 		"description": ""
 	},
 	
@@ -1119,7 +1165,7 @@
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "Para encontrar la causa de un error, es útil el registro detallado de la actividad del complemento. Este parámetro controla el nivel de detalle del registro.\n\nEl registro se puede ver en la consola del navegador (Ctrl+Mayús+J) y en la consola web (Ctrl+Mayús+K).",
+		"message": "Para encontrar la causa de un error, es útil el registro detallado de la actividad del complemento. Este parámetro controla el nivel de detalle del registro.\n\nEl registro puede verse en la consola del navegador (Ctrl+Mayús+J) y en la consola web (Ctrl+Mayús+K).",
 		"description": ""
 	},
 	"logLevel_options.0": {
@@ -1179,6 +1225,10 @@
 	},
 	"loadSettings_label": {
 		"message": "Cargar",
+		"description": ""
+	},
+	"inspectWhitelist_label": {
+		"message": "Inspeccionar la lista blanca",
 		"description": ""
 	},
 	
@@ -1309,11 +1359,11 @@
 		"description": ""
 	},	
 	"sanitation_error.valueTooLow": {
-		"message": "«{setting}» no debe ser menor que {value}.",
+		"message": "«{setting}» no debería ser menor que {value}.",
 		"description": ""
 	},
 	"sanitation_error.valueTooHigh": {
-		"message": "«{setting}» no debe ser mayor que {value}.",
+		"message": "«{setting}» no debería ser mayor que {value}.",
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
@@ -1330,6 +1380,15 @@
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
 		"message": "No compartir la aleatoriedad persistente entre dominios porque hace al navegador 100% rastreable.",
+		"description": ""
+	},
+
+	"whitelist_inspection_title": {
+		"message": "Inspección de la lista blanca de CanvasBlocker",
+		"description": ""
+	},
+	"whitelist_all_apis": {
+		"message": "Todas las API",
 		"description": ""
 	}
 }

@@ -1,8 +1,6 @@
 Este complemento permite a los usuarios impedir que los sitios web usen algunas API de JavaScript para crear huellas digitales para ellos. Los usuarios pueden elegir entre bloquear las API por completo en algunos sitios web o en todos (lo que puede romper algunos) o falsear su API de lectura para crear huellas digitales.
 
-<b>IMPORTANTE</b>: solo debe tener UN complemento/configuración activo para proteger una API. De lo contrario, puede sufrir enormes problemas de rendimiento (p. ej. EclipseMoon para Palemoon tiene «canvas.poison», del que se sabe que causa problemas: https://github.com/kkapsner/CanvasBlocker/issues/253#issuecomment-459499290).
-
-Aunque poner privacy.resistFingerprinting a «true» no importa.
+<b>IMPORTANTE</b>: solo debe tener UN complemento/configuración activo para proteger una API. De lo contrario, puede sufrir enormes problemas de rendimiento (p. ej. EclipsedMoon para Palemoon tiene «canvas.poison», del que se sabe que causa problemas: https://github.com/kkapsner/CanvasBlocker/issues/253#issuecomment-459499290). Aunque poner privacy.resistFingerprinting a «true» no importa.
 
 Puede encontrar más información sobre huellas digitales en:
 	<ul>
@@ -24,14 +22,14 @@ Puede encontrar más información sobre huellas digitales en:
 Los distintos modos de bloqueo son:
 	<ul>
 	  <li> falsear: configuración por defecto de CanvasBlocker, ¡y mi favorita! Todos los sitios web que no estén en la lista blanca o en la negra pueden usar las API protegidas. Pero los valores obtenidos por las API son alterados para que no sea posible una huella digital consistente.</li>
-	  <li> pedir permiso: si un sitio web no está en la lista blanca o en la negra, se pregunta al usuario si dicho este puede usar las API protegidas cada vez que son llamadas.</li>
+	  <li> pedir permiso: si un sitio web no está en la lista blanca o en la negra, se pregunta al usuario si dicha web puede usar las API protegidas cada vez que son llamadas.</li>
 	  <li> bloquear todo: ignora todas las listas y bloquea las API protegidas en todos los sitios web.</li>
 	  <li> permitir solo lo de la lista blanca: solo se permite usar las API protegidas a los sitios web de la lista blanca.</li>
 	  <li> bloquear solo lo de la lista negra: bloquea las API protegidas solo en los sitios web de la lista negra.</li>
 	  <li> permitir todo: ignora todas las listas y permite usar las API protegidas en todos los sitios web.</li>
 	</ul>
 
-API para «huellas digitales» protegidas:
+Las API para «huellas digitales» protegidas son:
 	<ul>
 		<li>canvas 2d</li>
 		<li>webGL</li>
