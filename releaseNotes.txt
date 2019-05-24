@@ -28,6 +28,7 @@ Version 0.5.9:
 		- detection over navigator and DOMRect getters was possible
 		- audio cache could break readout
 		- improved iFrame protection
+		- SOP detection did not work all the time
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
