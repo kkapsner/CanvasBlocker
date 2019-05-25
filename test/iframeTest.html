@@ -11,28 +11,28 @@
 		<script src="iframeTest.js"></script>
 		<iframe></iframe><script>
 		const iframe = window[0];
-		log("iframe in html:", compare(test(iframe), reference));
+		log("TEST:", "iframe in html:", compare(test(iframe), reference));
 		iframe.addEventListener("load", function(){
-			log("iframe after loading:", compare(test(iframe), reference));
+			log("TEST:", "iframe after loading:", compare(test(iframe), reference));
 		});
-		document.write("<iframe></iframe><script>log(\"iframe and script in document.write:\", compare(test(window[1]), reference));<\/script>");
-		log("iframe in document.write:", compare(test(window[1]), reference));
+		document.write("<iframe></iframe><script>log(\"TEST:\", \"iframe and script in document.write:\", compare(test(window[1]), reference));<\/script>");
+		log("TEST:", "iframe in document.write:", compare(test(window[1]), reference));
 		document.write("<iframe></iframe>");
-		document.write("<script>log(\"iframe and script in separate document.write:\", compare(test(window[2]), reference));<\/script>");
-		"<iframe></iframe><script>log(\"iframe and script in fragmented document.write:\", compare(test(window[3]), reference));<\/script>".split(/(?=<)/).forEach(function(part){
+		document.write("<script>log(\"TEST:\", \"iframe and script in separate document.write:\", compare(test(window[2]), reference));<\/script>");
+		"<iframe></iframe><script>log(\"TEST:\", \"iframe and script in fragmented document.write:\", compare(test(window[3]), reference));<\/script>".split(/(?=<)/).forEach(function(part){
 			document.write(part);
 		});
-		document.writeln("<iframe></iframe><script>log(\"iframe and script in document.writeln:\", compare(test(window[4]), reference));<\/script>");
-		document.write("<script src=\"iframeTest.js\"><\/script><iframe></iframe><script>log(\"script with src, iframe and script in document.write:\", compare(test(window[5]), reference));<\/script>");
+		document.writeln("<iframe></iframe><script>log(\"TEST:\", \"iframe and script in document.writeln:\", compare(test(window[4]), reference));<\/script>");
+		document.write("<script src=\"iframeTest.js\"><\/script><iframe></iframe><script>log(\"TEST:\", \"script with src, iframe and script in document.write:\", compare(test(window[5]), reference));<\/script>");
 		window.addEventListener("load", function(){
 			// document.open();
-			document.write("<script src=\"iframeTest.js\"><\/script><iframe></iframe><script>log(\"reopened document: script with src, iframe and script in document.write:\", compare(test(window[0]), reference, true));<\/script>");
+			document.write("<script src=\"iframeTest.js\"><\/script><iframe></iframe><script>log(\"TEST:\", \"reopened document: script with src, iframe and script in document.write:\", compare(test(window[0]), reference, true));<\/script>");
 			// document.close();
 		});
 		window.setTimeout(function(){
 			document.body.innerHTML = "<iframe></iframe>";
-			console.log("innerHTML after 1000ms:", compare(test(window[0]), reference));
-			document.body.innerHTML = "<h1>Iframe protection</h1>Open console to see results.";
+			console.log("TEST:", "innerHTML after 1000ms:", compare(test(window[0]), reference));
+			document.body.innerHTML = "<h1>Iframe protection</h1>Open console (Ctrl + Shift + K) to see results. Depending on your Browser version you might have to check the \"Persist Logs\" flag and reload the page.<br><h2>Expected behaviour</h2><ul><li>The displayed hashes should not be you native hash (run test with CB disabled to get it)</li><li>All the displayed hashes should be the same (exception if there is a change to a wyciwyg page)</li><li>All lines with \"TEST:\" should have a \"match\" at the end</li></ul>";
 		}, 1000);
 		</script>
 	</body>
