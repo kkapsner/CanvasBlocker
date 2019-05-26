@@ -11,6 +11,7 @@ More information on fingerprinting can be found at:
  * DOMRect:
    * http://jcarlosnorte.com/security/2016/03/06/advanced-tor-browser-fingerprinting.html
    * https://browserleaks.com/rects
+ * https://github.com/ghacksuserjs/ghacks-user.js/wiki/Appendix-A---Test-Sites
 
 The different block modes are:
  * fake: Canvas Blocker's default setting, and my favorite! All websites not on the white list or black list can use the protected APIs. But values obtained by the APIs are altered so that a consistent fingerprinting is not possible
