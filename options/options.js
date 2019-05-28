@@ -51,7 +51,19 @@
 			const link = document.createElement("a");
 			link.href = window.URL.createObjectURL(blob);
 			link.target = "_blank";
-			link.download = "CanvasBlocker-settings.json";
+			const now = new Date();
+			function format(number, digits){
+				var str = number.toFixed(0);
+				return "0".repeat(digits - str.length) + str;
+			}
+			link.download = "CanvasBlocker-settings_" +
+				format(now.getFullYear(), 4) + "-" +
+				format(now.getMonth() + 1, 2) + "-" +
+				format(now.getDate(), 2) + "_" +
+				format(now.getHours(), 2) + "-" +
+				format(now.getMinutes(), 2) + "-" +
+				format(now.getSeconds(), 2) +
+				".json";
 			document.body.appendChild(link);
 			link.click();
 			document.body.removeChild(link);

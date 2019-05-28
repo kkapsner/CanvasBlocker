@@ -3,10 +3,10 @@ Version 0.5.10:
 		- min version is now 57 to remove the amount of warnings on submission
 	
 	new features:
-		- 
+		- added date and time to the settings export file
 	
 	fixes:
-		- 
+		- setter for innerHTML broke pages
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
