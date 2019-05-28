@@ -7,6 +7,7 @@ Version 0.5.10:
 	
 	fixes:
 		- setter for innerHTML broke pages
+		- protection for document.write and document.wirteln broke in Firefox 69
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
