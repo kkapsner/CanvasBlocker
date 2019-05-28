@@ -4,6 +4,7 @@ Version 0.5.10:
 	
 	new features:
 		- added date and time to the settings export file
+		- persistent rng is no longer shared between containers (different cookieStoreId)
 	
 	fixes:
 		- setter for innerHTML broke pages

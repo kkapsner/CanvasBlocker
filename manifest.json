@@ -85,7 +85,8 @@
 		"tabs",
 		"activeTab",
 		"webRequest",
-		"webRequestBlocking"
+		"webRequestBlocking",
+		"cookies"
 	],
 	
 	"applications": {
