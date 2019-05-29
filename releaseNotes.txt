@@ -12,6 +12,7 @@ Version 0.5.10:
 		- not connected iFrame threw error with persistent rng
 		- detection over document.write and document.writeln was possible
 		- google docs were broken in Waterfox
+		- MutationObserver failed in some instances
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
