@@ -24,9 +24,18 @@
 		});
 		document.writeln("<iframe></iframe><script>log(\"TEST:\", \"iframe and script in document.writeln:\", compare(test(window[4]), reference));<\/script>");
 		document.write("<script src=\"iframeTest.js\"><\/script><iframe></iframe><script>log(\"TEST:\", \"script with src, iframe and script in document.write:\", compare(test(window[5]), reference));<\/script>");
+		
+		"<ifr|ame></ifr|ame>".split("|").forEach(function(part){
+			document.write(part);
+		});
+		document.write("<script>log(\"TEST:\", \"ifr|ame split:\", compare(test(window[6]), reference));<\/script>");
 		window.addEventListener("load", function(){
 			// document.open();
-			document.write("<script src=\"iframeTest.js\"><\/script><iframe></iframe><script>log(\"TEST:\", \"reopened document: script with src, iframe and script in document.write:\", compare(test(window[0]), reference, true));<\/script>");
+			"<ifr|ame></ifr|ame>".split("|").forEach(function(part){
+				document.write(part);
+			});
+			document.write("<script>log(\"TEST:\", \"reopened document: ifr|ame split:\", compare(test(window[0]), reference));<\/script>");
+			document.write("<script src=\"iframeTest.js\"><\/script><iframe></iframe><script>log(\"TEST:\", \"reopened document: script with src, iframe and script in document.write:\", compare(test(window[1]), reference, true));<\/script>");
 			// document.close();
 		});
 		window.setTimeout(function(){

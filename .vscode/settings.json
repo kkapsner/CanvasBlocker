@@ -27,6 +27,7 @@
 		"fakeable",
 		"fragmenter",
 		"graytext",
+		"iframe",
 		"ignorelist",
 		"micrococo",
 		"monero",
@@ -39,6 +40,8 @@
 		"unticking",
 		"webgl",
 		"whitelisted",
+		"writeln",
+		"wyciwyg",
 		"yfdyh"
 	],
 	"cSpell.language": "en,de,en-GB"
