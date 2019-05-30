@@ -18,6 +18,8 @@
 			"lib/settings.js",
 			"lib/lists.js",
 			"lib/persistentRndStorage.js",
+			"lib/callingStack.js",
+			"lib/check.js",
 			"lib/dataUrls.js",
 			"lib/notification.js",
 			"lib/navigator.js",
