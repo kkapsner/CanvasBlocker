@@ -41,6 +41,14 @@
 		"message": "Search",
 		"description": ""
 	},
+	"ok": {
+		"message": "OK",
+		"description": ""
+	},
+	"cancel": {
+		"message": "Cancel",
+		"description": ""
+	},
 	
 	"input": {
 		"message": "input",

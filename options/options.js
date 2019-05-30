@@ -16,6 +16,7 @@
 	const searchParameters = new URLSearchParams(window.location.search);
 	const settingsMigration = require("../lib/settingsMigration");
 	require("./theme").init("options");
+	const modal = require("../lib/modal");
 	
 	var callbacks = {
 		openNavigatorSettings: function(){
@@ -119,9 +120,17 @@
 			});
 		},
 		resetSettings: function(){
-			if (window.confirm(extension.getTranslation("resetSettings_confirm"))){
-				browser.storage.local.clear();
-			}
+			modal.confirm(
+				extension.getTranslation("resetSettings_confirm"),
+				{
+					node: this,
+					selector: ".settingRow .content"
+				}
+			).then(function(clear){
+				if (clear){
+					browser.storage.local.clear();
+				}
+			});
 		}
 	};
 	
@@ -325,6 +334,7 @@
 				setting.display = display;
 				
 				let originalSet = setting.set;
+				setting.originalSet = originalSet;
 				if (originalSet){
 					const eventListeners = [];
 					beforeChangeEventListeners[setting.name] = eventListeners;
@@ -458,18 +468,36 @@
 					(
 						matching.length === 0 ||
 						matching[0].protectWindow
-					) &&
-					window.confirm(extension.getTranslation("protectWindow_askReCaptchaException"))
+					)
 				){
-					settings.set("protectWindow", false, reCaptchaEntry);
+					modal.confirm(
+						extension.getTranslation("protectWindow_askReCaptchaException"),
+						{
+							node: document.querySelector("[data-storage-name=protectWindow]"),
+							selector: ".settingRow .content"
+						}
+					).then(function(addException){
+						if (addException){
+							settings.set("protectWindow", false, reCaptchaEntry);
+						}
+					});
 				}
 			}
 		});
-		beforeChangeEventListeners.sharePersistentRndBetweenDomains.push(function(value){
+		beforeChangeEventListeners.sharePersistentRndBetweenDomains.push(function(value, ...args){
 			if (value){
-				if (!confirm(extension.getTranslation("sharePersistentRndBetweenDomains_confirmMessage"))){
-					return false;
-				}
+				modal.confirm(
+					extension.getTranslation("sharePersistentRndBetweenDomains_confirmMessage"),
+					{
+						node: document.querySelector("[data-storage-name=sharePersistentRndBetweenDomains]"),
+						selector: ".settingRow .content"
+					}
+				).then((reallyShare) => {
+					if (reallyShare){
+						this.originalSet(value, ...args);
+					}
+				});
+				return false;
 			}
 			return true;
 		});

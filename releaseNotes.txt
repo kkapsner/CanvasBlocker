@@ -14,6 +14,7 @@ Version 0.5.10:
 		- google docs were broken in Waterfox
 		- MutationObserver failed in some instances
 		- server-site navigator protection did not respect whitelisting
+		- confirm messages were broken in Firefox 67
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
