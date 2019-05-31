@@ -1,3 +1,16 @@
+Version 0.5.11:
+	changes:
+		- 
+	
+	new features:
+		- 
+	
+	fixes:
+		- 
+	
+	known issues:
+		- if a data URL is blocked the page action button does not appear
+
 Version 0.5.10:
 	changes:
 		- min version is now 57 to remove the amount of warnings on submission
