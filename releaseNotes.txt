@@ -6,7 +6,7 @@ Version 0.5.11:
 		- 
 	
 	fixes:
-		- 
+		- improved protection of (i)frame properties
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

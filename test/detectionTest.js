@@ -200,6 +200,10 @@ addTest("function name", function(log){
 			func: window.__lookupSetter__("name"),
 			expectedName: "set name"
 		},
+		{
+			func: HTMLIFrameElement.prototype.__lookupGetter__("contentDocument"),
+			expectedName: "get contentDocument"
+		},
 	].map(checkName).some(function(b){return b;});
 });
 addTest("property descriptor", function(log){
