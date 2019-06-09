@@ -94,6 +94,7 @@
 	"applications": {
 		"gecko": {
 			"id": "CanvasBlocker@kkapsner.de",
+			"update_url": "https://canvasblocker.kkapsner.de/versions/updates.json",
 			"strict_min_version": "57.0"
 		}
 	},

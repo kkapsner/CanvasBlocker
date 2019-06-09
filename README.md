@@ -39,6 +39,8 @@ Special thanks to:
  * micrococo for the Spanish translation
  * STim99 for the Russian translation
 
+Beta versions can be found at https://canvasblocker.kkapsner.de/versions/.
+
 If you want to support this addon you can donate to the following addresses:
  * bitcoin: 159Y9BLcfHyrp6wj6f3syEuk92xkRVTiie
  * bitcoin cash:qrchnszkdwv9knhg9wjucrqy43rpl4klkq7jhkc8dz

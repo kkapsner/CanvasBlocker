@@ -1,0 +1,16 @@
+{
+	"addons": {
+		"CanvasBlocker-Beta@kkapsner.de": {
+			"updates": [
+				{
+					"version": "0.5.11Alpha20190608",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-0.5.11Alpha20190608-an+fx.xpi"
+				},
+				{
+					"version": "0.5.11Alpha20190609",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-0.5.11Alpha20190609-an+fx.xpi"
+				}
+			]
+		}
+	}
+}

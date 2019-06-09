@@ -148,7 +148,9 @@
 				"build",
 				"--overwrite-dest",
 				"--ignore-files",
-				"test"
+				"test",
+				"--ignore-files",
+				"versions"
 			],
 			"presentation": {
 				"echo": true,

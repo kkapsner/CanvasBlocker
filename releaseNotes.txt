@@ -3,7 +3,7 @@ Version 0.5.11:
 		- 
 	
 	new features:
-		- 
+		- added auto update for beta versions
 	
 	fixes:
 		- improved protection of (i)frame properties
