@@ -244,18 +244,40 @@
 		}
 	});
 	
+	const {hide: hideContainer, expand: expandContainer} = settings.getContainers();
+	
 	let lastSection = null;
-	let addSection = function addSection(name){
-		let body = document.createElement("tbody");
+	const addSection = function addSection(name){
+		const body = document.createElement("tbody");
 		if (name){
-			let row = document.createElement("tr");
+			const row = document.createElement("tr");
 			row.className = "section";
-			let cell = document.createElement("td");
+			
+			const cell = document.createElement("td");
 			cell.colSpan = 3;
 			row.appendChild(cell);
-			let heading = document.createElement("h2");
-			heading.textContent = extension.getTranslation("section_" + name);
+			
+			const id = "section_" + name;
+			
+			const heading = document.createElement("h2");
+			heading.textContent = extension.getTranslation(id);
 			cell.appendChild(heading);
+			
+			if (expandContainer){
+				const collapser = document.createElement("span");
+				collapser.className = "collapser";
+				collapser.addEventListener("click", function(){
+					expandContainer.setExpandByName(id, !expandContainer.getExpandByName(id, true));
+				});
+				expandContainer.onExpandChange(id, function(value){
+					body.classList[value? "remove": "add"]("collapsed");
+				});
+				if (!expandContainer.getExpandByName(id, true)){
+					body.classList.add("collapsed");
+				}
+				heading.appendChild(collapser);
+			}
+			
 			body.appendChild(row);
 		}
 		table.appendChild(body);
@@ -295,8 +317,6 @@
 	addSection();
 	
 	const beforeChangeEventListeners = {};
-	
-	const {hide: hideContainer, expand: expandContainer} = settings.getContainers();
 	settingsDisplay.forEach(function(display){
 		if (typeof display === "string"){
 			addSection(display);
