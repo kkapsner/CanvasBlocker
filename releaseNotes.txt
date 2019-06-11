@@ -8,6 +8,7 @@ Version 0.5.11:
 	
 	fixes:
 		- improved protection of (i)frame properties
+		- document.write and document.writeln protection broke pages
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
