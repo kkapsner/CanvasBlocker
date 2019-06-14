@@ -34,6 +34,21 @@
 			logging.notice("send message to main script");
 			extension.message.send({"canvasBlocker-clear-domain-rnd": true});
 		},
+		clearPersistentRndForContainer: function(){
+			browser.contextualIdentities.query({}).then(function(identities){
+				modal.select(
+					extension.getTranslation("clearPersistentRndForContainer_title"),
+					identities.map(function(identity){
+						return {
+							name: `${identity.name} (${identity.cookieStoreId})`,
+							object: identity
+						};
+					})
+				).then(function(identity){
+					extension.message.send({"canvasBlocker-clear-container-rnd": identity.cookieStoreId});
+				}, ()=>{});
+			});
+		},
 		inspectSettings: function(){
 			logging.verbose("open settings inspection");
 			window.open("export.html", "_blank");

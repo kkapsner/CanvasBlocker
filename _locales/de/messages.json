@@ -491,6 +491,14 @@
 		"message": "Leeren",
 		"description": ""
 	},
+	"clearPersistentRndForContainer_label": {
+		"message": "Container leeren",
+		"description": ""
+	},
+	"clearPersistentRndForContainer_title": {
+		"message": "Container auswählen",
+		"description": ""
+	},
 	"sharePersistentRndBetweenDomains_title": {
 		"message": "Persistente Zufallszahlen zwischen Domains teilen",
 		"description": ""

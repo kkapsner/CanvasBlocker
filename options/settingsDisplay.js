@@ -85,6 +85,7 @@
 		},
 		{
 			"name": "clearPersistentRnd",
+			"actions": ["clearPersistentRnd", "clearPersistentRndForContainer"],
 			"displayDependencies": [
 				{
 					"blockMode": ["fake"],

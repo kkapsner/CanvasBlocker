@@ -515,6 +515,14 @@
 		"message": "Clear",
 		"description": ""
 	},
+	"clearPersistentRndForContainer_label": {
+		"message": "Clear container",
+		"description": ""
+	},
+	"clearPersistentRndForContainer_title": {
+		"message": "Select container",
+		"description": ""
+	},
 	
 	"sharePersistentRndBetweenDomains_title": {
 		"message": "Share persistent randomness between domains",
