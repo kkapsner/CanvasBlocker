@@ -88,6 +88,7 @@
 		"activeTab",
 		"webRequest",
 		"webRequestBlocking",
+		"contextualIdentities",
 		"cookies"
 	],
 	

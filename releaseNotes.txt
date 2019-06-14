@@ -5,6 +5,7 @@ Version 0.5.11:
 	new features:
 		- added auto update for beta versions
 		- options: made sections collapsible
+		- clear persistent rng data if a container is deleted
 	
 	fixes:
 		- improved protection of (i)frame properties
