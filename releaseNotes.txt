@@ -6,7 +6,7 @@ Version 0.5.12:
 		- 
 	
 	fixes:
-		- 
+		- detect when browser.contextualIdentities.onRemoved is not supported
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
