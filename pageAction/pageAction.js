@@ -68,7 +68,9 @@
 					value: "^" + url.replace(/([\\+*?[^\]$(){}=!|.])/g, "\\$1") + "$"
 				};
 			});
-			choices.unshift(domain);
+			if (domain){
+				choices.unshift(domain);
+			}
 			return modalChoice(
 				selectText,
 				choices

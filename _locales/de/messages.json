@@ -627,6 +627,10 @@
 		"message": "Für die ausgewählten APIs werden keinerlei Benachrichtigungen angezeigt.",
 		"description": ""
 	},
+	"localFile": {
+		"message": "lokale Datei",
+		"description": ""
+	},
 	"ignorelistDomain": {
 		"message": "verschweige Domain",
 		"description": ""

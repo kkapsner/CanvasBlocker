@@ -3,7 +3,7 @@ Version 0.5.12:
 		- 
 	
 	new features:
-		- 
+		- enabled whitelisting of local files
 	
 	fixes:
 		- detect when browser.contextualIdentities.onRemoved is not supported

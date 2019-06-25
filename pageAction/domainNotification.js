@@ -109,7 +109,7 @@
 		node.appendChild(document.createTextNode(messageParts.shift()));
 		while (messageParts.length){
 			var urlSpan = document.createElement("span");
-			urlSpan.textContent = this.domain;
+			urlSpan.textContent = this.domain || extension.getTranslation("localFile");
 			urlSpan.className = "url hasHiddenActions";
 			urlSpan.appendChild(this.actionsNode());
 			node.appendChild(urlSpan);

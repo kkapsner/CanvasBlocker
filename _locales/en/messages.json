@@ -661,6 +661,10 @@
 		"message": "No notifications will be displayed for the selected APIs.",
 		"description": ""
 	},
+	"localFile": {
+		"message": "local file",
+		"description": ""
+	},
 	"ignorelistDomain": {
 		"message": "silence domain",
 		"description": ""
