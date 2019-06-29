@@ -222,12 +222,24 @@
 		}
 	});
 	
+	var groupTabs = document.createElement("div");
+	groupTabs.classList = "groupTabs";
+	document.body.appendChild(groupTabs);
+	
+	var groups = document.createElement("ul");
+	groups.className = "groups";
+	groupTabs.appendChild(groups);
+	
 	var table = document.createElement("table");
 	table.className = "settings " + (settings.displayDescriptions? "display": "hide") + "Descriptions";
 	settings.on("displayDescriptions", function(){
 		table.className = "settings " + (settings.displayDescriptions? "display": "hide") + "Descriptions";
 	});
-	document.body.appendChild(table);
+	var tableContainer = document.createElement("div");
+	tableContainer.classList = "tabContents";
+	groupTabs.appendChild(tableContainer);
+	
+	tableContainer.appendChild(table);
 	
 	const displayHidden = settings.getDefinition(settingsDisplay.displayHidden);
 	const searchInput = search.init();
@@ -261,7 +273,41 @@
 	
 	const {hide: hideContainer, expand: expandContainer} = settings.getContainers();
 	
-	let lastSection = null;
+	const addGroup = function addGroup(groupDefinition){
+		const sections = [];
+		const group = {
+			select: function(){
+				groups.querySelectorAll(".selected").forEach(function(group){
+					group.classList.remove("selected");
+				});
+				table.querySelectorAll("tbody").forEach(function(section){
+					section.classList.remove("selectedGroup");
+				});
+				sections.forEach(function(section){
+					section.node.classList.add("selectedGroup");
+				});
+				name.classList.add("selected");
+			},
+			addSection: function(sectionDefinition){
+				const section = addSection(sectionDefinition.name);
+				sections.push(section);
+				return section;
+			}
+		};
+		
+		const groupIndex = groups.childNodes.length;
+		const name = document.createElement("li");
+		name.textContent = extension.getTranslation("group_" + groupDefinition.name);
+		name.className = "groupName group" + groupIndex;
+		
+		
+		name.addEventListener("click", group.select);
+		
+		groups.appendChild(name);
+		
+		return group;
+	};
+	
 	const addSection = function addSection(name){
 		const body = document.createElement("tbody");
 		if (name){
@@ -296,8 +342,9 @@
 			body.appendChild(row);
 		}
 		table.appendChild(body);
-		let rows = [];
-		let section = {
+		const rows = [];
+		const section = {
+			node: body,
 			addRow: function(row){
 				rows.push(row);
 				body.appendChild(row);
@@ -327,158 +374,158 @@
 		};
 		
 		search.on(function(){section.updateDisplay();});
-		lastSection = section;
+		return section;
 	};
-	addSection();
 	
 	const beforeChangeEventListeners = {};
-	settingsDisplay.forEach(function(display){
-		if (typeof display === "string"){
-			addSection(display);
-		}
-		else {
-			var setting = settings.getDefinition(display.name);
-			if (!setting){
-				if (display.inputs){
-					setting = {
-						name: display.name,
-						inputs: display.inputs.map(settings.getDefinition)
-					};
+	settingsDisplay.map(function(groupDefinition){
+		const group = addGroup(groupDefinition);
+		groupDefinition.sections.forEach(function(sectionDefinition){
+			const section = group.addSection(sectionDefinition);
+			sectionDefinition.settings.forEach(function(display){
+				var setting = settings.getDefinition(display.name);
+				if (!setting){
+					if (display.inputs){
+						setting = {
+							name: display.name,
+							inputs: display.inputs.map(settings.getDefinition)
+						};
+					}
+					else if (display.actions){
+						setting = {
+							name: display.name,
+							actions: display.actions.map(function(action){
+								return {
+									name: action,
+									action: callbacks[action]
+								};
+							}).filter(function(action){
+								return action.action;
+							})
+						};
+					}
+					else if (callbacks[display.name]){
+						setting = {
+							name: display.name,
+							action: callbacks[display.name]
+						};
+					}
 				}
-				else if (display.actions){
-					setting = {
-						name: display.name,
-						actions: display.actions.map(function(action){
-							return {
-								name: action,
-								action: callbacks[action]
-							};
-						}).filter(function(action){
-							return action.action;
-						})
+				if (setting){
+					setting.display = display;
+					
+					let originalSet = setting.set;
+					setting.originalSet = originalSet;
+					if (originalSet){
+						const eventListeners = [];
+						beforeChangeEventListeners[setting.name] = eventListeners;
+						setting.set = function(...args){
+							if (eventListeners.every(function(listener){
+								return listener.call(setting, ...args);
+							})){
+								return originalSet.apply(this, args);
+							}
+							else {
+								return false;
+							}
+						};
+					}
+					
+					let hideChangeListeners = [];
+					setting.setHide = function setHide(value){
+						if (hideContainer){
+							hideContainer.setHideByName(display.name, value);
+							if (computeDependencies){
+								computeDependencies();
+							}
+						}
 					};
-				}
-				else if (callbacks[display.name]){
-					setting = {
-						name: display.name,
-						action: callbacks[display.name]
+					setting.onHideChange = function(listener){
+						hideChangeListeners.push(listener);
 					};
-				}
-			}
-			if (setting){
-				setting.display = display;
-				
-				let originalSet = setting.set;
-				setting.originalSet = originalSet;
-				if (originalSet){
-					const eventListeners = [];
-					beforeChangeEventListeners[setting.name] = eventListeners;
-					setting.set = function(...args){
-						if (eventListeners.every(function(listener){
-							return listener.call(setting, ...args);
-						})){
-							return originalSet.apply(this, args);
+					setting.getHide = function getHide(){
+						if (hideContainer){
+							return hideContainer.getHideByName(display.name);
 						}
 						else {
 							return false;
 						}
 					};
-				}
-				
-				let hideChangeListeners = [];
-				setting.setHide = function setHide(value){
 					if (hideContainer){
-						hideContainer.setHideByName(display.name, value);
-						if (computeDependencies){
-							computeDependencies();
-						}
-					}
-				};
-				setting.onHideChange = function(listener){
-					hideChangeListeners.push(listener);
-				};
-				setting.getHide = function getHide(){
-					if (hideContainer){
-						return hideContainer.getHideByName(display.name);
-					}
-					else {
-						return false;
-					}
-				};
-				if (hideContainer){
-					hideContainer.onHideChange(display.name, function(value){
-						if (computeDependencies){
-							computeDependencies();
-						}
-						hideChangeListeners.forEach(function(listener){
-							listener(value);
-						});
-					});
-				}
-				
-				let expandChangeListeners = [];
-				setting.setExpand = function setExpand(value){
-					if (expandContainer){
-						expandContainer.setExpandByName(display.name, value);
-					}
-				};
-				setting.onExpandChange = function(listener){
-					expandChangeListeners.push(listener);
-				};
-				setting.getExpand = function getExpand(){
-					if (expandContainer){
-						return expandContainer.getExpandByName(display.name);
-					}
-					else {
-						return false;
-					}
-				};
-				if (expandContainer){
-					expandContainer.onExpandChange(display.name, function(value){
-						expandChangeListeners.forEach(function(listener){
-							listener(value);
-						});
-					});
-				}
-				
-				var row = optionsGui.createSettingRow(setting);
-				settingStrings.getStrings(setting).forEach(function(string){
-					search.register(string, row);
-				});
-				let section = lastSection;
-				section.addRow(row);
-				if (!display.displayDependencies){
-					display.displayDependencies = {};
-				}
-				var displayDependencies = display.displayDependencies;
-				displayDependencies = Array.isArray(displayDependencies)?
-					displayDependencies:
-					[displayDependencies];
-				var computeDependencies = function(){
-					logging.verbose("evaluate display dependencies for", setting);
-					row.classList[(
-						(
-							displayHidden.get() ||
-							!setting.getHide()
-						) &&
-						displayDependencies.some(function(displayDependency){
-							return Object.keys(displayDependency).every(function(key){
-								return displayDependency[key].indexOf(settings[key]) !== -1;
+						hideContainer.onHideChange(display.name, function(value){
+							if (computeDependencies){
+								computeDependencies();
+							}
+							hideChangeListeners.forEach(function(listener){
+								listener(value);
 							});
-						})
-					)? "remove": "add"]("hidden");
-					section.updateDisplay();
-				};
-				computeDependencies();
-				displayDependencies.forEach(function(displayDependency){
-					Object.keys(displayDependency).forEach(function(name){
-						settings.on(name, computeDependencies);
+						});
+					}
+					
+					let expandChangeListeners = [];
+					setting.setExpand = function setExpand(value){
+						if (expandContainer){
+							expandContainer.setExpandByName(display.name, value);
+						}
+					};
+					setting.onExpandChange = function(listener){
+						expandChangeListeners.push(listener);
+					};
+					setting.getExpand = function getExpand(){
+						if (expandContainer){
+							return expandContainer.getExpandByName(display.name);
+						}
+						else {
+							return false;
+						}
+					};
+					if (expandContainer){
+						expandContainer.onExpandChange(display.name, function(value){
+							expandChangeListeners.forEach(function(listener){
+								listener(value);
+							});
+						});
+					}
+					
+					var row = optionsGui.createSettingRow(setting);
+					settingStrings.getStrings(setting).forEach(function(string){
+						search.register(string, row);
 					});
-				});
-				displayHidden.on(computeDependencies);
-			}
-		}
-	});
+					section.addRow(row);
+					if (!display.displayDependencies){
+						display.displayDependencies = {};
+					}
+					var displayDependencies = display.displayDependencies;
+					displayDependencies = Array.isArray(displayDependencies)?
+						displayDependencies:
+						[displayDependencies];
+					var computeDependencies = function(){
+						logging.verbose("evaluate display dependencies for", setting);
+						row.classList[(
+							(
+								displayHidden.get() ||
+								!setting.getHide()
+							) &&
+							displayDependencies.some(function(displayDependency){
+								return Object.keys(displayDependency).every(function(key){
+									return displayDependency[key].indexOf(settings[key]) !== -1;
+								});
+							})
+						)? "remove": "add"]("hidden");
+						section.updateDisplay();
+					};
+					computeDependencies();
+					displayDependencies.forEach(function(displayDependency){
+						Object.keys(displayDependency).forEach(function(name){
+							settings.on(name, computeDependencies);
+						});
+					});
+					displayHidden.on(computeDependencies);
+				}
+			});
+		});
+		return group;
+	})[0].select();
 	
 	const version = document.createElement("div");
 	version.className = "version";

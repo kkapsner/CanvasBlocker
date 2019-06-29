@@ -7,7 +7,7 @@ const util = require("util");
 function getMessagesInContent(content){
 	const foundMessages = [];
 	[
-		/\b(?:_|browser.i18n.getMessage|notify|extension)\(["']([^"']+)["']\s*(?:\)|,)/g,
+		/\b(?:_|browser.i18n.getMessage|extension.getTranslation|notify|extension)\(["']([^"']+)["']\s*(?:\)|,)/g,
 		/\b(?:messageId|name|getTranslation)\s*:\s*["']([^"']+)["']/g,
 	].forEach(function(re){
 		let match;
@@ -81,32 +81,37 @@ async function getSettingMessages(){
 	const settingsDisplay = require("../options/settingsDisplay");
 
 	const foundMessages = [];
-	settingsDisplay.forEach(function(display){
-		if ((typeof display) === "string"){
-			foundMessages.push("section_" + display.toLowerCase());
+	settingsDisplay.forEach(function(groupDefinition){
+		if (groupDefinition.name){
+			foundMessages.push("group_" + groupDefinition.name.toLowerCase());
 		}
-		else {
-			let settingDefinition = getDefinition(display.name);
-			if (!settingDefinition){
-				settingDefinition = display;
-				display.action = true;
+		groupDefinition.sections.forEach(function(sectionDefinition){
+			if (sectionDefinition.name){
+				foundMessages.push("section_" + sectionDefinition.name.toLowerCase());
 			}
-			if (settingDefinition){
-				if (display.inputs){
-					settingDefinition.inputs = display.inputs.map(function(input){
-						return getDefinition(input);
+			sectionDefinition.settings.forEach(function(display){
+				let settingDefinition = getDefinition(display.name);
+				if (!settingDefinition){
+					settingDefinition = display;
+					display.action = true;
+				}
+				if (settingDefinition){
+					if (display.inputs){
+						settingDefinition.inputs = display.inputs.map(function(input){
+							return getDefinition(input);
+						});
+					}
+					else if (display.actions){
+						settingDefinition.actions = display.actions.map(function(action){
+							return {name: action};
+						});
+					}
+					settingStrings.getMessages(settingDefinition).forEach(function(message){
+						foundMessages.push(message.toLowerCase());
 					});
 				}
-				else if (display.actions){
-					settingDefinition.actions = display.actions.map(function(action){
-						return {name: action};
-					});
-				}
-				settingStrings.getMessages(settingDefinition).forEach(function(message){
-					foundMessages.push(message.toLowerCase());
-				});
-			}
-		}
+			});
+		});
 	});
 	return foundMessages.map(function(message){return message.toLowerCase();});
 }
@@ -140,7 +145,7 @@ Promise.all([getSettingMessages(), getMessagesInFolder(path.join(__dirname, ".."
 			settingMessages.indexOf(message) === -1 &&
 			knownMessages.indexOf(message) === -1
 		){
-			console.log(`${message} not used`);
+			console.log(`usage of ${message} not found`);
 		}
 	});
 });

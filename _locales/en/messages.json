@@ -89,6 +89,19 @@
 		"description": ""
 	},
 	
+	"group_general": {
+		"message": "General",
+		"description": ""
+	},
+	"group_APIs": {
+		"message": "APIs",
+		"description": ""
+	},
+	"group_misc": {
+		"message": "Misc",
+		"description": ""
+	},
+	
 	"section_asking": {
 		"message": "Asking",
 		"description": ""

@@ -83,6 +83,18 @@
 		"message": "In separatem Tab öffnen",
 		"description": ""
 	},
+	"group_general": {
+		"message": "Allgemein",
+		"description": ""
+	},
+	"group_APIs": {
+		"message": "APIs",
+		"description": ""
+	},
+	"group_misc": {
+		"message": "Vermischtes",
+		"description": ""
+	},
 	"section_asking": {
 		"message": "Nachfragen",
 		"description": ""
@@ -100,7 +112,7 @@
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Gemischtes",
+		"message": "Vermischtes",
 		"description": ""
 	},
 	"section_settings": {

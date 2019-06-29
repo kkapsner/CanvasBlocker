@@ -25,8 +25,6 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	width: 100%;
 	border-spacing: 0;
 	border-collapse: collapse;
-}
-.settings {
 	table-layout: fixed;
 }
 .settings * {
@@ -289,4 +287,43 @@ td.hideColumn {
 
 .searching .settingRow.found:not(.hidden) {
 	display: table-row;
+}
+
+.groupTabs {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.groups {
+	flex-basis: max-content;
+	flex-shrink: 0;
+	flex-grow: 0;
+	list-style: none;
+	margin: 0;
+	margin-right: 1em;
+	padding: 0;
+	min-width: 50px;
+	min-height: 100%;
+	border-right: 1px solid #c1c1c1;
+}
+.searching .groups {
+	visibility: hidden;
+}
+.groups .groupName {
+	cursor: pointer;
+	border: 1px solid #c1c1c1;
+	border-radius: 0.5em;
+	padding: 2px 1em;
+	margin: 2px;
+}
+.groups .groupName.selected {
+	border-right-color: transparent;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: -1px;
+	padding-right: calc(1em + 3px);
+	background-color: var(--background-color);
+}
+body:not(.searching) .settings tbody:not(.selectedGroup) {
+	display: none;
 }
