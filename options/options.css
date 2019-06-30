@@ -313,7 +313,7 @@ td.hideColumn {
 	cursor: pointer;
 	border: 1px solid #c1c1c1;
 	border-radius: 0.5em;
-	padding: 2px 1em;
+	padding: 0.5em 1em;
 	margin: 2px;
 }
 .groups .groupName.selected {
