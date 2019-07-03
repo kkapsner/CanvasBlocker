@@ -255,6 +255,24 @@
 						},
 					]
 				},
+				{
+					name: "settings",
+					settings: [
+						{
+							"name": "displayDescriptions"
+						},
+						{
+							"name": "openSettingSanitation"
+						},
+						{
+							"name": "exportSettings",
+							"actions": ["inspectSettings", "inspectWhitelist", "saveSettings", "loadSettings"]
+						},
+						{
+							"name": "resetSettings"
+						}
+					]
+				},
 			]
 		},
 		{
@@ -592,24 +610,6 @@
 						},
 					]
 				},
-				{
-					name: "settings",
-					settings: [
-						{
-							"name": "displayDescriptions"
-						},
-						{
-							"name": "openSettingSanitation"
-						},
-						{
-							"name": "exportSettings",
-							"actions": ["inspectSettings", "inspectWhitelist", "saveSettings", "loadSettings"]
-						},
-						{
-							"name": "resetSettings"
-						}
-					]
-				}
 			]
 		}
 	];
