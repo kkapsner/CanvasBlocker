@@ -2,7 +2,7 @@
 {
 	"name": "CanvasBlocker",
 	"description": "__MSG_addon_description__",
-	"version": "0.5.12",
+	"version": "0.5.13",
 	"icons": {
 		"48": "icons/icon.svg",
 		"96": "icons/icon.svg"
