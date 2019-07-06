@@ -1,6 +1,6 @@
 Version 0.5.12:
 	changes:
-		- 
+		- rearranged some settings
 	
 	new features:
 		- enabled whitelisting of local files
