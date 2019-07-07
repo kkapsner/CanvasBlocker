@@ -35,7 +35,7 @@ Special thanks to:
  * Thorin-Oakenpants for the icon idea
  * anthologist and unbranched for the Italian translation
  * Maleficient for the French translation
- * yfdyh000 for the Chinese translation
+ * yfdyh000 and KrasnayaPloshchad for the Chinese translation
  * micrococo for the Spanish translation
  * STim99 for the Russian translation
 
