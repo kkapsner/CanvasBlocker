@@ -8,12 +8,45 @@
 		"description": ""
 	},
 	
+	"browserAction_title_default": {
+		"message": "CanvasBlocker",
+		"description": ""
+	},
+	"browserAction_title_notified": {
+		"message": " \n\n成功保护 ",
+		"description": ""
+	},
+	"browserAction_title_whitelisted": {
+		"message": " (用于 {url} 的 API 白名单)",
+		"description": ""
+	},
+	"browserAction_title_protectedAPIs": {
+		"message": "\n  \u00B7 {api}",
+		"description": ""
+	},
+	
 	"more": {
 		"message": "更多",
 		"description": ""
 	},
 	"less": {
 		"message": "更少",
+		"description": ""
+	},
+	"pleaseWait": {
+		"message": "请稍候...",
+		"description": ""
+	},
+	"search": {
+		"message": "搜索",
+		"description": ""
+	},
+	"ok": {
+		"message": "确定",
+		"description": ""
+	},
+	"cancel": {
+		"message": "取消",
 		"description": ""
 	},
 	
@@ -28,6 +61,10 @@
 	},
 	
 	"options": {
+		"message": "选项",
+		"description": ""
+	},
+	"options_title": {
 		"message": "CanvasBlocker 选项",
 		"description": ""
 	},
@@ -41,6 +78,27 @@
 	},
 	"updateNotice": {
 		"message": "CanvasBlocker 已更新。如果您想在之后查阅此页面，您可以将此页加入书签。",
+		"description": ""
+	},
+	"dontShowOptionsOnUpdate":{
+		"message": "不要再在更新后显示。",
+		"description": ""
+	},
+	"openInTab": {
+		"message": "在标签页中打开",
+		"description": ""
+	},
+	
+	"group_general": {
+		"message": "一般",
+		"description": ""
+	},
+	"group_APIs": {
+		"message": "API",
+		"description": ""
+	},
+	"group_misc": {
+		"message": "其他",
 		"description": ""
 	},
 	
@@ -68,8 +126,28 @@
 		"message": "设置",
 		"description": ""
 	},
+	"section_canvas-api":{
+		"message": "Canvas API",
+		"description": ""
+	},
 	"section_audio-api":{
 		"message": "音频 API",
+		"description": ""
+	},
+	"section_history-api":{
+		"message": "历史 API",
+		"description": ""
+	},
+	"section_window-api":{
+		"message": "窗口 API",
+		"description": ""
+	},
+	"section_DOMRect-api":{
+		"message": "DOMRect API",
+		"description": ""
+	},
+	"section_Navigator-api":{
+		"message": "导航（Navigator）API",
 		"description": ""
 	},
 	
@@ -88,6 +166,11 @@
 	},
 	"displayDescriptions_description": {
 		"message": "显示设置的说明。",
+		"description": ""
+	},
+	
+	"hideSetting": {
+		"message": "点击这里以隐藏该设置。",
 		"description": ""
 	},
 	
@@ -145,7 +228,55 @@
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "是否允许音频取出？",
+		"message": "是否允许音频 API 取出？",
+		"description": ""
+	},
+	"askForHistoryPermission": {
+		"message": "是否允许历史 API？",
+		"description": ""
+	},
+	"askForHistoryInputPermission": {
+		"message": "是否允许历史 API 输入？",
+		"description": ""
+	},
+	"askForHistoryReadoutPermission": {
+		"message": "是否允许历史 API 取出？",
+		"description": ""
+	},
+	"askForWindowPermission": {
+		"message": "是否允许窗口 API？",
+		"description": ""
+	},
+	"askForWindowInputPermission": {
+		"message": "是否允许窗口 API 输入？",
+		"description": ""
+	},
+	"askForWindowReadoutPermission": {
+		"message": "是否允许窗口 API 取出？",
+		"description": ""
+	},
+	"askForDOMRectPermission": {
+		"message": "是否允许 DOMRect API？",
+		"description": ""
+	},
+	"askForDOMRectInputPermission": {
+		"message": "是否允许 DOMRect API 输入？",
+		"description": ""
+	},
+	"askForDOMRectReadoutPermission": {
+		"message": "是否允许 DOMRect API 取出？",
+		"description": ""
+	},
+	"askForNavigatorPermission": {
+		"message": "是否允许导航 API？",
+		"description": ""
+	},
+	"askForNavigatorInputPermission": {
+		"message": "是否允许导航 API 输入？",
+		"description": ""
+	},
+	"askForNavigatorReadoutPermission": {
+		"message": "是否允许导航 API 取出？",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -211,6 +342,10 @@
 		"message": "",
 		"description": ""
 	},
+	"blockMode_urlSpecific": {
+		"message": "为了给特定网站设置单独的屏蔽模式，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并选择适当的屏蔽模式。",
+		"description": ""
+	},
 	"blockMode_options.allowEverything": {
 		"message": "全部允许",
 		"description": ""
@@ -244,11 +379,32 @@
 		"description": ""
 	},
 	"blockMode_options.fakeInput": {
+	
 		"message": "输入时伪造",
 		"description": ""
 	},
 	"blockMode_title": {
 		"message": "阻止模式",
+		"description": ""
+	},
+	"protectedCanvasPart_urlSpecific": {
+		"message": "为保护特定网站的单独的部分，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并选择适当的部分。",
+		"description": ""
+	},
+	"protectedCanvasPart_options.nothing": {
+		"message": "无",
+		"description": ""
+	},
+	"protectedCanvasPart_options.input": {
+		"message": "输入",
+		"description": ""
+	},
+	"protectedCanvasPart_options.readout": {
+		"message": "取出",
+		"description": ""
+	},
+	"protectedCanvasPart_options.everything": {
+		"message": "所有",
 		"description": ""
 	},
 	
@@ -376,6 +532,27 @@
 		"message": "清除",
 		"description": ""
 	},
+	"clearPersistentRndForContainer_label": {
+		"message": "清理容器",
+		"description": ""
+	},
+	"clearPersistentRndForContainer_title": {
+		"message": "选择容器",
+		"description": ""
+	},
+	
+	"sharePersistentRndBetweenDomains_title": {
+		"message": "在域名间分享持久的随机性",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_description": {
+		"message": "注意：这个设置会使浏览器 100% 会被追踪，并因此威胁你的隐私。",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_confirmMessage": {
+		"message": "您确定要在域名间分享持久的随机性？\n注意：这个设置会使浏览器 100% 会被追踪，并因此威胁你的隐私。",
+		"description": ""
+	},
 	
 	"ignoreFrequentColors_title": {
 		"message": "忽略最常见的颜色",
@@ -387,7 +564,7 @@
 	},
 	
 	"minColors_title": {
-		"message": "颜色数至少",
+		"message": "最少颜色数",
 		"description": ""
 	},
 	"minColors_description": {
@@ -463,6 +640,22 @@
 		"message": "{url} 上的音频取出已伪造",
 		"description": ""
 	},
+	"fakedHistoryReadout": {
+		"message": "{url} 上的历史取出已伪造",
+		"description": ""
+	},
+	"fakedWindowReadout": {
+		"message": "{url} 上的窗口取出已伪造",
+		"description": ""
+	},
+	"fakedDOMRectReadout": {
+		"message": "{url} 上的 DOMRect 取出已伪造",
+		"description": ""
+	},
+	"fakedNavigatorReadout": {
+		"message": "{url} 上的导航取出已伪造",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "{url} 上的画布输入已伪造",
 		"description": ""
@@ -476,16 +669,49 @@
 		"message": "忽略列表",
 		"description": ""
 	},
+	
+	"ignoredAPIs_title": {
+		"message": "忽略 API",
+		"description": ""
+	},
+	"ignoredAPIs_description": {
+		"message": "没有用于所选 API 的提示。",
+		"description": ""
+	},
+	"localFile": {
+		"message": "本地文件",
+		"description": ""
+	},
 	"ignorelistDomain": {
 		"message": "静默域名",
 		"description": ""
 	},
 	"ignorelistURL": {
 		"message": "忽略 URL",
+
+	},
+	"selectIgnore": {
+		"message": "添加域名或 URL 来添加到忽略列表：",
+		"description": ""
+	},
+	"inputIgnore": {
+		"message": "添加域名或 URL 的正则表达式来添加到忽略列表：",
 		"description": ""
 	},
 	"inputIgnoreDomain": {
 		"message": "输入域名来添加到忽略列表：",
+		"description": ""
+	},
+	"inputIgnoreURL": {
+		"message": "输入 URL 的正则表达式来添加到忽略列表：",
+		"description": ""
+	},
+	"selectWhitelist": {
+		"message": "选择域名或 URL 来添加到忽略列表：",
+		"description": ""
+	},
+	"inputWhitelist": {
+		"message": "输入 URL 的正则表达式来添加到忽略列表：",
 		"description": ""
 	},
 	"inputWhitelistDomain": {
@@ -495,6 +721,14 @@
 	"inputWhitelistURL": {
 		"message": "输入域名来添加到白名单：",
 		"description": ""
+	
+	"selectSessionWhitelist": {
+		"message": "选择域名或 URL 来添加到会话级白名单：",
+		"description": ""
+	},
+	"inputSessionWhitelist": {
+		"message": "添加域名或 URL 的正则表达式来添加到会话级白名单：",
+		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
 		"message": "输入 URL 的正则表达式来添加到会话级白名单：",
@@ -502,6 +736,18 @@
 	},
 	"inputSessionWhitelistURL": {
 		"message": "输入域名来添加到会话级白名单：",
+		"description": ""
+	},
+	"selectWhitelistScope": {
+		"message": "白名单的范围是什么？",
+		"description": ""
+	},
+	"whitelistOnlyAPI": {
+		"message": "仅限 {api}",
+		"description": ""
+	},
+	"whitelistAllAPIs": {
+		"message": "所有 API",
 		"description": ""
 	},
 	"settings": {
@@ -528,8 +774,68 @@
 		"message": "阻止模式设为“伪造取出 API”时显示一个通知。",
 		"description": ""
 	},
+	"showNotifications_urlSpecific": {
+		"message": "为停止特定网站的通知，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选",
+		"description": ""
+	},
 	"showNotifications_title": {
-		"message": "显示通知",
+		"message": "显示通知图标",
+		"description": ""
+	},
+	"highlightPageAction_description": {
+		"message": "为了更好的显示效果，高亮页面动态图标。",
+		"description": ""
+	},
+	"highlightPageAction_urlSpecific": {
+		"message": "",
+		"description": ""
+	},
+	"highlightPageAction_title": {
+		"message": "高亮页面动态图标",
+		"description": ""
+	},
+	"highlightPageAction_options.none": {
+		"message": "不高亮",
+		"description": ""
+	},
+	"highlightPageAction_options.color": {
+		"message": "颜色",
+		"description": ""
+	},
+	"highlightPageAction_options.blink": {
+		"message": "闪烁",
+		"description": ""
+	},
+	"displayBadge_description": {
+		"message": "",
+		"description": ""
+	},
+	"displayBadge_title": {
+		"message": "Display badge",
+		"description": ""
+	},
+	"highlightBrowserAction_description": {
+		"message": "",
+		"description": ""
+	},
+	"highlightBrowserAction_urlSpecific": {
+		"message": "",
+		"description": ""
+	},
+	"highlightBrowserAction_title": {
+		"message": "在通知上更改工具栏图标",
+		"description": ""
+	},
+	"highlightBrowserAction_options.none": {
+		"message": "不更改",
+		"description": ""
+	},
+	"highlightBrowserAction_options.color": {
+		"message": "更改颜色",
+		"description": ""
+	},
+	"highlightBrowserAction_options.blink": {
+		"message": "闪烁",
 		"description": ""
 	},
 	"sourceOutput": {
@@ -537,7 +843,7 @@
 		"description": ""
 	},
 	"stackEntryOutput": {
-		"message": "{url}, 行 {line} 列 {column}",
+		"message": "{url}，{line} 行 {column} 列",
 		"description": ""
 	},
 	"stackList_description": {
@@ -568,6 +874,18 @@
 		"message": "白名单 URL",
 		"description": ""
 	},
+	"ignorelist": {
+		"message": "忽略",
+		"description": ""
+	},
+	"whitelistTemporarily": {
+		"message": "临时白名单",
+		"description": ""
+	},
+	"inspectWhitelist": {
+		"message": "检查白名单",
+		"description": ""
+	},
 	
 	"sessionWhiteList_title": {
 		"message": "会话级白名单",
@@ -587,6 +905,15 @@
 		"description": ""
 	},
 	
+	"storeNotificationData_title": {
+		"message": "存储通知详细数据",
+		"description": ""
+	},
+	"storeNotificationData_description": {
+		"message": "",
+		"description": ""
+	},
+	
 	"storeImageForInspection_title": {
 		"message": "存储图像以备察看",
 		"description": ""
@@ -602,6 +929,10 @@
 	},
 	"protectaudio_description": {
 		"message": "如果可行，音频 API 也应该被保护。",
+		"description": ""
+	},
+	"protectAudio_urlSpecific": {
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
 	"audiofakerate_title": {
@@ -648,6 +979,10 @@
 		"message": "噪声级别",
 		"description": ""
 	},
+						   
+						   
+				   
+   
 	"audionoiselevel_description": {
 		"message": "",
 		"description": ""
@@ -697,12 +1032,156 @@
 		"description": ""
 	},
 	
+	"historyLengthThreshold_title": {
+		"message": "历史长度阈值",
+		"description": ""
+	},
+	"historyLengthThreshold_description": {
+		"message": "报告给网站的历史长度最大值。",
+		"description": ""
+	},
+	"historyLengthThreshold_urlSpecific": {
+		"message": "为了给特定网站设置单独的屏蔽模式，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，设置不同的值。",
+		"description": ""
+	},
+	
+	"protectWindow_title": {
+		"message": "保护窗口 API",
+		"description": ""
+	},
+	"protectWindow_description": {
+		"message": "window.opener 和 window.name 将被保护。这会保护某些无用的网页。",
+		"description": ""
+	},
+	"protectWindow_urlSpecific": {
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
+		"description": ""
+	},
+	"protectWindow_askReCaptchaException": {
+		"message": "保护窗口 API 妨碍 reCAPTCHA。您是否添加例外？",
+		"description": ""
+	},
+	
+	"protectDOMRect_title": {
+		"message": "保护 DOMRect API",
+		"description": ""
+	},
+	"protectDOMRect_description": {
+		"message": "这一保护反对 \"getClientRects()\" 指纹和一些类似的方法。",
+		"description": ""
+	},
+	"protectDOMRect_urlSpecific": {
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
+		"description": ""
+	},
+	
+	"domRectIntegerFactor_title": {
+		"message": "DOMRect 整数系数",
+		"description": ""
+	},
+	"domRectIntegerFactor_description": {
+		"message": "像素的有些部分可以被 CSS 控制。为阻止检测，用这一整数系数增值的 DOMRect 的值将不被改变。",
+		"description": ""
+	},
+	
+	"protectNavigator_title": {
+		"message": "保护导航 API",
+		"description": ""
+	},
+	"protectNavigator_description": {
+		"message": "该页允许更改导航 API。默认情况下启用该保护不改变任何东西。在此开启导航设置来指定任何你想要做的改动。",
+		"description": ""
+	},
+	"protectNavigator_urlSpecific": {
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
+		"description": ""
+	},
+	
+	"openNavigatorSettings_title": {
+		"message": "导航设置",
+		"description": ""
+	},
+	"openNavigatorSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"openNavigatorSettings_label": {
+		"message": "开启",
+		"description": ""
+	},
+	
+	"navigatorSettings_title": {
+		"message": "CanvasBlocker 导航设置",
+		"description": ""
+	},
+	"navigatorSettings_description": {
+		"message": "在本页你可以设置导航选项。若使用预置，你应该始终使用系统和浏览器预置。选择这些以后你仍可以做出修改。",
+		"description": ""
+	},
+	"navigatorSettings_disclaimer": {
+		"message": "注意：在实际使用中浏览器无法完全伪造，因为有多种方法可以检测。如：特性检测和某 HTML 元素的浏览器特定渲染方式将总是被泄露。",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.os": {
+		"message": "操作系统预置",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.browser": {
+		"message": "浏览器预置",
+		"description": ""
+	},
+	"navigatorSettings_values": {
+		"message": "导航数值",
+		"description": ""
+	},
+	"navigatorSettings_reset": {
+		"message": "重置",
+		"description": ""
+	},
+	
+	"theme_title": {
+		"message": "Theme",
+		"description": ""
+	},
+	"theme_description": {
+		"message": "如果系统使用深色主题将自动切换到深色主题（要求 Firefox ⩾ 67）",
+		"description": ""
+	},
+	"theme_options.auto": {
+		"message": "自动",
+		"description": ""
+	},
+	"theme_options.default": {
+		"message": "默认",
+		"description": ""
+	},
+	"theme_options.light": {
+		"message": "浅色",
+		"description": ""
+	},
+	"theme_options.dark": {
+		"message": "深色",
+		"description": ""
+	},
+	"theme_options.colorful": {
+		"message": "彩色",
+		"description": ""
+	},
+	"theme_options.none": {
+		"message": "无",
+		"description": ""
+	},
+	
 	"blockDataURLs_title": {
 		"message": "阻止 data URL 形成页面",
 		"description": ""
 	},
 	"blockDataURLs_description": {
 		"message": "Data URL 形成的页面我们还不能阻拦其进行指纹识别（详见 https://bugzilla.mozilla.org/show_bug.cgi?id=1475831）。拦截这些页面能防止真实指纹泄露。",
+		"description": ""
+	},
+	"blockDataURLs_urlSpecific": {
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
 	
@@ -760,8 +1239,34 @@
 		"message": "",
 		"description": ""
 	},
-	"exportSettings_label": {
+	
+	"openSettingSanitation_title": {
 		"message": "显示",
+		"description": ""
+	},
+	"openSettingSanitation_description": {
+		"message": "",
+		"description": ""
+	},
+	"openSettingSanitation_label": {
+		"message": "开启",
+		"description": ""
+	},
+	
+	"inspectSettings_label": {
+		"message": "检查",
+		"description": ""
+	},
+	"saveSettings_label": {
+		"message": "保存",
+		"description": ""
+	},
+	"loadSettings_label": {
+		"message": "载入",
+		"description": ""
+	},
+	"inspectWhitelist_label": {
+		"message": "检查白名单",
 		"description": ""
 	},
 	
@@ -796,6 +1301,132 @@
 	},
 	"browserAction_reportIssue": {
 		"message": "反馈问题",
+		"description": ""
+	},
+	
+	"sanitation_title": {
+		"message": "设置清理",
+		"description": ""
+	},
+	"sanitation_description": {
+		"message": "本页面帮助查找 CanvasBlocker 中的错误配置。同时对并不理想的设置给出建议。但是不建议盲目修正所有建议。",
+		"description": ""
+	},
+	"sanitation_nothingToComplain": {
+		"message": "无可抱怨。",
+		"description": ""
+	},
+	"sanitation_ruleset.unnecessaryURLValue": {
+		"message": "不必要的 URL 数值",
+		"description": ""
+	},
+	"sanitation_ruleset.disabledFeatures": {
+		"message": "禁用的特性",
+		"description": ""
+	},
+	"sanitation_ruleset.blockMode": {
+		"message": "屏蔽模式",
+		"description": ""
+	},
+	"sanitation_ruleset.thresholds": {
+		"message": "阈值",
+		"description": ""
+	},
+	"sanitation_ruleset.performance": {
+		"message": "性能",
+		"description": ""
+	},
+	"sanitation_ruleset.privacy": {
+		"message": "隐私",
+		"description": ""
+	},
+	"sanitation_error.unnecessaryURLValue": {
+		"message": "“{url}”的 URL 值与“{setting-title}”的全局设置一样。",
+		"description": ""
+	},
+	"sanitation_resolution.removeURLValue": {
+		"message": "移除 URL 值",
+		"description": ""
+	},
+	"sanitation_error.disabledFeatures": {
+		"message": "{api} 的所有特性都被禁用，但是启用了保护。",
+		"description": ""
+	},
+	"sanitation_resolution.disableMainFlag": {
+		"message": "禁用主要 flag",
+		"description": ""
+	},
+	"sanitation_resolution.enableFeatures": {
+		"message": "启用特性",
+		"description": ""
+	},
+	"sanitation_error.badBlockMode": {
+		"message": "推荐使用伪造或询问两种屏蔽模式。",
+		"description": ""
+	},
+	"sanitation_resolution.switchToFake": {
+		"message": "切换到伪造",
+		"description": ""
+	},
+	"sanitation_error.blockModeVsProtection": {
+		"message": "使用“{blockMode}”屏蔽模式时 {api} 保护无法工作。",
+		"description": ""
+	},
+	"sanitation_resolution.disableFlag": {
+		"message": "禁用“{flag}”",
+		"description": ""
+	},
+	"sanitation_error.fakeInputWithWhiteRng": {
+		"message": "不与“{blockMode}”及“{protectedCanvasPart}”保护使用白色随机数生成器。",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectReadout": {
+		"message": "切换到取出保护",
+		"description": ""
+	},
+	"sanitation_resolution.switchToNonPersistentRng": {
+		"message": "切换到“非持久化”rng",
+		"description": ""
+	},
+	"sanitation_error.fakeEverythingInCanvas": {
+		"message": "不在“{blockMode}”屏蔽模式中使用“{protectedCanvasPart}”保护。",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectInput": {
+		"message": "切换到输入保护",
+		"description": ""
+	},
+	"sanitation_error.valueTooLow": {
+		"message": "“{setting}”不应该低于 {value}。",
+		"description": ""
+	},
+	"sanitation_error.valueTooHigh": {
+		"message": "“{setting}”不应该高于 {value}。",
+		"description": ""
+	},
+	"sanitation_resolution.setTo": {
+		"message": "设为 {value}",
+		"description": ""
+	},
+	"sanitation_error.storeNotificationData": {
+		"message": "存储通知数据可能会导致性能变慢。",
+		"description": ""
+	},
+	"sanitation_error.storeImage": {
+		"message": "为检查存储图像产生大量的 RAM 足迹。",
+		"description": ""
+	},
+	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
+		"message": "不要在域名间共享持久的随机性，因为这导致浏览器 100% 可以被追踪。",
+		"description": ""
+	},
+	
+	"whitelist_inspection_title": {
+		"message": "CanvasBlocker 白名单检查",
+		"description": ""
+	},
+	"whitelist_all_apis": {
+		"message": "所有 API",
 		"description": ""
 	}
 }
