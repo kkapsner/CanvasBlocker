@@ -688,7 +688,7 @@
 	},
 	"ignorelistURL": {
 		"message": "忽略 URL",
-
+		"description": ""
 	},
 	"selectIgnore": {
 		"message": "添加域名或 URL 来添加到忽略列表：",
@@ -721,7 +721,7 @@
 	"inputWhitelistURL": {
 		"message": "输入域名来添加到白名单：",
 		"description": ""
-	
+	},
 	"selectSessionWhitelist": {
 		"message": "选择域名或 URL 来添加到会话级白名单：",
 		"description": ""
