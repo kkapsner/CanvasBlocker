@@ -324,6 +324,6 @@ td.hideColumn {
 	padding-right: calc(1em + 3px);
 	background-color: var(--background-color);
 }
-body:not(.searching) .settings tbody:not(.selectedGroup) {
+body:not(.searching) .settings tbody.sectionBody:not(.selectedGroup) {
 	display: none;
 }

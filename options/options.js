@@ -310,6 +310,7 @@
 	
 	const addSection = function addSection(name){
 		const body = document.createElement("tbody");
+		body.className = "sectionBody";
 		if (name){
 			const row = document.createElement("tr");
 			row.className = "section";
