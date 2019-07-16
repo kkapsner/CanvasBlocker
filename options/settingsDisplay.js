@@ -269,7 +269,10 @@
 						},
 						{
 							"name": "exportSettings",
-							"actions": ["inspectSettings", "inspectWhitelist", "saveSettings", "loadSettings"]
+							"actions": [
+								"openSettingPresets", "inspectSettings", "inspectWhitelist",
+								"saveSettings", "loadSettings"
+							]
 						},
 						{
 							"name": "resetSettings"

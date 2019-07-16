@@ -1,0 +1,23 @@
+{
+	"convenience": {
+		"maxFakeSize": 1000000,
+		"protectDOMRect": {
+			"onedrive.live.com": false
+		}
+	},
+	"stealth": {
+		"minFakeSize": 10,
+		"protectedCanvasPart": "input",
+		"rng": "persistent",
+		"ignoreFrequentColors": 3,
+		"minColors": 3,
+		"storePersistentRnd": true
+	},
+	"max_protection": {
+		"minFakeSize": 0,
+		"maxFakeSize": 0,
+		"audioFakeRate": "0.1%",
+		"audioNoiseLevel": "low",
+		"protectWindow": true
+	}
+}

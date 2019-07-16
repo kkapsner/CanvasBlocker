@@ -43,6 +43,10 @@
 		"message": "OK",
 		"description": ""
 	},
+	"apply": {
+		"message": "Anwenden",
+		"description": ""
+	},
 	"cancel": {
 		"message": "Abbrechen",
 		"description": ""
@@ -1195,6 +1199,10 @@
 		"message": "Öffnen",
 		"description": ""
 	},
+	"openSettingPresets_label": {
+		"message": "Voreinstellungen",
+		"description": ""
+	},
 	"inspectSettings_label": {
 		"message": "Anzeigen",
 		"description": ""
@@ -1365,6 +1373,54 @@
 	},
 	"whitelist_all_apis": {
 		"message": "Alle APIs",
+		"description": ""
+	},
+	"presets": {
+		"message": "Voreinstellungen",
+		"description": ""
+	},
+	"presets_title": {
+		"message": "CanvasBlocker Voreinstellungen",
+		"description": ""
+	},
+	"presets_installNotice": {
+		"message": "{image:../icons/icon.svg}Danke, dass Sie CanvasBlocker installiert haben. Um ihn an Ihre Bedürfnisse anzupassen können Sie ein paar Voreinstellungen anwenden. In den {link:Optionen:options.html} können Sie CanvasBlocker noch weiter anpassen. Dort können Sie auch diese Voreinstellungsseite später wieder öffnen.",
+		"description": ""
+	},
+	"presets_introduction": {
+		"message": "Dies sind ein paar Voreinstellungen für verschiedene Bedürfnisse. Die Werte in Klammern sind die aktuellen Einstellungen. Sie können mehrere Voreinstellungen hintereinander anwenden, aber ein paar Einstellungen können dabei von der später angewandten Voreinstellung überschrieben werden.",
+		"description": ""
+	},
+	"preset_default_title": {
+		"message": "Standard Einstellungen",
+		"description": ""
+	},
+	"preset_default_description": {
+		"message": "Keine speziellen Einstellungen werden gesetzt.",
+		"description": ""
+	},
+	"preset_convenience_title": {
+		"message": "Praktische Einstellungen",
+		"description": ""
+	},
+	"preset_convenience_description": {
+		"message": "Setzt einige Einstellungen so, dass CanvasBlocker die Browsererfahrung so wenig wie möglichst beeinträchtigt. Dies beinhaltet, dass die Benutzung mancher APIs für ein paar Seiten erlaubt wird.",
+		"description": ""
+	},
+	"preset_stealth_title": {
+		"message": "Schwer zu detektieren",
+		"description": ""
+	},
+	"preset_stealth_description": {
+		"message": "Stellt CanvasBlocker so ein, dass er schwer zu detektieren ist. Dies kann zu hoher CPU Auslastung führen und kann den Browser verlangsamen.",
+		"description": ""
+	},
+	"preset_max_protection_title": {
+		"message": "Maximaler Schutz",
+		"description": ""
+	},
+	"preset_max_protection_description": {
+		"message": "Maximiert den Schutz gegen die Fingerprint-Extraktion. Diese Einstellungen werden einige Seiten unbenutzbar machen, können den Browser etwas verlangsamen und können es Seiten ermöglichen die Verwendung von CanvasBlocker zu detektieren.",
 		"description": ""
 	}
 }

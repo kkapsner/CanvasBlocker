@@ -3,7 +3,7 @@ Version 0.5.13:
 		- 
 	
 	new features:
-		- 
+		- added setting presets
 	
 	fixes:
 		- display of url specific settings did not work properly

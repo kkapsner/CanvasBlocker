@@ -45,6 +45,10 @@
 		"message": "OK",
 		"description": ""
 	},
+	"apply": {
+		"message": "Apply",
+		"description": ""
+	},
 	"cancel": {
 		"message": "Cancel",
 		"description": ""
@@ -1249,6 +1253,10 @@
 		"description": ""
 	},
 	
+	"openSettingPresets_label": {
+		"message": "Presets",
+		"description": ""
+	},
 	"inspectSettings_label": {
 		"message": "Inspect",
 		"description": ""
@@ -1423,6 +1431,56 @@
 	},
 	"whitelist_all_apis": {
 		"message": "All APIs",
+		"description": ""
+	},
+	
+	"presets": {
+		"message": "Presets",
+		"description": ""
+	},
+	"presets_title": {
+		"message": "CanvasBlocker presets",
+		"description": ""
+	},
+	"presets_installNotice": {
+		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"description": ""
+	},
+	"presets_introduction": {
+		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"description": ""
+	},
+	
+	"preset_default_title": {
+		"message": "Default settings",
+		"description": ""
+	},
+	"preset_default_description": {
+		"message": "No special settings are applied.",
+		"description": ""
+	},
+	"preset_convenience_title": {
+		"message": "Convenient settings",
+		"description": ""
+	},
+	"preset_convenience_description": {
+		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"description": ""
+	},
+	"preset_stealth_title": {
+		"message": "Stealth settings",
+		"description": ""
+	},
+	"preset_stealth_description": {
+		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"description": ""
+	},
+	"preset_max_protection_title": {
+		"message": "Maximum protection",
+		"description": ""
+	},
+	"preset_max_protection_description": {
+		"message": "Maximizes the protection against fingerprint extraction. This settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used.",
 		"description": ""
 	}
 }

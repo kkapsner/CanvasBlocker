@@ -1,0 +1,11 @@
+.notice {
+	font-size: 125%;
+	font-weight: 125%;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+.notice .noticeImage {
+	float: left;
+	margin: 0 0.5em 0.5em 0;
+}

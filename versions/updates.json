@@ -45,6 +45,10 @@
 				{
 					"version": "0.5.13Alpha20190706",
 					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-0.5.13Alpha20190706-an+fx.xpi"
+				},
+				{
+					"version": "0.5.13Alpha20190716",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-0.5.13Alpha20190716-an+fx.xpi"
 				}
 			]
 		}

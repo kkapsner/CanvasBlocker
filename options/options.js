@@ -57,6 +57,10 @@
 			logging.verbose("open settings sanitation");
 			window.open("sanitize.html", "_blank");
 		},
+		openSettingPresets: function(){
+			logging.verbose("open setting presets");
+			window.open("presets.html", "_blank");
+		},
 		saveSettings: function(){
 			logging.verbose("save settings");
 			const data = {};
