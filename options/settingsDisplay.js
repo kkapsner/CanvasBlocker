@@ -96,7 +96,10 @@
 						},
 						{
 							"name": "clearPersistentRnd",
-							"actions": ["clearPersistentRnd", "clearPersistentRndForContainer"],
+							"actions": [
+								"clearPersistentRnd",
+								browser.contextualIdentities? "clearPersistentRndForContainer": false
+							],
 							"displayDependencies": [
 								{
 									"blockMode": ["fake"],
