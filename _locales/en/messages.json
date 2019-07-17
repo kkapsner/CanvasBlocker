@@ -1240,23 +1240,36 @@
 		"description": ""
 	},
 	
-	"openSettingSanitation_title": {
-		"message": "Setting sanitation",
+	"settingControlling_title": {
+		"message": "Setting controlling",
 		"description": ""
 	},
-	"openSettingSanitation_description": {
+	"settingControlling_description": {
 		"message": "",
 		"description": ""
 	},
 	"openSettingSanitation_label": {
+		"message": "Setting sanitation",
+		"description": ""
+	},
+	"inspectWhitelist_label": {
+		"message": "Inspect whitelist",
+		"description": ""
+	},
+	
+	"openSettingPresets_title": {
+		"message": "Presets",
+		"description": ""
+	},
+	"openSettingPresets_description": {
+		"message": "",
+		"description": ""
+	},
+	"openSettingPresets_label": {
 		"message": "Open",
 		"description": ""
 	},
 	
-	"openSettingPresets_label": {
-		"message": "Presets",
-		"description": ""
-	},
 	"inspectSettings_label": {
 		"message": "Inspect",
 		"description": ""
@@ -1267,10 +1280,6 @@
 	},
 	"loadSettings_label": {
 		"message": "Load",
-		"description": ""
-	},
-	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
 		"description": ""
 	},
 	

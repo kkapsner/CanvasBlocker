@@ -1187,20 +1187,32 @@
 		"message": "",
 		"description": ""
 	},
-	"openSettingSanitation_title": {
+	"settingControlling_title": {
 		"message": "Einstellungsüberprüfung",
 		"description": ""
 	},
-	"openSettingSanitation_description": {
+	"settingControlling_description": {
 		"message": "",
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Öffnen",
+		"message": "Einstellungsüberprüfung",
+		"description": ""
+	},
+	"inspectWhitelist_label": {
+		"message": "Erlaubnisse ansehen",
+		"description": ""
+	},
+	"openSettingPresets_title": {
+		"message": "Voreinstellungen",
+		"description": ""
+	},
+	"openSettingPresets_description": {
+		"message": "",
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Voreinstellungen",
+		"message": "Öffnen",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1213,10 +1225,6 @@
 	},
 	"loadSettings_label": {
 		"message": "Laden",
-		"description": ""
-	},
-	"inspectWhitelist_label": {
-		"message": "Erlaubnisse ansehen",
 		"description": ""
 	},
 	"resetSettings_title": {

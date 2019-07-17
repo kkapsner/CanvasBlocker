@@ -265,13 +265,19 @@
 							"name": "displayDescriptions"
 						},
 						{
-							"name": "openSettingSanitation"
+							"name": "settingControlling",
+							"actions": [
+								"openSettingSanitation",
+								"inspectWhitelist"
+							]
+						},
+						{
+							"name": "openSettingPresets"
 						},
 						{
 							"name": "exportSettings",
 							"actions": [
-								"openSettingPresets", "inspectSettings", "inspectWhitelist",
-								"saveSettings", "loadSettings"
+								"inspectSettings", "saveSettings", "loadSettings"
 							]
 						},
 						{
