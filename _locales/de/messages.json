@@ -1392,7 +1392,7 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Standard Einstellungen",
+		"message": "Standard-Einstellungen",
 		"description": ""
 	},
 	"preset_default_description": {
@@ -1404,7 +1404,7 @@
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Setzt einige Einstellungen so, dass CanvasBlocker die Browsererfahrung so wenig wie möglichst beeinträchtigt. Dies beinhaltet, dass die Benutzung mancher APIs für ein paar Seiten erlaubt wird.",
+		"message": "Setzt einige Einstellungen so, dass CanvasBlocker die Browsererfahrung so wenig wie möglich beeinträchtigt. Dies beinhaltet, dass die Benutzung mancher APIs für ein paar Seiten erlaubt wird.",
 		"description": ""
 	},
 	"preset_stealth_title": {
@@ -1412,7 +1412,7 @@
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Stellt CanvasBlocker so ein, dass er schwer zu detektieren ist. Dies kann zu hoher CPU Auslastung führen und kann den Browser verlangsamen.",
+		"message": "Stellt CanvasBlocker so ein, dass er schwer zu detektieren ist. Dies kann zu hoher CPU-Auslastung führen und den Browser verlangsamen.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
@@ -1420,7 +1420,7 @@
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximiert den Schutz gegen die Fingerprint-Extraktion. Diese Einstellungen werden einige Seiten unbenutzbar machen, können den Browser etwas verlangsamen und können es Seiten ermöglichen die Verwendung von CanvasBlocker zu detektieren.",
+		"message": "Maximiert den Schutz gegen die Fingerprint-Extraktion. Diese Einstellungen werden einige Seiten unbenutzbar machen, können den Browser etwas verlangsamen und es Seiten ermöglichen die Verwendung von CanvasBlocker zu detektieren.",
 		"description": ""
 	}
 }
