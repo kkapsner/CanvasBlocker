@@ -1208,7 +1208,7 @@
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "",
+		"message": "Dies öffnet die Voreinstellungsseite, die bei der Installation angezeigt wurde. Die Voreinstallungen sind Sammlungen von Einstellungswerten, die häufigen Nutzungsprofilen von CanvasBlocker entsprechen.",
 		"description": ""
 	},
 	"openSettingPresets_label": {

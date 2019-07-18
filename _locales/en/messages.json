@@ -1262,7 +1262,7 @@
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "",
+		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
