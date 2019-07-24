@@ -1,3 +1,16 @@
+Version 0.5.14:
+	changes:
+		- 
+	
+	new features:
+		- 
+	
+	fixes:
+		- 
+	
+	known issues:
+		- if a data URL is blocked the page action button does not appear
+
 Version 0.5.13:
 	new features:
 		- added setting presets
