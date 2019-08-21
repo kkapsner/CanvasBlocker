@@ -102,6 +102,35 @@
 		}).forEach(function(node){
 			document.body.appendChild(node);
 		});
+		
+		// fit content to the window size
+		if (window.innerHeight > document.body.getBoundingClientRect().bottom){
+			const computedStyle = window.getComputedStyle(document.body);
+			const availableHeight = window.innerHeight - parseFloat(computedStyle.marginBottom);
+			const originalFontSize = parseFloat(computedStyle.fontSize) || 10;
+			let fontSize = originalFontSize;
+			let lastDelta = 8;
+			
+			while (
+				availableHeight > document.body.getBoundingClientRect().bottom
+			){
+				fontSize += lastDelta;
+				document.body.style.fontSize = fontSize + "px";
+			}
+			let direction = -1;
+			while (
+				lastDelta > 0.125
+			){
+				lastDelta /= 2;
+				fontSize += direction * lastDelta;
+				document.body.style.fontSize = fontSize + "px";
+				direction = Math.sign(availableHeight - document.body.getBoundingClientRect().bottom);
+			}
+			while (availableHeight < document.body.getBoundingClientRect().bottom){
+				fontSize -= lastDelta;
+				document.body.style.fontSize = fontSize + "px";
+			}
+		}
 	});
 	
 	document.querySelector("head title").textContent = extension.getTranslation("presets_title");
@@ -150,6 +179,7 @@
 	}
 	
 	let introduction = document.createElement("div");
+	introduction.className = "introduction";
 	introduction.textContent = extension.getTranslation("presets_introduction");
 	head.appendChild(introduction);
 }());

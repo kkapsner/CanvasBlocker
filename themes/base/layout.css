@@ -26,6 +26,7 @@ button {
 	box-sizing: border-box;
 	padding: 0.25em 0.5em;
 	cursor: pointer;
+	font-size: 1em;
 }
 
 button:focus {

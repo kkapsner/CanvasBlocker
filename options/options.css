@@ -2,6 +2,12 @@ body.standalone {
 	padding: 0.5em;
 }
 
+@media (max-width: 400px){
+	body.standalone {
+		padding: 0;
+	}
+}
+
 header {
 	margin-bottom: 1em;
 }
@@ -9,6 +15,16 @@ header {
 header .bookmarkNotice {
 	margin: 0.5em;
 	padding: 0.5em;
+}
+
+@media (max-width: 400px){
+	header {
+		margin-bottom: 0.5em;
+	}
+	header h1 {
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+	}
 }
 
 header .bookmarkNotice .dontShowOptionsOnUpdate {
@@ -52,6 +68,11 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	position: relative;
 }
 
+@media (max-width: 400px){
+	.settings .section h2 {
+		font-size: 1.2em;
+	}
+}
 
 .settings .section .collapser {
 	cursor: pointer;
@@ -75,6 +96,11 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	border-top: 1px solid #c1c1c1;
 	position: relative;
 }
+@media (max-width: 400px){
+	.settings .settingRow .content {
+		padding: 0.35em 0 0.25em;
+	}
+}
 .settings .settingRow.displayHiddenRow td {
 	position: relative;
 }
@@ -95,6 +121,12 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 
 .settings .settingRow td:first-child .content, td.hideColumn label {
 	margin-left: 10px;
+}
+@media (max-width: 400px){
+	.settings .settingRow td:first-child .content, td.hideColumn label {
+		margin-left: 0px;
+		padding-top: 0.1em;
+	}
 }
 .settings .settingRow td:last-child .content {
 	margin-right: 10px;
@@ -148,6 +180,11 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	margin-inline-start: 2em;
 	white-space: pre-wrap;
 	padding-right: 5px;
+}
+@media (max-width: 400px){
+	.settings.displayDescriptions .settingRow .description {
+		margin-inline-start: 0.5em;
+	}
 }
 input[type=""], input[type="text"], input[type="number"], select, textarea {
 	width: 100%;
@@ -225,9 +262,17 @@ textarea {
 .urlValues .notSpecifiedForUrl {
 	opacity: 0.5;
 }
+.inputURL {
+	max-width: calc(100% - 2em);
+}
 
 td.hideColumn {
 	width: 45px;
+}
+@media (max-width: 400px){
+	td.hideColumn {
+		width: 33px;
+	}
 }
 
 .hideContent {
@@ -289,6 +334,8 @@ td.hideColumn {
 	display: table-row;
 }
 
+/* groups */
+
 .groupTabs {
 	display: flex;
 	flex-wrap: nowrap;
@@ -316,13 +363,34 @@ td.hideColumn {
 	padding: 0.5em 1em;
 	margin: 2px;
 }
-.groups .groupName.selected {
-	border-right-color: transparent;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-	margin-right: -1px;
-	padding-right: calc(1em + 3px);
-	background-color: var(--background-color);
+@media (min-width: 401px){
+	.groups .groupName.selected {
+		border-right-color: transparent;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		margin-right: -1px;
+		padding-right: calc(1em + 3px);
+		background-color: var(--background-color);
+	}
+}
+@media (max-width: 400px){
+	.groupTabs {
+		display: block;
+	}
+	
+	.groups {
+		border: none;
+		margin: 0 0 0.3em 0;
+	}
+	
+	.groups .groupName {
+		margin: 2px 0;
+		padding: 1px 1em;
+	}
+	
+	.groups .groupName.selected {
+		background-color: var(--stacked-inputs-focus-color);
+	}
 }
 body:not(.searching) .settings tbody.sectionBody:not(.selectedGroup) {
 	display: none;

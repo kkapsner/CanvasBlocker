@@ -245,6 +245,7 @@
 			let footCell = document.createElement("td");
 			footCell.colSpan = 3;
 			let newInput = document.createElement("input");
+			newInput.className = "inputURL";
 			newInput.title = extension.getTranslation("inputURL");
 			const addURLSetting = function(){
 				var url = newInput.value.trim();

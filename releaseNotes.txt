@@ -6,7 +6,7 @@ Version 0.5.14:
 		- 
 	
 	fixes:
-		- 
+		- improved option pages on mobile
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
