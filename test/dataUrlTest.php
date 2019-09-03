@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>data-URL Test</title>
+	<title>Data-URL Test</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link href="testIcon.svg" type="image/png" rel="icon">
+	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
 	<style>
 		iframe, object, embed {
 			display: block;
@@ -13,9 +16,18 @@
 	<link rel="stylesheet" href="data:text/css;base64,Ym9keXtiYWNrZ3JvdW5kLWNvbG9yOiNlMGZmZTA7fQ==">
 </head>
 <body>
-	<h1>Normal iFrame</h1>
+	<h1>Data-URL test</h1>
+	This test might not work properly if any other addon is installed that changes the CSP headers (e.g. NoScript or uBlock Origin).
+	<h2>Expected result</h2>
+	<ul>
+		<li>the "Normal" and "blob" iFrames show faked hashes</li>
+		<li>the "Data-URL" iFrame, object and embed shows nothing</li>
+		<li>the whole page has a green background</li>
+	</ul>
+	<h2>Tests</h2>
+	<h3>Normal iFrame</h3>
 	<iframe src="sendFingerprintTest.html"></iframe>
-	<h1>Data-URL iFrame</h1>
+	<h3>Data-URL iFrame</h3>
 	<iframe id="iframe" src="data:text/html;base64&#x2c;<?php
 		echo base64_encode(
 			str_replace(
@@ -25,9 +37,9 @@
 			)
 		);
 	?>"></iframe>
-	<h1>blob iFrame</h1>
+	<h3>blob iFrame</h3>
 	<iframe id="blobIframe"></iframe>
-	<h1>Data-URL object</h1>
+	<h3>Data-URL object</h3>
 	<object
 		type="text/html"
 		data="data:text/html;base64&#x2c;<?php
@@ -40,7 +52,7 @@
 			);
 		?>"
 	></object>
-	<h1>Data-URL embed</h1>
+	<h3>Data-URL embed</h3>
 	<embed
 		type="text/html"
 		src="data:text/html;base64&#x2c;<?php
@@ -53,7 +65,7 @@
 			);
 		?>"
 	></embed>
-	<h1>iFrame code</h1>
+	<h3>iFrame code</h3>
 	<pre id="code"></pre>
 	<script src="dataUrlTest.js"></script>
 	

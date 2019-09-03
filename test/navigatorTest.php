@@ -8,7 +8,14 @@
 </head>
 <body>
 <h1>Navigator test</h1>
-Tests the navigator properties.
+Tests the navigator properties. In the default settings of CanvasBlocker the navigator properties are not altered. You have to enable the navigator protection and then open the navigator settings to chose the desired values.
+<h2>Expected result</h2>
+<ul>
+	<li>the server and client user agent match</li>
+	<li>the navigator properties are according to what was set in the CanvasBlocker settings</li>
+	<li>the values in the iFrame are equal to the normal values</li>
+</ul>
+<h2>Tests</h2>
 <div id="log">
 	<div class="log">
 		<div class="logLine">

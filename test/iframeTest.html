@@ -41,7 +41,10 @@
 		window.setTimeout(function(){
 			document.body.innerHTML = "<iframe></iframe>";
 			console.log("TEST:", "innerHTML after 1000ms:", compare(test(window[0]), reference));
-			document.body.innerHTML = "<h1>Iframe protection</h1>Open console (Ctrl + Shift + K) to see results. Depending on your Browser version you might have to check the \"Persist Logs\" flag and reload the page.<br><h2>Expected behaviour</h2><ul><li>The displayed hashes should not be your native hash (run test with CB disabled to get it)</li><li>All the displayed hashes should be the same (exception if there is a change to a wyciwyg page)</li><li>All lines with \"TEST:\" should have a \"match\" at the end</li></ul>";
+			document.body.innerHTML = "<h1>Iframe protection</h1>Open console (Ctrl + Shift + K) to see results. Depending on your Browser version you might have to check the \"Persist Logs\" flag and reload the page.<br><h2>Expected result</h2><ul><li>the displayed hashes should not be your native hash (run test with CB disabled to get it)</li><li>all the displayed hashes should be the same (exception if there is a change to a wyciwyg page)</li><li>all lines with \"TEST:\" should have a \"match\" at the end</li></ul>";
+			var title = document.createElement("title");
+			title.textContent = "iFrame test";
+			document.getElementsByTagName("head")[0].appendChild(title);
 		}, 1000);
 		</script>
 	</body>

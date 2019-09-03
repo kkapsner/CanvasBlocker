@@ -23,7 +23,7 @@
 				max = Math.max(max, values[pixels[i]]);
 			}
 
-			output.textContent = context + ": " + (max !== 3 * values[255]? "": "not ") + "faked";
+			output.textContent = context + ": " + (max !== 3 * values[255]? "": "not ") + "supported";
 			output.title = JSON.stringify(values);
 		}
 		catch (e){

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test</title>
+	<title>Settings loading test</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
@@ -47,32 +47,46 @@
 			var firstFingerprint = false;
 		}
 	</script>
+	<style>
+		#output {
+			padding: 1em;
+		}
+	</style>
 </head>
 <body>
+	<h1>Settings loading test</h1>
+	<h2>Expected result</h2>
+	<ul>
+		<li>the background of the test result is green and states "good"</li>
+		<li>the displayed hash changes upon reload</li>
+	</ul>
+	<h2>Test</h2>
+	<div id="output"></div>
 	<script>
 		if (firstFingerprint){
-			document.body.textContent = "context API not blocked";
+			var output = document.getElementById("output");
+			output.textContent = "context API not blocked";
 			window.setTimeout(function(){
 				console.log(new Date(), "starting second fingerprint", window.name);
-				document.body.appendChild(document.createElement("br"));
+				output.appendChild(document.createElement("br"));
 				var secondFingerprint = fingerPrint();
 				if (firstFingerprint === secondFingerprint){
 					hash(firstFingerprint).then(function(hash){
-						document.body.appendChild(document.createTextNode("fingerprint consistent (" + hash + ") -> good!"));
-						document.body.style.backgroundColor = "green";
+						output.appendChild(document.createTextNode("fingerprint consistent (" + hash + ") -> good!"));
+						output.style.backgroundColor = "green";
 					});
 				}
 				else {
 					Promise.all([hash(firstFingerprint), hash(secondFingerprint)]).then(function(hashes){
-						document.body.appendChild(document.createTextNode("fingerprint not consistent (" + hashes[0] + " != " + hashes[1] + ") -> very bad! (potential fingerprint leak)"));
-						document.body.style.backgroundColor = "red";
+						output.appendChild(document.createTextNode("fingerprint not consistent (" + hashes[0] + " != " + hashes[1] + ") -> very bad! (potential fingerprint leak)"));
+						output.style.backgroundColor = "red";
 					});
 				}
 			}, 500);
 		}
 		else {
-			document.body.textContent = "context API blocked";
-			document.body.style.backgroundColor = "orange";
+			output.textContent = "context API blocked";
+			output.style.backgroundColor = "orange";
 		}
 	</script>
 </body></html>

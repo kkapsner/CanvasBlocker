@@ -2,20 +2,30 @@
 <script src="firstPossibleCall.js"></script>
 <html>
 <head>
-	<title>Test</title>
+	<title>Canvas test</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
 </head>
 <body>
+<h1>Canvas test</h1>
+<h2>Expected result</h2>
+<ul>
+	<li>all the hashes should be equal for each test</li>
+	<li>the hash before and after the "/" do not have to match</li>
+	<li>"isPointInPath" may vary between tests</li>
+	<li>if "refresh" is clicked the hash must not change (but "isPointInPath" may)</li>
+	<li>upon page reload the hash changes</li>
+</ul>
+<h2>Tests</h2>
 <div id="top">
-	<h1>top Test</h1>
+	<h3>top Test</h3>
 	<img class="display"><br>
 	Hash: <span class="hash"></span> (isPointInPath: <span class="isPointInPath"></span>)
 	<button>refresh</button>
 </div>
 <div id="iframe">
-	<h1>iFrame Test. Thanks to DocumentRoot.</h1>
+	<h3>iFrame Test. Thanks to DocumentRoot.</h3>
 	<img class="display"><br>
 	Hash: <span class="hash"></span> (isPointInPath: <span class="isPointInPath"></span>)
 	<iframe sandbox="allow-same-origin" style="display:none"></iframe>
@@ -23,7 +33,7 @@
 </div>
 </div>
 <div id="iframe2">
-	<h1>iFrame Test 2 - with URL</h1>
+	<h3>iFrame Test 2 - with URL</h3>
 	<img class="display"><br>
 	Hash: <span class="hash"></span> (isPointInPath: <span class="isPointInPath"></span>)
 	<iframe src="?" sandbox="allow-same-origin" style="display:none"></iframe>
@@ -31,26 +41,26 @@
 </div>
 </div>
 <div id="iframe3">
-	<h1>iFrame Test 3 - violating SOP</h1>
+	<h3>iFrame Test 3 - violating SOP</h3>
 	<img class="display"><br>
 	Hash: <span class="hash"></span> (isPointInPath: <span class="isPointInPath"></span>)
 	<iframe src="http://example.org" style="display:none"></iframe>
 	<button>refresh</button>
 </div>
 <div id="iframe4">
-	<h1>iFrame Test 4 - different access 1</h1>
+	<h3>iFrame Test 4 - different access 1</h3>
 	<img class="display"><br>
 	Hash: <span class="hash"></span> (isPointInPath: <span class="isPointInPath"></span>)
 	<button>refresh</button>
 </div>
 <div id="iframe5">
-	<h1>iFrame Test 5 - different access 2</h1>
+	<h3>iFrame Test 5 - different access 2</h3>
 	<img class="display"><br>
 	Hash: <span class="hash"></span> (isPointInPath: <span class="isPointInPath"></span>)
 	<button>refresh</button>
 </div>
 <div id="iframe6">
-	<h1>iFrame Test 6 - different access 3</h1>
+	<h3>iFrame Test 6 - different access 3</h3>
 	<img class="display"><br>
 	Hash: <span class="hash"></span> (isPointInPath: <span class="isPointInPath"></span>)
 	<button>refresh</button>
