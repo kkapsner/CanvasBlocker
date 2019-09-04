@@ -1,6 +1,6 @@
 Version 0.5.14:
 	changes:
-		- 
+		- reevaluated logging message levels
 	
 	new features:
 		- 
