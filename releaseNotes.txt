@@ -3,7 +3,7 @@ Version 0.5.14:
 		- reevaluated logging message levels
 	
 	new features:
-		- 
+		- remove iframe protection from whitelisted pages
 	
 	fixes:
 		- improved option pages on mobile
