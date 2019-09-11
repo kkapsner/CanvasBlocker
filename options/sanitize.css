@@ -13,3 +13,7 @@
 .complaint.low {
 	background-color: yellow;
 }
+
+ul {
+	padding-left: 1.2em;
+}
