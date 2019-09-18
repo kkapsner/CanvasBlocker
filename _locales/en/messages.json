@@ -581,6 +581,39 @@
 		"description": ""
 	},
 	
+	"webGLVendor_title": {
+		"message": "Reported webGL vendor",
+		"description": ""
+	},
+	"webGLVendor_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Leave empty to use the original value.",
+		"description": ""
+	},
+	"webGLRenderer_title": {
+		"message": "Reported webGL renderer",
+		"description": ""
+	},
+	"webGLRenderer_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Leave empty to use the original value.",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_title": {
+		"message": "Reported webGL unmasked vendor",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Leave empty to use the original value.",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_title": {
+		"message": "Reported webGL unmasked renderer",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"description": ""
+	},
+	
 	"useCanvasCache_title": {
 		"message": "Use canvas cache",
 		"description": ""

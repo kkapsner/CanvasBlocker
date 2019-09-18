@@ -4,6 +4,7 @@ Version 0.5.14:
 	
 	new features:
 		- remove iframe protection from whitelisted pages
+		- added protection for getParameter (webGL)
 	
 	fixes:
 		- improved option pages on mobile

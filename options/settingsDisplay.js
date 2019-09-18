@@ -403,6 +403,38 @@
 								}
 							]
 						},
+						{
+							"name": "webGLVendor",
+							"displayDependencies": [
+								{
+									"displayAdvancedSettings": [true]
+								}
+							]
+						},
+						{
+							"name": "webGLRenderer",
+							"displayDependencies": [
+								{
+									"displayAdvancedSettings": [true]
+								}
+							]
+						},
+						{
+							"name": "webGLUnmaskedVendor",
+							"displayDependencies": [
+								{
+									"displayAdvancedSettings": [true]
+								}
+							]
+						},
+						{
+							"name": "webGLUnmaskedRenderer",
+							"displayDependencies": [
+								{
+									"displayAdvancedSettings": [true]
+								}
+							]
+						},
 					]
 				},
 				{

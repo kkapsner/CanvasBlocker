@@ -551,6 +551,38 @@
 		"message": "Aktiviert das Vortäuschen des Alpha-Kanals (Transparenz).",
 		"description": ""
 	},
+	"webGLVendor_title": {
+		"message": "Verwendeter webGL \"vendor\"",
+		"description": ""
+	},
+	"webGLVendor_description": {
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"vendor\" verwendet. Leer lassen, um den Originalwert zu verwenden.",
+		"description": ""
+	},
+	"webGLRenderer_title": {
+		"message": "Verwendeter webGL \"renderer\"",
+		"description": ""
+	},
+	"webGLRenderer_description": {
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"renderer\" verwendet. Leer lassen, um den Originalwert zu verwenden.",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_title": {
+		"message": "Verwendeter webGL \"unmasked vendor\"",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_description": {
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"unmasked vendor\" verwendet. Leer lassen, um den Originalwert zu verwenden.",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_title": {
+		"message": "Verwendeter webGL \"unmasked renderer\"",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_description": {
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"unmasked renderer\" verwendet. Leer lassen, um den Originalwert zu verwenden.",
+		"description": ""
+	},
 	"useCanvasCache_title": {
 		"message": "Zwischenspeicher für Canvas verwenden",
 		"description": ""
