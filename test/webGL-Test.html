@@ -8,7 +8,16 @@
 </head>
 <body>
 <h1>webGL test</h1>
-Checks if the addon also supports webGL.
+<h2>Expected result</h2>
+<ul>
+	<li>both webGL versions should be supported (unless you disabled it in the browser settings) - reload if one is showing "not supported"</li>
+	<li>upon page reload the hashes change</li>
+	<li>upon page reload some of the parameters change</li>
+	<li>the "vendor" und "renderer" (also unmasked) parameters reflect the values you chose for them</li>
+</ul>
+<h3>Support</h3>
 <div id="output"></div>
+<h3>Parameters</h3>
+<div id="parameters"></div>
 <script src="webGL-Test.js"></script>
 </body></html>
