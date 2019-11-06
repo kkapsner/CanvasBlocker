@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Screen size test</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link href="testIcon.svg" type="image/png" rel="icon">
+	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<style type="text/css">
+	h3 {
+		margin: 0.2em 0;
+	}
+	</style>
+	<style type="text/css"></style>
+</head>
+<body>
+	<h1>Screen size test</h1>
+	<h2>Expected result</h2>
+	<ul>
+		<li>all consistency checks return "OK" (except the "reported value" check which might fail for min OR max upon zoom)</li>
+		<li>all the dimensions are the same (except when "fake minimal screen size" is enabled - then the "css" test shows the original value as this cannot be faked)</li>
+		<li>values do not change upon reload</li>
+		<li>upon zoom the values change</li>
+		<li>if "fake minimal screen size" is enabled resizing the window can change the value</li>
+	</ul>
+	<h2>Consistency tests</h2>
+	<div id="consistency"></div>
+	<h2>Resolution tests</h2>
+	<div id="resolution"></div>
+	<script type="text/javascript" src="screenSizeTest.js"></script>
+</body>
+</html>
