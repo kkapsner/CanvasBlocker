@@ -9,5 +9,5 @@ html, body {
 	height: 95%;
 }
 #settings.invalid {
-	background-color: pink;
+	background-color: var(--input-error-background-color);
 }

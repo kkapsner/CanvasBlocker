@@ -1,6 +1,7 @@
 body {
 	--background-color: rgb(255, 255, 255);
 	--input-background-color: rgb(249, 250, 249);
+	--input-error-background-color: pink;
 	--text-color: rgb(12, 12, 13);
 	--link-color: blue;
 	--button-background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.1) 100%);
