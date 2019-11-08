@@ -76,11 +76,13 @@
 					});
 				}
 				[
+					{mainFlag: "protectedCanvasPart", mainFlagDisabledValue: "nothing", section: "Canvas-API"},
 					{mainFlag: "protectAudio", section: "Audio-API"},
 					{mainFlag: "protectWindow", section: "Window-API"},
 					{mainFlag: "protectDOMRect", section: "DOMRect-API"},
+					{mainFlag: "protectNavigator", section: "Navigator-API"},
 				].forEach(function(api){
-					if (settings.get(api.mainFlag)){
+					if (settings.get(api.mainFlag) !== (api.mainFlagDisabledValue || false)){
 						let inSection = false;
 						let anyActive = false;
 						if (getSectionKeys(api.section).every(function(key){
@@ -104,7 +106,7 @@
 									{
 										label: extension.getTranslation("sanitation_resolution.disableMainFlag"),
 										callback: function(){
-											settings.set(api.mainFlag, false);
+											settings.set(api.mainFlag, api.mainFlagDisabledValue || false);
 										}
 									},
 								]
