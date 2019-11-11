@@ -174,7 +174,9 @@
 				}
 				
 				let nameCell = document.createElement("td");
-				nameCell.textContent = key;
+				nameCell.textContent = setting.display.replaceKeyPattern?
+					key.replace(setting.display.replaceKeyPattern, ""):
+					key;
 				row.appendChild(nameCell);
 				
 				let keyType = inputTypes[typeof setting.defaultKeyValue];

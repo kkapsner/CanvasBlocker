@@ -298,6 +298,7 @@
 						},
 						{
 							"name": "protectedAPIFeatures",
+							"replaceKeyPattern": / @ .+$/,
 							"displayedSection": "Canvas-API",
 							"displayDependencies": [
 								{
@@ -445,6 +446,7 @@
 						},
 						{
 							"name": "protectedAPIFeatures",
+							"replaceKeyPattern": / @ .+$/,
 							"displayedSection": "Audio-API",
 							"displayDependencies": [
 								{
@@ -542,6 +544,7 @@
 					settings: [
 						{
 							"name": "protectedAPIFeatures",
+							"replaceKeyPattern": / @ .+$/,
 							"displayedSection": "History-API",
 							"displayDependencies": [
 								{
@@ -565,6 +568,7 @@
 						},
 						{
 							"name": "protectedAPIFeatures",
+							"replaceKeyPattern": / @ .+$/,
 							"displayedSection": "Window-API",
 							"displayDependencies": [
 								{
@@ -583,6 +587,7 @@
 						},
 						{
 							"name": "protectedAPIFeatures",
+							"replaceKeyPattern": / @ .+$/,
 							"displayedSection": "DOMRect-API",
 							"displayDependencies": [
 								{
@@ -608,6 +613,7 @@
 						},
 						{
 							"name": "protectedAPIFeatures",
+							"replaceKeyPattern": / @ .+$/,
 							"displayedSection": "Navigator-API",
 							"displayDependencies": [
 								{

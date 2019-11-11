@@ -1,6 +1,6 @@
 Version 0.5.15:
 	changes:
-		- 
+		- improved storage of protected API features
 	
 	new features:
 		- 
