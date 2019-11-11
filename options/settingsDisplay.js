@@ -632,6 +632,44 @@
 						},
 					]
 				},
+				{
+					name: "Screen-API",
+					settings: [
+						{
+							"name": "protectScreen"
+						},
+						{
+							"name": "protectedAPIFeatures",
+							"replaceKeyPattern": / @ .+$/,
+							"displayedSection": "Screen-API",
+							"displayDependencies": [
+								{
+									"protectScreen": [true],
+									"displayAdvancedSettings": [true]
+								}
+							]
+						},
+						{
+							"name": "screenSize",
+							"displayDependencies": [
+								{
+									"protectScreen": [true],
+									"fakeMinimalScreenSize": [false],
+									"displayAdvancedSettings": [true]
+								}
+							]
+						},
+						{
+							"name": "fakeMinimalScreenSize",
+							"displayDependencies": [
+								{
+									"protectScreen": [true],
+									"screenSize": [""]
+								}
+							]
+						},
+					]
+				},
 			]
 		},
 		{

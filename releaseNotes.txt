@@ -3,7 +3,7 @@ Version 0.5.15:
 		- improved storage of protected API features
 	
 	new features:
-		- 
+		- added screen protection
 	
 	fixes:
 		- background color of the textarea in the settings export was not readable in the dark theme when the value was invalid

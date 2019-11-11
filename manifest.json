@@ -51,6 +51,7 @@
 			"lib/modifiedDOMRectAPI.js",
 			"lib/navigator.js",
 			"lib/modifiedNavigatorAPI.js",
+			"lib/modifiedScreenAPI.js",
 			"lib/modifiedAPI.js",
 			"lib/randomSupplies.js",
 			"lib/intercept.js",

@@ -29,6 +29,7 @@ Protected "fingerprinting" APIs:
  * window (disabled by default)
  * DOMRect
  * navigator (disabled by default)
+ * screen
 
 Special thanks to:
  * spodermenpls for finding all the typos

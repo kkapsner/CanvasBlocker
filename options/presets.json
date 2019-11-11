@@ -11,7 +11,8 @@
 		"rng": "persistent",
 		"ignoreFrequentColors": 3,
 		"minColors": 3,
-		"storePersistentRnd": true
+		"storePersistentRnd": true,
+		"fakeMinimalScreenSize": false
 	},
 	"max_protection": {
 		"minFakeSize": 0,

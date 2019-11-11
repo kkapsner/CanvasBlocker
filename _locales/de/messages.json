@@ -147,6 +147,10 @@
 		"message": "Navigator-API",
 		"description": ""
 	},
+	"section_Screen-api": {
+		"message": "Screen-API",
+		"description": ""
+	},
 	"displayAdvancedSettings_title": {
 		"message": "Expertenmodus",
 		"description": ""
@@ -269,6 +273,18 @@
 	},
 	"askForNavigatorReadoutPermission": {
 		"message": "Wollen Sie das Auslesen über die Navigator-API erlauben?",
+		"description": ""
+	},
+	"askForScreenPermission": {
+		"message": "Wollen Sie die Screen-API erlauben?",
+		"description": ""
+	},
+	"askForScreenInputPermission": {
+		"message": "Wollen Sie das Schreiben über die Screen-API erlauben?",
+		"description": ""
+	},
+	"askForScreenReadoutPermission": {
+		"message": "Wollen Sie das Auslesen über die Screen-API erlauben?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -653,6 +669,10 @@
 	},
 	"fakedNavigatorReadout": {
 		"message": "Navigator-Auslese vorgetäuscht auf {url}",
+		"description": ""
+	},
+	"fakedScreenReadout": {
+		"message": "Screen-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -1123,6 +1143,34 @@
 		"message": "Zurücksetzen",
 		"description": ""
 	},
+	"protectScreen_title": {
+		"message": "Screen-API beschützen",
+		"description": ""
+	},
+	"protectScreen_description": {
+		"message": "Dies schützt vor Fingerprinting, das die Bildschirmgröße einbezieht.",
+		"description": ""
+	},
+	"protectScreen_urlSpecific": {
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
+		"description": ""
+	},
+	"screenSize_title": {
+		"message": "Bildschirmgröße",
+		"description": ""
+	},
+	"screenSize_description": {
+		"message": "Wenn dies auf einen Wert \"...x...\" gesetzt wird, werden diese Größen als Bildschirmgröße verwendet.",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_title": {
+		"message": "Minimale Bildschirmgröße vortäuschen",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_description": {
+		"message": "Verwende die minimale Bildschirmgröße aus der folgenden Liste, die zur inneren Browserfenstergröße passt. Bildschirmgrößen: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"description": ""
+	},
 	"theme_title": {
 		"message": "Theme",
 		"description": ""
@@ -1405,6 +1453,10 @@
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
 		"message": "Teilen Sie die persistenten Zufallszahlen nicht zwischen Domains, da dies den Browser 100% eindeutig identifizierbar macht.",
+		"description": ""
+	},
+	"sanitation_error.customScreenSize": {
+		"message": "Verwenden Sie keine benutzerdefinierte Bildschirmgröße, da sie den Browser verfolgbarer macht.",
 		"description": ""
 	},
 	"whitelist_inspection_title": {

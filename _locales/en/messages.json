@@ -154,6 +154,10 @@
 		"message": "Navigator API",
 		"description": ""
 	},
+	"section_Screen-api":{
+		"message": "Screen API",
+		"description": ""
+	},
 	
 	"displayAdvancedSettings_title": {
 		"message": "Expert mode",
@@ -281,6 +285,18 @@
 	},
 	"askForNavigatorReadoutPermission": {
 		"message": "Do you want to allow navigator API readout?",
+		"description": ""
+	},
+	"askForScreenPermission": {
+		"message": "Do you want to allow the screen API?",
+		"description": ""
+	},
+	"askForScreenInputPermission": {
+		"message": "Do you want to allow screen API input?",
+		"description": ""
+	},
+	"askForScreenReadoutPermission": {
+		"message": "Do you want to allow screen API readout?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -687,6 +703,10 @@
 	},
 	"fakedNavigatorReadout": {
 		"message": "Faked navigator readout on {url}",
+		"description": ""
+	},
+	"fakedScreenReadout": {
+		"message": "Faked screen readout on {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -1172,6 +1192,35 @@
 		"description": ""
 	},
 	
+	"protectScreen_title": {
+		"message": "Protect screen API",
+		"description": ""
+	},
+	"protectScreen_description": {
+		"message": "This protects against fingerprinting attempts including the screen size.",
+		"description": ""
+	},
+	"protectScreen_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"screenSize_title": {
+		"message": "Screen size",
+		"description": ""
+	},
+	"screenSize_description": {
+		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_title": {
+		"message": "Fake minimal screen size",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_description": {
+		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"description": ""
+	},
+	
 	"theme_title": {
 		"message": "Theme",
 		"description": ""
@@ -1464,6 +1513,10 @@
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
 		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"description": ""
+	},
+	"sanitation_error.customScreenSize": {
+		"message": "Do not use a custom screen size as it makes the browser more trackable.",
 		"description": ""
 	},
 	

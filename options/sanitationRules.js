@@ -81,6 +81,7 @@
 					{mainFlag: "protectWindow", section: "Window-API"},
 					{mainFlag: "protectDOMRect", section: "DOMRect-API"},
 					{mainFlag: "protectNavigator", section: "Navigator-API"},
+					{mainFlag: "protectScreen", section: "Screen-API"},
 				].forEach(function(api){
 					if (settings.get(api.mainFlag) !== (api.mainFlagDisabledValue || false)){
 						let inSection = false;
@@ -293,6 +294,19 @@
 								.replace(/{flag}/g, extension.getTranslation("sharePersistentRndBetweenDomains_title")),
 							callback: function(){
 								settings.sharePersistentRndBetweenDomains = false;
+							}
+						}]
+					});
+				}
+				if (settings.protectScreen && settings.screenSize){
+					errorCallback({
+						message: extension.getTranslation("sanitation_error.customScreenSize"),
+						severity: "medium",
+						resolutions: [{
+							label: extension.getTranslation("sanitation_resolution.setTo")
+								.replace(/{value}/g, "\"\""),
+							callback: function(){
+								settings.screenSize = "";
 							}
 						}]
 					});
