@@ -3,6 +3,18 @@ This add-on allows users to prevent websites from using some Javascript APIs to 
 <b>IMPORTANT</b>: you should only have ONE addon/setting set that protects an API. Otherwise you could face massive performance issues. (E.g. EclipsedMoon for Palemoon has 'canvas.poison' which is known to cause issues: https://github.com/kkapsner/CanvasBlocker/issues/253#issuecomment-459499290)
 But setting privacy.resistFingerprinting to true and/or using the new fingerprinting protection introduced with Firefox 67 is fine.
 
+Protected "fingerprinting" APIs:
+	<ul>
+		<li>canvas 2d</li>
+		<li>webGL</li>
+		<li>audio</li>
+		<li>history</li>
+		<li>window (disabled by default)</li>
+		<li>DOMRect</li>
+		<li>navigator (disabled by default)</li>
+		<li>screen</li>
+	</ul>
+
 More information on fingerprinting can be found at:
 	<ul>
 		<li> &lt;canvas&gt;: http://www.browserleaks.com/canvas</li>
@@ -28,18 +40,6 @@ The different block modes are:
 		<li> allow only white list: Only websites in the white list are allowed to use the protected APIs.</li>
 		<li> block only black list: Block the protected APIs only for websites on the black list.</li>
 		<li> allow everything: Ignore all lists and allow the protected APIs on all websites.</li>
-	</ul>
-
-Protected "fingerprinting" APIs:
-	<ul>
-		<li>canvas 2d</li>
-		<li>webGL</li>
-		<li>audio</li>
-		<li>history</li>
-		<li>window (disabled by default)</li>
-		<li>DOMRect</li>
-		<li>navigator (disabled by default)</li>
-		<li>screen</li>
 	</ul>
 
 Please report issues and feature requests at https://github.com/kkapsner/CanvasBlocker/issues

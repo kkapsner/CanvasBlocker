@@ -3,6 +3,18 @@ Dieses Add-on ermöglicht es Nutzern, Webseiten davon abzuhalten, sie über Java
 <b>WICHTIG</b>: Sie sollten nur ein Addon/eine Einstellung aktiv haben, die eine API beschützt. Ansonsten können Sie massive Performanceprobleme bekommen. (Z.B. EclipsedMoon für Palemoon hat 'canvas.poison', was bekanntermaßen Probleme verursacht: https://github.com/kkapsner/CanvasBlocker/issues/253#issuecomment-459499290)
 privacy.resistFingerprinting kann aber problemlos aktiviert werden und der Fingerprinting-Schutz muss nicht deaktiviert werden.
 
+Beschützte "Fingerprinting"-APIs:
+	<ul>
+		<li>canvas 2d</li>
+		<li>webGL</li>
+		<li>audio</li>
+		<li>history</li>
+		<li>window (standardmäßig deaktiviert)</li>
+		<li>DOMRect</li>
+		<li>navigator (standardmäßig deaktiviert)</li>
+		<li>screen</li>
+	</ul>
+
 Nähere Informationen zum Fingerprinting können Sie finden auf:
 	<ul>
 		<li>&lt;canvas&gt;: http://www.browserleaks.com/canvas</li>
@@ -27,18 +39,6 @@ Die verschiedenen Blockiermodi sind:
 		<li>nur Einträge der Whitelist erlauben: Nur Seiten, die in der Whitelist gelistet sind, dürfen die beschützten APIs verwenden.</li>
 		<li>nur Einträge der Blacklist blockieren: Blockiere die beschützten APIs nur auf den Seiten der Blacklist.</li>
 		<li>alles erlauben: Ignoriere alle Listen und erlaube die beschützten APIs auf allen Webseiten.</li>
-	</ul>
-
-Beschützte "Fingerprinting"-APIs:
-	<ul>
-		<li>canvas 2d</li>
-		<li>webGL</li>
-		<li>audio</li>
-		<li>history</li>
-		<li>window (standardmäßig deaktiviert)</li>
-		<li>DOMRect</li>
-		<li>navigator (standardmäßig deaktiviert)</li>
-		<li>screen</li>
 	</ul>
 
 Falls Sie Fehler finden oder Verbesserungsvorschläge haben, teilen Sie mir das bitte auf https://github.com/kkapsner/CanvasBlocker/issues mit.
