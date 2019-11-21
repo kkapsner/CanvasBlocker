@@ -1,4 +1,4 @@
-CanvasBlocker [![codebeat badge](https://codebeat.co/badges/1e540430-87d0-451a-8190-09bfea1b4b6c)](https://codebeat.co/projects/github-com-kkapsner-canvasblocker-master)
+CanvasBlocker [![codebeat badge](https://codebeat.co/badges/0edd6c9f-250a-4f1e-9c64-0958741522af)](https://codebeat.co/projects/github-com-kkapsner-canvasblocker-master)
 =====
 
 This add-on allows users to prevent websites from using some Javascript APIs to fingerprint them. Users can choose to block the APIs entirely on some or all websites (which may break some websites) or just block or fake its fingerprinting-friendly readout API.
