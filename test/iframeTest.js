@@ -1,6 +1,14 @@
 var log = function(){
 	"use strict";
 	return function log(...str){
+		if (str[str.length - 1] === "match"){
+			str.unshift("color: green");
+			str.unshift("%cOK");
+		}
+		else if (str[str.length - 1].substr(0, 9) === "missmatch"){
+			str.unshift("color: red");
+			str.unshift("%cX");
+		}
 		// eslint-disable-next-line no-console
 		console.log(...str);
 	};
@@ -32,7 +40,7 @@ function test(window){
 	// create window canvas
 	var canvas = document.createElement("canvas");
 	// draw image in window canvas
-	var ctx = draw(canvas);
+	draw(canvas);
 	return window.HTMLCanvasElement.prototype.toDataURL.call(canvas);
 }
 
@@ -55,12 +63,13 @@ function hash(string){
 function compare(string1, string2, alwaysOutputHashes){
 	"use strict";
 	function outputHashes(message){
-		Promise.all([
+		return Promise.all([
 			hash(string1),
 			hash(string2)
 		]).then(function(hashes){
 			// eslint-disable-next-line no-console
 			console.log(message, ...hashes);
+			return;
 		});
 		
 	}
@@ -98,4 +107,9 @@ hash(reference).then(function(hash){
 	"use strict";
 	
 	log("reference hash:", hash);
+	return;
+}).catch(function(error){
+	"use strict";
+	
+	log("%cX", "color: red", "Unable to compute reference hash:", error);
 });

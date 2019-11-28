@@ -10,7 +10,7 @@
 	require("../lib/theme").init();
 	const input = document.getElementById("settings");
 	settings.onloaded(function(){
-		var data = {};
+		const data = {};
 		settings.forEach(function(def){
 			data[def.name] = def.get();
 		});
@@ -18,8 +18,8 @@
 
 		input.addEventListener("input", function(){
 			try {
-				var newSettings = JSON.parse(this.value);
-				var isValid = true;
+				let newSettings = JSON.parse(this.value);
+				let isValid = true;
 				
 				while (settingsMigration.transitions.hasOwnProperty(newSettings.storageVersion)){
 					let oldVersion = newSettings.storageVersion;
@@ -57,14 +57,14 @@
 					this.classList.add("invalid");
 				}
 			}
-			catch (e){
-				logging.warning("Invalid JSON:", e);
+			catch (error){
+				logging.warning("Invalid JSON:", error);
 				this.classList.add("invalid");
 			}
 		});
 		input.addEventListener("blur", function(){
 			if (!this.classList.contains("invalid")){
-				var data = {};
+				const data = {};
 				settings.forEach(function(def){
 					data[def.name] = def.get();
 				});

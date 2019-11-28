@@ -36,6 +36,7 @@ var performTest = function(){
 		var log = createLog();
 		log.createLine("test " + name, "h3");
 		var line = log.createLine("");
+		var line2;
 		var time = 0;
 		var time2 = 0;
 		var min = Number.POSITIVE_INFINITY;
@@ -80,7 +81,7 @@ var performTest = function(){
 			}
 			window.setTimeout(run, 10);
 		});
-		var line2 = log.createLine("");
+		line2 = log.createLine("");
 	};
 }();
 

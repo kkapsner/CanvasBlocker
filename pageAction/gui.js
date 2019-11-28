@@ -13,7 +13,7 @@
 		scope = require.register("./gui", {});
 	}
 	
-	const {error, warning, message, notice, verbose, setPrefix: setLogPrefix} = require("../lib/logging");
+	const logging = require("../lib/logging");
 	const extension = require("../lib/extension");
 
 	scope.createCollapser = function(){
@@ -23,11 +23,11 @@
 		};
 
 		return function createCollapser(container){
-			var collapser = document.createElement("span");
+			const collapser = document.createElement("span");
 			collapser.className = "collapser";
 
 			["more", "less"].forEach(function(type){
-				var span = document.createElement("span");
+				const span = document.createElement("span");
 				span.className = type;
 				span.textContent = messages[type];
 				collapser.appendChild(span);
@@ -44,13 +44,13 @@
 
 		
 	scope.createActionButtons = function createActionButtons(container, actions, data, horizontal){
-		actions.forEach(function(action, i){
-			var button = document.createElement("button");
+		actions.forEach(function(action){
+			const button = document.createElement("button");
 			button.className = action.name + " action";
 			button.title = extension.getTranslation(action.name);
 			if (action.isIcon || action.icon){
 				button.classList.add("isIcon");
-				var img = document.createElement("img");
+				const img = document.createElement("img");
 				button.appendChild(img);
 				img.src = "../icons/" + (action.icon || `pageAction-${action.name}.svg`);
 			}
@@ -66,8 +66,8 @@
 	};
 	
 	scope.modalChoice = function modalChoice(messageText, choices){
-		message("open modal choice");
-		return new Promise(function(resolve, reject){
+		logging.message("open modal choice");
+		return new Promise(function(resolve){
 			document.body.innerHTML = "";
 			document.body.className = "modal";
 			document.body.appendChild(document.createTextNode(messageText));
@@ -77,7 +77,7 @@
 				const button = document.createElement("button");
 				button.addEventListener("click", function(){
 					resolve(choice.value || choice);
-					message("modal choice closed with value", choice.value || choice);
+					logging.message("modal choice closed with value", choice.value || choice);
 				});
 				button.appendChild(document.createTextNode(choice.text || choice));
 				stack.appendChild(button);
@@ -87,8 +87,8 @@
 	};
 	
 	scope.modalPrompt = function modalPrompt(messageText, defaultValue){
-		message("open modal prompt");
-		return new Promise(function(resolve, reject){
+		logging.message("open modal prompt");
+		return new Promise(function(resolve){
 			document.body.innerHTML = "";
 			document.body.className = "modal";
 			document.body.appendChild(document.createTextNode(messageText));
@@ -101,7 +101,7 @@
 			button.textContent = "OK";
 			button.addEventListener("click", function(){
 				resolve(input.value);
-				message("modal prompt closed with value", input.value);
+				logging.message("modal prompt closed with value", input.value);
 			});
 			stack.appendChild(button);
 			document.body.append(stack);

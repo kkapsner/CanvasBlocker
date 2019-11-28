@@ -1,40 +1,68 @@
 {
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es6": true,
-        "webextensions": true
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "sourceType": "script"
-    },
-    "extends": "eslint:recommended",
-    "globals": {
-        "exportFunction": false
-    },
-    "rules": {
-        "brace-style": ["error", "stroustrup", {"allowSingleLine": true}],
-        "comma-spacing": ["error", { "before": false, "after": true }],
-        "constructor-super": "warn",
-        "eqeqeq": "error",
-        "max-len": ["warn", {"code": 120, "tabWidth": 4}],
-        "max-lines": ["warn", {"max": 500, "skipBlankLines": true, "skipComments": true}],
-        "max-params": ["warn", 4],
-        "no-const-assign": "warn",
-        "no-this-before-super": "warn",
-        "no-undef": "error",
-        "no-unreachable": "warn",
-        "no-unused-vars": "off",
-        "no-trailing-spaces": ["error", {"skipBlankLines": true}],
-        "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
-        "indent": ["error", "tab", {"SwitchCase": 1}],
-        "space-in-parens": ["error", "never"],
-        "valid-typeof": "warn",
-        "quotes": ["error", "double"],
-        "semi": ["error", "always"],
-        "strict": ["error", "function"]
-    }
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"webextensions": true
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "script"
+	},
+	"plugins": ["promise", "eslint-comments"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:promise/recommended",
+		"plugin:eslint-comments/recommended"
+	],
+	"globals": {
+		"exportFunction": false
+	},
+	"rules": {
+		"brace-style": ["error", "stroustrup", {"allowSingleLine": true}],
+		"comma-spacing": ["error", { "before": false, "after": true }],
+		"complexity": ["warn", 20],
+		"constructor-super": "warn",
+		"eqeqeq": "error",
+		"eslint-comments/no-use": ["error", {"allow": ["eslint-disable-next-line"]}],
+		"indent": ["error", "tab", {"SwitchCase": 1}],
+		"max-depth": ["warn", 4],
+		"max-len": ["warn", {"code": 120, "tabWidth": 4}],
+		"max-lines-per-function": ["warn", {"max": 80,"skipBlankLines": true, "skipComments": true}],
+		"max-lines": ["warn", {"max": 500, "skipBlankLines": true, "skipComments": true}],
+		"max-params": ["warn", 4],
+		"no-console": "error",
+		"no-const-assign": "error",
+		"no-inner-declarations": "warn",
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"no-prototype-builtins": "off",
+		"no-this-before-super": "warn",
+		"no-trailing-spaces": ["error", {"skipBlankLines": true}],
+		"no-undef": "error",
+		"no-unreachable": "warn",
+		"no-unused-vars": "off",
+		"no-use-before-define": ["error", {"functions": false}],
+		"no-var": "error",
+		"quotes": ["error", "double"],
+		"semi": ["error", "always"],
+		"space-in-parens": ["error", "never"],
+		"strict": ["error", "function"],
+		"valid-typeof": "warn"
+	},
+	"overrides": [
+		{
+			"files": ["detectionTest.js", "modifiedCanvasAPI.js", "options.js", "settingsDisplay.js"],
+			"rules": {
+				"max-lines": "off"
+			}
+		},
+		{
+			"files": ["test/*.js"],
+			"rules": {
+				"no-var": "off"
+			}
+		}
+	]
 }

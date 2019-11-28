@@ -11,12 +11,58 @@
 	const searchParameters = new URLSearchParams(window.location.search);
 	
 	
-	var title = document.createElement("h1");
+	const title = document.createElement("h1");
 	title.className = "title";
 	title.textContent = extension.getTranslation("whitelist_inspection_title");
 	document.body.appendChild(title);
 	
 	document.querySelector("head title").textContent = title.textContent;
+	
+		
+	const whitelistSettings = [
+		{
+			title: extension.getTranslation("whitelist_all_apis"),
+			name: "blockMode",
+			whitelistValue: "allow",
+			protectedValue: "fake"
+		},
+		{
+			title: extension.getTranslation("section_canvas-api"),
+			name: "protectedCanvasPart",
+			whitelistValue: "nothing",
+			protectedValue: "readout"
+		},
+		{
+			title: extension.getTranslation("section_audio-api"),
+			name: "protectAudio",
+			whitelistValue: false,
+			protectedValue: true
+		},
+		{
+			title: extension.getTranslation("section_history-api"),
+			name: "historyLengthThreshold",
+			whitelistValue: 10000,
+			protectedValue: 2
+		},
+		{
+			title: extension.getTranslation("section_window-api"),
+			name: "protectWindow",
+			whitelistValue: false,
+			protectedValue: true
+		},
+		{
+			title: extension.getTranslation("section_DOMRect-api"),
+			name: "protectDOMRect",
+			whitelistValue: false,
+			protectedValue: true
+		},
+		{
+			title: extension.getTranslation("section_navigator-api"),
+			name: "protectNavigator",
+			whitelistValue: false,
+			protectedValue: true
+		},
+	];
 	
 	settings.onloaded(function(){
 		const sets = settingContainers.urlContainer.get();
@@ -46,51 +92,6 @@
 				setSelect.selectedIndex = setSelect.options.length - 1;
 			}
 		}
-		
-		const whitelistSettings = [
-			{
-				title: extension.getTranslation("whitelist_all_apis"),
-				name: "blockMode",
-				whitelistValue: "allow",
-				protectedValue: "fake"
-			},
-			{
-				title: extension.getTranslation("section_canvas-api"),
-				name: "protectedCanvasPart",
-				whitelistValue: "nothing",
-				protectedValue: "readout"
-			},
-			{
-				title: extension.getTranslation("section_audio-api"),
-				name: "protectAudio",
-				whitelistValue: false,
-				protectedValue: true
-			},
-			{
-				title: extension.getTranslation("section_history-api"),
-				name: "historyLengthThreshold",
-				whitelistValue: 10000,
-				protectedValue: 2
-			},
-			{
-				title: extension.getTranslation("section_window-api"),
-				name: "protectWindow",
-				whitelistValue: false,
-				protectedValue: true
-			},
-			{
-				title: extension.getTranslation("section_DOMRect-api"),
-				name: "protectDOMRect",
-				whitelistValue: false,
-				protectedValue: true
-			},
-			{
-				title: extension.getTranslation("section_navigator-api"),
-				name: "protectNavigator",
-				whitelistValue: false,
-				protectedValue: true
-			},
-		];
 		
 		const table = document.createElement("table");
 		whitelistSettings.forEach(function(setting){

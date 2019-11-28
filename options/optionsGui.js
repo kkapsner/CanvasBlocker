@@ -4,7 +4,7 @@
 (function(){
 	"use strict";
 
-	var scope;
+	let scope;
 	if ((typeof exports) !== "undefined"){
 		scope = exports;
 	}
@@ -16,15 +16,15 @@
 	const logging = require("../lib/logging");
 
 	function createDescription(setting){
-		var c = document.createElement("div");
+		const c = document.createElement("div");
 		c.className = "content";
 
-		var title = document.createElement("span");
+		const title = document.createElement("span");
 		title.className = "title";
 		title.textContent = extension.getTranslation(setting.name + "_title");
 		c.appendChild(title);
 
-		var descriptionText = extension.getTranslation(setting.name + "_description");
+		let descriptionText = extension.getTranslation(setting.name + "_description");
 		if (setting.urlSpecific){
 			const urlSpecificDescription = extension.getTranslation(setting.name + "_urlSpecific");
 			if (urlSpecificDescription){
@@ -32,11 +32,11 @@
 			}
 		}
 		if (descriptionText){
-			var info = document.createElement("div");
+			const info = document.createElement("div");
 			info.className = "info";
 			c.appendChild(info);
 
-			var description = document.createElement("div");
+			const description = document.createElement("div");
 			description.className = "description";
 			description.textContent = descriptionText;
 			info.appendChild(description);
@@ -45,10 +45,10 @@
 	}
 
 	function createSelect(setting){
-		var select = document.createElement("select");
+		const select = document.createElement("select");
 		select.dataset.type = typeof setting.defaultValue;
 		setting.options.forEach(function(value){
-			var option = document.createElement("option");
+			const option = document.createElement("option");
 			if (typeof value === typeof setting.defaultValue){
 				option.value = value;
 				if (setting.defaultValue === value){
@@ -65,7 +65,7 @@
 		return select;
 	}
 	
-	var inputTypes = {
+	const inputTypes = {
 		number: {
 			input: function(value){
 				const input = document.createElement("input");
@@ -121,10 +121,192 @@
 		},
 		object: false
 	};
+	
+	function createKeyInput(setting, url){
+		const input = document.createElement("table");
+		let inSection = false;
+		setting.keys.forEach(function(key){
+			if (setting.display.displayedSection){
+				if (typeof key === "object"){
+					if (key.level === 1){
+						inSection = key.name === setting.display.displayedSection;
+						return;
+					}
+				}
+				if (!inSection){
+					return;
+				}
+			}
+			let row = document.createElement("tr");
+			if (typeof key === "object"){
+				let cell = document.createElement("td");
+				cell.colSpan = 2;
+				let h = document.createElement("h" + (2 + (key.level || 1)));
+				h.textContent = key.message? extension.getTranslation(key.message): key.name;
+				cell.appendChild(h);
+				row.appendChild(cell);
+				input.appendChild(row);
+				return;
+			}
+			
+			let nameCell = document.createElement("td");
+			nameCell.textContent = setting.display.replaceKeyPattern?
+				key.replace(setting.display.replaceKeyPattern, ""):
+				key;
+			row.appendChild(nameCell);
+			
+			let keyType = inputTypes[typeof setting.defaultKeyValue];
+			let keyInput = keyType.input(setting.defaultKeyValue);
+			
+			let inputCell = document.createElement("td");
+			inputCell.appendChild(keyInput);
+			row.appendChild(inputCell);
+			
+			setting.on(function(){
+				const container = setting.get(url);
+				keyType.updateCallback(
+					keyInput,
+					container && container.hasOwnProperty(key)?
+						container[key]:
+						setting.defaultKeyValue,
+					url
+				);
+			});
+			keyInput.addEventListener("change", function(){
+				const value = keyType.getValue(keyInput);
+				let container = setting.get(url);
+				if (!container){
+					container = setting.defaultValue;
+				}
+				container[key] = value;
+				if (setting.set(container, url)){
+					logging.message("changed setting", setting.name, "(", key, "):", value);
+				}
+				else {
+					container = setting.get(url);
+					keyType.updateCallback(
+						keyInput,
+						container && container.hasOwnProperty(key)?
+							container[key]:
+							setting.defaultKeyValue,
+						url
+					);
+					logging.message("setting", setting.name, "(", key, ") was not changed");
+				}
+			});
+			input.appendChild(row);
+		});
+		return input;
+	}
+	
+	function getPopulateUrlTable(setting, type, body){
+		return function populateUrlTable({newValue}){
+			body.innerHTML = "";
+			newValue.forEach(function(entry){
+				let row = document.createElement("tr");
+				let urlCell = document.createElement("td");
+				urlCell.classList.add("url");
+				urlCell.addEventListener("click", function(){
+					const input = document.createElement("input");
+					input.classList.add("urlInput");
+					input.style.width = urlCell.clientWidth + "px";
+					input.style.height = urlCell.clientHeight + "px";
+					urlCell.innerHTML = "";
+					urlCell.appendChild(input);
+					input.title = extension.getTranslation("inputURL");
+					input.value = entry.url;
+					input.focus();
+					input.addEventListener("blur", function(){
+						const url = input.value.trim();
+						if (url){
+							entry.url = url;
+							setting.urlContainer.refresh();
+						}
+						urlCell.removeChild(input);
+						urlCell.textContent = entry.url;
+					});
+				});
+				urlCell.textContent = entry.url;
+				row.appendChild(urlCell);
+				let input = createInput(setting, entry.url);
+				type.updateCallback(input, setting.get(entry.url));
+				if (!entry.hasOwnProperty(setting.name)){
+					input.classList.add("notSpecifiedForUrl");
+				}
+				let inputCell = document.createElement("td");
+				inputCell.appendChild(input);
+				row.appendChild(inputCell);
+				let clearCell = document.createElement("td");
+				let clearButton = document.createElement("button");
+				clearButton.className = "reset";
+				clearButton.textContent = "\xD7";
+				clearButton.addEventListener("click", function(){
+					setting.reset(entry.url);
+				});
+				clearCell.appendChild(clearButton);
+				row.appendChild(clearCell);
+				body.appendChild(row);
+			});
+		};
+	}
+	function createUrlSpecificInput(setting, input, type){
+		const container = document.createElement("div");
+		container.className = "urlValues " + (setting.getExpand()? "expanded": "collapsed");
+		container.appendChild(input);
+		const collapser = document.createElement("button");
+		collapser.classList.add("collapser");
+		container.appendChild(collapser);
+		collapser.addEventListener("click", function(){
+			setting.setExpand(!setting.getExpand());
+		});
+		setting.onExpandChange(function(value){
+			container.classList[value? "remove": "add"]("collapsed");
+			container.classList[value? "add": "remove"]("expanded");
+		});
+		let urlTable = document.createElement("table");
+		let caption = document.createElement("caption");
+		caption.textContent = extension.getTranslation(setting.urlContainer.name + "_title");
+		urlTable.appendChild(caption);
+		let body = document.createElement("tbody");
+		urlTable.appendChild(body);
+		let foot = document.createElement("tfoot");
+		let footRow = document.createElement("tr");
+		let footCell = document.createElement("td");
+		footCell.colSpan = 3;
+		let newInput = document.createElement("input");
+		newInput.className = "inputURL";
+		newInput.title = extension.getTranslation("inputURL");
+		const addURLSetting = function(){
+			const url = newInput.value.trim();
+			if (url){
+				setting.set(setting.get(url), url);
+				newInput.value = "";
+				newInput.focus();
+			}
+		};
+		newInput.addEventListener("keypress", function(event){
+			if ([10, 13].indexOf(event.keyCode) !== -1){
+				addURLSetting();
+			}
+		});
+		footCell.appendChild(newInput);
+		let footPlus = document.createElement("button");
+		footPlus.classList.add("add");
+		footPlus.textContent = "+";
+		footPlus.addEventListener("click", addURLSetting);
+		footCell.appendChild(footPlus);
+		footRow.appendChild(footCell);
+		foot.appendChild(footRow);
+		urlTable.appendChild(foot);
+		container.appendChild(urlTable);
 
+		setting.urlContainer.on(getPopulateUrlTable(setting, type, body));
+		return container;
+	}
+	
 	function createInput(setting, url = ""){
-		var type = inputTypes[typeof setting.defaultValue];
-		var input;
+		const type = inputTypes[typeof setting.defaultValue];
+		let input;
 		if (setting.options){
 			input = createSelect(setting);
 		}
@@ -136,7 +318,7 @@
 		if (type){
 			setting.on(function(){type.updateCallback(input, setting.get(url));}, url);
 			input.addEventListener("change", function(){
-				var value = type.getValue(input);
+				const value = type.getValue(input);
 				if (setting.set(value, url)){
 					logging.message("changed setting", setting.name, ":", value);
 				}
@@ -147,211 +329,41 @@
 			});
 		}
 		else if (setting.keys){
-			input = document.createElement("table");
-			let inSection = false;
-			setting.keys.forEach(function(key){
-				if (setting.display.displayedSection){
-					if (typeof key === "object"){
-						if (key.level === 1){
-							inSection = key.name === setting.display.displayedSection;
-							return;
-						}
-					}
-					if (!inSection){
-						return;
-					}
-				}
-				let row = document.createElement("tr");
-				if (typeof key === "object"){
-					let cell = document.createElement("td");
-					cell.colSpan = 2;
-					let h = document.createElement("h" + (2 + (key.level || 1)));
-					h.textContent = key.message? extension.getTranslation(key.message): key.name;
-					cell.appendChild(h);
-					row.appendChild(cell);
-					input.appendChild(row);
-					return;
-				}
-				
-				let nameCell = document.createElement("td");
-				nameCell.textContent = setting.display.replaceKeyPattern?
-					key.replace(setting.display.replaceKeyPattern, ""):
-					key;
-				row.appendChild(nameCell);
-				
-				let keyType = inputTypes[typeof setting.defaultKeyValue];
-				let keyInput = keyType.input(setting.defaultKeyValue);
-				
-				let inputCell = document.createElement("td");
-				inputCell.appendChild(keyInput);
-				row.appendChild(inputCell);
-				
-				setting.on(function(){
-					var container = setting.get(url);
-					keyType.updateCallback(
-						keyInput,
-						container && container.hasOwnProperty(key)?
-							container[key]:
-							setting.defaultKeyValue,
-						url
-					);
-				});
-				keyInput.addEventListener("change", function(){
-					var value = keyType.getValue(keyInput);
-					var container = setting.get(url);
-					if (!container){
-						container = setting.defaultValue;
-					}
-					container[key] = value;
-					if (setting.set(container, url)){
-						logging.message("changed setting", setting.name, "(", key, "):", value);
-					}
-					else {
-						container = setting.get(url);
-						keyType.updateCallback(
-							keyInput,
-							container && container.hasOwnProperty(key)?
-								container[key]:
-								setting.defaultKeyValue,
-							url
-						);
-						logging.message("setting", setting.name, "(", key, ") was not changed");
-					}
-				});
-				input.appendChild(row);
-			});
+			input = createKeyInput(setting, url);
 		}
 		
 		if (setting.urlSpecific && url === ""){
-			let container = document.createElement("div");
-			container.className = "urlValues " + (setting.getExpand()? "expanded": "collapsed");
-			container.appendChild(input);
-			var collapser = document.createElement("button");
-			collapser.classList.add("collapser");
-			container.appendChild(collapser);
-			collapser.addEventListener("click", function(){
-				setting.setExpand(!setting.getExpand());
-			});
-			setting.onExpandChange(function(value){
-				container.classList[value? "remove": "add"]("collapsed");
-				container.classList[value? "add": "remove"]("expanded");
-			});
-			let urlTable = document.createElement("table");
-			let caption = document.createElement("caption");
-			caption.textContent = extension.getTranslation(setting.urlContainer.name + "_title");
-			urlTable.appendChild(caption);
-			let body = document.createElement("tbody");
-			urlTable.appendChild(body);
-			let foot = document.createElement("tfoot");
-			let footRow = document.createElement("tr");
-			let footCell = document.createElement("td");
-			footCell.colSpan = 3;
-			let newInput = document.createElement("input");
-			newInput.className = "inputURL";
-			newInput.title = extension.getTranslation("inputURL");
-			const addURLSetting = function(){
-				var url = newInput.value.trim();
-				if (url){
-					setting.set(setting.get(url), url);
-					newInput.value = "";
-					newInput.focus();
-				}
-			};
-			newInput.addEventListener("keypress", function(event){
-				if ([10, 13].indexOf(event.keyCode) !== -1){
-					addURLSetting();
-				}
-			});
-			footCell.appendChild(newInput);
-			let footPlus = document.createElement("button");
-			footPlus.classList.add("add");
-			footPlus.textContent = "+";
-			footPlus.addEventListener("click", addURLSetting);
-			footCell.appendChild(footPlus);
-			footRow.appendChild(footCell);
-			foot.appendChild(footRow);
-			urlTable.appendChild(foot);
-			container.appendChild(urlTable);
-
-			setting.urlContainer.on(function({newValue}){
-				body.innerHTML = "";
-				newValue.forEach(function(entry){
-					let row = document.createElement("tr");
-					let urlCell = document.createElement("td");
-					urlCell.classList.add("url");
-					urlCell.addEventListener("click", function(){
-						var input = document.createElement("input");
-						input.classList.add("urlInput");
-						input.style.width = urlCell.clientWidth + "px";
-						input.style.height = urlCell.clientHeight + "px";
-						urlCell.innerHTML = "";
-						urlCell.appendChild(input);
-						input.title = extension.getTranslation("inputURL");
-						input.value = entry.url;
-						input.focus();
-						input.addEventListener("blur", function(){
-							var url = input.value.trim();
-							if (url){
-								entry.url = url;
-								setting.urlContainer.refresh();
-							}
-							urlCell.removeChild(input);
-							urlCell.textContent = entry.url;
-						});
-					});
-					urlCell.textContent = entry.url;
-					row.appendChild(urlCell);
-					let input = createInput(setting, entry.url);
-					type.updateCallback(input, setting.get(entry.url));
-					if (!entry.hasOwnProperty(setting.name)){
-						input.classList.add("notSpecifiedForUrl");
-					}
-					let inputCell = document.createElement("td");
-					inputCell.appendChild(input);
-					row.appendChild(inputCell);
-					let clearCell = document.createElement("td");
-					let clearButton = document.createElement("button");
-					clearButton.className = "reset";
-					clearButton.textContent = "\xD7";
-					clearButton.addEventListener("click", function(){
-						setting.reset(entry.url);
-					});
-					clearCell.appendChild(clearButton);
-					row.appendChild(clearCell);
-					body.appendChild(row);
-				});
-			});
-			return container;
+			return createUrlSpecificInput(setting, input, type);
 		}
 		return input || document.createElement("span");
 	}
 
 	function createButton(setting){
-		var button = document.createElement("button");
+		const button = document.createElement("button");
 		button.textContent = extension.getTranslation(setting.name + "_label");
 		button.addEventListener("click", setting.action);
 		return button;
 	}
 
 	function createInteraction(setting){
-		var c = document.createElement("div");
+		const c = document.createElement("div");
 		c.className = "content";
 
-		var interaction;
+		let interaction;
 		if (setting.action){
 			interaction = createButton(setting);
 		}
 		else if (setting.actions){
 			interaction = document.createElement("span");
 			setting.actions.forEach(function(action){
-				var button = createButton(action);
+				const button = createButton(action);
 				interaction.appendChild(button);
 			});
 		}
 		else if (setting.inputs){
 			interaction = document.createElement("span");
 			setting.inputs.forEach(function(inputSetting){
-				var input = createInput(inputSetting);
+				const input = createInput(inputSetting);
 				input.classList.add("multiple" + setting.inputs.length);
 				interaction.appendChild(input);
 			});
@@ -369,10 +381,10 @@
 	}
 	
 	function createHide(setting){
-		var label = document.createElement("label");
+		const label = document.createElement("label");
 		label.className = "content hideContent";
 		label.title = extension.getTranslation("hideSetting");
-		var input = document.createElement("input");
+		const input = document.createElement("input");
 		input.type = "checkbox";
 		input.className = "hide";
 		input.checked = setting.getHide();
@@ -384,26 +396,26 @@
 		});
 		
 		label.appendChild(input);
-		var display = document.createElement("span");
+		const display = document.createElement("span");
 		display.className = "display";
 		label.appendChild(display);
 		return label;
 	}
 	
 	function createSettingRow(setting){
-		var tr = document.createElement("tr");
+		const tr = document.createElement("tr");
 		tr.className = "settingRow";
 		
-		var hide = document.createElement("td");
+		const hide = document.createElement("td");
 		hide.className = "hideColumn";
 		hide.appendChild(createHide(setting));
 		tr.appendChild(hide);
 
-		var left = document.createElement("td");
+		const left = document.createElement("td");
 		left.appendChild(createDescription(setting));
 		tr.appendChild(left);
 
-		var right = document.createElement("td");
+		const right = document.createElement("td");
 		right.appendChild(createInteraction(setting));
 		tr.appendChild(right);
 
@@ -434,7 +446,7 @@
 		displayHiddenDescription.appendChild(createDescription(displayHidden));
 		displayHiddenRow.appendChild(displayHiddenDescription);
 
-		var displayHiddenInteraction = document.createElement("td");
+		const displayHiddenInteraction = document.createElement("td");
 		displayHiddenInteraction.appendChild(createInteraction(displayHidden));
 		displayHiddenRow.appendChild(displayHiddenInteraction);
 		tHead.appendChild(displayHiddenRow);

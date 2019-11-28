@@ -34,6 +34,7 @@ function addConsistencyTest(title, callback){
 			consistent.textContent = "computing";
 			callback().then(function(value){
 				consistent.textContent = value? "OK": "not OK";
+				return;
 			}).catch(function(error){
 				consistent.classList.add("failed");
 				if (Array.isArray(error)){
@@ -141,6 +142,7 @@ function addResolutionTest(title, callback){
 				number.textContent = "computing";
 				callback(type).then(function(value){
 					number.textContent = value;
+					return;
 				}).catch(function(error){
 					number.classList.add("failed");
 					number.textContent = error;
@@ -214,15 +216,14 @@ function searchValue(tester){
 					return minValue;
 				}
 				else {
+					// eslint-disable-next-line promise/no-nesting
 					return tester(maxValue).then(function(testResult){
 						if (testResult.isEqual){
 							return maxValue;
 						}
 						else {
-							return Promise.reject(
-								"Search could not find exact value." +
-								" It's between " + minValue + " and " + maxValue + "."
-							);
+							throw "Search could not find exact value." +
+								" It's between " + minValue + " and " + maxValue + ".";
 						}
 					});
 				}

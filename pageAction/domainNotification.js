@@ -15,7 +15,7 @@
 	const addToContainer = function(){
 		const container = document.getElementById("prints");
 		container.querySelector("li").textContent = extension.getTranslation("pleaseWait");
-		var first = true;
+		let first = true;
 
 		return function addToContainer(domainNotification){
 			if (first){
@@ -105,10 +105,10 @@
 		this.textNode = function(){
 			return node;
 		};
-		var messageParts = extension.getTranslation(this.messageId).split(/\{url\}/g);
+		const messageParts = extension.getTranslation(this.messageId).split(/\{url\}/g);
 		node.appendChild(document.createTextNode(messageParts.shift()));
 		while (messageParts.length){
-			var urlSpan = document.createElement("span");
+			const urlSpan = document.createElement("span");
 			urlSpan.textContent = this.domain || extension.getTranslation("localFile");
 			urlSpan.className = "url hasHiddenActions";
 			urlSpan.appendChild(this.actionsNode());
@@ -116,7 +116,7 @@
 			node.appendChild(document.createTextNode(messageParts.shift()));
 		}
 		node.appendChild(document.createTextNode(" ("));
-		var countSpan = document.createElement("span");
+		const countSpan = document.createElement("span");
 		countSpan.className = "count";
 		countSpan.textContent = "0";
 		node.appendChild(countSpan);
@@ -168,7 +168,7 @@
 	const domains = new Map();
 	const domainNotification = function(url, messageId, count = 0, api = ""){
 		const domain = url.hostname;
-		var domainNotification = domains.get(domain + messageId);
+		let domainNotification = domains.get(domain + messageId);
 		if (!domainNotification){
 			domainNotification = new DomainNotification(url, messageId, count, api);
 			domains.set(domain + messageId, domainNotification);

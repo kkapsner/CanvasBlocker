@@ -12,93 +12,103 @@
 	const searchParameters = new URLSearchParams(window.location.search);
 	require("./theme").init("presets");
 	
+	function buildPresetSettingGui(setting, value){
+		function valueToText(value){
+			switch (typeof value){
+				case "string":
+					return extension.getTranslation(`${setting}_options.${value}`);
+				case "boolean":
+					return value? "\u2713": "\u00D7";
+				default:
+					return value.toString();
+			}
+		}
+		
+		const container = document.createElement("li");
+		container.textContent = extension.getTranslation(`${setting}_title`) + ": ";
+		if ((typeof value) === "object"){
+			const urlValues = document.createElement("ul");
+			Object.keys(value).map(function(url){
+				const container = document.createElement("li");
+				container.className = "urlValue";
+				container.textContent = url + ": " +
+					valueToText(value[url]) +
+					" (" + valueToText(settings.get(setting, url)) +")";
+				return container;
+				
+			}).forEach(function(node){
+				urlValues.appendChild(node);
+			});
+			container.appendChild(urlValues);
+		}
+		else {
+			container.appendChild(document.createTextNode(
+				`${valueToText(value)} (${valueToText(settings.get(setting))})`
+			));
+		}
+		
+		return container;
+	}
+	
+	function buildPresetGui(presetName, preset){
+		const container = document.createElement("div");
+		container.className = "preset " + presetName;
+		const title = document.createElement("h1");
+		title.className = "title";
+		title.textContent = extension.getTranslation(`preset_${presetName}_title`);
+		container.appendChild(title);
+		
+		const description = document.createElement("div");
+		description.className = "description";
+		description.textContent = extension.getTranslation(`preset_${presetName}_description`);
+		container.appendChild(description);
+		
+		const settingsList = document.createElement("ul");
+		settingsList.className = "settings";
+		container.appendChild(settingsList);
+		
+		Object.keys(preset).map(function(settingName){
+			return buildPresetSettingGui(settingName, preset[settingName]);
+		}).forEach(function(node){
+			settingsList.appendChild(node);
+		});
+		
+		if (settingsList.childNodes.length){
+			const button = document.createElement("button");
+			button.textContent = extension.getTranslation("apply");
+			button.addEventListener("click", function(){
+				Promise.all(Object.keys(preset).map(function(settingName){
+					const value = preset[settingName];
+					if ((typeof value) === "object"){
+						return Promise.all(Object.keys(value).map(function(url){
+							return settings.set(settingName, value[url], url);
+						}));
+					}
+					else {
+						return settings.set(settingName, value);
+					}
+				})).then(function(){
+					window.location.reload();
+					return;
+				}).catch(function(error){
+					logging.warning("Unable to apply preset:", error);
+				});
+			});
+			container.appendChild(button);
+		}
+		
+		return container;
+	}
+	
 	Promise.all([
 		settings.loaded,
 		fetch("presets.json").then(function(data){
 			return data.json();
 		})
+	// eslint-disable-next-line no-unused-vars
 	]).then(function([settingsLoaded, presets]){
 		Object.keys(presets).map(function(presetName){
-			const preset = presets[presetName];
-			const container = document.createElement("div");
-			container.className = "preset " + presetName;
-			const title = document.createElement("h1");
-			title.className = "title";
-			title.textContent = extension.getTranslation(`preset_${presetName}_title`);
-			container.appendChild(title);
-			
-			const description = document.createElement("div");
-			description.className = "description";
-			description.textContent = extension.getTranslation(`preset_${presetName}_description`);
-			container.appendChild(description);
-			
-			const settingsList = document.createElement("ul");
-			settingsList.className = "settings";
-			container.appendChild(settingsList);
-			
-			Object.keys(preset).map(function(settingName){
-				function valueToText(value){
-					switch (typeof value){
-						case "string":
-							return extension.getTranslation(`${settingName}_options.${value}`);
-						case "boolean":
-							return value? "\u2713": "\u00D7";
-						default:
-							return value.toString();
-					}
-				}
-				
-				const value = preset[settingName];
-				const container = document.createElement("li");
-				container.textContent = extension.getTranslation(`${settingName}_title`) + ": ";
-				if ((typeof value) === "object"){
-					const urlValues = document.createElement("ul");
-					Object.keys(value).map(function(url){
-						var container = document.createElement("li");
-						container.className = "urlValue";
-						container.textContent = url + ": " +
-							valueToText(value[url]) +
-							" (" + valueToText(settings.get(settingName, url)) +")";
-						return container;
-						
-					}).forEach(function(node){
-						urlValues.appendChild(node);
-					});
-					container.appendChild(urlValues);
-				}
-				else {
-					container.appendChild(document.createTextNode(
-						`${valueToText(value)} (${valueToText(settings.get(settingName))})`
-					));
-				}
-				
-				return container;
-			}).forEach(function(node){
-				settingsList.appendChild(node);
-			});
-			
-			if (settingsList.childNodes.length){
-				const button = document.createElement("button");
-				button.textContent = extension.getTranslation("apply");
-				button.addEventListener("click", function(){
-					Promise.all(Object.keys(preset).map(function(settingName){
-						const value = preset[settingName];
-						if ((typeof value) === "object"){
-							return Promise.all(Object.keys(value).map(function(url){
-								return settings.set(settingName, value[url], url);
-							}));
-						}
-						else {
-							return settings.set(settingName, value);
-						}
-					})).then(function(){
-						window.location.reload();
-					});
-				});
-				container.appendChild(button);
-			}
-			
-			return container;
+			return buildPresetGui(presetName, presets[presetName]);
 		}).forEach(function(node){
 			document.body.appendChild(node);
 		});
@@ -131,6 +141,9 @@
 				document.body.style.fontSize = fontSize + "px";
 			}
 		}
+		return;
+	}).catch(function(error){
+		logging.warning("Unable to setup presets:", error);
 	});
 	
 	document.querySelector("head title").textContent = extension.getTranslation("presets_title");

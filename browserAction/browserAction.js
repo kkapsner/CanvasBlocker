@@ -11,7 +11,7 @@
 	logging.message("Opened browser action");
 	
 	settings.onloaded(function(){
-		var actions = document.getElementById("actions");
+		const actions = document.getElementById("actions");
 		
 		[
 			{
@@ -54,10 +54,10 @@
 				logging.verbose("Hiding advanced action");
 				return;
 			}
-			var actionButton = document.createElement("button");
+			const actionButton = document.createElement("button");
 			actionButton.className = "action";
 			
-			var icon = document.createElement("span");
+			const icon = document.createElement("span");
 			icon.className = "icon";
 			icon.style.maskImage = "url(" + action.icon + ")";
 			
@@ -72,7 +72,7 @@
 			actions.appendChild(actionButton);
 		});
 		
-		var search = document.createElement("input");
+		const search = document.createElement("input");
 		search.placeholder = extension.getTranslation("search");
 		search.className = "search action";
 		actions.appendChild(search);

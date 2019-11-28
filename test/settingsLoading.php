@@ -42,8 +42,8 @@
 		try {
 			var firstFingerprint = fingerPrint();
 		}
-		catch (e){
-			console.log(new Date(), e);
+		catch (error){
+			console.log(new Date(), error);
 			var firstFingerprint = false;
 		}
 	</script>

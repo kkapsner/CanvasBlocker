@@ -18,7 +18,7 @@
 	require("./theme").init("options");
 	const modal = require("../lib/modal");
 	
-	var callbacks = {
+	const callbacks = {
 		openNavigatorSettings: function(){
 			logging.verbose("open navigator settings");
 			window.open("navigator.html", "_blank");
@@ -36,7 +36,7 @@
 		},
 		clearPersistentRndForContainer: function(){
 			browser.contextualIdentities.query({}).then(function(identities){
-				modal.select(
+				return modal.select(
 					extension.getTranslation("clearPersistentRndForContainer_title"),
 					identities.map(function(identity){
 						return {
@@ -44,9 +44,12 @@
 							object: identity
 						};
 					})
-				).then(function(identity){
-					extension.message.send({"canvasBlocker-clear-container-rnd": identity.cookieStoreId});
-				}, ()=>{});
+				);
+			}).then(function(identity){
+				extension.message.send({"canvasBlocker-clear-container-rnd": identity.cookieStoreId});
+				return;
+			}).catch(function(error){
+				logging.warning("Unable to clear persistent rnd for container:", error);
 			});
 		},
 		inspectSettings: function(){
@@ -73,7 +76,7 @@
 			link.target = "_blank";
 			const now = new Date();
 			function format(number, digits){
-				var str = number.toFixed(0);
+				const str = number.toFixed(0);
 				return "0".repeat(digits - str.length) + str;
 			}
 			link.download = "CanvasBlocker-settings_" +
@@ -99,13 +102,12 @@
 				input.type = "file";
 				input.addEventListener("change", function(){
 					if (this.files.length){
-						var file = this.files[0];
-						var reader = new FileReader();
-						reader.onload = function(result){
+						const reader = new FileReader();
+						reader.onload = function(){
 							resolve(this.result);
 						};
-						reader.onerror = function(err){
-							reject(err);
+						reader.onerror = function(error){
+							reject(error);
 						};
 						reader.readAsText(this.files[0]);
 					}
@@ -134,8 +136,9 @@
 				keys.forEach(function(key){
 					settings[key] = json[key];
 				});
-			}).catch(function(err){
-				alert(err);
+				return;
+			}).catch(function(error){
+				alert(error);
 			});
 		},
 		resetSettings: function(){
@@ -149,6 +152,9 @@
 				if (clear){
 					browser.storage.local.clear();
 				}
+				return;
+			}).catch(function(error){
+				logging.warning("Unable to reset settings:", error);
 			});
 		}
 	};
@@ -224,22 +230,25 @@
 			linkDiv.appendChild(link);
 			head.appendChild(linkDiv);
 		}
+		return;
+	}).catch(function(error){
+		logging.warning("Unable to identify tab:", error);
 	});
 	
-	var groupTabs = document.createElement("div");
+	const groupTabs = document.createElement("div");
 	groupTabs.classList = "groupTabs";
 	document.body.appendChild(groupTabs);
 	
-	var groups = document.createElement("ul");
+	const groups = document.createElement("ul");
 	groups.className = "groups";
 	groupTabs.appendChild(groups);
 	
-	var table = document.createElement("table");
+	const table = document.createElement("table");
 	table.className = "settings " + (settings.displayDescriptions? "display": "hide") + "Descriptions";
 	settings.on("displayDescriptions", function(){
 		table.className = "settings " + (settings.displayDescriptions? "display": "hide") + "Descriptions";
 	});
-	var tableContainer = document.createElement("div");
+	const tableContainer = document.createElement("div");
 	tableContainer.classList = "tabContents";
 	groupTabs.appendChild(tableContainer);
 	
@@ -276,41 +285,6 @@
 	});
 	
 	const {hide: hideContainer, expand: expandContainer} = settings.getContainers();
-	
-	const addGroup = function addGroup(groupDefinition){
-		const sections = [];
-		const group = {
-			select: function(){
-				groups.querySelectorAll(".selected").forEach(function(group){
-					group.classList.remove("selected");
-				});
-				table.querySelectorAll("tbody").forEach(function(section){
-					section.classList.remove("selectedGroup");
-				});
-				sections.forEach(function(section){
-					section.node.classList.add("selectedGroup");
-				});
-				name.classList.add("selected");
-			},
-			addSection: function(sectionDefinition){
-				const section = addSection(sectionDefinition.name);
-				sections.push(section);
-				return section;
-			}
-		};
-		
-		const groupIndex = groups.childNodes.length;
-		const name = document.createElement("li");
-		name.textContent = extension.getTranslation("group_" + groupDefinition.name);
-		name.className = "groupName group" + groupIndex;
-		
-		
-		name.addEventListener("click", group.select);
-		
-		groups.appendChild(name);
-		
-		return group;
-	};
 	
 	const addSection = function addSection(name){
 		const body = document.createElement("tbody");
@@ -356,9 +330,9 @@
 			},
 			updateDisplay: function(){
 				const searchMode = document.body.classList.contains("searching");
-				var anyVisible = false;
+				let anyVisible = false;
 				rows.forEach(function(row){
-					var isHidden = row.classList.contains("hidden");
+					const isHidden = row.classList.contains("hidden");
 					if (!isHidden){
 						if (searchMode){
 							if (!row.classList.contains("found")){
@@ -382,13 +356,160 @@
 		return section;
 	};
 	
+	const addGroup = function addGroup(groupDefinition){
+		const sections = [];
+		
+		const groupIndex = groups.childNodes.length;
+		const name = document.createElement("li");
+		name.textContent = extension.getTranslation("group_" + groupDefinition.name);
+		name.className = "groupName group" + groupIndex;
+		
+		const group = {
+			select: function(){
+				groups.querySelectorAll(".selected").forEach(function(group){
+					group.classList.remove("selected");
+				});
+				table.querySelectorAll("tbody").forEach(function(section){
+					section.classList.remove("selectedGroup");
+				});
+				sections.forEach(function(section){
+					section.node.classList.add("selectedGroup");
+				});
+				name.classList.add("selected");
+			},
+			addSection: function(sectionDefinition){
+				const section = addSection(sectionDefinition.name);
+				sections.push(section);
+				return section;
+			}
+		};
+		
+		
+		name.addEventListener("click", group.select);
+		
+		groups.appendChild(name);
+		
+		return group;
+	};
+	
 	const beforeChangeEventListeners = {};
+	function setupSetterForDisplay(setting){
+		let originalSet = setting.set;
+		setting.originalSet = originalSet;
+		if (originalSet){
+			const eventListeners = [];
+			beforeChangeEventListeners[setting.name] = eventListeners;
+			setting.set = function(...args){
+				if (eventListeners.every(function(listener){
+					return listener.call(setting, ...args);
+				})){
+					return originalSet.apply(this, args);
+				}
+				else {
+					return false;
+				}
+			};
+		}
+	}
+	
+	function setupHideForDisplay(setting){
+		const display = setting.display;
+		const hideChangeListeners = [];
+		setting.setHide = function setHide(value){
+			if (hideContainer){
+				hideContainer.setHideByName(display.name, value);
+				if (setting.computeDependencies){
+					setting.computeDependencies();
+				}
+			}
+		};
+		setting.onHideChange = function(listener){
+			hideChangeListeners.push(listener);
+		};
+		setting.getHide = function getHide(){
+			if (hideContainer){
+				return hideContainer.getHideByName(display.name);
+			}
+			else {
+				return false;
+			}
+		};
+		if (hideContainer){
+			hideContainer.onHideChange(display.name, function(value){
+				if (setting.computeDependencies){
+					setting.computeDependencies();
+				}
+				hideChangeListeners.forEach(function(listener){
+					listener(value);
+				});
+			});
+		}
+	}
+	function setupExpandForDisplay(setting){
+		const display = setting.display;
+		const expandChangeListeners = [];
+		setting.setExpand = function setExpand(value){
+			if (expandContainer){
+				expandContainer.setExpandByName(display.name, value);
+			}
+		};
+		setting.onExpandChange = function(listener){
+			expandChangeListeners.push(listener);
+		};
+		setting.getExpand = function getExpand(){
+			if (expandContainer){
+				return expandContainer.getExpandByName(display.name);
+			}
+			else {
+				return false;
+			}
+		};
+		if (expandContainer){
+			expandContainer.onExpandChange(display.name, function(value){
+				expandChangeListeners.forEach(function(listener){
+					listener(value);
+				});
+			});
+		}
+	}
+	
+	function setupComputeDependenciesForDisplay(setting, section, row){
+		let displayDependencies = setting.display.displayDependencies || [{}];
+		displayDependencies = Array.isArray(displayDependencies)?
+			displayDependencies:
+			[displayDependencies];
+		setting.computeDependencies = function computeDependencies(){
+			logging.verbose("evaluate display dependencies for", setting);
+			row.classList[(
+				(
+					displayHidden.get() ||
+					!setting.getHide()
+				) &&
+				displayDependencies.some(function(displayDependency){
+					return Object.keys(displayDependency).every(function(key){
+						return displayDependency[key].indexOf(settings[key]) !== -1;
+					});
+				})
+			)? "remove": "add"]("hidden");
+			section.updateDisplay();
+		};
+		
+		displayDependencies.forEach(function(displayDependency){
+			Object.keys(displayDependency).forEach(function(name){
+				settings.on(name, setting.computeDependencies);
+			});
+		});
+		
+		setting.computeDependencies();
+		displayHidden.on(setting.computeDependencies);
+	}
+	
 	settingsDisplay.map(function(groupDefinition){
 		const group = addGroup(groupDefinition);
 		groupDefinition.sections.forEach(function(sectionDefinition){
 			const section = group.addSection(sectionDefinition);
 			sectionDefinition.settings.forEach(function(display){
-				var setting = settings.getDefinition(display.name);
+				let setting = settings.getDefinition(display.name);
 				if (!setting){
 					if (display.inputs){
 						setting = {
@@ -419,113 +540,17 @@
 				if (setting){
 					setting.display = display;
 					
-					let originalSet = setting.set;
-					setting.originalSet = originalSet;
-					if (originalSet){
-						const eventListeners = [];
-						beforeChangeEventListeners[setting.name] = eventListeners;
-						setting.set = function(...args){
-							if (eventListeners.every(function(listener){
-								return listener.call(setting, ...args);
-							})){
-								return originalSet.apply(this, args);
-							}
-							else {
-								return false;
-							}
-						};
-					}
+					setupSetterForDisplay(setting);
+					setupHideForDisplay(setting);
+					setupExpandForDisplay(setting);
 					
-					let hideChangeListeners = [];
-					setting.setHide = function setHide(value){
-						if (hideContainer){
-							hideContainer.setHideByName(display.name, value);
-							if (computeDependencies){
-								computeDependencies();
-							}
-						}
-					};
-					setting.onHideChange = function(listener){
-						hideChangeListeners.push(listener);
-					};
-					setting.getHide = function getHide(){
-						if (hideContainer){
-							return hideContainer.getHideByName(display.name);
-						}
-						else {
-							return false;
-						}
-					};
-					if (hideContainer){
-						hideContainer.onHideChange(display.name, function(value){
-							if (computeDependencies){
-								computeDependencies();
-							}
-							hideChangeListeners.forEach(function(listener){
-								listener(value);
-							});
-						});
-					}
-					
-					let expandChangeListeners = [];
-					setting.setExpand = function setExpand(value){
-						if (expandContainer){
-							expandContainer.setExpandByName(display.name, value);
-						}
-					};
-					setting.onExpandChange = function(listener){
-						expandChangeListeners.push(listener);
-					};
-					setting.getExpand = function getExpand(){
-						if (expandContainer){
-							return expandContainer.getExpandByName(display.name);
-						}
-						else {
-							return false;
-						}
-					};
-					if (expandContainer){
-						expandContainer.onExpandChange(display.name, function(value){
-							expandChangeListeners.forEach(function(listener){
-								listener(value);
-							});
-						});
-					}
-					
-					var row = optionsGui.createSettingRow(setting);
+					const row = optionsGui.createSettingRow(setting);
 					settingStrings.getStrings(setting).forEach(function(string){
 						search.register(string, row);
 					});
 					section.addRow(row);
-					if (!display.displayDependencies){
-						display.displayDependencies = {};
-					}
-					var displayDependencies = display.displayDependencies;
-					displayDependencies = Array.isArray(displayDependencies)?
-						displayDependencies:
-						[displayDependencies];
-					var computeDependencies = function(){
-						logging.verbose("evaluate display dependencies for", setting);
-						row.classList[(
-							(
-								displayHidden.get() ||
-								!setting.getHide()
-							) &&
-							displayDependencies.some(function(displayDependency){
-								return Object.keys(displayDependency).every(function(key){
-									return displayDependency[key].indexOf(settings[key]) !== -1;
-								});
-							})
-						)? "remove": "add"]("hidden");
-						section.updateDisplay();
-					};
-					computeDependencies();
-					displayDependencies.forEach(function(displayDependency){
-						Object.keys(displayDependency).forEach(function(name){
-							settings.on(name, computeDependencies);
-						});
-					});
-					displayHidden.on(computeDependencies);
+					
+					setupComputeDependenciesForDisplay(setting, section, row);
 				}
 			});
 		});
@@ -538,6 +563,9 @@
 		return response.json();
 	}).then(function(manifest){
 		version.textContent = "Version " + manifest.version;
+		return;
+	}).catch(function(error){
+		version.textContent = "Unable to get version: " + error;
 	});
 	document.body.appendChild(version);
 	
@@ -567,6 +595,9 @@
 						if (addException){
 							settings.set("protectWindow", false, reCaptchaEntry);
 						}
+						return;
+					}).catch(function(error){
+						logging.warning("Error while adding reCaptcha exception:", error);
 					});
 				}
 			}
@@ -581,8 +612,11 @@
 					}
 				).then((reallyShare) => {
 					if (reallyShare){
-						this.originalSet(value, ...args);
+						return this.originalSet(value, ...args);
 					}
+					return;
+				}).catch(function(error){
+					logging.warning("Unable to set sharePersistentRndBetweenDomains:", error);
 				});
 				return false;
 			}

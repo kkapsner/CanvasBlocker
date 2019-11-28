@@ -43,7 +43,8 @@
 		
 		crypto.subtle.digest("SHA-256", data).then(function(hash){
 			hashNode.textContent = byteArrayToHex(hash);
-		}, function(error){
+			return;
+		}).catch(function(error){
 			hashNode.textContent = error;
 		});
 		hashSets[set].appendChild(container);

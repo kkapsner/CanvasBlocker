@@ -1,4 +1,3 @@
-/* eslint no-console: off */
 (function(){
 	"use strict";
 	
@@ -24,25 +23,35 @@
 			container.querySelector(".hash").textContent =
 				hashToString(hashes[0]) + " / " +
 				hashToString(hashes[1]);
+			return;
+		}).catch(function(error){
+			container.querySelector(".hash").textContent = "Error while calculating hash: " + error;
 		});
 		container.querySelector(".isPointInPath").textContent = isPointInPath;
 	}
 	
 	if (location.search !== "?notInitial"){
 		try {show(document.getElementById("top"), topTest());}
-		catch (e){console.error(e);}
+		// eslint-disable-next-line no-console
+		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe"), iframeTest(document.querySelector("#iframe iframe")));}
-		catch (e){console.error(e);}
+		// eslint-disable-next-line no-console
+		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe2"), iframeTest(document.querySelector("#iframe2 iframe")));}
-		catch (e){console.error(e);}
+		// eslint-disable-next-line no-console
+		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe3"), iframeTest(document.querySelector("#iframe3 iframe")));}
-		catch (e){console.error(e);}
+		// eslint-disable-next-line no-console
+		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe4"), dynamicIframeTest1());}
-		catch (e){console.error(e);}
+		// eslint-disable-next-line no-console
+		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe5"), dynamicIframeTest2());}
-		catch (e){console.error(e);}
+		// eslint-disable-next-line no-console
+		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe6"), dynamicIframeTest3());}
-		catch (e){console.error(e);}
+		// eslint-disable-next-line no-console
+		catch (error){console.error(error);}
 	}
 	document.querySelector("#top button").addEventListener("click", function(){
 		show(document.getElementById("top"), topTest());

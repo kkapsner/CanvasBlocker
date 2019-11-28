@@ -9,12 +9,12 @@
 	require("../lib/theme").init("sanitize");
 	const sanitationRules = require("./sanitationRules");
 	
-	var title = document.createElement("h1");
+	const title = document.createElement("h1");
 	title.className = "title";
 	title.textContent = extension.getTranslation("sanitation_title");
 	document.body.appendChild(title);
 	
-	var description = document.createElement("div");
+	const description = document.createElement("div");
 	description.className = "description";
 	description.textContent = extension.getTranslation("sanitation_description");
 	document.body.appendChild(description);

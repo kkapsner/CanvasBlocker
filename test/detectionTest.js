@@ -1,4 +1,3 @@
-/* eslint no-console: off, max-lines: off */
 var addTest = (function(){
 	"use strict";
 
@@ -18,8 +17,9 @@ var addTest = (function(){
 		try {
 			status = func(log)? 1: 2;
 		}
-		catch (e){
-			console.log(e);
+		catch (error){
+			// eslint-disable-next-line no-console
+			console.log(error);
 			status = 3;
 		}
 		var li = document.createElement("li");
@@ -214,6 +214,7 @@ addTest("property descriptor", function(log){
 			object: CanvasRenderingContext2D.prototype,
 			name: "getImageData",
 			descriptor: {
+				// eslint-disable-next-line no-unused-vars
 				value: function getImageData(x, y, w, h){},
 				writable: true,
 				enumerable: true,
@@ -255,12 +256,12 @@ addTest("error provocation 1", function(log){
 	try{
 		ctx.getImageData(0, 0, 0, 0);
 	}
-	catch (err){
+	catch (error){
 		try {
-			log(err.name);
-			log(err.toString());
+			log(error.name);
+			log(error.toString());
 		}
-		catch (e){
+		catch (error){
 			canvasBlocker = true;
 		}
 	}
@@ -277,12 +278,12 @@ addTest("error provocation 2", function(log){
 		ctx.getImageData(0, 0, 1, 1);
 		log("no error provoked");
 	}
-	catch (err){
+	catch (error){
 		try {
-			log(err.name);
-			log(err.toString());
+			log(error.name);
+			log(error.toString());
 		}
-		catch (e){
+		catch (error){
 			canvasBlocker = true;
 		}
 	}
@@ -295,12 +296,12 @@ addTest("error provocation 3", function(log){
 	try{
 		CanvasRenderingContext2D.prototype.getImageData.apply(undefined, [0, 0, 1, 1]);
 	}
-	catch (err){
+	catch (error){
 		try {
-			log(err.name);
-			log(err.toString());
+			log(error.name);
+			log(error.toString());
 		}
-		catch (e){
+		catch (error){
 			canvasBlocker = true;
 		}
 	}
@@ -313,26 +314,26 @@ addTest("error properties", function(log){
 	try{
 		CanvasRenderingContext2D.prototype.getImageData.apply(undefined, [0, 0, 1, 1]);
 	}
-	catch (err){
+	catch (error){
 		try {
 			var name = "TypeError";
-			if (err.name !== name && err instanceof TypeError){
-				log("Error name wrong. Expected: ", name, "- got:", err.name);
+			if (error.name !== name && error instanceof TypeError){
+				log("Error name wrong. Expected: ", name, "- got:", error.name);
 				canvasBlocker = true;
 			}
 			var start = "@" + location.href.replace(/\.html$/, ".js");
-			if (!err.stack.startsWith(start)){
-				log("Error stack starts wrong. Expected:", start, "- got :", err.stack.split(/\n/g, 2)[0]);
+			if (!error.stack.startsWith(start)){
+				log("Error stack starts wrong. Expected:", start, "- got :", error.stack.split(/\n/g, 2)[0]);
 				canvasBlocker = true;
 			}
 			var message = "'getImageData' called on an object that " +
 				"does not implement interface CanvasRenderingContext2D.";
-			if (err.message !== message){
-				log("Error message wrong. Expected: ", message, "- got:", err.message);
+			if (error.message !== message){
+				log("Error message wrong. Expected: ", message, "- got:", error.message);
 				canvasBlocker = true;
 			}
 		}
-		catch (e){
+		catch (error){
 			canvasBlocker = true;
 		}
 	}

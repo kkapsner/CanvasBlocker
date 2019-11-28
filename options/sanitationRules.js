@@ -4,7 +4,7 @@
 (function(){
 	"use strict";
 
-	var scope;
+	let scope;
 	if ((typeof exports) !== "undefined"){
 		scope = exports;
 	}
@@ -84,8 +84,6 @@
 					{mainFlag: "protectScreen", section: "Screen-API"},
 				].forEach(function(api){
 					if (settings.get(api.mainFlag) !== (api.mainFlagDisabledValue || false)){
-						let inSection = false;
-						let anyActive = false;
 						if (getSectionKeys(api.section).every(function(key){
 							return protectedFeaturesValue.hasOwnProperty(key) &&
 								!protectedFeaturesValue[key];

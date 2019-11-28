@@ -1,6 +1,50 @@
 (function(){
 	"use strict";
 	
+	function getParameters(context){
+		const parameters = [];
+		for (var name in context){
+			if (name.toUpperCase() === name){
+				var value = context.getParameter(context[name]);
+				if (value !== null){
+					parameters.push({name: name, value: value});
+				}
+			}
+		}
+		const debugExtension = context.getExtension("WEBGL_debug_renderer_info");
+		
+		for (name in debugExtension){
+			if (name.toUpperCase() === name){
+				value = context.getParameter(debugExtension[name]);
+				if (value !== null){
+					parameters.push({name: name, value: value});
+				}
+			}
+		}
+		var frontParameters = ["VENDOR", "RENDERER", "UNMASKED_VENDOR_WEBGL", "UNMASKED_RENDERER_WEBGL"];
+		parameters.sort(function(a, b){
+			var frontA = frontParameters.indexOf(a.name);
+			var frontB = frontParameters.indexOf(b.name);
+			if (frontA !== -1){
+				if (frontB !== -1){
+					return frontA - frontB;
+				}
+				else {
+					return -1;
+				}
+			}
+			else {
+				if (frontB !== -1){
+					return 1;
+				}
+				else {
+					return a.name < b.name? -1: 1;
+				}
+			}
+		});
+		return parameters;
+	}
+	
 	["webgl", "webgl2"].forEach(function(context, index){
 		var output = document.createElement("div");
 		document.getElementById("output").appendChild(output);
@@ -22,46 +66,8 @@
 				values[pixels[i]] = (values[pixels[i]] || 0) + 1;
 				max = Math.max(max, values[pixels[i]]);
 			}
-			const parameters = [];
-			for (var name in gl){
-				if (name.toUpperCase() === name){
-					var value = gl.getParameter(gl[name]);
-					if (value !== null){
-						parameters.push({name: name, value: value});
-					}
-				}
-			}
-			const debugExtension = gl.getExtension("WEBGL_debug_renderer_info");
 			
-			for (name in debugExtension){
-				if (name.toUpperCase() === name){
-					value = gl.getParameter(debugExtension[name]);
-					if (value !== null){
-						parameters.push({name: name, value: value});
-					}
-				}
-			}
-			var frontParameters = ["VENDOR", "RENDERER", "UNMASKED_VENDOR_WEBGL", "UNMASKED_RENDERER_WEBGL"];
-			parameters.sort(function(a, b){
-				var frontA = frontParameters.indexOf(a.name);
-				var frontB = frontParameters.indexOf(b.name);
-				if (frontA !== -1){
-					if (frontB !== -1){
-						return frontA - frontB;
-					}
-					else {
-						return -1;
-					}
-				}
-				else {
-					if (frontB !== -1){
-						return 1;
-					}
-					else {
-						return a.name < b.name? -1: 1;
-					}
-				}
-			});
+			const parameters = getParameters(gl);
 			if (context === "webgl2"){
 				var parameterOutput = document.createElement("table");
 				document.getElementById("parameters").appendChild(parameterOutput);
@@ -87,11 +93,14 @@
 						(max !== 3 * values[255]? "": "not ") + "supported " +
 						"(parameter hash: " + hash + ")";
 					output.title = JSON.stringify(values);
+					return;
+				}).catch(function(error){
+					output.textContent = "Error while calculating hash: " + error;
 				});
 		}
-		catch (e){
+		catch (error){
 			output.textContent = context + ": ERROR";
-			output.title = e;
+			output.title = error;
 		}
 	});
 }());
