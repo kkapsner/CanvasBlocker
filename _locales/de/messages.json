@@ -1163,12 +1163,20 @@
 		"message": "Wenn dies auf einen Wert \"...x...\" gesetzt wird, werden diese Größen als Bildschirmgröße verwendet.",
 		"description": ""
 	},
+	"screenSize_urlSpecific": {
+		"message": "Um für bestimmte Seiten spezifische Werte zu verwenden, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünsche Domain oder URL mit einem Klicke auf \"+\" hinzu und geben sie den gewünschten Wert ein.",
+		"description": ""
+	},
 	"fakeMinimalScreenSize_title": {
 		"message": "Minimale Bildschirmgröße vortäuschen",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
 		"message": "Verwende die minimale Bildschirmgröße aus der folgenden Liste, die zur inneren Browserfenstergröße passt. Bildschirmgrößen: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_urlSpecific": {
+		"message": "Um bestimmte Seiten von dem Vortäuschen auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
 	"theme_title": {

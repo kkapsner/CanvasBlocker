@@ -1212,12 +1212,20 @@
 		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
 		"description": ""
 	},
+	"screenSize_urlSpecific": {
+		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"description": ""
+	},
 	"fakeMinimalScreenSize_title": {
 		"message": "Fake minimal screen size",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
 		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_urlSpecific": {
+		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
 		"description": ""
 	},
 	
