@@ -28,6 +28,7 @@
 		"Waterfox",
 		"arial",
 		"benachrichtigungsicon",
+		"canvasblocker",
 		"collapser",
 		"darkgreen",
 		"dont",
@@ -57,6 +58,8 @@
 	],
 	"cSpell.language": "en,de,en-GB",
 	"cSpell.ignorePaths": [
+		"**/package-lock.json",
+		"**/node_modules/**",
 		"**/vscode-extension/**",
 		"**/.git/objects/**",
 		".vscode",

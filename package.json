@@ -1,0 +1,33 @@
+{
+  "name": "canvasblocker",
+  "version": "0.5.15",
+  "description": "WebExtension that alters some JS APIs to prevent fingerprinting.",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "web-ext": "^3.2.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkapsner/CanvasBlocker.git"
+  },
+  "keywords": [
+    "WebExtension",
+    "fingerprinting",
+    "privacy"
+  ],
+  "author": "Korbinian Kapsner",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/kkapsner/CanvasBlocker/issues"
+  },
+  "homepage": "https://github.com/kkapsner/CanvasBlocker#readme"
+}

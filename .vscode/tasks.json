@@ -152,7 +152,9 @@
 				"--ignore-files",
 				"test",
 				"--ignore-files",
-				"versions"
+				"versions",
+				"--ignore-files",
+				"package*"
 			],
 			"presentation": {
 				"echo": true,
