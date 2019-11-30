@@ -9,7 +9,6 @@ var log = function(){
 			str.unshift("color: red");
 			str.unshift("%cX");
 		}
-		// eslint-disable-next-line no-console
 		console.log(...str);
 	};
 }();
@@ -67,7 +66,6 @@ function compare(string1, string2, alwaysOutputHashes){
 			hash(string1),
 			hash(string2)
 		]).then(function(hashes){
-			// eslint-disable-next-line no-console
 			console.log(message, ...hashes);
 			return;
 		});

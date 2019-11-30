@@ -32,25 +32,18 @@
 	
 	if (location.search !== "?notInitial"){
 		try {show(document.getElementById("top"), topTest());}
-		// eslint-disable-next-line no-console
 		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe"), iframeTest(document.querySelector("#iframe iframe")));}
-		// eslint-disable-next-line no-console
 		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe2"), iframeTest(document.querySelector("#iframe2 iframe")));}
-		// eslint-disable-next-line no-console
 		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe3"), iframeTest(document.querySelector("#iframe3 iframe")));}
-		// eslint-disable-next-line no-console
 		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe4"), dynamicIframeTest1());}
-		// eslint-disable-next-line no-console
 		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe5"), dynamicIframeTest2());}
-		// eslint-disable-next-line no-console
 		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe6"), dynamicIframeTest3());}
-		// eslint-disable-next-line no-console
 		catch (error){console.error(error);}
 	}
 	document.querySelector("#top button").addEventListener("click", function(){

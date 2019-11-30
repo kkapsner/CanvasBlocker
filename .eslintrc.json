@@ -6,12 +6,17 @@
 		"webextensions": true
 	},
 	"parserOptions": {
+		"ecmaVersion": 8,
 		"ecmaFeatures": {
 			"jsx": true
 		},
 		"sourceType": "script"
 	},
-	"plugins": ["promise", "eslint-comments"],
+	"plugins": [
+		"promise",
+		"eslint-comments",
+		"html"
+	],
 	"extends": [
 		"eslint:recommended",
 		"plugin:promise/recommended",
@@ -59,9 +64,26 @@
 			}
 		},
 		{
-			"files": ["test/*.js"],
+			"files": ["test/*"],
 			"rules": {
-				"no-var": "off"
+				"no-var": "off",
+				"no-console": "off"
+			}
+		},
+		{
+			"files": [".tools/*.js"],
+			"env": {
+				"node": true
+			},
+			"rules": {
+				"no-console": "off"
+			}
+		},
+		{
+			"files": ["*.html", "*.php"],
+			"rules": {
+				"no-useless-escape": "off",
+				"no-undef": "off"
 			}
 		}
 	]

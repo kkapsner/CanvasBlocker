@@ -28,6 +28,8 @@
 			return canvas.toDataURL();
 		}
 		function hash(url){
+			"use strict";
+			
 			var buffer = new TextEncoder("utf-8").encode(url);
 			return crypto.subtle.digest("SHA-256", buffer).then(function(hash){
 				var chunks = [];
@@ -39,12 +41,12 @@
 				}).join("");
 			});
 		}
+		var firstFingerprint = false;
 		try {
-			var firstFingerprint = fingerPrint();
+			firstFingerprint = fingerPrint();
 		}
 		catch (error){
 			console.log(new Date(), error);
-			var firstFingerprint = false;
 		}
 	</script>
 	<style>
@@ -67,19 +69,29 @@
 			var output = document.getElementById("output");
 			output.textContent = "context API not blocked";
 			window.setTimeout(function(){
+				"use strict";
+			
 				console.log(new Date(), "starting second fingerprint", window.name);
 				output.appendChild(document.createElement("br"));
 				var secondFingerprint = fingerPrint();
 				if (firstFingerprint === secondFingerprint){
-					hash(firstFingerprint).then(function(hash){
+					return hash(firstFingerprint).then(function(hash){
 						output.appendChild(document.createTextNode("fingerprint consistent (" + hash + ") -> good!"));
 						output.style.backgroundColor = "green";
+						return;
 					});
 				}
 				else {
-					Promise.all([hash(firstFingerprint), hash(secondFingerprint)]).then(function(hashes){
-						output.appendChild(document.createTextNode("fingerprint not consistent (" + hashes[0] + " != " + hashes[1] + ") -> very bad! (potential fingerprint leak)"));
+					return Promise.all([hash(firstFingerprint), hash(secondFingerprint)]).then(function(hashes){
+						output.appendChild(
+							document.createTextNode(
+								"fingerprint not consistent (" +
+								hashes[0] + " != " + hashes[1] +
+								") -> very bad! (potential fingerprint leak)"
+							)
+						);
 						output.style.backgroundColor = "red";
+						return;
 					});
 				}
 			}, 500);

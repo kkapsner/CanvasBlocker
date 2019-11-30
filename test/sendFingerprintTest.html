@@ -52,8 +52,10 @@
 			ctx.stroke();
 			
 			return ctx.isPointInPath(30, 19);
-		};
+		}
 		function hashToString(hash){
+			"use strict";
+			
 			var chunks = [];
 			(new Uint32Array(hash)).forEach(function(num){
 				chunks.push(num.toString(16));
@@ -63,42 +65,49 @@
 			}).join("");
 		}
 
-		function send(form, {url, imageData, isPointInPath}){
-			var buffer = new TextEncoder("utf-8").encode(url);
-			Promise.all([
-				crypto.subtle.digest("SHA-256", buffer),
-				crypto.subtle.digest("SHA-256", imageData.data)
-			]).then(function(hashes){
-				var data = JSON.stringify({
-					urlHash: hashToString(hashes[0]),
-					imageDataHash: hashToString(hashes[1]),
-					isPointInPath
-				}, null, "\t");
-				form.fingerprint.value = data;
-				var xhr = new XMLHttpRequest();
-				xhr.open("POST", form.action, true);
-				xhr.onreadystatechange = function(){
-					if (this.readyState === 4){
-						const status = this.status;
-						if (status === 200 || status === 304) {
-							console.log("Sending xhr successful from", origin, ":", data);
+		var send = function(){
+			"use strict";
+			
+			return function send(form, {url, imageData, isPointInPath}){
+				var buffer = new TextEncoder("utf-8").encode(url);
+				return Promise.all([
+					crypto.subtle.digest("SHA-256", buffer),
+					crypto.subtle.digest("SHA-256", imageData.data)
+				]).then(function(hashes){
+					var data = JSON.stringify({
+						urlHash: hashToString(hashes[0]),
+						imageDataHash: hashToString(hashes[1]),
+						isPointInPath
+					}, null, "\t");
+					form.fingerprint.value = data;
+					var xhr = new XMLHttpRequest();
+					xhr.open("POST", form.action, true);
+					xhr.onreadystatechange = function(){
+						if (this.readyState === 4){
+							const status = this.status;
+							if (status === 200 || status === 304) {
+								console.log("Sending xhr successful from", origin, ":", data);
+							}
+							else {
+								console.log("Sending xhr failed:", this);
+							}
 						}
-						else {
-							console.log("Sending xhr failed:", this);
-						}
-					}
-				};
-				xhr.send(new FormData(form));
-				window.setTimeout(function(){
-					form.submit();
+					};
+					xhr.send(new FormData(form));
 					window.setTimeout(function(){
-						document.getElementById("log").textContent = "You see the real canvas fingerprint, but it cannot leak from this iFrame.";
-						},
-						250
-					);
-				}, 1000);
-			});
-		}
+						form.submit();
+						window.setTimeout(
+							function(){
+								document.getElementById("log").textContent =
+									"You see the real canvas fingerprint, but it cannot leak from this iFrame.";
+							},
+							250
+						);
+					}, 1000);
+					return;
+				});
+			};
+		}();
 
 		send(document.getElementById("form"), topTest());
 		</script>

@@ -16,7 +16,9 @@
 				"command": "eslint"
 			},
 			"args": [
-				"./"
+				"./",
+				"--ext",
+				".js,.html,.php"
 			],
 			"presentation": {
 				"echo": true,

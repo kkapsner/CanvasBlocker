@@ -97,7 +97,14 @@
 							"name": "clearPersistentRnd",
 							"actions": [
 								"clearPersistentRnd",
-								browser.contextualIdentities? "clearPersistentRndForContainer": false
+								function(){
+									try {
+										return browser.contextualIdentities? "clearPersistentRndForContainer": false;
+									}
+									catch (error){
+										return false;
+									}
+								}()
 							],
 							"displayDependencies": [
 								{

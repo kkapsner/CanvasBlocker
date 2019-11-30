@@ -112,6 +112,7 @@
 		}
 		function getIsPointInPath(ctx){
 			"use strict";
+			
 			ctx.beginPath();
 			ctx.moveTo(20, 19);
 			ctx.lineTo(40, 19);
@@ -120,8 +121,10 @@
 			ctx.stroke();
 			
 			return ctx.isPointInPath(30, 19);
-		};
+		}
 		function hashToString(hash){
+			"use strict";
+			
 			var chunks = [];
 			(new Uint32Array(hash)).forEach(function(num){
 				chunks.push(num.toString(16));
@@ -130,35 +133,41 @@
 				return "0".repeat(8 - chunk.length) + chunk;
 			}).join("");
 		}
-
-		function send(form, {url, imageData, isPointInPath}){
-			var buffer = new TextEncoder("utf-8").encode(url);
-			Promise.all([
-				crypto.subtle.digest("SHA-256", buffer),
-				crypto.subtle.digest("SHA-256", imageData.data)
-			]).then(function(hashes){
-				var data = JSON.stringify({
-					urlHash: hashToString(hashes[0]),
-					imageDataHash: hashToString(hashes[1]),
-					isPointInPath
-				}, null, "\t");
-				form.fingerprint.value = data;
-				var xhr = new XMLHttpRequest();
-				xhr.open("POST", form.action + "?main", true);
-				xhr.onreadystatechange = function(){
-					if (this.readyState === 4){
-						const status = this.status;
-						if (status === 200 || status === 304) {
-							console.log("Sending xhr successful from main page:", data);
+		
+		var send = function(){
+			"use strict";
+			return function send(form, {url, imageData, isPointInPath}){
+				var buffer = new TextEncoder("utf-8").encode(url);
+				Promise.all([
+					crypto.subtle.digest("SHA-256", buffer),
+					crypto.subtle.digest("SHA-256", imageData.data)
+				]).then(function(hashes){
+					var data = JSON.stringify({
+						urlHash: hashToString(hashes[0]),
+						imageDataHash: hashToString(hashes[1]),
+						isPointInPath
+					}, null, "\t");
+					form.fingerprint.value = data;
+					var xhr = new XMLHttpRequest();
+					xhr.open("POST", form.action + "?main", true);
+					xhr.onreadystatechange = function(){
+						if (this.readyState === 4){
+							const status = this.status;
+							if (status === 200 || status === 304) {
+								console.log("Sending xhr successful from main page:", data);
+							}
+							else {
+								console.log("Sending xhr failed:", this);
+							}
 						}
-						else {
-							console.log("Sending xhr failed:", this);
-						}
-					}
-				};
-				xhr.send(new FormData(form));
-			});
-		}
+					};
+					xhr.send(new FormData(form));
+					return;
+				}).catch(function(error){
+					console.error(error);
+				});
+			};
+		}();
 
 		send(document.getElementById("form"), topTest());
 		</script>

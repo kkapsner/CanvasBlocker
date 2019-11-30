@@ -61,5 +61,12 @@
 		"**/.git/objects/**",
 		".vscode",
 		".eslintrc.json"
-	]
+	],
+	"eslint.validate": [
+		"javascript",
+		"php",
+		"html"
+	],
+	"eslint.options": {"--ext": ".js,.html,.php"},
+	"eslint.lintTask.enable": true
 }

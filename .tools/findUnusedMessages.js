@@ -5,6 +5,8 @@ const util = require("util");
 
 
 function getMessagesInContent(content){
+	"use strict";
+	
 	const foundMessages = [];
 	[
 		/\b(?:_|browser.i18n.getMessage|extension.getTranslation|notify|extension)\(["']([^"']+)["']\s*(?:\)|,)/g,
@@ -19,58 +21,58 @@ function getMessagesInContent(content){
 }
 
 async function getMessagesInFile(path){
-	return await util.promisify(fs.exists)(path)
-	.then(function(exists){
-		if (exists){
-			return util.promisify(fs.readFile)(path, {encoding: "UTF-8"})
-			.then(function(content){
-				return getMessagesInContent(content);
-			});
-		}
-		else {
-			console.log("file does not exist:", path);
-			return [];
-		}
-	});
+	"use strict";
+	
+	const exists = await util.promisify(fs.exists)(path);
+	if (exists){
+		const content = await util.promisify(fs.readFile)(path, {encoding: "UTF-8"});
+		return getMessagesInContent(content);
+	}
+	else {
+		// eslint-disable-next-line no-console
+		console.log("file does not exist:", path);
+		return [];
+	}
 }
 
 async function getMessagesInFolder(folder){
-	return await util.promisify(fs.readdir)(folder, {encoding: "UTF-8"})
-	.then(function(files){
-		return Promise.all(
-			files.filter(function(file){
-				return !file.startsWith(".");
-			}).map(function(file){
-				return path.join(folder, file);
-			}).map(function(path){
-				return util.promisify(fs.stat)(path).then(function(stat){
-					if (stat.isDirectory()){
-						return getMessagesInFolder(path);
-					}
-					else {
-						if (path.endsWith(".js")){
-							return getMessagesInFile(path);
-						}
-						else {
-							return [];
-						}
-					}
-				});
-			})
-		).then(function(messages){
-			const flat = [];
-			messages.forEach(function(messages){
-				messages.forEach(function(message){
-					flat.push(message);
-				});
-			});
-			return flat;
+	"use strict";
+	
+	const files = await util.promisify(fs.readdir)(folder, {encoding: "UTF-8"});
+	
+	const messages = await Promise.all(
+		files.filter(function(file){
+			return !file.startsWith(".");
+		}).map(function(file){
+			return path.join(folder, file);
+		}).map(async function(path){
+			const stat = await util.promisify(fs.stat)(path);
+			if (stat.isDirectory()){
+				return getMessagesInFolder(path);
+			}
+			else {
+				if (path.endsWith(".js")){
+					return getMessagesInFile(path);
+				}
+				else {
+					return [];
+				}
+			}
+		})
+	);
+	const flat = [];
+	messages.forEach(function(messages){
+		messages.forEach(function(message){
+			flat.push(message);
 		});
-	})
+	});
+	return flat;
 }
 
 
-async function getSettingMessages(){ 
+async function getSettingMessages(){
+	"use strict";
+	
 	const settingStrings = require("../lib/settingStrings");
 	const settingDefinitions = require("../lib/settingDefinitions");
 	function getDefinition(name){
@@ -113,33 +115,53 @@ async function getSettingMessages(){
 			});
 		});
 	});
+	const presets = require("../options/presets.json");
+	Object.keys(presets).forEach(function(preset){
+		foundMessages.push("preset_" + preset + "_title");
+		foundMessages.push("preset_" + preset + "_description");
+	});
 	return foundMessages.map(function(message){return message.toLowerCase();});
 }
 
 async function getKnownMessages(){
+	"use strict";
+	
 	return [
 		"addon_title",
 		"addon_description",
-		"urlsettings_title",
+		"urlSettings_title",
 		"installnotice",
+		"presets_installnotice",
 		"updatenotice",
-		"disablenotifications",
+		"disableNotifications",
 		"showoptions",
-		"displayhiddensettings_title",
-		"displayhiddensettings_description",
+		"displayHiddenSettings_title",
+		"displayHiddenSettings_description",
 		"browseraction_settings",
 		"browseraction_test",
 		"browseraction_review",
-		"browseraction_reportissue",
-	];
+		"browseraction_reportIssue",
+	].map(function(message){
+		return message.toLowerCase();
+	});
 }
 
-const en = require("../_locales/en/messages.json");
-const declaredMessages = Object.keys(en)
-	// .filter(function(key){return en[key].message;})
-	.map(function(key){return key.toLowerCase();});
-Promise.all([getSettingMessages(), getMessagesInFolder(path.join(__dirname, "..")), getKnownMessages()]).then(function([settingMessages, fileMessages, knownMessages]){
+async function main(){
+	"use strict";
+	const en = require("../_locales/en/messages.json");
+	const declaredMessages = Object.keys(en)
+		// .filter(function(key){return en[key].message;})
+		.map(function(key){
+			return key.toLowerCase();
+		});
+	const [settingMessages, fileMessages, knownMessages] = await Promise.all([
+		getSettingMessages(),
+		getMessagesInFolder(path.join(__dirname, "..")),
+		getKnownMessages()]
+	);
+
 	declaredMessages.forEach(function(message){
+		
 		if (
 			fileMessages.indexOf(message) === -1 &&
 			settingMessages.indexOf(message) === -1 &&
@@ -148,4 +170,6 @@ Promise.all([getSettingMessages(), getMessagesInFolder(path.join(__dirname, ".."
 			console.log(`usage of ${message} not found`);
 		}
 	});
-});
+}
+
+main();

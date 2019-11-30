@@ -7,6 +7,8 @@ const la = require("../_locales/" + language + "/messages.json");
 const laKeys = Object.keys(la);
 
 enKeys.forEach(function(key){
+	"use strict";
+	
 	if (en[key].message){
 		if (!la[key] || !la[key].message){
 			console.log(key, "missing");
