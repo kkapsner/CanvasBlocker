@@ -1164,7 +1164,7 @@
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
-		"message": "Um für bestimmte Seiten spezifische Werte zu verwenden, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünsche Domain oder URL mit einem Klicke auf \"+\" hinzu und geben sie den gewünschten Wert ein.",
+		"message": "Um für bestimmte Seiten spezifische Werte zu verwenden, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünsche Domain oder URL mit einem Klick auf \"+\" hinzu und geben sie den gewünschten Wert ein.",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
