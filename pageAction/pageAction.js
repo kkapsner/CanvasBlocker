@@ -65,7 +65,7 @@
 					if (choice){
 						return settings.set("showNotifications", false, choice);
 					}
-					return;
+					return false;
 				}).then(function(){
 					return window.close();
 				});
@@ -123,7 +123,7 @@
 					if (choice){
 						return settings.set(setting.name, setting.value, choice);
 					}
-					return;
+					return false;
 				}).then(function(){
 					return window.close();
 				});
@@ -142,7 +142,7 @@
 					if (choice){
 						return lists.appendTo("sessionWhite", choice);
 					}
-					return;
+					return false;
 				}).then(function(){
 					return window.close();
 				});

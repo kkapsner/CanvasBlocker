@@ -1,6 +1,7 @@
 Version 0.5.15:
 	changes:
 		- improved storage of protected API features
+		- code cleanup
 	
 	new features:
 		- added screen protection

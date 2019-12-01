@@ -29,6 +29,7 @@
 		"brace-style": ["error", "stroustrup", {"allowSingleLine": true}],
 		"comma-spacing": ["error", { "before": false, "after": true }],
 		"complexity": ["warn", 20],
+		"consistent-return": "error",
 		"constructor-super": "warn",
 		"eqeqeq": "error",
 		"eslint-comments/no-use": ["error", {"allow": ["eslint-disable-next-line"]}],

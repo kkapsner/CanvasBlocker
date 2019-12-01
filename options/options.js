@@ -614,7 +614,7 @@
 					if (reallyShare){
 						return this.originalSet(value, ...args);
 					}
-					return;
+					return false;
 				}).catch(function(error){
 					logging.warning("Unable to set sharePersistentRndBetweenDomains:", error);
 				});

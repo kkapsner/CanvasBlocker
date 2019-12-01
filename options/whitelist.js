@@ -85,6 +85,7 @@
 						setSelect.selectedIndex = index;
 						return true;
 					}
+					return false;
 				}) &&
 				searchParameters.has("domain")
 			){
