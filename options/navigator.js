@@ -52,7 +52,11 @@
 			const presetProperties = presets[presetName];
 			function checkActive(currentProperties){
 				if (Object.keys(presetProperties).every(function(property){
-					return currentProperties[property] === presetProperties[property];
+					let value = presetProperties[property];
+					if ((typeof value) === "function"){
+						value = value(currentProperties);
+					}
+					return value === currentProperties[property];
 				})){
 					li.classList.add("active");
 				}
@@ -74,7 +78,11 @@
 						delete data[property];
 					}
 					else {
-						data[property] = presetProperties[property];
+						let value = presetProperties[property];
+						if ((typeof value) === "function"){
+							value = value(data);
+						}
+						data[property] = value;
 					}
 				});
 				settings.navigatorDetails = data;
@@ -84,30 +92,55 @@
 		return container;
 	}
 	
+	const firefoxOscpu = {
+		Windows: "{platformDetails}",
+		Linux: "{platform}",
+		"Mac OS X": "Intel Mac OS X 10.14.3",
+		"": "{original value}"
+	};
 	
 	const osPresets = {
 		Windows: {
+			osPreset: "Windows",
 			windowManager: "Windows",
 			platform: "Win32",
 			platformDetails: "Windows NT 10.0; Win64; x64",
-			oscpu: "{platformDetails}"
+			oscpu: function(currentProperties){
+				if (currentProperties.browserPreset === "Firefox"){
+					return firefoxOscpu.Windows;
+				}
+				return "{undefined}";
+			}
 		},
 		Linux: {
+			osPreset: "Linux",
 			windowManager: "X11",
 			platform: "Linux x86_64",
 			platformDetails: "X11; Linux x86_64",
-			oscpu: "{platform}"
+			oscpu: function(currentProperties){
+				if (currentProperties.browserPreset === "Firefox"){
+					return firefoxOscpu.Linux;
+				}
+				return "{undefined}";
+			}
 		},
 		"Mac OS X": {
+			osPreset: "Mac OS X",
 			windowManager: "Macintosh",
 			platform: "MacIntel",
-			platformDetails: "Macintosh; {oscpu}",
-			oscpu: "Intel Mac OS X 10.14.3"
+			platformDetails: "Macintosh; Intel Mac OS X 10.14.3",
+			oscpu: function(currentProperties){
+				if (currentProperties.browserPreset === "Firefox"){
+					return firefoxOscpu["Mac OS X"];
+				}
+				return "{undefined}";
+			}
 		}
 	};
 	
 	const browserPresets = {
 		Edge: {
+			browserPreset: "Edge",
 			chromeVersion: "71.0.3578.98",
 			edgeVersion: "17.17134",
 			firefoxVersion: undefined,
@@ -116,11 +149,14 @@
 			
 			appVersion: "5.0 ({platformDetails}) AppleWebKit/537.36 (KHTML, like Gecko) " +
 				"Chrome/{chromeVersion} Safari/537.36 Edge/{edgeVersion}",
+			buildID: "{undefined}",
+			oscpu: "{undefined}",
 			productSub: "20030107",
 			userAgent: "Mozilla/{appVersion}",
 			vendor: undefined,
 		},
 		Opera: {
+			browserPreset: "Opera",
 			chromeVersion: "71.0.3578.98",
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
@@ -129,11 +165,14 @@
 			
 			appVersion: "5.0 ({platformDetails}) AppleWebKit/537.36 (KHTML, like Gecko) " +
 				"Chrome/{chromeVersion} Safari/537.36 OPR/{operaVersion}",
+			buildID: "{undefined}",
+			oscpu: "{undefined}",
 			productSub: "20030107",
 			userAgent: "Mozilla/{appVersion}",
 			vendor: "Google Inc.",
 		},
 		Chrome: {
+			browserPreset: "Chrome",
 			chromeVersion: "71.0.3578.98",
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
@@ -142,11 +181,14 @@
 			
 			appVersion: "5.0 ({platformDetails}) AppleWebKit/537.36 (KHTML, like Gecko) " +
 				"Chrome/{chromeVersion} Safari/537.36",
+			buildID: "{undefined}",
+			oscpu: "{undefined}",
 			productSub: "20030107",
 			userAgent: "Mozilla/{appVersion}",
 			vendor: "Google Inc.",
 		},
 		Safari: {
+			browserPreset: "Safari",
 			chromeVersion: undefined,
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
@@ -155,11 +197,14 @@
 			
 			appVersion: "5.0 ({platformDetails}) AppleWebKit/605.1.15 (KHTML, like Gecko) " +
 				"Version/{safariVersion} Safari/605.1.15",
+			buildID: "{undefined}",
+			oscpu: "{undefined}",
 			productSub: "20030107",
 			userAgent: "Mozilla/{appVersion}",
 			vendor: "Apple Computer, Inc.",
 		},
 		Firefox: {
+			browserPreset: "Firefox",
 			chromeVersion: undefined,
 			edgeVersion: undefined,
 			firefoxVersion: "{real Firefox version}",
@@ -168,6 +213,9 @@
 			
 			appVersion: "5.0 ({windowManager})",
 			buildID: "20181001000000",
+			oscpu: function(currentProperties){
+				return firefoxOscpu[currentProperties.osPreset || ""] || "{original value}";
+			},
 			productSub: "20100101",
 			userAgent: "Mozilla/5.0 ({platformDetails}; rv:{firefoxVersion}) Gecko/20100101 Firefox/{firefoxVersion}",
 			vendor: undefined,

@@ -9,6 +9,7 @@ Version 0.5.15:
 	fixes:
 		- background color of the textarea in the settings export was not readable in the dark theme when the value was invalid
 		- settings sanitation: added missing APIs
+		- navigator.oscpu and navigator.buildID are undefined in non Gecko browsers
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
