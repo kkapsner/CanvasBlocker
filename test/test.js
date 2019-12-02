@@ -45,6 +45,17 @@
 		catch (error){console.error(error);}
 		try {show(document.getElementById("iframe6"), dynamicIframeTest3());}
 		catch (error){console.error(error);}
+		window.addEventListener("click", function windowOpenTest(){
+			window.removeEventListener("click", windowOpenTest);
+			var newWindow = window.open("/");
+			try{
+				show(document.getElementById("windowOpen"), copyToDifferentDocumentTest(newWindow.document));
+			}
+			catch (error){
+				console.error(error);
+			}
+			newWindow.close();
+		});
 	}
 	document.querySelector("#top button").addEventListener("click", function(){
 		show(document.getElementById("top"), topTest());
@@ -66,6 +77,11 @@
 	});
 	document.querySelector("#iframe6 button").addEventListener("click", function(){
 		show(document.getElementById("iframe6"), dynamicIframeTest3());
+	});
+	document.querySelector("#windowOpen button").addEventListener("click", function(){
+		var newWindow = window.open("/");
+		show(document.getElementById("windowOpen"), copyToDifferentDocumentTest(newWindow.document));
+		newWindow.close();
 	});
 }());
 

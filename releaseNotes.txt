@@ -12,6 +12,7 @@ Version 0.5.15:
 		- settings sanitation: added missing APIs
 		- navigator.oscpu and navigator.buildID are undefined in non Gecko browsers
 		- resetting the settings had undesired side effects
+		- added window.open protection
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
