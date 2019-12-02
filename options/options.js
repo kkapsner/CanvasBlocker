@@ -17,6 +17,7 @@
 	const settingsMigration = require("../lib/settingsMigration");
 	require("./theme").init("options");
 	const modal = require("../lib/modal");
+	const mobile = require("../lib/mobile");
 	
 	const callbacks = {
 		openNavigatorSettings: function(){
@@ -153,6 +154,9 @@
 				if (clear){
 					await browser.storage.local.clear();
 					await browser.storage.local.set({storageVersion: settings.storageVersion});
+					if (await mobile.isMobile()){
+						await mobile.applyMobileDefaults();
+					}
 				}
 			}
 			catch (error){

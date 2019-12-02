@@ -5,6 +5,7 @@ Version 0.5.15:
 	
 	new features:
 		- added screen protection
+		- added default values for mobile
 	
 	fixes:
 		- background color of the textarea in the settings export was not readable in the dark theme when the value was invalid

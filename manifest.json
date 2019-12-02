@@ -23,6 +23,7 @@
 			"lib/dataUrls.js",
 			"lib/notification.js",
 			"lib/navigator.js",
+			"lib/mobile.js",
 			"lib/main.js"
 		]
 	},
