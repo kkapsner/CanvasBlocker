@@ -126,33 +126,34 @@ addConsistencyTest("media queries: window.matchMedia - big value", function(){
 	);
 });
 
-function addResolutionTest(title, callback){
+var addResolutionTest = function(){
 	"use strict";
-	
-	addTest(document.getElementById("resolution"), title, function(resultsNode){
-		["width", "height"].forEach(function(type){
-			var line = document.createElement("div");
-			line.textContent = type + ": ";
-			resultsNode.appendChild(line);
-			
-			var number = document.createElement("span");
-			number.className = "result " + type;
-			line.appendChild(number);
-			function compute(){
-				number.textContent = "computing";
-				callback(type).then(function(value){
-					number.textContent = value;
-					return;
-				}).catch(function(error){
-					number.classList.add("failed");
-					number.textContent = error;
-				});
-			}
-			compute();
-			window.addEventListener("resize", compute);
+	return function addResolutionTest(title, callback, properties = ["width", "height"]){
+		addTest(document.getElementById("resolution"), title, function(resultsNode){
+			properties.forEach(function(type){
+				var line = document.createElement("div");
+				line.textContent = type + ": ";
+				resultsNode.appendChild(line);
+				
+				var number = document.createElement("span");
+				number.className = "result " + type;
+				line.appendChild(number);
+				function compute(){
+					number.textContent = "computing";
+					callback(type).then(function(value){
+						number.textContent = value;
+						return;
+					}).catch(function(error){
+						number.classList.add("failed");
+						number.textContent = error;
+					});
+				}
+				compute();
+				window.addEventListener("resize", compute);
+			});
 		});
-	});
-}
+	};
+}();
 
 addResolutionTest("screen properties", function(type){
 	"use strict";
@@ -166,7 +167,7 @@ addResolutionTest("screen properties: avail...", function(type){
 	return Promise.resolve(screen[
 		"avail" + type.substring(0, 1).toUpperCase() + type.substring(1)
 	]);
-});
+}, ["width", "height", "left", "top"]);
 
 addResolutionTest("window properties: inner...", function(type){
 	"use strict";
