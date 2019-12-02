@@ -141,21 +141,23 @@
 				alert(error);
 			});
 		},
-		resetSettings: function(){
-			modal.confirm(
-				extension.getTranslation("resetSettings_confirm"),
-				{
-					node: this,
-					selector: ".settingRow .content"
-				}
-			).then(function(clear){
+		resetSettings: async function(){
+			try {
+				const clear = await modal.confirm(
+					extension.getTranslation("resetSettings_confirm"),
+					{
+						node: this,
+						selector: ".settingRow .content"
+					}
+				);
 				if (clear){
-					browser.storage.local.clear();
+					await browser.storage.local.clear();
+					await browser.storage.local.set({storageVersion: settings.storageVersion});
 				}
-				return;
-			}).catch(function(error){
+			}
+			catch (error){
 				logging.warning("Unable to reset settings:", error);
-			});
+			}
 		}
 	};
 	
