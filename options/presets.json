@@ -2,6 +2,7 @@
 	"convenience": {
 		"maxFakeSize": 1000000,
 		"protectDOMRect": {
+			"mail.google.com": false,
 			"onedrive.live.com": false
 		}
 	},
