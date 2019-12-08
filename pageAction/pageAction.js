@@ -82,8 +82,8 @@
 					domRect: {name: "protectDOMRect", value: false},
 					history: {name: "historyLengthThreshold", value: 10000},
 					navigator: {name: "protectNavigator", value: false},
-					windows: {name: "protectWindow", value: false}
-					
+					windows: {name: "protectWindow", value: false},
+					screen: {name: "protectScreen", value: false},
 				};
 				return domainOrUrlPicker(
 					domain,

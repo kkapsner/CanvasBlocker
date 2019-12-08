@@ -62,6 +62,12 @@
 			whitelistValue: false,
 			protectedValue: true
 		},
+		{
+			title: extension.getTranslation("section_screen-api"),
+			name: "protectScreen",
+			whitelistValue: false,
+			protectedValue: true
+		},
 	];
 	
 	settings.onloaded(function(){
