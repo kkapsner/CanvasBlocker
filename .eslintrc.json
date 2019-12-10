@@ -50,6 +50,7 @@
 		"no-unreachable": "warn",
 		"no-unused-vars": "off",
 		"no-use-before-define": ["error", {"functions": false}],
+		"no-useless-rename": "warn",
 		"no-var": "error",
 		"quotes": ["error", "double"],
 		"semi": ["error", "always"],
