@@ -7,6 +7,7 @@
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
 	<script>
 		console.log(new Date(), "starting first fingerprint", window.name);
+		var firstDescriptor = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, "getContext");
 		function fingerPrint(){
 			"use strict";var canvas = document.createElement("canvas");
 			canvas.setAttribute("width", 220);
@@ -53,6 +54,15 @@
 		#output {
 			padding: 1em;
 		}
+		.ok {
+			background-color: green;
+		}
+		.kok {
+			background-color: orange;
+		}
+		.nok {
+			background-color: red;
+		}
 	</style>
 </head>
 <body>
@@ -68,16 +78,28 @@
 		if (firstFingerprint){
 			var output = document.getElementById("output");
 			output.textContent = "context API not blocked";
+			output.appendChild(document.createElement("br"));
 			window.setTimeout(function(){
 				"use strict";
 			
 				console.log(new Date(), "starting second fingerprint", window.name);
+				var secondDescriptor = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, "getContext");
+				
+				if (firstDescriptor.value === secondDescriptor.value){
+					output.appendChild(document.createTextNode("descriptor did not change -> good!"));
+					output.classList.add("ok");
+				}
+				else {
+					output.appendChild(document.createTextNode("descriptor changed -> bad!"));
+					console.log(firstDescriptor, secondDescriptor);
+					output.classList.add("nok");
+				}
 				output.appendChild(document.createElement("br"));
 				var secondFingerprint = fingerPrint();
 				if (firstFingerprint === secondFingerprint){
 					return hash(firstFingerprint).then(function(hash){
 						output.appendChild(document.createTextNode("fingerprint consistent (" + hash + ") -> good!"));
-						output.style.backgroundColor = "green";
+						output.classList.add("ok");
 						return;
 					});
 				}
@@ -90,7 +112,7 @@
 								") -> very bad! (potential fingerprint leak)"
 							)
 						);
-						output.style.backgroundColor = "red";
+						output.classList.add("nok");
 						return;
 					});
 				}
@@ -98,7 +120,7 @@
 		}
 		else {
 			output.textContent = "context API blocked";
-			output.style.backgroundColor = "orange";
+			output.classList.add("kok");
 		}
 	</script>
 </body></html>
