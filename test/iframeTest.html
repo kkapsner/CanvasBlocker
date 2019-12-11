@@ -88,7 +88,16 @@
 			"use strict";
 			
 			document.body.innerHTML = "<iframe></iframe>";
-			console.log("TEST:", "innerHTML after 1000ms:", compare(test(window[0]), reference));
+			log("TEST:", "innerHTML after 1000ms:", compare(test(window[0]), reference));
+			
+			var iFrame = document.createElement("iframe");
+			document.body.appendChild(iFrame);
+			log("TEST:", "appendChild after 1000ms:", compare(test(window[1]), reference));
+			
+			var iFrame2 = document.createElement("iframe");
+			iFrame.replaceWith(iFrame2);
+			log("TEST:", "replaceWith after 1000ms:", compare(test(window[1]), reference));
+			
 			document.body.innerHTML = "<h1>Iframe protection</h1>" +
 				"Open console (Ctrl + Shift + K) to see results. " +
 				"Depending on your Browser version you might have to check the \"Persist Logs\" flag and reload the page.<br>" +

@@ -205,6 +205,17 @@ addTest("function name", function(log){
 		},
 	].map(checkName).some(function(b){return b;});
 });
+addTest("exposed getters or setters", function(log){
+	"use strict";
+	
+	return Object.keys(window).filter(function(key){
+		if (/^(get|set) /.test(key)){
+			log("found exposed function", JSON.stringify(key));
+			return true;
+		}
+		return false;
+	}).length !== 0;
+});
 addTest("property descriptor", function(log){
 	"use strict";
 	
