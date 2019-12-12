@@ -54,16 +54,16 @@ function checkPropertyDescriptor(object, name, expectedDescriptor, log){
 		if ((typeof expected) === "function"){
 			if (got.name !== expected.name){
 				detected = true;
-				logProperty(desc + " (function name)", expected.name, got.name);
+				logProperty(desc + " (function name)", got.name, expected.name);
 			}
 			if (got.length !== expected.length){
 				detected = true;
-				logProperty(desc + " (function length)", expected.length, got.length);
+				logProperty(desc + " (function length)", got.length, expected.length);
 			}
 			const re = "^\\s*function " + expected.name + "\\s*\\(\\)\\s*\\{\\s*\\[native code\\]\\s*\\}\\s*$";
 			if (!got.toString().match(new RegExp(re))){
 				detected = true;
-				logProperty(desc + " (function string)", re, got.toString());
+				logProperty(desc + " (function string)", got.toString(), re);
 			}
 		}
 		else if (got !== expected){
