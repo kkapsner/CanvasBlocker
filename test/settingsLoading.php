@@ -6,8 +6,8 @@
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
 	<script>
-		console.log(new Date(), "starting first fingerprint", window.name);
 		var firstDescriptor = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, "getContext");
+		console.log(new Date(), "starting first fingerprint", window.name);
 		function fingerPrint(){
 			"use strict";var canvas = document.createElement("canvas");
 			canvas.setAttribute("width", 220);
