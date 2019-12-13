@@ -203,6 +203,10 @@ addTest("function name", function(log){
 			func: HTMLIFrameElement.prototype.__lookupGetter__("contentDocument"),
 			expectedName: "get contentDocument"
 		},
+		{
+			func: HTMLIFrameElement.prototype.__lookupGetter__("contentWindow"),
+			expectedName: "get contentWindow"
+		},
 	].map(checkName).some(function(b){return b;});
 });
 addTest("exposed getters or setters", function(log){
