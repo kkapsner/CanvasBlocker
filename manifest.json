@@ -98,7 +98,7 @@
 		"gecko": {
 			"id": "CanvasBlocker@kkapsner.de",
 			"update_url": "https://canvasblocker.kkapsner.de/versions/updates.json",
-			"strict_min_version": "57.0"
+			"strict_min_version": "68.0"
 		}
 	},
 	"default_locale": "en",
