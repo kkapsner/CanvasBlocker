@@ -21,5 +21,10 @@
 		"audioFakeRate": "0.1%",
 		"audioNoiseLevel": "low",
 		"protectWindow": true
+	},
+	"recaptcha": {
+		"protectWindow": {
+			"^https://www\\.google\\.com/recaptcha/api2/(?:b?frame|anchor).*$": false
+		}
 	}
 }
