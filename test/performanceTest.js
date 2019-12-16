@@ -1,23 +1,23 @@
 
-var createLog = function(){
+const createLog = function(){
 	"use strict";
 	
-	var div = document.getElementById("log");
+	const div = document.getElementById("log");
 	
 	return function createLog(){
-		var logDiv = document.createElement("div");
+		const logDiv = document.createElement("div");
 		logDiv.className = "log";
 		div.appendChild(logDiv);
 		return {
 			createButton: function createButton(text, callback){
-				var button = document.createElement("button");
+				const button = document.createElement("button");
 				button.className = "logButton";
 				logDiv.appendChild(button);
 				button.textContent = text;
 				button.addEventListener("click", callback);
 			},
 			createLine: function createLine(str, type = "div"){
-				var logLine = document.createElement(type);
+				const logLine = document.createElement(type);
 				logLine.className = "logLine";
 				logDiv.appendChild(logLine);
 				logLine.textContent = str;
@@ -29,20 +29,20 @@ var createLog = function(){
 	};
 }();
 
-var performTest = function(){
+const performTest = function(){
 	"use strict";
 	
 	return function performTest(name, func, innerRunLength, outerRunLength){
-		var log = createLog();
+		const log = createLog();
 		log.createLine("test " + name, "h3");
-		var line = log.createLine("");
-		var line2;
-		var time = 0;
-		var time2 = 0;
-		var min = Number.POSITIVE_INFINITY;
-		var max = 0;
-		var outerI = 0;
-		var outerRunIncrease = outerRunLength;
+		const line = log.createLine("");
+		let line2;
+		let time = 0;
+		let time2 = 0;
+		let min = Number.POSITIVE_INFINITY;
+		let max = 0;
+		let outerI = 0;
+		const outerRunIncrease = outerRunLength;
 		if (func.prepareOnce){
 			func.prepareOnce();
 		}
@@ -50,21 +50,21 @@ var performTest = function(){
 			line("starting");
 			line2("");
 			function run(){
-				for (var i = 0; i < innerRunLength; i += 1){
+				for (let i = 0; i < innerRunLength; i += 1){
 					if (func.prepare){
 						func.prepare();
 					}
-					var start = performance.now();
+					const start = performance.now();
 					func.test();
-					var end = performance.now();
-					var duration = end - start;
+					const end = performance.now();
+					const duration = end - start;
 					min = Math.min(min, duration);
 					max = Math.max(max, duration);
 					time2 += duration * duration;
 					time += duration;
 				}
 				outerI += 1;
-				var totalRunI = outerI * innerRunLength;
+				const totalRunI = outerI * innerRunLength;
 				line(
 					"finished run " + totalRunI + " from " + (innerRunLength * outerRunLength) +
 					" -> average: " + (time / totalRunI).toFixed(2) +
@@ -91,9 +91,9 @@ function draw(canvas){
 	canvas.setAttribute("width", 220);
 	canvas.setAttribute("height", 30);
 	
-	var fp_text = "BrowserLeaks,com <canvas> 10";
+	const fp_text = "BrowserLeaks,com <canvas> 10";
 	
-	var ctx = canvas.getContext("2d");
+	const ctx = canvas.getContext("2d");
 	ctx.textBaseline = "top";
 	ctx.font = "14px 'Arial'";
 	ctx.textBaseline = "alphabetic";
@@ -107,10 +107,10 @@ function draw(canvas){
 	return ctx;
 }
 
-var fingerprintTest = function(){
+const fingerprintTest = function(){
 	"use strict";
 	
-	var canvas;
+	let canvas;
 	return {
 		prepare: function(){
 			// create window canvas
@@ -124,20 +124,20 @@ var fingerprintTest = function(){
 	};
 }();
 
-var randomImageTest = function(){
+const randomImageTest = function(){
 	"use strict";
 	
-	var canvas;
+	let canvas;
 	
 	return {
 		prepare: function(){
 			canvas = document.createElement("canvas");
 			canvas.width = 1000;
 			canvas.height = 100;
-			var imageData = new ImageData(canvas.width, canvas.height);
-			var data = imageData.data;
+			const imageData = new ImageData(canvas.width, canvas.height);
+			const data = imageData.data;
 			
-			for (var i = 0; i < data.length; i += 4){
+			for (let i = 0; i < data.length; i += 4){
 				data[i + 0] = Math.floor(256 * Math.random());
 				data[i + 1] = Math.floor(256 * Math.random());
 				data[i + 2] = Math.floor(256 * Math.random());
@@ -152,10 +152,10 @@ var randomImageTest = function(){
 	};
 }();
 
-var innerHTMlTest = function(html, repeats){
+const innerHTMlTest = function(html, repeats){
 	"use strict";
 	
-	var div;
+	let div;
 	
 	return {
 		prepareOnce: function(){
@@ -164,7 +164,7 @@ var innerHTMlTest = function(html, repeats){
 			document.body.appendChild(div);
 		},
 		test: function randomImageTest(){
-			for (var i = repeats; i--;){
+			for (let i = repeats; i--;){
 				div.innerHTML = html;
 				div.innerHTML = "";
 			}

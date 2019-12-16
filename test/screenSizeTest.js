@@ -1,14 +1,14 @@
 function addTest(container, title, callback){
 	"use strict";
 	
-	var testContainer = document.createElement("div");
+	const testContainer = document.createElement("div");
 	testContainer.className = "test";
 	
-	var titleNode = document.createElement("h3");
+	const titleNode = document.createElement("h3");
 	titleNode.textContent = title;
 	testContainer.appendChild(titleNode);
 	
-	var resultsNode = document.createElement("div");
+	const resultsNode = document.createElement("div");
 	resultsNode.className = "results";
 	testContainer.appendChild(resultsNode);
 	
@@ -22,27 +22,28 @@ function addConsistencyTest(title, callback){
 	
 	addTest(document.getElementById("consistency"), title, function(resultsNode){
 		
-		var line = document.createElement("div");
+		const line = document.createElement("div");
 		line.textContent = "consistent: ";
 		resultsNode.appendChild(line);
 		
-		var consistent = document.createElement("span");
+		const consistent = document.createElement("span");
 		consistent.className = "result";
 		line.appendChild(consistent);
 		
-		function compute(){
+		async function compute(){
 			consistent.textContent = "computing";
-			callback().then(function(value){
+			try {
+				const value = await callback();
 				consistent.textContent = value? "OK": "not OK";
-				return;
-			}).catch(function(error){
+			}
+			catch (error){
 				consistent.classList.add("failed");
 				if (Array.isArray(error)){
 					consistent.textContent = "";
-					var ul = document.createElement("ul");
+					const ul = document.createElement("ul");
 					consistent.appendChild(ul);
 					error.forEach(function(error){
-						var li = document.createElement("li");
+						const li = document.createElement("li");
 						li.textContent = error;
 						ul.appendChild(li);
 					});
@@ -50,7 +51,7 @@ function addConsistencyTest(title, callback){
 				else {
 					consistent.textContent = error;
 				}
-			});
+			}
 		}
 		compute();
 		window.addEventListener("resize", compute);
@@ -76,7 +77,7 @@ addConsistencyTest("screen properties", function(){
 addConsistencyTest("media queries: window.matchMedia - low value", function(){
 	"use strict";
 	
-	var value = Math.floor(Math.min(screen.width, screen.height) / 2);
+	const value = Math.floor(Math.min(screen.width, screen.height) / 2);
 	
 	return Promise.resolve(
 		window.matchMedia("(min-device-width: " + value + "px)").matches &&
@@ -89,11 +90,11 @@ addConsistencyTest("media queries: window.matchMedia - low value", function(){
 addConsistencyTest("media queries: window.matchMedia - reported value", function(){
 	"use strict";
 	
-	var errors = [];
+	const errors = [];
 	["width", "height"].forEach(function(dimension){
 		["min-", "max-", ""].forEach(function(comparison){
-			var queryBase = "(" + comparison + "device-" + dimension + ": ";
-			var query = queryBase + screen[dimension] + "px)";
+			const queryBase = "(" + comparison + "device-" + dimension + ": ";
+			let query = queryBase + screen[dimension] + "px)";
 			if (!window.matchMedia(query).matches){
 				errors.push(query + " did not match.");
 				query = queryBase + (screen[dimension] + 1) + "px)";
@@ -116,7 +117,7 @@ addConsistencyTest("media queries: window.matchMedia - reported value", function
 addConsistencyTest("media queries: window.matchMedia - big value", function(){
 	"use strict";
 	
-	var value = Math.max(screen.width, screen.height) * 2;
+	const value = Math.max(screen.width, screen.height) * 2;
 	
 	return Promise.resolve(
 		!window.matchMedia("(min-device-width: " + value + "px)").matches &&
@@ -126,27 +127,28 @@ addConsistencyTest("media queries: window.matchMedia - big value", function(){
 	);
 });
 
-var addResolutionTest = function(){
+const addResolutionTest = function(){
 	"use strict";
 	return function addResolutionTest(title, callback, properties = ["width", "height"]){
 		addTest(document.getElementById("resolution"), title, function(resultsNode){
 			properties.forEach(function(type){
-				var line = document.createElement("div");
+				const line = document.createElement("div");
 				line.textContent = type + ": ";
 				resultsNode.appendChild(line);
 				
-				var number = document.createElement("span");
+				const number = document.createElement("span");
 				number.className = "result " + type;
 				line.appendChild(number);
-				function compute(){
+				async function compute(){
 					number.textContent = "computing";
-					callback(type).then(function(value){
+					try {
+						const value = await callback(type);
 						number.textContent = value;
-						return;
-					}).catch(function(error){
+					}
+					catch (error){
 						number.classList.add("failed");
 						number.textContent = error;
-					});
+					}
 				}
 				compute();
 				window.addEventListener("resize", compute);
@@ -185,78 +187,76 @@ addResolutionTest("window properties: outer...", function(type){
 	]);
 });
 
-function searchValue(tester){
+async function searchValue(tester){
 	"use strict";
 	
-	var minValue = 0;
-	var maxValue = 512;
-	var ceiling = Math.pow(2, 32);
+	let minValue = 0;
+	let maxValue = 512;
+	const ceiling = Math.pow(2, 32);
 	
-	function stepUp(){
+	async function stepUp(){
 		if (maxValue > ceiling){
 			return Promise.reject("Unable to find upper bound");
 		}
-		return tester(maxValue).then(function(testResult){
-			if (testResult === searchValue.isEqual){
-				return maxValue;
-			}
-			else if (testResult === searchValue.isBigger){
-				minValue = maxValue;
-				maxValue *= 2;
-				return stepUp();
+		const testResult = await tester(maxValue);
+		if (testResult === searchValue.isEqual){
+			return maxValue;
+		}
+		else if (testResult === searchValue.isBigger){
+			minValue = maxValue;
+			maxValue *= 2;
+			return stepUp();
+		}
+		else {
+			return false;
+		}
+	}
+	let v = 1;
+	async function test(){
+		const r = await tester(v);
+		v = 2;
+	}
+	async function binarySearch(){
+		if (maxValue - minValue < 0.01){
+			const testResult = await tester(minValue);
+			if (testResult.isEqual){
+				return minValue;
 			}
 			else {
-				return false;
-			}
-		});
-	}
-	function binarySearch(){
-		if (maxValue - minValue < 0.01){
-			return tester(minValue).then(function(testResult){
+				const testResult = await tester(maxValue);
 				if (testResult.isEqual){
-					return minValue;
+					return maxValue;
 				}
 				else {
-					// eslint-disable-next-line promise/no-nesting
-					return tester(maxValue).then(function(testResult){
-						if (testResult.isEqual){
-							return maxValue;
-						}
-						else {
-							throw "Search could not find exact value." +
-								" It's between " + minValue + " and " + maxValue + ".";
-						}
-					});
+					throw "Search could not find exact value." +
+						" It's between " + minValue + " and " + maxValue + ".";
 				}
-			});
+			}
 		}
 		else {
-			var pivot = (minValue + maxValue) / 2;
-			return tester(pivot).then(function(testResult){
-				if (testResult === searchValue.isEqual){
-					return pivot;
-				}
-				else if (testResult === searchValue.isBigger){
-					minValue = pivot;
-					return binarySearch();
-				}
-				else {
-					maxValue = pivot;
-					return binarySearch();
-				}
-			});
+			const pivot = (minValue + maxValue) / 2;
+			const testResult = await tester(pivot);
+			if (testResult === searchValue.isEqual){
+				return pivot;
+			}
+			else if (testResult === searchValue.isBigger){
+				minValue = pivot;
+				return binarySearch();
+			}
+			else {
+				maxValue = pivot;
+				return binarySearch();
+			}
 		}
 	}
 	
-	return stepUp().then(function(stepUpResult){
-		if (stepUpResult){
-			return stepUpResult;
-		}
-		else {
-			return binarySearch();
-		}
-	});
-	
+	const stepUpResult = await stepUp();
+	if (stepUpResult){
+		return stepUpResult;
+	}
+	else {
+		return binarySearch();
+	}
 }
 searchValue.isSmaller = -1;
 searchValue.isEqual = 0;
@@ -297,16 +297,16 @@ addResolutionTest("media queries: window.matchMedia (min)", function(type){
 addResolutionTest("media queries: css (max)", function(type){
 	"use strict";
 	
-	var tester = document.createElement("div");
-	var id = "tester_" + (Math.random() * Math.pow(2, 32)).toString(36).replace(".", "_");
+	const tester = document.createElement("div");
+	const id = "tester_" + (Math.random() * Math.pow(2, 32)).toString(36).replace(".", "_");
 	tester.id = id;
 	document.body.appendChild(tester);
 	
-	var style = document.createElement("style");
+	const style = document.createElement("style");
 	style.type = "text/css";
 	document.head.appendChild(style);
 	
-	var styleSheet = document.styleSheets[document.styleSheets.length - 1];
+	const styleSheet = document.styleSheets[document.styleSheets.length - 1];
 	styleSheet.insertRule("#" + id + "{position: fixed; right: 100%; z-index: 0;}");
 	
 	return searchValue(function(valueToTest){
@@ -314,12 +314,12 @@ addResolutionTest("media queries: css (max)", function(type){
 			while (styleSheet.rules.length > 1){
 				styleSheet.removeRule(1);
 			}
-			var rule = "@media (max-device-" + type + ": " + valueToTest + "px){#" + id + "{z-index: 1;}}";
+			let rule = "@media (max-device-" + type + ": " + valueToTest + "px){#" + id + "{z-index: 1;}}";
 			styleSheet.insertRule(rule, 1);
 			rule = "@media (device-" + type + ": " + valueToTest + "px){#" + id + "{z-index: 2;}}";
 			styleSheet.insertRule(rule, 2);
 			window.setTimeout(function(){
-				var testValue = window.getComputedStyle(tester).zIndex;
+				const testValue = window.getComputedStyle(tester).zIndex;
 				switch (testValue){
 					case "0":
 						resolve(searchValue.isBigger);
@@ -341,16 +341,16 @@ addResolutionTest("media queries: css (max)", function(type){
 addResolutionTest("media queries: css (min)", function(type){
 	"use strict";
 	
-	var tester = document.createElement("div");
-	var id = "tester_" + (Math.random() * Math.pow(2, 32)).toString(36).replace(".", "_");
+	const tester = document.createElement("div");
+	const id = "tester_" + (Math.random() * Math.pow(2, 32)).toString(36).replace(".", "_");
 	tester.id = id;
 	document.body.appendChild(tester);
 	
-	var style = document.createElement("style");
+	const style = document.createElement("style");
 	style.type = "text/css";
 	document.head.appendChild(style);
 	
-	var styleSheet = document.styleSheets[document.styleSheets.length - 1];
+	const styleSheet = document.styleSheets[document.styleSheets.length - 1];
 	styleSheet.insertRule("#" + id + "{position: fixed; right: 100%; z-index: 0;}");
 	
 	return searchValue(function(valueToTest){
@@ -358,12 +358,12 @@ addResolutionTest("media queries: css (min)", function(type){
 			while (styleSheet.rules.length > 1){
 				styleSheet.removeRule(1);
 			}
-			var rule = "@media (min-device-" + type + ": " + valueToTest + "px){#" + id + "{z-index: 1;}}";
+			let rule = "@media (min-device-" + type + ": " + valueToTest + "px){#" + id + "{z-index: 1;}}";
 			styleSheet.insertRule(rule, 1);
 			rule = "@media (device-" + type + ": " + valueToTest + "px){#" + id + "{z-index: 2;}}";
 			styleSheet.insertRule(rule, 2);
 			window.setTimeout(function(){
-				var testValue = window.getComputedStyle(tester).zIndex;
+				const testValue = window.getComputedStyle(tester).zIndex;
 				switch (testValue){
 					case "0":
 						resolve(searchValue.isSmaller);

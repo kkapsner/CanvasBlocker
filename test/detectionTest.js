@@ -1,19 +1,19 @@
-var addTest = (function(){
+const addTest = (function(){
 	"use strict";
 
-	var statusDefinitions = [
+	const statusDefinitions = [
 		{className: "notRun", text: "not run"},
 		{className: "loud", text: "API tampering detected"},
 		{className: "stealthy", text: "no API tampering detected"},
 		{className: "failed", text: "test failed"}
 	];
-	var ul = document.getElementById("tests");
+	const ul = document.getElementById("tests");
 	return function addTest(name, func){
-		var logs = [];
+		const logs = [];
 		function log(){
 			logs.push(Array.prototype.slice.call(arguments).join(" "));
 		}
-		var status = 0;
+		let status = 0;
 		try {
 			status = func(log)? 1: 2;
 		}
@@ -21,15 +21,15 @@ var addTest = (function(){
 			console.log(error);
 			status = 3;
 		}
-		var li = document.createElement("li");
+		const li = document.createElement("li");
 		li.className = statusDefinitions[status].className;
-		var nameNode = document.createElement("span");
+		const nameNode = document.createElement("span");
 		nameNode.className = "name";
 		nameNode.textContent = name;
 		nameNode.title = func.toString();
 		li.appendChild(nameNode);
 		li.appendChild(document.createTextNode(": "));
-		var statusNode = document.createElement("span");
+		const statusNode = document.createElement("span");
 		statusNode.className = "status";
 		statusNode.textContent = statusDefinitions[status].text;
 		statusNode.title = logs.join("\n");
@@ -41,15 +41,15 @@ var addTest = (function(){
 
 function checkPropertyDescriptor(object, name, expectedDescriptor, log){
 	"use strict";
-	var descriptor = Object.getOwnPropertyDescriptor(object, name);
-	var detected = false;
+	const descriptor = Object.getOwnPropertyDescriptor(object, name);
+	let detected = false;
 	
 	function logProperty(desc, got, expected){
 		log("Wrong", desc, "for", name, "- got:", got, "- expected: ", expected);
 	}
 	function compare(desc, getter){
-		var got = getter(descriptor);
-		var expected = getter(expectedDescriptor);
+		const got = getter(descriptor);
+		const expected = getter(expectedDescriptor);
 		
 		if ((typeof expected) === "function"){
 			if (got.name !== expected.name){
@@ -94,7 +94,7 @@ addTest("function length", function(log){
 });
 addTest("function code", function(log){
 	"use strict";
-	var codeDetected = false;
+	let codeDetected = false;
 	function checkFunctionCode(func, expectedName){
 		log("checking", expectedName);
 		if (!func.toString().match(
@@ -228,7 +228,6 @@ addTest("property descriptor", function(log){
 			object: CanvasRenderingContext2D.prototype,
 			name: "getImageData",
 			descriptor: {
-				// eslint-disable-next-line no-unused-vars
 				value: function getImageData(x, y, w, h){},
 				writable: true,
 				enumerable: true,
@@ -264,9 +263,9 @@ addTest("property descriptor", function(log){
 addTest("error provocation 1", function(log){
 	"use strict";
 	
-	var canvas = document.createElement("canvas");
-	var ctx = canvas.getContext("2d");
-	var canvasBlocker = false;
+	const canvas = document.createElement("canvas");
+	const ctx = canvas.getContext("2d");
+	let canvasBlocker = false;
 	try{
 		ctx.getImageData(0, 0, 0, 0);
 	}
@@ -284,10 +283,10 @@ addTest("error provocation 1", function(log){
 addTest("error provocation 2", function(log){
 	"use strict";
 	
-	var canvas = document.createElement("canvas");
+	const canvas = document.createElement("canvas");
 	canvas.width = 0;
-	var ctx = canvas.getContext("2d");
-	var canvasBlocker = false;
+	const ctx = canvas.getContext("2d");
+	let canvasBlocker = false;
 	try{
 		ctx.getImageData(0, 0, 1, 1);
 		log("no error provoked");
@@ -306,7 +305,7 @@ addTest("error provocation 2", function(log){
 addTest("error provocation 3", function(log){
 	"use strict";
 	
-	var canvasBlocker = false;
+	let canvasBlocker = false;
 	try{
 		CanvasRenderingContext2D.prototype.getImageData.apply(undefined, [0, 0, 1, 1]);
 	}
@@ -324,23 +323,23 @@ addTest("error provocation 3", function(log){
 addTest("error properties", function(log){
 	"use strict";
 	
-	var canvasBlocker = false;
+	let canvasBlocker = false;
 	try{
 		CanvasRenderingContext2D.prototype.getImageData.apply(undefined, [0, 0, 1, 1]);
 	}
 	catch (error){
 		try {
-			var name = "TypeError";
+			const name = "TypeError";
 			if (error.name !== name && error instanceof TypeError){
 				log("Error name wrong. Expected: ", name, "- got:", error.name);
 				canvasBlocker = true;
 			}
-			var start = "@" + location.href.replace(/\.html$/, ".js");
+			const start = "@" + location.href.replace(/\.html$/, ".js");
 			if (!error.stack.startsWith(start)){
 				log("Error stack starts wrong. Expected:", start, "- got :", error.stack.split(/\n/g, 2)[0]);
 				canvasBlocker = true;
 			}
-			var message = "'getImageData' called on an object that " +
+			const message = "'getImageData' called on an object that " +
 				"does not implement interface CanvasRenderingContext2D.";
 			if (error.message !== message){
 				log("Error message wrong. Expected: ", message, "- got:", error.message);
@@ -356,12 +355,12 @@ addTest("error properties", function(log){
 function testKnownPixelValue(size, log){
 	"use strict";
 	
-	var canvas = document.createElement("canvas");
+	const canvas = document.createElement("canvas");
 	canvas.height = size;
 	canvas.width = size;
-	var context = canvas.getContext("2d");
-	var imageData = new ImageData(canvas.width, canvas.height);
-	var pixelValues = imageData.data;
+	const context = canvas.getContext("2d");
+	const imageData = new ImageData(canvas.width, canvas.height);
+	const pixelValues = imageData.data;
 	for (let i = 0; i < imageData.data.length; i += 1){
 		if (i % 4 !== 3){
 			pixelValues[i] = Math.floor(256 * Math.random());
@@ -371,8 +370,8 @@ function testKnownPixelValue(size, log){
 		}
 	}
 	context.putImageData(imageData, 0, 0);
-	var p = context.getImageData(0, 0, canvas.width, canvas.height).data;
-	for (var i = 0; i < p.length; i += 1){
+	const p = context.getImageData(0, 0, canvas.width, canvas.height).data;
+	for (let i = 0; i < p.length; i += 1){
 		if (p[i] !== pixelValues[i]){
 			log("wrong value", p[i], "at", i, "expected", pixelValues[i]);
 			return true;
@@ -393,9 +392,9 @@ addTest("known pixel value test 10", function(log){
 addTest("double readout test", function(log){
 	"use strict";
 	
-	var canvas = document.createElement("canvas");
-	var context = canvas.getContext("2d");
-	var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+	const canvas = document.createElement("canvas");
+	const context = canvas.getContext("2d");
+	const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
 	for (let i = 0; i < imageData.data.length; i += 1){
 		if (i % 4 !== 3){
 			imageData.data[i] = Math.floor(256 * Math.random());
@@ -406,8 +405,8 @@ addTest("double readout test", function(log){
 	}
 	context.putImageData(imageData, 0, 0);
 	
-	var imageData1 = context.getImageData(0, 0, canvas.width, canvas.height);
-	var imageData2 = context.getImageData(0, 0, canvas.width, canvas.height);
+	const imageData1 = context.getImageData(0, 0, canvas.width, canvas.height);
+	const imageData2 = context.getImageData(0, 0, canvas.width, canvas.height);
 	for (let i = 0; i < imageData2.data.length; i += 1){
 		if (imageData1.data[i] !== imageData2.data[i]){
 			log("mismatch at", i, ":",
@@ -424,9 +423,9 @@ addTest("double readout test", function(log){
 addTest("double readout test (toDataURL)", function(log){
 	"use strict";
 	
-	var canvas = document.createElement("canvas");
-	var context = canvas.getContext("2d");
-	var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+	const canvas = document.createElement("canvas");
+	const context = canvas.getContext("2d");
+	const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
 	for (let i = 0; i < imageData.data.length; i += 1){
 		if (i % 4 !== 3){
 			imageData.data[i] = Math.floor(256 * Math.random());
@@ -437,8 +436,8 @@ addTest("double readout test (toDataURL)", function(log){
 	}
 	context.putImageData(imageData, 0, 0);
 	
-	var dataURL1 = canvas.toDataURL();
-	var dataURL2 = canvas.toDataURL();
+	const dataURL1 = canvas.toDataURL();
+	const dataURL2 = canvas.toDataURL();
 	if (dataURL1 !== dataURL2){
 		log("data URL missmatch:",
 			dataURL1,
@@ -452,9 +451,9 @@ addTest("double readout test (toDataURL)", function(log){
 addTest("readout - in - out test", function(log){
 	"use strict";
 	
-	var canvas = document.createElement("canvas");
-	var context = canvas.getContext("2d");
-	var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+	const canvas = document.createElement("canvas");
+	const context = canvas.getContext("2d");
+	const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
 	for (let i = 0; i < imageData.data.length; i += 1){
 		if (i % 4 !== 3){
 			imageData.data[i] = Math.floor(256 * Math.random());
@@ -465,11 +464,11 @@ addTest("readout - in - out test", function(log){
 	}
 	context.putImageData(imageData, 0, 0);
 	
-	var imageData1 = context.getImageData(0, 0, canvas.width, canvas.height);
-	var canvas2 = document.createElement("canvas");
-	var context2 = canvas2.getContext("2d");
+	const imageData1 = context.getImageData(0, 0, canvas.width, canvas.height);
+	const canvas2 = document.createElement("canvas");
+	const context2 = canvas2.getContext("2d");
 	context2.putImageData(imageData1, 0, 0);
-	var imageData2 = context2.getImageData(0, 0, canvas.width, canvas.height);
+	const imageData2 = context2.getImageData(0, 0, canvas.width, canvas.height);
 	for (let i = 0; i < imageData2.data.length; i += 1){
 		if (imageData1.data[i] !== imageData2.data[i]){
 			log("mismatch at", i, ":",
@@ -486,9 +485,9 @@ addTest("readout - in - out test", function(log){
 addTest("window name change", function(log){
 	"use strict";
 	
-	var oldName = window.name;
+	const oldName = window.name;
 	log("old name:", oldName);
-	var newName = oldName + " added";
+	const newName = oldName + " added";
 	log("new name:", newName);
 	window.name = newName;
 	
@@ -502,7 +501,7 @@ addTest("window name change", function(log){
 function checkDOMRectData(rect, data, log){
 	"use strict";
 	
-	var detected = false;
+	let detected = false;
 	["x", "y", "width", "height"].forEach(function(property){
 		if (data[property] !== rect[property]){
 			log("Wrong value for", property, ":", data[property], "!=", rect[property]);
@@ -515,7 +514,7 @@ function checkDOMRectData(rect, data, log){
 function getRectByData(data){
 	"use strict";
 	
-	var el = document.createElement("div");
+	const el = document.createElement("div");
 	el.style.cssText = "position: fixed;" +
 		"left: " + data.x + "px; " +
 		"top: " + data.y + "px; " +
@@ -523,7 +522,7 @@ function getRectByData(data){
 		"height: " + data.height + "px;";
 	
 	document.body.appendChild(el);
-	var rect = el.getBoundingClientRect();
+	const rect = el.getBoundingClientRect();
 	document.body.removeChild(el);
 	return rect;
 }
@@ -531,41 +530,41 @@ function getRectByData(data){
 addTest("self created DOMRect", function(log){
 	"use strict";
 	
-	var data = {
+	const data = {
 		x: Math.PI,
 		y: Math.E,
 		width: Math.LOG10E,
 		height: Math.LOG2E
 	};
-	var rect = new DOMRect(data.x, data.y, data.width, data.height);
+	const rect = new DOMRect(data.x, data.y, data.width, data.height);
 	return checkDOMRectData(rect, data, log);
 });
 
 addTest("known DOMRect", function(log){
 	"use strict";
 	
-	var data = {
+	const data = {
 		x: 1 + 1/4,
 		y: 2,
 		width: 3,
 		height: 4
 	};
 	
-	var rect = getRectByData(data);
+	const rect = getRectByData(data);
 	
 	return checkDOMRectData(rect, data, log);
 });
 addTest("changed DOMRect", function(log){
 	"use strict";
 	
-	var data = {
+	const data = {
 		x: Math.PI,
 		y: 2,
 		width: 3,
 		height: 4
 	};
 	
-	var rect = getRectByData(data);
+	const rect = getRectByData(data);
 	rect.x = Math.PI;
 	
 	return checkDOMRectData(rect, data, log);
@@ -573,15 +572,15 @@ addTest("changed DOMRect", function(log){
 addTest("recreated DOMRect", function(log){
 	"use strict";
 	
-	var data = {
+	const data = {
 		x: Math.PI,
 		y: Math.E,
 		width: Math.LOG10E,
 		height: Math.LOG2E
 	};
 	
-	var rect = getRectByData(data);
-	var rect2 = getRectByData(rect);
+	const rect = getRectByData(data);
+	const rect2 = getRectByData(rect);
 	
 	return checkDOMRectData(rect2, rect, log);
 });

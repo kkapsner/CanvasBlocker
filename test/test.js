@@ -2,7 +2,7 @@
 	"use strict";
 	
 	function hashToString(hash){
-		var chunks = [];
+		const chunks = [];
 		(new Uint32Array(hash)).forEach(function(num){
 			chunks.push(num.toString(16));
 		});
@@ -11,22 +11,18 @@
 		}).join("");
 	}
 	
-	function show(container, {url, imageData, isPointInPath}){
-		var display = container.querySelector(".display");
+	async function show(container, {url, imageData, isPointInPath}){
+		const display = container.querySelector(".display");
 		display.src = url;
 		display.title = url;
-		var buffer = new TextEncoder("utf-8").encode(url);
-		Promise.all([
+		const buffer = new TextEncoder("utf-8").encode(url);
+		const hashes = await Promise.all([
 			crypto.subtle.digest("SHA-256", buffer),
 			crypto.subtle.digest("SHA-256", imageData.data)
-		]).then(function(hashes){
-			container.querySelector(".hash").textContent =
-				hashToString(hashes[0]) + " / " +
-				hashToString(hashes[1]);
-			return;
-		}).catch(function(error){
-			container.querySelector(".hash").textContent = "Error while calculating hash: " + error;
-		});
+		]);
+		container.querySelector(".hash").textContent =
+			hashToString(hashes[0]) + " / " +
+			hashToString(hashes[1]);
 		container.querySelector(".isPointInPath").textContent = isPointInPath;
 	}
 	
@@ -47,7 +43,7 @@
 		catch (error){console.error(error);}
 		window.addEventListener("click", function windowOpenTest(){
 			window.removeEventListener("click", windowOpenTest);
-			var newWindow = window.open("/");
+			const newWindow = window.open("/");
 			try{
 				show(document.getElementById("windowOpen"), copyToDifferentDocumentTest(newWindow.document));
 			}
@@ -79,7 +75,7 @@
 		show(document.getElementById("iframe6"), dynamicIframeTest3());
 	});
 	document.querySelector("#windowOpen button").addEventListener("click", function(){
-		var newWindow = window.open("/");
+		const newWindow = window.open("/");
 		show(document.getElementById("windowOpen"), copyToDifferentDocumentTest(newWindow.document));
 		newWindow.close();
 	});
@@ -91,9 +87,9 @@ function draw(canvas){
 	canvas.setAttribute("width", 220);
 	canvas.setAttribute("height", 30);
 	
-	var fp_text = "BrowserLeaks,com <canvas> 10";
+	const fp_text = "BrowserLeaks,com <canvas> 10";
 	
-	var ctx = canvas.getContext("2d");
+	const ctx = canvas.getContext("2d");
 	ctx.textBaseline = "top";
 	ctx.font = "14px 'Arial'";
 	ctx.textBaseline = "alphabetic";
@@ -123,9 +119,9 @@ function topTest(){
 	"use strict";
 	
 	// create window canvas
-	var canvas = document.createElement("canvas");
+	const canvas = document.createElement("canvas");
 	// draw image in window canvas
-	var ctx = draw(canvas);
+	const ctx = draw(canvas);
 	return {
 		imageData: ctx.getImageData(0, 0, canvas.width, canvas.height),
 		url: canvas.toDataURL(),
@@ -137,16 +133,16 @@ function copyToDifferentDocumentTest(otherDocument){
 	"use strict";
 
 	// create window canvas
-	var canvas = document.createElement("canvas");
+	const canvas = document.createElement("canvas");
 
 	// draw image in window canvas
 	draw(canvas);
 
 	// create other canvas and context
-	var otherCanvas = otherDocument.createElement("canvas");
+	const otherCanvas = otherDocument.createElement("canvas");
 	otherCanvas.setAttribute("width", 220);
 	otherCanvas.setAttribute("height", 30);
-	var otherContext = otherCanvas.getContext("2d");
+	const otherContext = otherCanvas.getContext("2d");
 
 	// copy image from window canvas to iframe context
 	otherContext.drawImage(canvas, 0, 0);
@@ -167,10 +163,10 @@ function iframeTest(iframe){
 function dynamicIframeTest1(){
 	"use strict";
 	
-	var length = frames.length;
-	var iframe = document.createElement("iframe");
+	const length = frames.length;
+	const iframe = document.createElement("iframe");
 	document.body.appendChild(iframe);
-	var iframeWindow = frames[length];
+	const iframeWindow = frames[length];
 	document.body.removeChild(iframe);
 	return copyToDifferentDocumentTest(iframeWindow.document);
 }
@@ -178,10 +174,10 @@ function dynamicIframeTest1(){
 function dynamicIframeTest2(){
 	"use strict";
 	
-	var length = window.length;
-	var iframe = document.createElement("iframe");
+	const length = window.length;
+	const iframe = document.createElement("iframe");
 	document.body.appendChild(iframe);
-	var iframeWindow = window[length];
+	const iframeWindow = window[length];
 	document.body.removeChild(iframe);
 	return copyToDifferentDocumentTest(iframeWindow.document);
 }
@@ -189,11 +185,11 @@ function dynamicIframeTest2(){
 function dynamicIframeTest3(){
 	"use strict";
 	
-	var length = window.length;
-	var div = document.createElement("div");
+	const length = window.length;
+	const div = document.createElement("div");
 	document.body.appendChild(div);
 	div.innerHTML = "<iframe></iframe>";
-	var iframeWindow = window[length];
+	const iframeWindow = window[length];
 	document.body.removeChild(div);
 	return copyToDifferentDocumentTest(iframeWindow.document);
 }

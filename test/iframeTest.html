@@ -90,11 +90,11 @@
 			document.body.innerHTML = "<iframe></iframe>";
 			log("TEST:", "innerHTML after 1000ms:", compare(test(window[0]), reference));
 			
-			var iFrame = document.createElement("iframe");
+			const iFrame = document.createElement("iframe");
 			document.body.appendChild(iFrame);
 			log("TEST:", "appendChild after 1000ms:", compare(test(window[1]), reference));
 			
-			var iFrame2 = document.createElement("iframe");
+			const iFrame2 = document.createElement("iframe");
 			iFrame.replaceWith(iFrame2);
 			log("TEST:", "replaceWith after 1000ms:", compare(test(window[1]), reference));
 			
@@ -107,7 +107,7 @@
 					"<li>all the displayed hashes should be the same (exception if there is a change to a wyciwyg page)</li>" +
 					"<li>all lines with \"TEST:\" should have a \"match\" at the end</li>" +
 				"</ul>";
-			var title = document.createElement("title");
+			const title = document.createElement("title");
 			title.textContent = "iFrame test";
 			document.getElementsByTagName("head")[0].appendChild(title);
 		}, 1000);

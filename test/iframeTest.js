@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-var
 var log = function(){
 	"use strict";
 	return function log(...str){
@@ -18,9 +19,9 @@ function draw(canvas){
 	canvas.setAttribute("width", 220);
 	canvas.setAttribute("height", 30);
 	
-	var fp_text = "BrowserLeaks,com <canvas> 10";
+	const fp_text = "BrowserLeaks,com <canvas> 10";
 	
-	var ctx = canvas.getContext("2d");
+	const ctx = canvas.getContext("2d");
 	ctx.textBaseline = "top";
 	ctx.font = "14px 'Arial'";
 	ctx.textBaseline = "alphabetic";
@@ -37,39 +38,34 @@ function test(window){
 	"use strict";
 	
 	// create window canvas
-	var canvas = document.createElement("canvas");
+	const canvas = document.createElement("canvas");
 	// draw image in window canvas
 	draw(canvas);
 	return window.HTMLCanvasElement.prototype.toDataURL.call(canvas);
 }
 
-function hash(string){
+async function hash(string){
 	"use strict";
 	
-	var buffer = new TextEncoder("utf-8").encode(string);
-	return crypto.subtle.digest("SHA-256", buffer).then(function(hash){
-		var chunks = [];
-		(new Uint32Array(hash)).forEach(function(num){
-			chunks.push(num.toString(16));
-		});
-		return chunks.map(function(chunk){
-			return "0".repeat(8 - chunk.length) + chunk;
-		}).join("");
+	const buffer = new TextEncoder("utf-8").encode(string);
+	const hash = await crypto.subtle.digest("SHA-256", buffer);
+	const chunks = [];
+	(new Uint32Array(hash)).forEach(function(num){
+		chunks.push(num.toString(16));
 	});
-	
+	return chunks.map(function(chunk){
+		return "0".repeat(8 - chunk.length) + chunk;
+	}).join("");
 }
 
 function compare(string1, string2, alwaysOutputHashes){
 	"use strict";
-	function outputHashes(message){
-		return Promise.all([
+	async function outputHashes(message){
+		const hashes = await Promise.all([
 			hash(string1),
 			hash(string2)
-		]).then(function(hashes){
-			console.log(message, ...hashes);
-			return;
-		});
-		
+		]);
+		console.log(message, ...hashes);
 	}
 	
 	if (string1 === string2){
@@ -100,14 +96,15 @@ function compare(string1, string2, alwaysOutputHashes){
 		}
 	}
 }
+// eslint-disable-next-line no-var
 var reference = test(window);
-hash(reference).then(function(hash){
+(async function(){
 	"use strict";
-	
-	log("reference hash:", hash);
-	return;
-}).catch(function(error){
-	"use strict";
-	
-	log("%cX", "color: red", "Unable to compute reference hash:", error);
-});
+	try {
+		const hashValue = await hash(reference);
+		log("reference hash:", hashValue);
+	}
+	catch (error){
+		log("%cX", "color: red", "Unable to compute reference hash:", error);
+	}
+}());

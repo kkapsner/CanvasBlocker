@@ -82,9 +82,9 @@
 			canvas.setAttribute("width", 220);
 			canvas.setAttribute("height", 30);
 			
-			var fp_text = "BrowserLeaks,com <canvas> 10";
+			const fp_text = "BrowserLeaks,com <canvas> 10";
 			
-			var ctx = canvas.getContext("2d");
+			const ctx = canvas.getContext("2d");
 			ctx.textBaseline = "top";
 			ctx.font = "14px 'Arial'";
 			ctx.textBaseline = "alphabetic";
@@ -101,9 +101,9 @@
 			"use strict";
 			
 			// create window canvas
-			var canvas = document.createElement("canvas");
+			const canvas = document.createElement("canvas");
 			// draw image in window canvas
-			var ctx = draw(canvas);
+			const ctx = draw(canvas);
 			return {
 				imageData: ctx.getImageData(0, 0, canvas.width, canvas.height),
 				url: canvas.toDataURL(),
@@ -125,7 +125,7 @@
 		function hashToString(hash){
 			"use strict";
 			
-			var chunks = [];
+			const chunks = [];
 			(new Uint32Array(hash)).forEach(function(num){
 				chunks.push(num.toString(16));
 			});
@@ -134,38 +134,34 @@
 			}).join("");
 		}
 		
-		var send = function(){
+		const send = function(){
 			"use strict";
-			return function send(form, {url, imageData, isPointInPath}){
-				var buffer = new TextEncoder("utf-8").encode(url);
-				Promise.all([
+			return async function send(form, {url, imageData, isPointInPath}){
+				const buffer = new TextEncoder("utf-8").encode(url);
+				const hashes = await Promise.all([
 					crypto.subtle.digest("SHA-256", buffer),
 					crypto.subtle.digest("SHA-256", imageData.data)
-				]).then(function(hashes){
-					var data = JSON.stringify({
-						urlHash: hashToString(hashes[0]),
-						imageDataHash: hashToString(hashes[1]),
-						isPointInPath
-					}, null, "\t");
-					form.fingerprint.value = data;
-					var xhr = new XMLHttpRequest();
-					xhr.open("POST", form.action + "?main", true);
-					xhr.onreadystatechange = function(){
-						if (this.readyState === 4){
-							const status = this.status;
-							if (status === 200 || status === 304) {
-								console.log("Sending xhr successful from main page:", data);
-							}
-							else {
-								console.log("Sending xhr failed:", this);
-							}
+				]);
+				const data = JSON.stringify({
+					urlHash: hashToString(hashes[0]),
+					imageDataHash: hashToString(hashes[1]),
+					isPointInPath
+				}, null, "\t");
+				form.fingerprint.value = data;
+				const xhr = new XMLHttpRequest();
+				xhr.open("POST", form.action + "?main", true);
+				xhr.onreadystatechange = function(){
+					if (this.readyState === 4){
+						const status = this.status;
+						if (status === 200 || status === 304) {
+							console.log("Sending xhr successful from main page:", data);
 						}
-					};
-					xhr.send(new FormData(form));
-					return;
-				}).catch(function(error){
-					console.error(error);
-				});
+						else {
+							console.log("Sending xhr failed:", this);
+						}
+					}
+				};
+				xhr.send(new FormData(form));
 			};
 		}();
 

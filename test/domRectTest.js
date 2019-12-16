@@ -1,7 +1,7 @@
 (function(){
 	"use strict";
 	function byteArrayToHex(arrayBuffer){
-		var chunks = [];
+		const chunks = [];
 		(new Uint32Array(arrayBuffer)).forEach(function(num){
 			chunks.push(num.toString(16));
 		});
@@ -28,7 +28,7 @@
 	}
 
 	const properties = ["x", "y", "width", "height", "top", "left", "right", "bottom"];
-	function performTest(output, callback){
+	async function performTest(output, callback){
 		const rects = getElements().map(function(element){
 			return {
 				name: element.dataset.name,
@@ -42,15 +42,10 @@
 			});
 		});
 		
-		crypto.subtle.digest("SHA-256", data)
-			.then(function(hash){
-				output.querySelector(".hash").textContent = byteArrayToHex(hash);
-				return;
-			}).catch(function(error){
-				output.querySelector(".hash").textContent = "Unable to compute hash: " + error;
-			});
+		const hash = await crypto.subtle.digest("SHA-256", data);
+		output.querySelector(".hash").textContent = byteArrayToHex(hash);
 		
-		var dataNode = output.querySelector(".data");
+		const dataNode = output.querySelector(".data");
 		dataNode.innerHTML = "<table><tr><th></th>" +
 			rects.map(function(rect){
 				return "<th>" + rect.name + "</th>";
@@ -68,22 +63,16 @@
 				}).join("") + "</tr>";
 			}).join("") +
 			"</table>";
-		rects.forEach(function(rect){
+		rects.forEach(async function(rect){
 			const data = new Float64Array(properties.length);
 			properties.forEach(function(property, i){
 				data[i] = rect.data[property];
 			});
 			
-			crypto.subtle.digest("SHA-256", data).then(function(hash){
-				dataNode.querySelector(
-					".rectHash[data-name=\"" + rect.name + "\"]"
-				).textContent = byteArrayToHex(hash);
-				return;
-			}).catch(function(error){
-				dataNode.querySelector(
-					".rectHash[data-name=\"" + rect.name + "\"]"
-				).textContent = "Unable to compute hash: " + error;
-			});
+			const hash = await crypto.subtle.digest("SHA-256", data);
+			dataNode.querySelector(
+				".rectHash[data-name=\"" + rect.name + "\"]"
+			).textContent = byteArrayToHex(hash);
 		});
 	}
 	
@@ -144,12 +133,12 @@
 			return element.getBoundingClientRect();
 		});
 		createTest("Range.getClientRects", function(element){
-			var range = document.createRange();
+			const range = document.createRange();
 			range.selectNode(element);
 			return range.getClientRects()[0];
 		});
 		createTest("Range.getBoundingClientRect", function(element){
-			var range = document.createRange();
+			const range = document.createRange();
 			range.selectNode(element);
 			return range.getBoundingClientRect();
 		});

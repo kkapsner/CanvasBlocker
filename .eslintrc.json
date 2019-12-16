@@ -53,6 +53,7 @@
 		"no-useless-rename": "warn",
 		"no-var": "error",
 		"quotes": ["error", "double"],
+		"require-atomic-updates": "off",
 		"semi": ["error", "always"],
 		"space-in-parens": ["error", "never"],
 		"strict": ["error", "function"],
@@ -68,7 +69,6 @@
 		{
 			"files": ["test/*"],
 			"rules": {
-				"no-var": "off",
 				"no-console": "off"
 			}
 		},

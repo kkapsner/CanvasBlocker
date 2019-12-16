@@ -6,16 +6,16 @@
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
 	<script>
-		var firstDescriptor = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, "getContext");
+		const firstDescriptor = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, "getContext");
 		console.log(new Date(), "starting first fingerprint", window.name);
 		function fingerPrint(){
-			"use strict";var canvas = document.createElement("canvas");
+			"use strict";const canvas = document.createElement("canvas");
 			canvas.setAttribute("width", 220);
 			canvas.setAttribute("height", 30);
 			
-			var fp_text = "BrowserLeaks,com <canvas> 10";
+			const fp_text = "BrowserLeaks,com <canvas> 10";
 			
-			var ctx = canvas.getContext("2d");
+			const ctx = canvas.getContext("2d");
 			ctx.textBaseline = "top";
 			ctx.font = "14px 'Arial'";
 			ctx.textBaseline = "alphabetic";
@@ -28,21 +28,20 @@
 			
 			return canvas.toDataURL();
 		}
-		function hash(url){
+		async function hash(url){
 			"use strict";
 			
-			var buffer = new TextEncoder("utf-8").encode(url);
-			return crypto.subtle.digest("SHA-256", buffer).then(function(hash){
-				var chunks = [];
-				(new Uint32Array(hash)).forEach(function(num){
-					chunks.push(num.toString(16));
-				});
-				return chunks.map(function(chunk){
-					return "0".repeat(8 - chunk.length) + chunk;
-				}).join("");
+			const buffer = new TextEncoder("utf-8").encode(url);
+			const hash = await crypto.subtle.digest("SHA-256", buffer);
+			const chunks = [];
+			(new Uint32Array(hash)).forEach(function(num){
+				chunks.push(num.toString(16));
 			});
+			return chunks.map(function(chunk){
+				return "0".repeat(8 - chunk.length) + chunk;
+			}).join("");
 		}
-		var firstFingerprint = false;
+		let firstFingerprint = false;
 		try {
 			firstFingerprint = fingerPrint();
 		}
@@ -76,14 +75,14 @@
 	<div id="output"></div>
 	<script>
 		if (firstFingerprint){
-			var output = document.getElementById("output");
+			const output = document.getElementById("output");
 			output.textContent = "context API not blocked";
 			output.appendChild(document.createElement("br"));
-			window.setTimeout(function(){
+			window.setTimeout(async function(){
 				"use strict";
 			
 				console.log(new Date(), "starting second fingerprint", window.name);
-				var secondDescriptor = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, "getContext");
+				const secondDescriptor = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, "getContext");
 				
 				if (firstDescriptor.value === secondDescriptor.value){
 					output.appendChild(document.createTextNode("descriptor did not change -> good!"));
@@ -95,26 +94,22 @@
 					output.classList.add("nok");
 				}
 				output.appendChild(document.createElement("br"));
-				var secondFingerprint = fingerPrint();
+				const secondFingerprint = fingerPrint();
 				if (firstFingerprint === secondFingerprint){
-					return hash(firstFingerprint).then(function(hash){
-						output.appendChild(document.createTextNode("fingerprint consistent (" + hash + ") -> good!"));
-						output.classList.add("ok");
-						return;
-					});
+					const firstHash = await hash(firstFingerprint);
+					output.appendChild(document.createTextNode("fingerprint consistent (" + firstHash + ") -> good!"));
+					output.classList.add("ok");
 				}
 				else {
-					return Promise.all([hash(firstFingerprint), hash(secondFingerprint)]).then(function(hashes){
-						output.appendChild(
-							document.createTextNode(
-								"fingerprint not consistent (" +
-								hashes[0] + " != " + hashes[1] +
-								") -> very bad! (potential fingerprint leak)"
-							)
-						);
-						output.classList.add("nok");
-						return;
-					});
+					const hashes = await Promise.all([hash(firstFingerprint), hash(secondFingerprint)]);
+					output.appendChild(
+						document.createTextNode(
+							"fingerprint not consistent (" +
+							hashes[0] + " != " + hashes[1] +
+							") -> very bad! (potential fingerprint leak)"
+						)
+					);
+					output.classList.add("nok");
 				}
 			}, 500);
 		}
