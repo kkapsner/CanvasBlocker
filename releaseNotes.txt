@@ -3,6 +3,7 @@ Version 0.5.15:
 		- improved storage of protected API features
 		- code cleanup
 		- added mail.google.com to the convenience preset
+		- added reCAPTCHA preset
 	
 	new features:
 		- added screen protection
