@@ -1520,7 +1520,7 @@
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximiert den Schutz gegen die Fingerprint-Extraktion. Diese Einstellungen werden einige Seiten unbenutzbar machen, können den Browser etwas verlangsamen und es Seiten ermöglichen die Verwendung von CanvasBlocker zu detektieren. Wenn Sie diese Voreinstellung angewendet haben sollten Sie in Betracht ziehen auch die reCAPTCHA-Voreinstellung zu verwenden.",
+		"message": "Maximiert den Schutz gegen die Fingerprint-Extraktion. Diese Einstellungen werden einige Seiten unbenutzbar machen, können den Browser etwas verlangsamen und es Seiten ermöglichen die Verwendung von CanvasBlocker zu detektieren. Wenn Sie diese Voreinstellung angewendet haben, sollten Sie in Betracht ziehen auch die reCAPTCHA-Voreinstellung zu verwenden.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
