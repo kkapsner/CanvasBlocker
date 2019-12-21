@@ -5,6 +5,11 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<style>
+		.marked {
+			background-color: red;
+		}
+	</style>
 </head>
 <body>
 <h1>Navigator test</h1>
@@ -13,7 +18,7 @@ Tests the navigator properties. In the default settings of CanvasBlocker the nav
 <ul>
 	<li>the server and client user agent match</li>
 	<li>the navigator properties are according to what was set in the CanvasBlocker settings</li>
-	<li>the values in the iFrame are equal to the normal values</li>
+	<li>no line is red or has multiple values (separated by a "|")</li>
 </ul>
 <h2>Tests</h2>
 <div id="log">
