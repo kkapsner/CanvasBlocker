@@ -29,5 +29,6 @@ Tests the navigator properties. In the default settings of CanvasBlocker the nav
 	</div>
 </div>
 <script id="serverUserAgent" type="text/data"><?php echo htmlentities($_SERVER["HTTP_USER_AGENT"], ENT_QUOTES, "UTF-8");?></script>
+<script src="iframeAPI.js"></script>
 <script src="navigatorTest.js"></script>
 </body></html>
