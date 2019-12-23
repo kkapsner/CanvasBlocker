@@ -29,7 +29,6 @@ async function getMessagesInFile(path){
 		return getMessagesInContent(content);
 	}
 	else {
-		// eslint-disable-next-line no-console
 		console.log("file does not exist:", path);
 		return [];
 	}

@@ -51,6 +51,7 @@
 		"no-unused-vars": "off",
 		"no-use-before-define": ["error", {"functions": false}],
 		"no-useless-rename": "warn",
+		"no-useless-return": "warn",
 		"no-var": "error",
 		"quotes": ["error", "double"],
 		"require-atomic-updates": "off",
