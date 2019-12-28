@@ -1,7 +1,7 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-(function(){
+(async function(){
 	"use strict";
 	
 	const extension = require("../lib/extension");
@@ -76,8 +76,8 @@
 		if (settingsList.childNodes.length){
 			const button = document.createElement("button");
 			button.textContent = extension.getTranslation("apply");
-			button.addEventListener("click", function(){
-				Promise.all(Object.keys(preset).map(function(settingName){
+			button.addEventListener("click", async function(){
+				await Promise.all(Object.keys(preset).map(function(settingName){
 					const value = preset[settingName];
 					if ((typeof value) === "object"){
 						return Promise.all(Object.keys(value).map(function(url){
@@ -87,12 +87,9 @@
 					else {
 						return settings.set(settingName, value);
 					}
-				})).then(function(){
-					window.location.reload();
-					return;
-				}).catch(function(error){
-					logging.warning("Unable to apply preset:", error);
-				});
+				}));
+				
+				window.location.reload();
 			});
 			container.appendChild(button);
 		}
@@ -100,20 +97,7 @@
 		return container;
 	}
 	
-	Promise.all([
-		settings.loaded,
-		fetch("presets.json").then(function(data){
-			return data.json();
-		})
-	// eslint-disable-next-line no-unused-vars
-	]).then(function([settingsLoaded, presets]){
-		Object.keys(presets).map(function(presetName){
-			return buildPresetGui(presetName, presets[presetName]);
-		}).forEach(function(node){
-			document.body.appendChild(node);
-		});
-		
-		// fit content to the window size
+	function fitContentToWindowSize(){
 		if (window.innerHeight > document.body.getBoundingClientRect().bottom){
 			const computedStyle = window.getComputedStyle(document.body);
 			const availableHeight = window.innerHeight - parseFloat(computedStyle.marginBottom);
@@ -141,10 +125,7 @@
 				document.body.style.fontSize = fontSize + "px";
 			}
 		}
-		return;
-	}).catch(function(error){
-		logging.warning("Unable to setup presets:", error);
-	});
+	}
 	
 	document.querySelector("head title").textContent = extension.getTranslation("presets_title");
 	let head = document.createElement("header");
@@ -153,7 +134,7 @@
 	let heading = document.createElement("h1");
 	heading.textContent = extension.getTranslation("presets");
 	head.appendChild(heading);
-		
+	
 	if (searchParameters.has("notice")){
 		const noticeName = `presets_${searchParameters.get("notice")}Notice`;
 		const noticeText = extension.getTranslation(noticeName);
@@ -195,4 +176,17 @@
 	introduction.className = "introduction";
 	introduction.textContent = extension.getTranslation("presets_introduction");
 	head.appendChild(introduction);
+	
+	const [settingsLoaded, presets] = await Promise.all([
+		settings.loaded,
+		(await fetch("presets.json")).json()
+	]);
+	
+	Object.keys(presets).map(function(presetName){
+		return buildPresetGui(presetName, presets[presetName]);
+	}).forEach(function(node){
+		document.body.appendChild(node);
+	});
+	
+	fitContentToWindowSize();
 }());

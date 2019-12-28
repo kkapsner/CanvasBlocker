@@ -1,7 +1,7 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-(function(){
+(async function(){
 	"use strict";
 
 	const extension = require("../lib/extension");
@@ -37,12 +37,9 @@
 				{
 					name: "disableNotifications",
 					isIcon: true,
-					callback: function(){
-						settings.set("showNotifications", false).then(function(){
-							return window.close();
-						}).catch(function(error){
-							logging.warning("Unable to disable notifications:", error);
-						});
+					callback: async function(){
+						await settings.set("showNotifications", false);
+						window.close();
 					}
 				}
 			],
@@ -55,26 +52,24 @@
 		{
 			name: "ignorelist",
 			isIcon: true,
-			callback: function({domain, urls}){
-				return domainOrUrlPicker(
+			callback: async function({domain, urls}){
+				const choice = await domainOrUrlPicker(
 					domain,
 					urls,
 					extension.getTranslation("selectIgnore"),
 					extension.getTranslation("inputIgnoreURL")
-				).then(function(choice){
-					if (choice){
-						return settings.set("showNotifications", false, choice);
-					}
-					return false;
-				}).then(function(){
-					return window.close();
-				});
+				);
+				
+				if (choice){
+					await settings.set("showNotifications", false, choice);
+				}
+				window.close();
 			}
 		},
 		{
 			name: "whitelist",
 			isIcon: true,
-			callback: function({domain, urls, api}){
+			callback: async function({domain, urls, api}){
 				const whitelistingSettings = {
 					all: {name: "blockMode", value: "allow"},
 					canvas: {name: "protectedCanvasPart", value: "nothing"},
@@ -85,67 +80,56 @@
 					windows: {name: "protectWindow", value: false},
 					screen: {name: "protectScreen", value: false},
 				};
-				return domainOrUrlPicker(
+				const choice = await domainOrUrlPicker(
 					domain,
 					urls,
 					extension.getTranslation("selectWhitelist"),
 					extension.getTranslation("inputWhitelistURL")
-				).then(function(choice){
-					if (
-						api &&
-						whitelistingSettings[api]
-					){
-						// eslint-disable-next-line promise/no-nesting
-						return modalChoice(
-							extension.getTranslation("selectWhitelistScope"),
-							[
-								{
-									text: extension.getTranslation("whitelistOnlyAPI")
-										.replace(
-											/\{api\}/g,
-											extension.getTranslation("section_" + api + "-api")
-										),
-									value: api
-								},
-								{
-									text: extension.getTranslation("whitelistAllAPIs"),
-									value: "all"
-								}
-							]
-						).then(function(selection){
-							return {choice, setting: whitelistingSettings[selection]};
-						});
-					}
-					else {
-						return {choice, setting: whitelistingSettings.all};
-					}
-				}).then(function({choice, setting}){
-					if (choice){
-						return settings.set(setting.name, setting.value, choice);
-					}
-					return false;
-				}).then(function(){
-					return window.close();
-				});
+				);
+				let setting = whitelistingSettings.all;
+				if (
+					api &&
+					whitelistingSettings[api]
+				){
+					setting = whitelistingSettings[await modalChoice(
+						extension.getTranslation("selectWhitelistScope"),
+						[
+							{
+								text: extension.getTranslation("whitelistOnlyAPI")
+									.replace(
+										/\{api\}/g,
+										extension.getTranslation("section_" + api + "-api")
+									),
+								value: api
+							},
+							{
+								text: extension.getTranslation("whitelistAllAPIs"),
+								value: "all"
+							}
+						]
+					)];
+				}
+				if (choice){
+					await settings.set(setting.name, setting.value, choice);
+				}
+				
+				window.close();
 			}
 		},
 		{
 			name: "whitelistTemporarily",
 			isIcon: true,
-			callback: function({domain, urls}){
-				return domainOrUrlPicker(
+			callback: async function({domain, urls}){
+				const choice = await domainOrUrlPicker(
 					domain,
 					urls,
 					extension.getTranslation("selectSessionWhitelist"),
 					extension.getTranslation("inputSessionWhitelistURL")
-				).then(function(choice){
-					if (choice){
-						return lists.appendTo("sessionWhite", choice);
-					}
-					return false;
-				}).then(function(){
-					return window.close();
-				});
+				);
+				if (choice){
+					await lists.appendTo("sessionWhite", choice);
+				}
+				window.close();
 			}
 		},
 		{
@@ -193,7 +177,7 @@
 		});
 	}
 	
-	function domainOrUrlPicker(domain, urls, selectText, urlInputText){
+	async function domainOrUrlPicker(domain, urls, selectText, urlInputText){
 		const choices = Array.from(urls).map(function(url){
 			return {
 				text: url,
@@ -203,99 +187,94 @@
 		if (domain){
 			choices.unshift(domain);
 		}
-		return modalChoice(
+		const choice = await modalChoice(
 			selectText,
 			choices
-		).then(function(choice){
-			if (choice.startsWith("^")){
-				return modalPrompt(
-					urlInputText,
-					choice
-				);
-			}
-			else {
-				return choice;
-			}
-		});
+		);
+		if (choice.startsWith("^")){
+			return modalPrompt(
+				urlInputText,
+				choice
+			);
+		}
+		else {
+			return choice;
+		}
 	}
 	
-	Promise.all([
+	const values = await Promise.all([
 		browser.tabs.query({active: true, currentWindow: true}),
 		settings.loaded
-	]).then(function(values){
-		const tabs = values[0];
-		
-		if (!tabs.length){
-			throw new Error("noTabsFound");
+	]);
+	const tabs = values[0];
+	
+	if (!tabs.length){
+		throw new Error("noTabsFound");
+	}
+	else if (tabs.length > 1){
+		logging.error(tabs);
+		throw new Error("tooManyTabsFound");
+	}
+	
+	registerActionButtons();
+	
+	registerDomainActions();
+	
+	registerNotificationActions();
+	
+	const tab = tabs[0];
+	extension.message.on(function(data){
+		if (data["canvasBlocker-notificationCounter"]){
+			const url = new URL(data.url);
+			Object.keys(data["canvasBlocker-notificationCounter"]).forEach(function(key){
+				domainNotification(
+					url,
+					key,
+					data["canvasBlocker-notificationCounter"][key].count,
+					data["canvasBlocker-notificationCounter"][key].api
+				);
+			});
 		}
-		else if (tabs.length > 1){
-			logging.error(tabs);
-			throw new Error("tooManyTabsFound");
-		}
-		
-		registerActionButtons();
-		
-		registerDomainActions();
-		
-		registerNotificationActions();
-		
-		const tab = tabs[0];
-		extension.message.on(function(data){
-			if (data["canvasBlocker-notificationCounter"]){
-				const url = new URL(data.url);
-				Object.keys(data["canvasBlocker-notificationCounter"]).forEach(function(key){
-					domainNotification(
-						url,
-						key,
-						data["canvasBlocker-notificationCounter"][key].count,
-						data["canvasBlocker-notificationCounter"][key].api
-					);
-				});
-			}
-			if (
-				Array.isArray(data["canvasBlocker-notifications"]) &&
-				data["canvasBlocker-notifications"].length
-			){
-				logging.message("got notifications");
-				const notifications = data["canvasBlocker-notifications"];
-				let i = 0;
-				const length = notifications.length;
-				const tick = window.setInterval(function(){
-					if (i >= length){
-						window.clearInterval(tick);
-					}
-					else {
-						let delta = 0;
-						for (; delta < 20 && i + delta < length; delta += 1){
-							let notification = notifications[i + delta];
-							logging.verbose(notification);
-							if (settings.ignoredAPIs[notification.api]){
-								continue;
-							}
-							logging.verbose(notification);
-							notification.url = new URL(notification.url);
-							domainNotification(
-								notification.url,
-								notification.messageId,
-								0,
-								notification.api
-							).addNotification(new Notification(notification));
+		if (
+			Array.isArray(data["canvasBlocker-notifications"]) &&
+			data["canvasBlocker-notifications"].length
+		){
+			logging.message("got notifications");
+			const notifications = data["canvasBlocker-notifications"];
+			let i = 0;
+			const length = notifications.length;
+			const tick = window.setInterval(function(){
+				if (i >= length){
+					window.clearInterval(tick);
+				}
+				else {
+					let delta = 0;
+					for (; delta < 20 && i + delta < length; delta += 1){
+						let notification = notifications[i + delta];
+						logging.verbose(notification);
+						if (settings.ignoredAPIs[notification.api]){
+							continue;
 						}
-						i += delta;
+						logging.verbose(notification);
+						notification.url = new URL(notification.url);
+						domainNotification(
+							notification.url,
+							notification.messageId,
+							0,
+							notification.api
+						).addNotification(new Notification(notification));
 					}
-				}, 1);
-			}
-		});
-		logging.message("request notifications from tab", tab.id);
-		browser.tabs.sendMessage(
-			tab.id,
-			{
-				"canvasBlocker-sendNotifications": tab.id
-			}
-		);
-		logging.notice("waiting for notifications");
-		return;
-	}).catch(function(error){
-		error(error);
+					i += delta;
+				}
+			}, 1);
+		}
 	});
+	logging.message("request notifications from tab", tab.id);
+	browser.tabs.sendMessage(
+		tab.id,
+		{
+			"canvasBlocker-sendNotifications": tab.id
+		}
+	);
+	logging.notice("waiting for notifications");
 }());

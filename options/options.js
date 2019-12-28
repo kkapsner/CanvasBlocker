@@ -35,23 +35,18 @@
 			logging.notice("send message to main script");
 			extension.message.send({"canvasBlocker-clear-domain-rnd": true});
 		},
-		clearPersistentRndForContainer: function(){
-			browser.contextualIdentities.query({}).then(function(identities){
-				return modal.select(
-					extension.getTranslation("clearPersistentRndForContainer_title"),
-					identities.map(function(identity){
-						return {
-							name: `${identity.name} (${identity.cookieStoreId})`,
-							object: identity
-						};
-					})
-				);
-			}).then(function(identity){
-				extension.message.send({"canvasBlocker-clear-container-rnd": identity.cookieStoreId});
-				return;
-			}).catch(function(error){
-				logging.warning("Unable to clear persistent rnd for container:", error);
-			});
+		clearPersistentRndForContainer: async function(){
+			const identities = await browser.contextualIdentities.query({});
+			const identity = await modal.select(
+				extension.getTranslation("clearPersistentRndForContainer_title"),
+				identities.map(function(identity){
+					return {
+						name: `${identity.name} (${identity.cookieStoreId})`,
+						object: identity
+					};
+				})
+			);
+			extension.message.send({"canvasBlocker-clear-container-rnd": identity.cookieStoreId});
 		},
 		inspectSettings: function(){
 			logging.verbose("open settings inspection");
@@ -96,9 +91,9 @@
 			logging.verbose("open whitelist inspection");
 			window.open("whitelist.html", "_blank");
 		},
-		loadSettings: function(){
+		loadSettings: async function(){
 			logging.verbose("load settings");
-			new Promise(function(resolve, reject){
+			const text = await new Promise(function(resolve, reject){
 				const input = document.createElement("input");
 				input.type = "file";
 				input.addEventListener("change", function(){
@@ -114,32 +109,27 @@
 					}
 				});
 				input.click();
-			}).then(function(text){
-				return JSON.parse(text);
-			}).then(function(json){
-				while (settingsMigration.transitions.hasOwnProperty(json.storageVersion)){
-					let oldVersion = json.storageVersion;
-					json = settingsMigration.transitions[json.storageVersion](json);
-					if (oldVersion === json.storageVersion){
-						break;
-					}
+			});
+			let json = JSON.parse(text);
+			while (settingsMigration.transitions.hasOwnProperty(json.storageVersion)){
+				let oldVersion = json.storageVersion;
+				json = settingsMigration.transitions[json.storageVersion](json);
+				if (oldVersion === json.storageVersion){
+					break;
 				}
-				const keys = Object.keys(json);
-				keys.forEach(function(key){
-					const setting = settings.getDefinition(key);
-					if (!settings){
-						throw new Error("Unknown setting " + key + ".");
-					}
-					if (!setting.fixed && setting.invalid(json[key])){
-						throw new Error("Invalid value " + json[key] + " for " + key + ".");
-					}
-				});
-				keys.forEach(function(key){
-					settings[key] = json[key];
-				});
-				return;
-			}).catch(function(error){
-				alert(error);
+			}
+			const keys = Object.keys(json);
+			keys.forEach(function(key){
+				const setting = settings.getDefinition(key);
+				if (!settings){
+					throw new Error("Unknown setting " + key + ".");
+				}
+				if (!setting.fixed && setting.invalid(json[key])){
+					throw new Error("Invalid value " + json[key] + " for " + key + ".");
+				}
+			});
+			keys.forEach(function(key){
+				settings[key] = json[key];
 			});
 		},
 		resetSettings: async function(){
@@ -165,18 +155,7 @@
 		}
 	};
 	
-	new Promise(function(resolve){
-		const port = browser.runtime.connect();
-		port.onMessage.addListener(function(data){
-			if (data.hasOwnProperty("tabId")){
-				logging.notice("my tab id is", data.tabId);
-				port.disconnect();
-				resolve(data.tabId);
-			}
-		});
-	}).then(function(tabId){
-		return browser.tabs.get(tabId);
-	}).then(function(tab){
+	browser.tabs.getCurrent().then(function(tab){
 		document.querySelector("head title").textContent = extension.getTranslation("options_title");
 		let head = document.createElement("header");
 		document.body.insertBefore(head, document.body.firstChild);
@@ -236,7 +215,7 @@
 			linkDiv.appendChild(link);
 			head.appendChild(linkDiv);
 		}
-		return;
+		return undefined;
 	}).catch(function(error){
 		logging.warning("Unable to identify tab:", error);
 	});
@@ -569,7 +548,7 @@
 		return response.json();
 	}).then(function(manifest){
 		version.textContent = "Version " + manifest.version;
-		return;
+		return manifest.version;
 	}).catch(function(error){
 		version.textContent = "Unable to get version: " + error;
 	});
@@ -578,7 +557,7 @@
 	settings.onloaded(function(){
 		const reCaptchaEntry = "^https://www\\.google\\.com/recaptcha/api2/(?:b?frame|anchor).*$";
 		const {url: urlContainer} = settings.getContainers();
-		settings.on("protectWindow", function({newValue}){
+		settings.on("protectWindow", async function({newValue}){
 			if (newValue){
 				const urlValue = urlContainer.get();
 				const matching = urlValue.filter(function(entry){
@@ -591,20 +570,16 @@
 						matching[0].protectWindow
 					)
 				){
-					modal.confirm(
+					const addException = await modal.confirm(
 						extension.getTranslation("protectWindow_askReCaptchaException"),
 						{
 							node: document.querySelector("[data-storage-name=protectWindow]"),
 							selector: ".settingRow .content"
 						}
-					).then(function(addException){
-						if (addException){
-							settings.set("protectWindow", false, reCaptchaEntry);
-						}
-						return;
-					}).catch(function(error){
-						logging.warning("Error while adding reCaptcha exception:", error);
-					});
+					);
+					if (addException){
+						settings.set("protectWindow", false, reCaptchaEntry);
+					}
 				}
 			}
 		});

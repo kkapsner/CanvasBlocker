@@ -83,12 +83,10 @@ async function translate(language){
 	return data;
 }
 
-translate(language).then(function(data){
+(async function(){
 	"use strict";
 	
-	return saveTranslation(language, data);
-}).catch(function(error){
-	"use strict";
+	const data = await translate(language);
 	
-	console.error(error);
-});
+	saveTranslation(language, data);
+}());
