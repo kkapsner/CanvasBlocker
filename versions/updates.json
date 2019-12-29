@@ -89,6 +89,10 @@
 				{
 					"version": "0.5.15RC2",
 					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-0.5.15RC2-an+fx.xpi"
+				},
+				{
+					"version": "1.0RC3",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.0RC3-an+fx.xpi"
 				}
 			]
 		}
