@@ -1,4 +1,4 @@
-Version 0.5.15:
+Version 1.0:
 	changes:
 		- improved storage of protected API features
 		- code cleanup
@@ -15,6 +15,7 @@ Version 0.5.15:
 		- navigator.oscpu and navigator.buildID are undefined in non Gecko browsers
 		- resetting the settings had undesired side effects
 		- added window.open protection
+		- cross origin DOM manipulations
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
