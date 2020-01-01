@@ -110,10 +110,13 @@
 				});
 				input.click();
 			});
-			let json = JSON.parse(text);
+			const json = JSON.parse(text);
 			while (settingsMigration.transitions.hasOwnProperty(json.storageVersion)){
-				let oldVersion = json.storageVersion;
-				json = settingsMigration.transitions[json.storageVersion](json);
+				const oldVersion = json.storageVersion;
+				const modifiedData = settingsMigration.transitions[json.storageVersion](json);
+				Object.keys(modifiedData).forEach(function(key){
+					json[key] = modifiedData[key];
+				});
 				if (oldVersion === json.storageVersion){
 					break;
 				}
@@ -129,7 +132,9 @@
 				}
 			});
 			keys.forEach(function(key){
-				settings[key] = json[key];
+				if (key !== "storageVersion"){
+					settings[key] = json[key];
+				}
 			});
 		},
 		resetSettings: async function(){

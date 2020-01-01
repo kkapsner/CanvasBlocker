@@ -17,6 +17,7 @@ Version 1.0:
 		- added window.open protection
 		- cross origin DOM manipulations
 		- window.name protection was detectable
+		- importing settings file with an older storage version did not work properly
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
