@@ -1111,7 +1111,20 @@
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "Protecting the window API breaks reCAPTCHA. Do you want to add an exception for it?",
+		"message": "Protecting the window API breaks reCAPTCHA. Do you want to allow the window.name API in embedded pages which will make if work again?",
+		"description": ""
+	},
+	
+	"allowWindowNameInFrames_title": {
+		"message": "Allow window.name in frames",
+		"description": ""
+	},
+	"allowWindowNameInFrames_description": {
+		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"description": ""
+	},
+	"allowWindowNameInFrames_urlSpecific": {
+		"message": "To allow this for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
 		"description": ""
 	},
 	
@@ -1591,7 +1604,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset adds an exception for it to work.",
+		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
 		"description": ""
 	}
 }

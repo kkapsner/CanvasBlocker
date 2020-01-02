@@ -583,6 +583,14 @@
 								}
 							]
 						},
+						{
+							"name": "allowWindowNameInFrames",
+							"displayDependencies": [
+								{
+									"protectWindow": [true]
+								}
+							]
+						},
 					]
 				},
 				{

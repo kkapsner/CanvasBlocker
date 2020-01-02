@@ -1068,7 +1068,19 @@
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "Wenn die Window-API beschützt wird, funktioniert reCAPTCHA nicht mehr. Wollen Sie dafür eine Ausnahme hinzufügen?",
+		"message": "Wenn die Window-API beschützt wird, funktioniert reCAPTCHA nicht mehr. Wollen Sie die window.name-API in eingebetteten Seiten erlauben, damit es wieder funktioniert?",
+		"description": ""
+	},
+	"allowWindowNameInFrames_title": {
+		"message": "Erlaube window.name in Frames",
+		"description": ""
+	},
+	"allowWindowNameInFrames_description": {
+		"message": "Die window.name-API ist im Kontext eingebetteter Seiten nicht besonders gefährlich und wird dort für legitime Anwendungen (z.B. reCAPTCHA) verwendet. Diese Einstellung erlaubt die Benutzung dort.",
+		"description": ""
+	},
+	"allowWindowNameInFrames_urlSpecific": {
+		"message": "Um die für bestimmte Seiten zu erlauben, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \\\"+\\\" hinzu und setzen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
 	"protectDOMRect_title": {
@@ -1528,7 +1540,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Der window-API-Schutz macht reCAPTCHA unbenutzbar. Diese Voreinstellung fügt eine Ausnahme dafür hinzu.",
+		"message": "Der window-API-Schutz macht reCAPTCHA unbenutzbar. Diese Voreinstellung erlaubt die Benutzung der window.name-API in eingebetteten Seite. Dadurch funktioniert es wieder.",
 		"description": ""
 	}
 }

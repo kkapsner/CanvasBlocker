@@ -121,6 +121,7 @@
 					break;
 				}
 			}
+			delete json.storageVersion;
 			const keys = Object.keys(json);
 			keys.forEach(function(key){
 				const setting = settings.getDefinition(key);
@@ -132,9 +133,7 @@
 				}
 			});
 			keys.forEach(function(key){
-				if (key !== "storageVersion"){
-					settings[key] = json[key];
-				}
+				settings[key] = json[key];
 			});
 		},
 		resetSettings: async function(){
@@ -560,31 +559,17 @@
 	document.body.appendChild(version);
 	
 	settings.onloaded(function(){
-		const reCaptchaEntry = "^https://www\\.google\\.com/recaptcha/api2/(?:b?frame|anchor).*$";
-		const {url: urlContainer} = settings.getContainers();
 		settings.on("protectWindow", async function({newValue}){
-			if (newValue){
-				const urlValue = urlContainer.get();
-				const matching = urlValue.filter(function(entry){
-					return entry.url === reCaptchaEntry;
-				});
-				if (
-					newValue &&
-					(
-						matching.length === 0 ||
-						matching[0].protectWindow
-					)
-				){
-					const addException = await modal.confirm(
-						extension.getTranslation("protectWindow_askReCaptchaException"),
-						{
-							node: document.querySelector("[data-storage-name=protectWindow]"),
-							selector: ".settingRow .content"
-						}
-					);
-					if (addException){
-						settings.set("protectWindow", false, reCaptchaEntry);
+			if (newValue && !settings.allowWindowNameInFrames){
+				const addException = await modal.confirm(
+					extension.getTranslation("protectWindow_askReCaptchaException"),
+					{
+						node: document.querySelector("[data-storage-name=protectWindow]"),
+						selector: ".settingRow .content"
 					}
+				);
+				if (addException){
+					settings.set("allowWindowNameInFrames", true);
 				}
 			}
 		});

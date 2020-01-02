@@ -23,8 +23,6 @@
 		"protectWindow": true
 	},
 	"recaptcha": {
-		"protectWindow": {
-			"^https://www\\.google\\.com/recaptcha/api2/(?:b?frame|anchor).*$": false
-		}
+		"allowWindowNameInFrames": true
 	}
 }
