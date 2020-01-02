@@ -1080,7 +1080,7 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
-		"message": "Um die für bestimmte Seiten zu erlauben, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \\\"+\\\" hinzu und setzen Sie das zugehörige Häkchen.",
+		"message": "Um dies nur für bestimmte Seiten zu erlauben, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und setzen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
 	"protectDOMRect_title": {
@@ -1540,7 +1540,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Der window-API-Schutz macht reCAPTCHA unbenutzbar. Diese Voreinstellung erlaubt die Benutzung der window.name-API in eingebetteten Seite. Dadurch funktioniert es wieder.",
+		"message": "Der window-API-Schutz macht reCAPTCHA unbenutzbar. Diese Voreinstellung erlaubt die Benutzung der window.name-API in eingebetteten Seiten. Dadurch funktioniert es wieder.",
 		"description": ""
 	}
 }
