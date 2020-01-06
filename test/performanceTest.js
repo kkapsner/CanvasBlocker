@@ -171,8 +171,30 @@ const innerHTMlTest = function(html, repeats){
 		}
 	};
 };
+const appendChildTest = function(tagName, repeats){
+	"use strict";
+	
+	let div;
+	
+	return {
+		prepareOnce: function(){
+			div = document.createElement("div");
+			div.style.visibility = "hidden";
+			document.body.appendChild(div);
+		},
+		test: function(){
+			for (let i = repeats; i--;){
+				const element = document.createElement(tagName);
+				div.appendChild(element);
+				div.removeChild(element);
+			}
+		}
+	};
+};
 
 performTest("fingerprinting", fingerprintTest, 10, 100);
 performTest("big random image", randomImageTest, 10, 10);
-performTest("innerHTML (100 times)", innerHTMlTest("text <br>no iframe", 1000), 10, 30);
+performTest("innerHTML (1000 times)", innerHTMlTest("text <br>no iframe", 1000), 10, 30);
 performTest("innerHTML with iframe (20 times)", innerHTMlTest("text <br>iframe: <iframe></iframe>", 20), 10, 10);
+performTest("appendChild (300 times)", appendChildTest("span", 300), 10, 30);
+performTest("appendChild with iframe (20 times)", appendChildTest("iframe", 20), 10, 30);
