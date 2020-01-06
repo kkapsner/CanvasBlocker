@@ -75,6 +75,7 @@
 					crypto.subtle.digest("SHA-256", imageData.data)
 				]);
 				const data = JSON.stringify({
+					origin,
 					urlHash: hashToString(hashes[0]),
 					imageDataHash: hashToString(hashes[1]),
 					isPointInPath
