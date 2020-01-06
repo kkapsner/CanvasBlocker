@@ -20,7 +20,7 @@
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
-		"message": "\n  \u00B7 {api}",
+		"message": "\n  · {api}",
 		"description": ""
 	},
 	"more": {
@@ -1176,7 +1176,7 @@
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
-		"message": "Um für bestimmte Seiten spezifische Werte zu verwenden, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünsche Domain oder URL mit einem Klick auf \"+\" hinzu und geben sie den gewünschten Wert ein.",
+		"message": "Um für bestimmte Seiten spezifische Werte zu verwenden, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und geben sie den gewünschten Wert ein.",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
