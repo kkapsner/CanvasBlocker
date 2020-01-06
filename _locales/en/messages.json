@@ -84,7 +84,7 @@
 		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
 		"description": ""
 	},
-	"dontShowOptionsOnUpdate":{
+	"dontShowOptionsOnUpdate": {
 		"message": "Don't show up again after update.",
 		"description": ""
 	},
@@ -130,31 +130,31 @@
 		"message": "Settings",
 		"description": ""
 	},
-	"section_canvas-api":{
+	"section_canvas-api": {
 		"message": "Canvas API",
 		"description": ""
 	},
-	"section_audio-api":{
+	"section_audio-api": {
 		"message": "Audio API",
 		"description": ""
 	},
-	"section_history-api":{
+	"section_history-api": {
 		"message": "History API",
 		"description": ""
 	},
-	"section_window-api":{
+	"section_window-api": {
 		"message": "Window API",
 		"description": ""
 	},
-	"section_DOMRect-api":{
+	"section_DOMRect-api": {
 		"message": "DOMRect API",
 		"description": ""
 	},
-	"section_Navigator-api":{
+	"section_Navigator-api": {
 		"message": "Navigator API",
 		"description": ""
 	},
-	"section_Screen-api":{
+	"section_Screen-api": {
 		"message": "Screen API",
 		"description": ""
 	},
@@ -319,32 +319,32 @@
 		"message": "combined",
 		"description": ""
 	},
-	"askDenyMode_title":{
+	"askDenyMode_title": {
 		"message": "Ask deny mode",
 		"description": ""
 	},
-	"askDenyMode_description":{
+	"askDenyMode_description": {
 		"message": "Which mode shall be used when the permission is denied.",
 		"description": ""
 	},
-	"askDenyMode_options.block":{
+	"askDenyMode_options.block": {
 		"message": "block",
 		"description": ""
 	},
-	"askDenyMode_options.fake":{
+	"askDenyMode_options.fake": {
 		"message": "fake",
 		"description": ""
 	},
 	
-	"showCanvasWhileAsking_title":{
+	"showCanvasWhileAsking_title": {
 		"message": "Show canvas content",
 		"description": ""
 	},
-	"showCanvasWhileAsking_description":{
+	"showCanvasWhileAsking_description": {
 		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
 		"description": ""
 	},
-	"showCanvasWhileAsking_message":{
+	"showCanvasWhileAsking_message": {
 		"message": "The webpage wants to read the content of the following canvas:",
 		"description": ""
 	},

@@ -7,7 +7,6 @@
 		"message": "Изменяет некоторые API JS для предотвращения снятия цифровых отпечатков.",
 		"description": ""
 	},
-	
 	"browserAction_title_default": {
 		"message": "CanvasBlocker",
 		"description": ""
@@ -24,7 +23,6 @@
 		"message": "\n  \u00B7 {api}",
 		"description": ""
 	},
-	
 	"more": {
 		"message": "еще",
 		"description": ""
@@ -41,17 +39,14 @@
 		"message": "Поиск",
 		"description": ""
 	},
-	
 	"input": {
 		"message": "input (ввод)",
 		"description": ""
 	},
-	
 	"readout": {
 		"message": "readout (считывание)",
 		"description": ""
 	},
-	
 	"options": {
 		"message": "Настройки",
 		"description": ""
@@ -68,7 +63,7 @@
 		"message": "CanvasBlocker обновлен. Если вы хотите иметь доступ к этой странице в будущем и еще не добавили ее в закладки, добавьте ее в закладки.",
 		"description": ""
 	},
-	"dontShowOptionsOnUpdate":{
+	"dontShowOptionsOnUpdate": {
 		"message": "Не показывать снова после обновления.",
 		"description": ""
 	},
@@ -76,7 +71,6 @@
 		"message": "Открыть в отдельной вкладке",
 		"description": ""
 	},
-	
 	"section_asking": {
 		"message": "Asking (спрашивать)",
 		"description": ""
@@ -101,27 +95,26 @@
 		"message": "Настройки",
 		"description": ""
 	},
-	"section_canvas-api":{
+	"section_canvas-api": {
 		"message": "Canvas API",
 		"description": ""
 	},
-	"section_audio-api":{
+	"section_audio-api": {
 		"message": "Audio API",
 		"description": ""
 	},
-	"section_history-api":{
+	"section_history-api": {
 		"message": "History API",
 		"description": ""
 	},
-	"section_window-api":{
+	"section_window-api": {
 		"message": "Window API",
 		"description": ""
 	},
-	"section_DOMRect-api":{
+	"section_DOMRect-api": {
 		"message": "DOMRect API",
 		"description": ""
 	},
-	
 	"displayAdvancedSettings_title": {
 		"message": "Экспертный режим",
 		"description": ""
@@ -130,7 +123,6 @@
 		"message": "Отображение дополнительных параметров.",
 		"description": ""
 	},
-	
 	"displayDescriptions_title": {
 		"message": "Отображать описания",
 		"description": ""
@@ -139,12 +131,10 @@
 		"message": "Отображает описания настроек.",
 		"description": ""
 	},
-	
 	"hideSetting": {
 		"message": "Нажмите здесь, чтобы скрыть эту настройку.",
 		"description": ""
 	},
-	
 	"displayHiddenSettings_title": {
 		"message": "Отобразить скрытые настройки",
 		"description": ""
@@ -153,7 +143,6 @@
 		"message": "Активируйте, чтобы отобразить скрытые настройки.",
 		"description": ""
 	},
-	
 	"askForInvisiblePermission": {
 		"message": "Вы хотите разрешить невидимый <canvas>?",
 		"description": ""
@@ -258,36 +247,34 @@
 		"message": "комбинированный",
 		"description": ""
 	},
-	"askDenyMode_title":{
+	"askDenyMode_title": {
 		"message": "Режим если отказ",
 		"description": ""
 	},
-	"askDenyMode_description":{
+	"askDenyMode_description": {
 		"message": "Какой режим следует использовать, когда разрешение отклонено.",
 		"description": ""
 	},
-	"askDenyMode_options.block":{
+	"askDenyMode_options.block": {
 		"message": "блокировать",
 		"description": ""
 	},
-	"askDenyMode_options.fake":{
+	"askDenyMode_options.fake": {
 		"message": "подделывать",
 		"description": ""
 	},
-	
-	"showCanvasWhileAsking_title":{
+	"showCanvasWhileAsking_title": {
 		"message": "Показывать содержимое canvas",
 		"description": ""
 	},
-	"showCanvasWhileAsking_description":{
+	"showCanvasWhileAsking_description": {
 		"message": "Показывать содержимое canvas, для которого запрашивается разрешение, если это возможно.",
 		"description": ""
 	},
-	"showCanvasWhileAsking_message":{
+	"showCanvasWhileAsking_message": {
 		"message": "Веб-страница хочет прочитать содержимое следующего canvas:",
 		"description": ""
 	},
-	
 	"blackList_description": {
 		"message": "Домены или URL-адреса, где все API всегда должны быть заблокированы. Чтобы добавить несколько записей, разделите их запятыми.",
 		"description": ""
@@ -296,7 +283,6 @@
 		"message": "Черный список",
 		"description": ""
 	},
-	
 	"blockMode_description": {
 		"message": "",
 		"description": ""
@@ -345,7 +331,6 @@
 		"message": "Режим блокировки",
 		"description": ""
 	},
-	
 	"urlSettings_title": {
 		"message": "Сайты с конкретными значениями",
 		"description": ""
@@ -354,12 +339,10 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"inputURL": {
 		"message": "Введите домен в URL \"RegExp\":",
 		"description": ""
 	},
-	
 	"minFakeSize_description": {
 		"message": "<canvas> с меньшей или равной площадью, чем это число, не будут подделаны. Это параметр для предотвращения обнаружения.\nВНИМАНИЕ: Это снижает безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение выше 100.",
 		"description": ""
@@ -368,7 +351,6 @@
 		"message": "Минимальный размер, который будет подделан",
 		"description": ""
 	},
-	
 	"maxFakeSize_description": {
 		"message": "<canvas> с большей площадью, чем это число не будут подделаны. (Введите ноль, чтобы отключить.) Это параметр для производительности, который может предотвратить зависания браузера и должен быть настроен на вычислительную мощность устройства.\nВНИМАНИЕ: это снижает безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение ниже 1 000 000.",
 		"description": ""
@@ -377,7 +359,6 @@
 		"message": "Максимальный размер, который будет подделан",
 		"description": ""
 	},
-	
 	"rng_description": {
 		"message": "отсутствут (полностью белый): возвращается полностью белое изображение. При этом должна быть активирована опция \"подделать альфа-канал\". ВНИМАНИЕ: не используйте это с режимом \"подделать для input(ввод)\".\n\nнепостоянный: случайные значения будут определяться заново для каждого действия подделки.\n\nконстантный: в пределах одной веб-страницы цвет всегда будет подделан на тот же цвет.\n\nпостоянный: случайное число будет определено только один раз для каждого домена.",
 		"description": ""
@@ -402,7 +383,6 @@
 		"message": "Генератор случайных чисел",
 		"description": ""
 	},
-	
 	"persistentRndStorage_title": {
 		"message": "Постоянное хранение",
 		"description": ""
@@ -411,7 +391,6 @@
 		"message": "Сохраняет данные для генератора постоянных случайных чисел для использования после перезапуска",
 		"description": ""
 	},
-	
 	"storePersistentRnd_title": {
 		"message": "Сохранять постоянные данные",
 		"description": ""
@@ -420,7 +399,6 @@
 		"message": "Сохранять данные для постоянного генератора случайных чисел. В противном случае он сбрасываются при завершении работы браузера.",
 		"description": ""
 	},
-	
 	"persistentRndClearInterval_title": {
 		"message": "Интервал отчистки постоянных данных",
 		"description": ""
@@ -457,7 +435,6 @@
 		"message": "лет",
 		"description": ""
 	},
-	
 	"clearPersistentRnd_title": {
 		"message": "Отчистить хранилище постоянных случайных данных",
 		"description": ""
@@ -470,7 +447,6 @@
 		"message": "Отчистить",
 		"description": ""
 	},
-	
 	"ignoreFrequentColors_title": {
 		"message": "Игнорировать наиболее часто используемые цвета",
 		"description": ""
@@ -479,7 +455,6 @@
 		"message": "Количество цветов, которые не подделываются на <canvas>. Это параметр для предотвращения обнаружения.\nВНИМАНИЕ: это может снизить производительность дополнения, потому что статистика цвета должна быть рассчитана для каждого изображения, также это может снизить безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение выше 3.",
 		"description": ""
 	},
-	
 	"minColors_title": {
 		"message": "Минимальное количество цветов",
 		"description": ""
@@ -488,7 +463,6 @@
 		"message": "Количество цветов, которые необходимо подделать в <canvas>.\nВНИМАНИЕ: это может снизить безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение выше 10.",
 		"description": ""
 	},
-	
 	"fakeAlphaChannel_title": {
 		"message": "Подделать альфа-канал",
 		"description": ""
@@ -497,7 +471,6 @@
 		"message": "Активирует подделывание Альфа-канала (прозрачность).",
 		"description": ""
 	},
-	
 	"useCanvasCache_title": {
 		"message": "Использовать кеш - canvas",
 		"description": ""
@@ -506,7 +479,6 @@
 		"message": "Включает кэш <canvas>. Это может предотвратить обнаружение и увеличить производительность при чтении небольших <canvas> несколько раз, но уменьшает его для больших <canvas>.",
 		"description": ""
 	},
-	
 	"protectedAPIFeatures_title": {
 		"message": "Защищенные функции API",
 		"description": ""
@@ -515,7 +487,6 @@
 		"message": "Список защищенных функций API. При снятии флажка эта функция API не будет защищена.",
 		"description": ""
 	},
-	
 	"disableNotifications": {
 		"message": "отключить уведомления",
 		"description": ""
@@ -540,7 +511,6 @@
 		"message": "Использовать файловый белый список",
 		"description": ""
 	},
-	
 	"preBlock": {
 		"message": "API заблокирован на {url}, поскольку параметры CanvasBlocker вовремя не загрузились.",
 		"description": ""
@@ -573,7 +543,6 @@
 		"message": "Подделан input(ввод) на {url}",
 		"description": ""
 	},
-	
 	"ignoreList_description": {
 		"message": "Домены или URL-адреса, где не должны отображаться уведомления. Чтобы добавить несколько записей, разделите их запятыми.",
 		"description": ""
@@ -582,7 +551,6 @@
 		"message": "Игнорируемый список сайтов",
 		"description": ""
 	},
-	
 	"ignoredAPIs_title": {
 		"message": "Игнорируемые API",
 		"description": ""
@@ -779,7 +747,6 @@
 		"message": "белый список (временно)",
 		"description": ""
 	},
-	
 	"sessionWhiteList_title": {
 		"message": "Белый список этой сессий",
 		"description": ""
@@ -788,7 +755,6 @@
 		"message": "Домены или URL-адреса, которым разрешено использовать все API в течение текущей сессии. Чтобы добавить несколько записей, разделите их запятыми.",
 		"description": ""
 	},
-	
 	"whitelistDomainTemporarily": {
 		"message": "белый список доменов (временно)",
 		"description": ""
@@ -797,7 +763,6 @@
 		"message": "белый список URL (временно)",
 		"description": ""
 	},
-	
 	"storeNotificationData_title": {
 		"message": "Показывать подробные данные уведомлений",
 		"description": ""
@@ -806,7 +771,6 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"storeImageForInspection_title": {
 		"message": "Хранить изображение для просмотра",
 		"description": ""
@@ -815,7 +779,6 @@
 		"message": "Позволяет хранить содержимое подделанного canvas.\nВНИМАНИЕ: это может привести к большому потреблению памяти.",
 		"description": ""
 	},
-	
 	"protectAudio_title": {
 		"message": "Защищать audio API",
 		"description": ""
@@ -924,7 +887,6 @@
 		"message": "Индексы, которые всегда подделываются. Чтобы добавить несколько записей, разделите их запятыми.",
 		"description": ""
 	},
-	
 	"historyLengthThreshold_title": {
 		"message": "Порог длины истории",
 		"description": ""
@@ -933,7 +895,6 @@
 		"message": "Максимальная длина истории, которая сообщается сайту.",
 		"description": ""
 	},
-	
 	"protectWindow_title": {
 		"message": "Защищать window API",
 		"description": ""
@@ -950,7 +911,6 @@
 		"message": "Защита window API нарушает reCAPTCHA. Вы хотите добавить исключение для него?",
 		"description": ""
 	},
-	
 	"protectDOMRect_title": {
 		"message": "Защищать DOMRect API",
 		"description": ""
@@ -963,7 +923,6 @@
 		"message": "Чтобы исключить определенные сайты из этой защиты, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\" и снимите галочку.",
 		"description": ""
 	},
-	
 	"domRectIntegerFactor_title": {
 		"message": "DOMRect целочисленный коэффициент",
 		"description": ""
@@ -972,7 +931,6 @@
 		"message": "С помощью CSS можно управлять некоторой частью пикселя. Чтобы предотвратить обнаружение, значения DOMRect, которые умножаются на этот коэффициент, целые числа не будут изменены.",
 		"description": ""
 	},
-	
 	"theme_title": {
 		"message": "Тема",
 		"description": ""
@@ -993,7 +951,6 @@
 		"message": "темная",
 		"description": ""
 	},
-	
 	"blockDataURLs_title": {
 		"message": "Block data URL pages",
 		"description": ""
@@ -1002,7 +959,6 @@
 		"message": "Data URL cтраницы не могут быть защищены от снятия цифровых отпечатков (см. https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Их блокирование  предотвращает отправку реального цифрового отпечатка.",
 		"description": ""
 	},
-	
 	"showReleaseNotes_title": {
 		"message": "Примечания к выпуску",
 		"description": ""
@@ -1015,7 +971,6 @@
 		"message": "Показать",
 		"description": ""
 	},
-	
 	"logLevel_title": {
 		"message": "Уровень ведения логов",
 		"description": ""
@@ -1048,7 +1003,6 @@
 		"message": "verbose (подробный)",
 		"description": ""
 	},
-	
 	"exportSettings_title": {
 		"message": "Экспорт настроек",
 		"description": ""
@@ -1057,7 +1011,6 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"openSettingSanitation_title": {
 		"message": "Санитария настроек",
 		"description": ""
@@ -1070,7 +1023,6 @@
 		"message": "Открыть",
 		"description": ""
 	},
-	
 	"inspectSettings_label": {
 		"message": "Посмотреть",
 		"description": ""
@@ -1083,7 +1035,6 @@
 		"message": "Загрузить",
 		"description": ""
 	},
-	
 	"resetSettings_title": {
 		"message": "Сброс настроек",
 		"description": ""
@@ -1100,7 +1051,6 @@
 		"message": "Вы уверены, что хотите сбросить все настройки?",
 		"description": ""
 	},
-	
 	"browserAction_settings": {
 		"message": "Настройки",
 		"description": ""
@@ -1117,7 +1067,6 @@
 		"message": "Сообщить о проблеме",
 		"description": ""
 	},
-	
 	"sanitation_title": {
 		"message": "Санитария настроек",
 		"description": ""

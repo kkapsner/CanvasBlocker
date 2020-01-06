@@ -7,7 +7,6 @@
 		"message": "Change l’interface de programmation applicative JavaScript en maquillant les données <canva> pour empêcher le pistage par son intermédiaire.",
 		"description": "API (english) = Interface de Programmation Applicative. JS = Java Script. (JS-API)"
 	},
-	
 	"more": {
 		"message": "plus",
 		"description": ""
@@ -16,17 +15,14 @@
 		"message": "moins",
 		"description": ""
 	},
-	
 	"input": {
 		"message": "ajouter un commentaire",
 		"description": ""
 	},
-	
 	"readout": {
 		"message": "Lecture d’éléments électroniques",
 		"description": ""
 	},
-	
 	"options": {
 		"message": "Options de CanvasBlocker",
 		"description": ""
@@ -43,7 +39,6 @@
 		"message": "CanvasBlocker a été mis à jour. Si vous souhaitez accéder à cette page à l'avenir et que vous ne l'avez pas mise en signet, vous êtes invité à le faire.",
 		"description": ""
 	},
-	
 	"section_asking": {
 		"message": "Questionner",
 		"description": ""
@@ -68,11 +63,10 @@
 		"message": "Parmètres",
 		"description": ""
 	},
-	"section_audio-api":{
+	"section_audio-api": {
 		"message": "Interface API audio",
 		"description": ""
 	},
-	
 	"displayAdvancedSettings_title": {
 		"message": "Mode Expert(e)",
 		"description": ""
@@ -81,7 +75,6 @@
 		"message": "Afficher les paramètres de configuration supplémentaires.",
 		"description": ""
 	},
-	
 	"displayDescriptions_title": {
 		"message": "Afficher les descriptions",
 		"description": ""
@@ -90,7 +83,6 @@
 		"message": "Afficher la description des réglages.",
 		"description": ""
 	},
-	
 	"displayHiddenSettings_title": {
 		"message": "Afficher les paramètres cachés",
 		"description": ""
@@ -99,7 +91,6 @@
 		"message": "Activer pour afficher les paramètres cachés.",
 		"description": ""
 	},
-	
 	"askForInvisiblePermission": {
 		"message": "Voulez-vous autoriser l'utilisation de <canvas> invisible ?",
 		"description": ""
@@ -168,36 +159,34 @@
 		"message": "Combiné",
 		"description": ""
 	},
-	"askDenyMode_title":{
+	"askDenyMode_title": {
 		"message": "Refuser la demande",
 		"description": ""
 	},
-	"askDenyMode_description":{
+	"askDenyMode_description": {
 		"message": "Quel mode doit être sélectionné, si la permission est refusée.",
 		"description": ""
 	},
-	"askDenyMode_options.block":{
+	"askDenyMode_options.block": {
 		"message": "Bloquer",
 		"description": ""
 	},
-	"askDenyMode_options.fake":{
+	"askDenyMode_options.fake": {
 		"message": "Feindre",
 		"description": ""
 	},
-	
-	"showCanvasWhileAsking_title":{
+	"showCanvasWhileAsking_title": {
 		"message": "Afficher le contenu du canvas",
 		"description": ""
 	},
-	"showCanvasWhileAsking_description":{
+	"showCanvasWhileAsking_description": {
 		"message": "Quand il y aura une possibilité le contenu du canvas demandera une permission.",
 		"description": ""
 	},
-	"showCanvasWhileAsking_message":{
+	"showCanvasWhileAsking_message": {
 		"message": "La page web veut lire le contenu du <Canvas> suivant :",
 		"description": ""
 	},
-	
 	"blackList_description": {
 		"message": "Domaines ou URLs que l'API <canvas>  ne doit jamais utiliser. S’il y a plusieurs entrées, elles doivent être séparées par une virgule.",
 		"description": ""
@@ -206,7 +195,6 @@
 		"message": "Liste rouge",
 		"description": ""
 	},
-	
 	"blockMode_description": {
 		"message": "",
 		"description": ""
@@ -251,7 +239,6 @@
 		"message": "Mode blocage",
 		"description": ""
 	},
-	
 	"urlSettings_title": {
 		"message": "Paramètres spécifiques à un site",
 		"description": ""
@@ -260,12 +247,10 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"inputURL": {
 		"message": "Input domain or URL RegExp:",
 		"description": ""
 	},
-	
 	"minFakeSize_description": {
 		"message": "Canevas, ayant une surface plus petite ou égale à ce nombre-ci, ne sera pas falsifié. C'est un paramètre qui devrait rendre la détection de l'extension par un tiers plus difficile. \nToutefois : cela réduit la sécurité de l'extension. Par conséquent, il est fortement recommandé de ne pas définir cette valeur au-dessus du chiffre 100.",
 		"description": ""
@@ -274,7 +259,6 @@
 		"message": "Taille minimale du faux",
 		"description": ""
 	},
-	
 	"maxFakeSize_description": {
 		"message": "Les <Canvas> qui auront une plus grande surface que le nombre indiqué ne seront pas falsifiés. (Zéro sert à désactiver).  Il s'agit d'un paramètre de performance qui peut réduire le gel du navigateur et doit être adapté à la puissance de calcul de l'appareil. \nAttention : cela réduit la sécurité de l'extension. Il est fortement recommandé de ne pas fixer cette valeur en dessous de 1 000 000 000",
 		"description": ""
@@ -283,7 +267,6 @@
 		"message": "Taille maximale du faux",
 		"description": ""
 	},
-	
 	"rng_description": {
 		"message": "Rien (complètement blanc) : une image blanche est toujours retournée. L'option \"Feindre le canal alpha\" devrait aussi être activée. Attention : ne pas utiliser en mode \" Donner de fausses informations \".\nPersistance des données : des nombres aléatoires seront redéterminés avec chaque action.\nConservation des données : dans une page web une couleur est toujours la même.\nPersistance des données : pour chaque domaine les nombres aléatoires ne sont déterminés qu'une seule fois.",
 		"description": ""
@@ -308,7 +291,6 @@
 		"message": "Générateur de nombres aléatoires",
 		"description": ""
 	},
-	
 	"persistentRndStorage_title": {
 		"message": "Mise en mémoire de la persistance des données",
 		"description": ""
@@ -317,7 +299,6 @@
 		"message": "Enregistrer les données du générateur de nombres aléatoires, de la persistance des données, pour une utilisation après le redémarrage.",
 		"description": ""
 	},
-	
 	"storePersistentRnd_title": {
 		"message": "Sauvegarde de la persistance des données.",
 		"description": ""
@@ -326,7 +307,6 @@
 		"message": "Si les données du générateur de nombres aléatoires de la persistance des données doivent être enregistrées. Dans le cas contraire, lors de la fermeture du navigateur, tout sera effacé.",
 		"description": ""
 	},
-	
 	"persistentRndClearInterval_title": {
 		"message": "Effacer la persistance des données.",
 		"description": ""
@@ -363,7 +343,6 @@
 		"message": "années",
 		"description": ""
 	},
-	
 	"clearPersistentRnd_title": {
 		"message": "Effacer le stockage aléatoire de la persistance des données.",
 		"description": ""
@@ -376,7 +355,6 @@
 		"message": "Effacer",
 		"description": ""
 	},
-	
 	"ignoreFrequentColors_title": {
 		"message": "Ignorer les couleurs les plus courantes",
 		"description": ""
@@ -385,7 +363,6 @@
 		"message": "Nombre de couleurs qui ne doivent pas être truquées par <canvas>. C'est un paramètre qui devrait rendre la détection de l'extension par un tiers plus difficile.\nToutefois : cela peut affecter la vitesse d’exécution de l'extension, les statistiques de couleur devant être calculées pour chaque image. Il peut également réduire la sécurité de l'extension si la valeur est trop élevée. De fait, il est fortement recommandé de ne pas régler cette valeur au-dessus du chiffre 3.",
 		"description": ""
 	},
-	
 	"minColors_title": {
 		"message": "Nombre minimal de couleurs",
 		"description": ""
@@ -394,7 +371,6 @@
 		"message": "Nombre de couleurs que <canvas> doit avoir pour donner de fausses informations. C'est un paramètre qui devrait rendre la détection de l'extension par un tiers plus difficile.\nToutefois : cela peut affecter la sécurité de l'extension. En conséquence de quoi, il est recommandé de ne pas régler cette valeur au-dessus de 10.",
 		"description": ""
 	},
-	
 	"fakeAlphaChannel_title": {
 		"message": "Feindre le canal alpha",
 		"description": ""
@@ -403,7 +379,6 @@
 		"message": "Active le truquage du canal alpha (transparence).",
 		"description": ""
 	},
-	
 	"useCanvasCache_title": {
 		"message": "Utiliser le cache de canvas",
 		"description": ""
@@ -412,7 +387,6 @@
 		"message": "Active le cache de <canvas>. Cela peut empêcher la détection de l'extension par un tierrs et peut augmenter la vitesse d’exécution de l'extension si de petites <canvas> sont lues souvent. En ce qui concerne les grands <canvas>, la vitesse est cependant réduite.",
 		"description": ""
 	},
-	
 	"apiWhiteList_title": {
 		"message": "Liste blance de l'interface API",
 		"description": ""
@@ -421,7 +395,6 @@
 		"message": "Permet d’afficher les parties sélectionnées de l'interface API <canvas>.",
 		"description": ""
 	},
-	
 	"disableNotifications": {
 		"message": "Désactiver les notifications",
 		"description": ""
@@ -446,7 +419,6 @@
 		"message": "Utiliser la liste blanche spécifique au fichier",
 		"description": ""
 	},
-	
 	"preBlock": {
 		"message": "L’interface API a bloqué sur {url} parce que les paramètres de CanvasBlocker n'ont pas été chargés à temps.",
 		"description": ""
@@ -467,7 +439,6 @@
 		"message": "feindre l'entrée sur {url}.",
 		"description": ""
 	},
-	
 	"ignoreList_description": {
 		"message": "Domaines ou URL pour lesquels aucune notification ne doit être affichée. S’il y a plusieurs entrées elles doivent être séparées par une virgule.",
 		"description": ""
@@ -560,7 +531,6 @@
 		"message": "Autoriser l'URL",
 		"description": ""
 	},
-	
 	"storeImageForInspection_title": {
 		"message": "Enregistrer l'image pour la visualiser",
 		"description": ""
@@ -569,7 +539,6 @@
 		"message": "Enregistrer la fausse information <canvas>.\nAttention : il se peut que cela entraine une élévation de la mémoire utilisée.",
 		"description": ""
 	},
-	
 	"protectaudio_title": {
 		"message": "Protéger l'interface API audio",
 		"description": ""
@@ -670,7 +639,6 @@
 		"message": "Indices qui devront toujours être falsifiés. Ils seront séparés par une virgule.",
 		"description": ""
 	},
-	
 	"showReleaseNotes_title": {
 		"message": "Informations sur les versions",
 		"description": ""
@@ -683,7 +651,6 @@
 		"message": "Notifications",
 		"description": ""
 	},
-	
 	"logLevel_title": {
 		"message": "Niveau d'enregistrement",
 		"description": ""
@@ -716,7 +683,6 @@
 		"message": "Détailler",
 		"description": ""
 	},
-	
 	"exportSettings_title": {
 		"message": "Paramètres d'exportation",
 		"description": ""
@@ -729,7 +695,6 @@
 		"message": "Montrer",
 		"description": ""
 	},
-	
 	"resetSettings_title": {
 		"message": "Réinitialiser les paramètres",
 		"description": ""

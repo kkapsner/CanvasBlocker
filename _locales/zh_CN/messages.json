@@ -7,7 +7,6 @@
 		"message": "改变修改 <canvas> 的 JS-API 来预防画布（Canvas）指纹跟踪。",
 		"description": ""
 	},
-	
 	"browserAction_title_default": {
 		"message": "CanvasBlocker",
 		"description": ""
@@ -24,7 +23,6 @@
 		"message": "\n  \u00B7 {api}",
 		"description": ""
 	},
-	
 	"more": {
 		"message": "更多",
 		"description": ""
@@ -49,17 +47,14 @@
 		"message": "取消",
 		"description": ""
 	},
-	
 	"input": {
 		"message": "输入",
 		"description": ""
 	},
-	
 	"readout": {
 		"message": "取出",
 		"description": ""
 	},
-	
 	"options": {
 		"message": "选项",
 		"description": ""
@@ -80,7 +75,7 @@
 		"message": "CanvasBlocker 已更新。如果您想在之后查阅此页面，您可以将此页加入书签。",
 		"description": ""
 	},
-	"dontShowOptionsOnUpdate":{
+	"dontShowOptionsOnUpdate": {
 		"message": "不要再在更新后显示。",
 		"description": ""
 	},
@@ -88,7 +83,6 @@
 		"message": "在标签页中打开",
 		"description": ""
 	},
-	
 	"group_general": {
 		"message": "一般",
 		"description": ""
@@ -101,7 +95,6 @@
 		"message": "其他",
 		"description": ""
 	},
-	
 	"section_asking": {
 		"message": "询问",
 		"description": ""
@@ -126,31 +119,30 @@
 		"message": "设置",
 		"description": ""
 	},
-	"section_canvas-api":{
+	"section_canvas-api": {
 		"message": "Canvas API",
 		"description": ""
 	},
-	"section_audio-api":{
+	"section_audio-api": {
 		"message": "音频 API",
 		"description": ""
 	},
-	"section_history-api":{
+	"section_history-api": {
 		"message": "历史 API",
 		"description": ""
 	},
-	"section_window-api":{
+	"section_window-api": {
 		"message": "窗口 API",
 		"description": ""
 	},
-	"section_DOMRect-api":{
+	"section_DOMRect-api": {
 		"message": "DOMRect API",
 		"description": ""
 	},
-	"section_Navigator-api":{
+	"section_Navigator-api": {
 		"message": "导航（Navigator）API",
 		"description": ""
 	},
-	
 	"displayAdvancedSettings_title": {
 		"message": "专家模式",
 		"description": ""
@@ -159,7 +151,6 @@
 		"message": "显示额外设置",
 		"description": ""
 	},
-	
 	"displayDescriptions_title": {
 		"message": "显示说明",
 		"description": ""
@@ -168,12 +159,10 @@
 		"message": "显示设置的说明。",
 		"description": ""
 	},
-	
 	"hideSetting": {
 		"message": "点击这里以隐藏该设置。",
 		"description": ""
 	},
-	
 	"displayHiddenSettings_title": {
 		"message": "显示隐藏设置",
 		"description": ""
@@ -182,7 +171,6 @@
 		"message": "显示已隐藏的设置。",
 		"description": ""
 	},
-	
 	"askForInvisiblePermission": {
 		"message": "是否允许不可见的 <canvas>？",
 		"description": ""
@@ -299,36 +287,34 @@
 		"message": "组合",
 		"description": ""
 	},
-	"askDenyMode_title":{
+	"askDenyMode_title": {
 		"message": "询问拒绝模式",
 		"description": ""
 	},
-	"askDenyMode_description":{
+	"askDenyMode_description": {
 		"message": "权限被拒绝时的模式。",
 		"description": ""
 	},
-	"askDenyMode_options.block":{
+	"askDenyMode_options.block": {
 		"message": "阻止",
 		"description": ""
 	},
-	"askDenyMode_options.fake":{
+	"askDenyMode_options.fake": {
 		"message": "伪造",
 		"description": ""
 	},
-	
-	"showCanvasWhileAsking_title":{
+	"showCanvasWhileAsking_title": {
 		"message": "显示 Canvas 内容",
 		"description": ""
 	},
-	"showCanvasWhileAsking_description":{
+	"showCanvasWhileAsking_description": {
 		"message": "询问权限时尽可能显示 Canvas 的内容。",
 		"description": ""
 	},
-	"showCanvasWhileAsking_message":{
+	"showCanvasWhileAsking_message": {
 		"message": "该网页想要读取下列画布（Canvas）的内容：",
 		"description": ""
 	},
-	
 	"blackList_description": {
 		"message": "始终阻止 <canvas> API 的域名或 URL。多项请使用英文逗号分隔。",
 		"description": ""
@@ -337,7 +323,6 @@
 		"message": "黑名单",
 		"description": ""
 	},
-	
 	"blockMode_description": {
 		"message": "",
 		"description": ""
@@ -379,7 +364,6 @@
 		"description": ""
 	},
 	"blockMode_options.fakeInput": {
-	
 		"message": "输入时伪造",
 		"description": ""
 	},
@@ -407,7 +391,6 @@
 		"message": "所有",
 		"description": ""
 	},
-	
 	"urlSettings_title": {
 		"message": "各站点分别设置",
 		"description": ""
@@ -416,12 +399,10 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"inputURL": {
 		"message": "输入域名或网址（URL）的正则表达式：",
 		"description": ""
 	},
-	
 	"minFakeSize_description": {
 		"message": "面积小于或等于该数字的画布（Canvas）不会被伪造。这是一个预防检测的参数。\n注意：这将降低本扩展所带来的安全性，因此强烈建议此值不要高于 100。",
 		"description": ""
@@ -430,7 +411,6 @@
 		"message": "最小伪造大小",
 		"description": ""
 	},
-	
 	"maxFakeSize_description": {
 		"message": "面积大于该数字的画布（Canvas）不会被伪造。输入 0 则禁用此参数。此参数是为性能考虑，可以预防浏览器卡死，应根据设备的性能调整。\n注意：过低的数字将降低本扩展所带来的安全性，因此强烈建议此值不要低于 1 000 000。",
 		"description": ""
@@ -439,7 +419,6 @@
 		"message": "最大伪造大小",
 		"description": ""
 	},
-	
 	"rng_description": {
 		"message": "无（全白）：返回一个完全是白色的图像。使用此选项时，“伪造 alpha 通道”选项应该激活配合。注意：使用“输入时伪造”模式时不应使用。\n非持久化：每个伪造行动都确定新的随机数。\n不变：同一个网页中，一个颜色总被伪造成另一个相同的颜色。\n持久化：对每个域名只确定一次随机数。",
 		"description": ""
@@ -464,7 +443,6 @@
 		"message": "随机数生成器",
 		"description": ""
 	},
-	
 	"persistentRndStorage_title": {
 		"message": "持久化存储",
 		"description": ""
@@ -473,7 +451,6 @@
 		"message": "存储随机数生成器的持久化数据以供浏览器重启后使用。",
 		"description": ""
 	},
-	
 	"storePersistentRnd_title": {
 		"message": "存储持久化数据",
 		"description": ""
@@ -482,7 +459,6 @@
 		"message": "如果没有存储随机数生成器的持久化数据，相应数据在浏览器关闭时丢弃。",
 		"description": ""
 	},
-	
 	"persistentRndClearInterval_title": {
 		"message": "持久化数据的清除间隔",
 		"description": ""
@@ -519,7 +495,6 @@
 		"message": "年",
 		"description": ""
 	},
-	
 	"clearPersistentRnd_title": {
 		"message": "清除持久化的随机存储",
 		"description": ""
@@ -540,7 +515,6 @@
 		"message": "选择容器",
 		"description": ""
 	},
-	
 	"sharePersistentRndBetweenDomains_title": {
 		"message": "在域名间分享持久的随机性",
 		"description": ""
@@ -553,7 +527,6 @@
 		"message": "您确定要在域名间分享持久的随机性？\n注意：这个设置会使浏览器 100% 会被追踪，并因此威胁你的隐私。",
 		"description": ""
 	},
-	
 	"ignoreFrequentColors_title": {
 		"message": "忽略最常见的颜色",
 		"description": ""
@@ -562,7 +535,6 @@
 		"message": "每个画布（Canvas）前多少个最常见的颜色不被伪造。这是一个预防检测的参数。\n注意：这将降低本扩展的性能，因为需要对每个图像统计颜色数。此外，这可能降低本扩展所带来的安全性，因此强烈建议此值不要高于 3。",
 		"description": ""
 	},
-	
 	"minColors_title": {
 		"message": "最少颜色数",
 		"description": ""
@@ -571,7 +543,6 @@
 		"message": "伪造的画布（Canvas）至少有多少种颜色。\n注意：这将降低本扩展所带来的安全性，因此强烈建议此值不要高于 10。",
 		"description": ""
 	},
-	
 	"fakeAlphaChannel_title": {
 		"message": "伪造 alpha 通道",
 		"description": ""
@@ -580,7 +551,6 @@
 		"message": "激活对 alpha 通道（透明度）的伪造。",
 		"description": ""
 	},
-	
 	"useCanvasCache_title": {
 		"message": "使用 Canvas 缓存",
 		"description": ""
@@ -589,7 +559,6 @@
 		"message": "启用 Canvas 缓存。这可以预防检测，并在小画布（Canvas）被数次读取时增加性能，但对于大画布则降低性能。",
 		"description": ""
 	},
-	
 	"apiWhiteList_title": {
 		"message": "API 白名单",
 		"description": ""
@@ -598,7 +567,6 @@
 		"message": "允许部分 Canvas API。",
 		"description": ""
 	},
-	
 	"disableNotifications": {
 		"message": "禁用通知",
 		"description": ""
@@ -623,7 +591,6 @@
 		"message": "使用指定白名单文件",
 		"description": ""
 	},
-	
 	"preBlock": {
 		"message": "{url} 上的 API 调用已阻止，因为 CanvasBlocker 的设置未能及时加载。",
 		"description": ""
@@ -660,7 +627,6 @@
 		"message": "{url} 上的画布输入已伪造",
 		"description": ""
 	},
-	
 	"ignoreList_description": {
 		"message": "不需要显示通知的域名或 URL。多项请使用英文逗号分隔。",
 		"description": ""
@@ -669,7 +635,6 @@
 		"message": "忽略列表",
 		"description": ""
 	},
-	
 	"ignoredAPIs_title": {
 		"message": "忽略 API",
 		"description": ""
@@ -886,7 +851,6 @@
 		"message": "检查白名单",
 		"description": ""
 	},
-	
 	"sessionWhiteList_title": {
 		"message": "会话级白名单",
 		"description": ""
@@ -895,7 +859,6 @@
 		"message": "本次会话期间拦截 <canvas> API 使用的域名或 URL。多项请使用英文逗号分隔。",
 		"description": ""
 	},
-	
 	"whitelistDomainTemporarily": {
 		"message": "临时白名单域名",
 		"description": ""
@@ -904,7 +867,6 @@
 		"message": "临时白名单 URL",
 		"description": ""
 	},
-	
 	"storeNotificationData_title": {
 		"message": "存储通知详细数据",
 		"description": ""
@@ -913,7 +875,6 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"storeImageForInspection_title": {
 		"message": "存储图像以备察看",
 		"description": ""
@@ -922,7 +883,6 @@
 		"message": "开始存储已伪造的画布内容。\n注意：这可能消耗大量内存！",
 		"description": ""
 	},
-	
 	"protectaudio_title": {
 		"message": "保护音频 API",
 		"description": ""
@@ -979,10 +939,6 @@
 		"message": "噪声级别",
 		"description": ""
 	},
-						   
-						   
-				   
-   
 	"audionoiselevel_description": {
 		"message": "",
 		"description": ""
@@ -1031,7 +987,6 @@
 		"message": "始终使用指定的指数来伪造。多项请使用英文逗号分隔。",
 		"description": ""
 	},
-	
 	"historyLengthThreshold_title": {
 		"message": "历史长度阈值",
 		"description": ""
@@ -1044,7 +999,6 @@
 		"message": "为了给特定网站设置单独的屏蔽模式，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，设置不同的值。",
 		"description": ""
 	},
-	
 	"protectWindow_title": {
 		"message": "保护窗口 API",
 		"description": ""
@@ -1061,7 +1015,6 @@
 		"message": "保护窗口 API 妨碍 reCAPTCHA。您是否添加例外？",
 		"description": ""
 	},
-	
 	"protectDOMRect_title": {
 		"message": "保护 DOMRect API",
 		"description": ""
@@ -1074,7 +1027,6 @@
 		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
-	
 	"domRectIntegerFactor_title": {
 		"message": "DOMRect 整数系数",
 		"description": ""
@@ -1083,7 +1035,6 @@
 		"message": "像素的有些部分可以被 CSS 控制。为阻止检测，用这一整数系数增值的 DOMRect 的值将不被改变。",
 		"description": ""
 	},
-	
 	"protectNavigator_title": {
 		"message": "保护导航 API",
 		"description": ""
@@ -1096,7 +1047,6 @@
 		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
-	
 	"openNavigatorSettings_title": {
 		"message": "导航设置",
 		"description": ""
@@ -1109,7 +1059,6 @@
 		"message": "开启",
 		"description": ""
 	},
-	
 	"navigatorSettings_title": {
 		"message": "CanvasBlocker 导航设置",
 		"description": ""
@@ -1138,7 +1087,6 @@
 		"message": "重置",
 		"description": ""
 	},
-	
 	"theme_title": {
 		"message": "Theme",
 		"description": ""
@@ -1171,7 +1119,6 @@
 		"message": "无",
 		"description": ""
 	},
-	
 	"blockDataURLs_title": {
 		"message": "阻止 data URL 形成页面",
 		"description": ""
@@ -1184,7 +1131,6 @@
 		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
-	
 	"showReleaseNotes_title": {
 		"message": "发行说明",
 		"description": ""
@@ -1197,7 +1143,6 @@
 		"message": "显示",
 		"description": ""
 	},
-	
 	"logLevel_title": {
 		"message": "日志级别",
 		"description": ""
@@ -1230,7 +1175,6 @@
 		"message": "详细",
 		"description": ""
 	},
-	
 	"exportSettings_title": {
 		"message": "导出设置",
 		"description": ""
@@ -1239,7 +1183,6 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"openSettingSanitation_title": {
 		"message": "显示",
 		"description": ""
@@ -1252,7 +1195,6 @@
 		"message": "开启",
 		"description": ""
 	},
-	
 	"inspectSettings_label": {
 		"message": "检查",
 		"description": ""
@@ -1269,7 +1211,6 @@
 		"message": "检查白名单",
 		"description": ""
 	},
-	
 	"resetSettings_title": {
 		"message": "重置设置",
 		"description": ""
@@ -1286,7 +1227,6 @@
 		"message": "确定重置所有设置？",
 		"description": ""
 	},
-	
 	"browserAction_settings": {
 		"message": "设置",
 		"description": ""
@@ -1303,7 +1243,6 @@
 		"message": "反馈问题",
 		"description": ""
 	},
-	
 	"sanitation_title": {
 		"message": "设置清理",
 		"description": ""
@@ -1420,7 +1359,6 @@
 		"message": "不要在域名间共享持久的随机性，因为这导致浏览器 100% 可以被追踪。",
 		"description": ""
 	},
-	
 	"whitelist_inspection_title": {
 		"message": "CanvasBlocker 白名单检查",
 		"description": ""

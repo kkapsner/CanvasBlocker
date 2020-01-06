@@ -7,7 +7,6 @@
 		"message": "Altera algunas API de JS para evitar la huella digital.",
 		"description": ""
 	},
-	
 	"browserAction_title_default": {
 		"message": "CanvasBlocker",
 		"description": ""
@@ -24,7 +23,6 @@
 		"message": "\n  \u00B7 {api}",
 		"description": ""
 	},
-	
 	"more": {
 		"message": "más",
 		"description": ""
@@ -41,17 +39,14 @@
 		"message": "Buscar",
 		"description": ""
 	},
-
 	"input": {
 		"message": "entrada",
 		"description": ""
 	},
-	
 	"readout": {
 		"message": "lectura",
 		"description": ""
 	},
-	
 	"options": {
 		"message": "Configuración",
 		"description": ""
@@ -59,7 +54,7 @@
 	"options_title": {
 		"message": "Configuración de CanvasBlocker",
 		"description": ""
-	},	
+	},
 	"optionsIntroduction": {
 		"message": "En esta página puede ajustar la configuración de CanvasBlocker.",
 		"description": ""
@@ -72,7 +67,7 @@
 		"message": "Se ha actualizado CanvasBlocker. Si quiere poder acceder a está página más adelante y no la tiene en los marcadores, añádala.",
 		"description": ""
 	},
-	"dontShowOptionsOnUpdate":{
+	"dontShowOptionsOnUpdate": {
 		"message": "No mostrar de nuevo al actualizar.",
 		"description": ""
 	},
@@ -80,7 +75,6 @@
 		"message": "Abrir en una pestaña separada",
 		"description": ""
 	},
-	
 	"section_asking": {
 		"message": "Preguntando",
 		"description": ""
@@ -105,31 +99,30 @@
 		"message": "Configuración",
 		"description": ""
 	},
-	"section_canvas-api":{
+	"section_canvas-api": {
 		"message": "API de canvas",
 		"description": ""
-	},	
-	"section_audio-api":{
+	},
+	"section_audio-api": {
 		"message": "API de audio",
 		"description": ""
 	},
-	"section_history-api":{
+	"section_history-api": {
 		"message": "API de history",
 		"description": ""
 	},
-	"section_window-api":{
+	"section_window-api": {
 		"message": "API de window",
 		"description": ""
 	},
-	"section_DOMRect-api":{
+	"section_DOMRect-api": {
 		"message": "API de DOMRect",
 		"description": ""
 	},
-	"section_Navigator-api":{
+	"section_Navigator-api": {
 		"message": "API de navigator",
 		"description": ""
-	},	
-
+	},
 	"displayAdvancedSettings_title": {
 		"message": "Modo para expertos",
 		"description": ""
@@ -138,7 +131,6 @@
 		"message": "Muestra opciones adicionales.",
 		"description": ""
 	},
-	
 	"displayDescriptions_title": {
 		"message": "Mostrar las descripciones",
 		"description": ""
@@ -147,12 +139,10 @@
 		"message": "Muestra las descripciones de las opciones.",
 		"description": ""
 	},
-
 	"hideSetting": {
 		"message": "Haga clic aquí para ocultar esta opción.",
 		"description": ""
 	},
-	
 	"displayHiddenSettings_title": {
 		"message": "Mostrar las opciones ocultas",
 		"description": ""
@@ -161,7 +151,6 @@
 		"message": "Activar para mostrar las opciones ocultas.",
 		"description": ""
 	},
-	
 	"askForInvisiblePermission": {
 		"message": "¿Quiere permitir los <canvas> invisibles?",
 		"description": ""
@@ -257,7 +246,7 @@
 	"askForNavigatorReadoutPermission": {
 		"message": "¿Quiere permitir la lectura para la API de navigator?",
 		"description": ""
-	},	
+	},
 	"askOnlyOnce_title": {
 		"message": "Pregunar una sola vez",
 		"description": ""
@@ -278,36 +267,34 @@
 		"message": "combinado",
 		"description": ""
 	},
-	"askDenyMode_title":{
+	"askDenyMode_title": {
 		"message": "Preguntar por el modo de denegación",
 		"description": ""
 	},
-	"askDenyMode_description":{
+	"askDenyMode_description": {
 		"message": "Qué modo se debe usar cuando se deniega un permiso.",
 		"description": ""
 	},
-	"askDenyMode_options.block":{
+	"askDenyMode_options.block": {
 		"message": "bloquear",
 		"description": ""
 	},
-	"askDenyMode_options.fake":{
+	"askDenyMode_options.fake": {
 		"message": "falsear",
 		"description": ""
 	},
-	
-	"showCanvasWhileAsking_title":{
+	"showCanvasWhileAsking_title": {
 		"message": "Mostrar el contenido del «canvas»",
 		"description": ""
 	},
-	"showCanvasWhileAsking_description":{
+	"showCanvasWhileAsking_description": {
 		"message": "Muestra el contenido del «canvas» para el que se ha pedido permiso, si es posible.",
 		"description": ""
 	},
-	"showCanvasWhileAsking_message":{
+	"showCanvasWhileAsking_message": {
 		"message": "La página web quiere leer el contenido del siguiente «canvas»:",
 		"description": ""
 	},
-	
 	"blackList_description": {
 		"message": "Los dominios o URL donde bloquear siempre todas las API. Para añadir varias entradas, sepárelas con comas.",
 		"description": ""
@@ -316,7 +303,6 @@
 		"message": "Lista negra",
 		"description": ""
 	},
-	
 	"blockMode_description": {
 		"message": "",
 		"description": ""
@@ -324,7 +310,7 @@
 	"blockMode_urlSpecific": {
 		"message": "Para establecer modos de bloqueo individuales para sitios específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y seleccione el modo de bloqueo deseado.",
 		"description": ""
-	},	
+	},
 	"blockMode_options.allowEverything": {
 		"message": "permitir todo",
 		"description": ""
@@ -353,7 +339,6 @@
 		"message": "Modo de bloqueo",
 		"description": ""
 	},
-	
 	"protectedCanvasPart_title": {
 		"message": "Parte protegida de la API de canvas",
 		"description": ""
@@ -382,7 +367,6 @@
 		"message": "todo",
 		"description": ""
 	},
-	
 	"urlSettings_title": {
 		"message": "Valores específicos para sitios",
 		"description": ""
@@ -391,12 +375,10 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"inputURL": {
 		"message": "Introduzca un dominio o «RegExp» de URL:",
 		"description": ""
 	},
-	
 	"minFakeSize_description": {
 		"message": "Los «canvas» con un área menor o igual que este número no se falsean. Es un parámetro para prevenir la detección.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor mayor que 100.",
 		"description": ""
@@ -405,7 +387,6 @@
 		"message": "Tamaño mínimo para falsear",
 		"description": ""
 	},
-	
 	"maxFakeSize_description": {
 		"message": "Los «canvas» con un área mayor que este número no se falsean (introduzca un cero para deshabilitarlo). Es un parámetro de rendimiento que puede prevenir bloqueos del navegador y debe ajustarse a la potencia de cálculo del dispositivo.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor menor que 1000000.",
 		"description": ""
@@ -414,7 +395,6 @@
 		"message": "Tamaño máximo para falsear",
 		"description": ""
 	},
-	
 	"rng_description": {
 		"message": "ninguno (totalmente blanco): se devuelve una imagen totalmente blanca. La opción «Falsear el canal alfa» debe activarse junto a esta. PRECAUCIÓN: no usar con el modo «falsear a la entrada».\nno persistente: los números aleatorios se vuelven a calcular para cada acción de falseado.\nconstante: en una página web, un color se falsea siempre por el mismo color.\npersistente: el número aleatorio solo se calcula una vez por cada dominio.",
 		"description": ""
@@ -439,7 +419,6 @@
 		"message": "Generador de números aleatorios",
 		"description": ""
 	},
-	
 	"persistentRndStorage_title": {
 		"message": "Almacenamiento persistente",
 		"description": ""
@@ -448,7 +427,6 @@
 		"message": "Almacena los datos para el generador de números aleatorios persistente para usarlos tras reiniciar.",
 		"description": ""
 	},
-	
 	"storePersistentRnd_title": {
 		"message": "Almacenar los datos persistentes",
 		"description": ""
@@ -457,7 +435,6 @@
 		"message": "Si se deben almacenar los datos para el generador de números aleatorios persistente. De lo contrario se descartan al cerrar el navegador.",
 		"description": ""
 	},
-	
 	"persistentRndClearInterval_title": {
 		"message": "Intervalo de borrado de los datos persistentes",
 		"description": ""
@@ -494,7 +471,6 @@
 		"message": "años",
 		"description": ""
 	},
-	
 	"clearPersistentRnd_title": {
 		"message": "Limpiar el almacenamiento aleatorio persistente",
 		"description": ""
@@ -507,7 +483,6 @@
 		"message": "Limpiar",
 		"description": ""
 	},
-	
 	"sharePersistentRndBetweenDomains_title": {
 		"message": "Compartir la aleatoriedad persistente entre dominios",
 		"description": ""
@@ -520,7 +495,6 @@
 		"message": "¿Seguro que quiere compartir la aleatoriedad persistente entre dominios?\nPRECAUCIÓN: esto hace al nevegador 100% rastreable y es, por tanto, una amenaza para su privacidad.",
 		"description": ""
 	},
-	
 	"ignoreFrequentColors_title": {
 		"message": "Ignorar los colores más frecuentes",
 		"description": ""
@@ -529,7 +503,6 @@
 		"message": "Número de colores que no deben falsearse por «canvas». Es un parámetro para evitar la detección.\nPRECAUCIÓN: esto reduce el rendimiento del complemento porque las estadísticas de color deben calcularse para cada imagen. Además, puede reducir la seguridad del complemento, por lo que es muy recomendable no darle un valor mayor que 3.",
 		"description": ""
 	},
-	
 	"minColors_title": {
 		"message": "Número mínimo de colores",
 		"description": ""
@@ -538,7 +511,6 @@
 		"message": "Número de colores que debe falsearse en un «canvas».\nPRECAUCIÓN: esto puede reducir la seguridad del complemento, por lo que es muy recomendable no darle un valor mayor que 10.",
 		"description": ""
 	},
-	
 	"fakeAlphaChannel_title": {
 		"message": "Falsear el canal alfa",
 		"description": ""
@@ -547,7 +519,6 @@
 		"message": "Activa la falsificación del canal alfa (transparencia).",
 		"description": ""
 	},
-	
 	"useCanvasCache_title": {
 		"message": "Usar la caché para «canvas»",
 		"description": ""
@@ -556,7 +527,6 @@
 		"message": "Activa la caché para «canvas». Puede prevenir la detección y aumenta el rendimiento cuando se leen varias veces «canvas» pequeños, pero lo reduce para los «canvas» grandes.",
 		"description": ""
 	},
-	
 	"protectedAPIFeatures_title": {
 		"message": "Funciones protegidas de la API",
 		"description": ""
@@ -565,7 +535,6 @@
 		"message": "Lista de funciones protegidas de la API. Al desmarcar una casilla, la función de la API queda desprotegida.",
 		"description": ""
 	},
-
 	"disableNotifications": {
 		"message": "deshabilitar las notificaciones",
 		"description": ""
@@ -590,7 +559,6 @@
 		"message": "Usar la lista blanca de archivos específicos",
 		"description": ""
 	},
-	
 	"preBlock": {
 		"message": "API bloqueada en {url} porque la configuración de CanvasBlocker no se ha cargado a tiempo.",
 		"description": ""
@@ -627,7 +595,6 @@
 		"message": "Falseado a la entrada en {url}",
 		"description": ""
 	},
-	
 	"ignoreList_description": {
 		"message": "Los dominios o URL donde no mostrar notificaciones. Para añadir varias entradas, sepárelas con comas.",
 		"description": ""
@@ -636,7 +603,6 @@
 		"message": "Lista de ignorados",
 		"description": ""
 	},
-	
 	"ignoredAPIs_title": {
 		"message": "API ignoradas",
 		"description": ""
@@ -740,7 +706,7 @@
 	"showNotifications_urlSpecific": {
 		"message": "Para desactivar las notificaciones para sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
 		"description": ""
-	},	
+	},
 	"showNotifications_title": {
 		"message": "Mostrar notificaciones",
 		"description": ""
@@ -752,7 +718,7 @@
 	"highlightPageAction_urlSpecific": {
 		"message": "",
 		"description": ""
-	},	
+	},
 	"highlightPageAction_title": {
 		"message": "Resaltado del icono de acción de la página",
 		"description": ""
@@ -784,7 +750,7 @@
 	"highlightBrowserAction_urlSpecific": {
 		"message": "",
 		"description": ""
-	},	
+	},
 	"highlightBrowserAction_title": {
 		"message": "Cambio del icono de la barra de herramientas al haber notificaciones",
 		"description": ""
@@ -849,7 +815,6 @@
 		"message": "inspeccionar la lista blanca",
 		"description": ""
 	},
-
 	"sessionWhiteList_title": {
 		"message": "Lista blanca de la sesión",
 		"description": ""
@@ -858,7 +823,6 @@
 		"message": "Los dominios o URL a los que se permite usar todas las API en la sesión actual. Para añadir varias entradas, sepárelas con comas.",
 		"description": ""
 	},
-	
 	"whitelistDomainTemporarily": {
 		"message": "permitir el dominio temporalmente",
 		"description": ""
@@ -867,7 +831,6 @@
 		"message": "permitir el URL temporalmente",
 		"description": ""
 	},
-	
 	"storeNotificationData_title": {
 		"message": "Guardar datos detallados de las notificaciones",
 		"description": ""
@@ -876,7 +839,6 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"storeImageForInspection_title": {
 		"message": "Guardar la imagen para inspeccionarla",
 		"description": ""
@@ -885,7 +847,6 @@
 		"message": "Habilita el almacenamiento del contenido del «canvas» falseado.\nPRECAUCIÓN: esto puede usar mucha memoria.",
 		"description": ""
 	},
-	
 	"protectAudio_title": {
 		"message": "Proteger la API de audio",
 		"description": ""
@@ -897,7 +858,7 @@
 	"protectAudio_urlSpecific": {
 		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
 		"description": ""
-	},	
+	},
 	"audioFakeRate_title": {
 		"message": "Tasa del búfer de falseado",
 		"description": ""
@@ -977,7 +938,7 @@
 	"useAudioCache_urlSpecific": {
 		"message": "Algunas páginas usan guiones para crear huellas digitales muy mal escritos que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
 		"description": ""
-	},	
+	},
 	"audioUseFixedIndices_title": {
 		"message": "Usar índices fijos",
 		"description": ""
@@ -994,7 +955,6 @@
 		"message": "Los índices que siempre se falsean. Para añadir varias entradas, sepárelas con comas.",
 		"description": ""
 	},
-	
 	"historyLengthThreshold_title": {
 		"message": "Tamaño máximo del historial",
 		"description": ""
@@ -1023,7 +983,6 @@
 		"message": "La protección de la API de window rompe los reCAPTCHA. ¿Quiere añadir una excepción para eso?",
 		"description": ""
 	},
-
 	"protectDOMRect_title": {
 		"message": "Proteger la API de DOMRect",
 		"description": ""
@@ -1036,7 +995,6 @@
 		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
 		"description": ""
 	},
-	
 	"domRectIntegerFactor_title": {
 		"message": "Factor de número entero de DOMRect",
 		"description": ""
@@ -1045,7 +1003,6 @@
 		"message": "Alguna fracción de un píxel puede ser controlada con CSS. Para prevenir la detección, los valores de un DOMRect que multiplicados por este factor sean números enteros no serán modificados.",
 		"description": ""
 	},
-	
 	"protectNavigator_title": {
 		"message": "Proteger la API de navigator",
 		"description": ""
@@ -1058,7 +1015,6 @@
 		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casila.",
 		"description": ""
 	},
-
 	"openNavigatorSettings_title": {
 		"message": "Configuración de navigator",
 		"description": ""
@@ -1071,7 +1027,6 @@
 		"message": "Abrir",
 		"description": ""
 	},
-
 	"navigatorSettings_title": {
 		"message": "Configuración de CanvasBlocker para navigator",
 		"description": ""
@@ -1100,7 +1055,6 @@
 		"message": "Reiniciar",
 		"description": ""
 	},
-	
 	"theme_title": {
 		"message": "Tema",
 		"description": ""
@@ -1133,7 +1087,6 @@
 		"message": "ninguno",
 		"description": ""
 	},
-
 	"blockDataURLs_title": {
 		"message": "Bloquear las páginas de URL de datos",
 		"description": ""
@@ -1146,7 +1099,6 @@
 		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casila.",
 		"description": ""
 	},
-	
 	"showReleaseNotes_title": {
 		"message": "Notas de la versión",
 		"description": ""
@@ -1159,7 +1111,6 @@
 		"message": "Mostrar",
 		"description": ""
 	},
-	
 	"logLevel_title": {
 		"message": "Nivel de registro",
 		"description": ""
@@ -1192,7 +1143,6 @@
 		"message": "detallado",
 		"description": ""
 	},
-	
 	"exportSettings_title": {
 		"message": "Exportar la configuración",
 		"description": ""
@@ -1201,7 +1151,6 @@
 		"message": "",
 		"description": ""
 	},
-	
 	"openSettingSanitation_title": {
 		"message": "Saneado de la configuración",
 		"description": ""
@@ -1214,7 +1163,6 @@
 		"message": "Abrir",
 		"description": ""
 	},
-	
 	"inspectSettings_label": {
 		"message": "Inspeccionar",
 		"description": ""
@@ -1231,7 +1179,6 @@
 		"message": "Inspeccionar la lista blanca",
 		"description": ""
 	},
-	
 	"resetSettings_title": {
 		"message": "Reiniciar la configuración",
 		"description": ""
@@ -1248,7 +1195,6 @@
 		"message": "¿Seguro que quiere reiniciar toda la configuración?",
 		"description": ""
 	},
-	
 	"browserAction_settings": {
 		"message": "Configuración",
 		"description": ""
@@ -1265,7 +1211,6 @@
 		"message": "Notificar problemas",
 		"description": ""
 	},
-	
 	"sanitation_title": {
 		"message": "Saneado de la configuración",
 		"description": ""
@@ -1357,7 +1302,7 @@
 	"sanitation_resolution.switchToProtectInput": {
 		"message": "cambiar para proteger la entrada",
 		"description": ""
-	},	
+	},
 	"sanitation_error.valueTooLow": {
 		"message": "«{setting}» no debería ser menor que {value}.",
 		"description": ""
@@ -1382,7 +1327,6 @@
 		"message": "No compartir la aleatoriedad persistente entre dominios porque hace al navegador 100% rastreable.",
 		"description": ""
 	},
-
 	"whitelist_inspection_title": {
 		"message": "Inspección de la lista blanca de CanvasBlocker",
 		"description": ""
