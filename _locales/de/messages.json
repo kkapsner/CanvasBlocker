@@ -20,7 +20,7 @@
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
-		"message": "\n  \u00B7 {api}",
+		"message": "\n  · {api}",
 		"description": ""
 	},
 	"more": {
