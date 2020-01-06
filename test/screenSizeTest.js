@@ -62,16 +62,16 @@ addConsistencyTest("screen properties", function(){
 	"use strict";
 	
 	if (screen.orientation.type.match(/landscape/) && screen.width < screen.height){
-		return Promise.reject("orientation wrong");
+		throw "orientation wrong";
 	}
 	if (screen.availHeight > screen.height){
-		return Promise.reject("available height too big");
+		throw "available height too big";
 	}
 	if (screen.availWidth > screen.width){
-		return Promise.reject("available width too big");
+		throw "available width too big";
 	}
 	
-	return Promise.resolve(true);
+	return true;
 });
 
 addConsistencyTest("media queries: window.matchMedia - low value", function(){
@@ -79,7 +79,7 @@ addConsistencyTest("media queries: window.matchMedia - low value", function(){
 	
 	const value = Math.floor(Math.min(screen.width, screen.height) / 2);
 	
-	return Promise.resolve(
+	return (
 		window.matchMedia("(min-device-width: " + value + "px)").matches &&
 		window.matchMedia("(min-device-height: " + value + "px)").matches &&
 		!window.matchMedia("(max-device-width: " + value + "px)").matches &&
@@ -111,7 +111,7 @@ addConsistencyTest("media queries: window.matchMedia - reported value", function
 	if (errors.length){
 		return Promise.reject(errors);
 	}
-	return Promise.resolve(true);
+	return true;
 });
 
 addConsistencyTest("media queries: window.matchMedia - big value", function(){
@@ -119,7 +119,7 @@ addConsistencyTest("media queries: window.matchMedia - big value", function(){
 	
 	const value = Math.max(screen.width, screen.height) * 2;
 	
-	return Promise.resolve(
+	return (
 		!window.matchMedia("(min-device-width: " + value + "px)").matches &&
 		!window.matchMedia("(min-device-height: " + value + "px)").matches &&
 		window.matchMedia("(max-device-width: " + value + "px)").matches &&
@@ -160,31 +160,31 @@ const addResolutionTest = function(){
 addResolutionTest("screen properties", function(type){
 	"use strict";
 	
-	return Promise.resolve(screen[type]);
+	return screen[type];
 });
 
 addResolutionTest("screen properties: avail...", function(type){
 	"use strict";
 	
-	return Promise.resolve(screen[
+	return screen[
 		"avail" + type.substring(0, 1).toUpperCase() + type.substring(1)
-	]);
+	];
 }, ["width", "height", "left", "top"]);
 
 addResolutionTest("window properties: inner...", function(type){
 	"use strict";
 	
-	return Promise.resolve(window[
+	return window[
 		"inner" + type.substring(0, 1).toUpperCase() + type.substring(1)
-	]);
+	];
 });
 
 addResolutionTest("window properties: outer...", function(type){
 	"use strict";
 	
-	return Promise.resolve(window[
+	return window[
 		"outer" + type.substring(0, 1).toUpperCase() + type.substring(1)
-	]);
+	];
 });
 
 async function searchValue(tester){
@@ -196,7 +196,7 @@ async function searchValue(tester){
 	
 	async function stepUp(){
 		if (maxValue > ceiling){
-			return Promise.reject("Unable to find upper bound");
+			throw "Unable to find upper bound";
 		}
 		const testResult = await tester(maxValue);
 		if (testResult === searchValue.isEqual){
@@ -210,11 +210,6 @@ async function searchValue(tester){
 		else {
 			return false;
 		}
-	}
-	let v = 1;
-	async function test(){
-		const r = await tester(v);
-		v = 2;
 	}
 	async function binarySearch(){
 		if (maxValue - minValue < 0.01){
@@ -267,13 +262,13 @@ addResolutionTest("media queries: window.matchMedia (max)", function(type){
 	
 	return searchValue(function(valueToTest){
 		if (window.matchMedia("(device-" + type + ": " + valueToTest + "px)").matches){
-			return Promise.resolve(searchValue.isEqual);
+			return searchValue.isEqual;
 		}
 		else if (window.matchMedia("(max-device-" + type + ": " + valueToTest + "px)").matches){
-			return Promise.resolve(searchValue.isSmaller);
+			return searchValue.isSmaller;
 		}
 		else {
-			return Promise.resolve(searchValue.isBigger);
+			return searchValue.isBigger;
 		}
 	});
 });
@@ -283,13 +278,13 @@ addResolutionTest("media queries: window.matchMedia (min)", function(type){
 	
 	return searchValue(function(valueToTest){
 		if (window.matchMedia("(device-" + type + ": " + valueToTest + "px)").matches){
-			return Promise.resolve(searchValue.isEqual);
+			return searchValue.isEqual;
 		}
 		else if (window.matchMedia("(min-device-" + type + ": " + valueToTest + "px)").matches){
-			return Promise.resolve(searchValue.isBigger);
+			return searchValue.isBigger;
 		}
 		else {
-			return Promise.resolve(searchValue.isSmaller);
+			return searchValue.isSmaller;
 		}
 	});
 });
