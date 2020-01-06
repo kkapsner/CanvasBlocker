@@ -1,4 +1,4 @@
-
+/* globals canvasAPI */
 const createLog = function(){
 	"use strict";
 	
@@ -85,28 +85,6 @@ const performTest = function(){
 	};
 }();
 
-function draw(canvas){
-	"use strict";
-	
-	canvas.setAttribute("width", 220);
-	canvas.setAttribute("height", 30);
-	
-	const fp_text = "BrowserLeaks,com <canvas> 10";
-	
-	const ctx = canvas.getContext("2d");
-	ctx.textBaseline = "top";
-	ctx.font = "14px 'Arial'";
-	ctx.textBaseline = "alphabetic";
-	ctx.fillStyle = "#f60";
-	ctx.fillRect(125, 1, 62, 20);
-	ctx.fillStyle = "#069";
-	ctx.fillText(fp_text, 2, 15);
-	ctx.fillStyle = "rgba(102, 204, 0, 07)";
-	ctx.fillText(fp_text, 4, 17);
-	
-	return ctx;
-}
-
 const fingerprintTest = function(){
 	"use strict";
 	
@@ -116,7 +94,7 @@ const fingerprintTest = function(){
 			// create window canvas
 			canvas = document.createElement("canvas");
 			// draw image in window canvas
-			draw(canvas);
+			canvasAPI.draw(canvas);
 		},
 		test: function fingerprintTest(){
 			return canvas.toDataURL();

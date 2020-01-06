@@ -32,7 +32,7 @@
 		"consistent-return": "error",
 		"constructor-super": "warn",
 		"eqeqeq": "error",
-		"eslint-comments/no-use": ["error", {"allow": ["eslint-disable-next-line"]}],
+		"eslint-comments/no-use": ["error", {"allow": ["eslint-disable-next-line", "globals"]}],
 		"indent": ["error", "tab", {"SwitchCase": 1}],
 		"max-depth": ["warn", 4],
 		"max-len": ["warn", {"code": 120, "tabWidth": 4}],

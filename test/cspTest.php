@@ -20,6 +20,8 @@ header("Content-Security-Policy: default-src 'none'; img-src 'self'; script-src 
 </ul>
 <h2>Tests</h2>
 <div id="results"></div>
+<script src="testAPI.js"></script>
+<script src="canvasAPI.js"></script>
 <script src="cspTest.js"></script>
 </body>
 </html>

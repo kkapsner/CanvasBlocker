@@ -5,45 +5,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<?php
+		echo "<script>" . file_get_contents("testAPI.js");
+		echo file_get_contents("canvasAPI.js") . "</script>";
+	?>
 	<script>
 		const firstDescriptor = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, "getContext");
 		console.log(new Date(), "starting first fingerprint", window.name);
-		function fingerPrint(){
-			"use strict";const canvas = document.createElement("canvas");
-			canvas.setAttribute("width", 220);
-			canvas.setAttribute("height", 30);
-			
-			const fp_text = "BrowserLeaks,com <canvas> 10";
-			
-			const ctx = canvas.getContext("2d");
-			ctx.textBaseline = "top";
-			ctx.font = "14px 'Arial'";
-			ctx.textBaseline = "alphabetic";
-			ctx.fillStyle = "#f60";
-			ctx.fillRect(125, 1, 62, 20);
-			ctx.fillStyle = "#069";
-			ctx.fillText(fp_text, 2, 15);
-			ctx.fillStyle = "rgba(102, 204, 0, 07)";
-			ctx.fillText(fp_text, 4, 17);
-			
-			return canvas.toDataURL();
-		}
-		async function hash(url){
-			"use strict";
-			
-			const buffer = new TextEncoder("utf-8").encode(url);
-			const hash = await crypto.subtle.digest("SHA-256", buffer);
-			const chunks = [];
-			(new Uint32Array(hash)).forEach(function(num){
-				chunks.push(num.toString(16));
-			});
-			return chunks.map(function(chunk){
-				return "0".repeat(8 - chunk.length) + chunk;
-			}).join("");
-		}
 		let firstFingerprint = false;
 		try {
-			firstFingerprint = fingerPrint();
+			firstFingerprint = canvasAPI.fingerprint().url;
 		}
 		catch (error){
 			console.log(new Date(), error);
@@ -94,14 +65,14 @@
 					output.classList.add("nok");
 				}
 				output.appendChild(document.createElement("br"));
-				const secondFingerprint = fingerPrint();
+				const secondFingerprint = canvasAPI.fingerprint().url;
 				if (firstFingerprint === secondFingerprint){
-					const firstHash = await hash(firstFingerprint);
+					const firstHash = await testAPI.hash(firstFingerprint);
 					output.appendChild(document.createTextNode("fingerprint consistent (" + firstHash + ") -> good!"));
 					output.classList.add("ok");
 				}
 				else {
-					const hashes = await Promise.all([hash(firstFingerprint), hash(secondFingerprint)]);
+					const hashes = await Promise.all([testAPI.hash(firstFingerprint), testAPI.hash(secondFingerprint)]);
 					output.appendChild(
 						document.createTextNode(
 							"fingerprint not consistent (" +
