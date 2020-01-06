@@ -44,6 +44,8 @@ The different block modes are:
 
 -----
 
+You can contribute to CanvasBlocker by translating it and/or improving the translations. For further instructions go to https://github.com/kkapsner/CanvasBlocker/issues/420.
+
 Special thanks to:
  * spodermenpls for finding all the typos
  * Thorin-Oakenpants for the icon idea
