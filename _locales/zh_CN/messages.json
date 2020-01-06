@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "改变修改 <canvas> 的 JS-API 来预防画布（Canvas）指纹跟踪。",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -12,11 +12,11 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\n成功保护 ",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " (用于 {url} 的 API 白名单)",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -24,23 +24,23 @@
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "更多",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "更少",
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "请稍候...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "搜索",
 		"description": ""
 	},
 	"ok": {
-		"message": "OK",
+		"message": "确定",
 		"description": ""
 	},
 	"apply": {
@@ -48,79 +48,79 @@
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "取消",
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "输入",
 		"description": ""
 	},
 	"readout": {
-		"message": "readout",
+		"message": "取出",
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "选项",
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "CanvasBlocker 选项",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "此页面提供选项来更改 CanvasBlocker 扩展的设置。",
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "CanvasBlocker 已安装。如果",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlocker 已更新。如果您想在之后查阅此页面，您可以将此页加入书签。",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "不要再在更新后显示。",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "在标签页中打开",
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "一般",
 		"description": ""
 	},
 	"group_APIs": {
-		"message": "APIs",
+		"message": "API",
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "其他",
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking",
+		"message": "询问",
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "伪造",
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "通知",
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "列表",
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "其他",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "设置",
 		"description": ""
 	},
 	"section_canvas-api": {
@@ -128,15 +128,15 @@
 		"description": ""
 	},
 	"section_audio-api": {
-		"message": "Audio API",
+		"message": "音频 API",
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "History API",
+		"message": "历史 API",
 		"description": ""
 	},
 	"section_window-api": {
-		"message": "Window API",
+		"message": "窗口 API",
 		"description": ""
 	},
 	"section_DOMRect-api": {
@@ -144,7 +144,7 @@
 		"description": ""
 	},
 	"section_Navigator-api": {
-		"message": "Navigator API",
+		"message": "导航（Navigator）API",
 		"description": ""
 	},
 	"section_Screen-api": {
@@ -152,127 +152,127 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "专家模式",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "显示额外设置",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "显示说明",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "显示设置的说明。",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "点击这里以隐藏该设置。",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "显示隐藏设置",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "显示已隐藏的设置。",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Do you want to allow invisible <canvas>?",
+		"message": "是否允许不可见的 <canvas>？",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Do you want to allow invisible <canvas> input?",
+		"message": "是否允许不可见的 <canvas> 输入？",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "Do you want to allow invisible <canvas> readout?",
+		"message": "是否允许不可见的 <canvas> 取出？",
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "是否允许 <canvas>?",
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "Do you want to allow <canvas> input?",
+		"message": "是否允许 <canvas> 输入？",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Do you want to allow <canvas> readout?",
+		"message": "是否允许 <canvas> 取出？",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "Do you want to allow the red bordered <canvas>?",
+		"message": "是否允许加红边框的 <canvas>?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Do you want to allow input in the red bordered <canvas>?",
+		"message": "是否允许输入红边框的 <canvas>?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "Do you want to allow the readout of the red bordered <canvas>?",
+		"message": "是否允许取出红边框的 <canvas>?",
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "是否允许音频 API？",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio API input?",
+		"message": "是否允许音频 API 输入？",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio API readout?",
+		"message": "是否允许音频 API 取出？",
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "是否允许历史 API？",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "是否允许历史 API 输入？",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "是否允许历史 API 取出？",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "是否允许窗口 API？",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window API input?",
+		"message": "是否允许窗口 API 输入？",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window API readout?",
+		"message": "是否允许窗口 API 取出？",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "是否允许 DOMRect API？",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect API input?",
+		"message": "是否允许 DOMRect API 输入？",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "是否允许 DOMRect API 取出？",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "是否允许导航 API？",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Do you want to allow navigator API input?",
+		"message": "是否允许导航 API 输入？",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "是否允许导航 API 取出？",
 		"description": ""
 	},
 	"askForScreenPermission": {
@@ -288,59 +288,59 @@
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "只询问一次",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
+		"message": "当 Canvas Blocker 的阻止模式设为“询问权限”或“询问取出 API 权限”时，每次页面尝试访问有关 API 或取出 API 时将出现一个对话框。此设置是为了尽量只对每个页面的若干次尝试只显示一个对话框。不过，在某些页面上，本扩展仍可能显示多条确认信息。\n否：询问每个尝试\n分别：每种 API 尝试（上下文、输入、取出）分别确认\n组合：一次确认所有种类的 API",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "否",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
-		"message": "individual",
+		"message": "分别",
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "组合",
 		"description": ""
 	},
 	"askDenyMode_title": {
-		"message": "Ask deny mode",
+		"message": "询问拒绝模式",
 		"description": ""
 	},
 	"askDenyMode_description": {
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "权限被拒绝时的模式。",
 		"description": ""
 	},
 	"askDenyMode_options.block": {
-		"message": "block",
+		"message": "阻止",
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "伪造",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
-		"message": "Show canvas content",
+		"message": "显示 Canvas 内容",
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
-		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
+		"message": "询问权限时尽可能显示 Canvas 的内容。",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
-		"message": "The webpage wants to read the content of the following canvas:",
+		"message": "该网页想要读取下列画布（Canvas）的内容：",
 		"description": ""
 	},
 	"blackList_description": {
-		"message": "Domains or URLs where all APIs shall always be blocked. To add multiple entries, separate them by commas.",
+		"message": "始终阻止 <canvas> API 的域名或 URL。多项请使用英文逗号分隔。",
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "黑名单",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -348,27 +348,27 @@
 		"description": ""
 	},
 	"blockMode_urlSpecific": {
-		"message": "To set individual block modes for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired block mode.",
+		"message": "为了给特定网站设置单独的屏蔽模式，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并选择适当的屏蔽模式。",
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "全部允许",
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "仅允许白名单",
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "ask for permission",
+		"message": "询问权限",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "全部阻止",
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "仅阻止黑名单",
 		"description": ""
 	},
 	"blockMode_options.fake": {
@@ -376,7 +376,7 @@
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "阻止模式",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
@@ -388,27 +388,27 @@
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"message": "为保护特定网站的单独的部分，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并选择适当的部分。",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "无",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "input",
+		"message": "输入",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "readout",
+		"message": "取出",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "所有",
 		"description": ""
 	},
 	"urlSettings_title": {
-		"message": "Site specific values",
+		"message": "各站点分别设置",
 		"description": ""
 	},
 	"urlSettings_description": {
@@ -416,155 +416,155 @@
 		"description": ""
 	},
 	"inputURL": {
-		"message": "Input domain or URL \"RegExp\":",
+		"message": "输入域名或网址（URL）的正则表达式：",
 		"description": ""
 	},
 	"minFakeSize_description": {
-		"message": "Canvases with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
+		"message": "面积小于或等于该数字的画布（Canvas）不会被伪造。这是一个预防检测的参数。\n注意：这将降低本扩展所带来的安全性，因此强烈建议此值不要高于 100。",
 		"description": ""
 	},
 	"minFakeSize_title": {
-		"message": "Minimal fake size",
+		"message": "最小伪造大小",
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "Canvases with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 1 000 000.",
+		"message": "面积大于该数字的画布（Canvas）不会被伪造。输入 0 则禁用此参数。此参数是为性能考虑，可以预防浏览器卡死，应根据设备的性能调整。\n注意：过低的数字将降低本扩展所带来的安全性，因此强烈建议此值不要低于 1 000 000。",
 		"description": ""
 	},
 	"maxFakeSize_title": {
-		"message": "Maximal fake size",
+		"message": "最大伪造大小",
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action.\n\nconstant: within one web page a color will always be faked to the same color.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "无（全白）：返回一个完全是白色的图像。使用此选项时，“伪造 alpha 通道”选项应该激活配合。注意：使用“输入时伪造”模式时不应使用。\n非持久化：每个伪造行动都确定新的随机数。\n不变：同一个网页中，一个颜色总被伪造成另一个相同的颜色。\n持久化：对每个域名只确定一次随机数。",
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "persistent",
+		"message": "持久化",
 		"description": ""
 	},
 	"rng_options.constant": {
-		"message": "constant",
+		"message": "不变",
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "non persistent",
+		"message": "非持久化",
 		"description": ""
 	},
 	"rng_options.white": {
-		"message": "none (completely white)",
+		"message": "无（全白）",
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "随机数生成器",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Persistent storage",
+		"message": "持久化存储",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"message": "存储随机数生成器的持久化数据以供浏览器重启后使用。",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "存储持久化数据",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "If data for the persistent random number generator shall be stored. Otherwise it is discarded on browser shutdown.",
+		"message": "如果没有存储随机数生成器的持久化数据，相应数据在浏览器关闭时丢弃。",
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
-		"message": "Clear interval of the persistent data",
+		"message": "持久化数据的清除间隔",
 		"description": ""
 	},
 	"persistentRndClearInterval_description": {
-		"message": "After the specified interval the persistent data is cleared automatically. (Enter zero to disable.)",
+		"message": "持久化数据在指定间隔后自动清除（输入 0 则禁用清除）",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "秒",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "分钟",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "小时",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "天",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "周",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "月",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "年",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
-		"message": "Clear persistent random storage",
+		"message": "清除持久化的随机存储",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Deletes all data for the persistent random number generator.",
+		"message": "删除所有随机数生成器持久化的数据",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "清除",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "清理容器",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "选择容器",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Share persistent randomness between domains",
+		"message": "在域名间分享持久的随机性",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "注意：这个设置会使浏览器 100% 会被追踪，并因此威胁你的隐私。",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "您确定要在域名间分享持久的随机性？\n注意：这个设置会使浏览器 100% 会被追踪，并因此威胁你的隐私。",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "忽略最常见的颜色",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "每个画布（Canvas）前多少个最常见的颜色不被伪造。这是一个预防检测的参数。\n注意：这将降低本扩展的性能，因为需要对每个图像统计颜色数。此外，这可能降低本扩展所带来的安全性，因此强烈建议此值不要高于 3。",
 		"description": ""
 	},
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "最少颜色数",
 		"description": ""
 	},
 	"minColors_description": {
-		"message": "Number of colors that a canvas must have to be faked.\nCAUTION: This can lower the safety of the addon, therefore it is highly recommended not to set this value above 10.",
+		"message": "伪造的画布（Canvas）至少有多少种颜色。\n注意：这将降低本扩展所带来的安全性，因此强烈建议此值不要高于 10。",
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
-		"message": "Fake the alpha channel",
+		"message": "伪造 alpha 通道",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Activates the faking of the alpha channel (transparency).",
+		"message": "激活对 alpha 通道（透明度）的伪造。",
 		"description": ""
 	},
 	"webGLVendor_title": {
@@ -600,11 +600,11 @@
 		"description": ""
 	},
 	"useCanvasCache_title": {
-		"message": "Use canvas cache",
+		"message": "使用 Canvas 缓存",
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvases are read several times, but decreases it for big canvases.",
+		"message": "启用 Canvas 缓存。这可以预防检测，并在小画布（Canvas）被数次读取时增加性能，但对于大画布则降低性能。",
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
@@ -616,19 +616,19 @@
 		"description": ""
 	},
 	"disableNotifications": {
-		"message": "disable notifications",
+		"message": "禁用通知",
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "显示设置",
 		"description": ""
 	},
 	"displayCallingStack": {
-		"message": "display calling stack",
+		"message": "显示调用堆栈",
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "显示完整 URL",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -636,39 +636,39 @@
 		"description": ""
 	},
 	"enableStackList_title": {
-		"message": "Use file specific whitelist",
+		"message": "使用指定白名单文件",
 		"description": ""
 	},
 	"preBlock": {
-		"message": "API blocked on {url} because CanvasBlocker settings were not loaded in time.",
+		"message": "{url} 上的 API 调用已阻止，因为 CanvasBlocker 的设置未能及时加载。",
 		"description": ""
 	},
 	"blocked": {
-		"message": "API blocked on {url}.",
+		"message": "{url} 上的 API 调用已阻止。",
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Faked canvas readout on {url}",
+		"message": "{url} 上的取出已伪造",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Faked audio readout on {url}",
+		"message": "{url} 上的音频取出已伪造",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Faked history readout on {url}",
+		"message": "{url} 上的历史取出已伪造",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Faked window readout on {url}",
+		"message": "{url} 上的窗口取出已伪造",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "Faked DOMRect readout on {url}",
+		"message": "{url} 上的 DOMRect 取出已伪造",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Faked navigator readout on {url}",
+		"message": "{url} 上的导航取出已伪造",
 		"description": ""
 	},
 	"fakedScreenReadout": {
@@ -676,99 +676,99 @@
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "Faked at input on {url}",
+		"message": "{url} 上的画布输入已伪造",
 		"description": ""
 	},
 	"ignoreList_description": {
-		"message": "Domains or URLs where no notifications shall be shown. To add multiple entries, separate them by commas.",
+		"message": "不需要显示通知的域名或 URL。多项请使用英文逗号分隔。",
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "忽略列表",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "忽略 API",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
-		"message": "No notifications will be displayed for the selected APIs.",
+		"message": "没有用于所选 API 的提示。",
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "本地文件",
 		"description": ""
 	},
 	"ignorelistDomain": {
-		"message": "silence domain",
+		"message": "静默域名",
 		"description": ""
 	},
 	"ignorelistURL": {
-		"message": "ignore URL",
+		"message": "忽略 URL",
 		"description": ""
 	},
 	"selectIgnore": {
-		"message": "Select domain or URL to add to ignore list:",
+		"message": "添加域名或 URL 来添加到忽略列表：",
 		"description": ""
 	},
 	"inputIgnore": {
-		"message": "Input domain or URL \"RegExp\" to add to ignore list:",
+		"message": "添加域名或 URL 的正则表达式来添加到忽略列表：",
 		"description": ""
 	},
 	"inputIgnoreDomain": {
-		"message": "Input domain to add to ignore list:",
+		"message": "输入域名来添加到忽略列表：",
 		"description": ""
 	},
 	"inputIgnoreURL": {
-		"message": "Input URL \"RegExp\" to add to ignore list:",
+		"message": "输入 URL 的正则表达式来添加到忽略列表：",
 		"description": ""
 	},
 	"selectWhitelist": {
-		"message": "Select domain or URL to add to whitelist:",
+		"message": "选择域名或 URL 来添加到忽略列表：",
 		"description": ""
 	},
 	"inputWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to whitelist:",
+		"message": "输入 URL 的正则表达式来添加到忽略列表：",
 		"description": ""
 	},
 	"inputWhitelistDomain": {
-		"message": "Input domain to add to whitelist:",
+		"message": "输入 URL 的正则表达式来添加到白名单：",
 		"description": ""
 	},
 	"inputWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to whitelist:",
+		"message": "输入域名来添加到白名单：",
 		"description": ""
 	},
 	"selectSessionWhitelist": {
-		"message": "Select domain or URL to add to the session whitelist:",
+		"message": "选择域名或 URL 来添加到会话级白名单：",
 		"description": ""
 	},
 	"inputSessionWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to the session whitelist:",
+		"message": "添加域名或 URL 的正则表达式来添加到会话级白名单：",
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Input domain to add to the session whitelist:",
+		"message": "输入 URL 的正则表达式来添加到会话级白名单：",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to the session whitelist:",
+		"message": "输入域名来添加到会话级白名单：",
 		"description": ""
 	},
 	"selectWhitelistScope": {
-		"message": "What is the scope of the whitelisting?",
+		"message": "白名单的范围是什么？",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the {api}",
+		"message": "仅限 {api}",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "所有 API",
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "设置",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -776,7 +776,7 @@
 		"description": ""
 	},
 	"showCallingFile_title": {
-		"message": "Show calling file",
+		"message": "显示调用文件",
 		"description": ""
 	},
 	"showCompleteCallingStack_description": {
@@ -784,23 +784,23 @@
 		"description": ""
 	},
 	"showCompleteCallingStack_title": {
-		"message": "Display complete calling stack",
+		"message": "显示完整调用堆栈",
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Shows a notification icon in the address bar when something gets blocked or faked.",
+		"message": "阻止模式设为“伪造取出 API”时显示一个通知。",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
-		"message": "To deactivate notifications for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "为停止特定网站的通知，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选",
 		"description": ""
 	},
 	"showNotifications_title": {
-		"message": "Show notification icon",
+		"message": "显示通知图标",
 		"description": ""
 	},
 	"highlightPageAction_description": {
-		"message": "Highlight the page action icon for better visibility.",
+		"message": "为了更好的显示效果，高亮页面动态图标。",
 		"description": ""
 	},
 	"highlightPageAction_urlSpecific": {
@@ -808,19 +808,19 @@
 		"description": ""
 	},
 	"highlightPageAction_title": {
-		"message": "Highlight page action icon",
+		"message": "高亮页面动态图标",
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "不高亮",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "颜色",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "blink",
+		"message": "闪烁",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -840,87 +840,87 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Change toolbar icon on notification",
+		"message": "在通知上更改工具栏图标",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "不更改",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "更改颜色",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "blink",
+		"message": "闪烁",
 		"description": ""
 	},
 	"sourceOutput": {
-		"message": "Calling file",
+		"message": "调用文件",
 		"description": ""
 	},
 	"stackEntryOutput": {
-		"message": "{url} line {line} column {column}",
+		"message": "{url}，{line} 行 {column} 列",
 		"description": ""
 	},
 	"stackList_description": {
-		"message": "JS files which are allowed to use all APIs. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"message": "用来定义允许使用 <canvas> API 的 JS 文件。白名单文件需为 JSON 格式。范例：[{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
 		"description": ""
 	},
 	"stackList_title": {
-		"message": "File specific whitelist",
+		"message": "使用指定白名单文件",
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "白名单",
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs. To add multiple entries, separate them by commas.",
+		"message": "应该阻止使用 <canvas> API 的域名或 URL。多项请使用英文逗号分隔。",
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "白名单",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "whitelist domain",
+		"message": "白名单域名",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "whitelist URL",
+		"message": "白名单 URL",
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "忽略",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "whitelist temporarily",
+		"message": "临时白名单",
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "inspect whitelist",
+		"message": "检查白名单",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
-		"message": "Session whitelist",
+		"message": "会话级白名单",
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs during the current session. To add multiple entries, separate them by commas.",
+		"message": "本次会话期间拦截 <canvas> API 使用的域名或 URL。多项请使用英文逗号分隔。",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "whitelist domain temporarily",
+		"message": "临时白名单域名",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "whitelist URL temporarily",
+		"message": "临时白名单 URL",
 		"description": ""
 	},
 	"storeNotificationData_title": {
-		"message": "Store detail data of the notifications",
+		"message": "存储通知详细数据",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -928,11 +928,11 @@
 		"description": ""
 	},
 	"storeImageForInspection_title": {
-		"message": "Store image for inspection",
+		"message": "存储图像以备察看",
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Enables the storage of the content of the faked canvas.\nCAUTION: This may lead to a lot of memory consumption.",
+		"message": "开始存储已伪造的画布内容。\n注意：这可能消耗大量内存！",
 		"description": ""
 	},
 	"protectAudio_title": {
@@ -944,7 +944,7 @@
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
 	"audioFakeRate_title": {
@@ -1044,31 +1044,31 @@
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
-		"message": "History length threshold",
+		"message": "历史长度阈值",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximal length of the history that is reported to the website.",
+		"message": "报告给网站的历史长度最大值。",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "To change this value for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set a different value.",
+		"message": "为了给特定网站设置单独的屏蔽模式，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，设置不同的值。",
 		"description": ""
 	},
 	"protectWindow_title": {
-		"message": "Protect window API",
+		"message": "保护窗口 API",
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "window.opener and window.name will be protected. This can render some webpages unusable.",
+		"message": "window.opener 和 window.name 将被保护。这会保护某些无用的网页。",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "Protecting the window API breaks reCAPTCHA. Do you want to allow the window.name API in embedded pages which will make it work again?",
+		"message": "保护窗口 API 妨碍 reCAPTCHA。您是否添加例外？",
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
@@ -1084,39 +1084,39 @@
 		"description": ""
 	},
 	"protectDOMRect_title": {
-		"message": "Protect DOMRect API",
+		"message": "保护 DOMRect API",
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "This protects against the \"getClientRects()\" fingerprinting and several similar methods.",
+		"message": "这一保护反对 \"getClientRects()\" 指纹和一些类似的方法。",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
-		"message": "DOMRect integer factor",
+		"message": "DOMRect 整数系数",
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
-		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"message": "像素的有些部分可以被 CSS 控制。为阻止检测，用这一整数系数增值的 DOMRect 的值将不被改变。",
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Protect navigator API",
+		"message": "保护导航 API",
 		"description": ""
 	},
 	"protectNavigator_description": {
-		"message": "This page allows for changes in the navigator API. Enabling this protection does not change anything by default. Open the navigator settings to specify the changes you want to have there.",
+		"message": "该页允许更改导航 API。默认情况下启用该保护不改变任何东西。在此开启导航设置来指定任何你想要做的改动。",
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
-		"message": "Navigator settings",
+		"message": "导航设置",
 		"description": ""
 	},
 	"openNavigatorSettings_description": {
@@ -1124,35 +1124,35 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "开启",
 		"description": ""
 	},
 	"navigatorSettings_title": {
-		"message": "CanvasBlocker navigator settings",
+		"message": "CanvasBlocker 导航设置",
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "On this page you can set the navigator settings. If using a preset you should always use an operating system and browser preset. After selecting these you can still make modifications.",
+		"message": "在本页你可以设置导航选项。若使用预置，你应该始终使用系统和浏览器预置。选择这些以后你仍可以做出修改。",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
-		"message": "CAUTION: the actual browser in use cannot be faked entirely as there is a multitude of ways to detect it. E.g. feature tests and browser specific rendering of HTML elements will always leak.",
+		"message": "注意：在实际使用中浏览器无法完全伪造，因为有多种方法可以检测。如：特性检测和某 HTML 元素的浏览器特定渲染方式将总是被泄露。",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "Operating system presets",
+		"message": "操作系统预置",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Browser presets",
+		"message": "浏览器预置",
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Navigator values",
+		"message": "导航数值",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "重置",
 		"description": ""
 	},
 	"protectScreen_title": {
@@ -1196,47 +1196,47 @@
 		"description": ""
 	},
 	"theme_description": {
-		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"message": "如果系统使用深色主题将自动切换到深色主题（要求 Firefox ⩾ 67）",
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "自动",
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "默认",
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "浅色",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "深色",
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "彩色",
 		"description": ""
 	},
 	"theme_options.none": {
-		"message": "none",
+		"message": "无",
 		"description": ""
 	},
 	"blockDataURLs_title": {
-		"message": "Block data URL pages",
+		"message": "阻止 data URL 形成页面",
 		"description": ""
 	},
 	"blockDataURLs_description": {
-		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking them prevents the real fingerprint to reach any server.",
+		"message": "Data URL 形成的页面我们还不能阻拦其进行指纹识别（详见 https://bugzilla.mozilla.org/show_bug.cgi?id=1475831）。拦截这些页面能防止真实指纹泄露。",
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "为从该保护中将特定网站排除，点击黑色箭头以打开菜单，点击“+”添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "发行说明",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1244,43 +1244,43 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Show",
+		"message": "显示",
 		"description": ""
 	},
 	"logLevel_title": {
-		"message": "Logging level",
+		"message": "日志级别",
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "To find the cause of an error, detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.\n\nThe logging can be viewed in the Browser Console (Ctrl+Shift+J) and the Web Console (Ctrl+Shift+K).",
+		"message": "此参数控制日志记录的详细程度。",
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "none",
+		"message": "无",
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "错误",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "警告",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "信息",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "注意",
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "verbose",
+		"message": "详细",
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Export settings",
+		"message": "导出设置",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1296,11 +1296,11 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Setting sanitation",
+		"message": "开启",
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "检查白名单",
 		"description": ""
 	},
 	"openSettingPresets_title": {
@@ -1316,19 +1316,19 @@
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Inspect",
+		"message": "检查",
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "保存",
 		"description": ""
 	},
 	"loadSettings_label": {
-		"message": "Load",
+		"message": "载入",
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reset settings",
+		"message": "重置设置",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1336,143 +1336,143 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reset",
+		"message": "重置",
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Are you sure you want to reset all settings?",
+		"message": "确定重置所有设置？",
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "设置",
 		"description": ""
 	},
 	"browserAction_test": {
-		"message": "Test",
+		"message": "测试",
 		"description": ""
 	},
 	"browserAction_review": {
-		"message": "Review",
+		"message": "评论",
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Report issue",
+		"message": "反馈问题",
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Setting sanitation",
+		"message": "设置清理",
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advice on suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"message": "本页面帮助查找 CanvasBlocker 中的错误配置。同时对并不理想的设置给出建议。但是不建议盲目修正所有建议。",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Nothing to complain.",
+		"message": "无可抱怨。",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
-		"message": "Unnecessary URL values",
+		"message": "不必要的 URL 数值",
 		"description": ""
 	},
 	"sanitation_ruleset.disabledFeatures": {
-		"message": "Disabled features",
+		"message": "禁用的特性",
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "屏蔽模式",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
-		"message": "Thresholds",
+		"message": "阈值",
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "性能",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
-		"message": "Privacy",
+		"message": "隐私",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
+		"message": "“{url}”的 URL 值与“{setting-title}”的全局设置一样。",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
-		"message": "remove URL value",
+		"message": "移除 URL 值",
 		"description": ""
 	},
 	"sanitation_error.disabledFeatures": {
-		"message": "All features of {api} are disabled but the protection is enabled.",
+		"message": "{api} 的所有特性都被禁用，但是启用了保护。",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
-		"message": "disable main flag",
+		"message": "禁用主要 flag",
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "启用特性",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
-		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"message": "推荐使用伪造或询问两种屏蔽模式。",
 		"description": ""
 	},
 	"sanitation_resolution.switchToFake": {
-		"message": "switch to \"fake\"",
+		"message": "切换到伪造",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
-		"message": "With blocking mode \"{blockMode}\" the {api} protection is not working.",
+		"message": "使用“{blockMode}”屏蔽模式时 {api} 保护无法工作。",
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
-		"message": "disable \"{flag}\"",
+		"message": "禁用“{flag}”",
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "Do not use white random number generator with \"{blockMode}\" and protecting \"{protectedCanvasPart}\".",
+		"message": "不与“{blockMode}”及“{protectedCanvasPart}”保护使用白色随机数生成器。",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
-		"message": "switch to protect readout",
+		"message": "切换到取出保护",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "switch to \"non persistent\" rng",
+		"message": "切换到“非持久化”rng",
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
-		"message": "Do not use protect \"{protectedCanvasPart}\" in blocking mode \"{blockMode}\".",
+		"message": "不在“{blockMode}”屏蔽模式中使用“{protectedCanvasPart}”保护。",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectInput": {
-		"message": "switch to protect input",
+		"message": "切换到输入保护",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
-		"message": "\"{setting}\" should not be lower than {value}.",
+		"message": "“{setting}”不应该低于 {value}。",
 		"description": ""
 	},
 	"sanitation_error.valueTooHigh": {
-		"message": "\"{setting}\" should not be higher than {value}.",
+		"message": "“{setting}”不应该高于 {value}。",
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
-		"message": "set to {value}",
+		"message": "设为 {value}",
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
-		"message": "Storing notification data may lead to slow performance.",
+		"message": "存储通知数据可能会导致性能变慢。",
 		"description": ""
 	},
 	"sanitation_error.storeImage": {
-		"message": "Storing the image for inspection has a high RAM footprint.",
+		"message": "为检查存储图像产生大量的 RAM 足迹。",
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"message": "不要在域名间共享持久的随机性，因为这导致浏览器 100% 可以被追踪。",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
@@ -1480,11 +1480,11 @@
 		"description": ""
 	},
 	"whitelist_inspection_title": {
-		"message": "CanvasBlocker whitelist inspection",
+		"message": "CanvasBlocker 白名单检查",
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "所有 API",
 		"description": ""
 	},
 	"presets": {
