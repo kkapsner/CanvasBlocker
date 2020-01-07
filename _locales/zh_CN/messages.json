@@ -44,7 +44,7 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "应用",
 		"description": ""
 	},
 	"cancel": {
@@ -276,7 +276,7 @@
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "您想要放行Screen API吗？",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
@@ -372,7 +372,7 @@
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "伪装",
 		"description": ""
 	},
 	"blockMode_title": {
@@ -380,7 +380,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "Canvas API 当中已保护的部分",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
@@ -988,7 +988,7 @@
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "干扰级别",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
@@ -996,23 +996,23 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "最低",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "低",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "中",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "高",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "最高",
 		"description": ""
 	},
 	"useAudioCache_title": {
