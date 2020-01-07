@@ -56,7 +56,7 @@
 		"description": ""
 	},
 	"readout": {
-		"message": "取出",
+		"message": "读数",
 		"description": ""
 	},
 	"options": {
@@ -72,7 +72,7 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker 已安装。如果",
+		"message": "CanvasBlocker 已安装。如果您想要在将来访问此页面，请将其加入书签。",
 		"description": ""
 	},
 	"updateNotice": {
@@ -80,11 +80,11 @@
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "不要再在更新后显示。",
+		"message": "更新后不再显示。",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "在标签页中打开",
+		"message": "在新标签页中打开",
 		"description": ""
 	},
 	"group_general": {
@@ -188,7 +188,7 @@
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "是否允许不可见的 <canvas> 取出？",
+		"message": "是否允许不可见的 <canvas> 读数？",
 		"description": ""
 	},
 	"askForPermission": {
@@ -200,7 +200,7 @@
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "是否允许 <canvas> 取出？",
+		"message": "是否允许 <canvas> 读数？",
 		"description": ""
 	},
 	"askForVisiblePermission": {
@@ -212,7 +212,7 @@
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "是否允许取出红边框的 <canvas>?",
+		"message": "是否允许红边框的 <canvas> 读数?",
 		"description": ""
 	},
 	"askForAudioPermission": {
@@ -224,7 +224,7 @@
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "是否允许音频 API 取出？",
+		"message": "是否允许音频 API 读数？",
 		"description": ""
 	},
 	"askForHistoryPermission": {
@@ -236,7 +236,7 @@
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "是否允许历史 API 取出？",
+		"message": "是否允许历史 API 读数？",
 		"description": ""
 	},
 	"askForWindowPermission": {
@@ -248,7 +248,7 @@
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "是否允许窗口 API 取出？",
+		"message": "是否允许 window API 读数？",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
@@ -260,7 +260,7 @@
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "是否允许 DOMRect API 取出？",
+		"message": "是否允许 DOMRect API 读数？",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -272,7 +272,7 @@
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "是否允许 Navigator API 读取？",
+		"message": "是否允许 Navigator API 读数？",
 		"description": ""
 	},
 	"askForScreenPermission": {
@@ -284,7 +284,7 @@
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "是否允许 Screen API 读取？",
+		"message": "是否允许 Screen API 读数？",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -292,7 +292,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "当 Canvas Blocker 的阻止模式设为“询问权限”或“询问取出 API 权限”时，每次页面尝试访问有关 API 或取出 API 时将出现一个对话框。此设置是为了尽量只对每个页面的若干次尝试只显示一个对话框。不过，在某些页面上，本扩展仍可能显示多条确认信息。\n否：询问每个尝试\n分别：每种 API 尝试（上下文、输入、取出）分别确认\n组合：一次确认所有种类的 API",
+		"message": "当 Canvas Blocker 的阻止模式设为“询问权限”或“询问读数 API 权限”时，每次页面尝试访问有关 API 或取出 API 时将出现一个对话框。此设置是为了尽量只对每个页面的若干次尝试只显示一个对话框。不过，在某些页面上，本扩展仍可能显示多条确认信息。\n否：询问每个尝试\n分别：每种 API 尝试（上下文、输入、取数）分别确认\n组合：一次确认所有种类的 API",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -384,7 +384,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "无：不保护任何 Canvas API。\n读取：保护 Canvas API 当中的读取功能。\n输入：保护 Canvas API 当中的输入功能。当拦截模式为”伪造“时，展示文本时绘制的像素会有轻微调整。这使得检测 CanvasBlocker 更难检测但是同时降低安全性。对于 WebGL 而言，这一行为等效于”读取“。\n全部：同时保护 Canvas API 当中的读取与输入功能。由于会增加被检测的概率，因此不建议与拦截模式”伪造“同时使用。",
+		"message": "无保护：不保护任何 Canvas API。\n读保护：保护 Canvas API 当中的读数功能。\n写保护：保护 Canvas API 当中的输入功能。当拦截模式为”伪造“时，展示文本时绘制的像素会有轻微调整。这使得 CanvasBlocker 检测更难但是同时降低安全性。WebGL 当中读写等效。\n全保护：同时保护 Canvas API 当中的读取与输入功能。由于会增加被检测到的概率，因此不建议与同时使用”伪造“模式。",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
@@ -400,7 +400,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "取出",
+		"message": "读数",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
@@ -648,31 +648,31 @@
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "{url} 上的取出已伪造",
+		"message": "{url} 上的已伪造 Canvas 读数",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "{url} 上的音频取出已伪造",
+		"message": "{url} 上的已伪造音频取数",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "{url} 上的历史取出已伪造",
+		"message": "{url} 上的已伪造历史读数",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "{url} 上的窗口取出已伪造",
+		"message": "{url} 上的已伪造 window 读数",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "{url} 上的 DOMRect 取出已伪造",
+		"message": "{url} 上的 DOMRect 已伪造读数",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "{url} 上的 Navigator 读取已伪造",
+		"message": "{url} 上的 Navigator 已伪造读数",
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "在 {url} 上伪造屏幕读取功能",
+		"message": "在 {url} 上伪造屏幕读数",
 		"description": ""
 	},
 	"fakedInput": {
@@ -1436,7 +1436,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
-		"message": "切换到取出保护",
+		"message": "切换到读数保护",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
