@@ -668,7 +668,7 @@
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "{url} 上的导航取出已伪造",
+		"message": "{url} 上的 Navigator 读取已伪造",
 		"description": ""
 	},
 	"fakedScreenReadout": {
@@ -1104,11 +1104,11 @@
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "保护导航 API",
+		"message": "保护 Navigator API",
 		"description": ""
 	},
 	"protectNavigator_description": {
-		"message": "该页允许更改导航 API。默认情况下启用该保护不改变任何东西。在此开启导航设置来指定任何你想要做的改动。",
+		"message": "该页允许更改 Navigator API。默认情况下启用该保护不改变任何东西。在此开启 Navigator 设置来指定任何你想要做的改动。",
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
@@ -1116,7 +1116,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
-		"message": "导航设置",
+		"message": "Navigator 设置",
 		"description": ""
 	},
 	"openNavigatorSettings_description": {
@@ -1128,11 +1128,11 @@
 		"description": ""
 	},
 	"navigatorSettings_title": {
-		"message": "CanvasBlocker 导航设置",
+		"message": "CanvasBlocker Navigator 设置",
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "在本页你可以设置导航选项。若使用预置，你应该始终使用系统和浏览器预置。选择这些以后你仍可以做出修改。",
+		"message": "在本页你可以设置 Navigator 选项。若使用预置，你应该始终使用系统和浏览器预置。选择这些以后你仍可以做出修改。",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
@@ -1148,7 +1148,7 @@
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "导航数值",
+		"message": "Navigator 数值",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
