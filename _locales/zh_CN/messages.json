@@ -144,7 +144,7 @@
 		"description": ""
 	},
 	"section_Navigator-api": {
-		"message": "导航（Navigator）API",
+		"message": "Navigator API",
 		"description": ""
 	},
 	"section_Screen-api": {
@@ -264,15 +264,15 @@
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "是否允许导航 API？",
+		"message": "是否允许 Navigator API？",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "是否允许导航 API 输入？",
+		"message": "是否允许 Navigator API 输入？",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "是否允许导航 API 取出？",
+		"message": "是否允许 Navigator API 读取？",
 		"description": ""
 	},
 	"askForScreenPermission": {
@@ -280,11 +280,11 @@
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "是否允许 Screen API 输入？",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "是否允许 Screen API 读取？",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -384,7 +384,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "nothing: no features of the canvas API are protected.\n\nreadout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "无：不保护任何 Canvas API。\n读取：保护 Canvas API 当中的读取功能。\n输入：保护 Canvas API 当中的输入功能。当拦截模式为”伪造“时，展示文本时绘制的像素会有轻微调整。这使得检测 CanvasBlocker 更难检测但是同时降低安全性。对于 WebGL 而言，这一行为等效于”读取“。\n全部：同时保护 Canvas API 当中的读取与输入功能。由于会增加被检测的概率，因此不建议与拦截模式”伪造“同时使用。",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
@@ -568,35 +568,35 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "WebGL 渲染器厂商",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Leave empty to use the original value.",
+		"message": "在 WebGL 函数 getParameter 当中报告的渲染器的值。留空即为原始值。",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "已报告的 WebGL 渲染器",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Leave empty to use the original value.",
+		"message": "在 WebGL 函数 getParameter 当中报告的渲染器的值。留空即为原始值。",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Reported webGL unmasked vendor",
+		"message": "WebGL 中未隐藏的渲染器厂商",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Leave empty to use the original value.",
+		"message": "在 WebGL 函数 getParameter 当中报告的渲染器的值。留空即为原始值。",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Reported webGL unmasked renderer",
+		"message": "WebGL 中未隐藏的渲染器厂商",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"message": "在 WebGL 函数 getParameter 当中报告的渲染器的值。留空即为原始值。",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -608,11 +608,11 @@
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
-		"message": "Protected API features",
+		"message": "已保护的 API",
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
+		"message": "已保护的 API 列表。当取消对应的复选框时，这个 API 将不再受保护。",
 		"description": ""
 	},
 	"disableNotifications": {
@@ -672,7 +672,7 @@
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Faked screen readout on {url}",
+		"message": "在 {url} 上伪造屏幕读取功能",
 		"description": ""
 	},
 	"fakedInput": {
@@ -828,7 +828,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Display badge",
+		"message": "显示工具栏图标",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -936,11 +936,11 @@
 		"description": ""
 	},
 	"protectAudio_title": {
-		"message": "Protect audio API",
+		"message": "保护音频 API",
 		"description": ""
 	},
 	"protectAudio_description": {
-		"message": "If the audio API shall be protected as well",
+		"message": "如果同时音频API",
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
@@ -948,43 +948,43 @@
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Buffer fake rate",
+		"message": "缓冲伪装的比例",
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "How many of the values per read request shall be faked.",
+		"message": "每个读取请求应该伪装多少值。",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1 个值",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10 个值",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100 个值",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000 个值",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "0.1% 的值",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "1% 的值",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "10% 的值",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "100% 的值",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
@@ -1016,31 +1016,31 @@
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "使用音频缓存",
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"message": "启用音频缓存。这可以防止针对 CanvasBlocker 的检测，但会降低性能。",
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Some pages use a very poorly written audio fingerprinting script which will cause Firefox to slow down. To disable the cache for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "有些网页音频指纹脚本编写不良，导致拖慢 Firefox。如需针对特定网站禁用缓存，请点击黑箭头打开菜单， 点击“+”添加域名或URL并删除其复选标记。",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "使用固定的指数",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices shall always be faked.",
+		"message": "如果某些使用的指数总是伪造的。",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
-		"message": "Fixed indices",
+		"message": "使用固定指数",
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "The indices that are always faked. To add multiple entries, separate them by commas.",
+		"message": "以下为总是伪装的指数，使用逗号分隔。",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
@@ -1072,15 +1072,15 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
-		"message": "Allow window.name in frames",
+		"message": "在框架中允许 window.name",
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
-		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"message": "在嵌入网页的上下文当中，window.name API 并不是那么危险的，并且使用目的也是正当的（比如 reCAPTCHA）。以下设置会允许这些用例。",
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
-		"message": "To allow this only for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
+		"message": "针对特定的网站这一情况，点击黑色箭头打开菜单，点击 + 添加域名或 URL 并勾选。",
 		"description": ""
 	},
 	"protectDOMRect_title": {
@@ -1156,43 +1156,43 @@
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "保护 Screen API",
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "This protects against fingerprinting attempts including the screen size.",
+		"message": "这会阻止包括屏幕尺寸在内的指纹追踪尝试。",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "如需排除特定网站，点击黑色箭头以打开菜单，点击 + 添加域名或 URL，并取消勾选。",
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "屏幕大小",
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"message": "如果将值设置为 “...x...”，指定的值将被报告为屏幕大小。",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
-		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"message": "如需针对特定网站指定特定的值，点击黑色箭头以打开菜单，点击 + 添加域名或 URL，并输入需要的值。",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
-		"message": "Fake minimal screen size",
+		"message": "伪装屏幕尺寸最小值",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
-		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"message": "从下面例子中选择设置的最小屏幕尺寸。屏幕尺寸例子有：1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320 。",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "如需排除特定网站，请点击黑箭头打开菜单， 点击 + 添加域名或 URL 并删除其复选标记。",
 		"description": ""
 	},
 	"theme_title": {
-		"message": "Theme",
+		"message": "主题",
 		"description": ""
 	},
 	"theme_description": {
@@ -1288,7 +1288,7 @@
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "设置控制",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1304,15 +1304,15 @@
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "预设",
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "这将打开安装时显示的预设页面。预设是 CanvasBlocker 设置的组合，用于一些通用情况。",
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "打开",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1476,7 +1476,7 @@
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
-		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"message": "不要使用自定义的屏幕大小，因为这会让使浏览器更容易跟踪。",
 		"description": ""
 	},
 	"whitelist_inspection_title": {
@@ -1488,59 +1488,59 @@
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "预设",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "CanvasBlocker 预设",
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg} 感谢安装 CanvasBlocker。为了适应您的需要，您可以应用一些预设。 为了进一步定制您可以打开 {link:options:options.html} 页面。您也可以稍后打开此预设页面。",
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "以下预设符合不同人群的需要。括号当中的值是当前已应用的值。您可以同时应用多组预设，但是某些设置可能由较后应用的覆盖。",
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "默认设置",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "没有应用特别的设置。",
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "便捷设置",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "以下设置会使浏览体验更加便捷。这会添加一些网站到白名单",
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "隐身设置",
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "调整 CanvasBlocker 使得其难以检测，可能导致高 CPU 占用并拖慢浏览器。",
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "保护最大化",
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "最大限度地对抗指纹检测。以下设置会破坏一些网页的可用性，同时可能拖慢浏览器并使得网站能检测到 CanvasBlocker 的存在。应用这一预设后应当同时应用 reCAPTCHA 预设。",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "reCAPTCHA 例外",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "保护 window API 会使得 reCAPTCHA 不可用。您是否添加例外？",
 		"description": ""
 	}
 }
