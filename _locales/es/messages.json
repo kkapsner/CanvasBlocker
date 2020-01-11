@@ -20,7 +20,7 @@
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
-		"message": "\n  \u00B7 {api}",
+		"message": "\n  · {api}",
 		"description": ""
 	},
 	"more": {
@@ -37,6 +37,18 @@
 	},
 	"search": {
 		"message": "Buscar",
+		"description": ""
+	},
+	"ok": {
+		"message": "OK",
+		"description": ""
+	},
+	"apply": {
+		"message": "Apply",
+		"description": ""
+	},
+	"cancel": {
+		"message": "Cancel",
 		"description": ""
 	},
 	"input": {
@@ -73,6 +85,18 @@
 	},
 	"openInTab": {
 		"message": "Abrir en una pestaña separada",
+		"description": ""
+	},
+	"group_general": {
+		"message": "General",
+		"description": ""
+	},
+	"group_APIs": {
+		"message": "APIs",
+		"description": ""
+	},
+	"group_misc": {
+		"message": "Misc",
 		"description": ""
 	},
 	"section_asking": {
@@ -121,6 +145,10 @@
 	},
 	"section_Navigator-api": {
 		"message": "API de navigator",
+		"description": ""
+	},
+	"section_Screen-api": {
+		"message": "Screen API",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
@@ -245,6 +273,18 @@
 	},
 	"askForNavigatorReadoutPermission": {
 		"message": "¿Quiere permitir la lectura para la API de navigator?",
+		"description": ""
+	},
+	"askForScreenPermission": {
+		"message": "Do you want to allow the screen API?",
+		"description": ""
+	},
+	"askForScreenInputPermission": {
+		"message": "Do you want to allow screen API input?",
+		"description": ""
+	},
+	"askForScreenReadoutPermission": {
+		"message": "Do you want to allow screen API readout?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -483,6 +523,14 @@
 		"message": "Limpiar",
 		"description": ""
 	},
+	"clearPersistentRndForContainer_label": {
+		"message": "Clear container",
+		"description": ""
+	},
+	"clearPersistentRndForContainer_title": {
+		"message": "Select container",
+		"description": ""
+	},
 	"sharePersistentRndBetweenDomains_title": {
 		"message": "Compartir la aleatoriedad persistente entre dominios",
 		"description": ""
@@ -517,6 +565,38 @@
 	},
 	"fakeAlphaChannel_description": {
 		"message": "Activa la falsificación del canal alfa (transparencia).",
+		"description": ""
+	},
+	"webGLVendor_title": {
+		"message": "Reported webGL vendor",
+		"description": ""
+	},
+	"webGLVendor_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Leave empty to use the original value.",
+		"description": ""
+	},
+	"webGLRenderer_title": {
+		"message": "Reported webGL renderer",
+		"description": ""
+	},
+	"webGLRenderer_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Leave empty to use the original value.",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_title": {
+		"message": "Reported webGL unmasked vendor",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Leave empty to use the original value.",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_title": {
+		"message": "Reported webGL unmasked renderer",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -591,6 +671,10 @@
 		"message": "Lectura de navigator falseada en {url}",
 		"description": ""
 	},
+	"fakedScreenReadout": {
+		"message": "Faked screen readout on {url}",
+		"description": ""
+	},
 	"fakedInput": {
 		"message": "Falseado a la entrada en {url}",
 		"description": ""
@@ -609,6 +693,10 @@
 	},
 	"ignoredAPIs_description": {
 		"message": "No se mostrarán notificaciones para las API seleccionadas.",
+		"description": ""
+	},
+	"localFile": {
+		"message": "local file",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -983,6 +1071,18 @@
 		"message": "La protección de la API de window rompe los reCAPTCHA. ¿Quiere añadir una excepción para eso?",
 		"description": ""
 	},
+	"allowWindowNameInFrames_title": {
+		"message": "Allow window.name in frames",
+		"description": ""
+	},
+	"allowWindowNameInFrames_description": {
+		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"description": ""
+	},
+	"allowWindowNameInFrames_urlSpecific": {
+		"message": "To allow this only for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
+		"description": ""
+	},
 	"protectDOMRect_title": {
 		"message": "Proteger la API de DOMRect",
 		"description": ""
@@ -1053,6 +1153,42 @@
 	},
 	"navigatorSettings_reset": {
 		"message": "Reiniciar",
+		"description": ""
+	},
+	"protectScreen_title": {
+		"message": "Protect screen API",
+		"description": ""
+	},
+	"protectScreen_description": {
+		"message": "This protects against fingerprinting attempts including the screen size.",
+		"description": ""
+	},
+	"protectScreen_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"screenSize_title": {
+		"message": "Screen size",
+		"description": ""
+	},
+	"screenSize_description": {
+		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"description": ""
+	},
+	"screenSize_urlSpecific": {
+		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_title": {
+		"message": "Fake minimal screen size",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_description": {
+		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_urlSpecific": {
+		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
 		"description": ""
 	},
 	"theme_title": {
@@ -1151,16 +1287,32 @@
 		"message": "",
 		"description": ""
 	},
-	"openSettingSanitation_title": {
-		"message": "Saneado de la configuración",
+	"settingControlling_title": {
+		"message": "Setting controlling",
 		"description": ""
 	},
-	"openSettingSanitation_description": {
+	"settingControlling_description": {
 		"message": "",
 		"description": ""
 	},
 	"openSettingSanitation_label": {
 		"message": "Abrir",
+		"description": ""
+	},
+	"inspectWhitelist_label": {
+		"message": "Inspeccionar la lista blanca",
+		"description": ""
+	},
+	"openSettingPresets_title": {
+		"message": "Presets",
+		"description": ""
+	},
+	"openSettingPresets_description": {
+		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"description": ""
+	},
+	"openSettingPresets_label": {
+		"message": "Open",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1173,10 +1325,6 @@
 	},
 	"loadSettings_label": {
 		"message": "Cargar",
-		"description": ""
-	},
-	"inspectWhitelist_label": {
-		"message": "Inspeccionar la lista blanca",
 		"description": ""
 	},
 	"resetSettings_title": {
@@ -1327,12 +1475,72 @@
 		"message": "No compartir la aleatoriedad persistente entre dominios porque hace al navegador 100% rastreable.",
 		"description": ""
 	},
+	"sanitation_error.customScreenSize": {
+		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"description": ""
+	},
 	"whitelist_inspection_title": {
 		"message": "Inspección de la lista blanca de CanvasBlocker",
 		"description": ""
 	},
 	"whitelist_all_apis": {
 		"message": "Todas las API",
+		"description": ""
+	},
+	"presets": {
+		"message": "Presets",
+		"description": ""
+	},
+	"presets_title": {
+		"message": "CanvasBlocker presets",
+		"description": ""
+	},
+	"presets_installNotice": {
+		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"description": ""
+	},
+	"presets_introduction": {
+		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"description": ""
+	},
+	"preset_default_title": {
+		"message": "Default settings",
+		"description": ""
+	},
+	"preset_default_description": {
+		"message": "No special settings are applied.",
+		"description": ""
+	},
+	"preset_convenience_title": {
+		"message": "Convenient settings",
+		"description": ""
+	},
+	"preset_convenience_description": {
+		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"description": ""
+	},
+	"preset_stealth_title": {
+		"message": "Stealth settings",
+		"description": ""
+	},
+	"preset_stealth_description": {
+		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"description": ""
+	},
+	"preset_max_protection_title": {
+		"message": "Maximum protection",
+		"description": ""
+	},
+	"preset_max_protection_description": {
+		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"description": ""
+	},
+	"preset_recaptcha_title": {
+		"message": "reCAPTCHA exception",
+		"description": ""
+	},
+	"preset_recaptcha_description": {
+		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
 		"description": ""
 	}
 }
