@@ -40,7 +40,7 @@
 	<h2>Expected result</h2>
 	<ul>
 		<li>the background of the test result is green and states "good"</li>
-		<li>the displayed hash changes upon reload</li>
+		<li>the displayed hash changes upon reload (depending on CanvasBlocker settings - e.g. not in the stealth preset)</li>
 	</ul>
 	<h2>Test</h2>
 	<div id="output"></div>

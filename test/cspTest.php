@@ -16,7 +16,7 @@ header("Content-Security-Policy: default-src 'none'; img-src 'self'; script-src 
 <h2>Expected result</h2>
 <ul>
 	<li>if the window API protection is active the window name at start is always empty</li>
-	<li>the canvas hash changes upon reload</li>
+	<li>the canvas hash changes upon reload (depending on CanvasBlocker settings - e.g. not in the stealth preset)</li>
 </ul>
 <h2>Tests</h2>
 <div id="results"></div>
