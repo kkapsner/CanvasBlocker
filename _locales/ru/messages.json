@@ -268,27 +268,27 @@
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Do you want to allow navigator API input?",
+		"message": "Вы хотите разрешить navigator API input(ввод)?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "Вы хотите разрешить navigator API readout(считывание)?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "Вы хотите разрешить screen API?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "Вы хотите разрешить screen API input(ввод)?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "Вы хотите разрешить screen API readout(считывание)?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "Спрашивать только один раз",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
@@ -372,7 +372,7 @@
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "подделывать",
 		"description": ""
 	},
 	"blockMode_title": {
@@ -380,7 +380,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "Защищенная часть canvas API",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
@@ -696,7 +696,7 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "локальном файле",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -756,11 +756,11 @@
 		"description": ""
 	},
 	"selectWhitelistScope": {
-		"message": "What is the scope of the whitelisting?",
+		"message": "Какова сфера действия белого списка?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the {api}",
+		"message": "Добавить в белый список только для {api}",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
@@ -1160,23 +1160,23 @@
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "This protects against fingerprinting attempts including the screen size.",
+		"message": "Это защищает от попыток снятия цифровых отпечатков, включая размер экрана.",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы исключить определенные сайты из этой защиты, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\" и снимите галочку.",
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "Размер экрана",
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"message": "Если для этого параметра установлено значение \"...x...\", указанные размеры будут отображаться как размер экрана.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
-		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"message": "Чтобы указать конкретные размеры для определенных веб-сайтов, щелкните по черной стрелке, чтобы открыть меню, добавить домен или URL-адрес, нажав кнопку \"+\" и выбрав желаемый режим блокировки.",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
@@ -1200,7 +1200,7 @@
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "авто",
 		"description": ""
 	},
 	"theme_options.default": {
@@ -1216,15 +1216,15 @@
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "цветная",
 		"description": ""
 	},
 	"theme_options.none": {
-		"message": "none",
+		"message": "ничего",
 		"description": ""
 	},
 	"blockDataURLs_title": {
-		"message": "Block data URL pages",
+		"message": "Блокировать страницы с data URL",
 		"description": ""
 	},
 	"blockDataURLs_description": {
@@ -1232,7 +1232,7 @@
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы исключить определенные сайты из этой защиты, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\" и снимите галочку.",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
@@ -1288,7 +1288,7 @@
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "Контроль настроек",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1300,11 +1300,11 @@
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "Проверить белый список",
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "Пресеты",
 		"description": ""
 	},
 	"openSettingPresets_description": {
@@ -1312,7 +1312,7 @@
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Открыть",
 		"description": ""
 	},
 	"inspectSettings_label": {
