@@ -44,11 +44,11 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "Применить",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "Отменить",
 		"description": ""
 	},
 	"input": {
@@ -64,7 +64,7 @@
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "Настройки CanvasBlocker",
 		"description": ""
 	},
 	"optionsIntroduction": {
@@ -88,7 +88,7 @@
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "Основные",
 		"description": ""
 	},
 	"group_APIs": {
@@ -96,7 +96,7 @@
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "Прочие",
 		"description": ""
 	},
 	"section_asking": {
@@ -264,7 +264,7 @@
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "Вы хотите разрешить navigator API?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
