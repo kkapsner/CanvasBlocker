@@ -764,7 +764,7 @@
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "Внести все API в белый список",
 		"description": ""
 	},
 	"settings": {
