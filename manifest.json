@@ -10,8 +10,8 @@
 	"background": {
 		"scripts": [
 			"lib/require.js",
-			"lib/extension.js",
 			"lib/logging.js",
+			"lib/extension.js",
 			"lib/settingDefinitions.js",
 			"lib/settingContainers.js",
 			"lib/settingsMigration.js",
@@ -34,8 +34,8 @@
 		"run_at": "document_start",
 		"js": [
 			"lib/require.js",
-			"lib/extension.js",
 			"lib/logging.js",
+			"lib/extension.js",
 			
 			"lib/settingDefinitions.js",
 			"lib/settingContainers.js",
