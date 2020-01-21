@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>window.open test</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link href="testIcon.svg" type="image/png" rel="icon">
+	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<style>
+	#testLink {
+		text-decoration: underline;
+		color: blue;
+		cursor: pointer;
+	}
+	</style>
+</head>
+<body>
+<h1>window.open test</h1>
+<h2>Expected result</h2>
+<ul>
+	<li>after clicking the link a new tab or window opens</li>
+	<li>the notifications for that new tab are displayed in that tab</li>
+	<li>this tab does not report any faking</li>
+	<li>the new tab keeps working after you navigate in this tab or close this tab</li>
+</ul>
+<h3>test</h3>
+<div id="testLink">click me</div>
+<script src="window.open-test.js"></script>
+</body></html>
