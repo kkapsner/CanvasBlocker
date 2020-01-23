@@ -228,6 +228,29 @@
 	groupTabs.classList = "groupTabs";
 	document.body.appendChild(groupTabs);
 	
+	if (
+		browser.privacy &&
+		browser.privacy.websites &&
+		browser.privacy.websites.resistFingerprinting &&
+		browser.privacy.websites.resistFingerprinting.get
+	){
+		browser.privacy.websites.resistFingerprinting.get({}).then(function({value}){
+			if (value){
+				const rfpNotice = document.createElement("div");
+				rfpNotice.className = "resistFingerprintingNotice";
+				rfpNotice.appendChild(
+					extension.parseTranslation(
+						extension.getTranslation("resistFingerprintingNotice")
+					)
+				);
+				document.body.insertBefore(rfpNotice, groupTabs);
+			}
+			return undefined;
+		}).catch(function(error){
+			logging.warning("Unable to read resistFingerprinting:", error);
+		});
+	}
+	
 	const groups = document.createElement("ul");
 	groups.className = "groups";
 	groupTabs.appendChild(groups);

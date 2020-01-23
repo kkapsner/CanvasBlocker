@@ -91,7 +91,8 @@
 		"webRequest",
 		"webRequestBlocking",
 		"contextualIdentities",
-		"cookies"
+		"cookies",
+		"privacy"
 	],
 	
 	"applications": {

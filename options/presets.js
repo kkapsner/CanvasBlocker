@@ -141,32 +141,7 @@
 		if (noticeText){
 			const notice = document.createElement("div");
 			notice.className = noticeName + " notice";
-			noticeText.split(/(\{[^}]+\})/).forEach(function(part){
-				if (part.startsWith("{") && part.endsWith("}")){
-					part = part.substring(1, part.length - 1);
-					const args = part.split(":");
-					switch (args[0]){
-						case "image": {
-							const image = document.createElement("img");
-							image.className = "noticeImage";
-							image.src = args[1];
-							notice.appendChild(image);
-							break;
-						}
-						case "link": {
-							const link = document.createElement("a");
-							link.target = "_blank";
-							link.textContent = args[1];
-							link.href = args[2];
-							notice.appendChild(link);
-							break;
-						}
-					}
-				}
-				else {
-					notice.appendChild(document.createTextNode(part));
-				}
-			});
+			notice.appendChild(extension.parseTranslation(noticeText));
 			
 			head.appendChild(notice);
 		}
