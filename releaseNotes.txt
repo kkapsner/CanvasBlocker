@@ -6,7 +6,8 @@ Version 1.1:
 		- 
 	
 	fixes:
-		- 
+		- error when exporting function with name "top"
+		- tabs opened with window.open broke when the parent tab was reloaded/closed
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
