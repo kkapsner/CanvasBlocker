@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Sie haben privacy.resistFingerprinting aktiviert. Dies verändert das Verhalten von CanvasBlocker ein wenig. Weitere Informationen finden Sie {link:hier:https://github.com/kkapsner/CanvasBlocker/issues/158} und {link:hier:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
