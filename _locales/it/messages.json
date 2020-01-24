@@ -83,6 +83,10 @@
 		"message": "Non mostrare più dopo un aggiornamento.",
 		"description": ""
 	},
+	"resistFingerprintingNotice": {
+		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"description": ""
+	},
 	"openInTab": {
 		"message": "Apri in una nuova scheda",
 		"description": ""
