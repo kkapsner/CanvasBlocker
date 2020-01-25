@@ -1144,7 +1144,7 @@
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
-		"message": "Settings for the container {select} are shown.",
+		"message": "Es werden die Einstellungen der Tab-Umgebung {select} gezeigt.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
