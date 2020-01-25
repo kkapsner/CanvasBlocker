@@ -122,15 +122,17 @@
 				}
 			}
 			delete json.storageVersion;
-			const keys = Object.keys(json);
-			keys.forEach(function(key){
+			const keys = Object.keys(json).filter(function(key){
 				const setting = settings.getDefinition(key);
-				if (!settings){
-					throw new Error("Unknown setting " + key + ".");
+				if (!setting){
+					logging.error("Unknown setting " + key + ".");
+					return false;
 				}
 				if (!setting.fixed && setting.invalid(json[key])){
-					throw new Error("Invalid value " + json[key] + " for " + key + ".");
+					logging.error("Invalid value " + json[key] + " for " + key + ".");
+					return false;
 				}
+				return true;
 			});
 			keys.forEach(function(key){
 				settings[key] = json[key];
