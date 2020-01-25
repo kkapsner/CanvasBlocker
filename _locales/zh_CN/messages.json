@@ -1143,6 +1143,10 @@
 		"message": "注意：在实际使用中浏览器无法完全伪造，因为有多种方法可以检测。如：特性检测和某 HTML 元素的浏览器特定渲染方式将总是被泄露。",
 		"description": ""
 	},
+	"navigatorSettings_contextualIdentities": {
+		"message": "Settings for the container {select} are shown.",
+		"description": ""
+	},
 	"navigatorSettings_presetSection.os": {
 		"message": "操作系统预置",
 		"description": ""

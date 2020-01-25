@@ -1143,6 +1143,10 @@
 		"message": "PRECAUCIÓN: el navegador en uso no puede falsearse por completo ya que hay multitud de formas para detectarlo. Por ejemplo, la detección de características y representación específica del navegador de elementos de HTML siempre van a dejar escapar información.",
 		"description": ""
 	},
+	"navigatorSettings_contextualIdentities": {
+		"message": "Settings for the container {select} are shown.",
+		"description": ""
+	},
 	"navigatorSettings_presetSection.os": {
 		"message": "Preajustes del sistema operativo",
 		"description": ""
