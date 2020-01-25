@@ -4,6 +4,7 @@ Version 1.1:
 	
 	new features:
 		- added notice for privacy.resistFingerprinting
+		- added container specific navigator settings
 	
 	fixes:
 		- error when exporting function with name "top"

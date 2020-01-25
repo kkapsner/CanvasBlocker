@@ -1,7 +1,7 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-(function(){
+(async function(){
 	"use strict";
 	
 	const extension = require("../lib/extension");
@@ -25,6 +25,144 @@
 	disclaimer.className = "disclaimer";
 	disclaimer.textContent = extension.getTranslation("navigatorSettings_disclaimer");
 	document.body.appendChild(disclaimer);
+	
+	const navigatorDetails = await async function(){
+		let cookieStoreId = "";
+		if (browser.contextualIdentities){
+			const contextualIdentities = await browser.contextualIdentities.query({});
+			if (contextualIdentities.length){
+				const containerLabel = document.createElement("label");
+				containerLabel.className = "contextualIdentities";
+				containerLabel.appendChild(extension.parseTranslation(
+					extension.getTranslation("navigatorSettings_contextualIdentities"),
+					{
+						select: function(){
+							const contextualIdentitiesSelect = document.createElement("select");
+							contextualIdentitiesSelect.appendChild(new Option("", ""));
+							contextualIdentities.forEach(function(contextualIdentity){
+								contextualIdentitiesSelect.appendChild(new Option(
+									contextualIdentity.name,
+									contextualIdentity.cookieStoreId
+								));
+							});
+							window.addEventListener("load", function(){
+								cookieStoreId = contextualIdentitiesSelect.value;
+								emitUpdate();
+							});
+							contextualIdentitiesSelect.addEventListener("change", function(){
+								cookieStoreId = this.value;
+								emitUpdate();
+							});
+							return contextualIdentitiesSelect;
+						}
+					}
+				));
+				document.body.appendChild(containerLabel);
+			}
+		}
+		
+		const callbacks = [];
+		let baseStorage;
+		let loaded = false;
+		
+		function getKeys(object){
+			return Object.keys(object).filter(function(key){
+				return key !== "contextualIdentities";
+			});
+		}
+		
+		function storageEqual(storage1, storage2){
+			const keys1 = getKeys(storage1);
+			const keys2 = getKeys(storage2);
+			return keys1.length === keys2.length && keys1.every(function(key){
+				return storage1[key] === storage2[key];
+			});
+		}
+		
+		function copyData(from, to = {}){
+			getKeys(from).forEach(function(key){
+				to[key] = from[key];
+			});
+			return to;
+		}
+		
+		function getStorage(){
+			if (cookieStoreId === ""){
+				return baseStorage;
+			}
+			else {
+				if (!baseStorage.contextualIdentities){
+					baseStorage.contextualIdentities = {};
+				}
+				if (!baseStorage.contextualIdentities[cookieStoreId]){
+					baseStorage.contextualIdentities[cookieStoreId] = copyData(baseStorage);
+				}
+				return baseStorage.contextualIdentities[cookieStoreId];
+			}
+		}
+		
+		settings.on("navigatorDetails", function({newValue}){
+			baseStorage = newValue;
+			emitUpdate();
+		});
+		settings.onloaded(function(){
+			loaded = true;
+			baseStorage = settings.navigatorDetails;
+			emitUpdate();
+		});
+		function emitUpdate(){
+			if (!loaded){
+				return;
+			}
+			const storage = getStorage();
+			callbacks.forEach(async function(callback){
+				callback(storage);
+			});
+		}
+		const api = {
+			get: getStorage,
+			getComputedValue: function getComputedValue(property){
+				return navigator.getNavigatorValue(property, function(){
+					return cookieStoreId;
+				});
+			},
+			onUpdate: function onUpdate(callback){
+				callbacks.push(callback);
+				if (loaded){
+					callback(getStorage());
+				}
+			},
+			save: function save(){
+				if (!loaded){
+					return;
+				}
+				if (baseStorage.contextualIdentities){
+					if (Object.keys(baseStorage.contextualIdentities).reduce(function(lastValue, contextualIdentity){
+						if (storageEqual(baseStorage.contextualIdentities[contextualIdentity], baseStorage)){
+							delete baseStorage.contextualIdentities[contextualIdentity];
+							return lastValue;
+						}
+						return false;
+					}, true)){
+						delete baseStorage.contextualIdentities;
+					}
+				}
+				settings.navigatorDetails = baseStorage;
+			},
+			reset: function reset(){
+				if (cookieStoreId === ""){
+					baseStorage = baseStorage.contextualIdentities? {
+						contextualIdentities: baseStorage.contextualIdentities
+					}: {};
+				}
+				else {
+					baseStorage.contextualIdentities[cookieStoreId] = {};
+				}
+				api.save();
+			}
+		};
+		return api;
+	}();
 	
 	function presetSection(title, presets){
 		const container = document.createElement("div");
@@ -64,15 +202,10 @@
 					li.classList.remove("active");
 				}
 			}
-			settings.on("navigatorDetails", function({newValue}){
-				checkActive(newValue);
-			});
-			settings.onloaded(function(){
-				checkActive(settings.navigatorDetails);
-			});
+			navigatorDetails.onUpdate(checkActive);
 			
 			button.addEventListener("click", function(){
-				const data = settings.navigatorDetails;
+				const data = navigatorDetails.get();
 				Object.keys(presetProperties).forEach(function(property){
 					if (presetProperties[property] === undefined){
 						delete data[property];
@@ -85,7 +218,7 @@
 						data[property] = value;
 					}
 				});
-				settings.navigatorDetails = data;
+				navigatorDetails.save();
 			});
 		});
 		
@@ -249,11 +382,11 @@
 			input.value = currentProperties.hasOwnProperty(property)? currentProperties[property]: "{original value}";
 			input.addEventListener("change", function(){
 				currentProperties[property] = this.value;
-				settings.navigatorDetails = currentProperties;
+				navigatorDetails.save();
 			});
 			
 			const computedValue = document.createElement("td");
-			computedValue.textContent = navigator.getNavigatorValue(property);
+			computedValue.textContent = navigatorDetails.getComputedValue(property);
 			row.appendChild(computedValue);
 			
 			section.appendChild(row);
@@ -265,7 +398,8 @@
 		valueSection.appendChild(section);
 		
 		Object.keys(currentProperties).filter(function(property){
-			return navigator.allProperties.indexOf(property) === -1;
+			return property !== "contextualIdentities" &&
+				navigator.allProperties.indexOf(property) === -1;
 		}).sort().forEach(createPropertyRow.bind(undefined, section));
 		
 		section = document.createElement("tbody");
@@ -274,19 +408,11 @@
 		
 		navigator.allProperties.forEach(createPropertyRow.bind(undefined, section));
 	}
-	
-	settings.on("navigatorDetails", function({newValue}){
-		updateValueSection(newValue);
-	});
-	settings.onloaded(function(){
-		updateValueSection(settings.navigatorDetails);
-	});
+	navigatorDetails.onUpdate(updateValueSection);
 	
 	const resetButton = document.createElement("button");
 	resetButton.className = "button";
 	resetButton.textContent = extension.getTranslation("navigatorSettings_reset");
-	resetButton.addEventListener("click", function(){
-		settings.navigatorDetails = {};
-	});
+	resetButton.addEventListener("click", navigatorDetails.reset);
 	document.body.appendChild(resetButton);
 }());
