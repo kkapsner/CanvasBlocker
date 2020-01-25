@@ -1143,6 +1143,10 @@
 		"message": "CAUTION: the actual browser in use cannot be faked entirely as there is a multitude of ways to detect it. E.g. feature tests and browser specific rendering of HTML elements will always leak.",
 		"description": ""
 	},
+	"navigatorSettings_contextualIdentities": {
+		"message": "Settings for the container {select} are shown.",
+		"description": ""
+	},
 	"navigatorSettings_presetSection.os": {
 		"message": "Operating system presets",
 		"description": ""
