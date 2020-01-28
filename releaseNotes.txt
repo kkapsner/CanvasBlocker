@@ -1,7 +1,4 @@
 Version 1.1:
-	changes:
-		- 
-	
 	new features:
 		- added notice for privacy.resistFingerprinting
 		- added container specific navigator settings
