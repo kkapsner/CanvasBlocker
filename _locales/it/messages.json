@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Hai privacy.resistFingerprinting attivato. Ciò cambia leggermente il comportamento di CanvasBlocker. Vedi ulteriori informazioni {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -92,15 +92,15 @@
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "Generale",
 		"description": ""
 	},
 	"group_APIs": {
-		"message": "APIs",
+		"message": "API",
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "Altro",
 		"description": ""
 	},
 	"section_asking": {
@@ -152,7 +152,7 @@
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Screen API",
+		"message": "API schermo",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
@@ -172,15 +172,15 @@
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "Clicca qui per nascondere questa impostazione.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "Mostra impostazioni nascoste",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "Attiva per visualizzare le impostazioni nascoste.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
