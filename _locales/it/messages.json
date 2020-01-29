@@ -44,11 +44,11 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "Applica",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "Annulla",
 		"description": ""
 	},
 	"input": {
