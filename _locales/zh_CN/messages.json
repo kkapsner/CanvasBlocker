@@ -1044,7 +1044,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "以下为总是伪装的指数，使用逗号分隔。",
+		"message": "以下为总是伪装的指数。要添加多个项目，请用逗号分隔。",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
