@@ -165,6 +165,31 @@
 			"problemMatcher": []
 		},
 		{
+			"label": "build alpha",
+			"type": "shell",
+			"windows": {
+				"command": "node"
+			},
+			"linux": {
+				"command": "node"
+			},
+			"osx": {
+				"command": "node"
+			},
+			"args": [
+				".tools/build.js",
+				"--type",
+				"alpha"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
 			"label": "web-ext lint",
 			"type": "shell",
 			"windows": {
