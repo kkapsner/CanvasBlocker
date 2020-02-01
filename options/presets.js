@@ -152,7 +152,7 @@
 	introduction.textContent = extension.getTranslation("presets_introduction");
 	head.appendChild(introduction);
 	
-	const [settingsLoaded, presets] = await Promise.all([
+	const [, presets] = await Promise.all([
 		settings.loaded,
 		(await fetch("presets.json")).json()
 	]);
