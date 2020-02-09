@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "改变修改 <canvas> 的 JS-API 来预防画布（Canvas）指纹跟踪。",
+		"message": "改变一些 JS API 来预防指纹跟踪。",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "您启用了 privacy.resistFingerprinting。这明显改变了 CanvasBlocker 的行为。更多信息请参阅 {link:https://github.com/kkapsner/CanvasBlocker/issues/158} 和 {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}。",
 		"description": ""
 	},
 	"openInTab": {
@@ -152,7 +152,7 @@
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Screen API",
+		"message": "屏幕 API",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
@@ -160,7 +160,7 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "显示额外设置",
+		"message": "显示附加设置。",
 		"description": ""
 	},
 	"displayDescriptions_title": {
@@ -176,7 +176,7 @@
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "显示隐藏设置",
+		"message": "显示隐藏的设置",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
@@ -376,7 +376,7 @@
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "伪装",
+		"message": "伪造",
 		"description": ""
 	},
 	"blockMode_title": {
@@ -652,35 +652,35 @@
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "{url} 上的已伪造 Canvas 读数",
+		"message": "{url} 上的 Canvas 读数已伪造",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "{url} 上的已伪造音频取数",
+		"message": "{url} 上的音频取数已伪造",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "{url} 上的已伪造历史读数",
+		"message": "{url} 上的历史读数已伪造",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "{url} 上的已伪造 window 读数",
+		"message": "{url} 上的窗口读数已伪造",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "{url} 上的 DOMRect 已伪造读数",
+		"message": "{url} 上的 DOMRect 读数已伪造",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "{url} 上的 Navigator 已伪造读数",
+		"message": "{url} 上的 Navigator 读数已伪造",
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "在 {url} 上伪造屏幕读数",
+		"message": "{url} 上的屏幕读数已伪造",
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "{url} 上的画布输入已伪造",
+		"message": "{url} 上的输入已伪造",
 		"description": ""
 	},
 	"ignoreList_description": {
@@ -792,7 +792,7 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "阻止模式设为“伪造取出 API”时显示一个通知。",
+		"message": "当某些东西被屏蔽或伪造时，在地址栏中显示通知图标。",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
@@ -936,7 +936,7 @@
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "开始存储已伪造的画布内容。\n注意：这可能消耗大量内存！",
+		"message": "启用已伪造的画布内容的存储。\n注意：这可能消耗大量内存！",
 		"description": ""
 	},
 	"protectAudio_title": {
@@ -952,11 +952,11 @@
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "缓冲伪装的比例",
+		"message": "缓冲伪造率",
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "每个读取请求应该伪装多少值。",
+		"message": "每个读取请求应该伪造多少值。",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
@@ -1044,7 +1044,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "以下为总是伪装的指数，使用逗号分隔。",
+		"message": "以下为总是伪装的指数。要添加多个项目，请用逗号分隔。",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
@@ -1144,7 +1144,7 @@
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
-		"message": "Settings for the container {select} are shown.",
+		"message": "{select} 容器的设置已经显示。",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
@@ -1188,7 +1188,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
-		"message": "伪装屏幕尺寸最小值",
+		"message": "伪造屏幕最小尺寸",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {

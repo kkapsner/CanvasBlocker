@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Hai privacy.resistFingerprinting attivato. Ciò cambia leggermente il comportamento di CanvasBlocker. Vedi ulteriori informazioni {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -92,15 +92,15 @@
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "Generale",
 		"description": ""
 	},
 	"group_APIs": {
-		"message": "APIs",
+		"message": "API",
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "Altro",
 		"description": ""
 	},
 	"section_asking": {
@@ -152,7 +152,7 @@
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Screen API",
+		"message": "API schermo",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
@@ -172,15 +172,15 @@
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "Clicca qui per nascondere questa impostazione.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "Mostra impostazioni nascoste",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "Attiva per visualizzare le impostazioni nascoste.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -220,7 +220,7 @@
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "Vuoi permettere l'API audio?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
@@ -268,15 +268,15 @@
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "Vuoi permettere l'API navigatore?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Do you want to allow navigator API input?",
+		"message": "Vuoi permettere l'input dell'API navigatore?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "Vuoi permettere la lettura dell'API navigatore?",
 		"description": ""
 	},
 	"askForScreenPermission": {
@@ -328,15 +328,15 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
-		"message": "Show canvas content",
+		"message": "Mostra contenuto canvas",
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
-		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
+		"message": "Mostra il contenuto del canvas per la quale è richiesto il permesso, se possibile.",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
-		"message": "The webpage wants to read the content of the following canvas:",
+		"message": "La pagina web vuole leggere il contenuto del seguente canvas:",
 		"description": ""
 	},
 	"blackList_description": {
@@ -396,7 +396,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "niente",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
@@ -528,23 +528,23 @@
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Svuota contenitore",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Seleziona contenitore",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Share persistent randomness between domains",
+		"message": "Condividi casualità persistente tra i domini",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "ATTENZIONE: questa impostazione rende il browser tracciabile al 100% ed è quindi una minaccia per la tua privacy.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "Sei davvero sicuro di voler condividere la casualità persistente tra domini?\nATTENZIONE: questo rende il browser tracciabile al 100% ed è quindi una minaccia per la tua privacy.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -904,7 +904,7 @@
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "inspect whitelist",
+		"message": "ispeziona lista bianca",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -1108,15 +1108,15 @@
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Protect navigator API",
+		"message": "Protect API navigatore",
 		"description": ""
 	},
 	"protectNavigator_description": {
-		"message": "This page allows for changes in the navigator API. Enabling this protection does not change anything by default. Open the navigator settings to specify the changes you want to have there.",
+		"message": "Questa pagina consente modifiche alle API di navigazione. L'attivazione di questa protezione non cambia nulla in modo predefinito. Apri le impostazioni del navigatore per specificare le modifiche che si desidera apportare.",
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Per escludere siti specifici da questa protezione, clicca la freccia nera per aprire il menu, aggiungi il dominio o URL cliccando \"+\" e rimouvi la sua spunta.",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
@@ -1148,11 +1148,11 @@
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "Operating system presets",
+		"message": "Preimpostate sistema operativo",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Browser presets",
+		"message": "Preimpostate browser",
 		"description": ""
 	},
 	"navigatorSettings_values": {
@@ -1164,23 +1164,23 @@
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "Proteggi API schermo",
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "This protects against fingerprinting attempts including the screen size.",
+		"message": "Questo protegge dai tentativi di fingerprinting inclusi le dimensioni dello schermo.",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Per escludere siti specifici da questa protezione, clicca la freccia nera per aprire il menu, aggiungi il dominio o URL cliccando \"+\" e rimouvi la sua spunta.",
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "Dimensioni schermo",
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"message": "Se questo è impostato con valore \"...x...\" verranno riportate le dimensioni specificate come dimensione schermo.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
@@ -1188,11 +1188,11 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
-		"message": "Fake minimal screen size",
+		"message": "Falsifica dim. minima schermo",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
-		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"message": "Utilizza una dimensione minima dello schermo dal seguente set che può adattarsi alle dimensioni interne della finestra. Dimensioni schermo: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
@@ -1204,11 +1204,11 @@
 		"description": ""
 	},
 	"theme_description": {
-		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"message": "Il tema automatico passa a scuro se il sistema usa un tema scuro (richiede Firefox >= 67)",
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "automatico",
 		"description": ""
 	},
 	"theme_options.default": {
@@ -1224,7 +1224,7 @@
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "colorato",
 		"description": ""
 	},
 	"theme_options.none": {
@@ -1240,7 +1240,7 @@
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Per escludere siti specifici da questa protezione, clicca la freccia nera per aprire il menu, aggiungi il dominio o URL cliccando \"+\" e rimouvi la sua spunta.",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
@@ -1296,7 +1296,7 @@
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "Controllo impostazioni",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1304,23 +1304,23 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Apri",
+		"message": "Pulizia impostazioni",
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "Ispeziona lista bianca",
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "Preimpostate",
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "Questo apre la pagina delle preimpostate che è stata mostrata all'installazione. Le preimpostate sono raccolte di valori impostati per alcuni casi di uso comune di CanvasBlocker.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Apri",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1368,11 +1368,11 @@
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Setting sanitation",
+		"message": "Pulizia impostazioni",
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advice on suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"message": "Questa pagina aiuta a trovare configurazioni errate nelle impostazioni di CanvasBlocker. Fornisce anche consigli su impostazioni non ottimali. Tuttavia non è consigliato correggere tutti i suggerimenti alla cieca.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
@@ -1404,7 +1404,7 @@
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
+		"message": "Il valore URL per \"{url}\" è lo stesso dell'impostazione globale per \"{setting-title}\".",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
@@ -1460,11 +1460,11 @@
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
-		"message": "\"{setting}\" should not be lower than {value}.",
+		"message": "\"{setting}\" non deve essere inferiore a {value}.",
 		"description": ""
 	},
 	"sanitation_error.valueTooHigh": {
-		"message": "\"{setting}\" should not be higher than {value}.",
+		"message": "\"{setting}\" non deve essere maggiore di {value}.",
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
@@ -1488,7 +1488,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_title": {
-		"message": "CanvasBlocker whitelist inspection",
+		"message": "Ispezione lista bianca di CanvasBlocker",
 		"description": ""
 	},
 	"whitelist_all_apis": {
@@ -1496,19 +1496,19 @@
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "Preimpostate",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "Preimpostate CanvasBlocker",
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg}Grazie per aver installato CanvasBlocker. Per modificarlo in base alle tue esigenze puoi applicare alcune preimpostazioni. Per ulteriori personalizzazioni è possibile aprire la pagina {link:options:options.html}. Lì potrai anche riaprire questa pagina in seguito.",
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Queste sono alcune impostazioni preimpostate per soddisfare diverse esigenze delle persone. I valori tra parentesi sono lo stato attuale dell'impostazione. È possibile applicare più preimpostate una dopo l'altra ma alcune impostazioni potrebbero essere sovrascritte da quella applicata successivamente.",
 		"description": ""
 	},
 	"preset_default_title": {
