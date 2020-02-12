@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "Endrer noen JS APIer for å forhindre fingeravtrykk.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -12,7 +12,7 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\nbeskyttelsen vellykket for:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
