@@ -16,39 +16,39 @@
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " (API-er hvitelistet for {url})",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
-		"message": "\n  · {api}",
+		"message": "\n· {api}",
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "mer",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "mindre",
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "Vennligst vent...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "Søk",
 		"description": ""
 	},
 	"ok": {
-		"message": "OK",
+		"message": "Ok",
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "Bruk",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "Avbryt",
 		"description": ""
 	},
 	"input": {
@@ -56,43 +56,43 @@
 		"description": ""
 	},
 	"readout": {
-		"message": "readout",
+		"message": "avlesning",
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "Innstillinger",
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "CanvasBlocker innstillinger",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "På denne siden kan du justere innstillingene til CanvasBlocker.",
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "CanvasBlocker ble installert. Hvis du vil ha tilgang til denne siden i fremtiden, kan du bokmerke den.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlocker ble oppdatert. Hvis du vil ha tilgang til denne siden i fremtiden og ikke har bokmerket den ennå, kan du bokmerke den.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "Ikke dukk opp igjen etter oppdatering.",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Du har aktivert privacy.resistFingerprinting. Dette endrer oppførselen til CanvasBlocker litt. Se ytterligere informasjon\n{link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "Åpne i egen fane",
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "Generelt",
 		"description": ""
 	},
 	"group_APIs": {
@@ -112,19 +112,19 @@
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "Varsler",
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "Lister",
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "Diverse",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "Innstillinger",
 		"description": ""
 	},
 	"section_canvas-api": {
@@ -156,35 +156,35 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "Ekspertmodus",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "Viser tilleggsinnstillinger.",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "Vis beskrivelser",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "Viser beskrivelsene av innstillingene.",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "Klikk her for å skjule denne innstillingen.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "Vis skjulte innstillinger",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "Aktiver for å vise de skjulte innstillingene.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Do you want to allow invisible <canvas>?",
+		"message": "Vil du tillate usynlige <canvas>?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
@@ -196,7 +196,7 @@
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "Vil du tillate <canvas>?",
 		"description": ""
 	},
 	"askForInputPermission": {
@@ -292,7 +292,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "Spør bare en gang",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
@@ -300,7 +300,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "nei",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
@@ -324,7 +324,7 @@
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "falsk",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
@@ -344,7 +344,7 @@
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "Svarteliste",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -376,15 +376,15 @@
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "falsk",
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "Blokkeringsmodus",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "Beskyttet del av canvas API",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
@@ -396,7 +396,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "ingenting",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
@@ -404,11 +404,11 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "readout",
+		"message": "avlesning",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "alt",
 		"description": ""
 	},
 	"urlSettings_title": {
@@ -488,67 +488,67 @@
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "sekunder",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "minutter",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "timer",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "dager",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "uker",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "måneder",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "år",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
-		"message": "Clear persistent random storage",
+		"message": "Tøm vedvarende tilfeldig lagring",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Deletes all data for the persistent random number generator.",
+		"message": "Sletter alle data for den vedvarende tilfeldige tallgeneratoren.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "Tøm",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Tøm beholderen",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Velg beholder",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Share persistent randomness between domains",
+		"message": "Del vedvarende tilfeldighet mellom domener",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "FORSIKTIG: denne innstillingen gjør nettleseren 100% sporbar og er derfor en trussel mot ditt privatliv.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "Er du virkelig sikker på at du vil dele den vedvarende tilfeldigheten mellom domenene?\nFORSIKTIG: dette gjør nettleseren 100% sporbar og er derfor en trussel mot ditt privatliv.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "Ignorer de hyppigste fargene",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
@@ -700,7 +700,7 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "lokal fil",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -772,7 +772,7 @@
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "innstillinger",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -820,7 +820,7 @@
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "farge",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
@@ -848,11 +848,11 @@
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "endre ingenting",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "endre farge",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
@@ -1004,27 +1004,27 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "lav",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "middels",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "høy",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "maksimal",
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "Bruk lydbuffer",
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"message": "Aktiverer lydbufferen. Dette kan forhindre gjenkjenning, men reduserer ytelsen.",
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
@@ -1160,7 +1160,7 @@
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "Tilbakestill",
 		"description": ""
 	},
 	"protectScreen_title": {
@@ -1200,35 +1200,35 @@
 		"description": ""
 	},
 	"theme_title": {
-		"message": "Theme",
+		"message": "Tema",
 		"description": ""
 	},
 	"theme_description": {
-		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"message": "Det automatiske temaet bytter til mørkt hvis systemet bruker et mørkt tema (krever Firefox >= 67)",
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "automatisk",
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "standard",
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "lys",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "mørk",
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "fargerik",
 		"description": ""
 	},
 	"theme_options.none": {
-		"message": "none",
+		"message": "ingen",
 		"description": ""
 	},
 	"blockDataURLs_title": {
@@ -1244,7 +1244,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "Utgivelsesnotater",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1252,7 +1252,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Show",
+		"message": "Vis",
 		"description": ""
 	},
 	"logLevel_title": {
@@ -1264,19 +1264,19 @@
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "none",
+		"message": "ingen",
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "feil",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "advarsel",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "melding",
 		"description": ""
 	},
 	"logLevel_options.75": {
@@ -1320,7 +1320,7 @@
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Åpne",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1328,7 +1328,7 @@
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "Lagre",
 		"description": ""
 	},
 	"loadSettings_label": {
@@ -1344,15 +1344,15 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reset",
+		"message": "Tilbakestill",
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Are you sure you want to reset all settings?",
+		"message": "Er du sikker på at du vil tilbakestille alle innstillinger?",
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "Innstillinger",
 		"description": ""
 	},
 	"browserAction_test": {
@@ -1376,7 +1376,7 @@
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Nothing to complain.",
+		"message": "Ingenting å klage på.",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
@@ -1384,11 +1384,11 @@
 		"description": ""
 	},
 	"sanitation_ruleset.disabledFeatures": {
-		"message": "Disabled features",
+		"message": "Deaktiverte funksjoner",
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "Blokkeringsmodus",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
@@ -1396,11 +1396,11 @@
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "Ytelse",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
-		"message": "Privacy",
+		"message": "Personvern",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
@@ -1420,15 +1420,15 @@
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "aktiver funksjoner",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
-		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"message": "Det anbefales å bruke \"falske\" eller \"spørre\" blokkeringsmodus.",
 		"description": ""
 	},
 	"sanitation_resolution.switchToFake": {
-		"message": "switch to \"fake\"",
+		"message": "bytt til \"falsk\"",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
