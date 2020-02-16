@@ -1,5 +1,7 @@
 Dieses Add-on ermöglicht es Nutzern, Webseiten davon abzuhalten, sie über Javascript APIs zu identifizieren. Nutzer können auswählen, ob die APIs komplett auf bestimmten oder allen Seiten blockiert werden (dies wird die Funktionalität einiger Seiten beeinträchtigen) oder bei den identifikationsfreundlichen Auslese-Funktionen falsche Werte vorzutäuschen.
 
+Bei Problemen konsultieren Sie bitte zuerst <a href="https://canvasblocker.kkapsner.de/faq/">FAQ</a>. Falls Sie Fehler finden oder Verbesserungsvorschläge haben, teilen Sie mir das bitte auf https://github.com/kkapsner/CanvasBlocker/issues mit.
+
 <b>WICHTIG</b>: Sie sollten nur ein Addon/eine Einstellung aktiv haben, die eine API beschützt. Ansonsten können Sie massive Performanceprobleme bekommen. (Z.B. EclipsedMoon für Palemoon hat 'canvas.poison', was bekanntermaßen Probleme verursacht: https://github.com/kkapsner/CanvasBlocker/issues/253#issuecomment-459499290)
 privacy.resistFingerprinting kann aber problemlos aktiviert werden und der Fingerprinting-Schutz muss nicht deaktiviert werden.
 
@@ -40,5 +42,3 @@ Die verschiedenen Blockiermodi sind:
 		<li>nur Einträge der Blacklist blockieren: Blockiere die beschützten APIs nur auf den Seiten der Blacklist.</li>
 		<li>alles erlauben: Ignoriere alle Listen und erlaube die beschützten APIs auf allen Webseiten.</li>
 	</ul>
-
-Falls Sie Fehler finden oder Verbesserungsvorschläge haben, teilen Sie mir das bitte auf https://github.com/kkapsner/CanvasBlocker/issues mit.

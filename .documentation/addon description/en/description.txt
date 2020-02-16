@@ -1,5 +1,7 @@
 This add-on allows users to prevent websites from using some Javascript APIs to fingerprint them. Users can choose to block the APIs entirely on some or all websites (which may break some websites) or fake its fingerprinting-friendly readout API.
 
+If you encounter any problems please check the <a href="https://canvasblocker.kkapsner.de/faq/">FAQ</a> first. Please report issues and feature requests at https://github.com/kkapsner/CanvasBlocker/issues
+
 <b>IMPORTANT</b>: you should only have ONE addon/setting set that protects an API. Otherwise you could face massive performance issues. (E.g. EclipsedMoon for Palemoon has 'canvas.poison' which is known to cause issues: https://github.com/kkapsner/CanvasBlocker/issues/253#issuecomment-459499290)
 But setting privacy.resistFingerprinting to true and/or using the new fingerprinting protection introduced with Firefox 67 is fine.
 
@@ -41,5 +43,3 @@ The different block modes are:
 		<li> block only black list: Block the protected APIs only for websites on the black list.</li>
 		<li> allow everything: Ignore all lists and allow the protected APIs on all websites.</li>
 	</ul>
-
-Please report issues and feature requests at https://github.com/kkapsner/CanvasBlocker/issues
