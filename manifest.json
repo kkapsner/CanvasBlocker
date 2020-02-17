@@ -87,7 +87,6 @@
 		"<all_urls>",
 		"storage",
 		"tabs",
-		"activeTab",
 		"webRequest",
 		"webRequestBlocking",
 		"contextualIdentities",

@@ -1,6 +1,6 @@
 Version 1.2:
 	changes:
-		- 
+		- removed unnecessary activeTab permission
 	
 	new features:
 		- 
