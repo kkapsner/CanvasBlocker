@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Настройка privacy.resistFingerprinting включена. Это немного меняет поведение CanvasBlocker. Подробнее см. {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} и {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -388,27 +388,27 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "nothing: no features of the canvas API are protected.\n\nreadout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "ничего: никакие функции API холста не защищены.\n\nсчитывание: функции считывания содержимого холста защищены.\n\nввод: функции ввода API холста защищены. В режиме блокировки \"подделывание\" немного изменяются пиксели при выводе текста. Это затрудняет обнаружение этого расширения, но является менее безопасным. Для холстов WebGL поведение идентично режиму \"Считывание\".\n\nвсё: защищены и функции считывания, и функции ввода. Не рекомендуется использовать этот режим в сочетании с режимом блокировки \"подделывание\", так как увеличивается вероятность обнаружения.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"message": "Чтобы установить защищаемые области для конкретных сайтов, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\", и выберите желаемую область.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "ничего",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "input",
+		"message": "ввод",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "readout",
+		"message": "считывание",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "всё",
 		"description": ""
 	},
 	"urlSettings_title": {
@@ -528,23 +528,23 @@
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Очистить контейнер",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Выбрать контейнер",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Share persistent randomness between domains",
+		"message": "Случайные данные общие для всех доменов",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "ВНИМАНИЕ: эта настройка делает браузер на 100% уязвимым для отслеживания, а значит, является угрозой для вашей приватности.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "Вы уверены, что действительно хотите использовать общие случайные данные для всех доменов?\nВНИМАНИЕ: эта сделает браузер на 100% уязвимым для отслеживания, а значит, является угрозой для вашей приватности.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -572,35 +572,35 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "Сообщать производителя webGL",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Leave empty to use the original value.",
+		"message": "Сообщать это значение для \"vendor\" в функции \"getParameter\". Если пусто, сообщать реальное значение.",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "Сообщать растеризатор webGL",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Leave empty to use the original value.",
+		"message": "Сообщать это значение для \"renderer\" в функции \"getParameter\". Если пусто, сообщать реальное значение.",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Reported webGL unmasked vendor",
+		"message": "Сообщать производителя webGL (без маскировки)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Leave empty to use the original value.",
+		"message": "Сообщать это значение для \"unmasked vendor\" в функции \"getParameter\". Если пусто, сообщать реальное значение.",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Reported webGL unmasked renderer",
+		"message": "Сообщать растеризатор webGL (без маскировки)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"message": "Сообщать это значение для \"unmasked renderer\" в функции \"getParameter\". Если пусто, сообщать реальное значение.",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -672,11 +672,11 @@
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Faked navigator readout on {url}",
+		"message": "Подделывать считывание навигатора для {url}",
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Faked screen readout on {url}",
+		"message": "Подделывать считывание экрана для {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -1056,7 +1056,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "To change this value for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set a different value.",
+		"message": "Чтобы изменить значение для конкретных сайтов, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\", и выберите другое значение.",
 		"description": ""
 	},
 	"protectWindow_title": {
@@ -1076,15 +1076,15 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
-		"message": "Allow window.name in frames",
+		"message": "Разрешить window.name во фреймах",
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
-		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"message": "В контексте фрейма window.name не является столь опасным и используется для других целей (например reCAPTCHA). Эта настройка разрешает такое использование.",
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
-		"message": "To allow this only for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
+		"message": "Чтобы разрешить это только для конкретных сайтов, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\", и отметьте флажок.",
 		"description": ""
 	},
 	"protectDOMRect_title": {
@@ -1108,19 +1108,19 @@
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Protect navigator API",
+		"message": "Защита API навигатора",
 		"description": ""
 	},
 	"protectNavigator_description": {
-		"message": "This page allows for changes in the navigator API. Enabling this protection does not change anything by default. Open the navigator settings to specify the changes you want to have there.",
+		"message": "Эта страница позволяет вносить изменения в API навигатора. Включение защиты по умолчанию ничего не меняет. Откройте настройки навигатора и укажите там желаемые изменения.",
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы исключить конкретные сайты из этой защиты, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\", и снимите флажок.",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
-		"message": "Navigator settings",
+		"message": "Настройки навигатора",
 		"description": ""
 	},
 	"openNavigatorSettings_description": {
@@ -1128,11 +1128,11 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "Открыть",
 		"description": ""
 	},
 	"navigatorSettings_title": {
-		"message": "CanvasBlocker navigator settings",
+		"message": "CanvasBlocker: Настройки навигатора",
 		"description": ""
 	},
 	"navigatorSettings_description": {
