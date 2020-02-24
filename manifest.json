@@ -69,6 +69,7 @@
 	}],
 	"options_ui": {
 		"browser_style": false,
+		"open_in_tab": true,
 		"page": "options/options.html"
 	},
 	"browser_action": {

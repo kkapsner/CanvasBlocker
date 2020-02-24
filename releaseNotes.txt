@@ -1,6 +1,7 @@
 Version 1.2:
 	changes:
 		- removed unnecessary activeTab permission
+		- always open options page in new tab
 	
 	new features:
 		- 
