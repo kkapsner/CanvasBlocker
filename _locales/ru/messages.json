@@ -1415,6 +1415,10 @@
 		"message": "Все функции {api} отключены, но защита включена.",
 		"description": ""
 	},
+	"sanitation_error.disabledSomeFeatures": {
+		"message": "Some features of {api} are disabled. This should only be done in testing or if you really know what the features are doing.",
+		"description": ""
+	},
 	"sanitation_resolution.disableMainFlag": {
 		"message": "отключить главный флаг",
 		"description": ""
