@@ -4,7 +4,7 @@ Version 1.2:
 		- always open options page in new tab
 	
 	new features:
-		- 
+		- added warning if some features of a API are disabled
 	
 	fixes:
 		- 

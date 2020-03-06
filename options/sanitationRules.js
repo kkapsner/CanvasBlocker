@@ -55,9 +55,12 @@
 		{
 			name: "disabledFeatures",
 			check: function(errorCallback){
-				const errorMessage = extension.getTranslation("sanitation_error.disabledFeatures");
-				function createErrorMessage(api){
-					return errorMessage.replace(/{api}/g, extension.getTranslation("section_" + api.section));
+				const allErrorMessage = extension.getTranslation("sanitation_error.disabledFeatures");
+				const someErrorMessage = extension.getTranslation("sanitation_error.disabledSomeFeatures");
+				function createErrorMessage(api, all = false){
+					return (all? allErrorMessage: someErrorMessage).replace(
+						/{api}/g,
+						extension.getTranslation("section_" + api.section));
 				}
 				const protectedFeatures = settings.getDefinition("protectedAPIFeatures");
 				const protectedFeaturesValue = protectedFeatures.get();
@@ -84,31 +87,39 @@
 					{mainFlag: "protectScreen", section: "Screen-API"},
 				].forEach(function(api){
 					if (settings.get(api.mainFlag) !== (api.mainFlagDisabledValue || false)){
-						if (getSectionKeys(api.section).every(function(key){
+						const sectionKeys = getSectionKeys(api.section);
+						if (sectionKeys.some(function(key){
 							return protectedFeaturesValue.hasOwnProperty(key) &&
 								!protectedFeaturesValue[key];
 						})){
+							const all = sectionKeys.every(function(key){
+								return protectedFeaturesValue.hasOwnProperty(key) &&
+									!protectedFeaturesValue[key];
+							});
+							const resolutions = [
+								{
+									label: extension.getTranslation("sanitation_resolution.enableFeatures"),
+									callback: function(){
+										const protectedFeaturesValue = protectedFeatures.get();
+										sectionKeys.forEach(function(key){
+											protectedFeaturesValue[key] = true;
+										});
+										protectedFeatures.set(protectedFeaturesValue);
+									}
+								},
+							];
+							if (all){
+								resolutions.push({
+									label: extension.getTranslation("sanitation_resolution.disableMainFlag"),
+									callback: function(){
+										settings.set(api.mainFlag, api.mainFlagDisabledValue || false);
+									}
+								});
+							}
 							errorCallback({
-								message: createErrorMessage(api),
-								severity: "high",
-								resolutions: [
-									{
-										label: extension.getTranslation("sanitation_resolution.enableFeatures"),
-										callback: function(){
-											const protectedFeaturesValue = protectedFeatures.get();
-											getSectionKeys(api.section).forEach(function(key){
-												protectedFeaturesValue[key] = true;
-											});
-											protectedFeatures.set(protectedFeaturesValue);
-										}
-									},
-									{
-										label: extension.getTranslation("sanitation_resolution.disableMainFlag"),
-										callback: function(){
-											settings.set(api.mainFlag, api.mainFlagDisabledValue || false);
-										}
-									},
-								]
+								message: createErrorMessage(api, all),
+								severity: all? "high": "medium",
+								resolutions
 							});
 						}
 					}
