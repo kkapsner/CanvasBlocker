@@ -1416,7 +1416,7 @@
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done in testing or if you really know what the features are doing.",
+		"message": "Einige Funktionen der {api} sind deaktiviert. Dies sollte nur zu Testzwecken passieren oder wenn Sie genau wissen, was diese Funktionen tun.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
