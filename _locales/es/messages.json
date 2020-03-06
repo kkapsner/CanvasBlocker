@@ -1415,6 +1415,10 @@
 		"message": "Todas las opciones de {api} están deshabilitadas pero la protección está habilitada.",
 		"description": ""
 	},
+	"sanitation_error.disabledSomeFeatures": {
+		"message": "Some features of {api} are disabled. This should only be done in testing or if you really know what the features are doing.",
+		"description": ""
+	},
 	"sanitation_resolution.disableMainFlag": {
 		"message": "deshabilitar la opción principal",
 		"description": ""
