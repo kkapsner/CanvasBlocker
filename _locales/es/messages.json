@@ -147,6 +147,10 @@
 		"message": "API de DOMRect",
 		"description": ""
 	},
+	"section_TextMetrics-api": {
+		"message": "TextMetrics API",
+		"description": ""
+	},
 	"section_Navigator-api": {
 		"message": "API de navigator",
 		"description": ""
@@ -265,6 +269,18 @@
 	},
 	"askForDOMRectReadoutPermission": {
 		"message": "¿Quiere permitir la lectura para la API de DOMRect?",
+		"description": ""
+	},
+	"askForTextMetricsPermission": {
+		"message": "Do you want to allow the TextMetrics API?",
+		"description": ""
+	},
+	"askForTextMetricsInputPermission": {
+		"message": "Do you want to allow TextMetrics API input?",
+		"description": ""
+	},
+	"askForTextMetricsReadoutPermission": {
+		"message": "Do you want to allow TextMetrics API readout?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -669,6 +685,10 @@
 	},
 	"fakedDOMRectReadout": {
 		"message": "Lectura de DOMRect falseada en {url}",
+		"description": ""
+	},
+	"fakedTextMetricsReadout": {
+		"message": "Faked TextMetrics readout on {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -1107,6 +1127,18 @@
 		"message": "Alguna fracción de un píxel puede ser controlada con CSS. Para prevenir la detección, los valores de un DOMRect que multiplicados por este factor sean números enteros no serán modificados.",
 		"description": ""
 	},
+	"protectTextMetrics_title": {
+		"message": "Protect TextMetrics API",
+		"description": ""
+	},
+	"protectTextMetrics_description": {
+		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"description": ""
+	},
+	"protectTextMetrics_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
 	"protectNavigator_title": {
 		"message": "Proteger la API de navigator",
 		"description": ""
@@ -1413,6 +1445,10 @@
 	},
 	"sanitation_error.disabledFeatures": {
 		"message": "Todas las opciones de {api} están deshabilitadas pero la protección está habilitada.",
+		"description": ""
+	},
+	"sanitation_error.disabledSomeFeatures": {
+		"message": "Some features of {api} are disabled. This should only be done in testing or if you really know what the features are doing.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {

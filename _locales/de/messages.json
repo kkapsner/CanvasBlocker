@@ -147,6 +147,10 @@
 		"message": "DOMRect-API",
 		"description": ""
 	},
+	"section_TextMetrics-api": {
+		"message": "TextMetrics-API",
+		"description": ""
+	},
 	"section_Navigator-api": {
 		"message": "Navigator-API",
 		"description": ""
@@ -265,6 +269,18 @@
 	},
 	"askForDOMRectReadoutPermission": {
 		"message": "Wollen Sie das Auslesen über die DOMRect-API erlauben?",
+		"description": ""
+	},
+	"askForTextMetricsPermission": {
+		"message": "Wollen Sie die TextMetrics-API erlauben?",
+		"description": ""
+	},
+	"askForTextMetricsInputPermission": {
+		"message": "Wollen Sie das Schreiben über die TextMetrics-API erlauben?",
+		"description": ""
+	},
+	"askForTextMetricsReadoutPermission": {
+		"message": "Wollen Sie das Auslesen über die TextMetrics-API erlauben?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -669,6 +685,10 @@
 	},
 	"fakedDOMRectReadout": {
 		"message": "DOMRect-Auslese vorgetäuscht auf {url}",
+		"description": ""
+	},
+	"fakedTextMetricsReadout": {
+		"message": "TextMetrics-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -1107,6 +1127,18 @@
 		"message": "Ein Bruchteil eines Pixels kann durch CSS kontrolliert werden. Eigenschaften eines DOMRect, die multipliziert mit diesem Faktor eine ganze Zahl ergeben, dürfen nicht verändert werden um eine Detektion zu verhindern.",
 		"description": ""
 	},
+	"protectTextMetrics_title": {
+		"message": "TextMetrics-API beschützen",
+		"description": ""
+	},
+	"protectTextMetrics_description": {
+		"message": "Beschützt vor dem \"measureText()\" Fingerprint. Dieser kann verwendet werden um die DOMRect-Werte zu überprüfen.",
+		"description": ""
+	},
+	"protectTextMetrics_urlSpecific": {
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
+		"description": ""
+	},
 	"protectNavigator_title": {
 		"message": "Navigator-API beschützen",
 		"description": ""
@@ -1413,6 +1445,10 @@
 	},
 	"sanitation_error.disabledFeatures": {
 		"message": "Alle Funktionen der {api} sind deaktiviert, aber der Schutz ist eingeschaltet.",
+		"description": ""
+	},
+	"sanitation_error.disabledSomeFeatures": {
+		"message": "Einige Funktionen der {api} sind deaktiviert. Dies sollte nur zu Testzwecken passieren oder wenn Sie genau wissen, was diese Funktionen tun.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
