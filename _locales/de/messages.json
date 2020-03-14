@@ -148,7 +148,7 @@
 		"description": ""
 	},
 	"section_TextMetrics-api": {
-		"message": "TextMetrics API",
+		"message": "TextMetrics-API",
 		"description": ""
 	},
 	"section_Navigator-api": {
@@ -272,15 +272,15 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "Wollen Sie die TextMetrics-API erlauben?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "Wollen Sie das Schreiben über die TextMetrics-API erlauben?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "Wollen Sie das Auslesen über die TextMetrics-API erlauben?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -688,7 +688,7 @@
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "TextMetrics-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -1128,15 +1128,15 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "TextMetrics-API beschützen",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Beschützt vor dem \"measureText()\" Fingerprint. Dieser kann verwendet werden um die DOMRect-Werte zu überprüfen.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
 	"protectNavigator_title": {
