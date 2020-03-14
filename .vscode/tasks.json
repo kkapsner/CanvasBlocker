@@ -45,7 +45,7 @@
 				"-f",
 				"nightly",
 				"--url",
-				"http://canvasblocker.local/test/"
+				"http://canvasblocker.localhost/test/"
 			],
 			"presentation": {
 				"echo": true,
@@ -70,7 +70,7 @@
 			"args": [
 				"run",
 				"--url",
-				"http://canvasblocker.local/test/"
+				"http://canvasblocker.localhost/test/"
 			],
 			"presentation": {
 				"echo": true,
@@ -97,7 +97,7 @@
 				"-f",
 				"firefox-esr",
 				"--url",
-				"http://canvasblocker.local/test/"
+				"http://canvasblocker.localhost/test/"
 			],
 			"presentation": {
 				"echo": true,
@@ -124,7 +124,7 @@
 				"-f",
 				"firefox-beta",
 				"--url",
-				"http://canvasblocker.local/test/"
+				"http://canvasblocker.localhost/test/"
 			],
 			"presentation": {
 				"echo": true,
