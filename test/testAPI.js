@@ -1,6 +1,10 @@
 const testAPI = function(){
 	"use strict";
 	
+	const digest = crypto.subtle? crypto.subtle.digest.bind(crypto.subtle, "SHA-256"): function(buffer){
+		return new Uint32Array(buffer.buffer);
+	};
+	
 	function bufferToString(hash){
 		const chunks = [];
 		(new Uint32Array(hash)).forEach(function(num){
@@ -18,7 +22,7 @@ const testAPI = function(){
 			const buffer = ((typeof input) === "string")?
 				new TextEncoder("utf-8").encode(input):
 				input;
-			const hash = await crypto.subtle.digest("SHA-256", buffer);
+			const hash = await digest(buffer);
 			return bufferToString(hash);
 		}
 	};

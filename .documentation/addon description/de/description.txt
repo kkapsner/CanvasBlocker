@@ -13,6 +13,7 @@ Beschützte "Fingerprinting"-APIs:
 		<li>history</li>
 		<li>window (standardmäßig deaktiviert)</li>
 		<li>DOMRect</li>
+		<li>TextMetrics</li>
 		<li>navigator (standardmäßig deaktiviert)</li>
 		<li>screen</li>
 	</ul>

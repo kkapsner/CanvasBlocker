@@ -620,6 +620,25 @@
 					]
 				},
 				{
+					name: "TextMetrics-API",
+					settings: [
+						{
+							"name": "protectTextMetrics"
+						},
+						{
+							"name": "protectedAPIFeatures",
+							"replaceKeyPattern": / @ .+$/,
+							"displayedSection": "TextMetrics-API",
+							"displayDependencies": [
+								{
+									"protectTextMetrics": [true],
+									"displayAdvancedSettings": [true]
+								}
+							]
+						},
+					]
+				},
+				{
 					name: "Navigator-API",
 					settings: [
 						{

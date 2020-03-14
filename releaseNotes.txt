@@ -5,6 +5,7 @@ Version 1.2:
 	
 	new features:
 		- added warning if some features of a API are disabled
+		- added TextMetrics protection
 	
 	fixes:
 		- 

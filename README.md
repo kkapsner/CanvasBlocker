@@ -15,6 +15,7 @@ Protected "fingerprinting" APIs:
  * history
  * window (disabled by default)
  * DOMRect
+ * TextMetrics
  * navigator (disabled by default)
  * screen
 

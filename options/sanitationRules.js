@@ -83,6 +83,7 @@
 					{mainFlag: "protectAudio", section: "Audio-API"},
 					{mainFlag: "protectWindow", section: "Window-API"},
 					{mainFlag: "protectDOMRect", section: "DOMRect-API"},
+					{mainFlag: "protectTextMetrics", section: "TextMetrics-API"},
 					{mainFlag: "protectNavigator", section: "Navigator-API"},
 					{mainFlag: "protectScreen", section: "Screen-API"},
 				].forEach(function(api){
