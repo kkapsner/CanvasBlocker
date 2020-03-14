@@ -147,6 +147,10 @@
 		"message": "DOMRect-API",
 		"description": ""
 	},
+	"section_TextMetrics-api": {
+		"message": "TextMetrics API",
+		"description": ""
+	},
 	"section_Navigator-api": {
 		"message": "Navigator-API",
 		"description": ""
@@ -265,6 +269,18 @@
 	},
 	"askForDOMRectReadoutPermission": {
 		"message": "Wollen Sie das Auslesen über die DOMRect-API erlauben?",
+		"description": ""
+	},
+	"askForTextMetricsPermission": {
+		"message": "Do you want to allow the TextMetrics API?",
+		"description": ""
+	},
+	"askForTextMetricsInputPermission": {
+		"message": "Do you want to allow TextMetrics API input?",
+		"description": ""
+	},
+	"askForTextMetricsReadoutPermission": {
+		"message": "Do you want to allow TextMetrics API readout?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -669,6 +685,10 @@
 	},
 	"fakedDOMRectReadout": {
 		"message": "DOMRect-Auslese vorgetäuscht auf {url}",
+		"description": ""
+	},
+	"fakedTextMetricsReadout": {
+		"message": "Faked TextMetrics readout on {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -1105,6 +1125,18 @@
 	},
 	"domRectIntegerFactor_description": {
 		"message": "Ein Bruchteil eines Pixels kann durch CSS kontrolliert werden. Eigenschaften eines DOMRect, die multipliziert mit diesem Faktor eine ganze Zahl ergeben, dürfen nicht verändert werden um eine Detektion zu verhindern.",
+		"description": ""
+	},
+	"protectTextMetrics_title": {
+		"message": "Protect TextMetrics API",
+		"description": ""
+	},
+	"protectTextMetrics_description": {
+		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"description": ""
+	},
+	"protectTextMetrics_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
 		"description": ""
 	},
 	"protectNavigator_title": {
