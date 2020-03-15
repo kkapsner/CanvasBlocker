@@ -43,6 +43,7 @@
 	
 	async function testMeasureText(){
 		const canvas = document.createElement("canvas");
+		document.body.appendChild(canvas);
 		const node = document.createElement("span");
 		document.body.appendChild(node);
 		const context = canvas.getContext("2d");
@@ -74,9 +75,12 @@
 				propertyDataIndex += 1;
 				if (textMetric.width !== domRect.width){
 					differences += 1;
+					console.log("difference at", char, "(", charCodePoint, ")", "with", font);
+					console.log(textMetric.width, "!==", domRect.width);
 				}
 			});
 		});
+		document.body.removeChild(canvas);
 		document.body.removeChild(node);
 		
 		document.querySelector("#measureText .differences").textContent =
