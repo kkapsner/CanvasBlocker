@@ -1136,7 +1136,7 @@
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы исключить определенные сайты из этой защиты, нажмите на черную стрелку, чтобы открыть меню, добавьте домен или URL, нажав на \"+\" и снимите галочку.",
 		"description": ""
 	},
 	"protectNavigator_title": {
