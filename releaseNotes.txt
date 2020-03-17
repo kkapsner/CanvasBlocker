@@ -1,3 +1,16 @@
+Version 1.3:
+	changes:
+		- 
+	
+	new features:
+		- 
+	
+	fixes:
+		- 
+	
+	known issues:
+		- if a data URL is blocked the page action button does not appear
+
 Version 1.2:
 	changes:
 		- removed unnecessary activeTab permission
@@ -6,9 +19,6 @@ Version 1.2:
 	new features:
 		- added warning if some features of a API are disabled
 		- added TextMetrics protection
-	
-	fixes:
-		- 
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
