@@ -14,12 +14,13 @@
 <body>
 <h1>TextMetrics test</h1>
 <h2>Expected result</h2>
-<ul>
+<ol>
 	<li>the hashes are different to the hashes when CanvasBlocker is disabled</li>
 	<li>the number of differences stays the same when CanvasBlocker is disabled</li>
 	<li>if "refresh" is clicked nothing must change</li>
 	<li>upon page reload the hashes change (depending on CanvasBlocker settings - e.g. not in the stealth preset)</li>
-</ul>
+	<li>Firefox 68 does only offer integer precision in TextMetrics and therefore less fingerprinting potential. CanvasBlocker only changes values if they are no integer and therefore point 1 and 4 are not true in Firefox 68.</li>
+</ol>
 <h2>Tests</h2>
 <div id="tests">
 	<div class="test" id="measureText">
