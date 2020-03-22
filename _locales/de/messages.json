@@ -1387,6 +1387,10 @@
 		"message": "Einstellungen",
 		"description": ""
 	},
+	"browserAction_faq": {
+		"message": "FAQ",
+		"description": ""
+	},
 	"browserAction_test": {
 		"message": "Testen",
 		"description": ""

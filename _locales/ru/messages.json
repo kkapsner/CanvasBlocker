@@ -1387,6 +1387,10 @@
 		"message": "Настройки",
 		"description": ""
 	},
+	"browserAction_faq": {
+		"message": "FAQ",
+		"description": ""
+	},
 	"browserAction_test": {
 		"message": "Проверка",
 		"description": ""
@@ -1448,7 +1452,7 @@
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done in testing or if you really know what the features are doing.",
+		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
