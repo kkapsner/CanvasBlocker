@@ -27,6 +27,13 @@
 				}
 			},
 			{
+				label: "faq",
+				icon: browser.extension.getURL("icons/browserAction-faq.svg"),
+				action: function(){
+					window.open("https://canvasblocker.kkapsner.de/faq/", "_blank");
+				}
+			},
+			{
 				label: "test",
 				advanced: true,
 				icon: browser.extension.getURL("icons/browserAction-test.svg"),
