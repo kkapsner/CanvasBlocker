@@ -1387,6 +1387,10 @@
 		"message": "设置",
 		"description": ""
 	},
+	"browserAction_faq": {
+		"message": "FAQ",
+		"description": ""
+	},
 	"browserAction_test": {
 		"message": "测试",
 		"description": ""
