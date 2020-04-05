@@ -20,7 +20,7 @@ Protected "fingerprinting" APIs:
  * screen
 
 More information on fingerprinting can be found at:
- * &lt;canvas&gt;: http://www.browserleaks.com/canvas
+ * &lt;canvas&gt;: https://www.browserleaks.com/canvas
  * audio:
    * https://audiofingerprint.openwpm.com/ (very poorly written = slow)
    * https://webtransparency.cs.princeton.edu/webcensus/#audio-fp
