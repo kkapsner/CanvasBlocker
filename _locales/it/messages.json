@@ -664,7 +664,7 @@
 		"description": ""
 	},
 	"blocked": {
-		"message": "API blocked on {url}.",
+		"message": "API bloccate su {url}.",
 		"description": ""
 	},
 	"fakedReadout": {
@@ -720,7 +720,7 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "file locale",
 		"description": ""
 	},
 	"ignorelistDomain": {
