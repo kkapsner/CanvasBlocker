@@ -24,7 +24,7 @@
 		"description": ""
 	},
 	"more": {
-		"message": "еще",
+		"message": "подробнее",
 		"description": ""
 	},
 	"less": {
@@ -44,7 +44,7 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Применить",
+		"message": "Сохранить",
 		"description": ""
 	},
 	"cancel": {
