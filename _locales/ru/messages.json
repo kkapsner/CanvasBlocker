@@ -16,7 +16,7 @@
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (API, белый список для {url})",
+		"message": " (API внесены в белый список для {url})",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -72,11 +72,11 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker установлен. Если вы хотите иметь доступ к этой странице в будущем, добавьте ее в закладки.",
+		"message": "CanvasBlocker установлен. Если вы хотите иметь доступ к этой странице в будущем, пожалуйста добавьте ее в закладки.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker обновлен. Если вы хотите иметь доступ к этой странице в будущем и еще не добавили ее в закладки, добавьте ее в закладки.",
+		"message": "CanvasBlocker обновлен. Если вы хотите иметь доступ к этой странице в будущем и еще не добавили ее в закладки, пожалуйста добавьте.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Настройка privacy.resistFingerprinting включена. Это немного меняет поведение CanvasBlocker. Подробнее см. {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} и {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Настройка privacy.resistFingerprinting включена. Это немного влияет на работу CanvasBlocker. Подробнее см. {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} и {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -104,7 +104,7 @@
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking (спрашивать)",
+		"message": "Запрашивать",
 		"description": ""
 	},
 	"section_faking": {
@@ -184,7 +184,7 @@
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Активируйте, чтобы отобразить скрытые настройки.",
+		"message": "Активируйте для просмотра скрытых настроек.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -312,7 +312,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "Когда в CanvasBlocker в режиме блокировать и установлено значение «запрашивать разрешение» или «запрашивать разрешение для API для чтения(readout)», сообщение подтверждения будет появляться каждый раз, когда страница пытается получить доступ к API или readout(считывание) API. Этот параметр пытается отобразить сообщение подтверждения только один раз для каждой страницы независимо от того, сколько раз страница пытается получить доступ к API. Тем не менее, несколько сообщений с подтверждением все еще могут отображаться на некоторых страницах.\n\nНет: каждый раз спрашивать\n\nИндивидуальный: каждый тип API (context(контекст), input(ввод), readout(считывание)) должен быть определен отдельно\n\n Комбинированный: все типы API будут подтверждены вместе",
+		"message": "Когда режим блокировки установлен в значение «запрашивать разрешение» или «запрашивать разрешение для API для чтения(readout)», подтверждение будет запрашиваться всякий раз, когда веб-страница пытается получить доступ к API или readout(считывание) API. Этот параметр снижает количество подтверждений для каждой страницы до одного раза независимо от того, сколько раз такая страница получает доступ к API. На некоторых страницах однако могут несколько сообщений.\n\nНет: спрашивать каждый раз\n\nИндивидуально: требовать отдельного подтверждения для каждого типа API (контекст, ввод, считывание)\n\n Комбинировать: все типы API будут подтверждены вместе",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -348,7 +348,7 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
-		"message": "Показывать содержимое canvas, для которого запрашивается разрешение, если это возможно.",
+		"message": "По возможности показывать содержимое canvas, для которого запрашивается разрешение.",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
@@ -356,11 +356,11 @@
 		"description": ""
 	},
 	"blackList_description": {
-		"message": "Домены или URL-адреса, где все API всегда должны быть заблокированы. Чтобы добавить несколько записей, разделите их запятыми.",
+		"message": "Всегда блокировать API с этих доменов и URL-адресов. Записи в списке разделяются запятой.",
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Черный список",
+		"message": "Запрещенный список",
 		"description": ""
 	},
 	"blockMode_description": {
