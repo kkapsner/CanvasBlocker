@@ -67,19 +67,48 @@ iframeAPI.forEachMethod(function(windowToUse, name){
 	processNavigatorObject(navigator, Object.keys(navigator.__proto__), name);
 });
 
-const worker = new Worker("navigatorTestWorker.js");
+function processWorkerNavigatorObject(data, name){
+	"use strict";
+	processNavigatorObject(data.values, Object.keys(data.values), name);
+	if (data.nestedValues){
+		processWorkerNavigatorObject(data.nestedValues, "nested " + name);
+	}
+}
+
+const worker = new Worker("navigatorTestWorker.js", {name: "Worker"});
 worker.addEventListener("message", function(event){
 	"use strict";
 	
-	processNavigatorObject(event.data, Object.keys(event.data), "Worker");
+	processWorkerNavigatorObject(event.data, "Worker");
 	worker.terminate();
 });
 
-const sharedWorker = new SharedWorker("navigatorTestWorker.js");
+fetch("navigatorTestWorker.js").then(function(response){
+	"use strict";
+	
+	return response.text();
+}).then(function(code){
+	"use strict";
+	
+	const blob = new Blob([code], {type: "text/javascript"});
+	const blobWorker = new Worker(URL.createObjectURL(blob), {name: "BlobWorker"});
+	blobWorker.addEventListener("message", function(event){
+		processWorkerNavigatorObject(event.data, "BlobWorker");
+		blobWorker.terminate();
+	});
+	
+	return blobWorker;
+}).catch(function(error){
+	"use strict";
+	
+	console.error("Unable to create BlobWorker:", error);
+});
+
+const sharedWorker = new SharedWorker("navigatorTestWorker.js", {name: "SharedWorker"});
 sharedWorker.port.addEventListener("message", function(event){
 	"use strict";
 	
-	processNavigatorObject(event.data, Object.keys(event.data), "SharedWorker");
+	processWorkerNavigatorObject(event.data, "SharedWorker");
 	sharedWorker.port.close();
 });
 sharedWorker.port.start();
@@ -89,7 +118,7 @@ navigator.serviceWorker.register("navigatorTestWorker.js").then(function(registr
 	
 	const worker = (registration.active || registration.waiting || registration.installing);
 	navigator.serviceWorker.addEventListener("message", function(event){
-		processNavigatorObject(event.data, Object.keys(event.data), "ServiceWorker");
+		processWorkerNavigatorObject(event.data, "ServiceWorker");
 		registration.unregister();
 	});
 	if (worker.state !== "activated"){
