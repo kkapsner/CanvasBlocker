@@ -13,6 +13,7 @@
 	
 	const container = document.getElementById("test");
 	const hashContainer = container.querySelector(".hashes");
+	const sumsContainer = container.querySelector(".sums");
 	let hashSets = Object.create(null);
 	
 	function createSet(set){
@@ -144,7 +145,7 @@
 		sumRow.appendChild(nameCell);
 		const sumCell = document.createElement("td");
 		sumRow.appendChild(sumCell);
-		container.querySelector(".sum").appendChild(sumRow);
+		sumsContainer.appendChild(sumRow);
 		
 		// Start audio processing
 		context.startRendering();
@@ -185,6 +186,7 @@
 	
 	function createAllHashData(){
 		hashContainer.innerHTML = "";
+		sumsContainer.innerHTML = "";
 		hashSets = Object.create(null);
 		createEmptyData();
 		createHashData(1e4);
