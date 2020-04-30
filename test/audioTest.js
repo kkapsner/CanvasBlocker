@@ -25,44 +25,73 @@
 			nameRow.appendChild(nameContainer);
 			nameContainer.colSpan = 2;
 			nameContainer.textContent = set;
-			hashSets[set] = setContainer;
+			hashSets[set] = {firstHash: false, failed: false, hashes: [], setContainer};
 		}
 	}
 	
 	async function displayData(data, set, title){
 		createSet(set);
-		const container = document.createElement("tr");
+		const storage = hashSets[set];
 		
-		const titleNode = document.createElement("td");
-		titleNode.textContent = title;
-		container.appendChild(titleNode);
+		function addLine(title, hash){
+			const container = document.createElement("tr");
+			
+			const titleNode = document.createElement("td");
+			titleNode.textContent = title;
+			container.appendChild(titleNode);
+			
+			const hashNode = document.createElement("td");
+			hashNode.textContent = hash;
+			container.appendChild(hashNode);
+			
+			storage.setContainer.appendChild(container);
+			return container;
+		}
+		const hash = byteArrayToHex(await crypto.subtle.digest("SHA-256", data));
+		storage.hashes.push({title, hash});
 		
-		const hashNode = document.createElement("td");
-		hashNode.textContent = "calculating hash";
-		container.appendChild(hashNode);
-		
-		hashSets[set].appendChild(container);
-		
-		const hash = await crypto.subtle.digest("SHA-256", data);
-		hashNode.textContent = byteArrayToHex(hash);
+		if (!storage.firstHash){
+			storage.firstHash = hash;
+			storage.allLine = addLine("all tests equal", hash);
+		}
+		else {
+			if (storage.failed){
+				addLine(title, hash);
+			}
+			else if (hash !== storage.firstHash){
+				storage.setContainer.removeChild(storage.allLine);
+				storage.hashes.forEach(function(hash){
+					addLine(hash.title, hash.hash);
+				});
+				storage.failed = true;
+			}
+		}
 	}
 	
-	function getAudioContext(frequency = 1e4){
+	function getAudioContext(frequency = 1e4, type = "triangle", useDelayedValues = false){
+		function set(obj, value){
+			if (useDelayedValues){
+				obj.setTargetAtTime(value, 0, 0.01);
+			}
+			else {
+				obj.value = value;
+			}
+		}
 		const context = new window.OfflineAudioContext(2, 44100, 44100);
 		
 		// Create oscillator
 		const pxi_oscillator = context.createOscillator();
-		pxi_oscillator.type = "triangle";
-		pxi_oscillator.frequency.value = frequency;
+		pxi_oscillator.type = type;
+		set(pxi_oscillator.frequency, frequency);
 
 		// Create and configure compressor
 		const pxi_compressor = context.createDynamicsCompressor();
-		pxi_compressor.threshold && (pxi_compressor.threshold.value = -50);
-		pxi_compressor.knee && (pxi_compressor.knee.value = 40);
-		pxi_compressor.ratio && (pxi_compressor.ratio.value = 12);
-		pxi_compressor.reduction && (pxi_compressor.reduction.value = -20);
-		pxi_compressor.attack && (pxi_compressor.attack.value = 0);
-		pxi_compressor.release && (pxi_compressor.release.value = .25);
+		pxi_compressor.threshold && set(pxi_compressor.threshold, -50);
+		pxi_compressor.knee && set(pxi_compressor.knee, 40);
+		pxi_compressor.ratio && set(pxi_compressor.ratio, 12);
+		pxi_compressor.reduction && set(pxi_compressor.reduction, -20);
+		pxi_compressor.attack && set(pxi_compressor.attack, 0);
+		pxi_compressor.release && set(pxi_compressor.release, .25);
 
 		// Connect nodes
 		pxi_oscillator.connect(pxi_compressor);
@@ -102,12 +131,20 @@
 		return iframeWindow;
 	}
 	
-	function createHashData(frequency = 1e4){
+	function createHashData(frequency = 1e4, type = "triangle", useDelayedValues = false){
 		
-		const context = getAudioContext(frequency);
+		const context = getAudioContext(frequency, type, useDelayedValues);
 		
-		const setName = " (" + frequency + " Hz)";
+		const setName = type + " (" + frequency + " Hz)" + (useDelayedValues? " delayed": "");
 		createSet(setName);
+		
+		const sumRow = document.createElement("tr");
+		const nameCell = document.createElement("td");
+		nameCell.textContent = setName;
+		sumRow.appendChild(nameCell);
+		const sumCell = document.createElement("td");
+		sumRow.appendChild(sumCell);
+		container.querySelector(".sum").appendChild(sumRow);
 		
 		// Start audio processing
 		context.startRendering();
@@ -138,13 +175,11 @@
 			event.renderedBuffer.copyFromChannel(copyTest2, 0);
 			displayData(copyTest2, setName, "copyFromChannel - second");
 			
-			if (frequency === 1e4){
-				let sum = 0;
-				for (let i = 4500; i < 5000; i += 1) {
-					sum += Math.abs(getTest[i]);
-				}
-				container.querySelector(".sum").textContent = sum;
+			let sum = 0;
+			for (let i = 4500; i < 5000; i += 1) {
+				sum += Math.abs(getTest[i]);
 			}
+			sumCell.textContent = sum;
 		};
 	}
 	
@@ -154,6 +189,12 @@
 		createEmptyData();
 		createHashData(1e4);
 		createHashData(2e4);
+		createHashData(1e4, "sine");
+		createHashData(2e4, "sine");
+		createHashData(1e4, undefined, true);
+		createHashData(2e4, undefined, true);
+		createHashData(1e4, "sine", true);
+		createHashData(2e4, "sine", true);
 	}
 	createAllHashData();
 	container.querySelector("button").addEventListener("click", createAllHashData);
