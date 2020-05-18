@@ -1,11 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<link href="testIcon.svg" type="image/png" rel="icon">
-<link href="testIcon.svg" type="image/png" rel="shortcut icon">
-<style>
-#inside{
+
+#iframe {
+	position: fixed;
+	top: -2000%;
+}
+#noIframe {
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -1;
+}
+#noIframe, #iframeBody {
+	margin: 0px;
+	padding: 8px;
+}
+.template {
+	display: none;
+}
+.test {
+	display: inline-block;
+	margin: 1em;
+}
+.test .data table {
+	border-collapse: collapse;
+}
+.test .data th {
+	padding: 0.4em;
+}
+.test .data td{
+	border: 1px solid #c7c7c7;
+	padding: 0.4em;
+}
+.test .data td.value {
+	text-align: right;
+}
+.small {
+	font-size: 0.8em;
+	color: gray;
+}
+.rectHash {
+	font-size: 4px;
+}
+.rectHash:hover {
+	font-size: 100%;
+}
+
+/*measured elements*/
+
+#content {
+	/* position: relative; */
+}
+
+#inside {
 	white-space: nowrap;
 
 	color:#5B5B5B;
@@ -45,24 +91,3 @@
 .testRect {
 	outline: 2px dotted lightblue;
 }
-
-</style>
-</head>
-<body>
-
-<div id="inside">
-<h1 data-name="rect 0" class="testRect">https://browserleaks.com<i>/rects</i></h1>
-<span data-name="rect 1" class="testRect"><strong>Element.getClientRects (̿▀̿&thinsp;̿Ĺ̯̿̿▀̿ ̿)̄ </strong></span><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span data-name="rect 2" class="testRect">F i n g e r p r i n t i n g ?</span>
-</div>
-<select id="select" data-name="select" class="testRect">
-	<option>&minus;&#1726;-</option>
-</select>
-<progress id="progress" data-name="progress bar" class="testRect">test</progress>
-<button id="button" data-name="empty button" class="testRect"></button>
-</body>
-</html>

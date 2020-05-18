@@ -12,11 +12,12 @@
 	
 	const container = document.getElementById("tests");
 	const iframe = document.getElementById("iframe");
+	const noIframe = document.getElementById("noIframe");
 	const template = document.querySelector(".test");
 	template.parentElement.removeChild(template);
 	
-	function getElements(){
-		const doc = iframe.contentDocument;
+	function getElements(useIframe = true){
+		const doc = useIframe? iframe.contentDocument: noIframe;
 		
 		return Array.from(doc.querySelectorAll(".testRect"));
 	}
@@ -28,8 +29,8 @@
 	}
 
 	const properties = ["x", "y", "width", "height", "top", "left", "right", "bottom"];
-	async function performTest(output, callback){
-		const rects = getElements().map(function(element){
+	async function performTest(output, callback, useIframe = true){
+		const rects = getElements(useIframe).map(function(element){
 			return {
 				name: element.dataset.name,
 				data: callback(element)
@@ -76,11 +77,11 @@
 		});
 	}
 	
-	function createTest(title, callback){
+	function createTest(title, callback, useIframe){
 		const output = template.cloneNode(true);
-		output.querySelector(".title").textContent = title;
+		output.querySelector(".title").textContent = title + (useIframe? " (iframe)": "");
 		output.querySelector(".refresh").addEventListener("click", function(){
-			performTest(output, callback);
+			performTest(output, callback, useIframe);
 		});
 		output.querySelector(".performance").addEventListener("click", function(){
 			let count = 200;
@@ -92,7 +93,7 @@
 				while (duration < 1000){
 					const start = Date.now();
 					for (; i < count; i += 1){
-						const rects = getElements().map(function(element){
+						const rects = getElements(useIframe).map(function(element){
 							return {
 								name: element.dataset.name,
 								data: callback(element)
@@ -123,24 +124,26 @@
 		}());
 		
 		container.appendChild(output);
-		performTest(output, callback);
+		performTest(output, callback, useIframe);
 	}
 	iframe.addEventListener("load", function(){
-		createTest("Element.getClientRects", function(element){
-			return element.getClientRects()[0];
-		});
-		createTest("Element.getBoundingClientRect", function(element){
-			return element.getBoundingClientRect();
-		});
-		createTest("Range.getClientRects", function(element){
-			const range = document.createRange();
-			range.selectNode(element);
-			return range.getClientRects()[0];
-		});
-		createTest("Range.getBoundingClientRect", function(element){
-			const range = document.createRange();
-			range.selectNode(element);
-			return range.getBoundingClientRect();
+		[true, false].forEach(function(useIframe){
+			createTest("Element.getClientRects", function(element){
+				return element.getClientRects()[0];
+			}, useIframe);
+			createTest("Element.getBoundingClientRect", function(element){
+				return element.getBoundingClientRect();
+			}, useIframe);
+			createTest("Range.getClientRects", function(element){
+				const range = document.createRange();
+				range.selectNode(element);
+				return range.getClientRects()[0];
+			}, useIframe);
+			createTest("Range.getBoundingClientRect", function(element){
+				const range = document.createRange();
+				range.selectNode(element);
+				return range.getBoundingClientRect();
+			}, useIframe);
 		});
 	});
 }());
