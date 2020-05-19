@@ -2,8 +2,8 @@ const canvasAPI = {
 	draw: function draw(canvas){
 		"use strict";
 		
-		canvas.setAttribute("width", 220);
-		canvas.setAttribute("height", 30);
+		canvas.width = 220;
+		canvas.height = 30;
 		
 		const fingerprintText = "BrowserLeaks,com <canvas> 10";
 		

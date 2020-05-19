@@ -8,12 +8,14 @@
 		display.title = url;
 		const hashes = await Promise.all([
 			testAPI.hash(url),
-			testAPI.hash(imageData.data)
+			imageData? testAPI.hash(imageData.data): ""
 		]);
 		container.querySelector(".hash").textContent =
 			hashes[0] + " / " +
 			hashes[1];
-		container.querySelector(".isPointInPath").textContent = isPointInPath;
+		if (typeof isPointInPath === "boolean"){
+			container.querySelector(".isPointInPath").textContent = isPointInPath;
+		}
 	}
 	
 	function iframeTest(testNode){
@@ -51,15 +53,47 @@
 				newWindow.close();
 				return fingerprint;
 			}
-		}
+		},
+		blob: async function(testNode){
+			const canvas = document.createElement("canvas");
+			canvasAPI.draw(canvas);
+			return new Promise(function(resolve, reject){
+				canvas.toBlob(async function(blob){
+					resolve({url: await testAPI.readBlob(blob)});
+				});
+			});
+		},
+		offscreen: async function(testNode){
+			if (typeof OffscreenCanvas === "undefined"){
+				throw "not supported";
+			}
+			return offscreenTest();
+		},
+		offscreenWorker: async function(testNode){
+			if (
+				typeof OffscreenCanvas === "undefined" ||
+				typeof Worker === "undefined"
+			){
+				throw "not supported";
+			}
+			const canvasAPIUrl = new URL("./canvasAPI.js", location);
+			const testAPIUrl = new URL("./testAPI.js", location);
+			return testAPI.runInWorker(offscreenTest, [], [canvasAPIUrl, testAPIUrl]);
+		},
 	};
 	
 	Object.keys(tests).forEach(async function(testName){
 		const testNode = document.getElementById(testName);
 		const callback = tests[testName];
 		if (location.search !== "?notInitial"){
-			try {show(testNode, await callback(testNode, true));}
-			catch (error){console.error(testName, error);}
+			try {
+				show(testNode, await callback(testNode, true));
+			}
+			catch (error){
+				testNode.querySelector(".hash").innerHTML =
+					"<i>Error while computing: " + (error.message || error) + "</i>";
+				console.error(testName, error);
+			}
 		}
 		testNode.querySelector("button").addEventListener("click", async function(){
 			show(testNode, await callback(testNode));
@@ -99,4 +133,16 @@ function dynamicIframeTest3(){
 	const iframeWindow = window[length];
 	document.body.removeChild(div);
 	return canvasAPI.fingerprint(iframeWindow);
+}
+
+async function offscreenTest(){
+	"use strict";
+	
+	const offscreenCanvas = new OffscreenCanvas(220, 30);
+	canvasAPI.draw(offscreenCanvas);
+	const blob = offscreenCanvas.convertToBlob?
+		await offscreenCanvas.convertToBlob():
+		await offscreenCanvas.toBlob();
+	
+	return {url: await testAPI.readBlob(blob)};
 }
