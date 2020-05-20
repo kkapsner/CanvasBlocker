@@ -5,6 +5,11 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<style>
+		th {
+			text-align: right;
+		}
+	</style>
 </head>
 <body>
 <h1>webGL test</h1>
@@ -12,12 +17,16 @@
 <ul>
 	<li>both webGL versions should be supported (unless you disabled it in the browser settings) - reload if one is showing "not supported"</li>
 	<li>upon page reload the hashes change (depending on CanvasBlocker settings - e.g. not in the stealth preset)</li>
+	<li>all the image hashes should be the same (offscreen workers are not yet protected by CanvasBlocker)</li>
 	<li>upon page reload some of the parameters  (depending on CanvasBlocker settings - e.g. not in the stealth preset)</li>
 	<li>the "vendor" und "renderer" (also unmasked) parameters reflect the values you chose for them</li>
 </ul>
 <h3>Support</h3>
 <div id="output"></div>
+<h3>Hashes</h3>
+<div id="hashes"></div>
 <h3>Parameters</h3>
 <div id="parameters"></div>
+<script src="testAPI.js"></script>
 <script src="webGL-Test.js"></script>
 </body></html>
