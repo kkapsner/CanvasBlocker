@@ -1,6 +1,6 @@
 Version 1.3:
 	changes:
-		- 
+		- added canvas cache to isPointInPath and isPointInStroke
 	
 	new features:
 		- added link to FAQ
