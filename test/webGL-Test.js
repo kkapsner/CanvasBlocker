@@ -157,6 +157,8 @@
 		}
 	}
 	
+	const drawImage = location.search !== "?noDraw";
+	
 	async function createImageHash(context, hashTable){
 		return Promise.all([function(){
 			const canvas = document.createElement("canvas");
@@ -173,10 +175,12 @@
 			if (canvas){
 				const hashCell = createHashRow(hashTable, "image" + (canvas.toDataURL? "": " (offscreen)"));
 				try {
-					const gl = canvas.getContext(context) || canvas.getContext("experimental-" + context);
-					fillWebGlContext(gl);
+					if (drawImage){
+						const gl = canvas.getContext(context) || canvas.getContext("experimental-" + context);
+						fillWebGlContext(gl);
+					}
 					if (canvas.convertToBlob || canvas.toBlob){
-						const blob = await (canvas.convertToBlob?  canvas.convertToBlob(): (canvas.toBlob.length?
+						const blob = await (canvas.convertToBlob? canvas.convertToBlob(): (canvas.toBlob.length?
 							new Promise(function(resolve){canvas.toBlob(resolve);}):
 							canvas.toBlob()
 						));
@@ -195,10 +199,12 @@
 		if (window.Worker && window.OffscreenCanvas){
 			const hashCell = createHashRow(hashTable, "image (offscreen worker)");
 			const url = new URL("./testAPI.js", location);
-			hashCell.textContent = await testAPI.runInWorker(async function getHash(contextType){
+			hashCell.textContent = await testAPI.runInWorker(async function getHash(contextType, drawImage){
 				const canvas = new OffscreenCanvas(300, 150);
-				const context = canvas.getContext(contextType);
-				fillWebGlContext(context);
+				if (drawImage){
+					const context = canvas.getContext(contextType);
+					fillWebGlContext(context);
+				}
 				return await testAPI.hash(
 					await testAPI.readBlob(
 						canvas.convertToBlob?
@@ -206,7 +212,7 @@
 							await canvas.toBlob()
 					)
 				);
-			}, [context], [url, fillWebGlContext]);
+			}, [context, drawImage], [url, fillWebGlContext]);
 		}
 	}
 	
