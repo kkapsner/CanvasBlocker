@@ -16,7 +16,7 @@
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (API, белый список для {url})",
+		"message": " (API внесены в белый список для {url})",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -24,7 +24,7 @@
 		"description": ""
 	},
 	"more": {
-		"message": "еще",
+		"message": "подробнее",
 		"description": ""
 	},
 	"less": {
@@ -32,7 +32,7 @@
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Подождите...",
+		"message": "Пожалуйста, подождите...",
 		"description": ""
 	},
 	"search": {
@@ -72,11 +72,11 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker установлен. Если вы хотите иметь доступ к этой странице в будущем, добавьте ее в закладки.",
+		"message": "CanvasBlocker установлен. Если вы хотите иметь доступ к этой странице в будущем, пожалуйста добавьте ее в закладки.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker обновлен. Если вы хотите иметь доступ к этой странице в будущем и еще не добавили ее в закладки, добавьте ее в закладки.",
+		"message": "CanvasBlocker обновлен. Если вы хотите иметь доступ к этой странице в будущем и еще не добавили ее в закладки, пожалуйста добавьте.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Настройка privacy.resistFingerprinting включена. Это немного меняет поведение CanvasBlocker. Подробнее см. {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} и {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Настройка privacy.resistFingerprinting включена. Это немного влияет на работу CanvasBlocker. Подробнее см. {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} и {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -104,7 +104,7 @@
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking (спрашивать)",
+		"message": "Запрашивать",
 		"description": ""
 	},
 	"section_faking": {
@@ -184,7 +184,7 @@
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Активируйте, чтобы отобразить скрытые настройки.",
+		"message": "Активируйте для просмотра скрытых настроек.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -216,7 +216,7 @@
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Вы хотите разрешить input(запись) красной рамки для <canvas>?",
+		"message": "Вы хотите разрешить input(ввод) красной рамки для <canvas>?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
@@ -228,7 +228,7 @@
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Вы хотите разрешить audio API input(ввод)?",
+		"message": "Вы хотите разрешить audio API input(вход)?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
@@ -236,7 +236,7 @@
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Вы хотите разрешить the history API?",
+		"message": "Вы хотите разрешить API истории?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
@@ -260,7 +260,7 @@
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Вы хотите разрешить the DOMRect API?",
+		"message": "Вы хотите разрешить DOMRect API?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
@@ -272,15 +272,15 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "Вы хотите разрешить TextMetrics API?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "Вы хотите разрешить TextMetrics API (ввод)?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "Вы хотите разрешить считывание TextMetrics API?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -312,7 +312,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "Когда в CanvasBlocker в режиме блокировать и установлено значение «запрашивать разрешение» или «запрашивать разрешение для API для чтения(readout)», сообщение подтверждения будет появляться каждый раз, когда страница пытается получить доступ к API или readout(считывание) API. Этот параметр пытается отобразить сообщение подтверждения только один раз для каждой страницы независимо от того, сколько раз страница пытается получить доступ к API. Тем не менее, несколько сообщений с подтверждением все еще могут отображаться на некоторых страницах.\n\nНет: каждый раз спрашивать\n\nИндивидуальный: каждый тип API (context(контекст), input(ввод), readout(считывание)) должен быть определен отдельно\n\n Комбинированный: все типы API будут подтверждены вместе",
+		"message": "Когда режим блокировки установлен в значение «запрашивать разрешение» или «запрашивать разрешение для API для чтения(readout)», подтверждение будет запрашиваться всякий раз, когда веб-страница пытается получить доступ к API или readout(считывание) API. Этот параметр снижает количество подтверждений для каждой страницы до одного раза независимо от того, сколько раз такая страница получает доступ к API. На некоторых страницах однако могут несколько сообщений.\n\nНет: спрашивать каждый раз\n\nИндивидуально: требовать отдельного подтверждения для каждого типа API (контекст, ввод, считывание)\n\n Комбинировать: все типы API будут подтверждены вместе",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -348,7 +348,7 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
-		"message": "Показывать содержимое canvas, для которого запрашивается разрешение, если это возможно.",
+		"message": "По возможности показывать содержимое canvas, для которого запрашивается разрешение.",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
@@ -356,11 +356,11 @@
 		"description": ""
 	},
 	"blackList_description": {
-		"message": "Домены или URL-адреса, где все API всегда должны быть заблокированы. Чтобы добавить несколько записей, разделите их запятыми.",
+		"message": "Всегда блокировать API с этих доменов и URL-адресов. Записи в списке разделяются запятой.",
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Черный список",
+		"message": "Запрещенный список",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -428,7 +428,7 @@
 		"description": ""
 	},
 	"urlSettings_title": {
-		"message": "Сайты с конкретными значениями",
+		"message": "Значения для конкретного сайта",
 		"description": ""
 	},
 	"urlSettings_description": {
@@ -448,7 +448,7 @@
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "<canvas> с большей площадью, чем это число не будут подделаны. (Введите ноль, чтобы отключить.) Это параметр для производительности, который может предотвратить зависания браузера и должен быть настроен на вычислительную мощность устройства.\nВНИМАНИЕ: это снижает безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение ниже 1 000 000.",
+		"message": "<canvas> с большей площадью, чем это число не будут подделаны. (Введите ноль, чтобы отключить.) Этот параметр для производительности, который может предотвратить зависания браузера и должен быть настроен на вычислительную мощность устройства.\nВНИМАНИЕ: это снижает безопасность дополнения, поэтому настоятельно рекомендуется не устанавливать это значение ниже 1 000 000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
@@ -456,7 +456,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "отсутствут (полностью белый): возвращается полностью белое изображение. При этом должна быть активирована опция \"подделать альфа-канал\". ВНИМАНИЕ: не используйте это с режимом \"подделать для input(ввод)\".\n\nнепостоянный: случайные значения будут определяться заново для каждого действия подделки.\n\nконстантный: в пределах одной веб-страницы цвет всегда будет подделан на тот же цвет.\n\nпостоянный: случайное число будет определено только один раз для каждого домена.",
+		"message": "отсутствут (полностью белый): возвращается полностью белое изображение. При этом должна быть активирована опция \"подделать альфа-канал\". ВНИМАНИЕ: не используйте это с режимом \"подделать для input(ввод)\".\n\nне постоянный: случайные числа будут определяться по-новому для каждого действия фальсификации.\n\nконстантный: в пределах одной веб-страницы цвет всегда будет подделываться под один и тот же.\n\nпостоянный: случайное число будет определено только один раз для каждого домена.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -480,7 +480,7 @@
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Постоянное хранение",
+		"message": "Постоянное хранилище",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
@@ -492,11 +492,11 @@
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "Сохранять данные для постоянного генератора случайных чисел. В противном случае он сбрасываются при завершении работы браузера.",
+		"message": "Сохранять данные для постоянного генератора случайных чисел. В противном случае они сбрасываются при завершении работы браузера.",
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
-		"message": "Интервал отчистки постоянных данных",
+		"message": "Интервал очистки постоянных данных",
 		"description": ""
 	},
 	"persistentRndClearInterval_description": {
@@ -524,7 +524,7 @@
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "месяцы",
+		"message": "месяцев",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
@@ -552,7 +552,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Случайные данные общие для всех доменов",
+		"message": "Распределение постоянной случайности между доменами",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
@@ -688,7 +688,7 @@
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "Фальшивое считывание TextMetrics на {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -924,7 +924,7 @@
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "inspect whitelist",
+		"message": "проверить белый список",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -1128,11 +1128,11 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "Защита API TextMetrics",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Это защищает от считывания отпечатка \"measureText()\", который может быть использован для перекрестной проверки значений DOMRect.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
@@ -1168,35 +1168,35 @@
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "On this page you can set the navigator settings. If using a preset you should always use an operating system and browser preset. After selecting these you can still make modifications.",
+		"message": "На этой странице можно настроить параметры навигатора. При использовании предустановок всегда следует использовать предустановки операционной системы и браузера. После их выбора Вы все еще можете вносить изменения.",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
-		"message": "CAUTION: the actual browser in use cannot be faked entirely as there is a multitude of ways to detect it. E.g. feature tests and browser specific rendering of HTML elements will always leak.",
+		"message": "ВНИМАНИЕ: используемый браузер не может быть полностью подделан, так как существует множество способов его обнаружения. Например, функциональные тесты и рендеринг HTML-элементов, специфичный для браузера, всегда будут утечки.",
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
-		"message": "Settings for the container {select} are shown.",
+		"message": "Показаны настройки контейнера {select}.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "Operating system presets",
+		"message": "Предустановки операционной системы",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Browser presets",
+		"message": "Предустановки браузера",
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Navigator values",
+		"message": "Значения навигатора",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "Сброс",
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "Защитить API экрана",
 		"description": ""
 	},
 	"protectScreen_description": {
@@ -1220,15 +1220,15 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
-		"message": "Fake minimal screen size",
+		"message": "Поддельный минимальный размер экрана",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
-		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"message": "Минимальный размер экрана из следующего набора, который может соответствовать размерам внутреннего окна. Размеры экрана: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы исключить конкретные веб-сайты из числа подделываемых, нажмите на черную стрелку, чтобы открыть меню, добавить домен или URL-адрес, нажав на кнопку \"+\" и убрать галочку.",
 		"description": ""
 	},
 	"theme_title": {
@@ -1236,7 +1236,7 @@
 		"description": ""
 	},
 	"theme_description": {
-		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"message": "Автоматически тема переключается на темную, если система использует темную тему (требуется Firefox >= 67)",
 		"description": ""
 	},
 	"theme_options.auto": {
@@ -1348,7 +1348,7 @@
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "Откроется страница предварительной настройки, которая была показана при установке. Заготовки представляют собой наборы значений настроек для некоторых распространенных случаев использования CanvasBlocker.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
@@ -1388,7 +1388,7 @@
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "ЧАВО",
 		"description": ""
 	},
 	"browserAction_test": {
@@ -1436,7 +1436,7 @@
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
-		"message": "Privacy",
+		"message": "Политика конфиденциальности",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
@@ -1444,7 +1444,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
-		"message": "remove URL value",
+		"message": "удалить URL значение",
 		"description": ""
 	},
 	"sanitation_error.disabledFeatures": {
@@ -1452,7 +1452,7 @@
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
+		"message": "Некоторые функции {api} отключены. Это должно быть сделано только для тестирования или если вы действительно знаете, что делаете.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
@@ -1468,7 +1468,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToFake": {
-		"message": "switch to \"fake\"",
+		"message": "переключиться на \"fake\"",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
@@ -1484,7 +1484,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
-		"message": "switch to protect readout",
+		"message": "переключатель для защиты считывания",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
@@ -1492,11 +1492,11 @@
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
-		"message": "Do not use protect \"{protectedCanvasPart}\" in blocking mode \"{blockMode}\".",
+		"message": "Не используйте защиту \"{protectedCanvasPart}\" в режиме блокировки \"{blockMode}\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectInput": {
-		"message": "switch to protect input",
+		"message": "переключатель для защиты ввода",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
@@ -1520,75 +1520,75 @@
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"message": "Не распространяйте постоянную случайность между доменами, потому что это делает браузер на 100% отслеживаемым.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
-		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"message": "Не используйте пользовательский размер экрана, так как это делает браузер более отслеживаемым.",
 		"description": ""
 	},
 	"whitelist_inspection_title": {
-		"message": "CanvasBlocker whitelist inspection",
+		"message": "Проверка белого списка CanvasBlocker",
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "Все API",
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "Преднастройки",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "Пресеты CanvasBlocker",
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg}Спасибо за установку CanvasBlocker. Чтобы настроить его в соответствии с вашими потребностями, вы можете применить некоторые пресеты. Для дальнейшей настройки вы можете открыть {link:options:options.html} страницу. Так же вы можете открыть эту страницу позже.",
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Это некоторые пресеты, которые соответствуют потребностям разных людей. Значения в скобках являются текущим состоянием настройки. Вы можете применять несколько пресетов друг за другом, но некоторые настройки могут быть перезаписаны позднее.",
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "Стандартные параметры",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "Никаких специальных настроек не применяется.",
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Удобные настройки",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Примените некоторые настройки, чтобы сделать работу браузера максимально удобной. Это включает в себя белый список некоторых сайтов.",
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "Настройки скрытности",
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "Настраивает CanvasBlocker так, чтобы его было трудно обнаружить. Это может привести к высокой загрузке процессора и замедлению работы браузера.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "Максимальная защита",
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Максимизирует защиту от снятия отпечатков. Эти настройки сломают некоторые веб-страницы, могут немного замедлить работу браузера и могут позволить сайтам обнаружить, что используется CanvasBlocker. После применения этой предустановки следует подумать о применении также и предустановки reCAPTCHA.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "Исключение reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "Защита window API нарушает reCAPTCHA. Вы хотите добавить исключение для него.",
 		"description": ""
 	}
 }

@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "改变一些 JS API 来预防指纹跟踪。",
+		"message": "改变某些 JavaScript API 来阻止跟踪。",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -56,7 +56,7 @@
 		"description": ""
 	},
 	"readout": {
-		"message": "读数",
+		"message": "读取",
 		"description": ""
 	},
 	"options": {
@@ -68,7 +68,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "此页面提供选项来更改 CanvasBlocker 扩展的设置。",
+		"message": "在此页面上，您可以调整CanvasBlocker的设置。",
 		"description": ""
 	},
 	"installNotice": {
@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "您启用了 privacy.resistFingerprinting。这明显改变了 CanvasBlocker 的行为。更多信息请参阅 {link:https://github.com/kkapsner/CanvasBlocker/issues/158} 和 {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}。",
+		"message": "您启用了 privacy.resistFingerprinting，这明显改变了 CanvasBlocker 的行为。更多信息请参阅 {link:https://github.com/kkapsner/CanvasBlocker/issues/158} 和 {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}。",
 		"description": ""
 	},
 	"openInTab": {
@@ -196,7 +196,7 @@
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "是否允许不可见的 <canvas> 读数？",
+		"message": "是否允许不可见的 <canvas> 读取？",
 		"description": ""
 	},
 	"askForPermission": {
@@ -208,7 +208,7 @@
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "是否允许 <canvas> 读数？",
+		"message": "是否允许 <canvas> 读取？",
 		"description": ""
 	},
 	"askForVisiblePermission": {
@@ -216,11 +216,11 @@
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "是否允许输入红边框的 <canvas>?",
+		"message": "是否允许红边框的 <canvas> 输入?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "是否允许红边框的 <canvas> 读数?",
+		"message": "是否允许红边框的 <canvas> 读取?",
 		"description": ""
 	},
 	"askForAudioPermission": {
@@ -232,7 +232,7 @@
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "是否允许音频 API 读数？",
+		"message": "是否允许音频 API 读取？",
 		"description": ""
 	},
 	"askForHistoryPermission": {
@@ -244,7 +244,7 @@
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "是否允许历史 API 读数？",
+		"message": "是否允许历史 API 读取？",
 		"description": ""
 	},
 	"askForWindowPermission": {
@@ -256,7 +256,7 @@
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "是否允许 window API 读数？",
+		"message": "是否允许 window API 读取？",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
@@ -268,19 +268,19 @@
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "是否允许 DOMRect API 读数？",
+		"message": "是否允许 window API 读取？",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "是否允许 TextMetrics API？",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "是否允许 TextMetrics API 输入？",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "是否允许 TextMetrics API 读取？",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -292,11 +292,11 @@
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "是否允许 Navigator API 读数？",
+		"message": "是否允许 Navigator API 读取？",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "您想要放行Screen API吗？",
+		"message": "您想要允许 Screen API 吗？",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
@@ -304,7 +304,7 @@
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "是否允许 Screen API 读数？",
+		"message": "是否允许 Screen API 读取？",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -312,7 +312,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "当 Canvas Blocker 的阻止模式设为“询问权限”或“询问读数 API 权限”时，每次页面尝试访问有关 API 或取出 API 时将出现一个对话框。此设置是为了尽量只对每个页面的若干次尝试只显示一个对话框。不过，在某些页面上，本扩展仍可能显示多条确认信息。\n否：询问每个尝试\n分别：每种 API 尝试（上下文、输入、取数）分别确认\n组合：一次确认所有种类的 API",
+		"message": "当 Canvas Blocker 的阻止模式设为“询问权限”或“询问读取 API 权限”时，每次页面尝试访问有关 API 或读取 API 时将出现一个对话框。此设置是为了当每个页面进行若干次尝试时尽量只显示一个对话框。不过，在某些页面上，本扩展仍可能显示多条确认信息。\n否：询问每个尝试\n分别：每种 API 尝试（上下文、输入、取取）分别确认\n全部：一次确认所有种类的 API",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -324,7 +324,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "组合",
+		"message": "全部",
 		"description": ""
 	},
 	"askDenyMode_title": {
@@ -348,7 +348,7 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
-		"message": "询问权限时尽可能显示 Canvas 的内容。",
+		"message": "尽可能显示被请求权限的 Canvas 内容。",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
@@ -380,7 +380,7 @@
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "询问权限",
+		"message": "请求权限",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
@@ -404,7 +404,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "无保护：不保护任何 Canvas API。\n读保护：保护 Canvas API 当中的读数功能。\n写保护：保护 Canvas API 当中的输入功能。当拦截模式为”伪造“时，展示文本时绘制的像素会有轻微调整。这使得 CanvasBlocker 检测更难但是同时降低安全性。WebGL 当中读写等效。\n全保护：同时保护 Canvas API 当中的读取与输入功能。由于会增加被检测到的概率，因此不建议与同时使用”伪造“模式。",
+		"message": "无保护：不保护任何 Canvas API。\n读保护：保护 Canvas API 当中的读取功能。\n写保护：保护 Canvas API 当中的输入功能。当拦截模式为”伪造“时，展示文本时绘制的像素会有轻微调整。这使得 CanvasBlocker 更难被检测但是同时降低安全性。WebGL 当中读写等效。\n全保护：同时保护 Canvas API 当中的读取与输入功能。由于会增加被检测到的概率，因此不建议与”伪造“模式同时使用。",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
@@ -420,7 +420,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "读数",
+		"message": "读取",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
@@ -456,7 +456,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "无（全白）：返回一个完全是白色的图像。使用此选项时，“伪造 alpha 通道”选项应该激活配合。注意：使用“输入时伪造”模式时不应使用。\n非持久化：每个伪造行动都确定新的随机数。\n不变：同一个网页中，一个颜色总被伪造成另一个相同的颜色。\n持久化：对每个域名只确定一次随机数。",
+		"message": "无（全白）：返回一个完全是白色的图像。使用此选项时，也应激活“伪造 alpha 通道”选项。注意：使用“输入时伪造”模式时不应使用此选项。\n非持久化：每个伪造行为都确定新的随机数。\n不变：同一个网页中，一个颜色总被伪造成另一个相同的颜色。\n持久化：对每个域名只确定一次随机数。",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -492,7 +492,7 @@
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "如果没有存储随机数生成器的持久化数据，相应数据在浏览器关闭时丢弃。",
+		"message": "如果没有存储随机数生成器的持久化数据，相应数据在浏览器关闭时被丢弃。",
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
@@ -588,7 +588,7 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "WebGL 渲染器厂商",
+		"message": "WebGL 渲染器提供商",
 		"description": ""
 	},
 	"webGLVendor_description": {
@@ -604,7 +604,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "WebGL 中未隐藏的渲染器厂商",
+		"message": "WebGL 中未隐藏的渲染器提供商",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
@@ -612,7 +612,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "WebGL 中未隐藏的渲染器厂商",
+		"message": "已报告的 WebGL 中未隐藏的渲染器提供商",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
@@ -624,7 +624,7 @@
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "启用 Canvas 缓存。这可以预防检测，并在小画布（Canvas）被数次读取时增加性能，但对于大画布则降低性能。",
+		"message": "启用 Canvas 缓存。这可以预防检测，并在小画布（Canvas）被多次读取时增加性能，但对于大画布则降低性能。",
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
@@ -672,7 +672,7 @@
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "{url} 上的音频取数已伪造",
+		"message": "{url} 上的音频读数已伪造",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
@@ -688,7 +688,7 @@
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "{url} 上的 TextMetrics 读数已伪造",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -716,7 +716,7 @@
 		"description": ""
 	},
 	"ignoredAPIs_description": {
-		"message": "没有用于所选 API 的提示。",
+		"message": "没有用于所选 API 的通知。",
 		"description": ""
 	},
 	"localFile": {
@@ -812,7 +812,7 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "当某些东西被屏蔽或伪造时，在地址栏中显示通知图标。",
+		"message": "当进行屏蔽或伪造时，在地址栏中显示通知图标。",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
@@ -900,7 +900,7 @@
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "应该阻止使用 <canvas> API 的域名或 URL。多项请使用英文逗号分隔。",
+		"message": "允许调用所有 API 的域名或 URL。多项请使用英文逗号分隔。",
 		"description": ""
 	},
 	"whitelist": {
@@ -932,15 +932,15 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "本次会话期间拦截 <canvas> API 使用的域名或 URL。多项请使用英文逗号分隔。",
+		"message": "本次会话期间允许调用所有 API 的域名或 URL。多项请使用英文逗号分隔。",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "临时白名单域名",
+		"message": "临时域名白名单",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "临时白名单 URL",
+		"message": "临时 URL 白名单",
 		"description": ""
 	},
 	"storeNotificationData_title": {
@@ -964,7 +964,7 @@
 		"description": ""
 	},
 	"protectAudio_description": {
-		"message": "如果同时音频API",
+		"message": "如果音频 API 也要保护",
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
@@ -1048,7 +1048,7 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "有些网页音频指纹脚本编写不良，导致拖慢 Firefox。如需针对特定网站禁用缓存，请点击黑箭头打开菜单， 点击“+”添加域名或URL并删除其复选标记。",
+		"message": "有些网页音频指纹脚本编写不良，导致拖慢 Firefox。如需针对特定网站禁用缓存，请点击黑箭头打开菜单， 点击“+”添加域名或URL并取消勾选。",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
@@ -1072,7 +1072,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "报告给网站的历史长度最大值。",
+		"message": "报告给网站的历史记录最大值。",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
@@ -1084,7 +1084,7 @@
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "window.opener 和 window.name 将被保护。这会保护某些无用的网页。",
+		"message": "window.opener 和 window.name 将受到保护。这可能会使一些网页无法使用。",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
@@ -1092,7 +1092,7 @@
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "保护窗口 API 妨碍 reCAPTCHA。您是否添加例外？",
+		"message": "保护窗口 API 将妨碍 reCAPTCHA。您是否添加例外？",
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
@@ -1100,7 +1100,7 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
-		"message": "在嵌入网页的上下文当中，window.name API 并不是那么危险的，并且使用目的也是正当的（比如 reCAPTCHA）。以下设置会允许这些用例。",
+		"message": "在嵌入网页的上下文当中，window.name API 并不是那么危险的，并且使用目的也是正当的（比如 reCAPTCHA）。以下设置会允许这些使用。",
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
@@ -1112,7 +1112,7 @@
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "这一保护反对 \"getClientRects()\" 指纹和一些类似的方法。",
+		"message": "这会阻止 “getClientRects()” 指纹和几种类似的方法。",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
@@ -1128,15 +1128,15 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "保护 TextMetrics API",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "这保护了可用于验证 DOMRect 值的 “measureText()” 指纹。",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "如需排除特定网站，请点击黑箭头打开菜单， 点击 + 添加域名或 URL 并取消勾选。",
 		"description": ""
 	},
 	"protectNavigator_title": {
@@ -1168,7 +1168,7 @@
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "在本页你可以设置 Navigator 选项。若使用预置，你应该始终使用系统和浏览器预置。选择这些以后你仍可以做出修改。",
+		"message": "在本页你可以设置 Navigator 选项。若使用预设，你应该始终使用系统和浏览器预设。选择这些以后你仍可以做出修改。",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
@@ -1180,11 +1180,11 @@
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "操作系统预置",
+		"message": "操作系统预设",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "浏览器预置",
+		"message": "浏览器预设",
 		"description": ""
 	},
 	"navigatorSettings_values": {
@@ -1228,7 +1228,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "如需排除特定网站，请点击黑箭头打开菜单， 点击 + 添加域名或 URL 并删除其复选标记。",
+		"message": "如需排除特定网站，请点击黑箭头打开菜单， 点击 + 添加域名或 URL 并取消勾选。",
 		"description": ""
 	},
 	"theme_title": {
@@ -1292,7 +1292,7 @@
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "此参数控制日志记录的详细程度。",
+		"message": "详细记录插件活动有助于找到错误的原因。这个参数控制记录的详细程度。\n\n日志可以在浏览器控制台(Ctrl+Shift+J) 和 Web 控制台(Ctrl+Shift+K) 中查看。",
 		"description": ""
 	},
 	"logLevel_options.0": {
@@ -1348,7 +1348,7 @@
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "这将打开安装时显示的预设页面。预设是 CanvasBlocker 设置的组合，用于一些通用情况。",
+		"message": "这将打开安装时显示的预设页面。预设是 CanvasBlocker 设置的组合，用于一些常见情况。",
 		"description": ""
 	},
 	"openSettingPresets_label": {
@@ -1408,7 +1408,7 @@
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "本页面帮助查找 CanvasBlocker 中的错误配置。同时对并不理想的设置给出建议。但是不建议盲目修正所有建议。",
+		"message": "本页面帮助查找 CanvasBlocker 中的错误配置，并同时对并不理想的设置给出建议。但是不建议盲目修正所有建议。",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
@@ -1452,7 +1452,7 @@
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
+		"message": "{api} 的一些特性被禁用。仅用于测试，或者您真的知道这些特性的用途。",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
@@ -1484,11 +1484,11 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
-		"message": "切换到读数保护",
+		"message": "切换到读取保护",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "切换到“非持久化”rng",
+		"message": "切换到“非持久化”随机数生成器",
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
@@ -1516,11 +1516,11 @@
 		"description": ""
 	},
 	"sanitation_error.storeImage": {
-		"message": "为检查存储图像产生大量的 RAM 足迹。",
+		"message": "存储要检查的图像产生大量的 RAM 指纹。",
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "不要在域名间共享持久的随机性，因为这导致浏览器 100% 可以被追踪。",
+		"message": "不要在域名间共享持久的随机性，因为这将导致浏览器 100% 可以被追踪。",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
@@ -1564,7 +1564,7 @@
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "以下设置会使浏览体验更加便捷。这会添加一些网站到白名单",
+		"message": "以下设置会使浏览体验更加便捷。这会添加一些网站到白名单。",
 		"description": ""
 	},
 	"preset_stealth_title": {

@@ -312,7 +312,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
+		"message": "Når blokkeringsmodusen i CanvasBlocker er satt til \"spør\" eller \"spør for readout API\", vil en dialogboks bli vist hver gang en nettside forsøker å bruke APIen eller readout API. Denne instillingen forsøker å kun vise dialogboksen én gang for hver nettside, uavhengig av hvor mange ganger siden forsøker å bruke APIen. Likevel kan det hende at flere dialogbokser blir vist på enkelte nettsider.\n\nNei: spør hver gang\n\nIndividuelt: hver API-type (context, input, readout) må bli akseptert enkeltvis\n\nKombinert: alle API-typer blir akseptert samtidig",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
