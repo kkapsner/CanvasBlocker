@@ -40,15 +40,15 @@
 		"description": ""
 	},
 	"ok": {
-		"message": "OK",
+		"message": "Aceptar",
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "Aplicar",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "Cancelar",
 		"description": ""
 	},
 	"input": {
@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Tiene habilitado privacy.resistFingerprinting. Esto cambia ligeramente el comportamiento de CanvasBlocker. Consulte más información {link:aquí:https://github.com/kkapsner/CanvasBlocker/issues/158} y {link:aquí:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -100,7 +100,7 @@
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "Otros",
 		"description": ""
 	},
 	"section_asking": {
@@ -148,7 +148,7 @@
 		"description": ""
 	},
 	"section_TextMetrics-api": {
-		"message": "TextMetrics API",
+		"message": "API TextMetrics",
 		"description": ""
 	},
 	"section_Navigator-api": {
@@ -156,7 +156,7 @@
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Screen API",
+		"message": "API pantalla",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
@@ -272,15 +272,15 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "¿Quiere permitir la API TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "¿Quiere permitir la entrada de la API de TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "¿Quiere permitir la lectura de la API de TextMetrics?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -296,15 +296,15 @@
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "¿Quiere permitir la API de pantalla?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "¿Quiere permitir la entrada de la API de pantalla?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "¿Quiere permitir la lectura de la API de pantalla?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -544,11 +544,11 @@
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Limpiar contenedor",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Seleccionar contenedor",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
@@ -588,7 +588,7 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "Proveedor WebGL reportado",
 		"description": ""
 	},
 	"webGLVendor_description": {
