@@ -148,7 +148,7 @@
 		"description": ""
 	},
 	"section_TextMetrics-api": {
-		"message": "TextMetrics API",
+		"message": "API TextMetrics",
 		"description": ""
 	},
 	"section_Navigator-api": {
@@ -272,15 +272,15 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "Vuoi permettere l'API TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "Vuoi permettere l'input dell'API TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "Vuoi permettere la lettura dell'API TextMetrics?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -688,7 +688,7 @@
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "Lettura TextMetrics falsificata su {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -1128,15 +1128,15 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "Proteggi API TextMetrics",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Protegge contro le impronte digitali \"measureText()\" che possono essere utilizzate per incrociare i valori DOMRect.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Per escludere siti specifici da questa protezione, clicca la freccia nera per aprire il menu, aggiungi il dominio o URL cliccando \"+\" e rimouvi la sua spunta.",
 		"description": ""
 	},
 	"protectNavigator_title": {
