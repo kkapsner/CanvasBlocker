@@ -136,11 +136,11 @@
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "History API",
+		"message": "API de histórico",
 		"description": ""
 	},
 	"section_window-api": {
-		"message": "Window API",
+		"message": "API de janela",
 		"description": ""
 	},
 	"section_DOMRect-api": {
@@ -152,11 +152,11 @@
 		"description": ""
 	},
 	"section_Navigator-api": {
-		"message": "Navigator API",
+		"message": "API do Navegador",
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Screen API",
+		"message": "API da tela",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
@@ -352,15 +352,15 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
-		"message": "The webpage wants to read the content of the following canvas:",
+		"message": "A página da Web quer ler o conteúdo do seguinte canvas:",
 		"description": ""
 	},
 	"blackList_description": {
-		"message": "Domains or URLs where all APIs shall always be blocked. To add multiple entries, separate them by commas.",
+		"message": "Domínios ou URLs onde todas as APIs devem ser sempre bloqueadas. Para adicionar várias entradas, separe-as por vírgulas.",
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "Lista negra",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -368,47 +368,47 @@
 		"description": ""
 	},
 	"blockMode_urlSpecific": {
-		"message": "To set individual block modes for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired block mode.",
+		"message": "Para definir os modos de bloco individuais para sites específicos, clique na seta preta para abrir o menu, Adicione o domínio ou URL clicando em \"+\" e selecione o modo de bloco desejado.",
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "permitir tudo",
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "permitir apenas whitelist",
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "ask for permission",
+		"message": "pedir permissão",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "bloquear tudo",
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "bloquear somente a lista negra",
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "falso",
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "Modo de bloqueio",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "Parte protegida da API da tela",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "nothing: no features of the canvas API are protected.\n\nreadout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "nada: nenhum recurso da API canvas está protegido.\n\nreadout: os recursos de leitura da API canvas estão protegidos.\n\nentrada: os recursos de entrada da API da tela estão protegidos. Com o modo de bloqueio \"falsificar\" os pixels são modificados ligeiramente ao exibir texto. Isso torna a detecção do complemento mais difícil, mas é menos segura. Com o WebGL o comportamento é idêntico ao \"readout\".\n\ntudo: tanto os recursos de leitura quanto os de entrada estão protegidos. É recomendado usar isto com o modo de bloco \"falso\" pois aumenta a probabilidade de ser detectado.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"message": "Para proteger partes individuais para sites específicos, clique na seta preta para abrir o menu, adicione o domínio ou URL clicando em \"+\" e selecione a parte desejada.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
@@ -568,87 +568,87 @@
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "Número de cores que não serão falsificadas por tela. Este é um parâmetro para impedir a detecção.\nCuidado: Isso pode reduzir o desempenho do addon, pois a estatística de cores precisa ser calculada para cada imagem. Adicionalmente, isto pode reduzir a segurança da adensão, pelo que é altamente recomendável não definir este valor acima de 3.",
 		"description": ""
 	},
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "Número mínimo de cores",
 		"description": ""
 	},
 	"minColors_description": {
-		"message": "Number of colors that a canvas must have to be faked.\nCAUTION: This can lower the safety of the addon, therefore it is highly recommended not to set this value above 10.",
+		"message": "Número de cores que uma tela deve ser falsificada.\nCuidado: Isso pode diminuir a segurança do acréscimo de extensão, portanto é altamente recomendado não definir esse valor acima de 10.",
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
-		"message": "Fake the alpha channel",
+		"message": "Falsifique o canal alfa",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Activates the faking of the alpha channel (transparency).",
+		"message": "Ativa a falsificação do canal alfa (transparência).",
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "Fornecedor webGL relatado",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Leave empty to use the original value.",
+		"message": "Valor a ser reportado na função webGL \"getParameter\" para o \"fornecedor\". Deixe em branco para usar o valor original.",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "Renderizador webGL relatado",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Leave empty to use the original value.",
+		"message": "Valor a ser reportado na função webGL \"getParameter\" para o \"renderer\". Deixe em branco para usar o valor original.",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Reported webGL unmasked vendor",
+		"message": "Fornecedor não-mascarado webGL relatado",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Leave empty to use the original value.",
+		"message": "Valor a ser reportado na função webGL \"getParameter\" para o \"fornecedor não-mascarado\". Deixe em branco para usar o valor original.",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Reported webGL unmasked renderer",
+		"message": "Renderizador não-mascarado webGL relatado",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"message": "Valor a ser reportado na função webGL \"getParameter\" para o \"renderizador desmascarado\". Deixe em branco para usar o valor original.",
 		"description": ""
 	},
 	"useCanvasCache_title": {
-		"message": "Use canvas cache",
+		"message": "Usar cache do canvas",
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvases are read several times, but decreases it for big canvases.",
+		"message": "Habilita o cache canvas. Isso pode prevenir a detecção e aumentar o desempenho quando as telas pequenas são lidas várias vezes, mas diminui para a tela grande.",
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
-		"message": "Protected API features",
+		"message": "Recursos de API protegidos",
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
+		"message": "Lista de recursos de API protegida. Ao desmarcar uma caixa de seleção, este recurso da API não estará protegido.",
 		"description": ""
 	},
 	"disableNotifications": {
-		"message": "disable notifications",
+		"message": "desativar as notificações",
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "configurações de exibição",
 		"description": ""
 	},
 	"displayCallingStack": {
-		"message": "display calling stack",
+		"message": "mostrar pilha de chamadas",
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "exibir URL completa",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -656,35 +656,35 @@
 		"description": ""
 	},
 	"enableStackList_title": {
-		"message": "Use file specific whitelist",
+		"message": "Usar arquivo de whitelist específico",
 		"description": ""
 	},
 	"preBlock": {
-		"message": "API blocked on {url} because CanvasBlocker settings were not loaded in time.",
+		"message": "API bloqueada em {url} porque as configurações do CanvasBlocker não foram carregadas a tempo.",
 		"description": ""
 	},
 	"blocked": {
-		"message": "API blocked on {url}.",
+		"message": "API bloqueada em {url}.",
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Faked canvas readout on {url}",
+		"message": "Leitura de tela falsificada em {url}",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Faked audio readout on {url}",
+		"message": "Leitura de áudio falsificada em {url}",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Faked history readout on {url}",
+		"message": "Leitura de histórico falsificada em {url}",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Faked window readout on {url}",
+		"message": "Leitura de janela falsificada em {url}",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "Faked DOMRect readout on {url}",
+		"message": "Leitura de DOMRect falsificada em {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -1116,7 +1116,7 @@
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Para excluir sites específicos desta proteção, clique na seta preta para abrir o menu, adicione o domínio ou URL clicando em \"+\" e remova sua caixa de seleção.",
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
@@ -1304,15 +1304,15 @@
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "atenção",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "mensagem",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "aviso",
 		"description": ""
 	},
 	"logLevel_options.100": {
@@ -1320,7 +1320,7 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Export settings",
+		"message": "Exportar configurações",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1328,7 +1328,7 @@
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "Controle de configuração",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1336,23 +1336,23 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Setting sanitation",
+		"message": "Definir saneamento",
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "Inspecionar whitelist",
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "Predefinições",
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "Isto abre a página de predefinição que foi mostrada após a instalação. As predefinições são coleções de valores para alguns casos de uso comum do CanvasBlocker.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Abrir",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1540,55 +1540,55 @@
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "Predefinições do CanvasBlocker",
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg}Obrigado por instalar o CanvasBlocker. Para ajustar ele às suas necessidades, você pode aplicar algumas predefinições. Para uma melhor personalização, você pode abrir a página do {link:options:options.html}. Lá você também pode abrir esta página predefinida mais tarde.",
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Estas são algumas predefinições para atender às necessidades das pessoas diferentes. Os valores entre parênteses são o estado atual da configuração. Você pode aplicar várias predefinições depois das outras, mas algumas podem ser substituídas pela configuração anterior.",
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "Configurações padrão",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "Nenhuma configuração especial foi aplicada.",
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Configurações convenientes",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Aplique algumas configurações para tornar a experiência de navegação o mais conveniente possível. Isto inclui a lista branca de alguns sites.",
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "Configurações furtivas",
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "Configura o CanvasBlocker para ser difícil de detectar. Isto pode levar a alto uso da CPU e pode tornar o navegador mais lento.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "Proteção Máxima",
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Maximiza a proteção contra extração de impressões digitais. Essas configurações quebrarão algumas páginas, pode deixar o navegador um pouco mais lento e pode permitir que os sites detectem que o CanvasBlocker é usado. Após aplicar esta predefinição, você deve considerar a aplicação da predefinição de reCAPTCHA também.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "exceção reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "Proteger a janela da API quebra o reCAPTCHA. Esta predefinição permite o uso da window.name API em páginas embutidas, o que o fará funcionar novamente.",
 		"description": ""
 	}
 }
