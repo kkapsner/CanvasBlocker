@@ -228,7 +228,7 @@
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio API input?",
+		"message": "Deseja permitir a entrada da API de áudio?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
