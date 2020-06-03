@@ -232,91 +232,91 @@
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio API readout?",
+		"message": "Deseja permitir a leitura da API de áudio?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "Deseja permitir a API de histórico?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "Deseja permitir a entrada do histórico da API?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "Deseja permitir leitura do histórico da API?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "Você deseja permitir a API da janela?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window API input?",
+		"message": "Você deseja permitir a entrada da API da janela?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window API readout?",
+		"message": "Deseja permitir a leitura da API da janela?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "Você deseja permitir a API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect API input?",
+		"message": "Você deseja permitir a entrada da API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "Deseja permitir leitura da API DOMRect?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "Deseja permitir a API de Métricas de Texto?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "Deseja permitir a entrada da API de Métricas de Texto?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "Deseja permitir leitura da API de Métricas de Texto?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "Deseja permitir a API de navegador?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Do you want to allow navigator API input?",
+		"message": "Deseja permitir a entrada da API do navegador?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "Deseja permitir leitura da API do navegador?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "Deseja permitir a API de tela?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "Deseja permitir a entrada da API de tela?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "Deseja permitir leitura da API de tela?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "Perguntar apenas uma vez",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
+		"message": "Quando o modo de bloqueio do CanvasBlocker estiver definido como 'pedir permissão' ou 'pedir permissão para a API de leitura', uma mensagem de confirmação será exibida sempre que uma página tentar acessar a API ou a API de leitura. Essa configuração tenta exibir a mensagem de confirmação apenas uma vez para cada página, independentemente de quantas vezes a página tenta acessar a API. No entanto, várias mensagens de confirmação ainda podem ser exibidas em algumas páginas.\n\nNão: perguntando sempre\n\nIndividual: cada tipo de API (contexto, entrada, leitura) deve ser confirmado separadamente\n\nCombinados: todos os tipos de API são confirmados juntos",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "não",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
@@ -324,15 +324,15 @@
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "combinado",
 		"description": ""
 	},
 	"askDenyMode_title": {
-		"message": "Ask deny mode",
+		"message": "Modo de negação",
 		"description": ""
 	},
 	"askDenyMode_description": {
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "Que modo deve ser usado quando a permissão é negada.",
 		"description": ""
 	},
 	"askDenyMode_options.block": {
@@ -516,55 +516,55 @@
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "dias",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "semanas",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "meses",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "anos",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
-		"message": "Clear persistent random storage",
+		"message": "Limpar armazenamento aleatório persistente",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Deletes all data for the persistent random number generator.",
+		"message": "Excluir todos os dados para o gerador de números aleatórios persistente.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "Limpar",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Limpar contêiner",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Selecionar contêiner",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Share persistent randomness between domains",
+		"message": "Compartilhe a aleatoriedade persistente entre domínios",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "ATENÇÃO: esta configuração torna o navegador 100% rastreável e, portanto, é uma ameaça à sua privacidade.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "Você tem certeza que deseja compartilhar a aleatoriedade persistente entre domínios?\nATENÇÃO: isto torna o navegador 100% rastreável e, portanto, é uma ameaça à sua privacidade.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "Ignorar as cores mais frequentes",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
