@@ -102,6 +102,7 @@
 		
 		const table = document.createElement("table");
 		whitelistSettings.forEach(function(setting){
+			const settingDefinition = settings.getDefinition(setting.name);
 			const row = document.createElement("tr");
 			setting.row = row;
 			const name = document.createElement("td");
@@ -110,11 +111,13 @@
 			setting.input = document.createElement("input");
 			setting.input.type = "checkbox";
 			setting.input.addEventListener("change", function(){
-				settings.set(
-					setting.name,
-					this.checked? setting.protectedValue: setting.whitelistValue,
-					setSelect.value
-				);
+				const value = this.checked? setting.protectedValue: setting.whitelistValue;
+				if (settingDefinition.get() === value){
+					settingDefinition.reset(setSelect.value);
+				}
+				else {
+					settingDefinition.set(value, setSelect.value);
+				}
 			});
 			const input = document.createElement("td");
 			input.appendChild(setting.input);
