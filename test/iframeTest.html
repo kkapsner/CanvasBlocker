@@ -82,6 +82,21 @@
 			document.write(part);
 		});
 		document.write("<script>log(\"TEST:\", \"ifr|ame split:\", compare(test(window[6]), reference));<\/script>");
+		document.write("<iframe></iframe>" +
+		"<script>" +
+			"let parent = window[7];" +
+			"let loopDepth = 1;" +
+			"for (; loopDepth < 50; loopDepth+= 1){" +
+				"parent.document.write(\"<iframe></iframe>\");" +
+				"const newParent = parent[0];" +
+				"if (!newParent){" +
+					"break;" +
+				"}" +
+				"parent = newParent;" +
+			"}" +
+			"log(\"TEST:\", \"nested iFrame (depth = \" + loopDepth + \")\", compare(test(parent), reference));" +
+			"document.body.removeChild(document.querySelector(\"iframe:last-of-type\"))" +
+		"<\/script>");
 		window.addEventListener("load", function(){
 			"use strict";
 			
