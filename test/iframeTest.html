@@ -8,8 +8,30 @@
 		<link href="testIcon.svg" type="image/png" rel="shortcut icon">
 	</head>
 	<body>
+		<div id="text">
+			<h1>Iframe protection</h1>
+			Open console (Ctrl + Shift + K) to see results.
+			Depending on your Browser version you might have to check the "Persist Logs" flag and reload the page.<br>
+			<h2>Expected result</h2>
+			<ul>
+				<li>the displayed hashes should not be your native hash (run test with CB disabled to get it)</li>
+				<li>all the displayed hashes should be the same (exception if there is a change to a wyciwyg page)</li>
+				<li>all lines with "TEST:" should have a "match" at the end</li>
+			</ul>
+		</div>
 		<script src="iframeTest.js"></script>
 		<iframe></iframe><script>
+		const pageText = document.getElementById("text").innerHTML;
+		const pageTitle = document.querySelector("head title").textContent;
+		function restoreContent(){
+			"use strict";
+			
+			document.body.innerHTML = pageText;
+			const title = document.createElement("title");
+			title.textContent = pageTitle;
+			document.getElementsByTagName("head")[0].appendChild(title);
+		}
+		
 		const iframe = window[0];
 		log("TEST:", "iframe in html:", compare(test(iframe), reference));
 		iframe.addEventListener("load", function(){
@@ -83,34 +105,22 @@
 				"<\/script>"
 			);
 			// document.close();
+			
+			window.setTimeout(function(){
+				document.body.innerHTML = "<iframe></iframe>";
+				log("TEST:", "innerHTML after 1000ms:", compare(test(window[0]), reference));
+				
+				const iFrame = document.createElement("iframe");
+				document.body.appendChild(iFrame);
+				log("TEST:", "appendChild after 1000ms:", compare(test(window[1]), reference));
+				
+				const iFrame2 = document.createElement("iframe");
+				iFrame.replaceWith(iFrame2);
+				log("TEST:", "replaceWith after 1000ms:", compare(test(window[1]), reference));
+				
+				restoreContent();
+			}, 1000);
 		});
-		window.setTimeout(function(){
-			"use strict";
-			
-			document.body.innerHTML = "<iframe></iframe>";
-			log("TEST:", "innerHTML after 1000ms:", compare(test(window[0]), reference));
-			
-			const iFrame = document.createElement("iframe");
-			document.body.appendChild(iFrame);
-			log("TEST:", "appendChild after 1000ms:", compare(test(window[1]), reference));
-			
-			const iFrame2 = document.createElement("iframe");
-			iFrame.replaceWith(iFrame2);
-			log("TEST:", "replaceWith after 1000ms:", compare(test(window[1]), reference));
-			
-			document.body.innerHTML = "<h1>Iframe protection</h1>" +
-				"Open console (Ctrl + Shift + K) to see results. " +
-				"Depending on your Browser version you might have to check the \"Persist Logs\" flag and reload the page.<br>" +
-				"<h2>Expected result</h2>" +
-				"<ul>" +
-					"<li>the displayed hashes should not be your native hash (run test with CB disabled to get it)</li>" +
-					"<li>all the displayed hashes should be the same (exception if there is a change to a wyciwyg page)</li>" +
-					"<li>all lines with \"TEST:\" should have a \"match\" at the end</li>" +
-				"</ul>";
-			const title = document.createElement("title");
-			title.textContent = "iFrame test";
-			document.getElementsByTagName("head")[0].appendChild(title);
-		}, 1000);
 		</script>
 	</body>
 </html>
