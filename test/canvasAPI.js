@@ -15,7 +15,7 @@ const canvasAPI = {
 		context.fillRect(125, 1, 62, 20);
 		context.fillStyle = "#069";
 		context.fillText(fingerprintText, 2, 15);
-		context.fillStyle = "rgba(102, 204, 0, 07)";
+		context.fillStyle = "rgba(102, 204, 0, 0.7)";
 		context.fillText(fingerprintText, 4, 17);
 		
 		return context;
