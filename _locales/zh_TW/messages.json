@@ -320,11 +320,11 @@
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
-		"message": "individual",
+		"message": "單一",
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "合併的",
 		"description": ""
 	},
 	"askDenyMode_title": {
@@ -340,7 +340,7 @@
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "偽裝",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
@@ -360,7 +360,7 @@
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "黑名單",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -372,27 +372,27 @@
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "全部允許",
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "只允許白名單",
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "ask for permission",
+		"message": "徵求權限",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "阻止所有",
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "阻止黑名單",
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "偽裝",
 		"description": ""
 	},
 	"blockMode_title": {
