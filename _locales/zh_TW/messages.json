@@ -92,7 +92,7 @@
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "一般設定",
 		"description": ""
 	},
 	"group_APIs": {
@@ -100,31 +100,31 @@
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "雜項",
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking",
+		"message": "請問中",
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "偽造",
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "通知",
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "列表",
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "雜項",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "設定",
 		"description": ""
 	},
 	"section_canvas-api": {
@@ -160,7 +160,7 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "專家模式",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
