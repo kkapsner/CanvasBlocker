@@ -184,7 +184,7 @@
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "將被隱藏的設置顯示出來",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -308,7 +308,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "只問一次",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
@@ -316,7 +316,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "否",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
@@ -336,7 +336,7 @@
 		"description": ""
 	},
 	"askDenyMode_options.block": {
-		"message": "block",
+		"message": "阻止",
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
