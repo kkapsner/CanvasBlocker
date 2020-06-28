@@ -164,23 +164,23 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "顯示更多設定\n\t",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "顯示說明",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "顯示設定的說明",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "點擊這裡去隱藏此設置",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "顯示隱藏的設置",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
