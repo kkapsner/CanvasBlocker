@@ -16,7 +16,7 @@
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " ({url} 已被加進 API 白名單)",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -68,7 +68,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "在此頁面，您可以調整CanvasBlocker的設定。",
 		"description": ""
 	},
 	"installNotice": {
