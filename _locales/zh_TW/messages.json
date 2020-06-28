@@ -72,15 +72,15 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "CanvasBlacked已安裝好. 如果你想重上此網頁, 請收藏。",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlacked已被更新. 如果你將來想重上此網頁但還沒加籤, 請收藏。",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "更新後不要再顯示。",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
