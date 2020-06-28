@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "改變 某些 JS APIs 設定 來 防止 指紋 追踪。",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -12,7 +12,7 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\n成功的保護",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
@@ -24,19 +24,19 @@
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "更多",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "更少",
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "請稍等...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "搜尋",
 		"description": ""
 	},
 	"ok": {
@@ -44,27 +44,27 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "確定",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "取消",
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "輸入",
 		"description": ""
 	},
 	"readout": {
-		"message": "readout",
+		"message": "輸出",
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "設定",
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "CanvasBlocker 設定",
 		"description": ""
 	},
 	"optionsIntroduction": {
