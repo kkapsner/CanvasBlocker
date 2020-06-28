@@ -84,11 +84,11 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "您啟用了privacy.resistFingerprinting設定。此設定會謏改 CanvasBlocker的行為。詳情参閱 {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} 和 {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}。",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "在新的隱身標籤頁中打開",
 		"description": ""
 	},
 	"group_general": {
