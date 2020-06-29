@@ -236,51 +236,51 @@
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "你想允許歷史API嗎?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "你想允許歷史API的輸入嗎?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "你想允許歷史API的讀出嗎?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "你想允許視窗API嗎?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window API input?",
+		"message": "你想允許視窗API的輸入嗎?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window API readout?",
+		"message": "你想允許視窗API的讀出嗎?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "你想允許DOMRectAPI嗎?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect API input?",
+		"message": "你想允許DOMRectAPI的輸入嗎?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "你想允許DOMRectAPI的讀出嗎?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "你想允許TextMetricsAPI嗎?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "你想允許TextMetricsAPI的輸入嗎?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "你想允許TextMetricsAPI的讀出嗎?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
