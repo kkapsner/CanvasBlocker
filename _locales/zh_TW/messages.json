@@ -720,7 +720,7 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "本機檔案",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -1012,7 +1012,7 @@
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "噪音水平",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
@@ -1028,11 +1028,11 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "中",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "高",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
@@ -1040,7 +1040,7 @@
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "使用音頻緩存",
 		"description": ""
 	},
 	"useAudioCache_description": {
@@ -1240,23 +1240,23 @@
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "自動",
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "預設",
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "亮",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "暗",
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "彩色",
 		"description": ""
 	},
 	"theme_options.none": {
@@ -1288,7 +1288,7 @@
 		"description": ""
 	},
 	"logLevel_title": {
-		"message": "Logging level",
+		"message": "記錄層級",
 		"description": ""
 	},
 	"logLevel_description": {
@@ -1296,7 +1296,7 @@
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "none",
+		"message": "無",
 		"description": ""
 	},
 	"logLevel_options.1": {
@@ -1320,7 +1320,7 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Export settings",
+		"message": "匯出設定",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1340,11 +1340,11 @@
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "檢查白名單",
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "預置",
 		"description": ""
 	},
 	"openSettingPresets_description": {
@@ -1356,7 +1356,7 @@
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Inspect",
+		"message": "檢查",
 		"description": ""
 	},
 	"saveSettings_label": {
@@ -1368,7 +1368,7 @@
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reset settings",
+		"message": "回復預設",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1376,31 +1376,31 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reset",
+		"message": "重置",
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Are you sure you want to reset all settings?",
+		"message": "確定要重置為預設值？",
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "設定",
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "常見問題",
 		"description": ""
 	},
 	"browserAction_test": {
-		"message": "Test",
+		"message": "測試",
 		"description": ""
 	},
 	"browserAction_review": {
-		"message": "Review",
+		"message": "回顧",
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Report issue",
+		"message": "回報問題",
 		"description": ""
 	},
 	"sanitation_title": {
@@ -1424,19 +1424,19 @@
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "阻止模式",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
-		"message": "Thresholds",
+		"message": "臨界值",
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "性能",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
-		"message": "Privacy",
+		"message": "私隱",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
@@ -1460,7 +1460,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "啟用功能",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
@@ -1532,15 +1532,15 @@
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "所有 API",
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "預置",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "CanvasBlocker 的預置",
 		"description": ""
 	},
 	"presets_installNotice": {
@@ -1552,7 +1552,7 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "預設設定",
 		"description": ""
 	},
 	"preset_default_description": {
@@ -1560,15 +1560,15 @@
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "方便的設置",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "CanvasBlocker白名單檢查",
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "隱身設置",
 		"description": ""
 	},
 	"preset_stealth_description": {
@@ -1576,7 +1576,7 @@
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "最高保護",
 		"description": ""
 	},
 	"preset_max_protection_description": {
@@ -1584,7 +1584,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "豁免reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
