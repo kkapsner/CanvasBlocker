@@ -476,11 +476,11 @@
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "隨機數發生器",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Persistent storage",
+		"message": "持久存儲",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
@@ -640,7 +640,7 @@
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "顯示設定",
 		"description": ""
 	},
 	"displayCallingStack": {
@@ -648,7 +648,7 @@
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "顯示完整網址",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -708,11 +708,11 @@
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "不理表",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "不理API",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
@@ -728,7 +728,7 @@
 		"description": ""
 	},
 	"ignorelistURL": {
-		"message": "ignore URL",
+		"message": "不理網址",
 		"description": ""
 	},
 	"selectIgnore": {
@@ -980,35 +980,35 @@
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1值",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10值",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100值",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000值",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "值的0.1％",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "值的1%",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "值的10％",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "值的100％",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
