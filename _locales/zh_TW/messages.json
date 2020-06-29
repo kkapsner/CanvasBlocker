@@ -444,7 +444,7 @@
 		"description": ""
 	},
 	"minFakeSize_title": {
-		"message": "Minimal fake size",
+		"message": "最低假值",
 		"description": ""
 	},
 	"maxFakeSize_description": {
@@ -452,7 +452,7 @@
 		"description": ""
 	},
 	"maxFakeSize_title": {
-		"message": "Maximal fake size",
+		"message": "最大假值",
 		"description": ""
 	},
 	"rng_description": {
@@ -564,15 +564,15 @@
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "不理最常見的顏色",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "報告webGL的供應商",
 		"description": ""
 	},
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "最小的顏色",
 		"description": ""
 	},
 	"minColors_description": {
@@ -588,7 +588,7 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "報告webGL的供應商",
 		"description": ""
 	},
 	"webGLVendor_description": {
@@ -596,7 +596,7 @@
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "報告webGL的渲染器",
 		"description": ""
 	},
 	"webGLRenderer_description": {
@@ -784,11 +784,11 @@
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the {api}",
+		"message": "僅將{api} 加到白名單",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "將所有API加到白名單",
 		"description": ""
 	},
 	"settings": {
@@ -820,7 +820,7 @@
 		"description": ""
 	},
 	"showNotifications_title": {
-		"message": "Show notification icon",
+		"message": "顯示通知圖標",
 		"description": ""
 	},
 	"highlightPageAction_description": {
@@ -836,7 +836,7 @@
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "沒有標示",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
@@ -852,7 +852,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Display badge",
+		"message": "展示徽章",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -864,7 +864,7 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Change toolbar icon on notification",
+		"message": "通知更改工具欄的圖標",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
@@ -1052,7 +1052,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "使用固定索引",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
@@ -1060,7 +1060,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_title": {
-		"message": "Fixed indices",
+		"message": "固定指標",
 		"description": ""
 	},
 	"audioFixedIndices_description": {
@@ -1152,7 +1152,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
-		"message": "Navigator settings",
+		"message": "導覽器的設置",
 		"description": ""
 	},
 	"openNavigatorSettings_description": {
@@ -1164,7 +1164,7 @@
 		"description": ""
 	},
 	"navigatorSettings_title": {
-		"message": "CanvasBlocker navigator settings",
+		"message": "CanvasBlocker導覽器的設置",
 		"description": ""
 	},
 	"navigatorSettings_description": {
@@ -1180,15 +1180,15 @@
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "Operating system presets",
+		"message": "作業系統的預設",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Browser presets",
+		"message": "瀏覽器的預設",
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Navigator values",
+		"message": "導航器的預設",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
@@ -1196,7 +1196,7 @@
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "保護屏幕API",
 		"description": ""
 	},
 	"protectScreen_description": {
@@ -1328,7 +1328,7 @@
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "設定控制",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1336,7 +1336,7 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Setting sanitation",
+		"message": "設置清潔",
 		"description": ""
 	},
 	"inspectWhitelist_label": {
@@ -1404,7 +1404,7 @@
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Setting sanitation",
+		"message": "設置清潔",
 		"description": ""
 	},
 	"sanitation_description": {
