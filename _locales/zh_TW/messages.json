@@ -328,7 +328,7 @@
 		"description": ""
 	},
 	"askDenyMode_title": {
-		"message": "Ask deny mode",
+		"message": "詢問否定模式",
 		"description": ""
 	},
 	"askDenyMode_description": {
@@ -396,7 +396,7 @@
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "阻止模式",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
@@ -412,19 +412,19 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "無",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "input",
+		"message": "輸入",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "readout",
+		"message": "讀出",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "所有",
 		"description": ""
 	},
 	"urlSettings_title": {
