@@ -400,7 +400,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "部分受保護的canvas API",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
@@ -460,15 +460,15 @@
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "persistent",
+		"message": "持久",
 		"description": ""
 	},
 	"rng_options.constant": {
-		"message": "constant",
+		"message": "恆量",
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "non persistent",
+		"message": "非持久",
 		"description": ""
 	},
 	"rng_options.white": {
