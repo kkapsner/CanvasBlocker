@@ -868,7 +868,7 @@
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "不變",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
@@ -904,27 +904,27 @@
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "白名單",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "whitelist domain",
+		"message": "將網域加入白名單",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "whitelist URL",
+		"message": "將網址加入白名單",
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "忽略",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "whitelist temporarily",
+		"message": "暫時加到白名單",
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "inspect whitelist",
+		"message": "檢查白名單",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -936,11 +936,11 @@
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "whitelist domain temporarily",
+		"message": "將網域臨時加入白名單",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "whitelist URL temporarily",
+		"message": "將網址臨時加入白名單",
 		"description": ""
 	},
 	"storeNotificationData_title": {
@@ -1020,11 +1020,11 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "最少",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "低",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
@@ -1036,7 +1036,7 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "最大",
 		"description": ""
 	},
 	"useAudioCache_title": {
@@ -1160,7 +1160,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "開啟",
 		"description": ""
 	},
 	"navigatorSettings_title": {
@@ -1192,7 +1192,7 @@
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "重置",
 		"description": ""
 	},
 	"protectScreen_title": {
@@ -1208,7 +1208,7 @@
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "螢幕大小",
 		"description": ""
 	},
 	"screenSize_description": {
@@ -1232,7 +1232,7 @@
 		"description": ""
 	},
 	"theme_title": {
-		"message": "Theme",
+		"message": "佈景主題",
 		"description": ""
 	},
 	"theme_description": {
@@ -1260,7 +1260,7 @@
 		"description": ""
 	},
 	"theme_options.none": {
-		"message": "none",
+		"message": "無",
 		"description": ""
 	},
 	"blockDataURLs_title": {
@@ -1276,7 +1276,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "版本說明",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1284,7 +1284,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Show",
+		"message": "顯示",
 		"description": ""
 	},
 	"logLevel_title": {
@@ -1300,23 +1300,23 @@
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "錯誤",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "警告",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "訊息",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "注意",
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "verbose",
+		"message": "詳細",
 		"description": ""
 	},
 	"exportSettings_title": {
@@ -1352,7 +1352,7 @@
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "開啟",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1360,11 +1360,11 @@
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "儲存",
 		"description": ""
 	},
 	"loadSettings_label": {
-		"message": "Load",
+		"message": "載入",
 		"description": ""
 	},
 	"resetSettings_title": {
