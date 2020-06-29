@@ -284,27 +284,27 @@
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "你想允許導航API嗎?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Do you want to allow navigator API input?",
+		"message": "你想允許導航API的輸入嗎?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "你想允許導航API的讀出嗎?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "你想允許屏幕API嗎?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "你想允許D屏幕API的輸入嗎?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "你想允許屏幕API的讀出嗎?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -332,7 +332,7 @@
 		"description": ""
 	},
 	"askDenyMode_description": {
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "如果許可被拒絕會使用哪種模式",
 		"description": ""
 	},
 	"askDenyMode_options.block": {
@@ -344,7 +344,7 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
-		"message": "Show canvas content",
+		"message": "顯示畫佈內容",
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
