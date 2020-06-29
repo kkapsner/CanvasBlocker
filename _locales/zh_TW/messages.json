@@ -488,7 +488,7 @@
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "存儲持久資料\n\t",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
@@ -504,31 +504,31 @@
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "秒",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "分鐘",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "小時",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "日",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "週",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "月",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "年",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
@@ -540,15 +540,15 @@
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "清除",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "清除容器",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "選擇容器",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
@@ -792,7 +792,7 @@
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "設定",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -840,11 +840,11 @@
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "顏色",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "blink",
+		"message": "閃動",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -872,11 +872,11 @@
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "更改顏色",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "blink",
+		"message": "閃動",
 		"description": ""
 	},
 	"sourceOutput": {
@@ -896,7 +896,7 @@
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "白名單",
 		"description": ""
 	},
 	"whiteList_description": {
