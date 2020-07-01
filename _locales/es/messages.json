@@ -100,7 +100,7 @@
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Otros",
+		"message": "Varios",
 		"description": ""
 	},
 	"section_asking": {
@@ -1168,7 +1168,7 @@
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "En esta página puede cambiar la configuración de navigator. Si usa un preajuste, debe usar siempre uno para sistema operativo y otro para el navegador. Después de seleccionarlos, todavía puede hacer modificaciones.",
+		"message": "En esta página puedes cambiar la configuración de navigator. Si usas un preajuste, siempre debes usar uno para el sistema operativo y otro para el navegador. Después de seleccionarlos, todavía puede hacer modificaciones.",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
@@ -1192,7 +1192,7 @@
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reiniciar",
+		"message": "Restablecer",
 		"description": ""
 	},
 	"protectScreen_title": {
@@ -1320,7 +1320,7 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Exportar la configuración",
+		"message": "Exportar configuración",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1368,7 +1368,7 @@
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reiniciar la configuración",
+		"message": "Restablecer configuración",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1376,7 +1376,7 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reiniciar",
+		"message": "Restablecer",
 		"description": ""
 	},
 	"resetSettings_confirm": {
@@ -1560,11 +1560,11 @@
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Configuración cómoda",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Aplica algunas configuraciones para que la experiencia de navegación sea lo más cómoda posible. Esto incluye la lista blanca de algunos sitios.",
 		"description": ""
 	},
 	"preset_stealth_title": {
