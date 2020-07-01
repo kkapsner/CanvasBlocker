@@ -448,7 +448,7 @@
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "Los «canvas» con un área mayor que este número no se falsean (introduzca un cero para deshabilitarlo). Es un parámetro de rendimiento que puede prevenir bloqueos del navegador y debe ajustarse a la potencia de cálculo del dispositivo.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor menor que 1000000.",
+		"message": "Los «canvas» con un área mayor que este número no se falsean (ingresa un cero para deshabilitarlo). Es un parámetro de rendimiento que puede prevenir bloqueos del navegador y debe ajustarse a la potencia de cálculo del dispositivo.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor menor que 1000000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
@@ -676,11 +676,11 @@
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Lectura de history falseada en {url}",
+		"message": "Lectura de historial falseada en {url}",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Lectura de window falseada en {url}",
+		"message": "Lectura de ventana falseada en {url}",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
@@ -688,15 +688,15 @@
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "Lectura de TextMetrics falseada en {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Lectura de navigator falseada en {url}",
+		"message": "Lectura del navegador falseada en {url}",
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Faked screen readout on {url}",
+		"message": "Lectura de pantalla falseada en {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -1344,7 +1344,7 @@
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "Preajustes",
 		"description": ""
 	},
 	"openSettingPresets_description": {
@@ -1536,11 +1536,11 @@
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "Preajustes",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "Preajustes de CanvasBlocker",
 		"description": ""
 	},
 	"presets_installNotice": {
