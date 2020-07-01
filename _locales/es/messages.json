@@ -152,7 +152,7 @@
 		"description": ""
 	},
 	"section_Navigator-api": {
-		"message": "API de navigator",
+		"message": "API navigator",
 		"description": ""
 	},
 	"section_Screen-api": {
@@ -284,15 +284,15 @@
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "¿Quiere permitir la API de navigator?",
+		"message": "¿Quieres permitir la API navigator?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "¿Quiere permitir la entrada para la API de navigator?",
+		"message": "¿Quieres permitir la entrada para la API navigator?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para la API de navigator?",
+		"message": "¿Quieres permitir la lectura para la API navigator?",
 		"description": ""
 	},
 	"askForScreenPermission": {
@@ -1140,11 +1140,11 @@
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Proteger la API de navigator",
+		"message": "Proteger la API navigator",
 		"description": ""
 	},
 	"protectNavigator_description": {
-		"message": "Esta página permite cambios en la API de navigator. Habilitar esta protección no cambia nada por defecto. Abra la configuración de navigator para especificar allí los cambios que desee.",
+		"message": "Esta página permite cambios en la API navigator. Habilitar esta protección no cambia nada por defecto. Abre la configuración de navigator para especificar allí los cambios que desees.",
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
@@ -1580,7 +1580,7 @@
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Maximiza la protección contra la extracción de huella dagital. Esta configuración romperá algunas páginas, podría ralentizar un poco el navegador y podría permitir a los sitios detectar si utilizas CanvasBlocker. Después de aplicar este preajuste, deberías considerar aplicar también el preajuste reCAPTCHA.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
