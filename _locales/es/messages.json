@@ -720,7 +720,7 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "archivo local",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -1096,7 +1096,7 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
-		"message": "Allow window.name in frames",
+		"message": "Permitir window.name en frames",
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
@@ -1208,7 +1208,7 @@
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "Tamaño de pantalla",
 		"description": ""
 	},
 	"screenSize_description": {
@@ -1352,7 +1352,7 @@
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Abrir",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1388,7 +1388,7 @@
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "Preguntas frecuentes",
 		"description": ""
 	},
 	"browserAction_test": {
