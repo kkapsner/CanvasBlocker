@@ -120,7 +120,7 @@
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Miscelánea",
+		"message": "Varios",
 		"description": ""
 	},
 	"section_settings": {
@@ -188,39 +188,39 @@
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "¿Quiere permitir los <canvas> invisibles?",
+		"message": "¿Quieres permitir los <canvas> invisibles?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "¿Quiere permitir la entrada para los <canvas> invisibles?",
+		"message": "¿Quieres permitir la entrada para los <canvas> invisibles?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para los <canvas> invisibles?",
+		"message": "¿Quieres permitir la lectura para los <canvas> invisibles?",
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "¿Quiere permitir los <canvas>?",
+		"message": "¿Quieres permitir los <canvas>?",
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "¿Quiere permitir la entrada para los <canvas>?",
+		"message": "¿Quieres permitir la entrada para los <canvas>?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para los <canvas>?",
+		"message": "¿Quieres permitir la lectura para los <canvas>?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "¿Quiere permitir los <canvas> con borde rojo?",
+		"message": "¿Quieres permitir los <canvas> con borde rojo?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "¿Quiere permitir la entrada para los <canvas> con borde rojo?",
+		"message": "¿Quieres permitir la entrada para los <canvas> con borde rojo?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "¿Quiere permitir la lectura de para los <canvas> con borde rojo?",
+		"message": "¿Quieres permitir la lectura de para los <canvas> con borde rojo?",
 		"description": ""
 	},
 	"askForAudioPermission": {
@@ -248,27 +248,27 @@
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "¿Quiere permitir la API de window?",
+		"message": "¿Quieres permitir la API window?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "¿Quiere permitir la entrada para la API de window?",
+		"message": "¿Quieres permitir la entrada para la API window?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para la API de window?",
+		"message": "¿Quieres permitir la lectura para la API window?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "¿Quiere permitir la API de DOMRect?",
+		"message": "¿Quieres permitir la API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "¿Quiere permitir la entrada para la API de DOMRect?",
+		"message": "¿Quieres permitir la entrada para la API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para la API de DOMRect?",
+		"message": "¿Quieres permitir la lectura para la API DOMRect?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -276,11 +276,11 @@
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "¿Quiere permitir la entrada de la API de TextMetrics?",
+		"message": "¿Quieres permitir la entrada de la API TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "¿Quiere permitir la lectura de la API de TextMetrics?",
+		"message": "¿Quieres permitir la lectura de la API TextMetrics?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -296,15 +296,15 @@
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "¿Quiere permitir la API de pantalla?",
+		"message": "¿Quieres permitir la API screen?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "¿Quiere permitir la entrada de la API de pantalla?",
+		"message": "¿Quieres permitir la entrada de la API screen?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "¿Quiere permitir la lectura de la API de pantalla?",
+		"message": "¿Quieres permitir la lectura de la API screen?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -556,11 +556,11 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "PRECAUCIÓN: este ajuste hace al navegador 100% rastreable y es, por tanto, una amenaza para su privacidad.",
+		"message": "PRECAUCIÓN: este configuración hace al navegador 100 % rastreable, y por tanto, una amenaza para tu privacidad.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "¿Seguro que quiere compartir la aleatoriedad persistente entre dominios?\nPRECAUCIÓN: esto hace al nevegador 100% rastreable y es, por tanto, una amenaza para su privacidad.",
+		"message": "¿Seguro que quieres compartir la aleatoriedad persistente entre dominios?\nPRECAUCIÓN: esto hace al navegador 100 % rastreable, y por tanto, una amenaza para tu privacidad.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -676,11 +676,11 @@
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Lectura de historial falseada en {url}",
+		"message": "Lectura de history falseada en {url}",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Lectura de ventana falseada en {url}",
+		"message": "Lectura de window falseada en {url}",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
@@ -692,7 +692,7 @@
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Lectura del navegador falseada en {url}",
+		"message": "Lectura de navigator falseada en {url}",
 		"description": ""
 	},
 	"fakedScreenReadout": {
@@ -1008,7 +1008,7 @@
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% de los valores",
+		"message": "100 % de los valores",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
@@ -1092,7 +1092,7 @@
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "La protección de la API de window rompe los reCAPTCHA. ¿Quiere añadir una excepción para eso?",
+		"message": "La protección de la API window rompe reCAPTCHA. ¿Quieres permitir la API window.name en las páginas integradas para que vuelva a funcionar?",
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
@@ -1584,11 +1584,11 @@
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "Excepción de reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "La protección de la API window rompe reCAPTCHA. Este preajuste permite el uso de la API window.name en páginas integradas, lo que hará que vuelva a funcionar.",
 		"description": ""
 	}
 }
