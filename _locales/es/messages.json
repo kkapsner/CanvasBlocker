@@ -1048,7 +1048,7 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Algunas páginas usan guiones para crear huellas digitales muy mal escritos que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
+		"message": "Algunas páginas usan scripts con audio para crear huellas digitales muy mal escritos que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haz clic en la flecha negra para abrir el menú, añadir el dominio o URL haciendo clic en «+» y desmarcar la casilla.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
@@ -1520,7 +1520,7 @@
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "No compartir la aleatoriedad persistente entre dominios porque hace al navegador 100% rastreable.",
+		"message": "No compartir la aleatoriedad persistente entre dominios porque hace al navegador 100 % rastreable.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
