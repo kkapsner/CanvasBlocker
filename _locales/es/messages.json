@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Tiene habilitado privacy.resistFingerprinting. Esto cambia ligeramente el comportamiento de CanvasBlocker. Consulte más información {link:aquí:https://github.com/kkapsner/CanvasBlocker/issues/158} y {link:aquí:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Tienes habilitado privacy.resistFingerprinting. Esto cambia ligeramente el comportamiento de CanvasBlocker. Más información {link:aquí:https://github.com/kkapsner/CanvasBlocker/issues/158} y {link:aquí:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -1048,7 +1048,7 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Algunas páginas usan scripts con audio para crear huellas digitales muy mal escritos que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haz clic en la flecha negra para abrir el menú, añadir el dominio o URL haciendo clic en «+» y desmarcar la casilla.",
+		"message": "Algunas páginas usan scripts muy mal escritos con audio para crear huella digital que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haz clic en la flecha negra para abrir el menú, añadir el dominio o URL haciendo clic en «+» y desmarcar la casilla.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
@@ -1112,7 +1112,7 @@
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "Protege contra la huella digital mediante «getClientRects()» y varios métodos similares.",
+		"message": "Esto protege contra huellas digitales mediante «getClientRects()» y varios métodos similares.",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
