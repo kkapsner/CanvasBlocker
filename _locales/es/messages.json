@@ -136,7 +136,7 @@
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "API de history",
+		"message": "API history",
 		"description": ""
 	},
 	"section_window-api": {
@@ -236,15 +236,15 @@
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "¿Quiere permitir la API de history?",
+		"message": "¿Quieres permitir la API history?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "¿Quiere permitir la entrada para la API de history?",
+		"message": "¿Quieres permitir la entrada para la API history?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para la API de history?",
+		"message": "¿Quieres permitir la lectura para la API history?",
 		"description": ""
 	},
 	"askForWindowPermission": {
@@ -696,7 +696,7 @@
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Lectura de pantalla falseada en {url}",
+		"message": "Lectura de screen falseada en {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -960,7 +960,7 @@
 		"description": ""
 	},
 	"protectAudio_title": {
-		"message": "Proteger la API de audio",
+		"message": "Proteger la API audio",
 		"description": ""
 	},
 	"protectAudio_description": {
@@ -1076,11 +1076,11 @@
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "Para cambiar este valor para sítios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y ponga un valor distinto.",
+		"message": "Para cambiar este valor para sitios web específicos, haz clic en la flecha negra para abrir el menú, añadir el dominio o URL haciendo clic en «+» y establecer un valor diferente.",
 		"description": ""
 	},
 	"protectWindow_title": {
-		"message": "Proteger la API de window",
+		"message": "Proteger la API window",
 		"description": ""
 	},
 	"protectWindow_description": {
@@ -1108,7 +1108,7 @@
 		"description": ""
 	},
 	"protectDOMRect_title": {
-		"message": "Proteger la API de DOMRect",
+		"message": "Proteger la API DOMRect",
 		"description": ""
 	},
 	"protectDOMRect_description": {
@@ -1128,7 +1128,7 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "Proteger la API TextMetrics",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
@@ -1196,7 +1196,7 @@
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "Proteger la API screen",
 		"description": ""
 	},
 	"protectScreen_description": {
@@ -1572,7 +1572,7 @@
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "Configura CanvasBlocker para que sea difícil de detectar. Esto puede llevar a un alto uso de la CPU y puede ralentizar el navegador.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
