@@ -1112,7 +1112,7 @@
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "Esto protege contra huellas digitales mediante «getClientRects()» y varios métodos similares.",
+		"message": "Esto protege contra la huella digital mediante «getClientRects()» y varios métodos similares.",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
@@ -1132,7 +1132,7 @@
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Esto protege contra la huella digital mediante «measureText()» que se pueden usar para validar de forma cruzada los valores DOMRect.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
@@ -1200,7 +1200,7 @@
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "This protects against fingerprinting attempts including the screen size.",
+		"message": "Esto protege contra los intentos de crear huella digital, incluido el tamaño de la pantalla.",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
