@@ -72,11 +72,11 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "Se ha instalado CanvasBlocker. Si quiere poder acceder a está página más adelante, añádala a los marcadores.",
+		"message": "Se ha instalado CanvasBlocker. Si quieres poder acceder a está página más adelante, añádela a los marcadores.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "Se ha actualizado CanvasBlocker. Si quiere poder acceder a está página más adelante y no la tiene en los marcadores, añádala.",
+		"message": "Se ha actualizado CanvasBlocker. Si quieres poder acceder a está página más adelante y no la tienes en los marcadores, añádela.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
@@ -1348,7 +1348,7 @@
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "Esto abre la página de preajustes que se mostró en la instalación. Los preajustes son colecciones de valores de configuración para algunos casos de uso común de CanvasBlocker.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
@@ -1544,11 +1544,11 @@
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg}Gracias por instalar CanvasBlocker. Para ajustarlo a tus necesidades puedes aplicar algunos preajustes. Para una mayor personalización puedes abrir la página de {link:opciones:options.html}. Allí también puedes abrir esta página de preajustes más tarde.",
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Estos son algunos preajustes de configuración para adaptarse a las necesidades de diferentes personas. Los valores entre paréntesis son el estado actual de la configuración. Puedes aplicar múltiples preajustes de configuración uno tras otro, pero alguna configuración puede ser sobrescrita por el que se aplique más tarde.",
 		"description": ""
 	},
 	"preset_default_title": {
