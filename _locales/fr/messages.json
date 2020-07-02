@@ -272,15 +272,15 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Voulez-vous autoriser l'API TextMetrics ?",
+		"message": "Voulez-vous autoriser l'interface TextMetrics ?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "Voulez-vous autoriser l'envoi de données par le biais de l'interface TextMetrics ?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "Voulez-vous autoriser la lecture de données par le biais de l'interface TextMetrics ?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
