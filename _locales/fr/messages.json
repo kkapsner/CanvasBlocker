@@ -148,7 +148,7 @@
 		"description": ""
 	},
 	"section_TextMetrics-api": {
-		"message": "TextMetrics API",
+		"message": "API TextMetrics",
 		"description": ""
 	},
 	"section_Navigator-api": {
@@ -272,7 +272,7 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "Voulez-vous autoriser l'API TextMetrics ?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
