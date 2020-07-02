@@ -688,7 +688,7 @@
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Données faussées pour la lecture des TextMetrics activé {url}",
+		"message": "Données faussées pour la lecture des données TextMetrics activé {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -1388,7 +1388,7 @@
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "Questions fréquentes",
 		"description": ""
 	},
 	"browserAction_test": {
