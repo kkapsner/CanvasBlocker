@@ -368,7 +368,7 @@
 		"description": ""
 	},
 	"blockMode_urlSpecific": {
-		"message": "Para establecer modos de bloqueo individuales para sitios específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y seleccione el modo de bloqueo deseado.",
+		"message": "Para establecer modos de bloqueo individuales para sitios específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y selecciona el modo de bloqueo deseado.",
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
@@ -408,7 +408,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "Para proteger partes concretas de sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y seleccione la parte deseada.",
+		"message": "Para proteger partes concretas de sitios web específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y selecciona la parte deseada.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
@@ -816,7 +816,7 @@
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
-		"message": "Para desactivar las notificaciones para sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
+		"message": "Para deshabilitar las notificaciones para sitios web específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"showNotifications_title": {
@@ -1048,7 +1048,7 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Algunas páginas usan scripts muy mal escritos con audio para crear huella digital que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haz clic en la flecha negra para abrir el menú, añadir el dominio o URL haciendo clic en «+» y desmarcar la casilla.",
+		"message": "Algunas páginas usan scripts muy mal escritos con audio para crear huella digital que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
