@@ -588,11 +588,11 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Proveedor WebGL reportado",
+		"message": "Proveedor webGL reportado",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Leave empty to use the original value.",
+		"message": "Valor que debe ser reportado en la función webGL \"getParameter\" para el \"proveedor\". Dejar vacío para utilizar el valor original.",
 		"description": ""
 	},
 	"webGLRenderer_title": {
@@ -600,7 +600,7 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Leave empty to use the original value.",
+		"message": "Valor que debe ser reportado en la función webGL \"getParameter\" para el \"renderizador\". Dejar vacío para utilizar el valor original.",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -608,15 +608,15 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Leave empty to use the original value.",
+		"message": "Valor que debe ser reportado en la función webGL \"getParameter\" para el \"proveedor desenmascarado\". Dejar vacío para utilizar el valor original.",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Reported webGL unmasked renderer",
+		"message": "Renderizador webGL desenmascarado reportado",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"message": "Valor que debe ser reportado en la función webGL \"getParameter\" para el \"renderizador desenmascarado\". Dejar vacío para utilizar el valor original.",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -1212,7 +1212,7 @@
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"message": "Si se establece con un valor \"...x...\" las dimensiones especificadas serán reportadas como el tamaño de la pantalla.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
@@ -1576,7 +1576,7 @@
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "Máxima protección",
 		"description": ""
 	},
 	"preset_max_protection_description": {
