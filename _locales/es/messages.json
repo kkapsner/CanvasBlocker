@@ -596,7 +596,7 @@
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "Renderizador webGL reportado",
 		"description": ""
 	},
 	"webGLRenderer_description": {
@@ -604,7 +604,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Reported webGL unmasked vendor",
+		"message": "Proveedor webGL desenmascarado reportado",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
