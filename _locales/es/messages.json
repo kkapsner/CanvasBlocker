@@ -72,11 +72,11 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "Se ha instalado CanvasBlocker. Si quiere poder acceder a está página más adelante, añádala a los marcadores.",
+		"message": "Se ha instalado CanvasBlocker. Si quieres poder acceder a está página más adelante, añádela a los marcadores.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "Se ha actualizado CanvasBlocker. Si quiere poder acceder a está página más adelante y no la tiene en los marcadores, añádala.",
+		"message": "Se ha actualizado CanvasBlocker. Si quieres poder acceder a está página más adelante y no la tienes en los marcadores, añádela.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Tiene habilitado privacy.resistFingerprinting. Esto cambia ligeramente el comportamiento de CanvasBlocker. Consulte más información {link:aquí:https://github.com/kkapsner/CanvasBlocker/issues/158} y {link:aquí:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Tienes habilitado privacy.resistFingerprinting. Esto cambia ligeramente el comportamiento de CanvasBlocker. Más información {link:aquí:https://github.com/kkapsner/CanvasBlocker/issues/158} y {link:aquí:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -100,7 +100,7 @@
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Otros",
+		"message": "Varios",
 		"description": ""
 	},
 	"section_asking": {
@@ -120,7 +120,7 @@
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Miscelánea",
+		"message": "Varios",
 		"description": ""
 	},
 	"section_settings": {
@@ -136,7 +136,7 @@
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "API de history",
+		"message": "API history",
 		"description": ""
 	},
 	"section_window-api": {
@@ -152,7 +152,7 @@
 		"description": ""
 	},
 	"section_Navigator-api": {
-		"message": "API de navigator",
+		"message": "API navigator",
 		"description": ""
 	},
 	"section_Screen-api": {
@@ -188,39 +188,39 @@
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "¿Quiere permitir los <canvas> invisibles?",
+		"message": "¿Quieres permitir los <canvas> invisibles?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "¿Quiere permitir la entrada para los <canvas> invisibles?",
+		"message": "¿Quieres permitir la entrada para los <canvas> invisibles?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para los <canvas> invisibles?",
+		"message": "¿Quieres permitir la lectura para los <canvas> invisibles?",
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "¿Quiere permitir los <canvas>?",
+		"message": "¿Quieres permitir los <canvas>?",
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "¿Quiere permitir la entrada para los <canvas>?",
+		"message": "¿Quieres permitir la entrada para los <canvas>?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para los <canvas>?",
+		"message": "¿Quieres permitir la lectura para los <canvas>?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "¿Quiere permitir los <canvas> con borde rojo?",
+		"message": "¿Quieres permitir los <canvas> con borde rojo?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "¿Quiere permitir la entrada para los <canvas> con borde rojo?",
+		"message": "¿Quieres permitir la entrada para los <canvas> con borde rojo?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "¿Quiere permitir la lectura de para los <canvas> con borde rojo?",
+		"message": "¿Quieres permitir la lectura de para los <canvas> con borde rojo?",
 		"description": ""
 	},
 	"askForAudioPermission": {
@@ -236,39 +236,39 @@
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "¿Quiere permitir la API de history?",
+		"message": "¿Quieres permitir la API history?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "¿Quiere permitir la entrada para la API de history?",
+		"message": "¿Quieres permitir la entrada para la API history?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para la API de history?",
+		"message": "¿Quieres permitir la lectura para la API history?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "¿Quiere permitir la API de window?",
+		"message": "¿Quieres permitir la API window?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "¿Quiere permitir la entrada para la API de window?",
+		"message": "¿Quieres permitir la entrada para la API window?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para la API de window?",
+		"message": "¿Quieres permitir la lectura para la API window?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "¿Quiere permitir la API de DOMRect?",
+		"message": "¿Quieres permitir la API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "¿Quiere permitir la entrada para la API de DOMRect?",
+		"message": "¿Quieres permitir la entrada para la API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para la API de DOMRect?",
+		"message": "¿Quieres permitir la lectura para la API DOMRect?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -276,35 +276,35 @@
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "¿Quiere permitir la entrada de la API de TextMetrics?",
+		"message": "¿Quieres permitir la entrada de la API TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "¿Quiere permitir la lectura de la API de TextMetrics?",
+		"message": "¿Quieres permitir la lectura de la API TextMetrics?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "¿Quiere permitir la API de navigator?",
+		"message": "¿Quieres permitir la API navigator?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "¿Quiere permitir la entrada para la API de navigator?",
+		"message": "¿Quieres permitir la entrada para la API navigator?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "¿Quiere permitir la lectura para la API de navigator?",
+		"message": "¿Quieres permitir la lectura para la API navigator?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "¿Quiere permitir la API de pantalla?",
+		"message": "¿Quieres permitir la API screen?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "¿Quiere permitir la entrada de la API de pantalla?",
+		"message": "¿Quieres permitir la entrada de la API screen?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "¿Quiere permitir la lectura de la API de pantalla?",
+		"message": "¿Quieres permitir la lectura de la API screen?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -368,7 +368,7 @@
 		"description": ""
 	},
 	"blockMode_urlSpecific": {
-		"message": "Para establecer modos de bloqueo individuales para sitios específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y seleccione el modo de bloqueo deseado.",
+		"message": "Para establecer modos de bloqueo individuales para sitios específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y selecciona el modo de bloqueo deseado.",
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
@@ -408,7 +408,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "Para proteger partes concretas de sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y seleccione la parte deseada.",
+		"message": "Para proteger partes concretas de sitios web específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y selecciona la parte deseada.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
@@ -448,7 +448,7 @@
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "Los «canvas» con un área mayor que este número no se falsean (introduzca un cero para deshabilitarlo). Es un parámetro de rendimiento que puede prevenir bloqueos del navegador y debe ajustarse a la potencia de cálculo del dispositivo.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor menor que 1000000.",
+		"message": "Los «canvas» con un área mayor que este número no se falsean (ingresa un cero para deshabilitarlo). Es un parámetro de rendimiento que puede prevenir bloqueos del navegador y debe ajustarse a la potencia de cálculo del dispositivo.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor menor que 1000000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
@@ -556,11 +556,11 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "PRECAUCIÓN: este ajuste hace al navegador 100% rastreable y es, por tanto, una amenaza para su privacidad.",
+		"message": "PRECAUCIÓN: este configuración hace al navegador 100 % rastreable, y por tanto, una amenaza para tu privacidad.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "¿Seguro que quiere compartir la aleatoriedad persistente entre dominios?\nPRECAUCIÓN: esto hace al nevegador 100% rastreable y es, por tanto, una amenaza para su privacidad.",
+		"message": "¿Seguro que quieres compartir la aleatoriedad persistente entre dominios?\nPRECAUCIÓN: esto hace al navegador 100 % rastreable, y por tanto, una amenaza para tu privacidad.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -588,35 +588,35 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Proveedor WebGL reportado",
+		"message": "Proveedor webGL reportado",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Leave empty to use the original value.",
+		"message": "Valor que debe ser reportado en la función webGL \"getParameter\" para el \"proveedor\". Dejar vacío para utilizar el valor original.",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "Renderizador webGL reportado",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Leave empty to use the original value.",
+		"message": "Valor que debe ser reportado en la función webGL \"getParameter\" para el \"renderizador\". Dejar vacío para utilizar el valor original.",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Reported webGL unmasked vendor",
+		"message": "Proveedor webGL desenmascarado reportado",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Leave empty to use the original value.",
+		"message": "Valor que debe ser reportado en la función webGL \"getParameter\" para el \"proveedor desenmascarado\". Dejar vacío para utilizar el valor original.",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Reported webGL unmasked renderer",
+		"message": "Renderizador webGL desenmascarado reportado",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"message": "Valor que debe ser reportado en la función webGL \"getParameter\" para el \"renderizador desenmascarado\". Dejar vacío para utilizar el valor original.",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -688,7 +688,7 @@
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "Lectura de TextMetrics falseada en {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -696,7 +696,7 @@
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Faked screen readout on {url}",
+		"message": "Lectura de screen falseada en {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -720,7 +720,7 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "archivo local",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -816,7 +816,7 @@
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
-		"message": "Para desactivar las notificaciones para sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
+		"message": "Para deshabilitar las notificaciones para sitios web específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"showNotifications_title": {
@@ -960,7 +960,7 @@
 		"description": ""
 	},
 	"protectAudio_title": {
-		"message": "Proteger la API de audio",
+		"message": "Proteger la API audio",
 		"description": ""
 	},
 	"protectAudio_description": {
@@ -968,7 +968,7 @@
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
-		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
+		"message": "Para excluir sitios web específicos de esta protección, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"audioFakeRate_title": {
@@ -1008,7 +1008,7 @@
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% de los valores",
+		"message": "100 % de los valores",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
@@ -1048,7 +1048,7 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Algunas páginas usan guiones para crear huellas digitales muy mal escritos que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
+		"message": "Algunas páginas usan scripts muy mal escritos con audio para crear huella digital que ralentizan Firefox. Para deshabilitar la caché para sitios web específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
@@ -1076,11 +1076,11 @@
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "Para cambiar este valor para sítios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y ponga un valor distinto.",
+		"message": "Para cambiar este valor para sitios web específicos, haz clic en la flecha negra para abrir el menú, añadir el dominio o URL haciendo clic en «+» y establecer un valor diferente.",
 		"description": ""
 	},
 	"protectWindow_title": {
-		"message": "Proteger la API de window",
+		"message": "Proteger la API window",
 		"description": ""
 	},
 	"protectWindow_description": {
@@ -1088,15 +1088,15 @@
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
-		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
+		"message": "Para excluir sitios web específicos de esta protección, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "La protección de la API de window rompe los reCAPTCHA. ¿Quiere añadir una excepción para eso?",
+		"message": "La protección de la API window rompe reCAPTCHA. ¿Quieres permitir la API window.name en las páginas integradas para que vuelva a funcionar?",
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
-		"message": "Allow window.name in frames",
+		"message": "Permitir window.name en frames",
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
@@ -1104,19 +1104,19 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
-		"message": "To allow this only for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
+		"message": "Para permitir esto solo para sitios web específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y marca la casilla.",
 		"description": ""
 	},
 	"protectDOMRect_title": {
-		"message": "Proteger la API de DOMRect",
+		"message": "Proteger la API DOMRect",
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "Protege contra la huella digital mediante «getClientRects()» y varios métodos similares.",
+		"message": "Esto protege contra la huella digital mediante «getClientRects()» y varios métodos similares.",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
-		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
+		"message": "Para excluir sitios web específicos de esta protección, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
@@ -1128,27 +1128,27 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "Proteger la API TextMetrics",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Esto protege contra la huella digital mediante «measureText()» que se pueden usar para validar de forma cruzada los valores DOMRect.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Para excluir sitios web específicos de esta protección, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Proteger la API de navigator",
+		"message": "Proteger la API navigator",
 		"description": ""
 	},
 	"protectNavigator_description": {
-		"message": "Esta página permite cambios en la API de navigator. Habilitar esta protección no cambia nada por defecto. Abra la configuración de navigator para especificar allí los cambios que desee.",
+		"message": "Esta página permite cambios en la API navigator. Habilitar esta protección no cambia nada por defecto. Abre la configuración de navigator para especificar allí los cambios que desees.",
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
-		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casila.",
+		"message": "Para excluir sitios web específicos de esta protección, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
@@ -1168,7 +1168,7 @@
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "En esta página puede cambiar la configuración de navigator. Si usa un preajuste, debe usar siempre uno para sistema operativo y otro para el navegador. Después de seleccionarlos, todavía puede hacer modificaciones.",
+		"message": "En esta página puedes cambiar la configuración de navigator. Si usas un preajuste, siempre debes usar uno para el sistema operativo y otro para el navegador. Después de seleccionarlos, todavía puede hacer modificaciones.",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
@@ -1192,31 +1192,31 @@
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reiniciar",
+		"message": "Restablecer",
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "Proteger la API screen",
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "This protects against fingerprinting attempts including the screen size.",
+		"message": "Esto protege contra los intentos de crear huella digital, incluido el tamaño de la pantalla.",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Para excluir sitios web específicos de esta protección, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "Tamaño de pantalla",
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"message": "Si se establece con un valor \"...x...\" las dimensiones especificadas serán reportadas como el tamaño de la pantalla.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
-		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"message": "Para proporcionar tamaños específicos para ciertos sitios web, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» e ingresa el valor deseado.",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
@@ -1228,7 +1228,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Para excluir sitios web específicos del falseado, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"theme_title": {
@@ -1272,7 +1272,7 @@
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casila.",
+		"message": "Para excluir sitios web específicos de esta protección, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
@@ -1320,7 +1320,7 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Exportar la configuración",
+		"message": "Exportar configuración",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1344,15 +1344,15 @@
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "Preajustes",
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "Esto abre la página de preajustes que se mostró en la instalación. Los preajustes son colecciones de valores de configuración para algunos casos de uso común de CanvasBlocker.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Abrir",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1368,7 +1368,7 @@
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reiniciar la configuración",
+		"message": "Restablecer configuración",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1376,7 +1376,7 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reiniciar",
+		"message": "Restablecer",
 		"description": ""
 	},
 	"resetSettings_confirm": {
@@ -1388,7 +1388,7 @@
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "Preguntas frecuentes",
 		"description": ""
 	},
 	"browserAction_test": {
@@ -1520,7 +1520,7 @@
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "No compartir la aleatoriedad persistente entre dominios porque hace al navegador 100% rastreable.",
+		"message": "No compartir la aleatoriedad persistente entre dominios porque hace al navegador 100 % rastreable.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
@@ -1536,19 +1536,19 @@
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "Preajustes",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "Preajustes de CanvasBlocker",
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg}Gracias por instalar CanvasBlocker. Para ajustarlo a tus necesidades puedes aplicar algunos preajustes. Para una mayor personalización puedes abrir la página de {link:opciones:options.html}. Allí también puedes abrir esta página de preajustes más tarde.",
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Estos son algunos preajustes de configuración para adaptarse a las necesidades de diferentes personas. Los valores entre paréntesis son el estado actual de la configuración. Puedes aplicar múltiples preajustes de configuración uno tras otro, pero alguna configuración puede ser sobrescrita por el que se aplique más tarde.",
 		"description": ""
 	},
 	"preset_default_title": {
@@ -1560,11 +1560,11 @@
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Configuración cómoda",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Aplica algunas configuraciones para que la experiencia de navegación sea lo más cómoda posible. Esto incluye la lista blanca de algunos sitios.",
 		"description": ""
 	},
 	"preset_stealth_title": {
@@ -1572,23 +1572,23 @@
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "Configura CanvasBlocker para que sea difícil de detectar. Esto puede llevar a un alto uso de la CPU y puede ralentizar el navegador.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "Máxima protección",
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Maximiza la protección contra la extracción de huella dagital. Esta configuración romperá algunas páginas, podría ralentizar un poco el navegador y podría permitir a los sitios detectar si utilizas CanvasBlocker. Después de aplicar este preajuste, deberías considerar aplicar también el preajuste reCAPTCHA.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "Excepción de reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "La protección de la API window rompe reCAPTCHA. Este preajuste permite el uso de la API window.name en páginas integradas, lo que hará que vuelva a funcionar.",
 		"description": ""
 	}
 }

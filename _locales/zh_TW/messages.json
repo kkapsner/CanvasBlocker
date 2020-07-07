@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "改變 某些 JS APIs 設定 來 防止 指紋 追踪。",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -12,11 +12,11 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\n成功的保護",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " ({url} 已被加進 API 白名單)",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -24,19 +24,19 @@
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "更多",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "更少",
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "請稍等...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "搜尋",
 		"description": ""
 	},
 	"ok": {
@@ -44,55 +44,55 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "確定",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "取消",
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "輸入",
 		"description": ""
 	},
 	"readout": {
-		"message": "readout",
+		"message": "輸出",
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "設定",
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "CanvasBlocker 設定",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "在此頁面，您可以調整CanvasBlocker的設定。",
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "CanvasBlacked已安裝好. 如果你想重上此網頁, 請收藏。",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlacked已被更新. 如果你將來想重上此網頁但還沒加籤, 請收藏。",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "更新後不要再顯示。",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "您啟用了privacy.resistFingerprinting設定。此設定會謏改 CanvasBlocker的行為。詳情参閱 {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} 和 {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}。",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "在新的隱身標籤頁中打開",
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "一般設定",
 		"description": ""
 	},
 	"group_APIs": {
@@ -100,31 +100,31 @@
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "雜項",
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking",
+		"message": "請問中",
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "偽造",
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "通知",
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "列表",
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "雜項",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "設定",
 		"description": ""
 	},
 	"section_canvas-api": {
@@ -160,155 +160,155 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "專家模式",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "顯示更多設定\n\t",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "顯示說明",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "顯示設定的說明",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "點擊這裡去隱藏此設置",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "顯示隱藏的設置",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "將被隱藏的設置顯示出來",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Do you want to allow invisible <canvas>?",
+		"message": "你想允許隱形的<canvas>嗎?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Do you want to allow invisible <canvas> input?",
+		"message": "你想允許隱形的<canvas>的輸入嗎?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "Do you want to allow invisible <canvas> readout?",
+		"message": "你想允許隱形的<canvas>的讀出嗎?",
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "你想允許<canvas>嗎?",
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "Do you want to allow <canvas> input?",
+		"message": "你想允許<canvas>的輸入嗎?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Do you want to allow <canvas> readout?",
+		"message": "你想允許<canvas>的讀出嗎?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "Do you want to allow the red bordered <canvas>?",
+		"message": "你想允許紅框的<canvas>嗎?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Do you want to allow input in the red bordered <canvas>?",
+		"message": "你想允許紅框<canvas>的輸入嗎?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "Do you want to allow the readout of the red bordered <canvas>?",
+		"message": "你想允許紅框<canvas>的讀出嗎?",
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "你想允許音訊API嗎?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio API input?",
+		"message": "你想允許音訊API的輸入嗎?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio API readout?",
+		"message": "你想允許音訊API的讀出嗎?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "你想允許歷史API嗎?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "你想允許歷史API的輸入嗎?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "你想允許歷史API的讀出嗎?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "你想允許視窗API嗎?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window API input?",
+		"message": "你想允許視窗API的輸入嗎?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window API readout?",
+		"message": "你想允許視窗API的讀出嗎?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "你想允許DOMRectAPI嗎?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect API input?",
+		"message": "你想允許DOMRectAPI的輸入嗎?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "你想允許DOMRectAPI的讀出嗎?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "你想允許TextMetricsAPI嗎?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "你想允許TextMetricsAPI的輸入嗎?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "你想允許TextMetricsAPI的讀出嗎?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "你想允許導航API嗎?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Do you want to allow navigator API input?",
+		"message": "你想允許導航API的輸入嗎?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "你想允許導航API的讀出嗎?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "你想允許屏幕API嗎?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "你想允許D屏幕API的輸入嗎?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "你想允許屏幕API的讀出嗎?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "只問一次",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
@@ -316,35 +316,35 @@
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "否",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
-		"message": "individual",
+		"message": "單一",
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "合併的",
 		"description": ""
 	},
 	"askDenyMode_title": {
-		"message": "Ask deny mode",
+		"message": "詢問否定模式",
 		"description": ""
 	},
 	"askDenyMode_description": {
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "如果許可被拒絕會使用哪種模式",
 		"description": ""
 	},
 	"askDenyMode_options.block": {
-		"message": "block",
+		"message": "阻止",
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "偽裝",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
-		"message": "Show canvas content",
+		"message": "顯示畫佈內容",
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
@@ -360,7 +360,7 @@
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "黑名單",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -372,35 +372,35 @@
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "全部允許",
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "只允許白名單",
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "ask for permission",
+		"message": "徵求權限",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "阻止所有",
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "阻止黑名單",
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "偽裝",
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "阻止模式",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "部分受保護的canvas API",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
@@ -412,19 +412,19 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "無",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "input",
+		"message": "輸入",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "readout",
+		"message": "讀出",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "所有",
 		"description": ""
 	},
 	"urlSettings_title": {
@@ -444,7 +444,7 @@
 		"description": ""
 	},
 	"minFakeSize_title": {
-		"message": "Minimal fake size",
+		"message": "最低假值",
 		"description": ""
 	},
 	"maxFakeSize_description": {
@@ -452,7 +452,7 @@
 		"description": ""
 	},
 	"maxFakeSize_title": {
-		"message": "Maximal fake size",
+		"message": "最大假值",
 		"description": ""
 	},
 	"rng_description": {
@@ -460,15 +460,15 @@
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "persistent",
+		"message": "持久",
 		"description": ""
 	},
 	"rng_options.constant": {
-		"message": "constant",
+		"message": "恆量",
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "non persistent",
+		"message": "非持久",
 		"description": ""
 	},
 	"rng_options.white": {
@@ -476,11 +476,11 @@
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "隨機數發生器",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Persistent storage",
+		"message": "持久存儲",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
@@ -488,7 +488,7 @@
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "存儲持久資料\n\t",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
@@ -504,31 +504,31 @@
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "秒",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "分鐘",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "小時",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "日",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "週",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "月",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "年",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
@@ -540,15 +540,15 @@
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "清除",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "清除容器",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "選擇容器",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
@@ -564,15 +564,15 @@
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "不理最常見的顏色",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "報告webGL的供應商",
 		"description": ""
 	},
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "最小的顏色",
 		"description": ""
 	},
 	"minColors_description": {
@@ -588,7 +588,7 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "報告webGL的供應商",
 		"description": ""
 	},
 	"webGLVendor_description": {
@@ -596,7 +596,7 @@
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "報告webGL的渲染器",
 		"description": ""
 	},
 	"webGLRenderer_description": {
@@ -640,7 +640,7 @@
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "顯示設定",
 		"description": ""
 	},
 	"displayCallingStack": {
@@ -648,7 +648,7 @@
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "顯示完整網址",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -708,11 +708,11 @@
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "不理表",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "不理API",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
@@ -720,7 +720,7 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "本機檔案",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -728,7 +728,7 @@
 		"description": ""
 	},
 	"ignorelistURL": {
-		"message": "ignore URL",
+		"message": "不理網址",
 		"description": ""
 	},
 	"selectIgnore": {
@@ -784,15 +784,15 @@
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the {api}",
+		"message": "僅將{api} 加到白名單",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "將所有API加到白名單",
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "設定",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -820,7 +820,7 @@
 		"description": ""
 	},
 	"showNotifications_title": {
-		"message": "Show notification icon",
+		"message": "顯示通知圖標",
 		"description": ""
 	},
 	"highlightPageAction_description": {
@@ -836,15 +836,15 @@
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "沒有標示",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "顏色",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "blink",
+		"message": "閃動",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -852,7 +852,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Display badge",
+		"message": "展示徽章",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -864,19 +864,19 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Change toolbar icon on notification",
+		"message": "通知更改工具欄的圖標",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "不變",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "更改顏色",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "blink",
+		"message": "閃動",
 		"description": ""
 	},
 	"sourceOutput": {
@@ -896,7 +896,7 @@
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "白名單",
 		"description": ""
 	},
 	"whiteList_description": {
@@ -904,27 +904,27 @@
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "白名單",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "whitelist domain",
+		"message": "將網域加入白名單",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "whitelist URL",
+		"message": "將網址加入白名單",
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "忽略",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "whitelist temporarily",
+		"message": "暫時加到白名單",
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "inspect whitelist",
+		"message": "檢查白名單",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -936,11 +936,11 @@
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "whitelist domain temporarily",
+		"message": "將網域臨時加入白名單",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "whitelist URL temporarily",
+		"message": "將網址臨時加入白名單",
 		"description": ""
 	},
 	"storeNotificationData_title": {
@@ -980,39 +980,39 @@
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1值",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10值",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100值",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000值",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "值的0.1％",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "值的1%",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "值的10％",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "值的100％",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "噪音水平",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
@@ -1020,27 +1020,27 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "最少",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "低",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "中",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "高",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "最大",
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "使用音頻緩存",
 		"description": ""
 	},
 	"useAudioCache_description": {
@@ -1052,7 +1052,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "使用固定索引",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
@@ -1060,7 +1060,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_title": {
-		"message": "Fixed indices",
+		"message": "固定指標",
 		"description": ""
 	},
 	"audioFixedIndices_description": {
@@ -1152,7 +1152,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
-		"message": "Navigator settings",
+		"message": "導覽器的設置",
 		"description": ""
 	},
 	"openNavigatorSettings_description": {
@@ -1160,11 +1160,11 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "開啟",
 		"description": ""
 	},
 	"navigatorSettings_title": {
-		"message": "CanvasBlocker navigator settings",
+		"message": "CanvasBlocker導覽器的設置",
 		"description": ""
 	},
 	"navigatorSettings_description": {
@@ -1180,23 +1180,23 @@
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "Operating system presets",
+		"message": "作業系統的預設",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Browser presets",
+		"message": "瀏覽器的預設",
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Navigator values",
+		"message": "導航器的預設",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "重置",
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "保護屏幕API",
 		"description": ""
 	},
 	"protectScreen_description": {
@@ -1208,7 +1208,7 @@
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "螢幕大小",
 		"description": ""
 	},
 	"screenSize_description": {
@@ -1232,7 +1232,7 @@
 		"description": ""
 	},
 	"theme_title": {
-		"message": "Theme",
+		"message": "佈景主題",
 		"description": ""
 	},
 	"theme_description": {
@@ -1240,27 +1240,27 @@
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "自動",
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "預設",
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "亮",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "暗",
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "彩色",
 		"description": ""
 	},
 	"theme_options.none": {
-		"message": "none",
+		"message": "無",
 		"description": ""
 	},
 	"blockDataURLs_title": {
@@ -1276,7 +1276,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "版本說明",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1284,11 +1284,11 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Show",
+		"message": "顯示",
 		"description": ""
 	},
 	"logLevel_title": {
-		"message": "Logging level",
+		"message": "記錄層級",
 		"description": ""
 	},
 	"logLevel_description": {
@@ -1296,31 +1296,31 @@
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "none",
+		"message": "無",
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "錯誤",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "警告",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "訊息",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "注意",
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "verbose",
+		"message": "詳細",
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Export settings",
+		"message": "匯出設定",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1328,7 +1328,7 @@
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "設定控制",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1336,15 +1336,15 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Setting sanitation",
+		"message": "設置清潔",
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "檢查白名單",
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "預置",
 		"description": ""
 	},
 	"openSettingPresets_description": {
@@ -1352,23 +1352,23 @@
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "開啟",
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Inspect",
+		"message": "檢查",
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "儲存",
 		"description": ""
 	},
 	"loadSettings_label": {
-		"message": "Load",
+		"message": "載入",
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reset settings",
+		"message": "回復預設",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1376,35 +1376,35 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reset",
+		"message": "重置",
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Are you sure you want to reset all settings?",
+		"message": "確定要重置為預設值？",
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "設定",
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "常見問題",
 		"description": ""
 	},
 	"browserAction_test": {
-		"message": "Test",
+		"message": "測試",
 		"description": ""
 	},
 	"browserAction_review": {
-		"message": "Review",
+		"message": "回顧",
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Report issue",
+		"message": "回報問題",
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Setting sanitation",
+		"message": "設置清潔",
 		"description": ""
 	},
 	"sanitation_description": {
@@ -1424,19 +1424,19 @@
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "阻止模式",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
-		"message": "Thresholds",
+		"message": "臨界值",
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "性能",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
-		"message": "Privacy",
+		"message": "私隱",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
@@ -1460,7 +1460,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "啟用功能",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
@@ -1532,15 +1532,15 @@
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "所有 API",
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "預置",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "CanvasBlocker 的預置",
 		"description": ""
 	},
 	"presets_installNotice": {
@@ -1552,7 +1552,7 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "預設設定",
 		"description": ""
 	},
 	"preset_default_description": {
@@ -1560,15 +1560,15 @@
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "方便的設置",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "CanvasBlocker白名單檢查",
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "隱身設置",
 		"description": ""
 	},
 	"preset_stealth_description": {
@@ -1576,7 +1576,7 @@
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "最高保護",
 		"description": ""
 	},
 	"preset_max_protection_description": {
@@ -1584,7 +1584,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "豁免reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {

@@ -148,7 +148,7 @@
 		"description": ""
 	},
 	"section_TextMetrics-api": {
-		"message": "TextMetrics API",
+		"message": "API TextMetrics",
 		"description": ""
 	},
 	"section_Navigator-api": {
@@ -272,15 +272,15 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "Voulez-vous autoriser l'interface TextMetrics ?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "Voulez-vous autoriser l'envoi de données par le biais de l'interface TextMetrics ?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "Voulez-vous autoriser la lecture de données par le biais de l'interface TextMetrics ?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -688,7 +688,7 @@
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "Données faussées pour la lecture des données TextMetrics activé {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
@@ -1128,15 +1128,15 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "Protéger l'interface TextMetrics",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Cela protège contre les empreintes digitales \"measureText ()\" qui peuvent être utilisées pour contre-valider les valeurs DOMRect.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Pour exclure des sites Web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"protectNavigator_title": {
@@ -1388,7 +1388,7 @@
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "Questions fréquentes",
 		"description": ""
 	},
 	"browserAction_test": {
@@ -1452,7 +1452,7 @@
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
+		"message": "Certaines fonctionnalités de {api} sont désactivées. Cela ne devrait être fait uniquement pour les tests ou si vous savez vraiment ce que font ces fonctionnalités.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
