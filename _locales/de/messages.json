@@ -1584,11 +1584,11 @@
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA Ausnahme",
+		"message": "reCAPTCHA-Ausnahme",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Der window-API-Schutz macht reCAPTCHA unbenutzbar. Diese Voreinstellung erlaubt die Benutzung der window.name-API in eingebetteten Seiten. Dadurch funktioniert es wieder.",
+		"message": "Der Window-API-Schutz macht reCAPTCHA unbenutzbar. Diese Voreinstellung erlaubt die Benutzung der window.name-API in eingebetteten Seiten, wodurch es wieder funktioniert.",
 		"description": ""
 	}
 }
