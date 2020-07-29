@@ -1,5 +1,5 @@
 
-#iframe {
+#iframe, #svg {
 	position: fixed;
 	top: -2000%;
 }

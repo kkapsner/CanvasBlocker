@@ -12,12 +12,13 @@
 	
 	const container = document.getElementById("tests");
 	const iframe = document.getElementById("iframe");
+	const svg = document.getElementById("svg");
 	const noIframe = document.getElementById("noIframe");
 	const template = document.querySelector(".test");
 	template.parentElement.removeChild(template);
 	
 	function getElements(useIframe = true){
-		const doc = useIframe? iframe.contentDocument: noIframe;
+		const doc = useIframe? (useIframe === "svg"? svg.contentDocument: iframe.contentDocument): noIframe;
 		
 		return Array.from(doc.querySelectorAll(".testRect"));
 	}
@@ -58,9 +59,15 @@
 			"</tr>" +
 			properties.map(function(property){
 				return "<tr><th>" + property + "</th>" + rects.map(function(rect){
-					return "<td class=\"value\" title=\"" + rect.data[property] + "\">" +
-						formatNumber(rect.data[property]) +
-						"</td>";
+					const value = rect.data[property];
+					if ((typeof value) === "number"){
+						return "<td class=\"value\" title=\"" + rect.data[property] + "\">" +
+							formatNumber(rect.data[property]) +
+							"</td>";
+					}
+					else {
+						return "<td class=\"value unavailable\">not available</td>";
+					}
 				}).join("") + "</tr>";
 			}).join("") +
 			"</table>";
@@ -79,7 +86,8 @@
 	
 	function createTest(title, callback, useIframe){
 		const output = template.cloneNode(true);
-		output.querySelector(".title").textContent = title + (useIframe? " (iframe)": "");
+		output.querySelector(".title").textContent = title +
+			(useIframe? " (" + (useIframe === "svg"? "svg": "iframe") + ")": "");
 		output.querySelector(".refresh").addEventListener("click", function(){
 			performTest(output, callback, useIframe);
 		});
@@ -145,6 +153,17 @@
 				return range.getBoundingClientRect();
 			}, useIframe);
 		});
+		createTest("SVGGraphicsElement.getBBox", function(element){
+			return element.getBBox();
+		}, "svg");
+		createTest("SVGTextContentElement.getExtentOfChar", function(element){
+			return element.getExtentOfChar(element.textContent.length - 1);
+		}, "svg");
+		createTest("SVGTextContentElement.get(Start|End)OfChar", function(element){
+			const start = element.getStartPositionOfChar(element.textContent.length - 1);
+			const end = element.getEndPositionOfChar(element.textContent.length - 1);
+			return new DOMRect(start.x, start.y, end.x - start.x, end.y - start.y);
+		}, "svg");
 		
 		document.querySelectorAll(".content-hidable").forEach(function(parentNode){
 			parentNode.querySelector(".toggle").addEventListener("click", function(){
