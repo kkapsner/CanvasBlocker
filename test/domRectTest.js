@@ -142,6 +142,10 @@
 			createTest("Element.getBoundingClientRect", function(element){
 				return element.getBoundingClientRect();
 			}, useIframe);
+			createTest("Element.getBoxQuads", function(element){
+				const quad = element.getBoxQuads();
+				return quad[0].getBounds();
+			}, useIframe);
 			createTest("Range.getClientRects", function(element){
 				const range = document.createRange();
 				range.selectNode(element);
