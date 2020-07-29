@@ -22,7 +22,7 @@
 	<div class="test">
 		<h3 class="title"></h3>
 		Hash: <span class="hash"></span><br>
-		Data: <span class="data"></span><br>
+		<span class="content-hidable content-hidden">Data: <span class="toggle"><span class="anti-content">&plus;</span><span class="content">&minus;</span></span><span class="data content"></span></span><br>
 		<button class="refresh">refresh</button>
 		<button class="performance">measure performance</button>
 	</div>

@@ -145,5 +145,11 @@
 				return range.getBoundingClientRect();
 			}, useIframe);
 		});
+		
+		document.querySelectorAll(".content-hidable").forEach(function(parentNode){
+			parentNode.querySelector(".toggle").addEventListener("click", function(){
+				parentNode.classList.toggle("content-hidden");
+			});
+		});
 	});
 }());

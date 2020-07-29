@@ -87,3 +87,13 @@
 .testRect {
 	outline: 2px dotted lightblue;
 }
+
+.content-hidable.content-hidden .content, .content-hidable .anti-content {
+	display: none;
+}
+.content-hidable .content, .content-hidable.content-hidden .anti-content {
+	display: initial;
+}
+.content-hidable .toggle {
+	cursor: pointer;
+}
