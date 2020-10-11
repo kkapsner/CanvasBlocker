@@ -96,6 +96,7 @@
 			const text = await new Promise(function(resolve, reject){
 				const input = document.createElement("input");
 				input.type = "file";
+				input.accept = "application/json";
 				input.addEventListener("change", function(){
 					if (this.files.length){
 						const reader = new FileReader();
