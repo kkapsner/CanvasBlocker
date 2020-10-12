@@ -20,7 +20,7 @@
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
-		"message": "\n  · {api}",
+		"message": "\n· {api}",
 		"description": ""
 	},
 	"more": {
@@ -36,7 +36,7 @@
 		"description": ""
 	},
 	"search": {
-		"message": "Pesquisa",
+		"message": "Pesquisar",
 		"description": ""
 	},
 	"ok": {
@@ -72,11 +72,11 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker foi instalado. Se você quiser acessar esta página futuramente, por favor, adicione-a aos favoritos.",
+		"message": "CanvasBlocker foi instalado. Se quiser aceder esta página futuramente, por favor, adicione-a aos marcadores.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker foi atualizado. Se você quiser ser acessar esta página futuramente e ainda não a favoritou, por favor favorite-a.",
+		"message": "CanvasBlocker foi atualizado. Se quiser ser aceder esta página futuramente e ainda não a adicionou aos marcadores, por favor adicione-a.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
@@ -88,7 +88,7 @@
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Abrir numa aba separada",
+		"message": "Abrir num noutro separador",
 		"description": ""
 	},
 	"group_general": {
