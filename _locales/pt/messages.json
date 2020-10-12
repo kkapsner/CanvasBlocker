@@ -896,7 +896,7 @@
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "Lista branca",
 		"description": ""
 	},
 	"whiteList_description": {
@@ -904,7 +904,7 @@
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "lista branca",
 		"description": ""
 	},
 	"whitelistDomain": {
@@ -1240,7 +1240,7 @@
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "automático",
 		"description": ""
 	},
 	"theme_options.default": {
@@ -1432,7 +1432,7 @@
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "Desempenho",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
