@@ -204,83 +204,83 @@
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "Você quer permitir a entrada de <canvas>?",
+		"message": "Quer permitir a entrada de <canvas>?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Deseja permitir a leitura do <canvas>?",
+		"message": "Quer permitir a leitura do <canvas>?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "Deseja permitir o <canvas> com borda vermelha?",
+		"message": "Quer permitir o <canvas> com borda vermelha?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Deseja permitir entrada nas <canvas> com borda vermelha?",
+		"message": "Quer permitir entrada nas <canvas> com borda vermelha?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "Deseja permitir a leitura das <canvas> com borda vermelha?",
+		"message": "Quer permitir a leitura das <canvas> com borda vermelha?",
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Deseja permitir a API de áudio?",
+		"message": "Quer permitir a API de áudio?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Deseja permitir a entrada da API de áudio?",
+		"message": "Quer permitir a entrada da API de áudio?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Deseja permitir a leitura da API de áudio?",
+		"message": "Quer permitir a leitura da API de áudio?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Deseja permitir a API de histórico?",
+		"message": "Quer permitir a API de histórico?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Deseja permitir a entrada do histórico da API?",
+		"message": "Quer permitir a entrada do histórico da API?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Deseja permitir leitura do histórico da API?",
+		"message": "Quer permitir leitura do histórico da API?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Você deseja permitir a API da janela?",
+		"message": "Quer permitir a API da janela?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Você deseja permitir a entrada da API da janela?",
+		"message": "Quer permitir a entrada da API da janela?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Deseja permitir a leitura da API da janela?",
+		"message": "Quer permitir a leitura da API da janela?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Você deseja permitir a API DOMRect?",
+		"message": "Quer permitir a API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Você deseja permitir a entrada da API DOMRect?",
+		"message": "Quer permitir a entrada da API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Deseja permitir leitura da API DOMRect?",
+		"message": "Quer permitir leitura da API DOMRect?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Deseja permitir a API de Métricas de Texto?",
+		"message": "Quer permitir a API de Métricas de Texto?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Deseja permitir a entrada da API de Métricas de Texto?",
+		"message": "Quer permitir a entrada da API de Métricas de Texto?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Deseja permitir leitura da API de Métricas de Texto?",
+		"message": "Quer permitir leitura da API de Métricas de Texto?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -288,23 +288,23 @@
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Deseja permitir a entrada da API do navegador?",
+		"message": "Quer permitir a entrada da API do navegador?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Deseja permitir leitura da API do navegador?",
+		"message": "Quer permitir leitura da API do navegador?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Deseja permitir a API de tela?",
+		"message": "Quer permitir a API de ecrã?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Deseja permitir a entrada da API de tela?",
+		"message": "Quer permitir a entrada da API de ecrã?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Deseja permitir leitura da API de tela?",
+		"message": "Quer permitir leitura da API de ecrã?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
