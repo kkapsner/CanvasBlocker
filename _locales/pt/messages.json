@@ -312,7 +312,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "Quando o modo de bloqueio do CanvasBlocker estiver definido como 'pedir permissão' ou 'pedir permissão para a API de leitura', uma mensagem de confirmação será exibida sempre que uma página tentar acessar a API ou a API de leitura. Essa configuração tenta exibir a mensagem de confirmação apenas uma vez para cada página, independentemente de quantas vezes a página tenta acessar a API. No entanto, várias mensagens de confirmação ainda podem ser exibidas em algumas páginas.\n\nNão: perguntando sempre\n\nIndividual: cada tipo de API (contexto, entrada, leitura) deve ser confirmado separadamente\n\nCombinados: todos os tipos de API são confirmados juntos",
+		"message": "Quando o modo de bloqueio do CanvasBlocker estiver definido como 'pedir permissão' ou 'pedir permissão para a API de leitura', uma mensagem de confirmação será exibida sempre que uma página tentar acessar a API ou a API de leitura. Essa configuração tenta exibir a mensagem de confirmação apenas uma vez para cada página, independentemente de quantas vezes a página tenta aceder à API. No entanto, várias mensagens de confirmação ainda podem ser exibidas em algumas páginas.\n\nNão: perguntando sempre\n\nIndividual: cada tipo de API (contexto, entrada, leitura) deve ser confirmado separadamente\n\nCombinados: todos os tipos de API são confirmados juntos",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -376,7 +376,7 @@
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "permitir apenas whitelist",
+		"message": "permitir apenas a lista branca",
 		"description": ""
 	},
 	"blockMode_options.ask": {
@@ -388,7 +388,7 @@
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "bloquear somente a lista negra",
+		"message": "bloquear apenas a lista negra",
 		"description": ""
 	},
 	"blockMode_options.fake": {
@@ -400,7 +400,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Parte protegida da API da tela",
+		"message": "Parte protegida da API do canvas",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
@@ -440,7 +440,7 @@
 		"description": ""
 	},
 	"minFakeSize_description": {
-		"message": "Canvas com uma área menor ou igual a esse número não serão falsificadas. Este é um parâmetro para impedir a detecção.\nCUIDADO: Isso diminui a segurança do complemento, portanto, é altamente recomendável não definir esse valor acima de 100.",
+		"message": "Canvas com uma área menor ou igual a esse número não serão falsificadas. Este é um parâmetro para impedir a detecção.\nCUIDADO: Isso diminui a segurança do extra, portanto, é altamente recomendável não definir esse valor acima de 100.",
 		"description": ""
 	},
 	"minFakeSize_title": {
@@ -448,7 +448,7 @@
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "Canvbas com uma área maior que esse número não serão falsificadas. (Digite zero para desativar.) Esse é um parâmetro de desempenho que pode impedir o congelamento do navegador e deve ser ajustado à capacidade de computação do dispositivo.\nCUIDADO: Isso diminui a segurança do complemento, portanto, é altamente recomendável não definir esse valor abaixo de 1 000 000.",
+		"message": "Canvas com uma área maior que esse número não serão falsificadas. (Insira zero para desativar.) Esse é um parâmetro de desempenho que pode impedir o bloqueio do navegador e deve ser ajustado à capacidade de processamento do dispositivo.\nCUIDADO: Isso diminui a segurança do complemento, portanto, é altamente recomendável não definir esse valor abaixo de 1 000 000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
@@ -476,7 +476,7 @@
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Gerador de números randômicos",
+		"message": "Gerador de números aleatórios",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
@@ -544,15 +544,15 @@
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Limpar contêiner",
+		"message": "Limpar contentor",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Selecionar contêiner",
+		"message": "Selecionar contentor",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Compartilhe a aleatoriedade persistente entre domínios",
+		"message": "Partilhe a aleatoriedade persistente entre domínios",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
@@ -560,7 +560,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Você tem certeza que deseja compartilhar a aleatoriedade persistente entre domínios?\nATENÇÃO: isto torna o navegador 100% rastreável e, portanto, é uma ameaça à sua privacidade.",
+		"message": "Você tem certeza que deseja partilhar a aleatoriedade persistente entre domínios?\nATENÇÃO: isto torna o navegador 100% rastreável e, portanto, é uma ameaça à sua privacidade.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -568,7 +568,7 @@
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Número de cores que não serão falsificadas por tela. Este é um parâmetro para impedir a detecção.\nCuidado: Isso pode reduzir o desempenho do addon, pois a estatística de cores precisa ser calculada para cada imagem. Adicionalmente, isto pode reduzir a segurança da adensão, pelo que é altamente recomendável não definir este valor acima de 3.",
+		"message": "Número de cores que não serão falsificadas por tela. Este é um parâmetro para impedir a detecção.\nCuidado: Isso pode reduzir o desempenho do extra, pois a estatística de cores precisa ser calculada para cada imagem. Adicionalmente, isto pode reduzir a segurança do extra, pelo que é altamente recomendável não definir este valor acima de 3.",
 		"description": ""
 	},
 	"minColors_title": {
@@ -576,7 +576,7 @@
 		"description": ""
 	},
 	"minColors_description": {
-		"message": "Número de cores que uma tela deve ser falsificada.\nCuidado: Isso pode diminuir a segurança do acréscimo de extensão, portanto é altamente recomendado não definir esse valor acima de 10.",
+		"message": "Número de cores que uma tela deve ser falsificada.\nCuidado: Isso pode diminuir a segurança do extra, portanto é altamente recomendado não definir esse valor acima de 10.",
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
