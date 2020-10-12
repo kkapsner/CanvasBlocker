@@ -104,7 +104,7 @@
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Perguntando",
+		"message": "A perguntar",
 		"description": ""
 	},
 	"section_faking": {
@@ -156,11 +156,11 @@
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "API da tela",
+		"message": "API do ecrã",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Modo Expert",
+		"message": "Modo de especialista",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
@@ -176,11 +176,11 @@
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Clique aqui para ocultar a configuração.",
+		"message": "Clique aqui para ocultar esta configuração.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Exibir configurações ocultas",
+		"message": "Mostrar configurações ocultas",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
@@ -188,15 +188,15 @@
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Você deseja permitir <canvas> invisível?",
+		"message": "Deseja permitir <canvas> invisível?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Você quer permitir a entrada invisível de <canvas>?",
+		"message": "Quer permitir a entrada de <canvas> invisível?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "Você quer permitir leitura <canvas> invisível?",
+		"message": "Quer permitir leitura <canvas> invisível?",
 		"description": ""
 	},
 	"askForPermission": {
