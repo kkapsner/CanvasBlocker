@@ -768,27 +768,27 @@
 		"description": ""
 	},
 	"inputSessionWhitelist": {
-		"message": "Domínio de entrada ou URL \"RegExp\" para adicionar à whitelist de sessão:",
+		"message": "Domínio de entrada ou URL \"RegExp\" para adicionar à lista branca de sessão:",
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Domínio de entrada para adicionar à whitelist de sessão:",
+		"message": "Domínio de entrada para adicionar à lista branca de sessão:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
-		"message": "Insira a URL \"RegExp\" para adicionar à whitelist de sessão:",
+		"message": "Insira a URL \"RegExp\" para adicionar à lista branca de sessão:",
 		"description": ""
 	},
 	"selectWhitelistScope": {
-		"message": "Qual é o âmbito do whitelisting?",
+		"message": "Qual é o âmbito da lista branca?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Somente a whitelist {api}",
+		"message": "Adicione apenas a {api} à lista branca",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist de todas as APIs",
+		"message": "Adicione à lista branca todas as APIs",
 		"description": ""
 	},
 	"settings": {
@@ -800,7 +800,7 @@
 		"description": ""
 	},
 	"showCallingFile_title": {
-		"message": "Mostrar arquivo de chamadas",
+		"message": "Mostrar ficheiro de chamadas",
 		"description": ""
 	},
 	"showCompleteCallingStack_description": {
@@ -880,7 +880,7 @@
 		"description": ""
 	},
 	"sourceOutput": {
-		"message": "Arquivo de chamada",
+		"message": "Ficheiro de chamada",
 		"description": ""
 	},
 	"stackEntryOutput": {
@@ -888,11 +888,11 @@
 		"description": ""
 	},
 	"stackList_description": {
-		"message": "Arquivos JS que podem usar todas as APIs. A entrada tem que estar no formato JSON. Exemplo: [{\"url\": \"http://domain/file1. s\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"message": "Ficheiros JS que podem usar todas as APIs. A entrada tem que estar no formato JSON. Exemplo: [{\"url\": \"http://domain/file1. s\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
 		"description": ""
 	},
 	"stackList_title": {
-		"message": "Arquivo whitelist específico",
+		"message": "Ficheiro de lista branca específico",
 		"description": ""
 	},
 	"whiteList_title": {
@@ -908,7 +908,7 @@
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "whitelist de domínios",
+		"message": "domínio de lista branca",
 		"description": ""
 	},
 	"whitelistURL": {
@@ -924,7 +924,7 @@
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "inspecionar whitelist",
+		"message": "inspecionar lista branca",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -956,7 +956,7 @@
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Habilita o armazenamento do conteúdo da tela falsa.\nATENÇÃO: Isto pode levar a um grande consumo de memória.",
+		"message": "Activa o armazenamento do conteúdo do ecrã falso.\nATENÇÃO: Isto pode levar a um grande consumo de memória.",
 		"description": ""
 	},
 	"protectAudio_title": {
@@ -1304,7 +1304,7 @@
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "atenção",
+		"message": "aviso",
 		"description": ""
 	},
 	"logLevel_options.50": {
@@ -1340,7 +1340,7 @@
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspecionar whitelist",
+		"message": "Inspecionar lista branca",
 		"description": ""
 	},
 	"openSettingPresets_title": {
@@ -1360,7 +1360,7 @@
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Salvar",
+		"message": "Guardar",
 		"description": ""
 	},
 	"loadSettings_label": {
@@ -1452,7 +1452,7 @@
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Alguns recursos de {api} estão desativados. Isso só deve ser feito para testes ou se você realmente sabe o que estão fazendo.",
+		"message": "Alguns recursos de {api} estão desativados. Isto só deve ser feito para testes ou se souber realmente o que está a fazer.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
