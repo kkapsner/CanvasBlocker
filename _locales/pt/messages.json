@@ -624,7 +624,7 @@
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "Habilita o cache canvas. Isso pode prevenir a detecção e aumentar o desempenho quando as telas pequenas são lidas várias vezes, mas diminui para a tela grande.",
+		"message": "Habilita o cache canvas. Isso pode prevenir a detecção e aumentar o desempenho quando os ecrãs pequenos são lidas várias vezes, mas diminui para os ecrãs grandes.",
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
@@ -656,7 +656,7 @@
 		"description": ""
 	},
 	"enableStackList_title": {
-		"message": "Usar arquivo de whitelist específico",
+		"message": "Usar ficheiro de lista branca específico",
 		"description": ""
 	},
 	"preBlock": {
@@ -720,7 +720,7 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "arquivo local",
+		"message": "ficheiro local",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -748,19 +748,19 @@
 		"description": ""
 	},
 	"selectWhitelist": {
-		"message": "Selecione domínio ou URL para adicionar à whitelist:",
+		"message": "Selecione domínio ou URL para adicionar à lista branca:",
 		"description": ""
 	},
 	"inputWhitelist": {
-		"message": "Domínio de entrada ou URL \"RegExp\" para adicionar à whitelist:",
+		"message": "Domínio de entrada ou URL \"RegExp\" para adicionar à lista branca:",
 		"description": ""
 	},
 	"inputWhitelistDomain": {
-		"message": "Domínio de entrada para adicionar à whitelist:",
+		"message": "Domínio de entrada para adicionar à lista branca:",
 		"description": ""
 	},
 	"inputWhitelistURL": {
-		"message": "Insira a URL \"RegExp\" para adicionar à whitelist:",
+		"message": "Insira a URL \"RegExp\" para adicionar à lista branca:",
 		"description": ""
 	},
 	"selectSessionWhitelist": {
