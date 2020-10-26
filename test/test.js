@@ -4,7 +4,18 @@
 	
 	async function show(container, {url, imageData, isPointInPath}){
 		const display = container.querySelector(".display");
-		display.src = url;
+		switch (display.nodeName){
+			case "IMG":
+				display.src = url;
+				break;
+			case "CANVAS": {
+				display.height = imageData.height;
+				display.width = imageData.width;
+				const context = display.getContext("2d");
+				context.putImageData(imageData, 0, 0);
+			}
+				break;
+		}
 		display.title = url;
 		const hashes = await Promise.all([
 			testAPI.hash(url),
@@ -25,6 +36,7 @@
 	
 	const tests = {
 		top: function(){return canvasAPI.fingerprint();},
+		getImageDataTest: function(){return canvasAPI.fingerprint();},
 		iframe: iframeTest,
 		iframe2: iframeTest,
 		iframe3: iframeTest,
