@@ -6,7 +6,7 @@ Version 1.4:
 		- 
 	
 	fixes:
-		- 
+		- Fix stuck Fenix
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
