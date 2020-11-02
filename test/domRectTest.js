@@ -191,11 +191,22 @@
 			return element.getBBox();
 		}, "svg");
 		createTest("SVGTextContentElement.getExtentOfChar", function(element){
-			return element.getExtentOfChar(element.textContent.length - 1);
+			return element.getEndPositionOfChar? element.getExtentOfChar(element.textContent.length - 1): null;
 		}, "svg");
 		createTest("SVGTextContentElement.get(Start|End)OfChar", function(element){
+			if (!element.getStartPositionOfChar){
+				return null;
+			}
 			const start = element.getStartPositionOfChar(element.textContent.length - 1);
 			const end = element.getEndPositionOfChar(element.textContent.length - 1);
+			return new DOMRect(start.x, start.y, end.x - start.x, end.y - start.y);
+		}, "svg");
+		createTest("SVGGeometryElement.getPointAtLength", function(element){
+			if (!element.getPointAtLength){
+				return null;
+			}
+			const start = element.getPointAtLength(Math.E);
+			const end = element.getPointAtLength(Math.PI);
 			return new DOMRect(start.x, start.y, end.x - start.x, end.y - start.y);
 		}, "svg");
 		
