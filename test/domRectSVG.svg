@@ -4,7 +4,16 @@
 		font: italic 13px sans-serif;
 		transform: rotate(-3.4deg);
 	}
+	#path {
+		transform: rotate(42.3deg);
+	}
   </style>
 
+  <path data-name="path" id="path" class="testRect" fill="red" d="
+  		M 10,30
+		A 20,20 0,0,1 50,30
+		A 20,20 0,0,1 90,30
+		Q 90,60 50,90
+		Q 10,60 10,30 z"/>
   <text x="20" y="35" data-name="text" id="text" class="testRect">Text with Unicode &#x1D790;</text>
 </svg>

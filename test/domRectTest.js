@@ -31,11 +31,13 @@
 
 	const properties = ["x", "y", "width", "height", "top", "left", "right", "bottom"];
 	async function performTest(output, callback, useIframe = true){
-		const rects = getElements(useIframe).map(function(element){
+		const rects = (await Promise.all(getElements(useIframe).map(async function(element){
 			return {
 				name: element.dataset.name,
-				data: callback(element)
+				data: await callback(element)
 			};
+		}))).filter(function(rect){
+			return rect.data;
 		});
 		const data = new Float64Array(rects.length * properties.length);
 		rects.forEach(function(rect, i){
@@ -134,6 +136,25 @@
 		container.appendChild(output);
 		performTest(output, callback, useIframe);
 	}
+	async function getIntersectionEntryValue(parentElement, element, property){
+		if (!(element instanceof Element)){
+			return null;
+		}
+		
+		return new Promise(function(resolve){
+			const timeout = window.setTimeout(function(){
+				resolve(null);
+			}, 1000);
+			const observer = new IntersectionObserver(function(entries){
+				window.clearTimeout(timeout);
+				resolve(entries[0][property]);
+			}, {
+				root: parentElement,
+				rootMargin: "1000px",
+			});
+			observer.observe(element);
+		});
+	}
 	iframe.addEventListener("load", function(){
 		[true, false].forEach(function(useIframe){
 			createTest("Element.getClientRects", function(element){
@@ -145,6 +166,15 @@
 			createTest("Element.getBoxQuads", function(element){
 				const quad = element.getBoxQuads();
 				return quad[0].getBounds();
+			}, useIframe);
+			createTest("IntersectionObserverEntry.intersectionRect", function(element){
+				return getIntersectionEntryValue(element.parentElement, element, "intersectionRect");
+			}, useIframe);
+			createTest("IntersectionObserverEntry.boundingClientRect", function(element){
+				return getIntersectionEntryValue(element.parentElement, element, "boundingClientRect");
+			}, useIframe);
+			createTest("IntersectionObserverEntry.rootBounds", function(element){
+				return getIntersectionEntryValue(element, element.firstChild, "rootBounds");
 			}, useIframe);
 			createTest("Range.getClientRects", function(element){
 				const range = document.createRange();
