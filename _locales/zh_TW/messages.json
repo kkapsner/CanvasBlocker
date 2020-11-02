@@ -404,7 +404,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "nothing: no features of the canvas API are protected.\n\nreadout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "無保護： 不對Canvas API進行保護\n讀保護： 保護對Canvas API的讀取功能\n寫保護： 保護對Canvas API的寫入功能。 當攔截模式設定爲「僞造」時，顯示文本時繪製的畫素會經過些許修改。這讓CanvasBlocker更難被檢測，但是同時會降低安全性。 在WebGL中，讀寫保護效能相同\n全保護： 保護對Canvas API的讀寫功能。因爲會增加被檢測的概率，不建議和「僞造」模式一起使用",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
@@ -428,7 +428,7 @@
 		"description": ""
 	},
 	"urlSettings_title": {
-		"message": "Site specific values",
+		"message": "站點特定設定",
 		"description": ""
 	},
 	"urlSettings_description": {
@@ -472,7 +472,7 @@
 		"description": ""
 	},
 	"rng_options.white": {
-		"message": "none (completely white)",
+		"message": "無(全白)",
 		"description": ""
 	},
 	"rng_title": {
@@ -580,7 +580,7 @@
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
-		"message": "Fake the alpha channel",
+		"message": "僞造alpha通道",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
