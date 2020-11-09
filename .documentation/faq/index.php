@@ -4,6 +4,7 @@
 		<title>
 			CanvasBlocker FAQs
 		</title>
+		<link rel="stylesheet" href="../default.css" type="text/css">
 	</head>
 	<body>
 		<header><h1>CanvasBlocker FAQs</h1></header>
