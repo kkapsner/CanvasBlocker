@@ -68,7 +68,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "Na tej stronie możesz dostosować ustawienia CanvasBlocker.",
 		"description": ""
 	},
 	"installNotice": {
@@ -116,7 +116,7 @@
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "Listy",
 		"description": ""
 	},
 	"section_misc": {
