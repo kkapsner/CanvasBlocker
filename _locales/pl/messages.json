@@ -52,11 +52,11 @@
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "wejście",
 		"description": ""
 	},
 	"readout": {
-		"message": "readout",
+		"message": "odczyt",
 		"description": ""
 	},
 	"options": {
@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Włączono privacy.resistFingerprint. To nieznacznie zmienia zachowanie CanvasBlocker. Zobacz dalsze informacje {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} i {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -104,11 +104,11 @@
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking",
+		"message": "Pytanie",
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "Fałszowanie",
 		"description": ""
 	},
 	"section_notifications": {
@@ -168,27 +168,27 @@
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "Wyświetl opis",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "Wyświetl opisy ustawień.",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "Kliknij tutaj, aby ukryć to ustawienie.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "Wyświetl ukryte ustawienia",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "Aktywuj aby wyświetlić ukryte ustawienia.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Do you want to allow invisible <canvas>?",
+		"message": "Czy chcesz zezwolić na działanie niewidzialnych <canvas>?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
@@ -412,19 +412,19 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "nic",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "input",
+		"message": "wejście",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "readout",
+		"message": "odczyt",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "wszystko",
 		"description": ""
 	},
 	"urlSettings_title": {
@@ -464,23 +464,23 @@
 		"description": ""
 	},
 	"rng_options.constant": {
-		"message": "constant",
+		"message": "stałe",
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "non persistent",
+		"message": "nietrwały",
 		"description": ""
 	},
 	"rng_options.white": {
-		"message": "none (completely white)",
+		"message": "brak (całkowicie biały)",
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "Generator liczb losowych",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Persistent storage",
+		"message": "Trwałe przechowywanie",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
@@ -504,31 +504,31 @@
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "sekund",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "minut/y",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "godzin",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "dni",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "tygodni",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "miesięcy",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "lat",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
@@ -540,15 +540,15 @@
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "Wyczyść",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Wyczyść kontener",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Wybierz kontener",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
@@ -696,7 +696,7 @@
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Faked screen readout on {url}",
+		"message": "Fałszywy odczyt ekranu na {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -708,19 +708,19 @@
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "Ignoruj listę",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "Ignorowane API",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
-		"message": "No notifications will be displayed for the selected APIs.",
+		"message": "Żadne powiadomienia nie będą wyświetlane dla wybranych API.",
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "plik lokalny",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -728,7 +728,7 @@
 		"description": ""
 	},
 	"ignorelistURL": {
-		"message": "ignore URL",
+		"message": "ignoruj adres URL",
 		"description": ""
 	},
 	"selectIgnore": {
@@ -792,7 +792,7 @@
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "ustawienia",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -836,11 +836,11 @@
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "bez podświetlenia",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "kolor",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
@@ -896,7 +896,7 @@
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "Biała lista",
 		"description": ""
 	},
 	"whiteList_description": {
@@ -904,7 +904,7 @@
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "biała lista",
 		"description": ""
 	},
 	"whitelistDomain": {
@@ -916,7 +916,7 @@
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "ignoruj",
 		"description": ""
 	},
 	"whitelistTemporarily": {
