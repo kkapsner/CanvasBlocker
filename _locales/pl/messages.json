@@ -972,7 +972,7 @@
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Buffer fake rate",
+		"message": "Fałszywa prędkość bufora",
 		"description": ""
 	},
 	"audioFakeRate_description": {
@@ -980,39 +980,39 @@
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1 wartość",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10 wartości",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100 wartości",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000 wartości",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "0,1% wartości",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "1% wartości",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "10 % wartości",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "100% wartości",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "Poziom hałasu",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
@@ -1020,43 +1020,43 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "minimalny",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "niski",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "średni",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "wysoki",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "maksymalny",
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "Użyj pamięci podręcznej dźwięku",
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"message": "Włącza pamięć podręczną audio. Może to zapobiec wykrywaniu, ale ma negatywny wpływ na wydajność.",
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Some pages use a very poorly written audio fingerprinting script which will cause Firefox to slow down. To disable the cache for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Niektóre strony używają bardzo źle napisanego skryptu identyfikacji, co spowoduje spowolnienie Firefoxa. Aby wyłączyć pamięć podręczną dla określonych stron internetowych, kliknij na czarną strzałkę, aby otworzyć menu, dodaj domenę lub adres URL klikając na \"+\" i usuń jej znacznik.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "Użyj stałych indeksów",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices shall always be faked.",
+		"message": "Jeżeli niektóre z użytych wskaźników są zawsze podrobione.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
@@ -1068,7 +1068,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
-		"message": "History length threshold",
+		"message": "Próg długości historii",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
@@ -1080,11 +1080,11 @@
 		"description": ""
 	},
 	"protectWindow_title": {
-		"message": "Protect window API",
+		"message": "Chroń API okna",
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "window.opener and window.name will be protected. This can render some webpages unusable.",
+		"message": "window.opener i window.name będą chronione. Może to sprawić, że niektóre strony będą bezużyteczne.",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
@@ -1108,11 +1108,11 @@
 		"description": ""
 	},
 	"protectDOMRect_title": {
-		"message": "Protect DOMRect API",
+		"message": "Chroń API DOMRect",
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "This protects against the \"getClientRects()\" fingerprinting and several similar methods.",
+		"message": "Chroni to przed pobieraniem odcisków palców \"getClientRects()\" i kilkoma podobnymi metodami.",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
@@ -1128,11 +1128,11 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "Chroń TextMetrics API",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Chroni to przed pobieraniem odcisków palców \"measureText()\", które mogą być użyte do weryfikacji wartości DOMRect.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
@@ -1140,7 +1140,7 @@
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Protect navigator API",
+		"message": "Chroń navigator API",
 		"description": ""
 	},
 	"protectNavigator_description": {
@@ -1464,7 +1464,7 @@
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
-		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"message": "Zaleca się używanie trybów blokowania \"fałszywe\" lub \"zapytania\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToFake": {
@@ -1472,7 +1472,7 @@
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
-		"message": "With blocking mode \"{blockMode}\" the {api} protection is not working.",
+		"message": "Z trybem blokowania \"{blockMode}\" ochrona {api} nie działa.",
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
@@ -1480,7 +1480,7 @@
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "Do not use white random number generator with \"{blockMode}\" and protecting \"{protectedCanvasPart}\".",
+		"message": "Nie używaj generatora liczb losowych z \"{blockMode}\" i zabezpieczaj \"{protectedCanvasPart}\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
@@ -1512,7 +1512,7 @@
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
-		"message": "Storing notification data may lead to slow performance.",
+		"message": "Przechowywanie danych powiadomień może prowadzić do spowolnienia wydajności.",
 		"description": ""
 	},
 	"sanitation_error.storeImage": {
@@ -1560,7 +1560,7 @@
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Ustawienia wygody",
 		"description": ""
 	},
 	"preset_convenience_description": {
