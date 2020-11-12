@@ -1220,7 +1220,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
-		"message": "Fake minimal screen size",
+		"message": "Fałszywy minimalny rozmiar ekranu",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
@@ -1276,7 +1276,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "Lista zmian",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1340,7 +1340,7 @@
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "Sprawdź białą listę",
 		"description": ""
 	},
 	"openSettingPresets_title": {
@@ -1456,7 +1456,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
-		"message": "disable main flag",
+		"message": "wyłącz flagę główną",
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
@@ -1468,7 +1468,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToFake": {
-		"message": "switch to \"fake\"",
+		"message": "przełącz na \"fałszywe\"",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
@@ -1476,7 +1476,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
-		"message": "disable \"{flag}\"",
+		"message": "wyłącz \"{flag}\"",
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
@@ -1484,7 +1484,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
-		"message": "switch to protect readout",
+		"message": "przełącznik, aby zabezpieczyć odczyt",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
@@ -1492,23 +1492,23 @@
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
-		"message": "Do not use protect \"{protectedCanvasPart}\" in blocking mode \"{blockMode}\".",
+		"message": "Nie używaj ochrony \"{protectedCanvasPart}\" w trybie blokowania \"{blockMode}\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectInput": {
-		"message": "switch to protect input",
+		"message": "przełącznik, aby zabezpieczyć odczyt",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
-		"message": "\"{setting}\" should not be lower than {value}.",
+		"message": "\"{setting}\" nie może być niższy niż {value}.",
 		"description": ""
 	},
 	"sanitation_error.valueTooHigh": {
-		"message": "\"{setting}\" should not be higher than {value}.",
+		"message": "\"{setting}\" nie powinien być wyższy niż {value}.",
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
-		"message": "set to {value}",
+		"message": "ustawiono na {value}",
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
@@ -1532,23 +1532,23 @@
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "Wszystkie API",
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "Ustawienia",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "Ustawienia CanvasBlocker",
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg}Dziękujemy za zainstalowanie CanvasBlocker. Aby dostosować to do swoich potrzeb, możesz zmienić niektóre ustawienia. W celu dalszego dostosowania możesz otworzyć stronę {link:options:options.html}. Możesz również otworzyć tę stronę później.",
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Są to niektóre ustawienia predefiniowane dostosowane do potrzeb różnych ludzi. Wartości w nawiasach są aktualnym stanem ustawienia. Możesz zastosować wiele ustawień, ale niektóre ustawienia mogą zostać nadpisane przez później zastosowane.",
 		"description": ""
 	},
 	"preset_default_title": {
@@ -1556,7 +1556,7 @@
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "Brak specjalnych ustawień.",
 		"description": ""
 	},
 	"preset_convenience_title": {
@@ -1564,15 +1564,15 @@
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Zastosuj kilka ustawień, aby komfort przeglądania był jak najbardziej wygodny. Dotyczy to również białej listy witryn.",
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "Ustawienia niewykrywalności",
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "Konfiguruje CanvasBlocker, aby być trudnym do wykrycia. Może to prowadzić do dużego użycia procesora i może spowolnić przeglądarkę.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
@@ -1580,7 +1580,7 @@
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Maksymalizuje ochronę przed śledzeniem. Te ustawienia psują niektóre strony, mogą trochę spowolnić przeglądarkę i mogą umożliwić witrynom wykrycie, że CanvasBlocker jest używany. Po zastosowaniu tego ustawienia predefiniowanego należy również rozważyć zastosowanie ustawień reCAPTCHA.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
@@ -1588,7 +1588,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "Zabezpieczenie window API psuje reCAPTCHA. Ten preset pozwala na użycie API window.name w osadzonych stronach, co sprawi, że znowu zadziała.",
 		"description": ""
 	}
 }
