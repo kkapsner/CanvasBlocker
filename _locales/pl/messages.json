@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "Modyfikuje niektóre API JS, aby zapobiec identyfikacji.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -76,7 +76,7 @@
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlocker został zaktualizowany. Jeśli chcesz mieć dostęp do tej strony w przyszłości i nie masz jeszcze jej w zakładkach, proszę dodać ją do zakładek.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
@@ -200,7 +200,7 @@
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "Czy chcesz zezwolić na <canvas>?",
 		"description": ""
 	},
 	"askForInputPermission": {
@@ -208,7 +208,7 @@
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Do you want to allow <canvas> readout?",
+		"message": "Czy chcesz zezwolić na odczyt <canvas>?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
@@ -312,7 +312,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
+		"message": "Gdy tryb blokowania jest ustawiony na \"zapytaj o pozwolenie\" lub \"zapytaj o pozwolenie na API do odczytu\", za każdym razem, gdy strona próbuje uzyskać dostęp do API, pojawi się komunikat potwierdzający. To ustawienie powoduje, że komunikat z potwierdzeniem jest wyświetlany tylko raz na każdej stronie, niezależnie od tego, ile razy strona próbuje uzyskać dostęp do interfejsu API. Niemniej jednak na niektórych stronach nadal może być wyświetlanych wiele komunikatów potwierdzających.\n\nNie: pytanie za każdym razem\n\nIndywidualnie: każdy typ API (kontekst, wejście, odczyt) musi być potwierdzony oddzielnie\n\npołączone: wszystkie typy API są potwierdzane razem",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -320,15 +320,15 @@
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
-		"message": "individual",
+		"message": "indywidualne",
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "połączone",
 		"description": ""
 	},
 	"askDenyMode_title": {
-		"message": "Ask deny mode",
+		"message": "Zapytaj o tryb blokowania",
 		"description": ""
 	},
 	"askDenyMode_description": {
@@ -340,7 +340,7 @@
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "fałszywy",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
@@ -392,11 +392,11 @@
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "fałszywy",
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "Tryb blokowania",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
