@@ -16,7 +16,7 @@
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " (API na białej liście dla {url})",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -72,7 +72,7 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "CanvasBlocker został zainstalowany. Jeśli chcesz mieć dostęp do tej strony w przyszłości, dodaj ją do zakładek.",
 		"description": ""
 	},
 	"updateNotice": {
@@ -376,7 +376,7 @@
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "zezwól tylko na białą listę",
 		"description": ""
 	},
 	"blockMode_options.ask": {
@@ -388,7 +388,7 @@
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "blokuj tylko czarną listę",
 		"description": ""
 	},
 	"blockMode_options.fake": {
@@ -640,7 +640,7 @@
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "pokaż ustawienia",
 		"description": ""
 	},
 	"displayCallingStack": {
@@ -648,7 +648,7 @@
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "wyświetl pełny adres URL",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -664,7 +664,7 @@
 		"description": ""
 	},
 	"blocked": {
-		"message": "API blocked on {url}.",
+		"message": "API zablokowane na {url}.",
 		"description": ""
 	},
 	"fakedReadout": {
@@ -672,27 +672,27 @@
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Faked audio readout on {url}",
+		"message": "Fałszywy odczyt audio na {url}",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Faked history readout on {url}",
+		"message": "Fałszywy historii na {url}",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Faked window readout on {url}",
+		"message": "Fałszywy odczyt okna na {url}",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "Faked DOMRect readout on {url}",
+		"message": "Fałszywy odczyt ROMRect na {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "Fałszywy odczyt TextMetrics na {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Faked navigator readout on {url}",
+		"message": "Fałszywy odczyt nawigatora na {url}",
 		"description": ""
 	},
 	"fakedScreenReadout": {
@@ -740,7 +740,7 @@
 		"description": ""
 	},
 	"inputIgnoreDomain": {
-		"message": "Input domain to add to ignore list:",
+		"message": "Wprowadź domenę do dodania do listy ignorowanych:",
 		"description": ""
 	},
 	"inputIgnoreURL": {
