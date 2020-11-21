@@ -1,6 +1,6 @@
 <?php
 
-header("Content-Security-Policy: default-src 'none'; img-src 'self'; script-src 'self'");
+header("Content-Security-Policy: default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'");
 
 ?>
 <!DOCTYPE html>
@@ -10,6 +10,7 @@ header("Content-Security-Policy: default-src 'none'; img-src 'self'; script-src 
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<link rel="stylesheet" href="../default.css" type="text/css">
 </head>
 <body>
 <h1>CSP test</h1>

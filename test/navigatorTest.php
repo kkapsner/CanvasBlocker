@@ -5,9 +5,10 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<link rel="stylesheet" href="../default.css" type="text/css">
 	<style>
 		.marked {
-			background-color: red;
+			background-color: lightcoral;
 		}
 	</style>
 </head>

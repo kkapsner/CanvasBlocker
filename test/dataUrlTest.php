@@ -5,12 +5,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<link rel="stylesheet" href="../default.css" type="text/css">
 	<style>
 		iframe, object, embed {
 			display: block;
 			box-sizing: border-box;
 			width: 100%;
 			height: 7em;
+		}
+		#code {
+			font-size: 70%;
 		}
 	</style>
 	<link rel="stylesheet" href="data:text/css;base64,Ym9keXtiYWNrZ3JvdW5kLWNvbG9yOiNlMGZmZTA7fQ==">

@@ -6,6 +6,7 @@
 		<title>iFrame Test</title>
 		<link href="testIcon.svg" type="image/png" rel="icon">
 		<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+		<link rel="stylesheet" href="../default.css" type="text/css">
 	</head>
 	<body>
 		<div id="text">
@@ -22,14 +23,12 @@
 		<script src="iframeTest.js"></script>
 		<iframe></iframe><script>
 		const pageText = document.getElementById("text").innerHTML;
-		const pageTitle = document.querySelector("head title").textContent;
+		const headHTML = document.querySelector("head").innerHTML;
 		function restoreContent(){
 			"use strict";
 			
 			document.body.innerHTML = pageText;
-			const title = document.createElement("title");
-			title.textContent = pageTitle;
-			document.getElementsByTagName("head")[0].appendChild(title);
+			document.getElementsByTagName("head")[0].innerHTML = headHTML;
 		}
 		
 		const iframe = window[0];

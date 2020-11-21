@@ -5,6 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link href="testIcon.svg" type="image/png" rel="icon">
 	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<link rel="stylesheet" href="../default.css" type="text/css">
 	<?php
 		echo "<script>" . file_get_contents("testAPI.js");
 		echo file_get_contents("canvasAPI.js") . "</script>";
@@ -25,13 +26,13 @@
 			padding: 1em;
 		}
 		.ok {
-			background-color: green;
+			background-color: lightgreen;
 		}
 		.kok {
 			background-color: orange;
 		}
 		.nok {
-			background-color: red;
+			background-color: lightcoral;
 		}
 	</style>
 </head>
