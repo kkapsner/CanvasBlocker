@@ -224,7 +224,7 @@
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "Czy chcesz zezwolić na API audio?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
@@ -236,7 +236,7 @@
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "Czy chcesz zezwolić na API historii?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
