@@ -248,7 +248,7 @@
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "Czy chcesz zezwolić na API okna?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
@@ -260,7 +260,7 @@
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "Czy chcesz zezwolić na API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
@@ -272,7 +272,7 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "Czy chcesz zezwolić na API TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
@@ -280,11 +280,11 @@
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "Czy chcesz zezwolić na odczyt TextMetrics API?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "Czy chcesz zezwolić na API nawigatora?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
@@ -292,11 +292,11 @@
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "Czy chcesz zezwolić na odczyt API nawigatora?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "Czy chcesz zezwolić na API ekranu?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
@@ -304,7 +304,7 @@
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "Czy chcesz zezwolić na odczyt API ekranu?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -332,7 +332,7 @@
 		"description": ""
 	},
 	"askDenyMode_description": {
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "Jaki tryb powinien być używany w przypadku odmowy zezwolenia.",
 		"description": ""
 	},
 	"askDenyMode_options.block": {
@@ -400,15 +400,15 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "Chroniona część API canvas",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "nothing: no features of the canvas API are protected.\n\nreadout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "żadne: żadne funkcje Canvas API nie są chronione.\n\nodczyt: funkcje odczytu canvas API są chronione.\n\nwejście: funkcje wejściowe API canvas są chronione. W trybie blokady \"fałszowanie\" rysowane piksele są nieznacznie modyfikowane podczas wyświetlania tekstu. To sprawia, że wykrywanie dodatku jest trudniejsze, ale mniej bezpieczne. Dzięki WebGL canvas zachowanie jest identyczne jak \"odczyt\".\n\nwszystko: zarówno funkcje odczytu, jak i wprowadzania są chronione. Nie zaleca się używania tego z \"fałszywym\" blokiem, ponieważ zwiększa to prawdopodobieństwo wykrycia.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"message": "Aby chronić poszczególne części poszczególnych stron internetowych, kliknij na czarną strzałkę, aby otworzyć menu, dodaj domenę lub adres URL klikając na \"+\" i wybierz żądaną część.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
@@ -444,7 +444,7 @@
 		"description": ""
 	},
 	"minFakeSize_title": {
-		"message": "Minimal fake size",
+		"message": "Fałszywy minimalny rozmiar",
 		"description": ""
 	},
 	"maxFakeSize_description": {
@@ -452,7 +452,7 @@
 		"description": ""
 	},
 	"maxFakeSize_title": {
-		"message": "Maximal fake size",
+		"message": "Fałszywy maksymalny rozmiar",
 		"description": ""
 	},
 	"rng_description": {
@@ -460,7 +460,7 @@
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "persistent",
+		"message": "trwały",
 		"description": ""
 	},
 	"rng_options.constant": {
@@ -488,7 +488,7 @@
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "Przechowuj trwałe dane",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
