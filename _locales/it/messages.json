@@ -696,7 +696,7 @@
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Faked screen readout on {url}",
+		"message": "Lettura schermo falsificata su {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -976,7 +976,7 @@
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "How many of the values per read request shall be faked.",
+		"message": "Quanti dei valori per richiesta di lettura devono essere falsificati.",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
@@ -1056,7 +1056,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices shall always be faked.",
+		"message": "Se alcuni degli indici utilizzati devono sempre essere falsificati.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
@@ -1064,7 +1064,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "The indices that are always faked. To add multiple entries, separate them by commas.",
+		"message": "Gli indici che vengono sempre falsificati. Per aggiungere più voci, separale da virgole.",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
@@ -1172,7 +1172,7 @@
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
-		"message": "CAUTION: the actual browser in use cannot be faked entirely as there is a multitude of ways to detect it. E.g. feature tests and browser specific rendering of HTML elements will always leak.",
+		"message": "ATTENZIONE: il browser attualmente in uso non può essere completamente falsificato in quanto ci sono molti modi per rilevarlo. Ad esempio, i test di funzionalità e il rendering specifico del browser degli elementi HTML saranno sempre rilevabili.",
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
