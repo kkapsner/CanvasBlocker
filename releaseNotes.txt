@@ -6,7 +6,7 @@ Version 1.5:
 		- added {empty}, {false} and {undefined} to webGL preference parameters (i.e. VENDOR, RENDERER, UNMASKED_VENDOR_WEBGL and UNMASKED_RENDERER_WEBGL)
 	
 	fixes:
-		- 
+		- protection of DOM manipulations on unloaded windows may break websites
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
