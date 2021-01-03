@@ -4,6 +4,7 @@ Version 1.5:
 	
 	new features:
 		- added {empty}, {false} and {undefined} to webGL preference parameters (i.e. VENDOR, RENDERER, UNMASKED_VENDOR_WEBGL and UNMASKED_RENDERER_WEBGL)
+		- improved performance for protected canvas part "input"
 	
 	fixes:
 		- protection of DOM manipulations on unloaded windows may break websites
