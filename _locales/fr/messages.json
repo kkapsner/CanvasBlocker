@@ -12,7 +12,7 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nTrucage des données réussies pour :",
+		"message": " \n\nprotection réussie pour:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
@@ -32,7 +32,7 @@
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "En attente ...",
+		"message": "Merci de patienter...",
 		"description": ""
 	},
 	"search": {
