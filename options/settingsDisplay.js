@@ -16,6 +16,9 @@
 						{
 							"name": "blockMode"
 						},
+						{
+							"name": "disruptSessionOnUpdate"
+						},
 					]
 				},
 				{
