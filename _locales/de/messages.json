@@ -183,6 +183,18 @@
 		"message": "Die Erweiterung wird sofort aktualisiert, sobald ein Update verfügbar ist, wenn aktiviert. Dies könnte einige Tabs unbrauchbar machen, die derzeit geöffnet sind.",
 		"description": ""
 	},
+	"reloadExtension_title": {
+		"message": "Reload extension",
+		"description": ""
+	},
+	"reloadExtension_description": {
+		"message": "Perform a pending update.",
+		"description": ""
+	},
+	"reloadExtension_label": {
+		"message": "Reload",
+		"description": ""
+	},
 	"hideSetting": {
 		"message": "Hier klicken, um diese Einstellung zu verbergen.",
 		"description": ""
