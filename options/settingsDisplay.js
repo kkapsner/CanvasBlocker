@@ -19,6 +19,11 @@
 						{
 							"name": "disruptSessionOnUpdate"
 						},
+						{
+							"name": "reloadExtension",
+							"actions": ["reloadExtension",],
+							"displayDependencies": [{"updatePending": [true]}]
+						},
 					]
 				},
 				{

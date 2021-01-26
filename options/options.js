@@ -20,6 +20,9 @@
 	const mobile = require("../lib/mobile");
 	
 	const callbacks = {
+		reloadExtension: function(){
+			browser.runtime.reload();
+		},
 		openNavigatorSettings: function(){
 			logging.verbose("open navigator settings");
 			window.open("navigator.html", "_blank");

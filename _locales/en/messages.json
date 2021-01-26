@@ -194,6 +194,19 @@
 		"description": ""
 	},
 	
+	"reloadExtension_title": {
+		"message": "Reload extension",
+		"description": ""
+	},
+	"reloadExtension_description": {
+		"message": "Perform a pending update.",
+		"description": ""
+	},
+	"reloadExtension_label": {
+		"message": "Reload",
+		"description": ""
+	},
+	
 	"hideSetting": {
 		"message": "Click here to hide this setting.",
 		"description": ""

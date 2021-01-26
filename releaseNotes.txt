@@ -4,7 +4,7 @@ Version 1.6:
 	
 	new features:
 		- try to not break tabs when updating
-		- setting to postpone updates until browser restart
+		- setting to postpone updates until browser restart or extension is reloaded
 	
 	fixes:
 		- fix message canvasBlocker-unload
