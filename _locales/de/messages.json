@@ -184,15 +184,15 @@
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Extension neu laden",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Führt eine ausstehende Aktualisierung aus.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Neu laden",
 		"description": ""
 	},
 	"hideSetting": {
