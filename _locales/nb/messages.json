@@ -183,6 +183,18 @@
 		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
 		"description": ""
 	},
+	"reloadExtension_title": {
+		"message": "Reload extension",
+		"description": ""
+	},
+	"reloadExtension_description": {
+		"message": "Perform a pending update.",
+		"description": ""
+	},
+	"reloadExtension_label": {
+		"message": "Reload",
+		"description": ""
+	},
 	"hideSetting": {
 		"message": "Klikk her for å skjule denne innstillingen.",
 		"description": ""
