@@ -175,6 +175,26 @@
 		"message": "Zeigt die Beschreibungen der Einstellungen an.",
 		"description": ""
 	},
+	"disruptSessionOnUpdate_title": {
+		"message": "Aktualisierung unterbricht Sitzung",
+		"description": ""
+	},
+	"disruptSessionOnUpdate_description": {
+		"message": "Die Erweiterung wird sofort aktualisiert, sobald ein Update verfügbar ist, wenn aktiviert. Dies könnte einige Tabs unbrauchbar machen, die derzeit geöffnet sind.",
+		"description": ""
+	},
+	"reloadExtension_title": {
+		"message": "Extension neu laden",
+		"description": ""
+	},
+	"reloadExtension_description": {
+		"message": "Führt eine ausstehende Aktualisierung aus.",
+		"description": ""
+	},
+	"reloadExtension_label": {
+		"message": "Neu laden",
+		"description": ""
+	},
 	"hideSetting": {
 		"message": "Hier klicken, um diese Einstellung zu verbergen.",
 		"description": ""
