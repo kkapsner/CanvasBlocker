@@ -175,6 +175,14 @@
 		"message": "Exibe as descrições das configurações.",
 		"description": ""
 	},
+	"disruptSessionOnUpdate_title": {
+		"message": "Disrupt session on update",
+		"description": ""
+	},
+	"disruptSessionOnUpdate_description": {
+		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"description": ""
+	},
 	"hideSetting": {
 		"message": "Clique aqui para ocultar esta configuração.",
 		"description": ""
