@@ -92,15 +92,33 @@ addTest("function length", function(log){
 		return false;
 	}
 });
-addTest("function code", function(log){
+async function getIframe(){
+	"use strict";
+	return new Promise(function(resolve){
+		const length = window.length;
+		const iframe = document.createElement("iframe");
+		iframe.style.display = "none";
+		iframe.src = "?";
+		document.body.appendChild(iframe);
+		iframe.addEventListener("load", function(){
+			resolve(window[length]);
+		});
+	});
+}
+addTest("function code", async function(log){
 	"use strict";
 	let codeDetected = false;
+	const iframe = await getIframe();
 	function checkFunctionCode(func, expectedName){
 		log("checking", expectedName);
-		if (!func.toString().match(
-			new RegExp("^\\s*function " + expectedName + "\\s*\\(\\)\\s*\\{\\s*\\[native code\\]\\s*\\}\\s*$")
-		)){
+		const reg = new RegExp("^\\s*function " + expectedName + "\\s*\\(\\)\\s*\\{\\s*\\[native code\\]\\s*\\}\\s*$");
+		if (!func.toString().match(reg)){
 			log("unexpected function code:", func.toString());
+			return true;
+		}
+		const iframeString = iframe.Function.prototype.toString.call(func);
+		if (!iframeString.match(reg)){
+			log("unexpected function code (iframe):", iframeString);
 			return true;
 		}
 		return false;
