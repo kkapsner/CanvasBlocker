@@ -36,7 +36,7 @@
 			logging.notice("empty storage");
 			settings.persistentRndStorage = "";
 			logging.notice("send message to main script");
-			extension.message.send({"canvasBlocker-clear-domain-rnd": true});
+			extension.message.send({"canvasBlocker-clear-domain-rnd": "force"});
 		},
 		clearPersistentRndForContainer: async function(){
 			const identities = await browser.contextualIdentities.query({});
