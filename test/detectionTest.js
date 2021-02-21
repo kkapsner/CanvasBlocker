@@ -8,21 +8,8 @@ const addTest = (function(){
 		{className: "failed", text: "test failed"}
 	];
 	const ul = document.getElementById("tests");
-	return function addTest(name, func){
-		const logs = [];
-		function log(){
-			logs.push(Array.prototype.slice.call(arguments).join(" "));
-		}
-		let status = 0;
-		try {
-			status = func(log)? 1: 2;
-		}
-		catch (error){
-			console.log(error);
-			status = 3;
-		}
+	return async function addTest(name, func){
 		const li = document.createElement("li");
-		li.className = statusDefinitions[status].className;
 		const nameNode = document.createElement("span");
 		nameNode.className = "name";
 		nameNode.textContent = name;
@@ -31,10 +18,23 @@ const addTest = (function(){
 		li.appendChild(document.createTextNode(": "));
 		const statusNode = document.createElement("span");
 		statusNode.className = "status";
-		statusNode.textContent = statusDefinitions[status].text;
-		statusNode.title = logs.join("\n");
 		li.appendChild(statusNode);
 		ul.appendChild(li);
+		const logs = [];
+		function log(){
+			logs.push(Array.prototype.slice.call(arguments).join(" "));
+		}
+		let status = 0;
+		try {
+			status = await func(log)? 1: 2;
+		}
+		catch (error){
+			console.log(error);
+			status = 3;
+		}
+		li.className = statusDefinitions[status].className;
+		statusNode.textContent = statusDefinitions[status].text;
+		statusNode.title = logs.join("\n");
 		return li;
 	};
 }());
