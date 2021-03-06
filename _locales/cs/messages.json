@@ -1551,6 +1551,10 @@
 		"message": "CanvasBlocker whitelist inspection",
 		"description": ""
 	},
+	"whitelist_inspection_description": {
+		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"description": ""
+	},
 	"whitelist_all_apis": {
 		"message": "All APIs",
 		"description": ""
