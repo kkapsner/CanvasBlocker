@@ -21,7 +21,7 @@
 						},
 						{
 							"name": "reloadExtension",
-							"actions": ["reloadExtension",],
+							"actions": ["reloadExtension"],
 							"displayDependencies": [{"updatePending": [true]}]
 						},
 					]
