@@ -1,6 +1,7 @@
 Version 1.6:
 	changes:
 		- periodical persistent rnd clearing does not clear in active tabs
+		- added paypal.com to the convenience preset
 	
 	new features:
 		- try to not break tabs when updating

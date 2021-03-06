@@ -4,6 +4,9 @@
 		"protectDOMRect": {
 			"mail.google.com": false,
 			"onedrive.live.com": false
+		},
+		"protectWindow": {
+			"paypal.com": false
 		}
 	},
 	"stealth": {
