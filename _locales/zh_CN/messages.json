@@ -68,7 +68,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "在此页面上，您可以调整CanvasBlocker的设置。",
+		"message": "在此页面上，您可以调整 CanvasBlocker 的设置。",
 		"description": ""
 	},
 	"installNotice": {
@@ -176,23 +176,23 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "更新时中断会话",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "如果设置为 true，扩展将在可用更新后尽快更新。这可能会破坏当前打开的某些标签。",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "重新加载扩展",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "进行一个待处理的更新。",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "重新载入",
 		"description": ""
 	},
 	"hideSetting": {
