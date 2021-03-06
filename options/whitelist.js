@@ -18,6 +18,11 @@
 	
 	document.querySelector("head title").textContent = title.textContent;
 	
+	const description = document.createElement("div");
+	description.className = "description";
+	description.textContent = extension.getTranslation("whitelist_inspection_description");
+	document.body.appendChild(description);
+	
 		
 	const whitelistSettings = [
 		{
@@ -73,11 +78,15 @@
 	settings.onloaded(function(){
 		const sets = settingContainers.urlContainer.get();
 		
+		const selectLabel = document.createElement("label");
+		selectLabel.textContent = "URL ";
+		document.body.appendChild(selectLabel);
+		
 		const setSelect = document.createElement("select");
 		sets.forEach(function(set){
 			setSelect.appendChild(new Option(set.url));
 		});
-		document.body.appendChild(setSelect);
+		selectLabel.appendChild(setSelect);
 		
 		if (searchParameters.has("urls")){
 			const urls = JSON.parse(searchParameters.get("urls")).map(function(url){
