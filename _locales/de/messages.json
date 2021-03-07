@@ -1552,7 +1552,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Anzeige des API-Schutzes für eine bestimmte Webseite. Wenn man das Häkchen bei einer API entfernt, wird diese für die ausgewählte Webseite nicht mehr beschützt.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
