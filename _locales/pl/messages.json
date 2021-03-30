@@ -372,7 +372,7 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
-		"message": "The webpage wants to read the content of the following canvas:",
+		"message": "Strona chce odczytać zawartość następujących canvasów:",
 		"description": ""
 	},
 	"blackList_description": {
@@ -608,19 +608,19 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Zgłoszony dostawca webGL",
+		"message": "Zgłaszany dostawca webGL",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Leave empty to use the original value.",
+		"message": "Wartość do podania w funkcji webGL \"getParameter\" dla \"vendor\". Pozostaw puste, aby użyć oryginalnej wartości.",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Zgłoszony renderer webGL",
+		"message": "Zgłaszany renderer webGL",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Leave empty to use the original value.",
+		"message": "Wartość do podania w funkcji webGL \"getParameter\" dla \"renderer\". Pozostaw puste, aby użyć wartości oryginalnej.",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -628,7 +628,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Leave empty to use the original value.",
+		"message": "Wartość do podania w funkcji webGL \"getParameter\" dla \"unmasked vendor\". Pozostaw puste, aby użyć wartości oryginalnej.",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -636,7 +636,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"message": "Wartość do podania w funkcji webGL \"getParameter\" dla \"unmasked renderer\". Pozostaw puste, aby użyć oryginalnej wartości.",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -1092,7 +1092,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximal length of the history that is reported to the website.",
+		"message": "Maksymalna długość historii, która jest przekazywana stronie.",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
@@ -1232,7 +1232,7 @@
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"message": "Jeśli to jest ustawione z wartością \"...x...\", określone wymiary zostaną zgłoszone jako rozmiar ekranu.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
