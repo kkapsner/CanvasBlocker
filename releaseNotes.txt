@@ -11,6 +11,7 @@ Version 1.6:
 	fixes:
 		- fix message canvasBlocker-unload
 		- convenience preset did not work properly
+		- random supply was not set properly on a fresh new tab
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
