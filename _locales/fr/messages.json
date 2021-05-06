@@ -608,35 +608,35 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Donne le nom de la carte graphique [webGL \"vendor\"]",
+		"message": "Valeur webGL renvoyée pour le \"vendor\"",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Cette valeur est utilisée dans la fonction webGL \"getParameter\" pour \"vendor\". Laissez un blanc pour utiliser la valeur originale.",
+		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"vendor\". Laissez vide pour utiliser la valeur d'origine.",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Donne le nom du driver de la carte graphique [webGL \"renderer\"]",
+		"message": "Valeur webGL renvoyée pour le \"renderer\"",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Cette valeur est utilisée dans la fonction webGL \"getParameter\" pour \"renderer\". Laissez un blanc pour utiliser la valeur originale.",
+		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"renderer\". Laissez vide pour utiliser la valeur d'origine.",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Doonées WebGL utilisées sur \"unmasked vendor\"",
+		"message": "Valeur webGL renvoyée pour le \"unmasked vendor\"",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Cette valeur est utilisée dans la fonction webGL \"getParameter\" pour \"unmasked vendor\". Laissez en blanc pour utiliser la valeur d'origine.",
+		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"unmasked vendor\". Laissez vide pour utiliser la valeur d'origine.",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Données webGL utilisées sur \"unmasked renderer\"",
+		"message": "Valeur webGL renvoyée pour le \"unmasked renderer\"",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"unmasked renderer\". Laissez vide pour utiliser la valeur d'origine.",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -1092,7 +1092,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Longueur maximale de l'histoire qui sera indiqué à un site Internet ; les sites cherchant à connaitre votre historique",
+		"message": "Taille maximale de l'historique qui est renvoyée au site web.",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
@@ -1232,7 +1232,7 @@
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "La taille d’un écran se définit par une longueur et une hauteur en pixel ; le ‘x’ sert à s’éparer les deux données ; ex : 1920x1080. À vous de choisir cette valeur, vous pouvez en trouver sur Internet ; la valeur que vous allez mettre sera envoyée aux sites Internet",
+		"message": "Si ce paramètre est défini avec une valeur \"...x...\" les dimensions spécifiées seront renvoyées comme taille d'écran.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
