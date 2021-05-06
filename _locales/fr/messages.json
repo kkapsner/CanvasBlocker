@@ -128,19 +128,19 @@
 		"description": ""
 	},
 	"section_canvas-api": {
-		"message": "Canvas, informations échangées sur Internet",
+		"message": "API Canvas",
 		"description": ""
 	},
 	"section_audio-api": {
-		"message": "Audio, informations échangées sur Internet",
+		"message": "API Audio",
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "Historique des données échangées",
+		"message": "API History",
 		"description": ""
 	},
 	"section_window-api": {
-		"message": "Windows, informations échangées sur Internet",
+		"message": "API Window",
 		"description": ""
 	},
 	"section_DOMRect-api": {
@@ -152,11 +152,11 @@
 		"description": ""
 	},
 	"section_Navigator-api": {
-		"message": "Navigateur Internet, informations échangées sur Internet",
+		"message": "API Navigator",
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Écran de l'ordinateur, informations échangées sur Internet",
+		"message": "API Screen",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
@@ -420,7 +420,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Partie à protéger de l’interface Canvas",
+		"message": "Partie protégée de l'API Canvas",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
@@ -1076,7 +1076,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "Sert, si voulez que certains des indices utilisés soient toujours être falsifiés",
+		"message": "Si certains des indices utilisés doivent toujours être falsifiés.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
@@ -1084,7 +1084,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "Les indices, que vous souhaitez toujours falsifier, séparez-les par des virgules si vous en avez plusieurs",
+		"message": "Les indices qui sont toujours falsifiés. Pour ajouter plusieurs valeurs, séparez-les par des virgules.",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
@@ -1100,7 +1100,7 @@
 		"description": ""
 	},
 	"protectWindow_title": {
-		"message": "Protéger l’interface d’échange de données entre Windows et Internet (API)",
+		"message": "Protéger l'API window",
 		"description": ""
 	},
 	"protectWindow_description": {
@@ -1128,7 +1128,7 @@
 		"description": ""
 	},
 	"protectDOMRect_title": {
-		"message": "Protéger l’interface d’échange de données DOMRect",
+		"message": "Protéger l'API DOMRect",
 		"description": ""
 	},
 	"protectDOMRect_description": {
@@ -1148,7 +1148,7 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protéger l'interface TextMetrics",
+		"message": "Protéger l'API TextMetrics",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
@@ -1160,7 +1160,7 @@
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Protéger l’interface d’échange de données du Navigateur Internet (API)",
+		"message": "Protéger l’API navigator",
 		"description": ""
 	},
 	"protectNavigator_description": {
@@ -1216,7 +1216,7 @@
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protéger l’échange de données de l’écran (API)",
+		"message": "Protéger l'API screen",
 		"description": ""
 	},
 	"protectScreen_description": {
