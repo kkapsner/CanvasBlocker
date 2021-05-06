@@ -124,7 +124,7 @@
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Paramètres",
+		"message": "Réglages",
 		"description": ""
 	},
 	"section_canvas-api": {
@@ -1316,27 +1316,27 @@
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "Néant",
+		"message": "aucun",
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "erreurs",
+		"message": "erreur",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "Avertissements",
+		"message": "avertissement",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "Messages",
+		"message": "message",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "Notifications",
+		"message": "notification",
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "Détailler",
+		"message": "verbeux",
 		"description": ""
 	},
 	"exportSettings_title": {
