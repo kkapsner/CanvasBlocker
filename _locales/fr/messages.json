@@ -952,19 +952,19 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "URL et domaine qui seront autorisés à utiliser les interfaces d’échange (API), pendant cette session, doivent être séparés par des virgules",
+		"message": "Domaines ou URLs autorisés à utiliser toutes les APIs durant la session courante. Pour ajouter plusieurs entrées, séparez-les par des virgules.",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "Liste blanche domaine autorisé provisoirement",
+		"message": "mettre le domaine en liste blanche temporairement",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "Liste blanche URL autorisé provisoirement",
+		"message": "mettre l'URL en liste blanche temporairement",
 		"description": ""
 	},
 	"storeNotificationData_title": {
-		"message": "Stoquer les détails des données de notification",
+		"message": "Enregistrer les détails des notifications",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -972,63 +972,63 @@
 		"description": ""
 	},
 	"storeImageForInspection_title": {
-		"message": "Enregistrer l'image pour la visualiser",
+		"message": "Enregistrer l'image pour l'inspecter",
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Enregistrer la fausse information <canvas>.\nAttention : il se peut que cela entraine une élévation de la mémoire utilisée.",
+		"message": "Enregistrer l'information canvas falsifiée.\nATTENTION : cela peut entraîner une forte consommation mémoire.",
 		"description": ""
 	},
 	"protectAudio_title": {
-		"message": "Falsifier les interfaces audio (API)",
+		"message": "Protéger l'API audio",
 		"description": ""
 	},
 	"protectAudio_description": {
-		"message": "Si l’interface audio (API) doit être protégée",
+		"message": "Si l'API audio doit aussi être protégée",
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et enlevez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Falsifier le taux de la mémoire tampon",
+		"message": "Taux de falsification de la mémoire tampon",
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "Choisissez comment vous voulez falsifier la valeur, les données que vous voulez envoyer afin d’éviter d’être pisté par votre interface audio qui a des données spécifiques et uniques à votre ordinateur, donc permet le suivi",
+		"message": "Nombre de valeurs falsifiées par requête de lecture.",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 valeur envoyée pour tromper le suivi",
+		"message": "1 valeur",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 valeurs envoyées pour tromper le suivi",
+		"message": "10 valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 valeurs envoyées pour tromper le suivi",
+		"message": "100 valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 valeurs envoyées pour tromper le suivi",
+		"message": "1000 valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0,1% de la valeur de la mémoire tampon sera falsifiée",
+		"message": "0,1% des valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% de la valeur de la mémoire tampon sera falsifiée",
+		"message": "1% des valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% de la valeur de la mémoire tampon sera falsifiée",
+		"message": "10% des valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% de la valeur de la mémoire tampon sera falsifiée",
+		"message": "100% des valeurs",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
@@ -1048,7 +1048,7 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "intermédiaire",
+		"message": "moyen",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
@@ -1204,11 +1204,11 @@
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Navigateur Internet, veuillez en sélectionner un",
+		"message": "Valeurs prédéfinies pour des navigateurs",
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Données internes au navigateur",
+		"message": "Valeurs du navigateur",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
@@ -1276,7 +1276,7 @@
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "très coloré",
+		"message": "coloré",
 		"description": ""
 	},
 	"theme_options.none": {
@@ -1284,19 +1284,19 @@
 		"description": ""
 	},
 	"blockDataURLs_title": {
-		"message": "Bloquer la transmission de données dans une URL (adresse Internet)",
+		"message": "Bloquer les pages URL de données",
 		"description": ""
 	},
 	"blockDataURLs_description": {
-		"message": "La transmission de données dans une URL sert dans un moteur de recherche quand vous envoyez une recherche sur un mot ; le mot est joint à l’URL. Cela peut aussi être des URL dans lesquelles vous avez mis votre login, mot de passe, etc. ▬ Les URL de données ne peuvent pas être protégées contre la prise d’empreinte, voir (https://bugzilla.mozilla.org/show_bug.cgi?id=1475831) ; cependant bloquer les URL de données peuvent dans certains cas empêcher une recherche dans un moteur de recherche",
+		"message": "Les pages URL de données ne peuvent pas être protégées contre la prise d'empreinte digitale (fingerprinting) (voir https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Le fait de les bloquer empêche l'empreinte réelle d'atteindre le serveur.",
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et enlevez sa coche",
+		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Informations sur les versions",
+		"message": "Notes de version",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
