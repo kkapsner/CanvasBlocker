@@ -884,23 +884,23 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Modifier l’icône en cas de notification",
+		"message": "Indiquer les notifications sur l’icône de la barre d'outils",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "Ne rien changer",
+		"message": "ne rien changer",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "Changer la couleur",
+		"message": "changer la couleur",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "Faire clignoter",
+		"message": "clignoter",
 		"description": ""
 	},
 	"sourceOutput": {
-		"message": "Appel d'un fichier",
+		"message": "Fichier appelant",
 		"description": ""
 	},
 	"stackEntryOutput": {
@@ -912,7 +912,7 @@
 		"description": ""
 	},
 	"stackList_title": {
-		"message": "Liste blanche spécifique au fichier",
+		"message": "Liste blanche spécifique à un fichier",
 		"description": ""
 	},
 	"whiteList_title": {
@@ -920,27 +920,27 @@
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domaines ou URL autorisés à utiliser le l’interface API <canvas>. S’il y a plusieurs entrées, elles doivent être séparées par une virgule.",
+		"message": "Domaines ou URLs autorisés à utiliser toutes les APIs. Pour ajouter plusieurs entrées, séparez-les par des virgules.",
 		"description": ""
 	},
 	"whitelist": {
-		"message": "Permettre",
+		"message": "mettre en liste blanche",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "Autoriser le domaine",
+		"message": "mettre le domaine en liste blanche",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "Autoriser l'URL",
+		"message": "mettre l'URL en liste blanche",
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "ignorer",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "Liste blanche provisoire",
+		"message": "mettre en liste blanche temporairement",
 		"description": ""
 	},
 	"inspectWhitelist": {
