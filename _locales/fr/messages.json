@@ -1612,7 +1612,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "L’interface d’échange de données (API) peut faire dysfonctionner les reCaptcha (images et mots sur lesquels nous devons cliquer pour accéder à un site Internet). Cette fonction permet d’utiliser la protection contre le pistage de windows.name qui permettra de faire fonctionner de nouveau les reCaptcha",
+		"message": "La protection de l'API window peut faire dysfonctionner les reCAPTCHA. Ce préréglage permet d’utiliser l'API window.name dans les pages intégrées ce qui les rendra à nouveau fonctionnels.",
 		"description": ""
 	}
 }
