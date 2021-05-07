@@ -708,23 +708,23 @@
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Données faussées pour la lecture des données TextMetrics activé {url}",
+		"message": "Lecture TextMetrics falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Donne de fausses informaiton sur le Navigateur à l'{url}",
+		"message": "Lecture navigator falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Donne de fausses informations sur l'écran de l'ordinateur à l'{url}",
+		"message": "Lecture screen falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "Feindre l'entrée sur {url}.",
+		"message": "Entrée falsifiée pour {url}",
 		"description": ""
 	},
 	"ignoreList_description": {
-		"message": "Domaines ou URL pour lesquels aucune notification ne doit être affichée. S’il y a plusieurs entrées elles doivent être séparées par une virgule.",
+		"message": "Domaines ou URLs pour lesquels aucune notification ne doit être affichée. Pour ajouter plusieurs entrées, séparez-les par des virgules.",
 		"description": ""
 	},
 	"ignoreList_title": {
@@ -860,11 +860,11 @@
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "Couleur",
+		"message": "couleur",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "clignotement",
+		"message": "clignoter",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -872,7 +872,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Afficher le nombre d’intervention de Canvas Blocker, sur l’icône de l’extension",
+		"message": "Afficher l’icône de l’extension",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -884,7 +884,7 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Modifier l’icône de la Barre d’outils",
+		"message": "Modifier l’icône en cas de notification",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
