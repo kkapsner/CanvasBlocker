@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Truque les informations échangées entre votre ordinateur et les sites Internet pour empêcher le pistage par leurs intermédiaires",
+		"message": "Modifie certaines API JS pour empêcher la détection des empreintes numériques (fingerprinting).",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -12,11 +12,11 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection réussie pour:",
+		"message": " protection réussie pour :",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": "(Autoriser l’échange d’informations pour ces sites : {url})",
+		"message": " (APIs mis en liste blanche pour : {url})",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -44,23 +44,23 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Appliquer",
+		"message": "Valider",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Renoncer",
+		"message": "Annuler",
 		"description": ""
 	},
 	"input": {
-		"message": "Saisie",
+		"message": "entrée",
 		"description": ""
 	},
 	"readout": {
-		"message": "Lecture d’éléments électroniques",
+		"message": "lecture",
 		"description": ""
 	},
 	"options": {
-		"message": "Paramètres",
+		"message": "Réglages",
 		"description": ""
 	},
 	"options_title": {
@@ -68,7 +68,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "Cette partie permet de modifier les paramètres de l’extension CanvasBlocker. Il vaut mieux savoir ce que l’on fait en allant y trifouiller. ▬ Les flèches noires sont cliquables pour ouvrir plus d’options. ▬ La traduction a été difficile, car il faut maitriser les concepts informatiques, elle peut donc souffrir de défaut, ainsi vous êtes invité à utiliser des dictionnaires informatiques pour la définition des concepts",
+		"message": "Cette page permet de modifier les paramètres de CanvasBlocker. Les flèches noires sont cliquables pour ouvrir plus d’options.",
 		"description": ""
 	},
 	"installNotice": {
@@ -80,15 +80,15 @@
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Ne plus afficher après la mise à jour",
+		"message": "Ne plus afficher après la mise à jour.",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Vous avez activé la protection contre le pistage de Fingerprinting (empreinte digitale – composants de l’ordinateur).",
+		"message": "Vous avez activé le paramètre Firefox privacy.resistFingerprinting. Ceci modifie légèrement le comportement de CanvasBlocker. Pour plus d'informations : {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} et {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Ouvrir les paramétrages dans un onglet séparé",
+		"message": "Ouvrir dans un onglet séparé",
 		"description": ""
 	},
 	"group_general": {
@@ -104,7 +104,7 @@
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Questionner",
+		"message": "Demander",
 		"description": ""
 	},
 	"section_faking": {
@@ -164,7 +164,7 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Afficher les paramètres de configuration supplémentaires.",
+		"message": "Affiche des paramètres supplémentaires.",
 		"description": ""
 	},
 	"displayDescriptions_title": {
@@ -172,7 +172,7 @@
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Afficher la description des réglages.",
+		"message": "Affiche les descriptions des paramètres.",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
@@ -180,23 +180,23 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Si la valeur est vraie, l'extension se mettra à jour dès que la mise à jour sera disponible. Cela pourrait casser certains onglets qui sont actuellement ouverts.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Recharger l'extension",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Exécuter une mise à jour en attente.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Recharger",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Masquer ce paramètre",
+		"message": "Cliquer ici pour masquer ce paramètre.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
@@ -208,11 +208,11 @@
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Voulez-vous autoriser l'utilisation de <canvas> invisible ?",
+		"message": "Voulez-vous autoriser <canvas> invisible ?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Voulez-vous autoriser l'écriture dans un <canvas> invisible ?",
+		"message": "Voulez-vous autoriser la saisie dans <canvas> invisible ?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
@@ -552,11 +552,11 @@
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
-		"message": "Effacer le stockage aléatoire de la 'Persistance' des données.",
+		"message": "Effacer le stockage aléatoire persistant",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Effacer les sauvegardes du générateur aléatoire de la 'Persistance' de données.",
+		"message": "Supprime toutes les données du générateur de nombres aléatoires persistant.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
@@ -564,7 +564,7 @@
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Vider les données du Container",
+		"message": "Vider le container",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
@@ -668,7 +668,7 @@
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "Afficher URL",
+		"message": "afficher l'URL complète",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -680,31 +680,31 @@
 		"description": ""
 	},
 	"preBlock": {
-		"message": "L’interface API a bloqué sur {url} parce que les paramètres de CanvasBlocker n'ont pas été chargés à temps.",
+		"message": "API bloquée pour {url} parce que les paramètres de CanvasBlocker n'ont pas été chargés à temps.",
 		"description": ""
 	},
 	"blocked": {
-		"message": "Linterface API a bloqué sur {url} ",
+		"message": "API bloquée pour {url}.",
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Donne de fausses informations sur {url}.",
+		"message": "Lecture canvas falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Donne de fausses informations audio sur {url}.",
+		"message": "Lecture audio falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Donne de fausses informations sur l'historique à l'{url}",
+		"message": "Lecture history falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Donne de fausses informations sur Windows à l'{url}",
+		"message": "Lecture window falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "Donne de fausses information sur DOMRect à l'{url}",
+		"message": "Lecture DOMRect falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -1552,7 +1552,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Montre quelles protections d'API sont actives pour un site donné. Si vous supprimez la coche pour une API, cette API ne sera pas protégée pour le site sélectionné.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
