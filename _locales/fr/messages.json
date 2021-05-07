@@ -1304,7 +1304,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Lire les notes de version",
+		"message": "Afficher les notes de version",
 		"description": ""
 	},
 	"logLevel_title": {
@@ -1376,7 +1376,7 @@
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Consulter",
+		"message": "Inspecter",
 		"description": ""
 	},
 	"saveSettings_label": {
@@ -1404,11 +1404,11 @@
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Configuration",
+		"message": "Réglages",
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "Questions fréquentes",
+		"message": "FAQ - Questions fréquentes",
 		"description": ""
 	},
 	"browserAction_test": {
@@ -1420,19 +1420,19 @@
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Numéro du rapport",
+		"message": "Signaler un problème",
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Contrôle et réparation des erreurs de configuration",
+		"message": "Contrôle et réparation des erreurs de paramètrage",
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "Cette page aide à trouver les erreurs de configuration dans les paramètres de CanvasBlocker. Elle donne également des conseils sur les réglages des sous-options. Toutefois il n'est pas recommandé de corriger aveuglément toutes les suggestions, il faut comprendre avant les concepts informatiques",
+		"message": "Cette page aide à trouver des erreurs de configuration dans les paramètres de CanvasBlocker. Elle donne également des conseils sur les réglages non optimaux. Toutefois, il n'est pas recommandé d'accepter aveuglément toutes les suggestions.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Rien à signaler",
+		"message": "Rien à signaler.",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
@@ -1460,7 +1460,7 @@
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "La valeur de l'URL pour \"{url}\" est la même que le paramètre global pour \"{setting-title}\" ",
+		"message": "La valeur de l'URL pour \"{url}\" est la même que le paramètre global pour \"{setting-title}\".",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
@@ -1556,7 +1556,7 @@
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "Toutes les interface d’échanges de donnés (API)",
+		"message": "Toutes les APIs",
 		"description": ""
 	},
 	"presets": {
@@ -1576,11 +1576,11 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Configuration par défaut",
+		"message": "Réglages par défaut",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "Aucun réglage particulier n'est appliqué",
+		"message": "Aucun réglage particulier n'est appliqué.",
 		"description": ""
 	},
 	"preset_convenience_title": {
@@ -1592,7 +1592,7 @@
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Réglages pour organiser la furtivité",
+		"message": "Réglages de furtivité",
 		"description": ""
 	},
 	"preset_stealth_description": {
@@ -1600,7 +1600,7 @@
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Une protection maximale",
+		"message": "Protection maximale",
 		"description": ""
 	},
 	"preset_max_protection_description": {
@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "exception sur reCaptcha",
+		"message": "exception sur reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
