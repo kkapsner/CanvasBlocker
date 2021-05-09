@@ -396,7 +396,7 @@
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "Autoriser uniquement les entrées de la liste blanche",
+		"message": "autoriser uniquement la liste blanche",
 		"description": ""
 	},
 	"blockMode_options.ask": {
@@ -476,11 +476,11 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "Rien (complètement blanc) : une image blanche est toujours retournée. L'option \"Feindre le canal alpha\" devrait aussi être activée. Attention : ne pas utiliser en mode \" Donner de fausses informations \".\nPersistance des données : des nombres aléatoires seront redéterminés avec chaque action.\nConservation des données : dans une page web une couleur est toujours la même.\nPersistance des données : pour chaque domaine les nombres aléatoires ne sont déterminés qu'une seule fois.",
+		"message": "rien (entièrement blanc) : une image blanche est renvoyée. L'option \"Feindre le canal alpha\" doit aussi être activée avec cette option. ATTENTION : ne pas utiliser avec le mode \" Falsifier en entrée\".\nnon persistant : les nombres aléatoires seront regénérés à chaque action de falsification.\nconstant : dans une page web une couleur sera toujours falsifiée avec la même couleur.\npersistant : le nombre aléatoire sera généré une seule fois pour chaque domaine.",
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "'Persistance' des données",
+		"message": "persistant",
 		"description": ""
 	},
 	"rng_options.constant": {
@@ -500,27 +500,27 @@
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Mise en mémoire de la 'Persistance' des données",
+		"message": "Stockage persistant",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Enregistrer les données du générateur de nombres aléatoires, de la 'Persistance' des données, pour une utilisation après le redémarrage.",
+		"message": "Enregistre les données du générateur de nombres aléatoires pour une utilisation après redémarrage.",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Sauvegarde de la 'Persistance' des données.",
+		"message": "Enregistrer les données persistantes",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "Si les données du générateur de nombres aléatoires de la 'Persistance' des données doivent être enregistrées. Dans le cas contraire, lors de la fermeture du navigateur, tout sera effacé.",
+		"message": "Détermine si les données du générateur de nombres aléatoires persistant doivent être enregistrées. Sinon, les données seront effacées lors de la fermeture du navigateur.",
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
-		"message": "Effacer la 'Persistance' des données.",
+		"message": "Effacer la durée des données persistantes",
 		"description": ""
 	},
 	"persistentRndClearInterval_description": {
-		"message": "Après l'intervalle défini, la 'Persistance' des données est automatiquement supprimée. (Mettre le chiffre zéro pour le désactiver.)",
+		"message": "Après la durée spécifiée, les données persistantes sont automatiquement effacées. (Entrer zéro désactiver.)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
@@ -572,7 +572,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "‘Persistent’ partager des données aléatoires pour éviter le suivi entre domaine",
+		"message": "Partager les données aléatoires persistantes entre les domaines",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
@@ -580,7 +580,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Êtes-vous sûr de vouloir partager les numéros aléatoires du registre ‘Persistant’ entre les domaines ? N.B. : ce paramètre rend le navigateur  identifiable par un code personnalisé, facilitant votre pistage sur Internet.",
+		"message": "Êtes-vous sûr de vouloir partager les données aléatoires persistantes entre les domaines ?\nATTENTION : ce paramètre rend le navigateur 100% pistable et constitue donc une menace pour votre vie privée.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -944,7 +944,7 @@
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "Explorer la liste blanche",
+		"message": "inspecter la liste blanche",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -1540,7 +1540,7 @@
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "Ne partagez pas le caractère aléatoire persistant entre les domaines car cela rend le navigateur 100% traçable",
+		"message": "Ne partagez pas les données aléatoires persistantes entre les domaines car cela rend le navigateur 100% pistable.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
