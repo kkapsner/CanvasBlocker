@@ -32,7 +32,7 @@
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Merci de patienter...",
+		"message": "Veuillez patienter...",
 		"description": ""
 	},
 	"search": {
@@ -60,7 +60,7 @@
 		"description": ""
 	},
 	"options": {
-		"message": "Réglages",
+		"message": "Paramètres",
 		"description": ""
 	},
 	"options_title": {
@@ -68,7 +68,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "Cette page permet de modifier les paramètres de CanvasBlocker. Les flèches noires sont cliquables pour ouvrir plus d’options.",
+		"message": "Cette page permet de modifier les paramètres de CanvasBlocker. Les flèches noires sont cliquables pour ouvrir plus d'options.",
 		"description": ""
 	},
 	"installNotice": {
