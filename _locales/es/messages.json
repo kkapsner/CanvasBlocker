@@ -176,19 +176,19 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Interrumpir sesión al actualizar",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Si se establece en true la extensión se actualizará tan pronto como la actualización esté disponible. Esto podría romper algunas pestañas que están actualmente abiertas.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Recargar extensión",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Realizar una actualización pendiente.",
 		"description": ""
 	},
 	"reloadExtension_label": {
@@ -1552,7 +1552,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Muestra las protecciones de las API que están activas para un sitio determinado. Si eliminas una marca de verificación para una API, esta API no estará protegida para el sitio seleccionado.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
@@ -1576,11 +1576,11 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "Configuración predeterminada",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "No se han aplicado ajustes especiales.",
 		"description": ""
 	},
 	"preset_convenience_title": {
@@ -1592,7 +1592,7 @@
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "Ajustes de sigilo",
 		"description": ""
 	},
 	"preset_stealth_description": {
