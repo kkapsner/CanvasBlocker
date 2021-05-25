@@ -7,55 +7,99 @@
 	const extension = require("../lib/extension");
 	const logging = require("../lib/logging");
 	const settings = require("../lib/settings");
+	const settingContainers = require("../lib/settingContainers");
+	const lists = require("../lib/lists");
 	require("../lib/theme").init();
 	logging.message("Opened browser action");
 	
-	settings.onloaded(function(){
-		const actions = document.getElementById("actions");
+	
+	browser.tabs.query({active: true}).then(async function([currentTab]){
+		function isWhitelisted(url){
+			if (!(url instanceof URL)){
+				url = new URL(url);
+			}
+			return lists.get("white").match(url) ||
+				settings.get("blockMode", url).startsWith("allow");
+		}
 		
-		[
-			{
-				label: "settings",
-				icon: browser.extension.getURL("icons/pageAction-showOptions.svg"),
-				action: function(){
-					if (browser.runtime && browser.runtime.openOptionsPage){
-						browser.runtime.openOptionsPage();
-					}
-					else {
-						window.open(browser.extension.getURL("options/options.html"), "_blank");
-					}
+		const currentURL = new URL(currentTab.url);
+		const addonStatus = document.getElementById("addonStatus");
+		addonStatus.addEventListener("click", async function(){
+			if (isWhitelisted(currentURL)){
+				settingContainers.resetUrlValue("blockMode", currentURL);
+				if (settings.get("blockMode").startsWith("allow")){
+					settings.set("blockMode", "fake", currentURL.host);
 				}
-			},
-			{
-				label: "faq",
-				icon: browser.extension.getURL("icons/browserAction-faq.svg"),
-				action: function(){
-					window.open("https://canvasblocker.kkapsner.de/faq/", "_blank");
+				const entries = lists.get("white").filter(e => e.match(currentURL)).map(e => e.value);
+				await Promise.all([
+					lists.removeFrom("white", entries),
+					lists.removeFrom("sessionWhite", entries)
+				]);
+			}
+			else {
+				settings.set("blockMode", "allow", currentURL.hostname);
+			}
+			update();
+		});
+		function update(){
+			if (isWhitelisted(currentURL)){
+				addonStatus.className = "off";
+				addonStatus.title = extension.getTranslation("browserAction_status_off");
+			}
+			else {
+				addonStatus.className = "on";
+				addonStatus.title = extension.getTranslation("browserAction_status_on");
+			}
+		}
+		return settings.onloaded(update);
+	}).catch(function(){});
+	
+	const actionDefinitions = [
+		{
+			label: "settings",
+			icon: browser.extension.getURL("icons/pageAction-showOptions.svg"),
+			action: function(){
+				if (browser.runtime && browser.runtime.openOptionsPage){
+					browser.runtime.openOptionsPage();
 				}
-			},
-			{
-				label: "test",
-				advanced: true,
-				icon: browser.extension.getURL("icons/browserAction-test.svg"),
-				action: function(){
-					window.open("https://canvasblocker.kkapsner.de/test", "_blank");
+				else {
+					window.open(browser.extension.getURL("options/options.html"), "_blank");
 				}
-			},
-			{
-				label: "review",
-				icon: browser.extension.getURL("icons/browserAction-review.svg"),
-				action: function(){
-					window.open("https://addons.mozilla.org/firefox/addon/canvasblocker/reviews/", "_blank");
-				}
-			},
-			{
-				label: "reportIssue",
-				icon: browser.extension.getURL("icons/browserAction-reportIssue.svg"),
-				action: function(){
-					window.open("https://github.com/kkapsner/CanvasBlocker/issues", "_blank");
-				}
-			},
-		].forEach(function(action){
+			}
+		},
+		{
+			label: "faq",
+			icon: browser.extension.getURL("icons/browserAction-faq.svg"),
+			action: function(){
+				window.open("https://canvasblocker.kkapsner.de/faq/", "_blank");
+			}
+		},
+		{
+			label: "test",
+			advanced: true,
+			icon: browser.extension.getURL("icons/browserAction-test.svg"),
+			action: function(){
+				window.open("https://canvasblocker.kkapsner.de/test", "_blank");
+			}
+		},
+		{
+			label: "review",
+			icon: browser.extension.getURL("icons/browserAction-review.svg"),
+			action: function(){
+				window.open("https://addons.mozilla.org/firefox/addon/canvasblocker/reviews/", "_blank");
+			}
+		},
+		{
+			label: "reportIssue",
+			icon: browser.extension.getURL("icons/browserAction-reportIssue.svg"),
+			action: function(){
+				window.open("https://github.com/kkapsner/CanvasBlocker/issues", "_blank");
+			}
+		},
+	];
+	settings.onloaded(async function(){
+		const actions = document.getElementById("actions");
+		actionDefinitions.forEach(function(action){
 			logging.verbose("Action", action);
 			if (action.advanced && !settings.displayAdvancedSettings){
 				logging.verbose("Hiding advanced action");
@@ -66,16 +110,23 @@
 			
 			const icon = document.createElement("span");
 			icon.className = "icon";
-			icon.style.maskImage = "url(" + action.icon + ")";
+			function setIcon(url){
+				icon.style.maskImage = "url(" + url + ")";
+			}
+			setIcon(action.icon);
 			
 			actionButton.appendChild(icon);
 			
-			actionButton.appendChild(
-				document.createTextNode(
-					extension.getTranslation("browserAction_" + action.label) || action.label
-				)
-			);
-			actionButton.addEventListener("click", action.action);
+			const textNode = document.createTextNode("");
+			function setLabel(label){
+				textNode.nodeValue = extension.getTranslation("browserAction_" + label) || label;
+			}
+			setLabel(action.label);
+		
+			actionButton.appendChild(textNode);
+			actionButton.addEventListener("click", function(){
+				action.action.call(this, {setIcon, setLabel});
+			});
 			actions.appendChild(actionButton);
 		});
 		

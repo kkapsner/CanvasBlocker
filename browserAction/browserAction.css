@@ -20,3 +20,26 @@ div {
 .action.search {
 	padding-left: calc(0.5em + 19px + 0.25em);
 }
+
+#addonStatus {
+	border: none;
+	display: block;
+	margin: 5px auto;
+	width: 40px;
+	min-width: 0;
+	height: 40px;
+	background: none;
+	background-position: 50%;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+#addonStatus.unknown {
+	background-image: radial-gradient(black, rgba(0, 0, 0, 0), transparent);;
+}
+#addonStatus.off {
+	background-image: url(../icons/browserAction-whitelisted.svg);
+}
+#addonStatus.on {
+	background-image: url(../icons/browserAction-notPrinted.svg);
+}

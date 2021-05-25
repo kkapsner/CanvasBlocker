@@ -24,6 +24,14 @@
 		"message": "\n  \u00B7 {api}",
 		"description": ""
 	},
+	"browserAction_status_on": {
+		"message": "CanvasBlocker on",
+		"description": ""
+	},
+	"browserAction_status_off": {
+		"message": "CanvasBlocker off",
+		"description": ""
+	},
 	
 	"more": {
 		"message": "more",
