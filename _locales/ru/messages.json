@@ -24,11 +24,11 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker вкл",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker выкл",
 		"description": ""
 	},
 	"more": {
@@ -184,23 +184,23 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Прервать сессию при обновлении",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Если включено, то расширение будет обновляться, как только обновление станет доступно. Это может поломать некоторые вкладки, которые в настоящее время открыты.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Перезагрузить расширение",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Выполнить ожидающее обновление.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Перезагрузить",
 		"description": ""
 	},
 	"hideSetting": {
@@ -1560,7 +1560,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Показывает какие типы защиты API активны для данного сайта. Если вы удалите флажок для какого-либо API, этот API не будет защищен для выбранного сайта.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
