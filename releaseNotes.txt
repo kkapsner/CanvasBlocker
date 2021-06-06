@@ -3,6 +3,7 @@ Version 1.6:
 		- periodical persistent rnd clearing does not clear in active tabs
 		- added paypal.com to the convenience preset
 		- improved whitelist inspection
+		- use proxy to hide changed functions
 	
 	new features:
 		- try to not break tabs when updating
