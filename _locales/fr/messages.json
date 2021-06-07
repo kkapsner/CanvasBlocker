@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Truque les informations échangées entre votre ordinateur et les sites Internet pour empêcher le pistage par leurs intermédiaires",
+		"message": "Modifie certaines API JS pour empêcher la détection des empreintes numériques (fingerprinting).",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -12,15 +12,23 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection réussie pour:",
+		"message": " protection réussie pour :",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": "(Autoriser l’échange d’informations pour ces sites : {url})",
+		"message": " (APIs mis en liste blanche pour : {url})",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
 		"message": "\n  · {api}",
+		"description": ""
+	},
+	"browserAction_status_on": {
+		"message": "CanvasBlocker on",
+		"description": ""
+	},
+	"browserAction_status_off": {
+		"message": "CanvasBlocker off",
 		"description": ""
 	},
 	"more": {
@@ -32,7 +40,7 @@
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Merci de patienter...",
+		"message": "Veuillez patienter...",
 		"description": ""
 	},
 	"search": {
@@ -44,19 +52,19 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Appliquer",
+		"message": "Valider",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Renoncer",
+		"message": "Annuler",
 		"description": ""
 	},
 	"input": {
-		"message": "Saisie",
+		"message": "entrée",
 		"description": ""
 	},
 	"readout": {
-		"message": "Lecture d’éléments électroniques",
+		"message": "lecture",
 		"description": ""
 	},
 	"options": {
@@ -68,7 +76,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "Cette partie permet de modifier les paramètres de l’extension CanvasBlocker. Il vaut mieux savoir ce que l’on fait en allant y trifouiller. ▬ Les flèches noires sont cliquables pour ouvrir plus d’options. ▬ La traduction a été difficile, car il faut maitriser les concepts informatiques, elle peut donc souffrir de défaut, ainsi vous êtes invité à utiliser des dictionnaires informatiques pour la définition des concepts",
+		"message": "Cette page permet de modifier les paramètres de CanvasBlocker. Les flèches noires sont cliquables pour ouvrir plus d'options.",
 		"description": ""
 	},
 	"installNotice": {
@@ -80,15 +88,15 @@
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Ne plus afficher après la mise à jour",
+		"message": "Ne plus afficher après la mise à jour.",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Vous avez activé la protection contre le pistage de Fingerprinting (empreinte digitale – composants de l’ordinateur).",
+		"message": "Vous avez activé le paramètre Firefox privacy.resistFingerprinting. Ceci modifie légèrement le comportement de CanvasBlocker. Pour plus d'informations : {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} et {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Ouvrir les paramétrages dans un onglet séparé",
+		"message": "Ouvrir dans un onglet séparé",
 		"description": ""
 	},
 	"group_general": {
@@ -104,7 +112,7 @@
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Questionner",
+		"message": "Demander",
 		"description": ""
 	},
 	"section_faking": {
@@ -124,27 +132,27 @@
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Parmètres",
+		"message": "Réglages",
 		"description": ""
 	},
 	"section_canvas-api": {
-		"message": "Canvas, informations échangées sur Internet",
+		"message": "API Canvas",
 		"description": ""
 	},
 	"section_audio-api": {
-		"message": "Audio, informations échangées sur Internet",
+		"message": "API Audio",
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "Historique des données échangées",
+		"message": "API History",
 		"description": ""
 	},
 	"section_window-api": {
-		"message": "Windows, informations échangées sur Internet",
+		"message": "API Window",
 		"description": ""
 	},
 	"section_DOMRect-api": {
-		"message": "DOMRect API",
+		"message": "API DOMRect",
 		"description": ""
 	},
 	"section_TextMetrics-api": {
@@ -152,11 +160,11 @@
 		"description": ""
 	},
 	"section_Navigator-api": {
-		"message": "Navigateur Internet, informations échangées sur Internet",
+		"message": "API Navigator",
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Écran de l'ordinateur, informations échangées sur Internet",
+		"message": "API Screen",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
@@ -164,7 +172,7 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Afficher les paramètres de configuration supplémentaires.",
+		"message": "Affiche des paramètres supplémentaires.",
 		"description": ""
 	},
 	"displayDescriptions_title": {
@@ -172,31 +180,31 @@
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Afficher la description des réglages.",
+		"message": "Affiche les descriptions des paramètres.",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Interrompre la session en cas de mise à jour",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Si la valeur est vraie, l'extension se mettra à jour dès que la mise à jour sera disponible. Cela pourrait casser certains onglets qui sont actuellement ouverts.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Recharger l'extension",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Exécuter une mise à jour en attente.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Recharger",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Masquer ce paramètre",
+		"message": "Cliquer ici pour masquer ce paramètre.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
@@ -208,11 +216,11 @@
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Voulez-vous autoriser l'utilisation de <canvas> invisible ?",
+		"message": "Voulez-vous autoriser <canvas> invisible ?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Voulez-vous autoriser l'écriture dans un <canvas> invisible ?",
+		"message": "Voulez-vous autoriser la saisie dans <canvas> invisible ?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
@@ -396,7 +404,7 @@
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "Autoriser uniquement les entrées de la liste blanche",
+		"message": "autoriser uniquement la liste blanche",
 		"description": ""
 	},
 	"blockMode_options.ask": {
@@ -420,7 +428,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Partie à protéger de l’interface Canvas",
+		"message": "Partie protégée de l'API Canvas",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
@@ -476,11 +484,11 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "Rien (complètement blanc) : une image blanche est toujours retournée. L'option \"Feindre le canal alpha\" devrait aussi être activée. Attention : ne pas utiliser en mode \" Donner de fausses informations \".\nPersistance des données : des nombres aléatoires seront redéterminés avec chaque action.\nConservation des données : dans une page web une couleur est toujours la même.\nPersistance des données : pour chaque domaine les nombres aléatoires ne sont déterminés qu'une seule fois.",
+		"message": "rien (entièrement blanc) : une image blanche est renvoyée. L'option \"Feindre le canal alpha\" doit aussi être activée avec cette option. ATTENTION : ne pas utiliser avec le mode \" Falsifier en entrée\".\nnon persistant : les nombres aléatoires seront regénérés à chaque action de falsification.\nconstant : dans une page web une couleur sera toujours falsifiée avec la même couleur.\npersistant : le nombre aléatoire sera généré une seule fois pour chaque domaine.",
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "'Persistance' des données",
+		"message": "persistant",
 		"description": ""
 	},
 	"rng_options.constant": {
@@ -500,27 +508,27 @@
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Mise en mémoire de la 'Persistance' des données",
+		"message": "Stockage persistant",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Enregistrer les données du générateur de nombres aléatoires, de la 'Persistance' des données, pour une utilisation après le redémarrage.",
+		"message": "Enregistre les données du générateur de nombres aléatoires pour une utilisation après redémarrage.",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Sauvegarde de la 'Persistance' des données.",
+		"message": "Enregistrer les données persistantes",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "Si les données du générateur de nombres aléatoires de la 'Persistance' des données doivent être enregistrées. Dans le cas contraire, lors de la fermeture du navigateur, tout sera effacé.",
+		"message": "Détermine si les données du générateur de nombres aléatoires persistant doivent être enregistrées. Sinon, les données seront effacées lors de la fermeture du navigateur.",
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
-		"message": "Effacer la 'Persistance' des données.",
+		"message": "Effacer la durée des données persistantes",
 		"description": ""
 	},
 	"persistentRndClearInterval_description": {
-		"message": "Après l'intervalle défini, la 'Persistance' des données est automatiquement supprimée. (Mettre le chiffre zéro pour le désactiver.)",
+		"message": "Après la durée spécifiée, les données persistantes sont automatiquement effacées. (Entrer zéro désactiver.)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
@@ -552,11 +560,11 @@
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
-		"message": "Effacer le stockage aléatoire de la 'Persistance' des données.",
+		"message": "Effacer le stockage aléatoire persistant",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Effacer les sauvegardes du générateur aléatoire de la 'Persistance' de données.",
+		"message": "Supprime toutes les données du générateur de nombres aléatoires persistant.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
@@ -564,7 +572,7 @@
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Vider les données du Container",
+		"message": "Vider le container",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
@@ -572,7 +580,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "‘Persistent’ partager des données aléatoires pour éviter le suivi entre domaine",
+		"message": "Partager les données aléatoires persistantes entre les domaines",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
@@ -580,7 +588,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Êtes-vous sûr de vouloir partager les numéros aléatoires du registre ‘Persistant’ entre les domaines ? N.B. : ce paramètre rend le navigateur  identifiable par un code personnalisé, facilitant votre pistage sur Internet.",
+		"message": "Êtes-vous sûr de vouloir partager les données aléatoires persistantes entre les domaines ?\nATTENTION : ce paramètre rend le navigateur 100% pistable et constitue donc une menace pour votre vie privée.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -608,35 +616,35 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Donne le nom de la carte graphique [webGL \"vendor\"]",
+		"message": "Valeur webGL renvoyée pour le \"vendor\"",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Cette valeur est utilisée dans la fonction webGL \"getParameter\" pour \"vendor\". Laissez un blanc pour utiliser la valeur originale.",
+		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"vendor\". Laissez vide pour utiliser la valeur d'origine.",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Donne le nom du driver de la carte graphique [webGL \"renderer\"]",
+		"message": "Valeur webGL renvoyée pour le \"renderer\"",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Cette valeur est utilisée dans la fonction webGL \"getParameter\" pour \"renderer\". Laissez un blanc pour utiliser la valeur originale.",
+		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"renderer\". Laissez vide pour utiliser la valeur d'origine.",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Doonées WebGL utilisées sur \"unmasked vendor\"",
+		"message": "Valeur webGL renvoyée pour le \"unmasked vendor\"",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Cette valeur est utilisée dans la fonction webGL \"getParameter\" pour \"unmasked vendor\". Laissez en blanc pour utiliser la valeur d'origine.",
+		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"unmasked vendor\". Laissez vide pour utiliser la valeur d'origine.",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Données webGL utilisées sur \"unmasked renderer\"",
+		"message": "Valeur webGL renvoyée pour le \"unmasked renderer\"",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"unmasked renderer\". Laissez vide pour utiliser la valeur d'origine.",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -668,7 +676,7 @@
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "Afficher URL",
+		"message": "afficher l'URL complète",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -680,51 +688,51 @@
 		"description": ""
 	},
 	"preBlock": {
-		"message": "L’interface API a bloqué sur {url} parce que les paramètres de CanvasBlocker n'ont pas été chargés à temps.",
+		"message": "API bloquée pour {url} parce que les paramètres de CanvasBlocker n'ont pas été chargés à temps.",
 		"description": ""
 	},
 	"blocked": {
-		"message": "Linterface API a bloqué sur {url} ",
+		"message": "API bloquée pour {url}.",
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Donne de fausses informations sur {url}.",
+		"message": "Lecture canvas falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Donne de fausses informations audio sur {url}.",
+		"message": "Lecture audio falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Donne de fausses informations sur l'historique à l'{url}",
+		"message": "Lecture history falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Donne de fausses informations sur Windows à l'{url}",
+		"message": "Lecture window falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "Donne de fausses information sur DOMRect à l'{url}",
+		"message": "Lecture DOMRect falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Données faussées pour la lecture des données TextMetrics activé {url}",
+		"message": "Lecture TextMetrics falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Donne de fausses informaiton sur le Navigateur à l'{url}",
+		"message": "Lecture navigator falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Donne de fausses informations sur l'écran de l'ordinateur à l'{url}",
+		"message": "Lecture screen falsifiée pour {url}",
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "Feindre l'entrée sur {url}.",
+		"message": "Entrée falsifiée pour {url}",
 		"description": ""
 	},
 	"ignoreList_description": {
-		"message": "Domaines ou URL pour lesquels aucune notification ne doit être affichée. S’il y a plusieurs entrées elles doivent être séparées par une virgule.",
+		"message": "Domaines ou URLs pour lesquels aucune notification ne doit être affichée. Pour ajouter plusieurs entrées, séparez-les par des virgules.",
 		"description": ""
 	},
 	"ignoreList_title": {
@@ -860,11 +868,11 @@
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "Couleur",
+		"message": "couleur",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "clignotement",
+		"message": "clignoter",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -872,7 +880,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Afficher le nombre d’intervention de Canvas Blocker, sur l’icône de l’extension",
+		"message": "Afficher l’icône de l’extension",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -884,23 +892,23 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Modifier l’icône de la Barre d’outils",
+		"message": "Indiquer les notifications sur l’icône de la barre d'outils",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "Ne rien changer",
+		"message": "ne rien changer",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "Changer la couleur",
+		"message": "changer la couleur",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "Faire clignoter",
+		"message": "clignoter",
 		"description": ""
 	},
 	"sourceOutput": {
-		"message": "Appel d'un fichier",
+		"message": "Fichier appelant",
 		"description": ""
 	},
 	"stackEntryOutput": {
@@ -912,7 +920,7 @@
 		"description": ""
 	},
 	"stackList_title": {
-		"message": "Liste blanche spécifique au fichier",
+		"message": "Liste blanche spécifique à un fichier",
 		"description": ""
 	},
 	"whiteList_title": {
@@ -920,31 +928,31 @@
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domaines ou URL autorisés à utiliser le l’interface API <canvas>. S’il y a plusieurs entrées, elles doivent être séparées par une virgule.",
+		"message": "Domaines ou URLs autorisés à utiliser toutes les APIs. Pour ajouter plusieurs entrées, séparez-les par des virgules.",
 		"description": ""
 	},
 	"whitelist": {
-		"message": "Permettre",
+		"message": "mettre en liste blanche",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "Autoriser le domaine",
+		"message": "mettre le domaine en liste blanche",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "Autoriser l'URL",
+		"message": "mettre l'URL en liste blanche",
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "ignorer",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "Liste blanche provisoire",
+		"message": "mettre en liste blanche temporairement",
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "Explorer la liste blanche",
+		"message": "inspecter la liste blanche",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -952,19 +960,19 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "URL et domaine qui seront autorisés à utiliser les interfaces d’échange (API), pendant cette session, doivent être séparés par des virgules",
+		"message": "Domaines ou URLs autorisés à utiliser toutes les APIs durant la session courante. Pour ajouter plusieurs entrées, séparez-les par des virgules.",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "Liste blanche domaine autorisé provisoirement",
+		"message": "mettre le domaine en liste blanche temporairement",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "Liste blanche URL autorisé provisoirement",
+		"message": "mettre l'URL en liste blanche temporairement",
 		"description": ""
 	},
 	"storeNotificationData_title": {
-		"message": "Stoquer les détails des données de notification",
+		"message": "Enregistrer les détails des notifications",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -972,63 +980,63 @@
 		"description": ""
 	},
 	"storeImageForInspection_title": {
-		"message": "Enregistrer l'image pour la visualiser",
+		"message": "Enregistrer l'image pour l'inspecter",
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Enregistrer la fausse information <canvas>.\nAttention : il se peut que cela entraine une élévation de la mémoire utilisée.",
+		"message": "Enregistrer l'information canvas falsifiée.\nATTENTION : cela peut entraîner une forte consommation mémoire.",
 		"description": ""
 	},
 	"protectAudio_title": {
-		"message": "Falsifier les interfaces audio (API)",
+		"message": "Protéger l'API audio",
 		"description": ""
 	},
 	"protectAudio_description": {
-		"message": "Si l’interface audio (API) doit être protégée",
+		"message": "Si l'API audio doit aussi être protégée",
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et enlevez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Falsifier le taux de la mémoire tampon",
+		"message": "Taux de falsification de la mémoire tampon",
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "Choisissez comment vous voulez falsifier la valeur, les données que vous voulez envoyer afin d’éviter d’être pisté par votre interface audio qui a des données spécifiques et uniques à votre ordinateur, donc permet le suivi",
+		"message": "Nombre de valeurs falsifiées par requête de lecture.",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 valeur envoyée pour tromper le suivi",
+		"message": "1 valeur",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 valeurs envoyées pour tromper le suivi",
+		"message": "10 valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 valeurs envoyées pour tromper le suivi",
+		"message": "100 valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 valeurs envoyées pour tromper le suivi",
+		"message": "1000 valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0,1% de la valeur de la mémoire tampon sera falsifiée",
+		"message": "0,1% des valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% de la valeur de la mémoire tampon sera falsifiée",
+		"message": "1% des valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% de la valeur de la mémoire tampon sera falsifiée",
+		"message": "10% des valeurs",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% de la valeur de la mémoire tampon sera falsifiée",
+		"message": "100% des valeurs",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
@@ -1048,7 +1056,7 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "intermédiaire",
+		"message": "moyen",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
@@ -1076,7 +1084,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "Sert, si voulez que certains des indices utilisés soient toujours être falsifiés",
+		"message": "Si certains des indices utilisés doivent toujours être falsifiés.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
@@ -1084,7 +1092,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "Les indices, que vous souhaitez toujours falsifier, séparez-les par des virgules si vous en avez plusieurs",
+		"message": "Les indices qui sont toujours falsifiés. Pour ajouter plusieurs valeurs, séparez-les par des virgules.",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
@@ -1092,7 +1100,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Longueur maximale de l'histoire qui sera indiqué à un site Internet ; les sites cherchant à connaitre votre historique",
+		"message": "Taille maximale de l'historique qui est renvoyée au site web.",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
@@ -1100,7 +1108,7 @@
 		"description": ""
 	},
 	"protectWindow_title": {
-		"message": "Protéger l’interface d’échange de données entre Windows et Internet (API)",
+		"message": "Protéger l'API window",
 		"description": ""
 	},
 	"protectWindow_description": {
@@ -1128,7 +1136,7 @@
 		"description": ""
 	},
 	"protectDOMRect_title": {
-		"message": "Protéger l’interface d’échange de données DOMRect",
+		"message": "Protéger l'API DOMRect",
 		"description": ""
 	},
 	"protectDOMRect_description": {
@@ -1148,7 +1156,7 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protéger l'interface TextMetrics",
+		"message": "Protéger l'API TextMetrics",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
@@ -1160,7 +1168,7 @@
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Protéger l’interface d’échange de données du Navigateur Internet (API)",
+		"message": "Protéger l’API navigator",
 		"description": ""
 	},
 	"protectNavigator_description": {
@@ -1204,11 +1212,11 @@
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Navigateur Internet, veuillez en sélectionner un",
+		"message": "Valeurs prédéfinies pour des navigateurs",
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Données internes au navigateur",
+		"message": "Valeurs du navigateur",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
@@ -1216,7 +1224,7 @@
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protéger l’échange de données de l’écran (API)",
+		"message": "Protéger l'API screen",
 		"description": ""
 	},
 	"protectScreen_description": {
@@ -1232,7 +1240,7 @@
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "La taille d’un écran se définit par une longueur et une hauteur en pixel ; le ‘x’ sert à s’éparer les deux données ; ex : 1920x1080. À vous de choisir cette valeur, vous pouvez en trouver sur Internet ; la valeur que vous allez mettre sera envoyée aux sites Internet",
+		"message": "Si ce paramètre est défini avec une valeur \"...x...\" les dimensions spécifiées seront renvoyées comme taille d'écran.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
@@ -1276,7 +1284,7 @@
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "très coloré",
+		"message": "coloré",
 		"description": ""
 	},
 	"theme_options.none": {
@@ -1284,19 +1292,19 @@
 		"description": ""
 	},
 	"blockDataURLs_title": {
-		"message": "Bloquer la transmission de données dans une URL (adresse Internet)",
+		"message": "Bloquer les pages URL de données",
 		"description": ""
 	},
 	"blockDataURLs_description": {
-		"message": "La transmission de données dans une URL sert dans un moteur de recherche quand vous envoyez une recherche sur un mot ; le mot est joint à l’URL. Cela peut aussi être des URL dans lesquelles vous avez mis votre login, mot de passe, etc. ▬ Les URL de données ne peuvent pas être protégées contre la prise d’empreinte, voir (https://bugzilla.mozilla.org/show_bug.cgi?id=1475831) ; cependant bloquer les URL de données peuvent dans certains cas empêcher une recherche dans un moteur de recherche",
+		"message": "Les pages URL de données ne peuvent pas être protégées contre la prise d'empreinte digitale (fingerprinting) (voir https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Le fait de les bloquer empêche l'empreinte réelle d'atteindre le serveur.",
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et enlevez sa coche",
+		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Informations sur les versions",
+		"message": "Notes de version",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1304,7 +1312,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Lire les notes de version",
+		"message": "Afficher les notes de version",
 		"description": ""
 	},
 	"logLevel_title": {
@@ -1316,27 +1324,27 @@
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "Néant",
+		"message": "aucun",
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "erreurs",
+		"message": "erreur",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "Avertissements",
+		"message": "avertissement",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "Messages",
+		"message": "message",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "Notifications",
+		"message": "notification",
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "Détailler",
+		"message": "verbeux",
 		"description": ""
 	},
 	"exportSettings_title": {
@@ -1376,7 +1384,7 @@
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Consulter",
+		"message": "Inspecter",
 		"description": ""
 	},
 	"saveSettings_label": {
@@ -1404,11 +1412,11 @@
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Configuration",
+		"message": "Réglages",
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "Questions fréquentes",
+		"message": "FAQ - Questions fréquentes",
 		"description": ""
 	},
 	"browserAction_test": {
@@ -1420,19 +1428,19 @@
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Numéro du rapport",
+		"message": "Signaler un problème",
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Contrôle et réparation des erreurs de configuration",
+		"message": "Contrôle et réparation des erreurs de paramètrage",
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "Cette page aide à trouver les erreurs de configuration dans les paramètres de CanvasBlocker. Elle donne également des conseils sur les réglages des sous-options. Toutefois il n'est pas recommandé de corriger aveuglément toutes les suggestions, il faut comprendre avant les concepts informatiques",
+		"message": "Cette page aide à trouver des erreurs de configuration dans les paramètres de CanvasBlocker. Elle donne également des conseils sur les réglages non optimaux. Toutefois, il n'est pas recommandé d'accepter aveuglément toutes les suggestions.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Rien à signaler",
+		"message": "Rien à signaler.",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
@@ -1460,7 +1468,7 @@
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "La valeur de l'URL pour \"{url}\" est la même que le paramètre global pour \"{setting-title}\" ",
+		"message": "La valeur de l'URL pour \"{url}\" est la même que le paramètre global pour \"{setting-title}\".",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
@@ -1540,7 +1548,7 @@
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "Ne partagez pas le caractère aléatoire persistant entre les domaines car cela rend le navigateur 100% traçable",
+		"message": "Ne partagez pas les données aléatoires persistantes entre les domaines car cela rend le navigateur 100% pistable.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
@@ -1551,8 +1559,12 @@
 		"message": "Inspection de la liste blanche de CanvasBlocker",
 		"description": ""
 	},
+	"whitelist_inspection_description": {
+		"message": "Montre quelles protections d'API sont actives pour un site donné. Si vous supprimez la coche pour une API, cette API ne sera pas protégée pour le site sélectionné.",
+		"description": ""
+	},
 	"whitelist_all_apis": {
-		"message": "Toutes les interface d’échanges de donnés (API)",
+		"message": "Toutes les APIs",
 		"description": ""
 	},
 	"presets": {
@@ -1572,11 +1584,11 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Configuration par défaut",
+		"message": "Réglages par défaut",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "Aucun réglage particulier n'est appliqué",
+		"message": "Aucun réglage particulier n'est appliqué.",
 		"description": ""
 	},
 	"preset_convenience_title": {
@@ -1588,7 +1600,7 @@
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Réglages pour organiser la furtivité",
+		"message": "Réglages de furtivité",
 		"description": ""
 	},
 	"preset_stealth_description": {
@@ -1596,7 +1608,7 @@
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Une protection maximale",
+		"message": "Protection maximale",
 		"description": ""
 	},
 	"preset_max_protection_description": {
@@ -1604,11 +1616,11 @@
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "exception sur reCaptcha",
+		"message": "exception sur reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "L’interface d’échange de données (API) peut faire dysfonctionner les reCaptcha (images et mots sur lesquels nous devons cliquer pour accéder à un site Internet). Cette fonction permet d’utiliser la protection contre le pistage de windows.name qui permettra de faire fonctionner de nouveau les reCaptcha",
+		"message": "La protection de l'API window peut faire dysfonctionner les reCAPTCHA. Ce préréglage permet d’utiliser l'API window.name dans les pages intégrées ce qui les rendra à nouveau fonctionnels.",
 		"description": ""
 	}
 }

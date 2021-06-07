@@ -23,6 +23,14 @@
 		"message": "\n  · {api}",
 		"description": ""
 	},
+	"browserAction_status_on": {
+		"message": "CanvasBlocker on",
+		"description": ""
+	},
+	"browserAction_status_off": {
+		"message": "CanvasBlocker off",
+		"description": ""
+	},
 	"more": {
 		"message": "mais",
 		"description": ""
@@ -1549,6 +1557,10 @@
 	},
 	"whitelist_inspection_title": {
 		"message": "Inspeção da whitelist do CanvasBlocker",
+		"description": ""
+	},
+	"whitelist_inspection_description": {
+		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
 		"description": ""
 	},
 	"whitelist_all_apis": {

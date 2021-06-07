@@ -23,6 +23,14 @@
 		"message": "\n  · {api}",
 		"description": ""
 	},
+	"browserAction_status_on": {
+		"message": "CanvasBlocker an",
+		"description": ""
+	},
+	"browserAction_status_off": {
+		"message": "CanvasBlocker aus",
+		"description": ""
+	},
 	"more": {
 		"message": "mehr",
 		"description": ""
@@ -1549,6 +1557,10 @@
 	},
 	"whitelist_inspection_title": {
 		"message": "CanvasBlocker Erlaubnisse ansehen",
+		"description": ""
+	},
+	"whitelist_inspection_description": {
+		"message": "Anzeige des API-Schutzes für eine bestimmte Webseite. Wenn man das Häkchen bei einer API entfernt, wird diese für die ausgewählte Webseite nicht mehr beschützt.",
 		"description": ""
 	},
 	"whitelist_all_apis": {

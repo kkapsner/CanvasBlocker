@@ -23,6 +23,14 @@
 		"message": "\n  · {api}",
 		"description": ""
 	},
+	"browserAction_status_on": {
+		"message": "CanvasBlocker on",
+		"description": ""
+	},
+	"browserAction_status_off": {
+		"message": "CanvasBlocker off",
+		"description": ""
+	},
 	"more": {
 		"message": "más",
 		"description": ""
@@ -176,23 +184,23 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Interrumpir sesión al actualizar",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Si se establece en true la extensión se actualizará tan pronto como la actualización esté disponible. Esto podría romper algunas pestañas que están actualmente abiertas.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Recargar extensión",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Realizar una actualización pendiente.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Recargar",
 		"description": ""
 	},
 	"hideSetting": {
@@ -1120,7 +1128,7 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
-		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"message": "La API window.name no es tan peligrosa en el contexto de las páginas incrustadas y se utiliza allí por razones legítimas (por ejemplo, reCAPTCHA). Esta configuración permitirá estos usos.",
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
@@ -1196,7 +1204,7 @@
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
-		"message": "Settings for the container {select} are shown.",
+		"message": "Se muestra la configuración del contenedor {select}.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
@@ -1240,11 +1248,11 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
-		"message": "Fake minimal screen size",
+		"message": "Tamaño mínimo falso de la pantalla",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
-		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"message": "Utilice un tamaño de pantalla mínimo del siguiente conjunto que pueda ajustarse a las dimensiones de la ventana interior. Tamaños de pantalla: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
@@ -1348,7 +1356,7 @@
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "Control de configuración",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1472,7 +1480,7 @@
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
+		"message": "Algunas características de {api} están deshabilitadas. Esto sólo debe hacerse para probar o si realmente sabe lo que las características están haciendo.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
@@ -1544,11 +1552,15 @@
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
-		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"message": "No utilice un tamaño de pantalla personalizado, ya que hace que el navegador sea más rastreable.",
 		"description": ""
 	},
 	"whitelist_inspection_title": {
 		"message": "Inspección de la lista blanca de CanvasBlocker",
+		"description": ""
+	},
+	"whitelist_inspection_description": {
+		"message": "Muestra las protecciones de las API que están activas para un sitio determinado. Si eliminas una marca de verificación para una API, esta API no estará protegida para el sitio seleccionado.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
@@ -1572,11 +1584,11 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "Configuración predeterminada",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "No se han aplicado ajustes especiales.",
 		"description": ""
 	},
 	"preset_convenience_title": {
@@ -1588,7 +1600,7 @@
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "Ajustes de sigilo",
 		"description": ""
 	},
 	"preset_stealth_description": {
