@@ -4,6 +4,7 @@ Version 1.6:
 		- added paypal.com to the convenience preset
 		- improved whitelist inspection
 		- use proxy to hide changed functions
+		- whitelisting now uses "allowEverything" instead of "allow"
 	
 	new features:
 		- try to not break tabs when updating
