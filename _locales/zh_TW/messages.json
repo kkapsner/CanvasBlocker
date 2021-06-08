@@ -811,6 +811,10 @@
 		"message": "What is the scope of the whitelisting?",
 		"description": ""
 	},
+	"selectWhitelistType": {
+		"message": "What is the type of the whitelisting?",
+		"description": ""
+	},
 	"whitelistOnlyAPI": {
 		"message": "僅將{api} 加到白名單",
 		"description": ""
