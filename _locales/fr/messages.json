@@ -811,6 +811,10 @@
 		"message": "Que souhaitez-vous autoriser ?",
 		"description": ""
 	},
+	"selectWhitelistType": {
+		"message": "What is the type of the whitelisting?",
+		"description": ""
+	},
 	"whitelistOnlyAPI": {
 		"message": "Autoriser uniquement l’interface {api}",
 		"description": ""
