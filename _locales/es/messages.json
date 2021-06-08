@@ -811,6 +811,10 @@
 		"message": "¿Cuál es el alcance de la lista blanca?",
 		"description": ""
 	},
+	"selectWhitelistType": {
+		"message": "What is the type of the whitelisting?",
+		"description": ""
+	},
 	"whitelistOnlyAPI": {
 		"message": "Permitir solo {api}",
 		"description": ""
