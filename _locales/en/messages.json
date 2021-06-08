@@ -849,6 +849,10 @@
 		"message": "What is the scope of the whitelisting?",
 		"description": ""
 	},
+	"selectWhitelistType": {
+		"message": "What is the type of the whitelisting?",
+		"description": ""
+	},
 	"whitelistOnlyAPI": {
 		"message": "Whitelist only the {api}",
 		"description": ""

@@ -71,7 +71,7 @@
 			isIcon: true,
 			callback: async function({domain, urls, api}){
 				const whitelistingSettings = {
-					all: {name: "blockMode", value: "allowEverything"},
+					all: {name: "blockMode", value: "allowEverything", fakeValue: "fake"},
 					canvas: {name: "protectedCanvasPart", value: "nothing"},
 					audio: {name: "protectAudio", value: false},
 					domRect: {name: "protectDOMRect", value: false},
@@ -110,6 +110,21 @@
 					)];
 				}
 				if (choice){
+					if (setting === whitelistingSettings.all && settings.get(setting.name, choice).startsWith("block")){
+						setting.value = await modalChoice(
+							extension.getTranslation("selectWhitelistType"),
+							[
+								{
+									text: extension.getTranslation("blockMode_options." + setting.value),
+									value: setting.value
+								},
+								{
+									text: extension.getTranslation("blockMode_options." + setting.fakeValue),
+									value: setting.fakeValue
+								}
+							]
+						);
+					}
 					await settings.set(setting.name, setting.value, choice);
 				}
 				

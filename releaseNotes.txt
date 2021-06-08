@@ -10,6 +10,7 @@ Version 1.6:
 		- try to not break tabs when updating
 		- setting to postpone updates until browser restart or extension is reloaded
 		- added status button in browser action to see and set the whitelist status
+		- if the current block mode is set to blocking you can chose between faking and allowing if you whitelist an URL
 	
 	fixes:
 		- fix message canvasBlocker-unload
