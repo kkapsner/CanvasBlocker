@@ -71,7 +71,7 @@
 			isIcon: true,
 			callback: async function({domain, urls, api}){
 				const whitelistingSettings = {
-					all: {name: "blockMode", value: "allow"},
+					all: {name: "blockMode", value: "allowEverything"},
 					canvas: {name: "protectedCanvasPart", value: "nothing"},
 					audio: {name: "protectAudio", value: false},
 					domRect: {name: "protectDOMRect", value: false},

@@ -37,7 +37,7 @@
 				]);
 			}
 			else {
-				settings.set("blockMode", "allow", currentURL.hostname);
+				settings.set("blockMode", "allowEverything", currentURL.hostname);
 			}
 			update();
 		});
