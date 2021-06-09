@@ -812,7 +812,7 @@
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "Quel est le type de liste blanche ?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
