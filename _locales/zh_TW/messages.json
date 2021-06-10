@@ -812,7 +812,7 @@
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "白名單的類型是什麼？",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
