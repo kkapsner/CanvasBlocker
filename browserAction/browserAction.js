@@ -23,8 +23,14 @@
 		}
 		
 		const currentURL = new URL(currentTab.url);
+		const reloadButton = document.getElementById("reload");
+		reloadButton.addEventListener("click", async function(){
+			await browser.tabs.reload(currentTab.id);
+			window.close();
+		});
 		const addonStatus = document.getElementById("addonStatus");
 		addonStatus.addEventListener("click", async function(){
+			reloadButton.classList.toggle("hidden");
 			if (isWhitelisted(currentURL)){
 				settingContainers.resetUrlValue("blockMode", currentURL);
 				if (settings.get("blockMode").startsWith("allow")){

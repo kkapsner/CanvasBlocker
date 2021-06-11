@@ -43,3 +43,22 @@ div {
 #addonStatus.on {
 	background-image: url(../icons/browserAction-CBon.svg);
 }
+
+#reload {
+	cursor: pointer;
+	vertical-align: text-bottom;
+	height: 19px;
+	width: 19px;
+	margin-right: 0.25em;
+	background-color: currentColor;
+	mask-size: 100%;
+	display: inline-block;
+	mask-image: url(../icons/browserAction-reload.svg);
+	position: absolute;
+	top: calc(5px + 0.5em);
+	right: 0.5em;
+}
+
+#reload.hidden {
+	display: none;
+}

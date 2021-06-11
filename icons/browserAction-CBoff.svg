@@ -5,7 +5,7 @@
 	 id="svg2" sodipodi:docname="browserAction-whitelisted.svg" inkscape:version="0.92.2 2405546, 2018-03-11" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96px" height="96px"
 	 viewBox="0 0 96 96" enable-background="new 0 0 96 96" xml:space="preserve">
-<symbol  id="Löschen" viewBox="-32 -32 64 64">
+<symbol  id="Loeschen" viewBox="-32 -32 64 64">
 	<polygon points="8.452,15.699 -0.001,7.246 -8.453,15.697 -15.698,8.453 -7.245,0 -15.698,-8.453 -8.453,-15.697 -0.001,-7.244 
 		8.452,-15.697 15.697,-8.453 7.244,0 15.697,8.453 	"/>
 	<path d="M22.627,22.627C16.379,28.875,8.189,32,0,32s-16.38-3.125-22.628-9.373c-12.496-12.496-12.496-32.758,0-45.254
@@ -87,5 +87,5 @@
 <path id="rect3826-0" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M23.808,2
 	h48.385C84.236,2,94,11.764,94,23.808v48.385C94,84.236,84.236,94,72.192,94H23.808C11.764,94,2,84.236,2,72.192V23.808
 	C2,11.764,11.764,2,23.808,2z"/>
-<use xlink:href="#Löschen"  width="64" height="64" x="-32" y="-32" transform="matrix(0.4704 0 0 -0.4704 70.5 73.2471)" overflow="visible"/>
+<use xlink:href="#Loeschen"  width="64" height="64" x="-32" y="-32" transform="matrix(0.4704 0 0 -0.4704 70.5 73.2471)" overflow="visible"/>
 </svg>
