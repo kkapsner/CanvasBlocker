@@ -38,8 +38,8 @@ div {
 	background-image: radial-gradient(black, rgba(0, 0, 0, 0), transparent);;
 }
 #addonStatus.off {
-	background-image: url(../icons/browserAction-whitelisted.svg);
+	background-image: url(../icons/browserAction-CBoff.svg);
 }
 #addonStatus.on {
-	background-image: url(../icons/browserAction-notPrinted.svg);
+	background-image: url(../icons/browserAction-CBon.svg);
 }
