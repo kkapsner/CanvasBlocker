@@ -12,7 +12,7 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\nskuteczna ochrona dla:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
@@ -184,7 +184,7 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Przerwij sesję przy aktualizacji",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
@@ -916,7 +916,7 @@
 		"description": ""
 	},
 	"stackEntryOutput": {
-		"message": "{url} line {line} column {column}",
+		"message": "{url} wiersz {line} kolumna {column}",
 		"description": ""
 	},
 	"stackList_description": {
