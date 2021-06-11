@@ -811,6 +811,10 @@
 		"message": "Какова сфера действия белого списка?",
 		"description": ""
 	},
+	"selectWhitelistType": {
+		"message": "What is the type of the whitelisting?",
+		"description": ""
+	},
 	"whitelistOnlyAPI": {
 		"message": "Добавить в белый список только для {api}",
 		"description": ""

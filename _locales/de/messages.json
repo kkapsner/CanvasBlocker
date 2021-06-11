@@ -811,6 +811,10 @@
 		"message": "Was soll erlaubt werden?",
 		"description": ""
 	},
+	"selectWhitelistType": {
+		"message": "Wie soll erlaubt werden?",
+		"description": ""
+	},
 	"whitelistOnlyAPI": {
 		"message": "Erlaube nur die {api}",
 		"description": ""
