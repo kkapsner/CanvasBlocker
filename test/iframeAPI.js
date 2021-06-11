@@ -110,7 +110,7 @@ const iframeAPI = function(){
 	];
 	
 	function getPerformer(callback){
-		return 	async function perform(method){
+		return async function perform(method){
 			const api = await method.prepare();
 			callback(api.window, method.name);
 			api.cleanup();
