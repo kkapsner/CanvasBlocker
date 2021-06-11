@@ -24,11 +24,11 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker włączony",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker wyłączony",
 		"description": ""
 	},
 	"more": {
@@ -192,11 +192,11 @@
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Przeładuj rozszerzenie",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Wykonaj oczekującą aktualizację.",
 		"description": ""
 	},
 	"reloadExtension_label": {
@@ -600,7 +600,7 @@
 		"description": ""
 	},
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "Minimalna liczba kolorów",
 		"description": ""
 	},
 	"minColors_description": {
@@ -608,7 +608,7 @@
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
-		"message": "Fake the alpha channel",
+		"message": "Fałszywy kanał alfa",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
@@ -820,7 +820,7 @@
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "Dodaj wszystkie API do białej listy",
 		"description": ""
 	},
 	"settings": {
@@ -852,7 +852,7 @@
 		"description": ""
 	},
 	"showNotifications_title": {
-		"message": "Show notification icon",
+		"message": "Pokaż ikonę powiadomień",
 		"description": ""
 	},
 	"highlightPageAction_description": {
@@ -896,15 +896,15 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Change toolbar icon on notification",
+		"message": "Zmień ikonę paska narzędzi przy powiadomieniu",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "nic nie zmieniaj",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "zmień kolor",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
@@ -1256,7 +1256,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
-		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"message": "Użyj minimalnego rozmiaru ekranu z następującego zestawu, który może pasować do wewnętrznych wymiarów okna. Rozmiary ekranu: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
@@ -1564,7 +1564,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Pokazuje jakie zabezpieczenia API są aktywne dla danej witryny. Jeśli usuniesz znak kontrolny dla API, to API nie będzie chronione dla wybranej witryny.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
