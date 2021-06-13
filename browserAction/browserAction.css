@@ -21,7 +21,15 @@ div {
 	padding-left: calc(0.5em + 19px + 0.25em);
 }
 
+#headerActions {
+	display: grid;
+	grid-template-columns: 0.5fr 50px 0.5fr;
+	grid-template-rows: auto;
+}
+
 #addonStatus {
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
 	border: none;
 	display: block;
 	margin: 5px auto;
@@ -45,18 +53,17 @@ div {
 }
 
 #reload {
+	grid-row: 1 / 2;
+	grid-column: 3 / 4;
 	cursor: pointer;
-	vertical-align: text-bottom;
 	height: 19px;
 	width: 19px;
-	margin-right: 0.25em;
+	align-self: center;
+	justify-self: left;
+	margin-left: 1em;
 	background-color: currentColor;
 	mask-size: 100%;
-	display: inline-block;
 	mask-image: url(../icons/browserAction-reload.svg);
-	position: absolute;
-	top: calc(5px + 0.5em);
-	right: 0.5em;
 }
 
 #reload.hidden {
