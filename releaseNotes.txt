@@ -1,12 +1,6 @@
-Version 1.7:
-	changes:
-		- 
-	
-	new features:
-		- 
-	
+Version 1.6.1:
 	fixes:
-		- 
+		- Google login and account creation did not work
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
