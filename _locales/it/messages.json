@@ -164,7 +164,7 @@
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "API schermo",
+		"message": "API Schermo",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
@@ -256,47 +256,47 @@
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio API input?",
+		"message": "Vuoi consentire l'input di API audio?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio API readout?",
+		"message": "Vuoi consentire la lettura di API audio?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "Vuoi consentire l'API cronologia?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "Vuoi consentire l'input di API cronologia?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "Vuoi permettere la lettura dell'API cronologia?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "Vuoi consentire l'API finestra?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window API input?",
+		"message": "Vuoi consentire l'input di API finestra?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window API readout?",
+		"message": "Vuoi consentire la lettura di API finestra?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "Vuoi consentire l'API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect API input?",
+		"message": "Vuoi consentire l'input di API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "Vuoi consentire la lettura di API DOMRect?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -324,15 +324,15 @@
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "Vuoi consentire l'API schermo?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "Vuoi consentire l'input di API schermo?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "Vuoi consentire la lettura di API schermo?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -436,7 +436,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"message": "Per proteggere singole parti per siti web specifici, clicca la freccia nera per aprire il menu, aggiungi il dominio o l'URL cliccando \"+\" e seleziona la parte desiderata.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
@@ -616,35 +616,35 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "Vendor webGL segnalato",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Leave empty to use the original value.",
+		"message": "Valore da segnalare nella funzione webGL \"getParameter\" per il \"vendor\". Lascia vuoto per usare il valore originale.",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "Renderer webGL segnalato",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Leave empty to use the original value.",
+		"message": "Valore da segnalare nella funzione webGL \"getParameter\" per il \"renderer\". Lascia vuoto per usare il valore originale.",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Reported webGL unmasked vendor",
+		"message": "Vendor webGL non mascherato segnalato",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Leave empty to use the original value.",
+		"message": "Valore da segnalare nella funzione webGL \"getParameter\" per il \"vendor non mascherato\". Lascia vuoto per usare il valore originale.",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Reported webGL unmasked renderer",
+		"message": "Renderer webGL non mascherato segnalato",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Leave empty to use the original value.",
+		"message": "Valore da segnalare nella funzione webGL \"getParameter\" per il \"renderer non mascherato\". Lascia vuoto per usare il valore originale.",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -656,11 +656,11 @@
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
-		"message": "Protected API features",
+		"message": "Funzioni API protette",
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
+		"message": "Elenco delle funzionalità API protette. Quando si deseleziona una casella, questa funzione dell'API non sarà protetta.",
 		"description": ""
 	},
 	"disableNotifications": {
@@ -736,15 +736,15 @@
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Elenco esclusi",
+		"message": "Lista esclusi",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "API Ignorate",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
-		"message": "No notifications will be displayed for the selected APIs.",
+		"message": "Nessuna notifica verrà visualizzata per le API selezionate.",
 		"description": ""
 	},
 	"localFile": {
@@ -760,19 +760,19 @@
 		"description": ""
 	},
 	"selectIgnore": {
-		"message": "Select domain or URL to add to ignore list:",
+		"message": "Seleziona il dominio o URL da aggiungere alla lista esclusi:",
 		"description": ""
 	},
 	"inputIgnore": {
-		"message": "Input domain or URL \"RegExp\" to add to ignore list:",
+		"message": "Inserisci il dominio o URL \"RegExp\" da aggiungere alla lista esclusi:",
 		"description": ""
 	},
 	"inputIgnoreDomain": {
-		"message": "Inserisci dominio da aggiungere all'elenco esclusi:",
+		"message": "Inserisci dominio da aggiungere alla lista esclusi:",
 		"description": ""
 	},
 	"inputIgnoreURL": {
-		"message": "Input URL \"RegExp\" to add to ignore list:",
+		"message": "Inserisci l'URL \"RegExp\" da aggiungere alla lista esclusi:",
 		"description": ""
 	},
 	"selectWhitelist": {
@@ -1004,7 +1004,7 @@
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Buffer fake rate",
+		"message": "Quantità di falsificazione del buffer",
 		"description": ""
 	},
 	"audioFakeRate_description": {
@@ -1012,39 +1012,39 @@
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1 valore",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10 valori",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100 valori",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000 valori",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "0,1% dei valori",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "1% dei valori",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "10% dei valori",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "100% dei valori",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "Livello di rumore",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
@@ -1052,23 +1052,23 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "minimo",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "basso",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "medio",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "alto",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "massimo",
 		"description": ""
 	},
 	"useAudioCache_title": {
