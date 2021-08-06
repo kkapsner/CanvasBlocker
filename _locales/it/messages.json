@@ -776,11 +776,11 @@
 		"description": ""
 	},
 	"selectWhitelist": {
-		"message": "Select domain or URL to add to whitelist:",
+		"message": "Seleziona il dominio o URL da aggiungere alla lista bianca:",
 		"description": ""
 	},
 	"inputWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to whitelist:",
+		"message": "Inserisci il dominio o URL \"RegExp\" da aggiungere alla lista bianca:",
 		"description": ""
 	},
 	"inputWhitelistDomain": {
@@ -792,35 +792,35 @@
 		"description": ""
 	},
 	"selectSessionWhitelist": {
-		"message": "Select domain or URL to add to the session whitelist:",
+		"message": "Seleziona il dominio o URL da aggiungere alla lista bianca della sessione:",
 		"description": ""
 	},
 	"inputSessionWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to the session whitelist:",
+		"message": "Inserisci il dominio o URL \"RegExp\" da aggiungere alla lista bianca della sessione:",
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Input domain to add to the session whitelist:",
+		"message": "Inserisci il dominio da aggiungere alla lista bianca della sessione:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to the session whitelist:",
+		"message": "Inserisci l'URL \"RegExp\" da aggiungere alla lista bianca della sessione:",
 		"description": ""
 	},
 	"selectWhitelistScope": {
-		"message": "What is the scope of the whitelisting?",
+		"message": "Qual è l'ambito della lista bianca?",
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "Qual è il tipo della lista bianca?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the {api}",
+		"message": "Permetti solo l'{api}",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "Permetti tutte le API",
 		"description": ""
 	},
 	"settings": {
@@ -960,23 +960,23 @@
 		"description": ""
 	},
 	"sessionWhiteList_title": {
-		"message": "Session whitelist",
+		"message": "Lista bianca della sessione",
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs during the current session. To add multiple entries, separate them by commas.",
+		"message": "Domini o URL che devono essere autorizzati ad utilizzare tutte le API durante la sessione attuale. Per aggiungere più voci, separale con virgole.",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "whitelist domain temporarily",
+		"message": "permetti dominio temporaneamente",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "whitelist URL temporarily",
+		"message": "permetti URL temporaneamente",
 		"description": ""
 	},
 	"storeNotificationData_title": {
-		"message": "Store detail data of the notifications",
+		"message": "Memorizza i dati di dettaglio delle notifiche",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -1072,19 +1072,19 @@
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "Usa cache audio",
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"message": "Attiva la cache audio. Ciò può impedire il rilevamento ma peggiora le prestazioni.",
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Some pages use a very poorly written audio fingerprinting script which will cause Firefox to slow down. To disable the cache for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Alcune pagine usano script di fingerprinting audio scritti molto male che provocano un rallentamento di Firefox. Per disattivare la cache per siti web specifici, clicca la freccia nera per aprire il menu, aggiungi il dominio o l'URL cliccando \"+\" e rimuovi il segno di spunta.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "Usa indici fissi",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
@@ -1092,7 +1092,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_title": {
-		"message": "Fixed indices",
+		"message": "Indici fissi",
 		"description": ""
 	},
 	"audioFixedIndices_description": {
@@ -1100,15 +1100,15 @@
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
-		"message": "History length threshold",
+		"message": "Soglia lunghezza cronologia",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximal length of the history that is reported to the website.",
+		"message": "Lunghezza massima della cronologia che viene riportata al sito web.",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "To change this value for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set a different value.",
+		"message": "Per cambiare questo valore per siti web specifici, clicca la freccia nera per aprire il menu, aggiungi il dominio o l'URL cliccando \"+\" e imposta un valore diverso.",
 		"description": ""
 	},
 	"protectWindow_title": {
@@ -1128,15 +1128,15 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
-		"message": "Allow window.name in frames",
+		"message": "Consenti window.name nei frame",
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
-		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"message": "L'API window.name non è così pericolosa nel contesto delle pagine incorporate ed è utilizzata lì per motivi legittimi (es. reCAPTCHA). Questa impostazione consentirà questi casi d'uso.",
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
-		"message": "To allow this only for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
+		"message": "Per consentirlo solo per siti web specifici, clicca la freccia nera per aprire il menu, aggiungi il dominio o l'URL cliccando \"+\" e imposta il segno di spunta.",
 		"description": ""
 	},
 	"protectDOMRect_title": {
@@ -1152,11 +1152,11 @@
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
-		"message": "DOMRect integer factor",
+		"message": "Fattore intero DOMRect",
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
-		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"message": "Alcune frazioni di un pixel possono essere controllate dal CSS. Per impedire il rilevamento, i valori di un DOMRect che moltiplicati con questo fattore sono interi non saranno modificati.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
@@ -1164,7 +1164,7 @@
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "Protegge contro le impronte digitali \"measureText()\" che possono essere utilizzate per incrociare i valori DOMRect.",
+		"message": "Ciò protegge dal fingerprinting di \"measureText()\" che può essere utilizzato per incrociare i valori DOMRect.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
@@ -1184,7 +1184,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
-		"message": "Navigator settings",
+		"message": "Impostazioni navigatore",
 		"description": ""
 	},
 	"openNavigatorSettings_description": {
@@ -1192,15 +1192,15 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "Apri",
 		"description": ""
 	},
 	"navigatorSettings_title": {
-		"message": "CanvasBlocker navigator settings",
+		"message": "Impostazioni navigatore di CanvasBlocker",
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "On this page you can set the navigator settings. If using a preset you should always use an operating system and browser preset. After selecting these you can still make modifications.",
+		"message": "In questa pagina è possibile impostare le impostazioni del navigatore. Se usi una preimpostazione dovresti sempre utilizzare un sistema operativo e una preimpostazione del browser. Dopo aver selezionato queste si possono ancora fare modifiche.",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
@@ -1208,7 +1208,7 @@
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
-		"message": "Settings for the container {select} are shown.",
+		"message": "Le impostazioni per il contenitore {select} sono mostrate.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
@@ -1220,11 +1220,11 @@
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Navigator values",
+		"message": "Valori del navigatore",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "Ripristina",
 		"description": ""
 	},
 	"protectScreen_title": {
@@ -1232,7 +1232,7 @@
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "Questo protegge dai tentativi di fingerprinting inclusi le dimensioni dello schermo.",
+		"message": "Ciò protegge dai tentativi di fingerprinting inclusi le dimensioni dello schermo.",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
@@ -1248,7 +1248,7 @@
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
-		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"message": "Per fornire dimensioni specifiche per siti web specifici, clicca la freccia nera per aprire il menu, aggiungi il dominio o l'URL cliccando \"+\" e inserisci il valore desiderato.",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
@@ -1260,7 +1260,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Per escludere siti web specifici dalla falsificazione, clicca la freccia nera per aprire il menu, aggiungi il dominio o l'URL cliccando \"+\" e rimuovi il segno di spunta.",
 		"description": ""
 	},
 	"theme_title": {
@@ -1292,7 +1292,7 @@
 		"description": ""
 	},
 	"theme_options.none": {
-		"message": "none",
+		"message": "nessuno",
 		"description": ""
 	},
 	"blockDataURLs_title": {
