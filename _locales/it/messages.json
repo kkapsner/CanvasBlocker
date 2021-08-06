@@ -1296,11 +1296,11 @@
 		"description": ""
 	},
 	"blockDataURLs_title": {
-		"message": "Block data URL pages",
+		"message": "Blocca pagine Data URL",
 		"description": ""
 	},
 	"blockDataURLs_description": {
-		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking them prevents the real fingerprint to reach any server.",
+		"message": "Le pagine Data URL non possono essere protette contro il fingerprinting (vedi https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Bloccarle impedisce al vero fingerprinting di raggiungere qualsiasi server.",
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
@@ -1424,7 +1424,7 @@
 		"description": ""
 	},
 	"browserAction_test": {
-		"message": "Test",
+		"message": "Prova",
 		"description": ""
 	},
 	"browserAction_review": {
@@ -1444,27 +1444,27 @@
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Nothing to complain.",
+		"message": "Nulla da segnalare.",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
-		"message": "Unnecessary URL values",
+		"message": "Valori URL non necessari",
 		"description": ""
 	},
 	"sanitation_ruleset.disabledFeatures": {
-		"message": "Disabled features",
+		"message": "Funzioni disattivate",
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "Modalità di blocco",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
-		"message": "Thresholds",
+		"message": "Soglie",
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "Prestazioni",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
@@ -1476,39 +1476,39 @@
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
-		"message": "remove URL value",
+		"message": "rimuovi valore URL",
 		"description": ""
 	},
 	"sanitation_error.disabledFeatures": {
-		"message": "All features of {api} are disabled but the protection is enabled.",
+		"message": "Tutte le funzionalità dell'{api} sono disattivate, ma la protezione è attiva.",
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
+		"message": "Alcune funzionalità dell'{api} sono disattivate. Ciò dovrebbe essere fatto solo per test o se sai davvero cosa stanno facendo le funzionalità.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
-		"message": "disable main flag",
+		"message": "disattiva il flag principale",
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "attiva funzionalità",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
-		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"message": "Si consiglia di utilizzare le modalità di blocco \"falsifica\" o \"chiedi\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToFake": {
-		"message": "switch to \"fake\"",
+		"message": "passa a \"falsifica\"",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
-		"message": "With blocking mode \"{blockMode}\" the {api} protection is not working.",
+		"message": "Con la modalità di blocco \"{blockMode}\" la protezione {api} non funziona.",
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
-		"message": "disable \"{flag}\"",
+		"message": "disattiva \"{flag}\"",
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
