@@ -184,23 +184,23 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Interrompi la sessione quando si aggiorna",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Se impostato su vero, l'estensione verrà aggiornata non appena l'aggiornamento sarà disponibile. Ciò potrebbe rovinare alcune schede che sono attualmente aperte.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Ricarica l'estensione",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Esegui un aggiornamento in sospeso.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Ricarica",
 		"description": ""
 	},
 	"hideSetting": {
