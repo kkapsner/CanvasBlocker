@@ -92,7 +92,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Hai privacy.resistFingerprinting attivato. Ciò cambia leggermente il comportamento di CanvasBlocker. Vedi ulteriori informazioni {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Hai privacy.resistFingerprinting attivato. Ciò cambia leggermente il comportamento di CanvasBlocker. Vedi ulteriori informazioni {link:qui:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:qui:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -1512,23 +1512,23 @@
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "Do not use white random number generator with \"{blockMode}\" and protecting \"{protectedCanvasPart}\".",
+		"message": "Non usare il generatore di numeri casuali bianchi con \"{blockMode}\" e proteggendo \"{protectedCanvasPart}\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
-		"message": "switch to protect readout",
+		"message": "passa a protezione lettura",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "switch to \"non persistent\" rng",
+		"message": "passa a \"non persistente\"",
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
-		"message": "Do not use protect \"{protectedCanvasPart}\" in blocking mode \"{blockMode}\".",
+		"message": "Non usare la protezione \"{protectedCanvasPart}\" in modalità blocco \"{blockMode}\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectInput": {
-		"message": "switch to protect input",
+		"message": "passa a protezione input",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
@@ -1540,23 +1540,23 @@
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
-		"message": "set to {value}",
+		"message": "imposta a {value}",
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
-		"message": "Storing notification data may lead to slow performance.",
+		"message": "La memorizzazione dei dati di notifica può portare a prestazioni lente.",
 		"description": ""
 	},
 	"sanitation_error.storeImage": {
-		"message": "Storing the image for inspection has a high RAM footprint.",
+		"message": "La memorizzazione dell'immagine per l'ispezione ha un'elevata impronta RAM.",
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"message": "Non condividere la casualità persistente tra domini perché ciò rende il browser tracciabile al 100%.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
-		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"message": "Non utilizzare una dimensione personalizzata dello schermo in quanto rende il browser più tracciabile.",
 		"description": ""
 	},
 	"whitelist_inspection_title": {
@@ -1564,11 +1564,11 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Mostra quali protezioni API sono attive per un dato sito. Se rimuovi un segno di spunta per un'API, questa API non sarà protetta per il sito selezionato.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "Tutte le API",
 		"description": ""
 	},
 	"presets": {
@@ -1588,43 +1588,43 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "Impostazioni predefinite",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "Nessuna impostazione speciale applicata.",
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Impostazioni convenienti",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Applica alcune impostazioni per rendere l'esperienza di navigazione il più conveniente possibile. Ciò include la scrittura di alcuni siti in lista bianca.",
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "Impostazioni furtive",
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "Configura CanvasBlocker per essere difficile da rilevare. Ciò potrebbe portare ad un elevato utilizzo della CPU e rallentare il browser.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "Protezione massima",
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Massimizza la protezione contro l'estrazione di fingerprinting. Queste impostazioni rovineranno alcune pagine, potrebbero rallentare un po' il browser e consentire ai siti di rilevare che è usato CanvasBlocker. Dopo aver applicato questa preimpostazione si dovresti considerare di applicare anche la preimpostazione reCAPTCHA.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "Eccezione reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "Proteggere l'API finestra rovina reCAPTCHA. Questa preimpostazione consente l'utilizzo dell'API window.name nelle pagine incorporate che lo farà di nuovo funzionare.",
 		"description": ""
 	}
 }
