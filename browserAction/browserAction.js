@@ -71,6 +71,7 @@
 				else {
 					window.open(browser.extension.getURL("options/options.html"), "_blank");
 				}
+				window.close();
 			}
 		},
 		{
@@ -78,6 +79,7 @@
 			icon: browser.extension.getURL("icons/browserAction-faq.svg"),
 			action: function(){
 				window.open("https://canvasblocker.kkapsner.de/faq/", "_blank");
+				window.close();
 			}
 		},
 		{
@@ -86,6 +88,7 @@
 			icon: browser.extension.getURL("icons/browserAction-test.svg"),
 			action: function(){
 				window.open("https://canvasblocker.kkapsner.de/test", "_blank");
+				window.close();
 			}
 		},
 		{
@@ -93,6 +96,7 @@
 			icon: browser.extension.getURL("icons/browserAction-review.svg"),
 			action: function(){
 				window.open("https://addons.mozilla.org/firefox/addon/canvasblocker/reviews/", "_blank");
+				window.close();
 			}
 		},
 		{
@@ -100,6 +104,7 @@
 			icon: browser.extension.getURL("icons/browserAction-reportIssue.svg"),
 			action: function(){
 				window.open("https://github.com/kkapsner/CanvasBlocker/issues", "_blank");
+				window.close();
 			}
 		},
 	];
