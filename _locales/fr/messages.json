@@ -212,7 +212,7 @@
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activer pour afficher les paramètres cachés.",
+		"message": "Cocher pour afficher les paramètres cachés.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -1120,7 +1120,7 @@
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
-		"message": "Pour exclure des sites Internet spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
@@ -1148,7 +1148,7 @@
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
-		"message": "Pour exclure des sites Internet spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
@@ -1168,7 +1168,7 @@
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "Pour exclure des sites Web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"protectNavigator_title": {
@@ -1180,7 +1180,7 @@
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
-		"message": "Pour exclure des sites Internet spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
@@ -1236,7 +1236,7 @@
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et enlevez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"screenSize_title": {
@@ -1260,7 +1260,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de la falsification, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et enlevez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"theme_title": {
@@ -1304,7 +1304,7 @@
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configurer l’extension CanvasBlocker pour qu’elle ne soit  pas elle-même détecter par les sites Internet, cela pourrait entraîner une utilisation élevée du processeur et ralentir le navigateur",
+		"message": "Configurer l’extension CanvasBlocker pour qu’elle soit difficile à détecter. Ceci pourrait entraîner une utilisation élevée du processeur et ralentir le navigateur.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
