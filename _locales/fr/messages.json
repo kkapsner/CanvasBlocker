@@ -432,7 +432,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "Rien : aucune fonction de l’interface Canvas n'est protégée. \nEntrée : les fonctions de sortie du Canvas sont protégées. Avec le mode \"feindre\", les pixels décrits sont légèrement modifiés lors de l'affichage du texte. Il est donc plus difficile de détecter le complément, mais il est moins sûr. Pour le WebGL, le comportement est identique à celui de \"lire\".\nToute : les fonctions de lecture et de saisie sont protégées. Il est recommandé de ne pas les utiliser avec le mode de blocage \"feindre\", car cela augmente la probabilité d'être détecté.",
+		"message": "rien : aucune fonction de l’API Canvas n'est protégée.\nlecture : les fonctions de lecture de l'API Canvas sont protégées.\nentrée : les fonctions d'entrée de l'API Canvas sont protégées. Avec le mode de blocage \"feindre\", les pixels affichés sont légèrement modifiés lors de l'affichage de texte. Ce rend la détection du complément plus difficile mais ce mode est moins sûr. Avec des canvas WebGL, le comportement est identique à celui de \"Lecture\".\ntout : les fonctions de lecture et d'entrée sont protégées. Il n'est pas recommandé de l'utiliser avec le mode de blocage \"feindre\" car cela augmente la probabilité d'être détecté.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
@@ -440,19 +440,19 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "Rien",
+		"message": "rien",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "Donnée saisie",
+		"message": "entrée",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "Donnée à lire",
+		"message": "lecture",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "Toutes",
+		"message": "tout",
 		"description": ""
 	},
 	"urlSettings_title": {
