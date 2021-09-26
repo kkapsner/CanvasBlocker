@@ -288,15 +288,15 @@
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Donner des informations sur DOMRect ?",
+		"message": "Autoriser l'API DOMRect ?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Autorisez-vous l’écriture dans le DOMRect ?",
+		"message": "Autoriser l'entrée dans l'API DOMRect ?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "Autoriser la lecture de l'API DOMRect ?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -436,7 +436,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "Pour protéger individuellement des parties de pages Internet spécifiques, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL souhaité en cliquant sur \"+\" et sélectionnez la partie souhaitée.",
+		"message": "Pour protéger des parties de sites web spécifiques, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et sélectionnez la partie souhaitée.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
@@ -1116,7 +1116,7 @@
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "Window.opener et Window.name seront protégés, cela peut entrainer des difficultés sur certains sites Internet. Windows.name est le nom de votre onglet certains sites s’en servent pour vous suivre. Window.opener sert à vous suivre quand vous cliquez sur des liens qui vont ouvrir un nouvel onglet ou fermez un onglet",
+		"message": "window.opener et window.name seront protégés. Cela peut entrainer des difficultés sur certains sites Internet. Windows.name est le nom de votre onglet. Certains sites s’en servent pour vous suivre. Window.opener sert à vous suivre quand vous cliquez sur des liens qui vont ouvrir un nouvel onglet ou lorsque vous fermez un onglet.",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
@@ -1152,7 +1152,7 @@
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
-		"message": "Valeurs, données à échanger de DONrect",
+		"message": "Facteur entier pour DOMRect",
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
