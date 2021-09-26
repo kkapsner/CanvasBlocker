@@ -300,15 +300,15 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Voulez-vous autoriser l'interface TextMetrics ?",
+		"message": "Autoriser l'API TextMetrics ?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Voulez-vous autoriser l'envoi de données par le biais de l'interface TextMetrics ?",
+		"message": "Autoriser l'entrée de données sur l'API TextMetrics ?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Voulez-vous autoriser la lecture de données par le biais de l'interface TextMetrics ?",
+		"message": "Autoriser la lecture de données sur l'API TextMetrics ?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -428,7 +428,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Partie protégée de l'API Canvas",
+		"message": "Fonctions protégées de l'API Canvas",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
