@@ -24,11 +24,11 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker activado",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker desactivado",
 		"description": ""
 	},
 	"more": {
@@ -812,7 +812,7 @@
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "¿Cuál es el tipo de lista blanca?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {

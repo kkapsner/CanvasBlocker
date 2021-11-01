@@ -212,7 +212,7 @@
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activer pour afficher les paramètres cachés.",
+		"message": "Cocher pour afficher les paramètres cachés.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -288,27 +288,27 @@
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Donner des informations sur DOMRect ?",
+		"message": "Autoriser l'API DOMRect ?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Autorisez-vous l’écriture dans le DOMRect ?",
+		"message": "Autoriser l'entrée dans l'API DOMRect ?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "Autoriser la lecture de l'API DOMRect ?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Voulez-vous autoriser l'interface TextMetrics ?",
+		"message": "Autoriser l'API TextMetrics ?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Voulez-vous autoriser l'envoi de données par le biais de l'interface TextMetrics ?",
+		"message": "Autoriser l'entrée de données sur l'API TextMetrics ?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Voulez-vous autoriser la lecture de données par le biais de l'interface TextMetrics ?",
+		"message": "Autoriser la lecture de données sur l'API TextMetrics ?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
@@ -428,31 +428,31 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Partie protégée de l'API Canvas",
+		"message": "Fonctions protégées de l'API Canvas",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "Rien : aucune fonction de l’interface Canvas n'est protégée. \nEntrée : les fonctions de sortie du Canvas sont protégées. Avec le mode \"feindre\", les pixels décrits sont légèrement modifiés lors de l'affichage du texte. Il est donc plus difficile de détecter le complément, mais il est moins sûr. Pour le WebGL, le comportement est identique à celui de \"lire\".\nToute : les fonctions de lecture et de saisie sont protégées. Il est recommandé de ne pas les utiliser avec le mode de blocage \"feindre\", car cela augmente la probabilité d'être détecté.",
+		"message": "rien : aucune fonction de l’API Canvas n'est protégée.\nlecture : les fonctions de lecture de l'API Canvas sont protégées.\nentrée : les fonctions d'entrée de l'API Canvas sont protégées. Avec le mode de blocage \"feindre\", les pixels affichés sont légèrement modifiés lors de l'affichage de texte. Ce rend la détection du complément plus difficile mais ce mode est moins sûr. Avec des canvas WebGL, le comportement est identique à celui de \"Lecture\".\ntout : les fonctions de lecture et d'entrée sont protégées. Il n'est pas recommandé de l'utiliser avec le mode de blocage \"feindre\" car cela augmente la probabilité d'être détecté.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "Pour protéger individuellement des parties de pages Internet spécifiques, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL souhaité en cliquant sur \"+\" et sélectionnez la partie souhaitée.",
+		"message": "Pour protéger des parties de sites web spécifiques, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et sélectionnez la partie souhaitée.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "Rien",
+		"message": "rien",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "Donnée saisie",
+		"message": "entrée",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "Donnée à lire",
+		"message": "lecture",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "Toutes",
+		"message": "tout",
 		"description": ""
 	},
 	"urlSettings_title": {
@@ -1116,11 +1116,11 @@
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "Window.opener et Window.name seront protégés, cela peut entrainer des difficultés sur certains sites Internet. Windows.name est le nom de votre onglet certains sites s’en servent pour vous suivre. Window.opener sert à vous suivre quand vous cliquez sur des liens qui vont ouvrir un nouvel onglet ou fermez un onglet",
+		"message": "window.opener et window.name seront protégés. Cela peut entrainer des difficultés sur certains sites Internet. Windows.name est le nom de votre onglet. Certains sites s’en servent pour vous suivre. Window.opener sert à vous suivre quand vous cliquez sur des liens qui vont ouvrir un nouvel onglet ou lorsque vous fermez un onglet.",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
-		"message": "Pour exclure des sites Internet spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
@@ -1148,11 +1148,11 @@
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
-		"message": "Pour exclure des sites Internet spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
-		"message": "Valeurs, données à échanger de DONrect",
+		"message": "Facteur entier pour DOMRect",
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
@@ -1168,7 +1168,7 @@
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "Pour exclure des sites Web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"protectNavigator_title": {
@@ -1180,7 +1180,7 @@
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
-		"message": "Pour exclure des sites Internet spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
@@ -1236,7 +1236,7 @@
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et enlevez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"screenSize_title": {
@@ -1260,7 +1260,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de la falsification, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et enlevez sa coche",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"theme_title": {
@@ -1304,7 +1304,7 @@
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "Pour exclure des sites web spécifiques de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
+		"message": "Pour exclure des sites web de cette protection, cliquez sur la flèche noire pour ouvrir le menu, ajoutez le domaine ou l'URL en cliquant sur \"+\" et supprimez sa coche.",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configurer l’extension CanvasBlocker pour qu’elle ne soit  pas elle-même détecter par les sites Internet, cela pourrait entraîner une utilisation élevée du processeur et ralentir le navigateur",
+		"message": "Configurer l’extension CanvasBlocker pour qu’elle soit difficile à détecter. Ceci pourrait entraîner une utilisation élevée du processeur et ralentir le navigateur.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
