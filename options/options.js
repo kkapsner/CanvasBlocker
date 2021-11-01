@@ -577,7 +577,7 @@
 	
 	const version = document.createElement("div");
 	version.className = "version";
-	fetch(browser.extension.getURL("manifest.json")).then(function(response){
+	fetch(extension.getURL("manifest.json")).then(function(response){
 		return response.json();
 	}).then(function(manifest){
 		version.textContent = "Version " + manifest.version;

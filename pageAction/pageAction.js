@@ -30,7 +30,7 @@
 							browser.runtime.openOptionsPage();
 						}
 						else {
-							window.open(browser.extension.getURL("options/options.html"), "_blank");
+							window.open(extension.getURL("options/options.html"), "_blank");
 						}
 					}
 				},
@@ -152,7 +152,7 @@
 			isIcon: true,
 			callback: function({domain, urls}){
 				window.open(
-					browser.extension.getURL(
+					extension.getURL(
 						"options/whitelist.html?domain=" +
 						encodeURIComponent(domain) +
 						"&urls=" +

@@ -63,20 +63,20 @@
 	const actionDefinitions = [
 		{
 			label: "settings",
-			icon: browser.extension.getURL("icons/pageAction-showOptions.svg"),
+			icon: extension.getURL("icons/pageAction-showOptions.svg"),
 			action: function(){
 				if (browser.runtime && browser.runtime.openOptionsPage){
 					browser.runtime.openOptionsPage();
 				}
 				else {
-					window.open(browser.extension.getURL("options/options.html"), "_blank");
+					window.open(extension.getURL("options/options.html"), "_blank");
 				}
 				window.close();
 			}
 		},
 		{
 			label: "faq",
-			icon: browser.extension.getURL("icons/browserAction-faq.svg"),
+			icon: extension.getURL("icons/browserAction-faq.svg"),
 			action: function(){
 				window.open("https://canvasblocker.kkapsner.de/faq/", "_blank");
 				window.close();
@@ -85,7 +85,7 @@
 		{
 			label: "test",
 			advanced: true,
-			icon: browser.extension.getURL("icons/browserAction-test.svg"),
+			icon: extension.getURL("icons/browserAction-test.svg"),
 			action: function(){
 				window.open("https://canvasblocker.kkapsner.de/test", "_blank");
 				window.close();
@@ -93,7 +93,7 @@
 		},
 		{
 			label: "review",
-			icon: browser.extension.getURL("icons/browserAction-review.svg"),
+			icon: extension.getURL("icons/browserAction-review.svg"),
 			action: function(){
 				window.open("https://addons.mozilla.org/firefox/addon/canvasblocker/reviews/", "_blank");
 				window.close();
@@ -101,7 +101,7 @@
 		},
 		{
 			label: "reportIssue",
-			icon: browser.extension.getURL("icons/browserAction-reportIssue.svg"),
+			icon: extension.getURL("icons/browserAction-reportIssue.svg"),
 			action: function(){
 				window.open("https://github.com/kkapsner/CanvasBlocker/issues", "_blank");
 				window.close();
@@ -149,7 +149,7 @@
 		
 		search.addEventListener("keypress", function(event){
 			if ([10, 13].indexOf(event.keyCode) !== -1){
-				window.open(browser.extension.getURL(
+				window.open(extension.getURL(
 					"options/options.html" +
 					"?search=" +
 					encodeURIComponent(this.value)
