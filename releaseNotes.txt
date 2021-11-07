@@ -2,9 +2,6 @@ Version 1.7:
 	changes:
 		- Auto close browser action
 	
-	new features:
-		- 
-	
 	fixes:
 		- CSP headers broken on 304 requests
 	
