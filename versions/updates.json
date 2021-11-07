@@ -205,6 +205,10 @@
 				{
 					"version": "1.7Alpha20211101",
 					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.7Alpha20211101-an+fx.xpi"
+				},
+				{
+					"version": "1.8Alpha20211107",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.8Alpha20211107-an+fx.xpi"
 				}
 			]
 		}
