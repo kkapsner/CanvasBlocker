@@ -24,11 +24,11 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker ligado",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker desligado",
 		"description": ""
 	},
 	"more": {
@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker foi atualizado. Se você quiser ser acessar esta página futuramente e ainda não a favoritou, por favor favorite-a.",
+		"message": "CanvasBlocker foi atualizado. Se você quiser poder acessar esta página futuramente e ainda não a favoritou, por favor favorite-a.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
@@ -92,7 +92,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Você tem a privacy.resistFingerprinting ativada. Isso muda ligeiramente o comportamento do CanvasBlocker. Veja mais informações {link:aqui:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Você tem privacy.resistFingerprinting ativo. Isso muda ligeiramente o comportamento do CanvasBlocker. Veja mais informações {link:aqui:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:aqui:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -184,7 +184,7 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Interromper sessão na atualização",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
@@ -1564,7 +1564,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Mostra quais proteções de API estão ativas para um dado site. Se remover a marca de uma API, ela não será protegida no dado site.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
