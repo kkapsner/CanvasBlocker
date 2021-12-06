@@ -188,19 +188,19 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Se pôr em verdadeiro, a extensão irá atualizar quando uma atualização estiver disponível. Isso pode quebrar algumas abas que estão atualmente abertas.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Recarregar extensão",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Performar uma atualização pendente.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Recarregar",
 		"description": ""
 	},
 	"hideSetting": {
@@ -812,7 +812,7 @@
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "Qual é o tipo da lista branca?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
