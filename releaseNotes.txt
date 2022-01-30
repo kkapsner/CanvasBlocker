@@ -6,7 +6,7 @@ Version 1.8:
 		- added SVG protection
 	
 	fixes:
-		- 
+		- errors in URL regular expressions broke CB
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
