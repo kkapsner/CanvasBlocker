@@ -24,11 +24,11 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker ligado",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker desligado",
 		"description": ""
 	},
 	"more": {
@@ -84,7 +84,7 @@
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker foi atualizado. Se você quiser ser acessar esta página futuramente e ainda não a favoritou, por favor favorite-a.",
+		"message": "CanvasBlocker foi atualizado. Se você quiser poder acessar esta página futuramente e ainda não a favoritou, por favor favorite-a.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
@@ -92,7 +92,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Você tem a privacy.resistFingerprinting ativada. Isso muda ligeiramente o comportamento do CanvasBlocker. Veja mais informações {link:aqui:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Você tem privacy.resistFingerprinting ativo. Isso muda ligeiramente o comportamento do CanvasBlocker. Veja mais informações {link:aqui:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:aqui:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"openInTab": {
@@ -155,6 +155,10 @@
 		"message": "DOMRect API",
 		"description": ""
 	},
+	"section_SVG-api": {
+		"message": "SVG API",
+		"description": ""
+	},
 	"section_TextMetrics-api": {
 		"message": "TextMetrics API",
 		"description": ""
@@ -184,23 +188,23 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Interromper sessão na atualização",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Se pôr em verdadeiro, a extensão irá atualizar quando uma atualização estiver disponível. Isso pode quebrar algumas abas que estão atualmente abertas.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Recarregar extensão",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Performar uma atualização pendente.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Recarregar",
 		"description": ""
 	},
 	"hideSetting": {
@@ -297,6 +301,18 @@
 	},
 	"askForDOMRectReadoutPermission": {
 		"message": "Deseja permitir leitura da API DOMRect?",
+		"description": ""
+	},
+	"askForSVGPermission": {
+		"message": "Do you want to allow the SVG API?",
+		"description": ""
+	},
+	"askForSVGInputPermission": {
+		"message": "Do you want to allow SVG API input?",
+		"description": ""
+	},
+	"askForSVGReadoutPermission": {
+		"message": "Do you want to allow SVG API readout?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -715,6 +731,10 @@
 		"message": "Leitura de DOMRect falsificada em {url}",
 		"description": ""
 	},
+	"fakedSVGReadout": {
+		"message": "Faked SVG readout on {url}",
+		"description": ""
+	},
 	"fakedTextMetricsReadout": {
 		"message": "Leitor de Textos embutido em {url}",
 		"description": ""
@@ -812,7 +832,7 @@
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "Qual é o tipo da lista branca?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
@@ -1157,6 +1177,18 @@
 	},
 	"domRectIntegerFactor_description": {
 		"message": "Alguma fração de pixel pode ser controlada pelo CSS. Para prevenir a detecção, valores de um DOMRect que se multiplica com esse fator são inteiros não serão alterados.",
+		"description": ""
+	},
+	"protectSVG_title": {
+		"message": "Protect SVG API",
+		"description": ""
+	},
+	"protectSVG_description": {
+		"message": "This protects against fingerprinting using SVGs.",
+		"description": ""
+	},
+	"protectSVG_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
@@ -1564,7 +1596,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Mostra quais proteções de API estão ativas para um dado site. Se remover a marca de uma API, ela não será protegida no dado site.",
 		"description": ""
 	},
 	"whitelist_all_apis": {

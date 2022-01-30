@@ -155,6 +155,10 @@
 		"message": "DOMRect API",
 		"description": ""
 	},
+	"section_SVG-api": {
+		"message": "SVG API",
+		"description": ""
+	},
 	"section_TextMetrics-api": {
 		"message": "TextMetrics API",
 		"description": ""
@@ -297,6 +301,18 @@
 	},
 	"askForDOMRectReadoutPermission": {
 		"message": "Do you want to allow DOMRect API readout?",
+		"description": ""
+	},
+	"askForSVGPermission": {
+		"message": "Do you want to allow the SVG API?",
+		"description": ""
+	},
+	"askForSVGInputPermission": {
+		"message": "Do you want to allow SVG API input?",
+		"description": ""
+	},
+	"askForSVGReadoutPermission": {
+		"message": "Do you want to allow SVG API readout?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -713,6 +729,10 @@
 	},
 	"fakedDOMRectReadout": {
 		"message": "Faked DOMRect readout on {url}",
+		"description": ""
+	},
+	"fakedSVGReadout": {
+		"message": "Faked SVG readout on {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -1157,6 +1177,18 @@
 	},
 	"domRectIntegerFactor_description": {
 		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"description": ""
+	},
+	"protectSVG_title": {
+		"message": "Protect SVG API",
+		"description": ""
+	},
+	"protectSVG_description": {
+		"message": "This protects against fingerprinting using SVGs.",
+		"description": ""
+	},
+	"protectSVG_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {

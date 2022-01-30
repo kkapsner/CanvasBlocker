@@ -155,6 +155,10 @@
 		"message": "DOMRect-API",
 		"description": ""
 	},
+	"section_SVG-api": {
+		"message": "SVG-API",
+		"description": ""
+	},
 	"section_TextMetrics-api": {
 		"message": "TextMetrics-API",
 		"description": ""
@@ -297,6 +301,18 @@
 	},
 	"askForDOMRectReadoutPermission": {
 		"message": "Wollen Sie das Auslesen über die DOMRect-API erlauben?",
+		"description": ""
+	},
+	"askForSVGPermission": {
+		"message": "Wollen Sie die SVG-API erlauben?",
+		"description": ""
+	},
+	"askForSVGInputPermission": {
+		"message": "Wollen Sie das Schreiben über die SVG-API erlauben?",
+		"description": ""
+	},
+	"askForSVGReadoutPermission": {
+		"message": "Wollen Sie das Auslesen über die SVG-API erlauben?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -713,6 +729,10 @@
 	},
 	"fakedDOMRectReadout": {
 		"message": "DOMRect-Auslese vorgetäuscht auf {url}",
+		"description": ""
+	},
+	"fakedSVGReadout": {
+		"message": "SVG-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -1157,6 +1177,18 @@
 	},
 	"domRectIntegerFactor_description": {
 		"message": "Ein Bruchteil eines Pixels kann durch CSS kontrolliert werden. Eigenschaften eines DOMRect, die multipliziert mit diesem Faktor eine ganze Zahl ergeben, dürfen nicht verändert werden um eine Detektion zu verhindern.",
+		"description": ""
+	},
+	"protectSVG_title": {
+		"message": "SVG-API beschützen",
+		"description": ""
+	},
+	"protectSVG_description": {
+		"message": "Dies schützt vor Fingerprinting, das SVGs verwendet.",
+		"description": ""
+	},
+	"protectSVG_urlSpecific": {
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
