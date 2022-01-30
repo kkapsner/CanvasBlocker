@@ -156,7 +156,7 @@
 		"description": ""
 	},
 	"section_SVG-api": {
-		"message": "SVG API",
+		"message": "SVG-API",
 		"description": ""
 	},
 	"section_TextMetrics-api": {
@@ -304,15 +304,15 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "Wollen Sie die SVG-API erlauben?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "Wollen Sie das Schreiben über die SVG-API erlauben?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "Wollen Sie das Auslesen über die SVG-API erlauben?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -732,7 +732,7 @@
 		"description": ""
 	},
 	"fakedSVGReadout": {
-		"message": "Faked SVG readout on {url}",
+		"message": "SVG-Auslese vorgetäuscht auf {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -1180,15 +1180,15 @@
 		"description": ""
 	},
 	"protectSVG_title": {
-		"message": "Protect SVG API",
+		"message": "SVG-API beschützen",
 		"description": ""
 	},
 	"protectSVG_description": {
-		"message": "This protects against fingerprinting using SVGs.",
+		"message": "Dies schützt vor Fingerprinting, das SVGs verwendet.",
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Um bestimmte Seiten von diesem Schutz auszuschließen, klicken Sie auf den schwarzen Pfeil um das Menü zu öffnen, fügen Sie die gewünschte Domain oder URL mit einem Klick auf \"+\" hinzu und entfernen Sie das zugehörige Häkchen.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
