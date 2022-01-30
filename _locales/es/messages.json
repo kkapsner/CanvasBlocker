@@ -95,6 +95,10 @@
 		"message": "Tienes habilitado privacy.resistFingerprinting. Esto cambia ligeramente el comportamiento de CanvasBlocker. Más información {link:aquí:https://github.com/kkapsner/CanvasBlocker/issues/158} y {link:aquí:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
+	"settingsNotice.dom.webAudio.enabled": {
+		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"description": ""
+	},
 	"openInTab": {
 		"message": "Abrir en una pestaña separada",
 		"description": ""
