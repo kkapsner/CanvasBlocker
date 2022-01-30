@@ -16,4 +16,5 @@
 		Q 90,60 50,90
 		Q 10,60 10,30 z"/>
   <text x="20" y="35" data-name="text" id="text" class="testRect">Text with Unicode &#x1D790;</text>
+  <text x="20" y="55" data-name="text2" id="text2" class="testRect">&#x73E9A;&#x9843;&#xB3D21;&#x123;&#1337;&#x314;&#xabcde;&#x4a110;&#x7F53A;&#x0815;</text>
 </svg>
