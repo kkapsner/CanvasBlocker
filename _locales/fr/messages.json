@@ -155,6 +155,10 @@
 		"message": "API DOMRect",
 		"description": ""
 	},
+	"section_SVG-api": {
+		"message": "SVG API",
+		"description": ""
+	},
 	"section_TextMetrics-api": {
 		"message": "API TextMetrics",
 		"description": ""
@@ -297,6 +301,18 @@
 	},
 	"askForDOMRectReadoutPermission": {
 		"message": "Autoriser la lecture de l'API DOMRect ?",
+		"description": ""
+	},
+	"askForSVGPermission": {
+		"message": "Do you want to allow the SVG API?",
+		"description": ""
+	},
+	"askForSVGInputPermission": {
+		"message": "Do you want to allow SVG API input?",
+		"description": ""
+	},
+	"askForSVGReadoutPermission": {
+		"message": "Do you want to allow SVG API readout?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -713,6 +729,10 @@
 	},
 	"fakedDOMRectReadout": {
 		"message": "Lecture DOMRect falsifiée pour {url}",
+		"description": ""
+	},
+	"fakedSVGReadout": {
+		"message": "Faked SVG readout on {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -1157,6 +1177,18 @@
 	},
 	"domRectIntegerFactor_description": {
 		"message": "Une fraction de pixel (unité de mesure) peut être contrôlée par le CSS (code informatique pour organiser l’habillage d’une page, son visuel). Pour éviter la détection, les valeurs d'un DOMRect qui seront multipliées par ce facteur sont des entiers, l’objet créer par le DOMrect ne sera pas lui modifié, mais ceux qui le pistent recevront de mauvaises valeurs",
+		"description": ""
+	},
+	"protectSVG_title": {
+		"message": "Protect SVG API",
+		"description": ""
+	},
+	"protectSVG_description": {
+		"message": "This protects against fingerprinting using SVGs.",
+		"description": ""
+	},
+	"protectSVG_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
