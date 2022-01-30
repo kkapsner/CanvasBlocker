@@ -75,6 +75,7 @@
 					canvas: {name: "protectedCanvasPart", value: "nothing"},
 					audio: {name: "protectAudio", value: false},
 					domRect: {name: "protectDOMRect", value: false},
+					svg: {name: "protectSVG", value: false},
 					history: {name: "historyLengthThreshold", value: 10000},
 					navigator: {name: "protectNavigator", value: false},
 					windows: {name: "protectWindow", value: false},

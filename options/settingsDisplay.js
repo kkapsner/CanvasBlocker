@@ -628,6 +628,25 @@
 					]
 				},
 				{
+					name: "SVG-API",
+					settings: [
+						{
+							"name": "protectSVG"
+						},
+						{
+							"name": "protectedAPIFeatures",
+							"replaceKeyPattern": / @ .+$/,
+							"displayedSection": "SVG-API",
+							"displayDependencies": [
+								{
+									"protectSVG": [true],
+									"displayAdvancedSettings": [true]
+								}
+							]
+						},
+					]
+				},
+				{
 					name: "TextMetrics-API",
 					settings: [
 						{

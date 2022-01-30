@@ -50,6 +50,7 @@
 			"lib/modifiedHistoryAPI.js",
 			"lib/modifiedWindowAPI.js",
 			"lib/modifiedDOMRectAPI.js",
+			"lib/modifiedSVGAPI.js",
 			"lib/modifiedTextMetricsAPI.js",
 			"lib/navigator.js",
 			"lib/modifiedNavigatorAPI.js",

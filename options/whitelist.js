@@ -62,6 +62,12 @@
 			protectedValue: true
 		},
 		{
+			title: extension.getTranslation("section_SVG-api"),
+			name: "protectSVG",
+			whitelistValue: false,
+			protectedValue: true
+		},
+		{
 			title: extension.getTranslation("section_navigator-api"),
 			name: "protectNavigator",
 			whitelistValue: false,

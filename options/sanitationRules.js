@@ -83,6 +83,7 @@
 					{mainFlag: "protectAudio", section: "Audio-API"},
 					{mainFlag: "protectWindow", section: "Window-API"},
 					{mainFlag: "protectDOMRect", section: "DOMRect-API"},
+					{mainFlag: "protectSVG", section: "SVG-API"},
 					{mainFlag: "protectTextMetrics", section: "TextMetrics-API"},
 					{mainFlag: "protectNavigator", section: "Navigator-API"},
 					{mainFlag: "protectScreen", section: "Screen-API"},
