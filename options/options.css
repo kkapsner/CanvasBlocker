@@ -37,7 +37,7 @@ header .bookmarkNotice .dontShowOptionsOnUpdate input {
 	vertical-align: sub;
 }
 
-.resistFingerprintingNotice {
+.resistFingerprintingNotice, .settingsNotice {
 	margin: 0.5em 0;
 	padding: 0.5em;
 	border: 1px solid var(--input-error-background-color);

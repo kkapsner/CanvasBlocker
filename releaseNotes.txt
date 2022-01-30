@@ -4,6 +4,7 @@ Version 1.8:
 	
 	new features:
 		- added SVG protection
+		- added notice when dom.webAudio.enabled is set to false
 	
 	fixes:
 		- errors in URL regular expressions broke CB

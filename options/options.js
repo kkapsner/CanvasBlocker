@@ -234,28 +234,38 @@
 	groupTabs.classList = "groupTabs";
 	document.body.appendChild(groupTabs);
 	
-	if (
-		browser.privacy &&
-		browser.privacy.websites &&
-		browser.privacy.websites.resistFingerprinting &&
-		browser.privacy.websites.resistFingerprinting.get
-	){
-		browser.privacy.websites.resistFingerprinting.get({}).then(function({value}){
-			if (value){
-				const rfpNotice = document.createElement("div");
-				rfpNotice.className = "resistFingerprintingNotice";
-				rfpNotice.appendChild(
-					extension.parseTranslation(
-						extension.getTranslation("resistFingerprintingNotice")
-					)
-				);
-				document.body.insertBefore(rfpNotice, groupTabs);
-			}
-			return undefined;
-		}).catch(function(error){
-			logging.warning("Unable to read resistFingerprinting:", error);
-		});
-	}
+	[
+		{
+			check: async function(){
+				if (
+					browser.privacy &&
+					browser.privacy.websites &&
+					browser.privacy.websites.resistFingerprinting &&
+					browser.privacy.websites.resistFingerprinting.get
+				){
+					return (await browser.privacy.websites.resistFingerprinting.get({})).value;
+				}
+				return false;
+			},
+			className: "resistFingerprintingNotice",
+			text: "resistFingerprintingNotice"
+		},
+		{
+			check: () => !window.AudioContext,
+			text: "settingsNotice.dom.webAudio.enabled"
+		},
+	].forEach(async function(settingsCheck){
+		if (await settingsCheck.check()){
+			const settingsNotice = document.createElement("div");
+			settingsNotice.className = settingsCheck.className || "settingsNotice";
+			settingsNotice.appendChild(
+				extension.parseTranslation(
+					extension.getTranslation(settingsCheck.text)
+				)
+			);
+			document.body.insertBefore(settingsNotice, groupTabs);
+		}
+	});
 	
 	const groups = document.createElement("ul");
 	groups.className = "groups";
