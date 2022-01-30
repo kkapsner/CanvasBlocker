@@ -14,7 +14,7 @@
 		foreach (new DirectoryIterator("./") as $file){
 			if (!$file->isDot() && !$file->isDir() && $file->getExtension() === "md"){
 				$markdown = $parser->parse(file_get_contents($file->getPathname()));
-				echo $markdown->view("html");
+				echo preg_replace("/<h2/", "<h2 id=\"" . str_replace(".md", "", $file->getFilename()) . "\"", $markdown->view("html"), 1);
 			}
 		}
 		?>
