@@ -99,7 +99,7 @@
 			);
 		});
 		
-		test.querySelector(".refresh").addEventListener("click", function(){
+		output.querySelector(".refresh").addEventListener("click", function(){
 			performTests();
 		});
 		performTests();
