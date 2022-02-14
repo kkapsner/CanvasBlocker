@@ -42,6 +42,7 @@
 			"lib/settings.js",
 			
 			"lib/colorStatistics.js",
+			"lib/webglRandom.js",
 			"lib/webgl.js",
 			"lib/hash.js",
 			"lib/modifiedAPIFunctions.js",

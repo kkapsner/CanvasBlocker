@@ -70,7 +70,8 @@
 		"**/vscode-extension/**",
 		"**/.git/objects/**",
 		".vscode",
-		".eslintrc.json"
+		".eslintrc.json",
+		".tools/chromeVendors.json"
 	],
 	"eslint.validate": [
 		"javascript",
