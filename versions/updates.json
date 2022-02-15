@@ -213,6 +213,14 @@
 				{
 					"version": "1.8Alpha20220130",
 					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.8Alpha20220130-an+fx.xpi"
+				},
+				{
+					"version": "1.8Alpha20220214",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.8Alpha20220214-an+fx.xpi"
+				},
+				{
+					"version": "1.8Alpha20220215",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.8Alpha20220215-an+fx.xpi"
 				}
 			]
 		}
