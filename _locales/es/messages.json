@@ -95,6 +95,10 @@
 		"message": "Tienes habilitado privacy.resistFingerprinting. Esto cambia ligeramente el comportamiento de CanvasBlocker. Más información {link:aquí:https://github.com/kkapsner/CanvasBlocker/issues/158} y {link:aquí:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
+	"settingsNotice.dom.webAudio.enabled": {
+		"message": "Tiene dom.webAudio.enabled desactivado. Esto le hace más rastreable ya que muy poca gente lo hace.",
+		"description": ""
+	},
 	"openInTab": {
 		"message": "Abrir en una pestaña separada",
 		"description": ""
@@ -304,7 +308,7 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "¿Quiere permitir la API SVG?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
@@ -1184,11 +1188,11 @@
 		"description": ""
 	},
 	"protectSVG_description": {
-		"message": "This protects against fingerprinting using SVGs.",
+		"message": "Esto protege contra la toma de huellas dactilares usando SVGs.",
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o la URL haciendo clic en \"+\" y quite su marca de verificación.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {

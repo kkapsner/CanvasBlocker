@@ -95,6 +95,10 @@
 		"message": "Vous avez activé le paramètre Firefox privacy.resistFingerprinting. Ceci modifie légèrement le comportement de CanvasBlocker. Pour plus d'informations : {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} et {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
+	"settingsNotice.dom.webAudio.enabled": {
+		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"description": ""
+	},
 	"openInTab": {
 		"message": "Ouvrir dans un onglet séparé",
 		"description": ""
