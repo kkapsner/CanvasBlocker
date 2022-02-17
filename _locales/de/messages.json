@@ -96,7 +96,7 @@
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "Sie haben dom.webAudio.enabled deaktiviert. Da sehr wenige das tun, macht Sie das mehr nachverfolgbar.",
 		"description": ""
 	},
 	"openInTab": {
