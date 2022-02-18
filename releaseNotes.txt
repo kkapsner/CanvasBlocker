@@ -1,3 +1,16 @@
+Version 1.9:
+	changes:
+		- 
+	
+	new features:
+		- 
+	
+	fixes:
+		- 
+	
+	known issues:
+		- if a data URL is blocked the page action button does not appear
+
 Version 1.8:
 	new features:
 		- added SVG protection
