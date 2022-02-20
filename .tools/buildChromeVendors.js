@@ -126,10 +126,10 @@ const decompressed2 = decompress(compressed2, usedWords);
 console.log("test: ", compressed === decompressed2);
 for (let start = 0; start < compressed.length; start += 100){
 	
-	if (compressed.substr(start, 100) !== decompressed2.substr(start, 100)){
+	if (compressed.substring(start, start + 100) !== decompressed2.substring(start, start + 100)){
 		console.log(start);
-		console.log(compressed.substr(start, 100));
-		console.log(decompressed2.substr(start, 100));
+		console.log(compressed.substring(start, start + 100));
+		console.log(decompressed2.substring(start, start + 100));
 	}
 }
 

@@ -17,7 +17,7 @@ const fs = require("fs");
 function getAlphaVersion(manifest){
 	"use strict";
 	const now = new Date();
-	const date = now.toISOString().substr(0, 10).replace(/-/g, "");
+	const date = now.toISOString().substring(0, 10).replace(/-/g, "");
 	return manifest.version.replace(/^([\d.]+).*$/, "$1Alpha" + date);
 }
 function getRCVersion(manifest){
