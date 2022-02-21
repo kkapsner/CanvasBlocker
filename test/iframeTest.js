@@ -6,7 +6,7 @@ var log = function(){
 			str.unshift("color: green");
 			str.unshift("%cOK");
 		}
-		else if (str[str.length - 1].substr(0, 9) === "missmatch"){
+		else if (str[str.length - 1].startsWith("missmatch")){
 			str.unshift("color: red");
 			str.unshift("%cX");
 		}
