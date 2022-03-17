@@ -40,7 +40,7 @@
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "Čekejte prosím...",
 		"description": ""
 	},
 	"search": {
@@ -56,7 +56,7 @@
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "Zrušit",
 		"description": ""
 	},
 	"input": {
@@ -68,7 +68,7 @@
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "Nastavení",
 		"description": ""
 	},
 	"options_title": {
