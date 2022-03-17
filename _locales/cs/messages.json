@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "Mění některá JS API, aby se zabránilo vytváření otisku prstu prohlížeče.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -16,7 +16,7 @@
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " (API povolené pro {url})",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -32,11 +32,11 @@
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "více",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "méně",
 		"description": ""
 	},
 	"pleaseWait": {
@@ -44,7 +44,7 @@
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "Hledat",
 		"description": ""
 	},
 	"ok": {
@@ -52,7 +52,7 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "Použít",
 		"description": ""
 	},
 	"cancel": {
@@ -100,19 +100,19 @@
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "Otevřít v samostatném panelu",
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "Obecné",
 		"description": ""
 	},
 	"group_APIs": {
-		"message": "APIs",
+		"message": "API",
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "Různé",
 		"description": ""
 	},
 	"section_asking": {
@@ -124,7 +124,7 @@
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "Upozornění",
 		"description": ""
 	},
 	"section_lists": {
@@ -132,11 +132,11 @@
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "Různé",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "Nastavení",
 		"description": ""
 	},
 	"section_canvas-api": {
@@ -176,19 +176,19 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "Pokročilý režim",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "Zobrazí další nastavení.",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "Zobrazit popis",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "Zobrazí popis nastavení.",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
