@@ -225,6 +225,9 @@
 						urlCell.removeChild(input);
 						urlCell.textContent = entry.url;
 					});
+					input.addEventListener("click", function(event){
+						event.stopPropagation();
+					});
 				});
 				urlCell.textContent = entry.url;
 				row.appendChild(urlCell);
