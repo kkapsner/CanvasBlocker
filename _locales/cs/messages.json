@@ -92,7 +92,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Máte povoleno privacy.resistFingerprinting. Může to lehce změnit chování doplňku CanvasBlocker. Podrobnosti naleznete na {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} a {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
@@ -192,11 +192,11 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Přerušit relaci při aktualizaci",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Doplněk bude aktualizován hned, jak bude aktualizace dostupná. Může to způsobit chyby některých otevřených panelů.",
 		"description": ""
 	},
 	"reloadExtension_title": {
