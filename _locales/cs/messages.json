@@ -1468,7 +1468,7 @@
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Report issue",
+		"message": "Nahlásit problém",
 		"description": ""
 	},
 	"sanitation_title": {
@@ -1504,7 +1504,7 @@
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
-		"message": "Privacy",
+		"message": "Ochrana osobních údajů",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
