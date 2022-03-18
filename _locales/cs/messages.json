@@ -612,7 +612,7 @@
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "Ignorovat nejčastější barvy",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
@@ -848,7 +848,7 @@
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "nastavení",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -892,15 +892,15 @@
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "bez zvýraznění",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "barva",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "blink",
+		"message": "blikat",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -924,15 +924,15 @@
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "nic neměnit",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "změnit barvu",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "blink",
+		"message": "blikat",
 		"description": ""
 	},
 	"sourceOutput": {
