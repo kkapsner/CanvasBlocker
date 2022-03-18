@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "Předvolby",
 		"description": ""
 	},
 	"presets_title": {
@@ -1624,7 +1624,7 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "Výchozí nastavení",
 		"description": ""
 	},
 	"preset_default_description": {
@@ -1644,15 +1644,15 @@
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "Nastaví CanvasBlocker tak, aby byl těžko zjistitelný. To může vést k většímu zatížení procesoru a může zpomalit prohlížeč.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "Maximální ochrana",
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Maximalizuje ochranu proti odebrání otisku prstu prohlížeče. Toto nastavení rozbije některé stránky, může zpomalit prohlížeč a umožní stránkám zjistit, že je CanvasBlocker aktivní. Při využití této předvolby zvažte i použití předvolby reCAPTCHA.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
