@@ -1592,7 +1592,7 @@
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
-		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"message": "Nepoužívejte vlastní velikost obrazovky, protože to usnadní sledování prohlížeče.",
 		"description": ""
 	},
 	"whitelist_inspection_title": {
@@ -1628,15 +1628,15 @@
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "Nejsou použita žádná speciální nastavení.",
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Praktické nastavení",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Změní nastavení tak, aby prohlížení stránek bylo co nejpohodlnější. Zahrnuje to i udělení výjimek některým stránkám.",
 		"description": ""
 	},
 	"preset_stealth_title": {
