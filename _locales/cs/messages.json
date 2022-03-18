@@ -84,11 +84,11 @@
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlocker byl aktualizován. Chcete-li na tuto stránku přistupovat v budoucnosti a ještě jste si tuto stránku nepřidali do záložek, přijdete si ji prosím teď.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "Po aktualizaci již nezobrazovat.",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
@@ -200,27 +200,27 @@
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Znovu načíst doplněk",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Instalovat čekající aktualizaci.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Znovu načíst",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "Kliknutím zde toto nastavení skryjete.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "Zobrazit skryté nastavení",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "Aktivujte, pokud chcete zobrazit skryté nastavení.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -356,7 +356,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "Zeptat se pouze jednou",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
@@ -364,7 +364,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "ne",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
@@ -420,7 +420,7 @@
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "povolit vše",
 		"description": ""
 	},
 	"blockMode_options.block": {
@@ -432,7 +432,7 @@
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "blokovat vše",
 		"description": ""
 	},
 	"blockMode_options.allow": {
@@ -620,7 +620,7 @@
 		"description": ""
 	},
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "Nejmenší počet barev",
 		"description": ""
 	},
 	"minColors_description": {
