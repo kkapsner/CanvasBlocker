@@ -96,7 +96,7 @@
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "您禁用了 dom.webAudio，这使您更容易被追踪，因为很少人这样做。",
 		"description": ""
 	},
 	"openInTab": {
@@ -308,15 +308,15 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "是否允许SVG API？",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "是否允许 SVG API 输入？",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "是否允许 SVG API 读取？",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -736,7 +736,7 @@
 		"description": ""
 	},
 	"fakedSVGReadout": {
-		"message": "Faked SVG readout on {url}",
+		"message": "已伪造 {url} 上的 SVG 读取",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -752,7 +752,7 @@
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "{url} 上的输入已伪造",
+		"message": "已伪造 {url} 上的 canvas 输入",
 		"description": ""
 	},
 	"ignoreList_description": {
@@ -836,7 +836,7 @@
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "白名单的类型是什么？",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
@@ -1184,11 +1184,11 @@
 		"description": ""
 	},
 	"protectSVG_title": {
-		"message": "Protect SVG API",
+		"message": "保护 SVG API",
 		"description": ""
 	},
 	"protectSVG_description": {
-		"message": "This protects against fingerprinting using SVGs.",
+		"message": "这阻止使用SVG生成指纹。",
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
