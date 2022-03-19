@@ -1600,7 +1600,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Mostra quais proteções de API estão ativas para um dado site. Se remover a marca de uma API, ela não será protegida no dado site.",
+		"message": "Mostra quais proteções de API estão ativas para um dado site. Se remover a marca de uma API, ela não será protegida no site selecionado.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
