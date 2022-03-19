@@ -1192,7 +1192,7 @@
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "如需排除特定网站，请点击黑箭头，然后单击 + 添加域名或 URL 并取消勾选。",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
