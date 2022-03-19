@@ -452,7 +452,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "无保护：不保护任何 Canvas API。\n读保护：保护 Canvas API 当中的读取功能。\n写保护：保护 Canvas API 当中的输入功能。当拦截模式为”伪造“时，展示文本时绘制的像素会有轻微调整。这使得 CanvasBlocker 更难被检测但是同时降低安全性。WebGL 当中读写等效。\n全保护：同时保护 Canvas API 当中的读取与输入功能。由于会增加被检测到的概率，因此不建议与”伪造“模式同时使用。",
+		"message": "无保护：不保护任何 Canvas API。\n读取：保护 Canvas API 当中的读取功能。\n输入：保护 Canvas API 当中的输入功能。当拦截模式为”伪造“时，展示文本时绘制的像素会有轻微调整。这使得 CanvasBlocker 更难被检测但是同时降低安全性。WebGL 中读写等效。\n全部：同时保护 Canvas API 当中的读取与输入功能。由于会增加被检测到的概率，因此不建议与”伪造“模式同时使用。",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
@@ -600,7 +600,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "在域名间分享持久的随机性",
+		"message": "在域名间共享持久的随机性",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
@@ -608,7 +608,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "您确定要在域名间分享持久的随机性？\n注意：这个设置会使浏览器 100% 会被追踪，并因此威胁你的隐私。",
+		"message": "您确定要在域名间共享持久的随机性？\n注意：这个设置会使浏览器 100% 会被追踪，并因此威胁你的隐私。",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -672,7 +672,7 @@
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "启用 Canvas 缓存。这可以预防检测，并在小画布（Canvas）被多次读取时增加性能，但对于大画布则降低性能。",
+		"message": "启用 Canvas 缓存。这可以防止检测，并在小画布（Canvas）被多次读取时提高性能，但对于大画布则降低性能。",
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
@@ -1012,7 +1012,7 @@
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "启用已伪造的画布内容的存储。\n注意：这可能消耗大量内存！",
+		"message": "启用存储已伪造画布的内容。\n注意：这可能消耗大量内存！",
 		"description": ""
 	},
 	"protectAudio_title": {
@@ -1600,7 +1600,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "显示指定站点的 API 保护情况。 如果您取消一个 API 的勾选，此 API 将不会对选定的站点进行保护。",
 		"description": ""
 	},
 	"whitelist_all_apis": {
