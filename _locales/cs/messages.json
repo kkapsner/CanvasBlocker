@@ -1476,19 +1476,19 @@
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advice on suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"message": "Tato stránka vám pomůže najít špatné nastavení doplňku CanvasBlocker. Naleznete zde také rady ohledně neoptimálního nastavení. Nedoporučujeme však návrhy slepě provádět.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Nothing to complain.",
+		"message": "Žádné výtky.",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
-		"message": "Unnecessary URL values",
+		"message": "Nepotřebné hodnoty URL",
 		"description": ""
 	},
 	"sanitation_ruleset.disabledFeatures": {
-		"message": "Disabled features",
+		"message": "Vypnuté funkce",
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
@@ -1500,7 +1500,7 @@
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "Výkon",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
