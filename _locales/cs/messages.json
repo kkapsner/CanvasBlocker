@@ -24,11 +24,11 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker zapnutý",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker vypnutý",
 		"description": ""
 	},
 	"more": {
@@ -72,7 +72,7 @@
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "Nastavení CanvasBlockeru",
 		"description": ""
 	},
 	"optionsIntroduction": {
@@ -1388,7 +1388,7 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Export settings",
+		"message": "Export nastavení",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1424,7 +1424,7 @@
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Inspect",
+		"message": "Zkontrolovat",
 		"description": ""
 	},
 	"saveSettings_label": {
