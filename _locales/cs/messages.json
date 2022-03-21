@@ -1040,31 +1040,31 @@
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10 hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100 hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000 hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "0,1 % z hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "1 % z hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "10 % z hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "100 % z hodnot",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
@@ -1228,7 +1228,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "Otevřít",
 		"description": ""
 	},
 	"navigatorSettings_title": {
@@ -1244,15 +1244,15 @@
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
-		"message": "Settings for the container {select} are shown.",
+		"message": "Jsou zobrazeny nastavení pro kontejner {select}.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "Operating system presets",
+		"message": "Předvolby operačního systému",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Browser presets",
+		"message": "Předvolby prohlížeče",
 		"description": ""
 	},
 	"navigatorSettings_values": {
@@ -1344,7 +1344,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "Poznámky k vydání",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1352,7 +1352,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Show",
+		"message": "Zobrazit",
 		"description": ""
 	},
 	"logLevel_title": {
@@ -1368,11 +1368,11 @@
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "chyba",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "varování",
 		"description": ""
 	},
 	"logLevel_options.50": {
@@ -1404,7 +1404,7 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Setting sanitation",
+		"message": "Kontrola nastavení",
 		"description": ""
 	},
 	"inspectWhitelist_label": {
@@ -1412,15 +1412,15 @@
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "Předvolby",
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "Otevře stránku s předvolbami, která byla zobrazena po instalaci. Předvolby nastaví hodnoty tak, aby plnily určitý účel, který po doplňku CanvasBlocker vyžadujete.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Otevřít",
 		"description": ""
 	},
 	"inspectSettings_label": {
@@ -1428,15 +1428,15 @@
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "Uložit",
 		"description": ""
 	},
 	"loadSettings_label": {
-		"message": "Load",
+		"message": "Načíst",
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reset settings",
+		"message": "Obnovit nastavení",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1448,15 +1448,15 @@
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Are you sure you want to reset all settings?",
+		"message": "Opravdu chcete uvést do výchozího stavu všechna nastavení?",
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "Nastavení",
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "Často kladené dotazy",
 		"description": ""
 	},
 	"browserAction_test": {
