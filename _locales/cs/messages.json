@@ -1620,7 +1620,7 @@
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Zde jsou připraveny předvolby, které vyhovují různým potřebám. Hodnoty v závorkách udávají současný stav nastavení. Můžete zvolit i více předvoleb, ovšem některá nastavení mohou být následně přepsána později zvolenou předvolbou.",
 		"description": ""
 	},
 	"preset_default_title": {
