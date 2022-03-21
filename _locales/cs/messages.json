@@ -688,7 +688,7 @@
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "zobrazit nastavení",
 		"description": ""
 	},
 	"displayCallingStack": {
@@ -696,7 +696,7 @@
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "zobrazit celou adresu URL",
 		"description": ""
 	},
 	"enableStackList_description": {
