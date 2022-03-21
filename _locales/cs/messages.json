@@ -1616,7 +1616,7 @@
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg} Děkuji, že jste nainstalovali CanvasBlocker. Můžete si ho pomocí předvoleb přizpůsobit vašim potřebám. Další úpravy lze provést na stránce {link:nastavení:options.html}, odkud se můžete vrátit i na tuto stránku s předvolbami.",
 		"description": ""
 	},
 	"presets_introduction": {
