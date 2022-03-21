@@ -1472,7 +1472,7 @@
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Setting sanitation",
+		"message": "Kontrola nastavení",
 		"description": ""
 	},
 	"sanitation_description": {
@@ -1508,7 +1508,7 @@
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
+		"message": "URL hodnota pro \"{url}\" je stejná jako v případě obecného nastavení pro \"{setting-title}\".",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
