@@ -1300,31 +1300,31 @@
 		"description": ""
 	},
 	"theme_title": {
-		"message": "Theme",
+		"message": "Vzhled",
 		"description": ""
 	},
 	"theme_description": {
-		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"message": "Automatický vzhled nastaví barevné téma podle systému (vyžaduje Firefox >= 67)",
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "automatický",
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "výchozí",
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "světlý",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "tmavý",
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "barevný",
 		"description": ""
 	},
 	"theme_options.none": {
