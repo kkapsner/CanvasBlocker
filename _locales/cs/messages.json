@@ -604,7 +604,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "POZOR: Díky tomuto nastavení bude váš prohlížeč plně zjistitelný a je proto hrozbou pro vaše soukromí.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
@@ -876,11 +876,11 @@
 		"description": ""
 	},
 	"showNotifications_title": {
-		"message": "Show notification icon",
+		"message": "Zobrazit ikonu upozornění",
 		"description": ""
 	},
 	"highlightPageAction_description": {
-		"message": "Highlight the page action icon for better visibility.",
+		"message": "Zvýraznit ikonu, aby byla lépe viditelná.",
 		"description": ""
 	},
 	"highlightPageAction_urlSpecific": {
@@ -888,7 +888,7 @@
 		"description": ""
 	},
 	"highlightPageAction_title": {
-		"message": "Highlight page action icon",
+		"message": "Zvýraznit ikonu",
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
