@@ -544,39 +544,39 @@
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
-		"message": "Clear interval of the persistent data",
+		"message": "Interval mazání trvalých dat",
 		"description": ""
 	},
 	"persistentRndClearInterval_description": {
-		"message": "After the specified interval the persistent data is cleared automatically. (Enter zero to disable.)",
+		"message": "Po uplynutí zadaného intervalu se trvalá data automaticky vymažou (zadáním nuly je tato funkce vypnuta).",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "vteřin(y)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "minut(y)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "hodin(y)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "dny/dní",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "týdny/týdnů",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "měsíce/měsíců",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "roky/let",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
