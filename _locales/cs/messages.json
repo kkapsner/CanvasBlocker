@@ -868,11 +868,11 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Shows a notification icon in the address bar when something gets blocked or faked.",
+		"message": "Zobrazit ikonu upozornění v adresním řádku v případě, že je něco blokováno nebo zkresleno.",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
-		"message": "To deactivate notifications for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Pro zrušení upozornění u některých stránek klikněte na černou šipku, která otevře další nabídku. Doménu nebo URL přidáte kliknutím na \"+\", popřípadě odstraníte odškrtnutím nebo křížkem.",
 		"description": ""
 	},
 	"showNotifications_title": {
@@ -908,7 +908,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Display badge",
+		"message": "Zobrazit znak",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -920,7 +920,7 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Change toolbar icon on notification",
+		"message": "Změnit ikonu na liště při upozornění",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
@@ -1068,7 +1068,7 @@
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "Úroveň hluku",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
