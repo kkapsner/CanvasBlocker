@@ -1360,11 +1360,11 @@
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "To find the cause of an error, detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.\n\nThe logging can be viewed in the Browser Console (Ctrl+Shift+J) and the Web Console (Ctrl+Shift+K).",
+		"message": "Pro zjištění příčiny problému je dobré mít k dispozici podrobný záznam (log). Tento parametr umožňuje nastavit úroveň záznamů.\n\nZáznamy je možné zobrazit pomocí konzole prohlížeče (Ctrl+Shift+J) nebo webové konzole (Ctrl+Shift+K).",
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "none",
+		"message": "nic",
 		"description": ""
 	},
 	"logLevel_options.1": {
