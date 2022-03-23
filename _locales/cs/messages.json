@@ -1368,7 +1368,7 @@
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "chyba",
+		"message": "chyby",
 		"description": ""
 	},
 	"logLevel_options.25": {
@@ -1380,7 +1380,7 @@
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "poznámky",
 		"description": ""
 	},
 	"logLevel_options.100": {
