@@ -1104,11 +1104,11 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Some pages use a very poorly written audio fingerprinting script which will cause Firefox to slow down. To disable the cache for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Některé stránky používají velmi špatně napsané kódy pro získání otisku prstu pomocí audia, a to způsobuje zpomalování Firefoxu. Chcete-li vypnout využití mezipaměti pro některé stránky, klikněte na černou šipku, která otevře další nabídku. Doménu nebo URL adresu můžete přidat pomocí \"+\", naopak odstranit je můžete odškrtnutím.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "Použít pevné indexy",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
