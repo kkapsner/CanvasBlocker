@@ -1260,7 +1260,7 @@
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "Obnovit",
 		"description": ""
 	},
 	"protectScreen_title": {
@@ -1356,7 +1356,7 @@
 		"description": ""
 	},
 	"logLevel_title": {
-		"message": "Logging level",
+		"message": "Úroveň záznamů",
 		"description": ""
 	},
 	"logLevel_description": {
