@@ -128,7 +128,7 @@
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "Seznamy",
 		"description": ""
 	},
 	"section_misc": {
@@ -1076,31 +1076,31 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "nejmenší",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "malá",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "střední",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "vysoká",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "největší",
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "Použít mezipaměť pro audio",
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"message": "Umožní použít mezipaměť pro audio. Může to zabránit detekci doplňku, ale snižuje to jeho rychlost.",
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
