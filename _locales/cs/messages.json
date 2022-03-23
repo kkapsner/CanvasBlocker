@@ -1376,7 +1376,7 @@
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "zprávy",
 		"description": ""
 	},
 	"logLevel_options.75": {
@@ -1384,7 +1384,7 @@
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "verbose",
+		"message": "podrobný",
 		"description": ""
 	},
 	"exportSettings_title": {
@@ -1396,7 +1396,7 @@
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "Kontrola nastavení",
 		"description": ""
 	},
 	"settingControlling_description": {
