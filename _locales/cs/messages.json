@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Mění některá JS API, aby se zabránilo vytváření otisku prstu prohlížeče.",
+		"message": "Mění některá JS API, aby se zabránilo vytváření otisku prohlížeče.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -1104,7 +1104,7 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Některé stránky používají velmi špatně napsané kódy pro získání otisku prstu pomocí audia, a to způsobuje zpomalování Firefoxu. Chcete-li vypnout využití mezipaměti pro některé stránky, klikněte na černou šipku, která otevře další nabídku. Doménu nebo URL adresu můžete přidat pomocí \"+\", naopak odstranit je můžete odškrtnutím.",
+		"message": "Některé stránky používají velmi špatně napsané kódy pro získání otisku pomocí audia, a to způsobuje zpomalování Firefoxu. Chcete-li vypnout využití mezipaměti pro některé stránky, klikněte na černou šipku, která otevře další nabídku. Doménu nebo URL adresu můžete přidat pomocí \"+\", naopak odstranit je můžete odškrtnutím.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
@@ -1652,7 +1652,7 @@
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximalizuje ochranu proti odebrání otisku prstu prohlížeče. Toto nastavení rozbije některé stránky, může zpomalit prohlížeč a umožní stránkám zjistit, že je CanvasBlocker aktivní. Při využití této předvolby zvažte i použití předvolby reCAPTCHA.",
+		"message": "Maximalizuje ochranu proti odebrání otisku prohlížeče. Toto nastavení rozbije některé stránky, může zpomalit prohlížeč a umožní stránkám zjistit, že je CanvasBlocker aktivní. Při využití této předvolby zvažte i použití předvolby reCAPTCHA.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
