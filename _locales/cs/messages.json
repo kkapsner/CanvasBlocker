@@ -1112,15 +1112,15 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices shall always be faked.",
+		"message": "Zda by některé indexy měly být vždy zkreslené.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
-		"message": "Fixed indices",
+		"message": "Pevné indexy",
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "The indices that are always faked. To add multiple entries, separate them by commas.",
+		"message": "Indexy, které budou vždy zkresleny. Více záznamů musí být odděleno čárkami.",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
