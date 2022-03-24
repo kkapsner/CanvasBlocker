@@ -404,7 +404,7 @@
 		"description": ""
 	},
 	"blackList_description": {
-		"message": "Domains or URLs where all APIs shall always be blocked. To add multiple entries, separate them by commas.",
+		"message": "Domény a adresy URL, které mají blokované všechny API. Více záznamů musí být odděleno čárkou.",
 		"description": ""
 	},
 	"blackList_title": {
@@ -456,7 +456,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"message": "Chcete-li chránit jednotlivé části konkrétních stránek, klikněte na černou šipku a zobrazí se vám další nabídka. Doménu nebo URL adresu můžete přidat pomocí \"+\" a vybrat požadovanou část.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
@@ -524,7 +524,7 @@
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "Generátor náhodných čísel",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
