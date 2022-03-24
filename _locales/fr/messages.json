@@ -160,7 +160,7 @@
 		"description": ""
 	},
 	"section_SVG-api": {
-		"message": "SVG API",
+		"message": "API SVG",
 		"description": ""
 	},
 	"section_TextMetrics-api": {
@@ -308,11 +308,11 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "Voulez-vous autoriser l'API SVG ?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "Voulez-vous autoriser l'entrée par l'API SVG ?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
