@@ -540,7 +540,7 @@
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "If data for the persistent random number generator shall be stored. Otherwise it is discarded on browser shutdown.",
+		"message": "Zda se mají ukládat trvalá data pro generátor náhodných čísel. V opačném případě jsou data po zavření prohlížeče zahozena.",
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
@@ -580,11 +580,11 @@
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
-		"message": "Clear persistent random storage",
+		"message": "Vymazat trvalé uložiště",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Deletes all data for the persistent random number generator.",
+		"message": "Odstraní všechna trvalá data pro generátor náhodných čísel.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
