@@ -1124,15 +1124,15 @@
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
-		"message": "History length threshold",
+		"message": "Maximální délka historie",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximal length of the history that is reported to the website.",
+		"message": "Maximální délka historie prohlížeče, která je sdělena stránkám.",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "To change this value for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set a different value.",
+		"message": "Chcete-li změnit tuto hodnotu pro některé stránky, klikněte na černou šipku a zobrazí se vám další nabídka. Doménu nebo URL adresu můžete přidat pomocí \"+\", následně nastavte odlišnou hodnotu.",
 		"description": ""
 	},
 	"protectWindow_title": {
