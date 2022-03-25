@@ -760,11 +760,11 @@
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "Seznam ignorovaných domén",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "Ignorované API",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
