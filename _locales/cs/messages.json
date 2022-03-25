@@ -600,7 +600,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Share persistent randomness between domains",
+		"message": "Sdílet trvalá náhodná čísla mezi doménami",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
@@ -608,7 +608,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "Jste si opravdu jisti, že chcete sdílet trvalá náhodná čísla mezi doménami?\nPOZOR: Díky tomuto nastavení bude váš prohlížeč plně zjistitelný a je proto hrozbou pro vaše soukromí.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
