@@ -504,23 +504,23 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action.\n\nconstant: within one web page a color will always be faked to the same color.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "Žádný (zcela bílý): vrací úplně bílý obrázek. Zároveň s tímto parametrem by měla být aktivována i možnost \"Zkreslit alfa kanál\". POZOR: Nepoužívejte v režimu \"Zkreslit vstup\".\n\nDočasný: náhodná čísla budou určena při každé akci zkreslení.\n\nKonstantní: v rámci jednoho webu bude barva zkreslena vždy stejně.\n\nTrvalý: náhodná čísla budou určena pro každou doménu vždy jednou.",
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "persistent",
+		"message": "trvalý",
 		"description": ""
 	},
 	"rng_options.constant": {
-		"message": "constant",
+		"message": "konstantní",
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "non persistent",
+		"message": "dočasný",
 		"description": ""
 	},
 	"rng_options.white": {
-		"message": "none (completely white)",
+		"message": "žádný (zcela bílý)",
 		"description": ""
 	},
 	"rng_title": {
