@@ -532,11 +532,11 @@
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"message": "Ukládá data pro trvalý generátor náhodných čísel pro použití po restartu.",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "Uložení trvalých dat",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
