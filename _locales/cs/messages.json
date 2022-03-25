@@ -588,15 +588,15 @@
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "Vymazat",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Vymazat kontejner",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Vybrat kontejner",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
