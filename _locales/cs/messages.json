@@ -756,7 +756,7 @@
 		"description": ""
 	},
 	"ignoreList_description": {
-		"message": "Domains or URLs where no notifications shall be shown. To add multiple entries, separate them by commas.",
+		"message": "Seznam domén nebo URL adres, u kterých nebude zobrazeno upozornění. Více položek je nutné oddělit čárkou.",
 		"description": ""
 	},
 	"ignoreList_title": {
@@ -768,11 +768,11 @@
 		"description": ""
 	},
 	"ignoredAPIs_description": {
-		"message": "No notifications will be displayed for the selected APIs.",
+		"message": "Pro vybrané API nebudou zobrazeny upozornění.",
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "lokální soubor",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -780,11 +780,11 @@
 		"description": ""
 	},
 	"ignorelistURL": {
-		"message": "ignore URL",
+		"message": "ignorovat URL",
 		"description": ""
 	},
 	"selectIgnore": {
-		"message": "Select domain or URL to add to ignore list:",
+		"message": "Vyberte doménu nebo URL adresu, kterou přidáte na seznam ignorovaných:",
 		"description": ""
 	},
 	"inputIgnore": {
@@ -972,11 +972,11 @@
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "ignorovat",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "whitelist temporarily",
+		"message": "dočasně povolit",
 		"description": ""
 	},
 	"inspectWhitelist": {
@@ -1000,7 +1000,7 @@
 		"description": ""
 	},
 	"storeNotificationData_title": {
-		"message": "Store detail data of the notifications",
+		"message": "Uložit podrobnosti o oznámeních",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -1008,7 +1008,7 @@
 		"description": ""
 	},
 	"storeImageForInspection_title": {
-		"message": "Store image for inspection",
+		"message": "Uložit obrázek pro kontrolu",
 		"description": ""
 	},
 	"storeImageForInspection_description": {
@@ -1036,7 +1036,7 @@
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1 hodnota",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
