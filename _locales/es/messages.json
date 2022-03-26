@@ -312,11 +312,11 @@
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "¿Quieres permitir la entrada de la API SVG?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "¿Quieres permitir la lectura de la API SVG?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
