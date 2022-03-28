@@ -360,7 +360,7 @@
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
+		"message": "Pokud je blokovací režim nastaven na \"požádat o povolení\" nebo \"požádat o povolení pro čtení API\", pak pokaždé, když se stránka pokusí přistupovat k API, objeví se potvrzovací okno. Doplněk se snaží zobrazit tento dotaz na jedné stránce pouze jednou, nezáleží na tom, kolikrát se stránka snaží k API přistupovat. I tak se na jedné stránce může okno objevit vícekrát.\n\nNe: Dotaz bude zobrazen pokaždé\n\nJednotlivě: každý typ API (kontext, vstup, čtení) musí být potvrzen odděleně\n\nkombinovaně: všechny typy API budou potvrzeny dohromady",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
@@ -368,11 +368,11 @@
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
-		"message": "individual",
+		"message": "jednotlivě",
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "kombinovaně",
 		"description": ""
 	},
 	"askDenyMode_title": {
