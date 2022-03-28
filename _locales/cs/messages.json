@@ -376,19 +376,19 @@
 		"description": ""
 	},
 	"askDenyMode_title": {
-		"message": "Ask deny mode",
+		"message": "Režim při zamítnutí",
 		"description": ""
 	},
 	"askDenyMode_description": {
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "Který režim by měl být zvolen v případě, že povolení není uděleno.",
 		"description": ""
 	},
 	"askDenyMode_options.block": {
-		"message": "block",
+		"message": "blokovat",
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "zkreslit",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
@@ -428,7 +428,7 @@
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "ask for permission",
+		"message": "požádat o povolení",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
@@ -628,7 +628,7 @@
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
-		"message": "Fake the alpha channel",
+		"message": "Zkreslit alfa kanál",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
