@@ -492,7 +492,7 @@
 		"description": ""
 	},
 	"minFakeSize_title": {
-		"message": "Minimal fake size",
+		"message": "Minimální velikost pro zkreslení",
 		"description": ""
 	},
 	"maxFakeSize_description": {
@@ -500,7 +500,7 @@
 		"description": ""
 	},
 	"maxFakeSize_title": {
-		"message": "Maximal fake size",
+		"message": "Maximální velikost pro zkreslení",
 		"description": ""
 	},
 	"rng_description": {
@@ -1588,7 +1588,7 @@
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"message": "Nesdílejte trvalá náhodná čísla mezi doménami, prohlížeč se tak stává plně sledovatelným.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
