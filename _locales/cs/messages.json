@@ -488,7 +488,7 @@
 		"description": ""
 	},
 	"minFakeSize_description": {
-		"message": "Canvases with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
+		"message": "Canvas se stejnou nebo menší plochou, než je dáno tímto parametrem, nebude zkreslen. Tento parametr má za cíl zabránit odhalení.\nPOZOR: Snižuje se tím bezpečnost doplňku, proto nedoporučujeme nastavit tuto hodnotu nad 100.",
 		"description": ""
 	},
 	"minFakeSize_title": {
@@ -496,7 +496,7 @@
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "Canvases with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 1 000 000.",
+		"message": "Canvas s větší plochou, než je uvedeno parametrem, nebude zkreslen (chcete-li funkci vypnout, zadejte nulu). Jedná se o parametr ovlivňující výkon, který může omezit zamrzání prohlížeče a měl by být přizpůsoben výkonu zařízení.\nPOZOR: Snižuje se tím bezpečnost doplňku, proto nedoporučujeme nastavit tuto hodnotu pod 1 000 000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
