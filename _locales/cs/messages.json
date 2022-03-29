@@ -236,7 +236,7 @@
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "Chcete povolit <canvas>?",
 		"description": ""
 	},
 	"askForInputPermission": {
