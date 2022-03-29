@@ -260,7 +260,7 @@
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "Chcete povolit API audia?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
@@ -272,7 +272,7 @@
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "Chcete povolit API historie?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
@@ -296,7 +296,7 @@
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "Chcete povolit API DOMRectu?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
@@ -308,7 +308,7 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "Chcete povolit API SVG?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
@@ -344,7 +344,7 @@
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "Chcete povolit API obrazovky?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
@@ -392,15 +392,15 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
-		"message": "Show canvas content",
+		"message": "Zobrazit obsah canvasu",
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
-		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
+		"message": "Pokud je to možné, zobrazí obsah canvasu, pro který je vyžadováno povolení.",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
-		"message": "The webpage wants to read the content of the following canvas:",
+		"message": "Webové stránky chtějí přečíst obsah následujícího canvasu:",
 		"description": ""
 	},
 	"blackList_description": {
