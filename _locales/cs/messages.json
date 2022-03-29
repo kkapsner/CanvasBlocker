@@ -12,7 +12,7 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\núčinná ochrana pro:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
@@ -60,7 +60,7 @@
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "vstup",
 		"description": ""
 	},
 	"readout": {
@@ -116,11 +116,11 @@
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking",
+		"message": "Dotazování",
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "Zkreslování",
 		"description": ""
 	},
 	"section_notifications": {
@@ -140,15 +140,15 @@
 		"description": ""
 	},
 	"section_canvas-api": {
-		"message": "Canvas API",
+		"message": "API canvasu",
 		"description": ""
 	},
 	"section_audio-api": {
-		"message": "Audio API",
+		"message": "API audia",
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "History API",
+		"message": "API historie",
 		"description": ""
 	},
 	"section_window-api": {
@@ -156,11 +156,11 @@
 		"description": ""
 	},
 	"section_DOMRect-api": {
-		"message": "DOMRect API",
+		"message": "API DOMRectu",
 		"description": ""
 	},
 	"section_SVG-api": {
-		"message": "SVG API",
+		"message": "API SVG",
 		"description": ""
 	},
 	"section_TextMetrics-api": {
@@ -172,7 +172,7 @@
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Screen API",
+		"message": "API obrazovky",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
