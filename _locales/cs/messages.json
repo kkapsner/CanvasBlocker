@@ -616,7 +616,7 @@
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "Počet barev na canvas, které by neměly být zkresleny. Jedná se o parametr, který ztěžuje detekci doplňku.\nPOZOR: Tento parametr může ovlivnit rychlost doplňku. Je totiž nutné vypočítat statistiku barev pro každý obrázek. Pokud je hodnota nastavena příliš vysoko, může také snížit bezpečnost doplňku. Proto nedoporučujeme parametr nastavovat nad hodnotu 3.",
 		"description": ""
 	},
 	"minColors_title": {
