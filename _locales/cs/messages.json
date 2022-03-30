@@ -624,7 +624,7 @@
 		"description": ""
 	},
 	"minColors_description": {
-		"message": "Number of colors that a canvas must have to be faked.\nCAUTION: This can lower the safety of the addon, therefore it is highly recommended not to set this value above 10.",
+		"message": "Počet barev, které musí obsahovat canvas, aby se provedlo zkreslení. Jedná se o parametr, který ztěžuje detekci doplňku.\nPOZOR: Tento parametr může ovlivnit bezpečnost doplňku. Proto nedoporučujeme nastavovat jeho hodnotu nad 10.",
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
@@ -632,7 +632,7 @@
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Activates the faking of the alpha channel (transparency).",
+		"message": "Zapne zkreslování alfa kanálu (průhlednosti).",
 		"description": ""
 	},
 	"webGLVendor_title": {
