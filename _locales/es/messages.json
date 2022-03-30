@@ -312,11 +312,11 @@
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "¿Quieres permitir la entrada de la API SVG?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "¿Quieres permitir la lectura de la API SVG?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -736,7 +736,7 @@
 		"description": ""
 	},
 	"fakedSVGReadout": {
-		"message": "Faked SVG readout on {url}",
+		"message": "Lectura SVG falseada en {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -1184,7 +1184,7 @@
 		"description": ""
 	},
 	"protectSVG_title": {
-		"message": "Protect SVG API",
+		"message": "Proteger API SVG",
 		"description": ""
 	},
 	"protectSVG_description": {

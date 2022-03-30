@@ -196,7 +196,7 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "Se pôr em verdadeiro, a extensão irá atualizar quando uma atualização estiver disponível. Isso pode quebrar algumas abas que estão atualmente abertas.",
+		"message": "Se for definido como verdadeiro, a extensão atualizará o mais cedo o possível quando uma atualização estiver disponível. Isso pode quebrar algumas abas que podem estar abertas.",
 		"description": ""
 	},
 	"reloadExtension_title": {
@@ -1600,7 +1600,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Mostra quais proteções de API estão ativas para um dado site. Se remover a marca de uma API, ela não será protegida no dado site.",
+		"message": "Mostra quais proteções de API estão ativas para um dado site. Se remover a marca de uma API, ela não será protegida no site selecionado.",
 		"description": ""
 	},
 	"whitelist_all_apis": {

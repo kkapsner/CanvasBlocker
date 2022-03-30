@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "Mění některá JS API, aby se zabránilo vytváření otisku prohlížeče.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -12,11 +12,11 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\núčinná ochrana pro:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " (API povolené pro {url})",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -24,27 +24,27 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker zapnutý",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker vypnutý",
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "více",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "méně",
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "Čekejte prosím...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "Hledat",
 		"description": ""
 	},
 	"ok": {
@@ -52,15 +52,15 @@
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "Použít",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "Zrušit",
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "vstup",
 		"description": ""
 	},
 	"readout": {
@@ -68,87 +68,87 @@
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "Nastavení",
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "Nastavení CanvasBlockeru",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "Na této stránce můžete upravit nastavení doplňku CanvasBlocker.",
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "CanvasBlocker byl nainstalován. Chcete-li na tuto stránku přistupovat v budoucnosti, přidejte si ji prosím do záložek.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlocker byl aktualizován. Chcete-li na tuto stránku přistupovat v budoucnosti a ještě jste si tuto stránku nepřidali do záložek, přijdete si ji prosím teď.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "Po aktualizaci již nezobrazovat.",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Máte povoleno privacy.resistFingerprinting. Může to lehce změnit chování doplňku CanvasBlocker. Podrobnosti naleznete na {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} a {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "Položku dom.webAudio.enabled máte vypnutou. Stáváte se díky tomu snadněji sledovatelní, protože ji má vypnutou pouze velmi málo lidí.",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "Otevřít v samostatném panelu",
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "Obecné",
 		"description": ""
 	},
 	"group_APIs": {
-		"message": "APIs",
+		"message": "API",
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "Různé",
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking",
+		"message": "Dotazování",
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "Zkreslování",
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "Upozornění",
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "Seznamy",
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "Různé",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "Nastavení",
 		"description": ""
 	},
 	"section_canvas-api": {
-		"message": "Canvas API",
+		"message": "API canvasu",
 		"description": ""
 	},
 	"section_audio-api": {
-		"message": "Audio API",
+		"message": "API audia",
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "History API",
+		"message": "API historie",
 		"description": ""
 	},
 	"section_window-api": {
@@ -156,11 +156,11 @@
 		"description": ""
 	},
 	"section_DOMRect-api": {
-		"message": "DOMRect API",
+		"message": "API DOMRectu",
 		"description": ""
 	},
 	"section_SVG-api": {
-		"message": "SVG API",
+		"message": "API SVG",
 		"description": ""
 	},
 	"section_TextMetrics-api": {
@@ -172,55 +172,55 @@
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Screen API",
+		"message": "API obrazovky",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "Pokročilý režim",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "Zobrazí další nastavení.",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "Zobrazit popis",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "Zobrazí popis nastavení.",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Přerušit relaci při aktualizaci",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Doplněk bude aktualizován hned, jak bude aktualizace dostupná. Může to způsobit chyby některých otevřených panelů.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Znovu načíst doplněk",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Instalovat čekající aktualizaci.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Znovu načíst",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "Kliknutím zde toto nastavení skryjete.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "Zobrazit skryté nastavení",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "Aktivujte, pokud chcete zobrazit skryté nastavení.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -236,7 +236,7 @@
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "Chcete povolit <canvas>?",
 		"description": ""
 	},
 	"askForInputPermission": {
@@ -260,7 +260,7 @@
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "Chcete povolit API audia?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
@@ -272,7 +272,7 @@
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "Chcete povolit API historie?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
@@ -296,7 +296,7 @@
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "Chcete povolit API DOMRectu?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
@@ -308,7 +308,7 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "Chcete povolit API SVG?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
@@ -344,7 +344,7 @@
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "Chcete povolit API obrazovky?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
@@ -356,55 +356,55 @@
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "Zeptat se pouze jednou",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API-type (context, input, readout) has to be confirmed separately\n\ncombined: all API-types get confirmed together",
+		"message": "Pokud je blokovací režim nastaven na \"požádat o povolení\" nebo \"požádat o povolení pro čtení API\", pak pokaždé, když se stránka pokusí přistupovat k API, objeví se potvrzovací okno. Doplněk se snaží zobrazit tento dotaz na jedné stránce pouze jednou, nezáleží na tom, kolikrát se stránka snaží k API přistupovat. I tak se na jedné stránce může okno objevit vícekrát.\n\nNe: Dotaz bude zobrazen pokaždé\n\nJednotlivě: každý typ API (kontext, vstup, čtení) musí být potvrzen odděleně\n\nkombinovaně: všechny typy API budou potvrzeny dohromady",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "ne",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
-		"message": "individual",
+		"message": "jednotlivě",
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "kombinovaně",
 		"description": ""
 	},
 	"askDenyMode_title": {
-		"message": "Ask deny mode",
+		"message": "Režim při zamítnutí",
 		"description": ""
 	},
 	"askDenyMode_description": {
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "Který režim by měl být zvolen v případě, že povolení není uděleno.",
 		"description": ""
 	},
 	"askDenyMode_options.block": {
-		"message": "block",
+		"message": "blokovat",
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "zkreslit",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
-		"message": "Show canvas content",
+		"message": "Zobrazit obsah canvasu",
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
-		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
+		"message": "Pokud je to možné, zobrazí obsah canvasu, pro který je vyžadováno povolení.",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
-		"message": "The webpage wants to read the content of the following canvas:",
+		"message": "Webové stránky chtějí přečíst obsah následujícího canvasu:",
 		"description": ""
 	},
 	"blackList_description": {
-		"message": "Domains or URLs where all APIs shall always be blocked. To add multiple entries, separate them by commas.",
+		"message": "Domény a adresy URL, které mají blokované všechny API. Více záznamů musí být odděleno čárkou.",
 		"description": ""
 	},
 	"blackList_title": {
@@ -420,7 +420,7 @@
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "povolit vše",
 		"description": ""
 	},
 	"blockMode_options.block": {
@@ -428,11 +428,11 @@
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "ask for permission",
+		"message": "požádat o povolení",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "blokovat vše",
 		"description": ""
 	},
 	"blockMode_options.allow": {
@@ -456,7 +456,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"message": "Chcete-li chránit jednotlivé části konkrétních stránek, klikněte na černou šipku a zobrazí se vám další nabídka. Doménu nebo URL adresu můžete přidat pomocí \"+\" a vybrat požadovanou část.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
@@ -488,151 +488,151 @@
 		"description": ""
 	},
 	"minFakeSize_description": {
-		"message": "Canvases with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
+		"message": "Canvas se stejnou nebo menší plochou, než je dáno tímto parametrem, nebude zkreslen. Tento parametr má za cíl zabránit odhalení.\nPOZOR: Snižuje se tím bezpečnost doplňku, proto nedoporučujeme nastavit tuto hodnotu nad 100.",
 		"description": ""
 	},
 	"minFakeSize_title": {
-		"message": "Minimal fake size",
+		"message": "Minimální velikost pro zkreslení",
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "Canvases with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 1 000 000.",
+		"message": "Canvas s větší plochou, než je uvedeno parametrem, nebude zkreslen (chcete-li funkci vypnout, zadejte nulu). Jedná se o parametr ovlivňující výkon, který může omezit zamrzání prohlížeče a měl by být přizpůsoben výkonu zařízení.\nPOZOR: Snižuje se tím bezpečnost doplňku, proto nedoporučujeme nastavit tuto hodnotu pod 1 000 000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
-		"message": "Maximal fake size",
+		"message": "Maximální velikost pro zkreslení",
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action.\n\nconstant: within one web page a color will always be faked to the same color.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "Žádný (zcela bílý): vrací úplně bílý obrázek. Zároveň s tímto parametrem by měla být aktivována i možnost \"Zkreslit alfa kanál\". POZOR: Nepoužívejte v režimu \"Zkreslit vstup\".\n\nDočasný: náhodná čísla budou určena při každé akci zkreslení.\n\nKonstantní: v rámci jednoho webu bude barva zkreslena vždy stejně.\n\nTrvalý: náhodná čísla budou určena pro každou doménu vždy jednou.",
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "persistent",
+		"message": "trvalý",
 		"description": ""
 	},
 	"rng_options.constant": {
-		"message": "constant",
+		"message": "konstantní",
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "non persistent",
+		"message": "dočasný",
 		"description": ""
 	},
 	"rng_options.white": {
-		"message": "none (completely white)",
+		"message": "žádný (zcela bílý)",
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "Generátor náhodných čísel",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Persistent storage",
+		"message": "Trvalé uložiště",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"message": "Ukládá data pro trvalý generátor náhodných čísel pro použití po restartu.",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "Uložení trvalých dat",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "If data for the persistent random number generator shall be stored. Otherwise it is discarded on browser shutdown.",
+		"message": "Zda se mají ukládat trvalá data pro generátor náhodných čísel. V opačném případě jsou data po zavření prohlížeče zahozena.",
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
-		"message": "Clear interval of the persistent data",
+		"message": "Interval mazání trvalých dat",
 		"description": ""
 	},
 	"persistentRndClearInterval_description": {
-		"message": "After the specified interval the persistent data is cleared automatically. (Enter zero to disable.)",
+		"message": "Po uplynutí zadaného intervalu se trvalá data automaticky vymažou (zadáním nuly je tato funkce vypnuta).",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "vteřin(y)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "minut(y)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "hodin(y)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "dny/dní",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "týdny/týdnů",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "měsíce/měsíců",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "roky/let",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
-		"message": "Clear persistent random storage",
+		"message": "Vymazat trvalé uložiště",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Deletes all data for the persistent random number generator.",
+		"message": "Odstraní všechna trvalá data pro generátor náhodných čísel.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "Vymazat",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Vymazat kontejner",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Vybrat kontejner",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Share persistent randomness between domains",
+		"message": "Sdílet trvalá náhodná čísla mezi doménami",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "POZOR: Díky tomuto nastavení bude váš prohlížeč plně zjistitelný a je proto hrozbou pro vaše soukromí.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "Jste si opravdu jisti, že chcete sdílet trvalá náhodná čísla mezi doménami?\nPOZOR: Díky tomuto nastavení bude váš prohlížeč plně zjistitelný a je proto hrozbou pro vaše soukromí.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "Ignorovat nejčastější barvy",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "Počet barev na canvas, které by neměly být zkresleny. Jedná se o parametr, který ztěžuje detekci doplňku.\nPOZOR: Tento parametr může ovlivnit rychlost doplňku. Je totiž nutné vypočítat statistiku barev pro každý obrázek. Pokud je hodnota nastavena příliš vysoko, může také snížit bezpečnost doplňku. Proto nedoporučujeme parametr nastavovat nad hodnotu 3.",
 		"description": ""
 	},
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "Nejmenší počet barev",
 		"description": ""
 	},
 	"minColors_description": {
-		"message": "Number of colors that a canvas must have to be faked.\nCAUTION: This can lower the safety of the addon, therefore it is highly recommended not to set this value above 10.",
+		"message": "Počet barev, které musí obsahovat canvas, aby se provedlo zkreslení. Jedná se o parametr, který ztěžuje detekci doplňku.\nPOZOR: Tento parametr může ovlivnit bezpečnost doplňku. Proto nedoporučujeme nastavovat jeho hodnotu nad 10.",
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
-		"message": "Fake the alpha channel",
+		"message": "Zkreslit alfa kanál",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Activates the faking of the alpha channel (transparency).",
+		"message": "Zapne zkreslování alfa kanálu (průhlednosti).",
 		"description": ""
 	},
 	"webGLVendor_title": {
@@ -688,7 +688,7 @@
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "zobrazit nastavení",
 		"description": ""
 	},
 	"displayCallingStack": {
@@ -696,7 +696,7 @@
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "zobrazit celou adresu URL",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -756,23 +756,23 @@
 		"description": ""
 	},
 	"ignoreList_description": {
-		"message": "Domains or URLs where no notifications shall be shown. To add multiple entries, separate them by commas.",
+		"message": "Seznam domén nebo URL adres, u kterých nebude zobrazeno upozornění. Více položek je nutné oddělit čárkou.",
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "Seznam ignorovaných domén",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "Ignorované API",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
-		"message": "No notifications will be displayed for the selected APIs.",
+		"message": "Pro vybrané API nebudou zobrazeny upozornění.",
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "lokální soubor",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -780,11 +780,11 @@
 		"description": ""
 	},
 	"ignorelistURL": {
-		"message": "ignore URL",
+		"message": "ignorovat URL",
 		"description": ""
 	},
 	"selectIgnore": {
-		"message": "Select domain or URL to add to ignore list:",
+		"message": "Vyberte doménu nebo URL adresu, kterou přidáte na seznam ignorovaných:",
 		"description": ""
 	},
 	"inputIgnore": {
@@ -848,7 +848,7 @@
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "nastavení",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -868,19 +868,19 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Shows a notification icon in the address bar when something gets blocked or faked.",
+		"message": "Zobrazit ikonu upozornění v adresním řádku v případě, že je něco blokováno nebo zkresleno.",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
-		"message": "To deactivate notifications for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Pro zrušení upozornění u některých stránek klikněte na černou šipku, která otevře další nabídku. Doménu nebo URL přidáte kliknutím na \"+\", popřípadě odstraníte odškrtnutím nebo křížkem.",
 		"description": ""
 	},
 	"showNotifications_title": {
-		"message": "Show notification icon",
+		"message": "Zobrazit ikonu upozornění",
 		"description": ""
 	},
 	"highlightPageAction_description": {
-		"message": "Highlight the page action icon for better visibility.",
+		"message": "Zvýraznit ikonu, aby byla lépe viditelná.",
 		"description": ""
 	},
 	"highlightPageAction_urlSpecific": {
@@ -888,19 +888,19 @@
 		"description": ""
 	},
 	"highlightPageAction_title": {
-		"message": "Highlight page action icon",
+		"message": "Zvýraznit ikonu",
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "bez zvýraznění",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "barva",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "blink",
+		"message": "blikat",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -908,7 +908,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Display badge",
+		"message": "Zobrazit znak",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -920,19 +920,19 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Change toolbar icon on notification",
+		"message": "Změnit ikonu na liště při upozornění",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "nic neměnit",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "změnit barvu",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "blink",
+		"message": "blikat",
 		"description": ""
 	},
 	"sourceOutput": {
@@ -972,11 +972,11 @@
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "ignorovat",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "whitelist temporarily",
+		"message": "dočasně povolit",
 		"description": ""
 	},
 	"inspectWhitelist": {
@@ -1000,7 +1000,7 @@
 		"description": ""
 	},
 	"storeNotificationData_title": {
-		"message": "Store detail data of the notifications",
+		"message": "Uložit podrobnosti o oznámeních",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -1008,7 +1008,7 @@
 		"description": ""
 	},
 	"storeImageForInspection_title": {
-		"message": "Store image for inspection",
+		"message": "Uložit obrázek pro kontrolu",
 		"description": ""
 	},
 	"storeImageForInspection_description": {
@@ -1036,39 +1036,39 @@
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1 hodnota",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10 hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100 hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000 hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "0,1 % z hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "1 % z hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "10 % z hodnot",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "100 % z hodnot",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "Úroveň hluku",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
@@ -1076,63 +1076,63 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "nejmenší",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "malá",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "střední",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "vysoká",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "největší",
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "Použít mezipaměť pro audio",
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"message": "Umožní použít mezipaměť pro audio. Může to zabránit detekci doplňku, ale snižuje to jeho rychlost.",
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Some pages use a very poorly written audio fingerprinting script which will cause Firefox to slow down. To disable the cache for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Některé stránky používají velmi špatně napsané kódy pro získání otisku pomocí audia, a to způsobuje zpomalování Firefoxu. Chcete-li vypnout využití mezipaměti pro některé stránky, klikněte na černou šipku, která otevře další nabídku. Doménu nebo URL adresu můžete přidat pomocí \"+\", naopak odstranit je můžete odškrtnutím.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "Použít pevné indexy",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices shall always be faked.",
+		"message": "Zda by některé indexy měly být vždy zkreslené.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
-		"message": "Fixed indices",
+		"message": "Pevné indexy",
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "The indices that are always faked. To add multiple entries, separate them by commas.",
+		"message": "Indexy, které budou vždy zkresleny. Více záznamů musí být odděleno čárkami.",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
-		"message": "History length threshold",
+		"message": "Maximální délka historie",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximal length of the history that is reported to the website.",
+		"message": "Maximální délka historie prohlížeče, která je sdělena stránkám.",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "To change this value for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set a different value.",
+		"message": "Chcete-li změnit tuto hodnotu pro některé stránky, klikněte na černou šipku a zobrazí se vám další nabídka. Doménu nebo URL adresu můžete přidat pomocí \"+\", následně nastavte odlišnou hodnotu.",
 		"description": ""
 	},
 	"protectWindow_title": {
@@ -1228,7 +1228,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "Otevřít",
 		"description": ""
 	},
 	"navigatorSettings_title": {
@@ -1240,19 +1240,19 @@
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
-		"message": "CAUTION: the actual browser in use cannot be faked entirely as there is a multitude of ways to detect it. E.g. feature tests and browser specific rendering of HTML elements will always leak.",
+		"message": "POZOR: skutečný použitý prohlížeč nelze zcela podvrhnout, protože existuje řada způsobů, jak ho zjistit. Např. vždy uniknou testy vlastností a vykreslování HTML prvků.",
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
-		"message": "Settings for the container {select} are shown.",
+		"message": "Jsou zobrazeny nastavení pro kontejner {select}.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "Operating system presets",
+		"message": "Předvolby operačního systému",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Browser presets",
+		"message": "Předvolby prohlížeče",
 		"description": ""
 	},
 	"navigatorSettings_values": {
@@ -1260,7 +1260,7 @@
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "Obnovit",
 		"description": ""
 	},
 	"protectScreen_title": {
@@ -1272,11 +1272,11 @@
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Chcete-li některé stránky z této ochrany vyloučit, klikněte na černou šipku a zobrazí se vám další nabídka. Doménu nebo URL adresu můžete přidat pomocí \"+\", naopak odebrat je můžete odškrtnutím.",
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "Velikost obrazovky",
 		"description": ""
 	},
 	"screenSize_description": {
@@ -1288,43 +1288,43 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
-		"message": "Fake minimal screen size",
+		"message": "Zkreslit minimální velikost obrazovky",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
-		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"message": "Použít hodnotu minimální velikosti obrazovky z následujícího seznamu, která odpovídá vnitřním rozměrům okna. Velikosti okna: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Chcete-li některé stránky vyloučit, klikněte na černou šipku a zobrazí se vám další nabídka. Doménu nebo URL adresu můžete přidat pomocí \"+\", naopak odebrat je můžete odškrtnutím.",
 		"description": ""
 	},
 	"theme_title": {
-		"message": "Theme",
+		"message": "Vzhled",
 		"description": ""
 	},
 	"theme_description": {
-		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"message": "Automatický vzhled nastaví barevné téma podle systému (vyžaduje Firefox >= 67)",
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "automatický",
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "výchozí",
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "světlý",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "tmavý",
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "barevný",
 		"description": ""
 	},
 	"theme_options.none": {
@@ -1344,7 +1344,7 @@
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "Poznámky k vydání",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1352,43 +1352,43 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Show",
+		"message": "Zobrazit",
 		"description": ""
 	},
 	"logLevel_title": {
-		"message": "Logging level",
+		"message": "Úroveň záznamů",
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "To find the cause of an error, detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.\n\nThe logging can be viewed in the Browser Console (Ctrl+Shift+J) and the Web Console (Ctrl+Shift+K).",
+		"message": "Pro zjištění příčiny problému je dobré mít k dispozici podrobný záznam (log). Tento parametr umožňuje nastavit úroveň záznamů.\n\nZáznamy je možné zobrazit pomocí konzole prohlížeče (Ctrl+Shift+J) nebo webové konzole (Ctrl+Shift+K).",
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "none",
+		"message": "nic",
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "chyby",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "varování",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "zprávy",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "poznámky",
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "verbose",
+		"message": "podrobný",
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Export settings",
+		"message": "Export nastavení",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1396,7 +1396,7 @@
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "Kontrola nastavení",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1404,7 +1404,7 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Setting sanitation",
+		"message": "Kontrola nastavení",
 		"description": ""
 	},
 	"inspectWhitelist_label": {
@@ -1412,31 +1412,31 @@
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "Předvolby",
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "Otevře stránku s předvolbami, která byla zobrazena po instalaci. Předvolby nastaví hodnoty tak, aby plnily určitý účel, který po doplňku CanvasBlocker vyžadujete.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Otevřít",
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Inspect",
+		"message": "Zkontrolovat",
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "Uložit",
 		"description": ""
 	},
 	"loadSettings_label": {
-		"message": "Load",
+		"message": "Načíst",
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reset settings",
+		"message": "Obnovit nastavení",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1448,15 +1448,15 @@
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Are you sure you want to reset all settings?",
+		"message": "Opravdu chcete uvést do výchozího stavu všechna nastavení?",
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "Nastavení",
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "Často kladené dotazy",
 		"description": ""
 	},
 	"browserAction_test": {
@@ -1464,31 +1464,31 @@
 		"description": ""
 	},
 	"browserAction_review": {
-		"message": "Review",
+		"message": "Hodnocení",
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Report issue",
+		"message": "Nahlásit problém",
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Setting sanitation",
+		"message": "Kontrola nastavení",
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advice on suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"message": "Tato stránka vám pomůže najít špatné nastavení doplňku CanvasBlocker. Naleznete zde také rady ohledně neoptimálního nastavení. Nedoporučujeme však návrhy slepě provádět.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Nothing to complain.",
+		"message": "Žádné výtky.",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
-		"message": "Unnecessary URL values",
+		"message": "Nepotřebné hodnoty URL",
 		"description": ""
 	},
 	"sanitation_ruleset.disabledFeatures": {
-		"message": "Disabled features",
+		"message": "Vypnuté funkce",
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
@@ -1500,27 +1500,27 @@
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "Výkon",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
-		"message": "Privacy",
+		"message": "Ochrana osobních údajů",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
+		"message": "URL hodnota pro \"{url}\" je stejná jako v případě obecného nastavení pro \"{setting-title}\".",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
-		"message": "remove URL value",
+		"message": "odebrat hodnotu URL",
 		"description": ""
 	},
 	"sanitation_error.disabledFeatures": {
-		"message": "All features of {api} are disabled but the protection is enabled.",
+		"message": "Všechny funkce {api} jsou vypnuté, ale ochrana je zapnutá.",
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
+		"message": "Některé funkce {api} jsou vypnuté. Mělo by se tak dít pouze pro účely testování nebo pokud opravdu víte, co tyto funkce mají za účel.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
@@ -1528,7 +1528,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "povolit funkce",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
@@ -1588,11 +1588,11 @@
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"message": "Nesdílejte trvalá náhodná čísla mezi doménami, prohlížeč se tak stává plně sledovatelným.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
-		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"message": "Nepoužívejte vlastní velikost obrazovky, protože to usnadní sledování prohlížeče.",
 		"description": ""
 	},
 	"whitelist_inspection_title": {
@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "Předvolby",
 		"description": ""
 	},
 	"presets_title": {
@@ -1616,27 +1616,27 @@
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg} Děkuji, že jste nainstalovali CanvasBlocker. Můžete si ho pomocí předvoleb přizpůsobit vašim potřebám. Další úpravy lze provést na stránce {link:nastavení:options.html}, odkud se můžete vrátit i na tuto stránku s předvolbami.",
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Zde jsou připraveny předvolby, které vyhovují různým potřebám. Hodnoty v závorkách udávají současný stav nastavení. Můžete zvolit i více předvoleb, ovšem některá nastavení mohou být následně přepsána později zvolenou předvolbou.",
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "Výchozí nastavení",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "Nejsou použita žádná speciální nastavení.",
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Praktické nastavení",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Změní nastavení tak, aby prohlížení stránek bylo co nejpohodlnější. Zahrnuje to i udělení výjimek některým stránkám.",
 		"description": ""
 	},
 	"preset_stealth_title": {
@@ -1644,15 +1644,15 @@
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "Nastaví CanvasBlocker tak, aby byl těžko zjistitelný. To může vést k většímu zatížení procesoru a může zpomalit prohlížeč.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "Maximální ochrana",
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Maximalizuje ochranu proti odebrání otisku prohlížeče. Toto nastavení rozbije některé stránky, může zpomalit prohlížeč a umožní stránkám zjistit, že je CanvasBlocker aktivní. Při využití této předvolby zvažte i použití předvolby reCAPTCHA.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
