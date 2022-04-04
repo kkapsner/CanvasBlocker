@@ -187,6 +187,14 @@ addResolutionTest("window properties: outer...", function(type){
 	];
 });
 
+addResolutionTest("iframe properties: outer...", function(type){
+	"use strict";
+	
+	return document.getElementById("iframe").contentWindow[
+		"outer" + type.substring(0, 1).toUpperCase() + type.substring(1)
+	];
+});
+
 async function searchValue(tester){
 	"use strict";
 	
