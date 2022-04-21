@@ -1,6 +1,6 @@
 Version 1.9:
 	changes:
-		- 
+		- update setting descriptions
 	
 	new features:
 		- 
