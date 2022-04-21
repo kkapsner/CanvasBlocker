@@ -504,7 +504,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "отсутствут (полностью белый): возвращается полностью белое изображение. При этом должна быть активирована опция \"подделать альфа-канал\". ВНИМАНИЕ: не используйте это с режимом \"подделать для input(ввод)\".\n\nне постоянный: случайные числа будут определяться по-новому для каждого действия фальсификации.\n\nконстантный: в пределах одной веб-страницы цвет всегда будет подделываться под один и тот же.\n\nпостоянный: случайное число будет определено только один раз для каждого домена.",
+		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of non persistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
 		"description": ""
 	},
 	"rng_options.persistent": {
