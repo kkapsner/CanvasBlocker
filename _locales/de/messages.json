@@ -640,7 +640,7 @@
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"vendor\" verwendet. Spezielle Werte:\nLeer lassen, um den Originalwert zu verwenden\n\n{undefined}: gibt undefined zurück (#508)\n\n{false}: gibt den Wahrheitsert falsch zurück (#508)\n\n{empty}: gibt eine leere Zeichenkette zurück(#508)\n\n{disabled}: gibt null zurück (#508)\n\n{random vendor}: gibt einen zufälligen \"vendor\" aus der eingebauten Liste zurück (#493)\n\n{random renderer}: gibt einen zufälligen \"renderer\" aus der eingebauten Liste zurück (#493)\n\n<xxx|yyy|zzz>: wählt zufällig eine der Optionen xxx, yyy oder zzz aus (beliebige Anzahl von Optionen) (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
@@ -648,7 +648,7 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"renderer\" verwendet. Spezielle Werte:\nLeer lassen, um den Originalwert zu verwenden\n\n{undefined}: gibt undefined zurück (#508)\n\n{false}: gibt den Wahrheitsert falsch zurück (#508)\n\n{empty}: gibt eine leere Zeichenkette zurück(#508)\n\n{disabled}: gibt null zurück (#508)\n\n{random vendor}: gibt einen zufälligen \"vendor\" aus der eingebauten Liste zurück (#493)\n\n{random renderer}: gibt einen zufälligen \"renderer\" aus der eingebauten Liste zurück (#493)\n\n<xxx|yyy|zzz>: wählt zufällig eine der Optionen xxx, yyy oder zzz aus (beliebige Anzahl von Optionen) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -656,7 +656,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"unmasked vendor\" verwendet. Spezielle Werte:\nLeer lassen, um den Originalwert zu verwenden\n\n{undefined}: gibt undefined zurück (#508)\n\n{false}: gibt den Wahrheitsert falsch zurück (#508)\n\n{empty}: gibt eine leere Zeichenkette zurück(#508)\n\n{disabled}: gibt null zurück (#508)\n\n{random vendor}: gibt einen zufälligen \"vendor\" aus der eingebauten Liste zurück (#493)\n\n{random renderer}: gibt einen zufälligen \"renderer\" aus der eingebauten Liste zurück (#493)\n\n<xxx|yyy|zzz>: wählt zufällig eine der Optionen xxx, yyy oder zzz aus (beliebige Anzahl von Optionen) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -664,7 +664,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"unmasked renderer\" verwendet. Spezielle Werte:\nLeer lassen, um den Originalwert zu verwenden\n\n{undefined}: gibt undefined zurück (#508)\n\n{false}: gibt den Wahrheitsert falsch zurück (#508)\n\n{empty}: gibt eine leere Zeichenkette zurück(#508)\n\n{disabled}: gibt null zurück (#508)\n\n{random vendor}: gibt einen zufälligen \"vendor\" aus der eingebauten Liste zurück (#493)\n\n{random renderer}: gibt einen zufälligen \"renderer\" aus der eingebauten Liste zurück (#493)\n\n<xxx|yyy|zzz>: wählt zufällig eine der Optionen xxx, yyy oder zzz aus (beliebige Anzahl von Optionen) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
