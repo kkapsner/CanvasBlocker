@@ -504,7 +504,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "rien (entièrement blanc) : une image blanche est renvoyée. L'option \"Feindre le canal alpha\" doit aussi être activée avec cette option. ATTENTION : ne pas utiliser avec le mode \" Falsifier en entrée\".\nnon persistant : les nombres aléatoires seront regénérés à chaque action de falsification.\nconstant : dans une page web une couleur sera toujours falsifiée avec la même couleur.\npersistant : le nombre aléatoire sera généré une seule fois pour chaque domaine.",
+		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of non persistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -640,7 +640,7 @@
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"vendor\". Laissez vide pour utiliser la valeur d'origine.",
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
@@ -648,7 +648,7 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"renderer\". Laissez vide pour utiliser la valeur d'origine.",
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -656,7 +656,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"unmasked vendor\". Laissez vide pour utiliser la valeur d'origine.",
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -664,7 +664,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Valeur à renvoyer dans la fonction webGL \"getParameter\" pour le \"unmasked renderer\". Laissez vide pour utiliser la valeur d'origine.",
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {

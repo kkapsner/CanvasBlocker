@@ -504,7 +504,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "无（全白）：返回一个完全是白色的图像。使用此选项时，也应激活“伪造 alpha 通道”选项。注意：使用“输入时伪造”模式时不应使用此选项。\n非持久化：每个伪造行为都确定新的随机数。\n不变：同一个网页中，一个颜色总被伪造成另一个相同的颜色。\n持久化：对每个域名只确定一次随机数。",
+		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of non persistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -640,7 +640,7 @@
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "在 WebGL 函数 getParameter 当中报告的渲染器的值。留空即为原始值。",
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
@@ -648,7 +648,7 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "在 WebGL 函数 getParameter 当中报告的渲染器的值。留空即为原始值。",
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -656,7 +656,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "在 WebGL 函数 getParameter 当中报告的渲染器的值。留空即为原始值。",
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -664,7 +664,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "在 WebGL 函数 getParameter 当中报告的渲染器的值。留空即为原始值。",
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the build in list (#493)\n\n{random renderer}: returns a random renderer from the build in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {

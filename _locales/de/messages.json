@@ -504,7 +504,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuschen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\n\nnicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt.\n\nkonstant: innerhalb einer Webseite wird eine Farbe immer gleich verändert.\n\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
+		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuschen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\n\nnicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt. Beachten Sie, dass für viele APIs ein Zwischenspeicher verwendet wird, um eine Detektion zu verhindern.\n\nkonstant: Variante von nicht persistent. Wenn die Daten eines Canvas verändert werden, haben gleichfarbige Pixel danach auch die gleiche Farbe.\n\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -640,7 +640,7 @@
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"vendor\" verwendet. Leer lassen, um den Originalwert zu verwenden.",
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"vendor\" verwendet. Spezielle Werte:\nLeer lassen, um den Originalwert zu verwenden\n\n{undefined}: gibt undefined zurück (#508)\n\n{false}: gibt den Wahrheitsert falsch zurück (#508)\n\n{empty}: gibt eine leere Zeichenkette zurück(#508)\n\n{disabled}: gibt null zurück (#508)\n\n{random vendor}: gibt einen zufälligen \"vendor\" aus der eingebauten Liste zurück (#493)\n\n{random renderer}: gibt einen zufälligen \"renderer\" aus der eingebauten Liste zurück (#493)\n\n<xxx|yyy|zzz>: wählt zufällig eine der Optionen xxx, yyy oder zzz aus (beliebige Anzahl von Optionen) (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
@@ -648,7 +648,7 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"renderer\" verwendet. Leer lassen, um den Originalwert zu verwenden.",
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"renderer\" verwendet. Spezielle Werte:\nLeer lassen, um den Originalwert zu verwenden\n\n{undefined}: gibt undefined zurück (#508)\n\n{false}: gibt den Wahrheitsert falsch zurück (#508)\n\n{empty}: gibt eine leere Zeichenkette zurück(#508)\n\n{disabled}: gibt null zurück (#508)\n\n{random vendor}: gibt einen zufälligen \"vendor\" aus der eingebauten Liste zurück (#493)\n\n{random renderer}: gibt einen zufälligen \"renderer\" aus der eingebauten Liste zurück (#493)\n\n<xxx|yyy|zzz>: wählt zufällig eine der Optionen xxx, yyy oder zzz aus (beliebige Anzahl von Optionen) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -656,7 +656,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"unmasked vendor\" verwendet. Leer lassen, um den Originalwert zu verwenden.",
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"unmasked vendor\" verwendet. Spezielle Werte:\nLeer lassen, um den Originalwert zu verwenden\n\n{undefined}: gibt undefined zurück (#508)\n\n{false}: gibt den Wahrheitsert falsch zurück (#508)\n\n{empty}: gibt eine leere Zeichenkette zurück(#508)\n\n{disabled}: gibt null zurück (#508)\n\n{random vendor}: gibt einen zufälligen \"vendor\" aus der eingebauten Liste zurück (#493)\n\n{random renderer}: gibt einen zufälligen \"renderer\" aus der eingebauten Liste zurück (#493)\n\n<xxx|yyy|zzz>: wählt zufällig eine der Optionen xxx, yyy oder zzz aus (beliebige Anzahl von Optionen) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -664,7 +664,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"unmasked renderer\" verwendet. Leer lassen, um den Originalwert zu verwenden.",
+		"message": "Dieser Wert wird in der webGL-Funktion \"getParameter\" für \"unmasked renderer\" verwendet. Spezielle Werte:\nLeer lassen, um den Originalwert zu verwenden\n\n{undefined}: gibt undefined zurück (#508)\n\n{false}: gibt den Wahrheitsert falsch zurück (#508)\n\n{empty}: gibt eine leere Zeichenkette zurück(#508)\n\n{disabled}: gibt null zurück (#508)\n\n{random vendor}: gibt einen zufälligen \"vendor\" aus der eingebauten Liste zurück (#493)\n\n{random renderer}: gibt einen zufälligen \"renderer\" aus der eingebauten Liste zurück (#493)\n\n<xxx|yyy|zzz>: wählt zufällig eine der Optionen xxx, yyy oder zzz aus (beliebige Anzahl von Optionen) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
