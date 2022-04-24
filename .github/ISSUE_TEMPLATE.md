@@ -2,7 +2,7 @@
 
 ## Description
 <!--- Provide a more detailed introduction to the issue itself. -->
-<!--- Why you consider it to be a bug or a usefull change/improvement? -->
+<!--- Why you consider it to be a bug or a useful change/improvement? -->
 
 ## Expected Behavior
 <!--- If you're describing a bug, tell us what should happen. -->
@@ -36,6 +36,8 @@
 * Installed addons:
 
 ## Your Settings
+~~~ json
 <!--- Copy your CanvasBlocker settings here. -->
 <!-- They can be retrieved by checking the expert mode and going to export settings. -->
 <!--- You may consider deleting personal data - especially the "persistentRndStorage". -->
+~~~
