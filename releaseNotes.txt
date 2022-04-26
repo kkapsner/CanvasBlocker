@@ -3,7 +3,7 @@ Version 1.9:
 		- update setting descriptions
 	
 	new features:
-		- 
+		- added support for wildcards (*) in domains
 	
 	fixes:
 		- errors in URL regular expressions broke CB
