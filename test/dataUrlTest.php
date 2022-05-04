@@ -74,7 +74,7 @@
 	<script src="dataUrlTest.js"></script>
 	
 	<div id="log"></div>
-		<form id="form" method="POST" action="http://localhost/server/POST-echo.php">
+		<form id="form" method="POST" action="https://bounce.kkapsner.de/requestDetails.php"">
 			<input name="internalId" value="id to be used to link the requests">
 			<textarea style="display: block;" name="fingerprint"></textarea>
 			<button>submit</button>
