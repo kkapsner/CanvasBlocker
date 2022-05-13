@@ -416,7 +416,7 @@
 		"description": ""
 	},
 	"blockMode_urlSpecific": {
-		"message": "To set individual block modes for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired block mode.",
+		"message": "Chcete-li nastavit jednotlivé módy blokování pro konkrétní webové stránky, klikněte na černou šipku a otevře se vám další nabídka. Kliknutím na \"+\" přidejte doménu nebo URL a vyberte požadovaný režim.",
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
@@ -1160,7 +1160,7 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
-		"message": "To allow this only for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
+		"message": "Povolení pouze pro konkrétní webové stránky provedete kliknutím na černou šipku. Otevře se vám další nabídka. Kliknutím na \"+\" přidejte doménu nebo URL a zaškrtněte.",
 		"description": ""
 	},
 	"protectDOMRect_title": {
