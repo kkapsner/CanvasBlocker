@@ -1216,7 +1216,7 @@
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Chcete-li některé stránky z této ochrany vyloučit, klikněte na černou šipku a zobrazí se vám další nabídka. Doménu nebo URL adresu můžete přidat pomocí \"+\", naopak odebrat ji můžete odškrtnutím.",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
@@ -1408,7 +1408,7 @@
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "Zkontrolovat povolené",
 		"description": ""
 	},
 	"openSettingPresets_title": {
@@ -1580,11 +1580,11 @@
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
-		"message": "Storing notification data may lead to slow performance.",
+		"message": "Ukládání dat oznámení může vést ke snížení výkonu.",
 		"description": ""
 	},
 	"sanitation_error.storeImage": {
-		"message": "Storing the image for inspection has a high RAM footprint.",
+		"message": "Ukládání obrázků pro kontrolu je náročné na paměť RAM.",
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
