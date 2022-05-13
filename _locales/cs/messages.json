@@ -1280,11 +1280,11 @@
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"message": "Pokud je tato hodnota nastavena na \"...x...\", budou dané rozměry použity jako velikost obrazovky.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
-		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"message": "Chcete-li pro určité stránky nastavit konkrétní hodnoty, otevřete nabídku pomocí černé šipky a přidejte doménu nebo URL kliknutím na \"+\".",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
@@ -1444,7 +1444,7 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reset",
+		"message": "Obnovit",
 		"description": ""
 	},
 	"resetSettings_confirm": {
