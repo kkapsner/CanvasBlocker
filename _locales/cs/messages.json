@@ -1604,7 +1604,7 @@
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "Všechna API",
 		"description": ""
 	},
 	"presets": {
@@ -1612,7 +1612,7 @@
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "Předvolby doplňku CanvasBlocker",
 		"description": ""
 	},
 	"presets_installNotice": {
@@ -1640,7 +1640,7 @@
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "Obtížně zjistitelný",
 		"description": ""
 	},
 	"preset_stealth_description": {
@@ -1656,7 +1656,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "Výjimka pro reCAPTCHA",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
