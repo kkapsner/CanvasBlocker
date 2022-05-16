@@ -444,7 +444,7 @@
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "Režim blokování",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
@@ -1492,7 +1492,7 @@
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "Režim blokování",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
@@ -1540,7 +1540,7 @@
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
-		"message": "With blocking mode \"{blockMode}\" the {api} protection is not working.",
+		"message": "V blokovacím režimu \"{blockMode}\" ochrana {api} nefunguje.",
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
