@@ -988,7 +988,7 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs during the current session. To add multiple entries, separate them by commas.",
+		"message": "Domény nebo URL, které mohou používat všechna API během současné relace. Chcete-li přidat více záznamů, oddělte je čárkami.",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
@@ -1560,7 +1560,7 @@
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
-		"message": "Do not use protect \"{protectedCanvasPart}\" in blocking mode \"{blockMode}\".",
+		"message": "Nepoužívejte ochranu \"{protectedCanvasPart}\" v režimu blokování \"{blockMode}\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectInput": {
@@ -1568,15 +1568,15 @@
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
-		"message": "\"{setting}\" should not be lower than {value}.",
+		"message": "\"{setting}\" by nemělo být nižší než {value}.",
 		"description": ""
 	},
 	"sanitation_error.valueTooHigh": {
-		"message": "\"{setting}\" should not be higher than {value}.",
+		"message": "\"{setting}\" by nemělo být vyšší než {value}.",
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
-		"message": "set to {value}",
+		"message": "nastavit na {value}",
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
@@ -1600,7 +1600,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Zobrazit, které ochrany API jsou aktivní na dané stránce. Pokud odstraníte zaškrtnutí některého API, pak nebude na dané stránce chráněno.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
