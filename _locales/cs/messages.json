@@ -752,7 +752,7 @@
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "Faked at input on {url}",
+		"message": "Zkreslený vstup na {url}",
 		"description": ""
 	},
 	"ignoreList_description": {
