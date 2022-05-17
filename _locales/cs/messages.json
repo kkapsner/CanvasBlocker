@@ -228,7 +228,7 @@
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Do you want to allow invisible <canvas> input?",
+		"message": "Chcete povolit zápis v neviditelném <canvas>?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
@@ -240,7 +240,7 @@
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "Do you want to allow <canvas> input?",
+		"message": "Chcete povolit zápis v <canvas>?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
@@ -252,7 +252,7 @@
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Do you want to allow input in the red bordered <canvas>?",
+		"message": "Chcete povolit zápis v červeně ohraničeném <canvas>?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
@@ -264,7 +264,7 @@
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio API input?",
+		"message": "Chcete povolit zápis prostřednictvím API audia?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
@@ -276,7 +276,7 @@
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "Chcete povolit zápis prostřednictvím API historie?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
@@ -288,7 +288,7 @@
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window API input?",
+		"message": "Chcete povolit zápis prostřednictvím API okna?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
@@ -300,7 +300,7 @@
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect API input?",
+		"message": "Chcete povolit zápis prostřednictvím API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
@@ -312,7 +312,7 @@
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "Chcete povolit zápis prostřednictvím API SVG?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
@@ -348,7 +348,7 @@
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "Chcete povolit zápis prostřednictvím API obrazovky?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
@@ -464,7 +464,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "input",
+		"message": "vstup",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
