@@ -476,7 +476,7 @@
 		"description": ""
 	},
 	"urlSettings_title": {
-		"message": "Site specific values",
+		"message": "Hodnoty specifické pro stránku",
 		"description": ""
 	},
 	"urlSettings_description": {
@@ -684,7 +684,7 @@
 		"description": ""
 	},
 	"disableNotifications": {
-		"message": "disable notifications",
+		"message": "vypnout oznámení",
 		"description": ""
 	},
 	"showOptions": {
@@ -1028,11 +1028,11 @@
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Buffer fake rate",
+		"message": "Zkreslená rychlost vyrovnávací paměti",
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "How many of the values per read request shall be faked.",
+		"message": "Kolik hodnot se má zkreslit na jeden požadavek vyčtení.",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
