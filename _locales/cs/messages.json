@@ -472,7 +472,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "vše",
 		"description": ""
 	},
 	"urlSettings_title": {
@@ -792,7 +792,7 @@
 		"description": ""
 	},
 	"inputIgnoreDomain": {
-		"message": "Input domain to add to ignore list:",
+		"message": "Zadejte doménu, která má být přidána na seznam ignorovaných domén:",
 		"description": ""
 	},
 	"inputIgnoreURL": {
@@ -944,7 +944,7 @@
 		"description": ""
 	},
 	"stackList_description": {
-		"message": "JS files which are allowed to use all APIs. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"message": "Soubory JS, které mohou používat všechna API. Vstup musí být ve formátu JSON. Příklad: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
 		"description": ""
 	},
 	"stackList_title": {
@@ -1548,7 +1548,7 @@
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "Do not use white random number generator with \"{blockMode}\" and protecting \"{protectedCanvasPart}\".",
+		"message": "Generátor bílých náhodných čísel se nesmí používat v \"{blockMode}\", pokud je chráněn \"{protectedCanvasPart}\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
