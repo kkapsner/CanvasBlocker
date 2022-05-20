@@ -156,7 +156,7 @@
 		"description": ""
 	},
 	"section_DOMRect-api": {
-		"message": "API DOMRectu",
+		"message": "API DOMRect",
 		"description": ""
 	},
 	"section_SVG-api": {
@@ -296,7 +296,7 @@
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Chcete povolit API DOMRectu?",
+		"message": "Chcete povolit API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
@@ -708,11 +708,11 @@
 		"description": ""
 	},
 	"preBlock": {
-		"message": "API blocked on {url} because CanvasBlocker settings were not loaded in time.",
+		"message": "API blokováno na {url}, protože nastavení doplňku CanvasBlocker nebylo načteno včas.",
 		"description": ""
 	},
 	"blocked": {
-		"message": "API blocked on {url}.",
+		"message": "API blokováno na {url}.",
 		"description": ""
 	},
 	"fakedReadout": {
@@ -1012,15 +1012,15 @@
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Enables the storage of the content of the faked canvas.\nCAUTION: This may lead to a lot of memory consumption.",
+		"message": "Umožňuje ukládání obsahu zkresleného plátna.\nPOZOR: Může to vést k velkému využití paměti.",
 		"description": ""
 	},
 	"protectAudio_title": {
-		"message": "Protect audio API",
+		"message": "Chránit API audia",
 		"description": ""
 	},
 	"protectAudio_description": {
-		"message": "If the audio API shall be protected as well",
+		"message": "Zda by mělo být chráněno také API audia",
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
@@ -1164,7 +1164,7 @@
 		"description": ""
 	},
 	"protectDOMRect_title": {
-		"message": "Protect DOMRect API",
+		"message": "Chránit API DOMRect",
 		"description": ""
 	},
 	"protectDOMRect_description": {
@@ -1264,11 +1264,11 @@
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "Chránit API obrazovky",
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "This protects against fingerprinting attempts including the screen size.",
+		"message": "To chrání před pokusy o odebrání otisku prohlížeče včetně velikosti obrazovky.",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
