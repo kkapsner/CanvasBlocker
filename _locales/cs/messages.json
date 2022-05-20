@@ -668,19 +668,19 @@
 		"description": ""
 	},
 	"useCanvasCache_title": {
-		"message": "Use canvas cache",
+		"message": "Použít mezipaměť pro canvas",
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvases are read several times, but decreases it for big canvases.",
+		"message": "Umožňuje využít mezipaměť pro canvas. Může to zabránit detekci doplňku a zároveň zvýšit jeho rychlost v případě častých čtení malých canvasů. U velkých je rychlost bohužel snížena.",
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
-		"message": "Protected API features",
+		"message": "Chráněné funkce API",
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
+		"message": "Seznam chráněných funkcí API. Pokud není políčko zaškrtnuto, pak tato funkce API není chráněna.",
 		"description": ""
 	},
 	"disableNotifications": {
