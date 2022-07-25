@@ -1496,7 +1496,7 @@
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
-		"message": "Thresholds",
+		"message": "Prahové hodnoty",
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
