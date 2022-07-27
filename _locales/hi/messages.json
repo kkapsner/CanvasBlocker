@@ -16,7 +16,7 @@
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " ({url} के लिए व्हाइटलिस्ट कीये गए API)",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -24,87 +24,87 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "कैनवासब्लॉकर चालू",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "कैनवासब्लॉकर बंद",
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "और",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "कम",
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "कृपया प्रतीक्षा करें...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "सर्च",
 		"description": ""
 	},
 	"ok": {
-		"message": "OK",
+		"message": "ओके",
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "लागू करें",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "रद्द करें",
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "इनपुट",
 		"description": ""
 	},
 	"readout": {
-		"message": "readout",
+		"message": "पढ़ कर सुनाएं",
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "सेटिंग्स",
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "कैनवासब्लॉकर सेटिंग्स",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "इस पेज पर आप कैनवासब्लॉकर की सेटिंग्स को एडजस्ट कर सकते हैं।",
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "कैनवासब्लॉकर इनस्टॉल किया गया। यदि आप भविष्य में इस पेज को पहुँचने में सक्षम होना चाहते हैं, तो कृपया इसे बुकमार्क कर लें।",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "कैनवासब्लॉकर अपडेट किया गया। यदि आप भविष्य में इस पेज तक पहुँचने में सक्षम होना चाहते हैं और इसे अभी तक बुकमार्क नहीं किया है, तो कृपया इसे बुकमार्क करें।",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "अपडेट के बाद फिर से न दिखाएं।",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "आपके पास Privacy.resistFingerprinting इनेबल्ड है। यह कैनवासब्लॉकर के व्यवहार को थोड़ा बदल देता है। अधिक जानकारी देखें {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} और {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "आपने dom.webAudio.enabled डिसेबल्ड कर दिया है। यह आपको अधिक ट्रैक करने योग्य बनाता है क्योंकि बहुत कम लोग ऐसा करते हैं।",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "अलग टैब में खोलें",
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "जनरल",
 		"description": ""
 	},
 	"group_APIs": {
@@ -112,47 +112,47 @@
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "विविध",
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking",
+		"message": "पूछ रहा है",
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "फेकिंग",
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "सूचनाएं",
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "लिस्ट्स",
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "विविध",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "सेटिंग्स",
 		"description": ""
 	},
 	"section_canvas-api": {
-		"message": "Canvas API",
+		"message": "कैनवास API",
 		"description": ""
 	},
 	"section_audio-api": {
-		"message": "Audio API",
+		"message": "ऑडियो API",
 		"description": ""
 	},
 	"section_history-api": {
-		"message": "History API",
+		"message": "हिस्ट्री API",
 		"description": ""
 	},
 	"section_window-api": {
-		"message": "Window API",
+		"message": "विंडो API",
 		"description": ""
 	},
 	"section_DOMRect-api": {
@@ -160,43 +160,43 @@
 		"description": ""
 	},
 	"section_SVG-api": {
-		"message": "SVG API",
+		"message": "एसवीजी API",
 		"description": ""
 	},
 	"section_TextMetrics-api": {
-		"message": "TextMetrics API",
+		"message": "टेक्स्ट मेट्रिक्स API",
 		"description": ""
 	},
 	"section_Navigator-api": {
-		"message": "Navigator API",
+		"message": "नेविगेटर API",
 		"description": ""
 	},
 	"section_Screen-api": {
-		"message": "Screen API",
+		"message": "स्क्रीन API",
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "एक्स्पर्ट मोड",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "अतिरिक्त सेटिंग्स प्रदर्शित करे ।",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "विवरण प्रदर्शित करें",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "सेटिंग्स का विवरण प्रदर्शित करता है।",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "अपडेट पर सत्र बाधित करें",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "अगर सही पर सेट किया जाता है तो अपडेट उपलब्ध होते ही एक्सटेंशन अपडेट हो जाएगा। यह कुछ टैब ब्रेक कर सकता है जो वर्तमान में खुले हैं।",
 		"description": ""
 	},
 	"reloadExtension_title": {
