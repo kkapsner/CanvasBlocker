@@ -1,18 +1,18 @@
 {
 	"addon_title": {
-		"message": "CanvasBlocker",
+		"message": "कैनवासब्लॉकर",
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "फ़िंगरप्रिंटिंग को रोकने के लिए कुछ JS API को बदलता है।",
 		"description": ""
 	},
 	"browserAction_title_default": {
-		"message": "CanvasBlocker",
+		"message": "कैनवासब्लॉकर",
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " सुरक्षा के लिए सफल:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
