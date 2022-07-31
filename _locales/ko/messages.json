@@ -12,11 +12,11 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " 다음에 대한 보호 성공:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " ({url} 에 대해 허용된 API)",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -32,35 +32,35 @@
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "더 보기",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "줄이기",
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "잠시만 기다려 주세요...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "찾기",
 		"description": ""
 	},
 	"ok": {
-		"message": "OK",
+		"message": "확인",
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "적용",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "취소",
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "입력",
 		"description": ""
 	},
 	"readout": {
@@ -68,43 +68,43 @@
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "설정",
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "CanvasBlocker 설정",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "이 페이지에서 CanvasBlocker의 설정을 조정할 수 있습니다.",
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "Canvas Blocker가 설치되었습니다. 나중에 이 페이지에 액세스하려면 즐겨찾기를 하세요.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlocker가 업데이트되었습니다. 언제든 이 페이지에 액세스할 수 있지만 아직 즐겨찾기를 안했다면, 즐겨찾기를 하세요.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "업데이트 후 다시 표시하지 않습니다.",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "\"Privacy.resistFingerprinting가 활성화되어 있습니다. 이것은 CanvasBlocker의 동작을 약간 변경합니다. 자세한 정보 참조 {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} 와{link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "dom.webAudio.enabled가 비활성화되어 있습니다. 이렇게 하는 사람이 매우 적기 때문에 사용자를 더 쉽게 추적할 수 있게 만듭니다.",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "별도의 탭에서 열기",
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "일반 설정",
 		"description": ""
 	},
 	"group_APIs": {
@@ -124,11 +124,11 @@
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "알림",
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "목록",
 		"description": ""
 	},
 	"section_misc": {
@@ -136,7 +136,7 @@
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "설정",
 		"description": ""
 	},
 	"section_canvas-api": {
@@ -176,111 +176,111 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "고급 사용자 모드",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "추가 설정을 표시합니다.",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "설명 표시",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "설정에 대한 설명을 표시합니다.",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "업데이트 시 세션 중단",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "True로 설정하면 업데이트가 가능할 때 바로 확장 프로그램이 업데이트됩니다. 이로 인해 현재 열려 있는 일부 탭이 손상될 수 있습니다.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "확장 프로그램 재시작",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "보류 중인 업데이트를 수행합니다.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "새로고침",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "이 설정을 숨기려면 여기를 클릭하세요.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "숨긴 설정 표시",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "숨겨진 설정을 표시하려면 활성화.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Do you want to allow invisible <canvas>?",
+		"message": "보이지 않는 <canvas> 를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Do you want to allow invisible <canvas> input?",
+		"message": "보이지 않는 <canvas> 입력을 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "Do you want to allow invisible <canvas> readout?",
+		"message": "보이지 않는 <canvas> 읽기를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "<canvas> 를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "Do you want to allow <canvas> input?",
+		"message": "<canvas> 입력을 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Do you want to allow <canvas> readout?",
+		"message": "<canvas> 읽기를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "Do you want to allow the red bordered <canvas>?",
+		"message": "빨간색 테두리가 있는 <canvas> 를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Do you want to allow input in the red bordered <canvas>?",
+		"message": "빨간색 테두리가 있는 <canvas> 입력을 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "Do you want to allow the readout of the red bordered <canvas>?",
+		"message": "빨간색 테두리가 있는 <canvas> 읽기를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "오디오 API를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio API input?",
+		"message": "오디오 API 입력을 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio API readout?",
+		"message": "오디오 API 읽기를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "History API를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "History API 입력을 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "History API 읽기를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForWindowPermission": {
@@ -348,15 +348,15 @@
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "Screen API를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "Screen API 읽기를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "한 번만 묻기",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
@@ -384,11 +384,11 @@
 		"description": ""
 	},
 	"askDenyMode_options.block": {
-		"message": "block",
+		"message": "차단",
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "거짓",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
@@ -408,7 +408,7 @@
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "차단 목록",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -420,11 +420,11 @@
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "모두 허용",
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "허용 목록만 허용",
 		"description": ""
 	},
 	"blockMode_options.ask": {
@@ -432,19 +432,19 @@
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "모두 차단",
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "차단 목록만 차단",
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "거짓",
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "차단 모드",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
@@ -460,11 +460,11 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "없음",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "input",
+		"message": "입력",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
@@ -472,7 +472,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "전체",
 		"description": ""
 	},
 	"urlSettings_title": {
@@ -524,19 +524,19 @@
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "난수 생성기",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Persistent storage",
+		"message": "영구 저장소",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"message": "재시작 후 사용할 영구 난수 생성기의 데이터를 저장합니다.",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "영구 데이터 저장",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
@@ -552,31 +552,31 @@
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "초",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "분",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "시",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "일",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "주",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "월",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "년",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
@@ -588,7 +588,7 @@
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "삭제",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
@@ -684,11 +684,11 @@
 		"description": ""
 	},
 	"disableNotifications": {
-		"message": "disable notifications",
+		"message": "알림 비활성화",
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "디스플레이 설정",
 		"description": ""
 	},
 	"displayCallingStack": {
@@ -760,11 +760,11 @@
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "제외 목록",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "제외된 API",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
@@ -772,7 +772,7 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "로컬 파일",
 		"description": ""
 	},
 	"ignorelistDomain": {
@@ -840,15 +840,15 @@
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the {api}",
+		"message": "{api} 만 허용",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "모든 API 허용",
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "설정",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -892,7 +892,7 @@
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "강조 표시 없음",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
@@ -928,7 +928,7 @@
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "색상 변경",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
@@ -952,7 +952,7 @@
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "허용 목록",
 		"description": ""
 	},
 	"whiteList_description": {
@@ -960,15 +960,15 @@
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "허용 목록",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "whitelist domain",
+		"message": "허용된 도메인",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "whitelist URL",
+		"message": "허용된 URL",
 		"description": ""
 	},
 	"ignorelist": {
@@ -976,7 +976,7 @@
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "whitelist temporarily",
+		"message": "일시적으로 허용",
 		"description": ""
 	},
 	"inspectWhitelist": {
@@ -992,11 +992,11 @@
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "whitelist domain temporarily",
+		"message": "일시적으로 도메인 허용",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "whitelist URL temporarily",
+		"message": "일시적으로 URL 허용",
 		"description": ""
 	},
 	"storeNotificationData_title": {
@@ -1076,23 +1076,23 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "최소",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "낮음",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "중간",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "높음",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "최대",
 		"description": ""
 	},
 	"useAudioCache_title": {
@@ -1228,7 +1228,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "열기",
 		"description": ""
 	},
 	"navigatorSettings_title": {
@@ -1260,7 +1260,7 @@
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "초기화",
 		"description": ""
 	},
 	"protectScreen_title": {
@@ -1276,7 +1276,7 @@
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "화면 크기",
 		"description": ""
 	},
 	"screenSize_description": {
@@ -1300,7 +1300,7 @@
 		"description": ""
 	},
 	"theme_title": {
-		"message": "Theme",
+		"message": "테마",
 		"description": ""
 	},
 	"theme_description": {
@@ -1308,19 +1308,19 @@
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "자동",
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "기본값",
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "밝은 테마",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "어두운 테마",
 		"description": ""
 	},
 	"theme_options.colorful": {
@@ -1368,19 +1368,19 @@
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "오류",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "경고",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "메시지",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "알림",
 		"description": ""
 	},
 	"logLevel_options.100": {
@@ -1388,7 +1388,7 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Export settings",
+		"message": "설정 내보내기",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1408,11 +1408,11 @@
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "허용 목록 검사",
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "프리셋",
 		"description": ""
 	},
 	"openSettingPresets_description": {
@@ -1420,23 +1420,23 @@
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "열기",
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Inspect",
+		"message": "살펴보기",
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "저장",
 		"description": ""
 	},
 	"loadSettings_label": {
-		"message": "Load",
+		"message": "불러오기",
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reset settings",
+		"message": "설정 초기화",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1444,7 +1444,7 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reset",
+		"message": "초기화",
 		"description": ""
 	},
 	"resetSettings_confirm": {
@@ -1452,23 +1452,23 @@
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "설정",
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "자주 묻는 질문(FAQ)",
 		"description": ""
 	},
 	"browserAction_test": {
-		"message": "Test",
+		"message": "테스트",
 		"description": ""
 	},
 	"browserAction_review": {
-		"message": "Review",
+		"message": "리뷰",
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Report issue",
+		"message": "문제 보고",
 		"description": ""
 	},
 	"sanitation_title": {
@@ -1492,7 +1492,7 @@
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "차단 모드",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
@@ -1500,7 +1500,7 @@
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "성능",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
@@ -1528,7 +1528,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "기능 활성화",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
@@ -1604,15 +1604,15 @@
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "모든 API",
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "프리셋",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "CanvasBlocker 프리셋",
 		"description": ""
 	},
 	"presets_installNotice": {
