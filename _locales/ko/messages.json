@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "지문 방지를 위해 일부 JS API를 변경합니다.",
 		"description": ""
 	},
 	"browserAction_title_default": {
