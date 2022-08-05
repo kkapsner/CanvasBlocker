@@ -840,11 +840,11 @@
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the {api}",
+		"message": "Povolit pouze {api}",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "Povolit všechna API",
 		"description": ""
 	},
 	"settings": {
@@ -956,19 +956,19 @@
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs. To add multiple entries, separate them by commas.",
+		"message": "Domény nebo URL, které mohou využívat všechna API. Chcete-li přidat více položek, oddělte je čárkami.",
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "povolit",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "whitelist domain",
+		"message": "povolit doménu",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "whitelist URL",
+		"message": "povolit URL",
 		"description": ""
 	},
 	"ignorelist": {
@@ -980,7 +980,7 @@
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "inspect whitelist",
+		"message": "zobrazit povolené",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -992,11 +992,11 @@
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "whitelist domain temporarily",
+		"message": "dočasně povolit doménu",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "whitelist URL temporarily",
+		"message": "dočasně povolit URL",
 		"description": ""
 	},
 	"storeNotificationData_title": {
