@@ -800,7 +800,7 @@
 		"description": ""
 	},
 	"selectWhitelist": {
-		"message": "Select domain or URL to add to whitelist:",
+		"message": "Vyberte doménu nebo URL, která má být povolena:",
 		"description": ""
 	},
 	"inputWhitelist": {
@@ -808,7 +808,7 @@
 		"description": ""
 	},
 	"inputWhitelistDomain": {
-		"message": "Input domain to add to whitelist:",
+		"message": "Zadejte doménu, která má být povolena:",
 		"description": ""
 	},
 	"inputWhitelistURL": {
@@ -816,7 +816,7 @@
 		"description": ""
 	},
 	"selectSessionWhitelist": {
-		"message": "Select domain or URL to add to the session whitelist:",
+		"message": "Vyberte doménu nebo URL, která má být pro tuto relaci povolena:",
 		"description": ""
 	},
 	"inputSessionWhitelist": {
@@ -824,7 +824,7 @@
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Input domain to add to the session whitelist:",
+		"message": "Zadejte doménu, která má být pro tuto relaci povolena:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
@@ -832,11 +832,11 @@
 		"description": ""
 	},
 	"selectWhitelistScope": {
-		"message": "What is the scope of the whitelisting?",
+		"message": "Co má být povoleno?",
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "O jaký typ povolení se jedná?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
@@ -1148,7 +1148,7 @@
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "Protecting the window API breaks reCAPTCHA. Do you want to allow the window.name API in embedded pages which will make it work again?",
+		"message": "Ochrana API okna rozbije reCAPTCHA. Chcete povolit API window.name ve vložených stránkách, aby toto rozhraní opět fungovalo?",
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
@@ -1156,7 +1156,7 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
-		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"message": "API window.name není v kontextu vložených stránek nijak zvlášť nebezpečné a používá se z opodstatněných důvodů (např. reCAPTCHA). Toto nastavení povoluje tyto využití.",
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
@@ -1168,7 +1168,7 @@
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "This protects against the \"getClientRects()\" fingerprinting and several similar methods.",
+		"message": "Chrání před otiskem typu \"getClientRects()\" a některými dalšími podobnými metodami.",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
@@ -1176,19 +1176,19 @@
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
-		"message": "DOMRect integer factor",
+		"message": "Celočíselný koeficient DOMRectu",
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
-		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"message": "Zlomek pixelu lze ovládat pomocí CSS. Hodnoty DOMRectu, které po vynásobení tímto faktorem dávají celé číslo, se nesmí měnit, aby nedošlo k odhalení.",
 		"description": ""
 	},
 	"protectSVG_title": {
-		"message": "Protect SVG API",
+		"message": "Chránit API SVG",
 		"description": ""
 	},
 	"protectSVG_description": {
-		"message": "This protects against fingerprinting using SVGs.",
+		"message": "Chrání proti otisku využitím SVG.",
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
@@ -1660,7 +1660,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "Ochrana API okna rozbije reCAPTCHA. Tato předvolba umožňuje použití API window.name na vložených stránkách, což ji opět zprovozní.",
 		"description": ""
 	}
 }
