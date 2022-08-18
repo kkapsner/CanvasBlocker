@@ -64,7 +64,7 @@
 		"description": ""
 	},
 	"readout": {
-		"message": "readout",
+		"message": "čtení",
 		"description": ""
 	},
 	"options": {
@@ -284,11 +284,11 @@
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "Chcete povolit window API?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Chcete povolit zápis prostřednictvím API okna?",
+		"message": "Chcete povolit zápis prostřednictvím window API?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
@@ -1136,7 +1136,7 @@
 		"description": ""
 	},
 	"protectWindow_title": {
-		"message": "Protect window API",
+		"message": "Chránit window API",
 		"description": ""
 	},
 	"protectWindow_description": {
@@ -1148,7 +1148,7 @@
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "Ochrana API okna rozbije reCAPTCHA. Chcete povolit API window.name ve vložených stránkách, aby toto rozhraní opět fungovalo?",
+		"message": "Ochrana window API rozbije reCAPTCHA. Chcete povolit API window.name ve vložených stránkách, aby toto rozhraní opět fungovalo?",
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
