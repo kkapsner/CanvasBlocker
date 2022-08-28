@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Altera alguns APIs JS para impedir o fingerprinting.",
+		"message": "Altera algumas APIs JS para impedir fingerprinting.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -96,7 +96,7 @@
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "Sua configuração dom.webAudio.enabled está desativada. Isso lhe torna mais rastreável já que muito poucas pessoas fazem isso.",
 		"description": ""
 	},
 	"openInTab": {
@@ -160,7 +160,7 @@
 		"description": ""
 	},
 	"section_SVG-api": {
-		"message": "SVG API",
+		"message": "API SVG",
 		"description": ""
 	},
 	"section_TextMetrics-api": {
@@ -308,15 +308,15 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "Deseja permitir a API de SVG?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "Deseja permitir a entrada da API de SVG?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "Deseja permitir a leitura da API de SVG?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -504,7 +504,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of non persistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "nenhum (completamente em branco): uma imagem completamente branca é retornada. A opção \"Falsifique o canal alfa\" deve ser ativada juntamente a isso. CUIDADO: Não use isso com o modo \"falsificado na entrada\".\n\nnão persistente: os números aleatórios serão determinados em cada ação de falsificação. Tenha em mente que várias proteções de API têm caches para previnir detecções.\n\nconstante: variação do \"não persistente\". Porém, quando alterando os dados do canvas, pixels de uma mesma cor terão a mesma cor na imagem seguinte.\n\npersistente: os números aleatórios serão determinados apenas uma vez para cada domínio.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -640,7 +640,7 @@
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valor a ser reportado na função webGL \"getParameter\" para o \"vendor\". Valores especiais:\nDeixe em branco para usar o valor original\n\n{undefined}: retorna indefinido (undefined) (#508)\n\n{false}: retorna o valor booleano falso (#508)\n\n{empty}: retorna uma string vazia (#508)\n\n{disabled}: retorna nulo (null) (#508)\n\n{random vendor}: retorna um vendor aleatório de uma lista interna (#493)\n\n{random renderer}: retorna um renderizador aleatório de uma lista interna (#493)\n\n<xxx|yyy|zzz>: escolhe uma das opções xxx, yyy ou zzz aleatoriamente (número arbitrário de opções) (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
@@ -648,7 +648,7 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valor a ser reportado na função webGL \"getParameter\" para o \"renderer\". Valores especiais:\nDeixe em branco para usar o valor original\n\n{undefined}: retorna indefinido (undefined) (#508)\n\n{false}: retorna o valor booleano falso (#508)\n\n{empty}: retorna uma string vazia (#508)\n\n{disabled}: retorna nulo (null) (#508)\n\n{random vendor}: retorna um vendor aleatório de uma lista interna (#493)\n\n{random renderer}: retorna um renderizador aleatório de uma lista interna (#493)\n\n<xxx|yyy|zzz>: escolhe uma das opções xxx, yyy ou zzz aleatoriamente (número arbitrário de opções) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -656,7 +656,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valor a ser reportado na função webGL \"getParameter\" para o \"unmasked vendor\" (vendor sem máscara). Valores especiais:\nDeixe em branco para usar o valor original\n\n{undefined}: retorna indefinido (undefined) (#508)\n\n{false}: retorna o valor booleano falso (#508)\n\n{empty}: retorna uma string vazia (#508)\n\n{disabled}: retorna nulo (null) (#508)\n\n{random vendor}: retorna um vendor aleatório de uma lista interna (#493)\n\n{random renderer}: retorna um renderizador aleatório de uma lista interna (#493)\n\n<xxx|yyy|zzz>: escolhe uma das opções xxx, yyy ou zzz aleatoriamente (número arbitrário de opções) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -664,7 +664,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valor a ser reportado na função webGL \"getParameter\" para o \"unmasked renderer\" (renderer sem máscara). Valores especiais:\nDeixe em branco para usar o valor original\n\n{undefined}: retorna indefinido (undefined) (#508)\n\n{false}: retorna o valor booleano falso (#508)\n\n{empty}: retorna uma string vazia (#508)\n\n{disabled}: retorna nulo (null) (#508)\n\n{random vendor}: retorna um vendor aleatório de uma lista interna (#493)\n\n{random renderer}: retorna um renderizador aleatório de uma lista interna (#493)\n\n<xxx|yyy|zzz>: escolhe uma das opções xxx, yyy ou zzz aleatoriamente (número arbitrário de opções) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -736,7 +736,7 @@
 		"description": ""
 	},
 	"fakedSVGReadout": {
-		"message": "Faked SVG readout on {url}",
+		"message": "Leitura de SVG falsificada em {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -1184,15 +1184,15 @@
 		"description": ""
 	},
 	"protectSVG_title": {
-		"message": "Protect SVG API",
+		"message": "Proteger API de SVG",
 		"description": ""
 	},
 	"protectSVG_description": {
-		"message": "This protects against fingerprinting using SVGs.",
+		"message": "Protege contra fingerprinting usando SVGs.",
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Para excluir sites específicos desta proteção, clique na seta preta para abrir o menu, adicione o domínio ou URL clicando em \"+\" e remova sua seleção.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
