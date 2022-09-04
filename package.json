@@ -11,7 +11,7 @@
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^6.1.1",
     "eslint-plugin-promise": "^4.2.1",
-    "web-ext": "^6.8.0",
+    "web-ext": "^7.2.0",
     "yargs": "^15.4.1"
   },
   "scripts": {},
