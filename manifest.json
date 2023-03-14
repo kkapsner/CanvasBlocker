@@ -98,7 +98,7 @@
 		"privacy"
 	],
 	
-	"applications": {
+	"browser_specific_settings": {
 		"gecko": {
 			"id": "CanvasBlocker@kkapsner.de",
 			"update_url": "https://canvasblocker.kkapsner.de/versions/updates.json",
