@@ -6,7 +6,8 @@
 			"onedrive.live.com": false
 		},
 		"protectWindow": {
-			"paypal.com": false
+			"paypal.com": false,
+			"dhl.de": false
 		}
 	},
 	"stealth": {
