@@ -277,6 +277,7 @@
 			chromeVersion: "71.0.3578.98",
 			edgeVersion: "17.17134",
 			firefoxVersion: undefined,
+			firefoxVersionVR: undefined,
 			operaVersion: undefined,
 			safariVersion: undefined,
 			
@@ -293,6 +294,7 @@
 			chromeVersion: "71.0.3578.98",
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
+			firefoxVersionVR: undefined,
 			operaVersion: "58.0.3135.65",
 			safariVersion: undefined,
 			
@@ -309,6 +311,7 @@
 			chromeVersion: "71.0.3578.98",
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
+			firefoxVersionVR: undefined,
 			operaVersion: undefined,
 			safariVersion: undefined,
 			
@@ -325,6 +328,7 @@
 			chromeVersion: undefined,
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
+			firefoxVersionVR: undefined,
 			operaVersion: undefined,
 			safariVersion: "12.0.3",
 			
@@ -341,6 +345,7 @@
 			chromeVersion: undefined,
 			edgeVersion: undefined,
 			firefoxVersion: "{real Firefox version}",
+			firefoxVersionRV: "{real Firefox version - rv}",
 			operaVersion: undefined,
 			safariVersion: undefined,
 			
@@ -350,7 +355,7 @@
 				return firefoxOscpu[currentProperties.osPreset || ""] || "{original value}";
 			},
 			productSub: "20100101",
-			userAgent: "Mozilla/5.0 ({platformDetails}; rv:{firefoxVersion}) Gecko/20100101 Firefox/{firefoxVersion}",
+			userAgent: "Mozilla/5.0 ({platformDetails}; rv:{firefoxVersionRV}) Gecko/20100101 Firefox/{firefoxVersion}",
 			vendor: undefined,
 		}
 	};

@@ -5,6 +5,7 @@ Version 1.9:
 	
 	new features:
 		- added support for wildcards (*) in domains
+		- added {real Firefox version - rv} to Firefox navigator preset
 	
 	fixes:
 		- errors in URL regular expressions broke CB
