@@ -274,8 +274,8 @@
 	const browserPresets = {
 		Edge: {
 			browserPreset: "Edge",
-			chromeVersion: "71.0.3578.98",
-			edgeVersion: "17.17134",
+			chromeVersion: "111.0.0.0",
+			edgeVersion: "111.0.1661.41",
 			firefoxVersion: undefined,
 			firefoxVersionVR: undefined,
 			operaVersion: undefined,
@@ -291,11 +291,11 @@
 		},
 		Opera: {
 			browserPreset: "Opera",
-			chromeVersion: "71.0.3578.98",
+			chromeVersion: "109.0.0.0",
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
 			firefoxVersionVR: undefined,
-			operaVersion: "58.0.3135.65",
+			operaVersion: "95.0.0.0",
 			safariVersion: undefined,
 			
 			appVersion: "5.0 ({platformDetails}) AppleWebKit/537.36 (KHTML, like Gecko) " +
@@ -308,7 +308,7 @@
 		},
 		Chrome: {
 			browserPreset: "Chrome",
-			chromeVersion: "71.0.3578.98",
+			chromeVersion: "111.0.0.0",
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
 			firefoxVersionVR: undefined,
@@ -330,7 +330,7 @@
 			firefoxVersion: undefined,
 			firefoxVersionVR: undefined,
 			operaVersion: undefined,
-			safariVersion: "12.0.3",
+			safariVersion: "16.3",
 			
 			appVersion: "5.0 ({platformDetails}) AppleWebKit/605.1.15 (KHTML, like Gecko) " +
 				"Version/{safariVersion} Safari/605.1.15",

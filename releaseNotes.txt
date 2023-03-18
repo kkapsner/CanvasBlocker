@@ -2,6 +2,7 @@ Version 1.9:
 	changes:
 		- update setting descriptions
 		- added dhl.de to the convenience preset
+		- updated browser presets
 	
 	new features:
 		- added support for wildcards (*) in domains
