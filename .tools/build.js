@@ -37,12 +37,12 @@ async function run(){
 	const manifest = require(manifestPath);
 	if (args.type === "alpha" || args.type === "rc"){
 		manifest.name = "CanvasBlocker-Beta";
-		manifest.applications.gecko.id = "CanvasBlocker-Beta@kkapsner.de";
+		manifest.browser_specific_settings.gecko.id = "CanvasBlocker-Beta@kkapsner.de";
 	}
 	else {
 		manifest.name = "CanvasBlocker";
-		manifest.applications.gecko.id = "CanvasBlocker@kkapsner.de";
-		delete manifest.applications.gecko.update_url;
+		manifest.browser_specific_settings.gecko.id = "CanvasBlocker@kkapsner.de";
+		delete manifest.browser_specific_settings.gecko.update_url;
 	}
 	if (args.type === "alpha"){
 		manifest.version = getAlphaVersion(manifest);
