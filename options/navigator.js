@@ -277,7 +277,7 @@
 			chromeVersion: "111.0.0.0",
 			edgeVersion: "111.0.1661.41",
 			firefoxVersion: undefined,
-			firefoxVersionVR: undefined,
+			firefoxVersionRV: undefined,
 			operaVersion: undefined,
 			safariVersion: undefined,
 			
@@ -294,7 +294,7 @@
 			chromeVersion: "109.0.0.0",
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
-			firefoxVersionVR: undefined,
+			firefoxVersionRV: undefined,
 			operaVersion: "95.0.0.0",
 			safariVersion: undefined,
 			
@@ -311,7 +311,7 @@
 			chromeVersion: "111.0.0.0",
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
-			firefoxVersionVR: undefined,
+			firefoxVersionRV: undefined,
 			operaVersion: undefined,
 			safariVersion: undefined,
 			
@@ -328,7 +328,7 @@
 			chromeVersion: undefined,
 			edgeVersion: undefined,
 			firefoxVersion: undefined,
-			firefoxVersionVR: undefined,
+			firefoxVersionRV: undefined,
 			operaVersion: undefined,
 			safariVersion: "16.3",
 			
