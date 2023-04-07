@@ -13,7 +13,7 @@
 	logging.message("Opened browser action");
 	
 	
-	browser.tabs.query({active: true}).then(async function([currentTab]){
+	browser.tabs.query({active: true, currentWindow: true}).then(async function([currentTab]){
 		function isWhitelisted(url){
 			if (!(url instanceof URL)){
 				url = new URL(url);
