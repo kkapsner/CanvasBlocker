@@ -4,11 +4,11 @@
 <!--- Provide a more detailed introduction to the issue itself. -->
 <!--- Why you consider it to be a bug or a useful change/improvement? -->
 
-## Expected Behavior
+## Expected Behaviour
 <!--- If you're describing a bug, tell us what should happen. -->
 <!--- If you're suggesting a change/improvement, tell us how it should work. -->
 
-## Current Behavior
+## Current Behaviour
 <!--- If describing a bug, tell us what happens instead of the expected behavior. -->
 <!--- If suggesting a change/improvement, explain the difference from current behavior. -->
 
@@ -18,10 +18,10 @@
 
 ## Steps to Reproduce (for bugs)
 <!--- Provide a link to a live example, or an unambiguous set of steps to reproduce this bug. -->
-1.
-2.
-3.
-4.
+1. create a fresh Firefox profile
+2. 
+3. 
+4. 
 
 ## Context
 <!--- How has this issue affected you? What are you trying to accomplish? -->

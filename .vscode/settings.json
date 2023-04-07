@@ -78,5 +78,6 @@
 		"php",
 		"html"
 	],
-	"eslint.lintTask.enable": true
+	"eslint.lintTask.enable": true,
+	"cSpell.enabled": true
 }
