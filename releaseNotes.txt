@@ -11,6 +11,7 @@ Version 1.9:
 	fixes:
 		- errors in URL regular expressions broke CB
 		- use correct tab in browserAction (private browsing)
+		- respect RFP in offscreenToBlobCallback
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
