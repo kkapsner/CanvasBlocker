@@ -3,6 +3,7 @@ Version 1.9:
 		- update setting descriptions
 		- added dhl.de to the convenience preset
 		- updated browser presets
+		- screen API: use inner of top window for all outer computations
 	
 	new features:
 		- added support for wildcards (*) in domains
