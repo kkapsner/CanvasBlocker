@@ -15,6 +15,7 @@ Version 1.9:
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
+		- canvas and navigator APIs in workers are not protected
 
 Version 1.8:
 	new features:
