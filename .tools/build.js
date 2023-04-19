@@ -14,10 +14,10 @@ const args = yargs
 
 const fs = require("fs");
 
-function getAlphaVersion(manifest){
+function getAlphaVersion(manifest, useTime){
 	"use strict";
 	const now = new Date();
-	const date = now.toISOString().substring(0, 10).replace(/-/g, "");
+	const date = now.toISOString().substring(0, useTime? 13: 10).replace(/-/g, "").replace("T", ".");
 	return manifest.version.replace(/^([\d.]+).*$/, "$1Alpha" + date);
 }
 function getRCVersion(manifest){
