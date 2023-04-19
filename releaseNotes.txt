@@ -6,7 +6,7 @@ Version 1.10:
 		- 
 	
 	fixes:
-		- 
+		- always protect about:blank
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

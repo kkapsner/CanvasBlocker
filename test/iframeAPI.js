@@ -86,9 +86,28 @@ const iframeAPI = function(){
 			}
 		},
 		{
-			name: "window.open",
+			name: "removed iframe",
 			prepare: async function openWindow(){
-				const newWindow = window.open("/");
+				const iframe = document.createElement("iframe");
+				document.body.appendChild(iframe);
+				const iframeWindow = iframe.contentWindow;
+				document.body.removeChild(iframe);
+				console.log("window of iframe directly after removing", iframeWindow);
+				return new Promise(function(resolve){
+					window.setTimeout(function(){
+						console.log("window of iframe in timeout", iframeWindow);
+						resolve(iframeWindow);
+					}, 1000);
+				});
+			}
+		},
+	];
+	
+	["/", "about:blank", "about:blank#"].forEach(function(url){
+		methods.push({
+			name: "window.open " + url,
+			prepare: async function openWindow(){
+				const newWindow = window.open(url);
 				if (newWindow){
 					return {
 						window: newWindow,
@@ -106,11 +125,12 @@ const iframeAPI = function(){
 					});
 				}
 			}
-		}
-	];
+		});
+	});
 	
 	function getPerformer(callback){
 		return async function perform(method){
+			console.log("run iframe method", method.name);
 			const api = await method.prepare();
 			callback(api.window, method.name);
 			api.cleanup();
