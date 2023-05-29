@@ -9,6 +9,7 @@ Version 1.10:
 		- always protect about:blank
 		- persistent rng not working in Firefox for Android
 		- mobile default settings were not used in Firefox for Android
+		- settings export page did not show whole content in Firefox for Android
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

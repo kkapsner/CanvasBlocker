@@ -6,7 +6,7 @@ html, body {
 #settings {
 	width: 100%;
 	box-sizing: border-box;
-	height: 95%;
+	height: 100%;
 }
 #settings.invalid {
 	background-color: var(--input-error-background-color);
