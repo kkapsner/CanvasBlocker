@@ -10,6 +10,7 @@ Version 1.10:
 		- persistent rng not working in Firefox for Android
 		- mobile default settings were not used in Firefox for Android
 		- settings export page did not show whole content in Firefox for Android
+		- new tabs opened from within the extension did not open properly in Firefox for Android
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

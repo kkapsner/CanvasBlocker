@@ -253,6 +253,14 @@
 				{
 					"version": "1.10Alpha20230419",
 					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.10Alpha20230419.xpi"
+				},
+				{
+					"version": "1.10Alpha20230529",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.10Alpha20230529.xpi"
+				},
+				{
+					"version": "1.10Alpha20230530",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.10Alpha20230530.xpi"
 				}
 			]
 		}

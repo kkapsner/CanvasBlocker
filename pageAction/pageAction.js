@@ -30,7 +30,7 @@
 							browser.runtime.openOptionsPage();
 						}
 						else {
-							window.open(extension.getURL("options/options.html"), "_blank");
+							browser.tabs.create({url: extension.getURL("options/options.html")});
 						}
 					}
 				},
@@ -152,15 +152,12 @@
 			name: "inspectWhitelist",
 			isIcon: true,
 			callback: function({domain, urls}){
-				window.open(
-					extension.getURL(
-						"options/whitelist.html?domain=" +
-						encodeURIComponent(domain) +
-						"&urls=" +
-						encodeURIComponent(JSON.stringify(Array.from(urls.values())))
-					),
-					"_blank"
-				);
+				browser.tabs.create({url: extension.getURL(
+					"options/whitelist.html?domain=" +
+					encodeURIComponent(domain) +
+					"&urls=" +
+					encodeURIComponent(JSON.stringify(Array.from(urls.values())))
+				)});
 			}
 		}
 	];

@@ -69,7 +69,7 @@
 					browser.runtime.openOptionsPage();
 				}
 				else {
-					window.open(extension.getURL("options/options.html"), "_blank");
+					browser.tabs.create({url: extension.getURL("options/options.html")});
 				}
 				window.close();
 			}
@@ -78,7 +78,7 @@
 			label: "faq",
 			icon: extension.getURL("icons/browserAction-faq.svg"),
 			action: function(){
-				window.open("https://canvasblocker.kkapsner.de/faq/", "_blank");
+				browser.tabs.create({url: "https://canvasblocker.kkapsner.de/faq/"});
 				window.close();
 			}
 		},
@@ -87,7 +87,7 @@
 			advanced: true,
 			icon: extension.getURL("icons/browserAction-test.svg"),
 			action: function(){
-				window.open("https://canvasblocker.kkapsner.de/test", "_blank");
+				browser.tabs.create({url: "https://canvasblocker.kkapsner.de/test"});
 				window.close();
 			}
 		},
@@ -95,7 +95,7 @@
 			label: "review",
 			icon: extension.getURL("icons/browserAction-review.svg"),
 			action: function(){
-				window.open("https://addons.mozilla.org/firefox/addon/canvasblocker/reviews/", "_blank");
+				browser.tabs.create({url: "https://addons.mozilla.org/firefox/addon/canvasblocker/reviews/"});
 				window.close();
 			}
 		},
@@ -103,7 +103,7 @@
 			label: "reportIssue",
 			icon: extension.getURL("icons/browserAction-reportIssue.svg"),
 			action: function(){
-				window.open("https://github.com/kkapsner/CanvasBlocker/issues", "_blank");
+				browser.tabs.create({url: "https://github.com/kkapsner/CanvasBlocker/issues"});
 				window.close();
 			}
 		},
@@ -149,11 +149,11 @@
 		
 		search.addEventListener("keypress", function(event){
 			if ([10, 13].indexOf(event.keyCode) !== -1){
-				window.open(extension.getURL(
+				browser.tabs.create({url: extension.getURL(
 					"options/options.html" +
 					"?search=" +
 					encodeURIComponent(this.value)
-				));
+				)});
 				window.close();
 			}
 		});

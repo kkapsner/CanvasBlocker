@@ -25,11 +25,11 @@
 		},
 		openNavigatorSettings: function(){
 			logging.verbose("open navigator settings");
-			window.open("navigator.html", "_blank");
+			browser.tabs.create({url: "navigator.html"});
 		},
 		showReleaseNotes: function(){
 			logging.verbose("open release notes");
-			window.open("../releaseNotes.txt", "_blank");
+			browser.tabs.create({url: extension.getURL("../releaseNotes.txt")});
 		},
 		clearPersistentRnd: function(){
 			logging.message("clear persistent rnd storage");
@@ -53,15 +53,15 @@
 		},
 		inspectSettings: function(){
 			logging.verbose("open settings inspection");
-			window.open("export.html", "_blank");
+			browser.tabs.create({url: "export.html"});
 		},
 		openSettingSanitation: function(){
 			logging.verbose("open settings sanitation");
-			window.open("sanitize.html", "_blank");
+			browser.tabs.create({url: "sanitize.html"});
 		},
 		openSettingPresets: function(){
 			logging.verbose("open setting presets");
-			window.open("presets.html", "_blank");
+			browser.tabs.create({url: "presets.html"});
 		},
 		saveSettings: function(){
 			logging.verbose("save settings");
@@ -92,7 +92,7 @@
 		},
 		inspectWhitelist: function(){
 			logging.verbose("open whitelist inspection");
-			window.open("whitelist.html", "_blank");
+			browser.tabs.create({url: "whitelist.html"});
 		},
 		loadSettings: async function(){
 			logging.verbose("load settings");
