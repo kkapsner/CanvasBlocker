@@ -1,6 +1,6 @@
 Version 1.10:
 	changes:
-		- 
+		- added eBay and facebook.com to the convenience preset
 	
 	new features:
 		- added setting showPresetsOnInstallation to be able to not show the presets page upon installation

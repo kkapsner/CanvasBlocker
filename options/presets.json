@@ -3,7 +3,9 @@
 		"maxFakeSize": 1000000,
 		"protectDOMRect": {
 			"mail.google.com": false,
-			"onedrive.live.com": false
+			"onedrive.live.com": false,
+			"^https://[^/]*ebay\\.([a-z]+|com\\.(au|hk|my|sg)|co\\.uk)(/|$)": false,
+			"facebook.com": false
 		},
 		"protectWindow": {
 			"paypal.com": false,
