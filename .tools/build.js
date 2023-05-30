@@ -69,6 +69,8 @@ async function run(){
 		"--ignore-files",
 		"versions",
 		"--ignore-files",
+		"crowdin.yml",
+		"--ignore-files",
 		"package*"
 	];
 	const child = child_process.spawn("web-ext", childArgs, {stdio: "inherit"});

@@ -154,6 +154,8 @@
 				"--ignore-files",
 				"versions",
 				"--ignore-files",
+				"crowdin.yml",
+				"--ignore-files",
 				"package*"
 			],
 			"presentation": {
