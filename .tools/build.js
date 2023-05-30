@@ -16,8 +16,13 @@ const fs = require("fs");
 
 function getAlphaVersion(manifest, useTime){
 	"use strict";
+	function f(n){
+		if (n < 10) return "0" + n.toString(10);
+		return n.toString(10);
+	}
 	const now = new Date();
-	const date = now.toISOString().substring(0, useTime? 13: 10).replace(/-/g, "").replace("T", ".");
+	// const date = now.toISOString().substring(0, useTime? 13: 10).replace(/-/g, "").replace("T", ".");
+	const date = `${now.getFullYear()}${f(now.getMonth() + 1)}${f(now.getDate())}${useTime? "." + f(now.getHours): ""}`;
 	return manifest.version.replace(/^([\d.]+).*$/, "$1Alpha" + date);
 }
 function getRCVersion(manifest){
