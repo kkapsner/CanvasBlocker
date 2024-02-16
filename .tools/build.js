@@ -14,16 +14,32 @@ const args = yargs
 
 const fs = require("fs");
 
-function getAlphaVersion(manifest, useTime){
+const versionsPath = path.join(__dirname, "..", "versions");
+
+function getXPIFileName(id, version){
+	"use strict";
+	return `${id}-${version}.xpi`;
+}
+
+async function getAlphaVersion(manifest){
 	"use strict";
 	function f(n){
 		if (n < 10) return "0" + n.toString(10);
 		return n.toString(10);
 	}
 	const now = new Date();
-	// const date = now.toISOString().substring(0, useTime? 13: 10).replace(/-/g, "").replace("T", ".");
-	const date = `${now.getFullYear()}${f(now.getMonth() + 1)}${f(now.getDate())}${useTime? "." + f(now.getHours): ""}`;
-	return manifest.version.replace(/^([\d.]+).*$/, "$1Alpha" + date);
+	const date = `${now.getFullYear()}${f(now.getMonth() + 1)}${f(now.getDate())}`;
+	const baseVersion = `${manifest.version}.${date}`;
+	if (!fs.existsSync(path.join(versionsPath, getXPIFileName("canvasblocker_beta", baseVersion)))){
+		return baseVersion;
+	}
+	
+	let dayTry = 1;
+	while (fs.existsSync(path.join(versionsPath, getXPIFileName("canvasblocker_beta", `${baseVersion}.${dayTry}`)))){
+		dayTry += 1;
+	}
+	
+	return `${baseVersion}.${dayTry}`;
 }
 function getRCVersion(manifest){
 	"use strict";
@@ -42,15 +58,21 @@ async function run(){
 	const manifest = require(manifestPath);
 	if (args.type === "alpha" || args.type === "rc"){
 		manifest.name = "CanvasBlocker-Beta";
-		manifest.browser_specific_settings.gecko.id = "CanvasBlocker-Beta@kkapsner.de";
+		["gecko", "gecko_android"].forEach(function(browserType){
+			if (!manifest.browser_specific_settings[browserType]) return;
+			manifest.browser_specific_settings[browserType].id = "CanvasBlocker-Beta@kkapsner.de";
+		});
 	}
 	else {
 		manifest.name = "CanvasBlocker";
-		manifest.browser_specific_settings.gecko.id = "CanvasBlocker@kkapsner.de";
-		delete manifest.browser_specific_settings.gecko.update_url;
+		["gecko", "gecko_android"].forEach(function(browserType){
+			if (!manifest.browser_specific_settings[browserType]) return;
+			manifest.browser_specific_settings[browserType].id = "CanvasBlocker@kkapsner.de";
+			delete manifest.browser_specific_settings[browserType].update_url;
+		});
 	}
 	if (args.type === "alpha"){
-		manifest.version = getAlphaVersion(manifest);
+		manifest.version = await getAlphaVersion(manifest);
 	}
 	else if (args.type === "rc"){
 		manifest.version = getRCVersion(manifest);
