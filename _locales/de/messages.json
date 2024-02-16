@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Verändert einige JS-APIs um Fingerprinting zu verhindern.",
+		"message": "Verändert einige JS-APIs, um Fingerprinting zu verhindern.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -72,7 +72,7 @@
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker Einstellungen",
+		"message": "CanvasBlocker-Einstellungen",
 		"description": ""
 	},
 	"optionsIntroduction": {
@@ -112,7 +112,7 @@
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Vermischtes",
+		"message": "Sonstiges",
 		"description": ""
 	},
 	"section_asking": {
@@ -132,7 +132,7 @@
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Vermischtes",
+		"message": "Sonstiges",
 		"description": ""
 	},
 	"section_settings": {
