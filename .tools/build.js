@@ -21,6 +21,23 @@ function getXPIFileName(id, version){
 	return `${id}-${version}.xpi`;
 }
 
+async function addAlphaVersionToUpdatesJSON(version){
+	"use strict";
+	const updatesPath = path.join(versionsPath, "updates.json");
+	const data = JSON.parse(await fs.promises.readFile(updatesPath));
+	const versions = data.addons["CanvasBlocker-Beta@kkapsner.de"].updates;
+	if (versions.some(function(entry){
+		return entry.version === version;
+	})){
+		return;
+	}
+	versions.push({
+		version,
+		update_link: `https://canvasblocker.kkapsner.de/versions/${getXPIFileName("canvasblocker_beta", version)}`
+	});
+	await fs.promises.writeFile(updatesPath, JSON.stringify(data, undefined, "\t"));
+}
+
 async function getAlphaVersion(manifest){
 	"use strict";
 	function f(n){
@@ -73,6 +90,7 @@ async function run(){
 	}
 	if (args.type === "alpha"){
 		manifest.version = await getAlphaVersion(manifest);
+		addAlphaVersionToUpdatesJSON(manifest.version);
 	}
 	else if (args.type === "rc"){
 		manifest.version = getRCVersion(manifest);
