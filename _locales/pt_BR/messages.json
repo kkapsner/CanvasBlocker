@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Altera algumas APIs JS para impedir fingerprinting.",
+		"message": "Altera algumas APIs JS para impedir impressões digitais.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -88,15 +88,15 @@
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Não mostrar novamente após a atualização.",
+		"message": "Não mostrar novamente após atualizações.",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "Você tem privacy.resistFingerprinting ativo. Isso muda ligeiramente o comportamento do CanvasBlocker. Veja mais informações {link:aqui:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:aqui:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "Você tem privacy.resistFingerprinting ativado. Isso muda ligeiramente o comportamento do CanvasBlocker. Veja mais informações {link:aqui:https://github.com/kkapsner/CanvasBlocker/issues/158} e {link:aqui:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "Sua configuração dom.webAudio.enabled está desativada. Isso lhe torna mais rastreável já que muito poucas pessoas fazem isso.",
+		"message": "Você tem dom.webAudio.enabled desativado. Isso lhe torna mais rastreável já que muito poucas pessoas fazem isso.",
 		"description": ""
 	},
 	"openInTab": {
@@ -156,7 +156,7 @@
 		"description": ""
 	},
 	"section_DOMRect-api": {
-		"message": "DOMRect API",
+		"message": "API DOMRect",
 		"description": ""
 	},
 	"section_SVG-api": {
@@ -164,7 +164,7 @@
 		"description": ""
 	},
 	"section_TextMetrics-api": {
-		"message": "TextMetrics API",
+		"message": "API TextMetrics",
 		"description": ""
 	},
 	"section_Navigator-api": {
@@ -176,7 +176,7 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Modo Expert",
+		"message": "Modo especialista",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
@@ -192,11 +192,11 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Interromper sessão na atualização",
+		"message": "Interromper sessão ao atualizar",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "Se for definido como verdadeiro, a extensão atualizará o mais cedo o possível quando uma atualização estiver disponível. Isso pode quebrar algumas abas que podem estar abertas.",
+		"message": "Se definido como verdadeiro, a extensão será atualizada assim que a atualização estiver disponível. Isso pode quebrar algumas abas que podem estar abertas.",
 		"description": ""
 	},
 	"reloadExtension_title": {
@@ -212,7 +212,7 @@
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Clique aqui para ocultar a configuração.",
+		"message": "Clique aqui para ocultar esta configuração.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
@@ -232,7 +232,7 @@
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "Você quer permitir leitura <canvas> invisível?",
+		"message": "Você quer permitir leitura invisível de <canvas>?",
 		"description": ""
 	},
 	"askForPermission": {
@@ -244,7 +244,7 @@
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Deseja permitir a leitura do <canvas>?",
+		"message": "Deseja permitir a leitura de <canvas>?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
@@ -252,11 +252,11 @@
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Deseja permitir entrada nas <canvas> com borda vermelha?",
+		"message": "Deseja permitir a entrada do <canvas> com borda vermelha?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "Deseja permitir a leitura das <canvas> com borda vermelha?",
+		"message": "Deseja permitir a leitura do <canvas> com borda vermelha?",
 		"description": ""
 	},
 	"askForAudioPermission": {
@@ -276,63 +276,63 @@
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Deseja permitir a entrada do histórico da API?",
+		"message": "Deseja permitir a entrada da API de histórico?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Deseja permitir leitura do histórico da API?",
+		"message": "Deseja permitir a leitura da API de histórico?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Você deseja permitir a API da janela?",
+		"message": "Deseja permitir a API de janela?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Você deseja permitir a entrada da API da janela?",
+		"message": "Deseja permitir a entrada da API de janela?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Deseja permitir a leitura da API da janela?",
+		"message": "Deseja permitir a leitura da API de janela?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Você deseja permitir a API DOMRect?",
+		"message": "Deseja permitir a API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Você deseja permitir a entrada da API DOMRect?",
+		"message": "Deseja permitir a entrada da API DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Deseja permitir leitura da API DOMRect?",
+		"message": "Deseja permitir a leitura da API DOMRect?",
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Deseja permitir a API de SVG?",
+		"message": "Deseja permitir a API SVG?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Deseja permitir a entrada da API de SVG?",
+		"message": "Deseja permitir a entrada da API SVG?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Deseja permitir a leitura da API de SVG?",
+		"message": "Deseja permitir a leitura da API SVG?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Deseja permitir a API de Métricas de Texto?",
+		"message": "Deseja permitir a API TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Deseja permitir a entrada da API de Métricas de Texto?",
+		"message": "Deseja permitir a entrada da API TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Deseja permitir leitura da API de Métricas de Texto?",
+		"message": "Deseja permitir leitura da API TextMetrics?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Deseja permitir a API de navegador?",
+		"message": "Deseja permitir a API do navegador?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
@@ -340,7 +340,7 @@
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Deseja permitir leitura da API do navegador?",
+		"message": "Deseja permitir a leitura da API do navegador?",
 		"description": ""
 	},
 	"askForScreenPermission": {
@@ -352,7 +352,7 @@
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Deseja permitir leitura da API de tela?",
+		"message": "Deseja permitir a leitura da API de tela?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
