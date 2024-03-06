@@ -238,6 +238,7 @@
 			windowManager: "Windows",
 			platform: "Win32",
 			platformDetails: "Windows NT 10.0; Win64; x64",
+			webdriver: false,
 			oscpu: function(currentProperties){
 				if (currentProperties.browserPreset === "Firefox"){
 					return firefoxOscpu.Windows;
@@ -250,6 +251,7 @@
 			windowManager: "X11",
 			platform: "Linux x86_64",
 			platformDetails: "X11; Linux x86_64",
+			webdriver: false,
 			oscpu: function(currentProperties){
 				if (currentProperties.browserPreset === "Firefox"){
 					return firefoxOscpu.Linux;
@@ -262,6 +264,7 @@
 			windowManager: "Macintosh",
 			platform: "MacIntel",
 			platformDetails: "Macintosh; Intel Mac OS X 10.14.3",
+			webdriver: false,
 			oscpu: function(currentProperties){
 				if (currentProperties.browserPreset === "Firefox"){
 					return firefoxOscpu["Mac OS X"];
