@@ -27,7 +27,7 @@ async function addAlphaVersionToUpdatesJSON(version){
 	const data = JSON.parse(await fs.promises.readFile(updatesPath));
 	const versions = data.addons["CanvasBlocker-Beta@kkapsner.de"].updates;
 	if (versions.some(function(entry){
-		entry.version === version;
+		return entry.version === version;
 	})){
 		return;
 	}
