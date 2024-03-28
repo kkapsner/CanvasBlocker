@@ -164,4 +164,8 @@
 			}
 		});
 	});
+	
+	window.addEventListener("load", async function(){
+		extension.displayVersion("version", 250);
+	});
 }());

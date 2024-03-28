@@ -4,6 +4,7 @@ Version 1.10:
 	
 	new features:
 		- added setting showPresetsOnInstallation to be able to not show the presets page upon installation
+		- display version in page and browser action
 	
 	fixes:
 		- always protect about:blank
@@ -14,6 +15,7 @@ Version 1.10:
 		- settings reset confirmation dialog was not properly visible in Firefox for Android
 		- reload after changing the whitelist state in the browser action has to be done without cache
 		- data URL blocking was not affected by when changing the whitelist state in the browser action
+		- prevent unnecessary scroll bars in popups
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

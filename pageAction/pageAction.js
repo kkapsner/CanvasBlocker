@@ -9,6 +9,10 @@
 	const {parseErrorStack} = require("../lib/callingStack");
 	const logging = require("../lib/logging");
 	logging.setPrefix("page action script");
+	
+	window.addEventListener("load", async function(){
+		extension.displayVersion("version", 250);
+	});
 
 	const domainNotification = require("./domainNotification");
 	const Notification = require("./Notification");

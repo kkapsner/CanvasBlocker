@@ -107,3 +107,11 @@ input[type=checkbox]:checked::before {
 	cursor: initial;
 	background-color: var(--input-background-color);
 }
+
+.versionDisplay {
+	text-align: right;
+	font-size: 0.6em;
+	opacity: 0.5;
+	margin: 0.3em 0.5em 0.2em;
+	clear: both;
+}
