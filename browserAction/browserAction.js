@@ -36,6 +36,9 @@
 				if (settings.get("blockMode").startsWith("allow")){
 					settings.set("blockMode", "fake", currentURL.host);
 				}
+				if (settings.get("blockDataURLs")){
+					settingContainers.resetUrlValue("blockDataURLs", currentURL);
+				}
 				const entries = lists.get("white").filter(e => e.match(currentURL)).map(e => e.value);
 				await Promise.all([
 					lists.removeFrom("white", entries),
@@ -44,6 +47,9 @@
 			}
 			else {
 				settings.set("blockMode", "allowEverything", currentURL.hostname);
+				if (settings.get("blockDataURLs")){
+					settings.set("blockDataURLs", false, currentURL.hostname);
+				}
 			}
 			update();
 		});
