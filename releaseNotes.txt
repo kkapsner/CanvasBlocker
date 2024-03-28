@@ -12,6 +12,7 @@ Version 1.10:
 		- settings export page did not show whole content in Firefox for Android
 		- new tabs opened from within the extension did not open properly in Firefox for Android
 		- settings reset confirmation dialog was not properly visible in Firefox for Android
+		- reload after changing the whitelist state in the browser action has to be done without cache
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear

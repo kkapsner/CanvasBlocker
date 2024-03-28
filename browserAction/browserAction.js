@@ -25,7 +25,7 @@
 		const currentURL = new URL(currentTab.url);
 		const reloadButton = document.getElementById("reload");
 		reloadButton.addEventListener("click", async function(){
-			await browser.tabs.reload(currentTab.id);
+			await browser.tabs.reload(currentTab.id, {bypassCache: true});
 			window.close();
 		});
 		const addonStatus = document.getElementById("addonStatus");
