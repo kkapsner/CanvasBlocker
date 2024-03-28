@@ -5,6 +5,7 @@ Version 1.10:
 	new features:
 		- added setting showPresetsOnInstallation to be able to not show the presets page upon installation
 		- display version in page and browser action
+		- added protection for navigator.storage.estimate()
 	
 	fixes:
 		- always protect about:blank
