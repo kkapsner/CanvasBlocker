@@ -24,11 +24,11 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker ligado",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker desligado",
 		"description": ""
 	},
 	"more": {
@@ -96,7 +96,7 @@
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "Tem o dom.webAudio.enabled desligado. Isto torna-o mais rastreável já que poucas pessoas o fazem.",
 		"description": ""
 	},
 	"openInTab": {
@@ -192,23 +192,23 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Interromper sessão ao atualizar",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Se definido para verdadeiro, a extensão irá atualizar mal a atualização estiver disponível. Isto pode quebrar algumas janelas que estão abertas de momento.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Recarregar extensão",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Executar uma atualização pendente.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Recarregar",
 		"description": ""
 	},
 	"hideSetting": {
@@ -308,7 +308,7 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "Quer permitir o SVG API?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {

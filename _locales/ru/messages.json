@@ -308,15 +308,15 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "Разрешить SVG API?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "Вы хотите разрешить SVG API input(ввод)?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "Разрешить SVG API readout(считывание)?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -504,7 +504,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnon persistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of non persistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "нет (белый цвет): возвращается полностью белое изображение. Должна быть включена опция \"подделывать альфа-канал\". ВНИМАНИЕ: Не используйте вместе с режимом \"подделка ввода(input)\".\n\nнепостоянный: для каждой подделки случайные числа будут генерироваться заново. Имейте ввиду, что большинство функций защиты API хранят кэш для предотвращения обнаружения.\n\nконстантный: вариация непостоянного. Только при изменении данных в <canvas> сохраняется цвет изменённых пикселей и доступен в дальнейшем.\n\nпостоянный: для каждого домена случайное число генерируется единожды.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -736,7 +736,7 @@
 		"description": ""
 	},
 	"fakedSVGReadout": {
-		"message": "Faked SVG readout on {url}",
+		"message": "Подделан SVG readout(чтение) на {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -1168,7 +1168,7 @@
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "Это защищает от снятия отпечатков \"getClientRects()\" и нескольких подобных методов.",
+		"message": "Защищает от снятия отпечатка \"getClientRects()\" и нескольких подобных методов.",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
@@ -1184,15 +1184,15 @@
 		"description": ""
 	},
 	"protectSVG_title": {
-		"message": "Protect SVG API",
+		"message": "Защищать SVG API",
 		"description": ""
 	},
 	"protectSVG_description": {
-		"message": "This protects against fingerprinting using SVGs.",
+		"message": "Защищает от снятия отпечатка через SVG.",
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Чтобы отключить защиту для конкретных сайтов, нажмите на чёрную стрелку открытия меню, добавьте домен или URL нажатием на \"+\" и снимите с него флажок.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
@@ -1200,7 +1200,7 @@
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "Это защищает от считывания отпечатка \"measureText()\", который может быть использован для перекрестной проверки значений DOMRect.",
+		"message": "Защищает от снятия отпечатка \"measureText()\", который может быть использован для перекрестной проверки значений DOMRect.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
@@ -1268,7 +1268,7 @@
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "Это защищает от попыток снятия цифровых отпечатков, включая размер экрана.",
+		"message": "Защищает от попыток снятия отпечатка на основе таких характеристик, как размер экрана.",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {

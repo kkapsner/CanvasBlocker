@@ -80,7 +80,7 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "Se ha instalado CanvasBlocker. Si quieres poder acceder a está página más adelante, añádela a los marcadores.",
+		"message": "Se ha instalado CanvasBlocker. Si quiere poder acceder a está página más adelante, añádala a los marcadores.",
 		"description": ""
 	},
 	"updateNotice": {
@@ -108,7 +108,7 @@
 		"description": ""
 	},
 	"group_APIs": {
-		"message": "APIs",
+		"message": "API",
 		"description": ""
 	},
 	"group_misc": {
@@ -224,39 +224,39 @@
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "¿Quieres permitir los <canvas> invisibles?",
+		"message": "¿Quiere permitir los <canvas> invisibles?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "¿Quieres permitir la entrada para los <canvas> invisibles?",
+		"message": "¿Quiere permitir la entrada para los <canvas> invisibles?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "¿Quieres permitir la lectura para los <canvas> invisibles?",
+		"message": "¿Quiere permitir la lectura para los <canvas> invisibles?",
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "¿Quieres permitir los <canvas>?",
+		"message": "¿Quiere permitir los <canvas>?",
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "¿Quieres permitir la entrada para los <canvas>?",
+		"message": "¿Quiere permitir la entrada para los <canvas>?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "¿Quieres permitir la lectura para los <canvas>?",
+		"message": "¿Quiere permitir la lectura para los <canvas>?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "¿Quieres permitir los <canvas> con borde rojo?",
+		"message": "¿Quiere permitir los <canvas> con borde rojo?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "¿Quieres permitir la entrada para los <canvas> con borde rojo?",
+		"message": "¿Quiere permitir la entrada para los <canvas> con borde rojo?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "¿Quieres permitir la lectura de para los <canvas> con borde rojo?",
+		"message": "¿Quiere permitir la lectura de para los <canvas> con borde rojo?",
 		"description": ""
 	},
 	"askForAudioPermission": {
@@ -272,39 +272,39 @@
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "¿Quieres permitir la API history?",
+		"message": "¿Quiere permitir la API de history?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "¿Quieres permitir la entrada para la API history?",
+		"message": "¿Quiere permitir la entrada para la API de history?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "¿Quieres permitir la lectura para la API history?",
+		"message": "¿Quiere permitir la lectura para la API de history?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "¿Quieres permitir la API window?",
+		"message": "¿Quiere permitir la API de window?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "¿Quieres permitir la entrada para la API window?",
+		"message": "¿Quiere permitir la entrada para la API de window?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "¿Quieres permitir la lectura para la API window?",
+		"message": "¿Quiere permitir la lectura para la API de window?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "¿Quieres permitir la API DOMRect?",
+		"message": "¿Quiere permitir la API de DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "¿Quieres permitir la entrada para la API DOMRect?",
+		"message": "¿Quiere permitir la entrada para la API de DOMRect?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "¿Quieres permitir la lectura para la API DOMRect?",
+		"message": "¿Quiere permitir la lectura para la API de DOMRect?",
 		"description": ""
 	},
 	"askForSVGPermission": {
@@ -324,35 +324,35 @@
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "¿Quieres permitir la entrada de la API TextMetrics?",
+		"message": "¿Quiere permitir la entrada de la API de TextMetrics?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "¿Quieres permitir la lectura de la API TextMetrics?",
+		"message": "¿Quiere permitir la lectura de la API de TextMetrics?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "¿Quieres permitir la API navigator?",
+		"message": "¿Quiere permitir la API de navigator?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "¿Quieres permitir la entrada para la API navigator?",
+		"message": "¿Quiere permitir la entrada para la API de navigator?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "¿Quieres permitir la lectura para la API navigator?",
+		"message": "¿Quiere permitir la lectura para la API de navigator?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "¿Quieres permitir la API screen?",
+		"message": "¿Quiere permitir la API de pantalla?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "¿Quieres permitir la entrada de la API screen?",
+		"message": "¿Quiere permitir la entrada de la API de pantalla?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "¿Quieres permitir la lectura de la API screen?",
+		"message": "¿Quiere permitir la lectura de la API de pantalla?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -416,7 +416,7 @@
 		"description": ""
 	},
 	"blockMode_urlSpecific": {
-		"message": "Para establecer modos de bloqueo individuales para sitios específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y selecciona el modo de bloqueo deseado.",
+		"message": "Para establecer modos de bloqueo individuales para sitios específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y seleccione el modo de bloqueo deseado.",
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
@@ -456,7 +456,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "Para proteger partes concretas de sitios web específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y selecciona la parte deseada.",
+		"message": "Para proteger partes concretas de sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y seleccione la parte deseada.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
@@ -496,7 +496,7 @@
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "Los «canvas» con un área mayor que este número no se falsean (ingresa un cero para deshabilitarlo). Es un parámetro de rendimiento que puede prevenir bloqueos del navegador y debe ajustarse a la potencia de cálculo del dispositivo.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor menor que 1000000.",
+		"message": "Los «canvas» con un área mayor que este número no se falsean (introduzca un cero para deshabilitarlo). Es un parámetro de rendimiento que puede prevenir bloqueos del navegador y debe ajustarse a la potencia de cálculo del dispositivo.\nPRECAUCIÓN: esto reduce la seguridad del complemento, por lo que es muy recomendable no darle un valor menor que 1000000.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
@@ -604,11 +604,11 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "PRECAUCIÓN: este configuración hace al navegador 100 % rastreable, y por tanto, una amenaza para tu privacidad.",
+		"message": "PRECAUCIÓN: este ajuste hace al navegador 100% rastreable y es, por tanto, una amenaza para su privacidad.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "¿Seguro que quieres compartir la aleatoriedad persistente entre dominios?\nPRECAUCIÓN: esto hace al navegador 100 % rastreable, y por tanto, una amenaza para tu privacidad.",
+		"message": "¿Seguro que quiere compartir la aleatoriedad persistente entre dominios?\nPRECAUCIÓN: esto hace al nevegador 100% rastreable y es, por tanto, una amenaza para su privacidad.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -872,7 +872,7 @@
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
-		"message": "Para deshabilitar las notificaciones para sitios web específicos, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
+		"message": "Para desactivar las notificaciones para sitios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
 		"description": ""
 	},
 	"showNotifications_title": {
@@ -1024,7 +1024,7 @@
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
-		"message": "Para excluir sitios web específicos de esta protección, haz clic en la flecha negra para abrir el menú, añade el dominio o URL haciendo clic en «+» y desmarca la casilla.",
+		"message": "Para excluir sitios web específicos de esta protección, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y desmarque la casilla.",
 		"description": ""
 	},
 	"audioFakeRate_title": {
@@ -1052,15 +1052,15 @@
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% de los valores",
+		"message": "0,1 % de los valores",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% de los valores",
+		"message": "1 % de los valores",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% de los valores",
+		"message": "10 % de los valores",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
@@ -1132,7 +1132,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "Para cambiar este valor para sitios web específicos, haz clic en la flecha negra para abrir el menú, añadir el dominio o URL haciendo clic en «+» y establecer un valor diferente.",
+		"message": "Para cambiar este valor para sítios web específicos, haga clic en la flecha negra para abrir el menú, añada el dominio o URL haciendo clic en «+» y ponga un valor distinto.",
 		"description": ""
 	},
 	"protectWindow_title": {
@@ -1312,7 +1312,7 @@
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "por defecto",
+		"message": "predeterminado",
 		"description": ""
 	},
 	"theme_options.light": {
