@@ -1,6 +1,7 @@
 Version 1.10:
 	changes:
 		- added eBay and facebook.com to the convenience preset
+		- do not use proxy for Function.prototype.toString (causes weird problems sometimes)
 	
 	new features:
 		- added setting showPresetsOnInstallation to be able to not show the presets page upon installation
