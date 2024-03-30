@@ -1,4 +1,4 @@
-(function(){
+(async function(){
 	"use strict";
 	
 	const values = {};
@@ -10,6 +10,8 @@
 			values[property] = value;
 		}
 	});
+	const storage = await navigator.storage.estimate();
+	values.storage_quota = storage.quota.toString(10);
 	
 	const ports = [];
 	const sources = [];

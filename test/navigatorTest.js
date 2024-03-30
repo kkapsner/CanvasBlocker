@@ -60,15 +60,28 @@ function processNavigatorObject(navigator, keys, name){
 	});
 }
 
-iframeAPI.forEachMethod(function(windowToUse, name){
+iframeAPI.forEachMethod(async function(windowToUse, name){
 	"use strict";
 
 	const navigator = windowToUse.navigator;
-	processNavigatorObject(navigator, Object.keys(navigator.__proto__), name);
+	const values = {};
+	const keys = Object.keys(navigator.__proto__);
+	keys.forEach(function(property){
+		const value = navigator[property];
+		if ((typeof value) === "string"){
+			values[property] = value;
+		}
+	});
+	const storage = await navigator.storage.estimate();
+	values.storage_quota = storage.quota.toString(10);
+	keys.push("storage_quota");
+	console.log(name, values);
+	processNavigatorObject(values, keys, name);
 });
 
 function processWorkerNavigatorObject(data, name){
 	"use strict";
+	console.log(name, data);
 	processNavigatorObject(data.values, Object.keys(data.values), name);
 	if (data.nestedValues){
 		processWorkerNavigatorObject(data.nestedValues, "nested " + name);
