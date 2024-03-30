@@ -4,8 +4,7 @@
 		"protectDOMRect": {
 			"mail.google.com": false,
 			"onedrive.live.com": false,
-			"^https://[^/]*ebay\\.([a-z]+|com\\.(au|hk|my|sg)|co\\.uk)(/|$)": false,
-			"facebook.com": false
+			"^https://[^/]*ebay\\.([a-z]+|com\\.(au|hk|my|sg)|co\\.uk)(/|$)": false
 		},
 		"protectWindow": {
 			"paypal.com": false,
