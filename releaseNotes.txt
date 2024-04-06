@@ -6,7 +6,7 @@ Version 1.10.1:
 		- 
 	
 	fixes:
-		- 
+		- isPointInPath and isPointInStroke return undefined with persistent rng
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
