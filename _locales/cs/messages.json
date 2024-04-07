@@ -103,6 +103,10 @@
 		"message": "Otevřít v samostatném panelu",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "Obecné",
 		"description": ""
