@@ -46,7 +46,11 @@ async function getAlphaVersion(manifest){
 	}
 	const now = new Date();
 	const date = `${now.getFullYear()}${f(now.getMonth() + 1)}${f(now.getDate())}`;
-	const baseVersion = `${manifest.version}.${date}`;
+	const versionParts = manifest.version.split(".");
+	while (versionParts.length > 2){
+		versionParts.pop();
+	}
+	const baseVersion = `${versionParts.join(".")}.${date}`;
 	if (!fs.existsSync(path.join(versionsPath, getXPIFileName("canvasblocker_beta", baseVersion)))){
 		return baseVersion;
 	}
