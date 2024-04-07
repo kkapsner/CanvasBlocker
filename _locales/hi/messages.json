@@ -103,6 +103,10 @@
 		"message": "अलग टैब में खोलें",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "जनरल",
 		"description": ""
