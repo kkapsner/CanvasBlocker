@@ -51,10 +51,12 @@
 			const option = document.createElement("option");
 			if (typeof value === typeof setting.defaultValue){
 				option.value = value;
+				option.text = extension.getTranslation(setting.name + "_options." + value) || value;
 				if (setting.defaultValue === value){
 					option.selected = true;
+					option.selectedText = option.text;
+					option.notSelectedText = option.text + extension.getTranslation("labelForDefaultOption");
 				}
-				option.text = extension.getTranslation(setting.name + "_options." + value) || value;
 			}
 			else {
 				option.disabled = true;
@@ -62,12 +64,26 @@
 			}
 			select.appendChild(option);
 		});
+		select.update = function(){
+			Array.from(select.options).forEach(function(option){
+				if (option.notSelectedText){
+					option.text = option.notSelectedText;
+				}
+			});
+			const selectedOption = select.options[select.selectedIndex];
+			if (selectedOption.selectedText){
+				selectedOption.text = selectedOption.selectedText;
+			}
+		};
 		return select;
 	}
 	
 	const inputTypes = {
 		all: {
 			updateCallback: function(input, value, defaultValue){
+				if (input.update){
+					input.update();
+				}
 				input.classList[value === defaultValue? "remove": "add"]("changed");
 			}
 		},

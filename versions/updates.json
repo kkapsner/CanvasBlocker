@@ -317,6 +317,22 @@
 				{
 					"version": "1.10.20240330",
 					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.10.20240330.xpi"
+				},
+				{
+					"version": "1.10.1.20240405",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.10.1.20240405.xpi"
+				},
+				{
+					"version": "1.10.20240407",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.10.20240407.xpi"
+				},
+				{
+					"version": "1.10.20240407.1",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.10.20240407.1.xpi"
+				},
+				{
+					"version": "1.10.20240408",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.10.20240408.xpi"
 				}
 			]
 		}
