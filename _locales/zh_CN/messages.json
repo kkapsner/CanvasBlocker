@@ -103,6 +103,10 @@
 		"message": "在新标签页中打开",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "一般",
 		"description": ""
