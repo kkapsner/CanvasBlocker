@@ -6,6 +6,7 @@ Version 1.10.1:
 		- 
 	
 	fixes:
+		- lag and functionality loss on google sites 
 		- isPointInPath and isPointInStroke return undefined with persistent rng
 	
 	known issues:
