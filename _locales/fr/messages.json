@@ -103,6 +103,10 @@
 		"message": "Ouvrir dans un onglet séparé",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "Général",
 		"description": ""
