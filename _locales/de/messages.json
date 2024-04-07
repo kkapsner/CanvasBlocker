@@ -103,6 +103,10 @@
 		"message": "In separatem Tab öffnen",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "Allgemein",
 		"description": ""
