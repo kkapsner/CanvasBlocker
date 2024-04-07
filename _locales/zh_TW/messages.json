@@ -103,6 +103,10 @@
 		"message": "在新的隱身標籤頁中打開",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "一般設定",
 		"description": ""
