@@ -103,6 +103,10 @@
 		"message": "Abrir num noutro separador",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "Geral",
 		"description": ""
