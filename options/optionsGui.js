@@ -66,6 +66,11 @@
 	}
 	
 	const inputTypes = {
+		all: {
+			updateCallback: function(input, value, defaultValue){
+				input.classList[value === defaultValue? "remove": "add"]("changed");
+			}
+		},
 		number: {
 			input: function(value){
 				const input = document.createElement("input");
@@ -73,8 +78,9 @@
 				input.value = value;
 				return input;
 			},
-			updateCallback: function(input, value){
+			updateCallback: function(input, value, defaultValue){
 				input.value = value;
+				inputTypes.all.updateCallback(input, value, defaultValue);
 				return input.value;
 			},
 			getValue: function(input){
@@ -95,8 +101,9 @@
 				input.value = value;
 				return input;
 			},
-			updateCallback: function(input, value){
+			updateCallback: function(input, value, defaultValue){
 				input.value = value;
+				inputTypes.all.updateCallback(input, value, defaultValue);
 				return input.value;
 			},
 			getValue: function(input){
@@ -111,8 +118,9 @@
 				input.style.display = "inline-block";
 				return input;
 			},
-			updateCallback: function(input, value){
+			updateCallback: function(input, value, defaultValue){
 				input.checked = value;
+				inputTypes.all.updateCallback(input, value, defaultValue);
 				return input.checked;
 			},
 			getValue: function(input){
@@ -169,7 +177,7 @@
 					container && container.hasOwnProperty(key)?
 						container[key]:
 						setting.defaultKeyValue,
-					url
+					setting.defaultKeyValue
 				);
 			});
 			keyInput.addEventListener("change", function(){
@@ -189,7 +197,7 @@
 						container && container.hasOwnProperty(key)?
 							container[key]:
 							setting.defaultKeyValue,
-						url
+						setting.defaultKeyValue
 					);
 					logging.message("setting", setting.name, "(", key, ") was not changed");
 				}
@@ -232,7 +240,7 @@
 				urlCell.textContent = entry.url;
 				row.appendChild(urlCell);
 				let input = createInput(setting, entry.url);
-				type.updateCallback(input, setting.get(entry.url));
+				type.updateCallback(input, setting.get(entry.url), setting.defaultValue);
 				if (!entry.hasOwnProperty(setting.name)){
 					input.classList.add("notSpecifiedForUrl");
 				}
@@ -319,14 +327,17 @@
 			}
 		}
 		if (type){
-			setting.on(function(){type.updateCallback(input, setting.get(url));}, url);
+			setting.on(function(){
+				type.updateCallback(input, setting.get(url), setting.defaultValue);
+			}, url);
 			input.addEventListener("change", function(){
 				const value = type.getValue(input);
 				if (setting.set(value, url)){
+					type.updateCallback(input, value, setting.defaultValue);
 					logging.message("changed setting", setting.name, ":", value);
 				}
 				else {
-					type.updateCallback(input, setting.get(url));
+					type.updateCallback(input, setting.get(url), setting.defaultValue);
 					logging.message("setting", setting.name, "was not changed");
 				}
 			});
