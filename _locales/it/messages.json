@@ -103,6 +103,10 @@
 		"message": "Apri in una nuova scheda",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "Generale",
 		"description": ""
