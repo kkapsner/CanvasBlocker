@@ -3,7 +3,7 @@ Version 1.10.1:
 		- 
 	
 	new features:
-		- 
+		- added tag search
 	
 	fixes:
 		- lag and functionality loss on google sites 
