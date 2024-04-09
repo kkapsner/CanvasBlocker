@@ -103,6 +103,10 @@
 		"message": "별도의 탭에서 열기",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "일반 설정",
 		"description": ""

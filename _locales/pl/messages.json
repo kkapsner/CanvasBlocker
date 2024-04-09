@@ -103,6 +103,10 @@
 		"message": "Otwórz w nowej karcie",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "Ogólne",
 		"description": ""

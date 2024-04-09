@@ -103,6 +103,10 @@
 		"message": "Åpne i egen fane",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "Generelt",
 		"description": ""

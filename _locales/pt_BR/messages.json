@@ -103,6 +103,10 @@
 		"message": "Abrir numa aba separada",
 		"description": ""
 	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
 	"group_general": {
 		"message": "Geral",
 		"description": ""
