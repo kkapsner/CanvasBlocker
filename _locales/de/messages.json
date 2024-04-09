@@ -104,7 +104,7 @@
 		"description": ""
 	},
 	"labelForDefaultOption": {
-		"message": " (default)",
+		"message": " (Standard)",
 		"description": ""
 	},
 	"group_general": {
@@ -508,7 +508,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuschen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\n\nnicht persistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt. Beachten Sie, dass für viele APIs ein Zwischenspeicher verwendet wird, um eine Detektion zu verhindern.\n\nkonstant: Variante von nicht persistent. Wenn die Daten eines Canvas verändert werden, haben gleichfarbige Pixel danach auch die gleiche Farbe.\n\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
+		"message": "nichts (komplett weiß): es wird immer ein weißes Bild zurückgegeben. Hierbei sollte die Option \"Alpha-Kanal auch vortäuschen\" aktiviert werden. ACHTUNG: Nicht im Modus \"Bei Ausgabe vortäuschen\" verwenden.\n\nnichtpersistent: die Zufallszahlen werden bei jeder Vortäuschaktion neu bestimmt. Beachten Sie, dass für viele APIs ein Zwischenspeicher verwendet wird, um eine Detektion zu verhindern.\n\nkonstant: Variante von nichtpersistent. Wenn die Daten eines Canvas verändert werden, haben gleichfarbige Pixel danach auch die gleiche Farbe.\n\npersistent: für jede Domain werden die Zufallszahlen nur einmal bestimmt.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -520,7 +520,7 @@
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "nicht persistent",
+		"message": "nichtpersistent",
 		"description": ""
 	},
 	"rng_options.white": {
@@ -1560,7 +1560,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "wechsle zu \"nicht persistent\"",
+		"message": "wechsle zu \"nichtpersistent\"",
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
