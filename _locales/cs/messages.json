@@ -1560,7 +1560,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "switch to \"non persistent\" rng",
+		"message": "switch to \"nonpersistent\" rng",
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
