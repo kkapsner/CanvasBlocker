@@ -76,15 +76,15 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "Nesta página você pode ajustar as configurações do CanvasBlocker.",
+		"message": "Nesta página pode ajustar as configurações do CanvasBlocker.",
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker foi instalado. Se quiser aceder esta página futuramente, por favor, adicione-a aos marcadores.",
+		"message": "CanvasBlocker foi instalado. Se quiser aceder esta página no futuro, por favor, adicione-a aos marcadores.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker foi atualizado. Se quiser ser aceder esta página futuramente e ainda não a adicionou aos marcadores, por favor adicione-a.",
+		"message": "CanvasBlocker foi atualizado. Se quiser aceder a esta página no futuro e ainda não a adicionou aos marcadores, por favor adicione-a.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
@@ -100,11 +100,11 @@
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Abrir num noutro separador",
+		"message": "Abrir noutro separador",
 		"description": ""
 	},
 	"labelForDefaultOption": {
-		"message": " (default)",
+		"message": " (padrão)",
 		"description": ""
 	},
 	"group_general": {
@@ -316,11 +316,11 @@
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "Quer permitir a entrada da API de SVG?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "Quer permitir a leitura da API de SVG?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
@@ -508,7 +508,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnonpersistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of nonpersistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "nenhum (completamente branco): uma imagem completamente branca é devolvida. A opção “Falsifique o canal alfa” deve ser ativada com isso. CUIDADO: Não use isso com o modo \"falsificar na entrada\".\n\nnão persistente: os números aleatórios serão determinados no momento para cada ação de falsificação. Lembre-se de que muitas proteções de API possuem caches para evitar detecção.\n\nconstante: variação de não persistente. Mas ao alterar os dados do ecrã, os pixels da mesma cor também compartilham a mesma cor posteriormente.\n\npersistente: o número aleatório será determinado apenas uma vez para cada domínio.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -644,7 +644,7 @@
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valor a ser informado na função webGL \"getParameter\" para o \"fornecedor\". Valores especiais:\nDeixe em branco para usar o valor original\n\n{undefined}: devolve indefinido (#508)\n\n{false}: devolve o valor booleano falso (#508)\n\n{empty}: devolve uma string vazia (#508)\n\n{disabled}: devolve nulo (#508)\n\n{random vendor}: devolve um fornecedor aleatório da lista interna (#493)\n\n{random renderer}: devolve um renderizador aleatório da lista interna (#493)\n\n<xxx|yyy|zzz>: escolhe uma das opções fornecidas xxx, yyy ou zzz aleatoriamente (número arbitrário de opções) (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
@@ -652,7 +652,7 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valor a ser informado na função webGL \"getParameter\" para o \"renderer\". Valores especiais:\nDeixe em branco para usar o valor original\n\n{undefined}: devolve indefinido (#508)\n\n{false}: devolve o valor booleano falso (#508)\n\n{empty}: devolve uma string vazia (#508)\n\n{disabled}: devolve nulo (#508)\n\n{random vendor}: devolve um fornecedor aleatório da lista interna (#493)\n\n{random renderer}: devolve um renderizador aleatório da lista interna (#493)\n\n<xxx|yyy|zzz>: escolhe uma das opções fornecidas xxx, yyy ou zzz aleatoriamente (número arbitrário de opções) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -660,7 +660,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valor a ser informado na função webGL \"getParameter\" para o \"fornecedor desmascarado\". Valores especiais:\nDeixe em branco para usar o valor original\n\n{undefined}: devolve indefinido (#508)\n\n{false}: devolve o valor booleano falso (#508)\n\n{empty}: devolve uma string vazia (#508)\n\n{disabled}: devolve nulo (#508)\n\n{random vendor}: devolve um fornecedor aleatório da lista interna (#493)\n\n{random renderer}: devolve um renderizador aleatório da lista interna (#493)\n\n<xxx|yyy|zzz>: escolhe uma das opções fornecidas xxx, yyy ou zzz aleatoriamente (número arbitrário de opções) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -668,7 +668,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valor a ser informado na função webGL \"getParameter\" para o \"renderizador desmascarado\". Valores especiais:\nDeixe em branco para usar o valor original\n\n{undefined}: devolve indefinido (#508)\n\n{false}: devolve o valor booleano falso (#508)\n\n{empty}: devolve uma string vazia (#508)\n\n{disabled}: devolve nulo (#508)\n\n{random vendor}: devolve um fornecedor aleatório da lista interna (#493)\n\n{random renderer}: devolve um renderizador aleatório da lista interna (#493)\n\n<xxx|yyy|zzz>: escolhe uma das opções fornecidas xxx, yyy ou zzz aleatoriamente (número arbitrário de opções) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -740,7 +740,7 @@
 		"description": ""
 	},
 	"fakedSVGReadout": {
-		"message": "Faked SVG readout on {url}",
+		"message": "Leitura falsa de SVG em {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
@@ -840,7 +840,7 @@
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "Qual é o tipo de lista branca?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
@@ -1188,15 +1188,15 @@
 		"description": ""
 	},
 	"protectSVG_title": {
-		"message": "Protect SVG API",
+		"message": "Proteger a API de SVG",
 		"description": ""
 	},
 	"protectSVG_description": {
-		"message": "This protects against fingerprinting using SVGs.",
+		"message": "Isso protege contra o fingerprinting usando SVGs.",
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Para excluir sites específicos desta proteção, clique na seta preta para abrir o menu, adicione o domínio ou URL clicando em \"+\" e remova sua caixa de seleção.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
@@ -1604,7 +1604,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Shows which API protections are active for a given site. If you remove a checkmark for an API this API will be not protected for the selected site.",
+		"message": "Mostra que proteções de API estão ativas para um determinado site. Se remover uma marca de seleção para uma API, esta API não será protegida para o site selecionado.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
