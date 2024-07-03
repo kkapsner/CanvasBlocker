@@ -96,7 +96,10 @@ const iframeAPI = function(){
 				return new Promise(function(resolve){
 					window.setTimeout(function(){
 						console.log("window of iframe in timeout", iframeWindow);
-						resolve(iframeWindow);
+						resolve({
+							window: iframeWindow,
+							cleanup: function(){}
+						});
 					}, 1000);
 				});
 			}
