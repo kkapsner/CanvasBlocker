@@ -324,7 +324,7 @@
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "TextMetrics APIを許可しますか?",
+		"message": "TextMetrics APIを許可しますか？",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
@@ -628,7 +628,7 @@
 		"description": ""
 	},
 	"minColors_description": {
-		"message": "キャンバスを偽造する必要がある色の数。\n注意: アドオンの安全性が低下することがあるので、この値を10以上に設定しないことを強くお勧めします。",
+		"message": "キャンバスを偽造する必要がある色の数。\n注意: アドオンの安全性が低下することがあるので、この値を10より上に設定しないことを強くお勧めします。",
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
