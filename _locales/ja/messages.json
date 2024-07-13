@@ -612,7 +612,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "本当にドメイン間で永続のランダムを共有してもよろしいですか？\n注意: これはブラウザを100%追跡可能にするため、プライバシーの脅威です。",
+		"message": "本当にドメイン間で永続のランダムを共有してもよろしいですか？\n注意: これはブラウザを100%追跡可能にするため、プライバシーの脅威になります。",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
