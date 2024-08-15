@@ -158,3 +158,13 @@ async function offscreenTest(){
 	
 	return {url: await testAPI.readBlob(blob)};
 }
+
+iframeAPI.forEachMethod(async function(windowToUse, name){
+	"use strict";
+	const {url, imageData, isPointInPath} = canvasAPI.fingerprint(windowToUse);
+	const hashes = await Promise.all([
+		testAPI.hash(url),
+		imageData? testAPI.hash(imageData.data): ""
+	]);
+	console.log(name, hashes[0], "/", hashes[1], isPointInPath);
+});
