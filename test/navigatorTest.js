@@ -66,15 +66,24 @@ iframeAPI.forEachMethod(async function(windowToUse, name){
 	const navigator = windowToUse.navigator;
 	const values = {};
 	const keys = Object.keys(navigator.__proto__);
+	let hasPropertyError = false;
 	keys.forEach(function(property){
-		const value = navigator[property];
-		if ((typeof value) === "string"){
-			values[property] = value;
+		try {
+			const value = navigator[property];
+			if ((typeof value) === "string"){
+				values[property] = value;
+			}
+		}
+		catch (error){
+			hasPropertyError = true;
+			console.warn(name, error);
 		}
 	});
-	const storage = await navigator.storage.estimate();
-	values.storage_quota = storage.quota.toString(10);
-	keys.push("storage_quota");
+	if (!hasPropertyError){
+		const storage = await navigator.storage.estimate();
+		values.storage_quota = storage.quota.toString(10);
+		keys.push("storage_quota");
+	}
 	console.log(name, values);
 	processNavigatorObject(values, keys, name);
 });
