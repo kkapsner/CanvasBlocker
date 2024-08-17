@@ -272,7 +272,7 @@
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Chcete povolit čtení zvukového API?",
+		"message": "Chcete povolit čtení audio API?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
@@ -444,7 +444,7 @@
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "falešné",
+		"message": "zkreslit",
 		"description": ""
 	},
 	"blockMode_title": {
@@ -456,7 +456,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "nic: nejsou chráněny žádné funkce canvas API.\n\nčtení: funkce čtení canvas API jsou chráněny.\n\nvstup: vstupní funkce canvas API jsou chráněny. V režimu blokování \"falešné\" se nakreslené pixely při zobrazení textu mírně upraví. Díky tomu je detekce doplňku složitější, ale je to méně bezpečné. S WebGL canvasy je chování totožné s \"čtením\".\n\nvše: jak čtení, tak vstupní funkce jsou chráněny. Není doporučeno použít toto s režimem blokování nastaveným na \"falešné\", protože se zvyšuje pravděpodobnost detekce.",
+		"message": "nic: nejsou chráněny žádné funkce canvas API.\n\nčtení: funkce čtení canvas API jsou chráněny.\n\nvstup: vstupní funkce canvas API jsou chráněny. V režimu blokování \"zkreslit\" se nakreslené pixely při zobrazení textu mírně upraví. Díky tomu je detekce doplňku složitější, ale je to méně bezpečné. S WebGL canvasy je chování totožné s \"čtením\".\n\nvše: jak čtení, tak vstupní funkce jsou chráněny. Není doporučeno použít toto s režimem blokování nastaveným na \"zkreslit\", protože se zvyšuje pravděpodobnost detekce.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
@@ -652,23 +652,23 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Hodnota, která má být hlášena ve funkci webGL \"getParameter\" pro \"vykreslování\". Speciální hodnoty:\nPro použití původní hodnoty nechte prázdné.\n\n{undefined}: vrací nedefinovanou hodnotu (#508)\n\n{false}: vrací logickou hodnotu false (#508).\n\n{empty}: vrací prázdný řetězec (#508)\n\n{disabled}: vrací null (#508)\n\n{random vendor}: vrací náhodného dodavatele z vestavěného seznamu (#493).\n\n{random renderer}: vrací náhodný renderer z vestavěného seznamu (#493)\n\n<xxx|yyy|zzz>: náhodně vybere jednu ze zadaných možností xxx, yyy nebo zzz (libovolný počet možností) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Reported webGL unmasked vendor",
+		"message": "Nahlášen webGL nezamaskovaný dodavatel",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Hodnota, která má být hlášena ve funkci webGL \"getParameter\" pro \"nezamaskovaného dodavatele\". Speciální hodnoty:\nPro použití původní hodnoty nechte prázdné.\n\n{undefined}: vrací nedefinovanou hodnotu (#508)\n\n{false}: vrací logickou hodnotu false (#508).\n\n{empty}: vrací prázdný řetězec (#508)\n\n{disabled}: vrací null (#508)\n\n{random vendor}: vrací náhodného dodavatele z vestavěného seznamu (#493).\n\n{random renderer}: vrací náhodný renderer z vestavěného seznamu (#493)\n\n<xxx|yyy|zzz>: náhodně vybere jednu ze zadaných možností xxx, yyy nebo zzz (libovolný počet možností) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Reported webGL unmasked renderer",
+		"message": "Nahlášeno webGL nezamaskované vykreslování",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Hodnota, která má být hlášena ve funkci webGL \"getParameter\" pro \"nezamaskované vykreslování\". Speciální hodnoty:\nPro použití původní hodnoty nechte prázdné.\n\n{undefined}: vrací nedefinovanou hodnotu (#508)\n\n{false}: vrací logickou hodnotu false (#508).\n\n{empty}: vrací prázdný řetězec (#508)\n\n{disabled}: vrací null (#508)\n\n{random vendor}: vrací náhodného dodavatele z vestavěného seznamu (#493).\n\n{random renderer}: vrací náhodný renderer z vestavěného seznamu (#493)\n\n<xxx|yyy|zzz>: náhodně vybere jednu ze zadaných možností xxx, yyy nebo zzz (libovolný počet možností) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -696,7 +696,7 @@
 		"description": ""
 	},
 	"displayCallingStack": {
-		"message": "display calling stack",
+		"message": "zobrazit zásobník volání",
 		"description": ""
 	},
 	"displayFullURL": {
@@ -708,7 +708,7 @@
 		"description": ""
 	},
 	"enableStackList_title": {
-		"message": "Use file specific whitelist",
+		"message": "Použít seznam povolených s ohledem na soubor",
 		"description": ""
 	},
 	"preBlock": {
@@ -720,39 +720,39 @@
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Faked canvas readout on {url}",
+		"message": "Zkresleno čtení canvasu na {url}",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Faked audio readout on {url}",
+		"message": "Zkresleno čtení audia na {url}",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Faked history readout on {url}",
+		"message": "Zkresleno čtení historie na {url}",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Faked window readout on {url}",
+		"message": "Zkresleno čtení okna na {url}",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "Faked DOMRect readout on {url}",
+		"message": "Zkresleno čtení DOMRect na {url}",
 		"description": ""
 	},
 	"fakedSVGReadout": {
-		"message": "Faked SVG readout on {url}",
+		"message": "Zkresleno čtení SVG na {url}",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "Zkresleno čtení TextMetrics na {url}",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Faked navigator readout on {url}",
+		"message": "Zkresleno čtení navigator na {url}",
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Faked screen readout on {url}",
+		"message": "Zkresleno čtení obrazovky na {url}",
 		"description": ""
 	},
 	"fakedInput": {
@@ -780,7 +780,7 @@
 		"description": ""
 	},
 	"ignorelistDomain": {
-		"message": "silence domain",
+		"message": "umlčet doménu",
 		"description": ""
 	},
 	"ignorelistURL": {
@@ -792,7 +792,7 @@
 		"description": ""
 	},
 	"inputIgnore": {
-		"message": "Input domain or URL \"RegExp\" to add to ignore list:",
+		"message": "Vložte doménu nebo URL \"RegExp\" pro přidání do seznamu ignorovaných:",
 		"description": ""
 	},
 	"inputIgnoreDomain": {
@@ -800,7 +800,7 @@
 		"description": ""
 	},
 	"inputIgnoreURL": {
-		"message": "Input URL \"RegExp\" to add to ignore list:",
+		"message": "Zadejte URL \"RegExp\" pro přidání do seznamu ignorovaných:",
 		"description": ""
 	},
 	"selectWhitelist": {
@@ -808,7 +808,7 @@
 		"description": ""
 	},
 	"inputWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to whitelist:",
+		"message": "Zadejte doménu nebo URL \"RegExp\" pro přidání do seznamu povolených:",
 		"description": ""
 	},
 	"inputWhitelistDomain": {
@@ -816,7 +816,7 @@
 		"description": ""
 	},
 	"inputWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to whitelist:",
+		"message": "Zadejte URL \"RegExp\" pro přidání do seznamu povolených:",
 		"description": ""
 	},
 	"selectSessionWhitelist": {
@@ -824,7 +824,7 @@
 		"description": ""
 	},
 	"inputSessionWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to the session whitelist:",
+		"message": "Zadejte doménu nebo URL \"RegExp\" pro přidání do seznamu povolených v rámci relace:",
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
@@ -832,7 +832,7 @@
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to the session whitelist:",
+		"message": "Zadejte URL \"RegExp\" pro přidání do seznamu povolených v rámci relace:",
 		"description": ""
 	},
 	"selectWhitelistScope": {
@@ -860,7 +860,7 @@
 		"description": ""
 	},
 	"showCallingFile_title": {
-		"message": "Show calling file",
+		"message": "Zobrazit soubor volání",
 		"description": ""
 	},
 	"showCompleteCallingStack_description": {
@@ -868,7 +868,7 @@
 		"description": ""
 	},
 	"showCompleteCallingStack_title": {
-		"message": "Display complete calling stack",
+		"message": "Zobrazit celý zásobník volání",
 		"description": ""
 	},
 	"showNotifications_description": {
@@ -940,11 +940,11 @@
 		"description": ""
 	},
 	"sourceOutput": {
-		"message": "Calling file",
+		"message": "Soubor volání",
 		"description": ""
 	},
 	"stackEntryOutput": {
-		"message": "{url} line {line} column {column}",
+		"message": "{url} řádek {line} sloupec {column}",
 		"description": ""
 	},
 	"stackList_description": {
@@ -952,11 +952,11 @@
 		"description": ""
 	},
 	"stackList_title": {
-		"message": "File specific whitelist",
+		"message": "Seznam povolených s ohledem na soubor",
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "Seznam povolených",
 		"description": ""
 	},
 	"whiteList_description": {
@@ -988,7 +988,7 @@
 		"description": ""
 	},
 	"sessionWhiteList_title": {
-		"message": "Session whitelist",
+		"message": "Seznam povolených v rámci relace",
 		"description": ""
 	},
 	"sessionWhiteList_description": {
@@ -1144,7 +1144,7 @@
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "window.opener and window.name will be protected. This can render some webpages unusable.",
+		"message": "window.opener a window.name budou chráněny. To může způsobit nefunkčnost některých stránek.",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
@@ -1156,7 +1156,7 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
-		"message": "Allow window.name in frames",
+		"message": "Povolit window.name v rámech",
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
@@ -1200,11 +1200,11 @@
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "Chránit TextMetrics API",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Toto chrání před sběrem otisků \"measureText()\", který lze použít ke křížovému ověření hodnot DOMRect.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
@@ -1212,11 +1212,11 @@
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Protect navigator API",
+		"message": "Chránit navigator API",
 		"description": ""
 	},
 	"protectNavigator_description": {
-		"message": "This page allows for changes in the navigator API. Enabling this protection does not change anything by default. Open the navigator settings to specify the changes you want to have there.",
+		"message": "Tato stránka umožňuje změny v navigator API. Povolení této ochrany ve výchozím nastavení nic nemění. Otevřete nastavení navigátora pro stanovení změn, které zde chcete provést.",
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
@@ -1224,7 +1224,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
-		"message": "Navigator settings",
+		"message": "Nastavení navigator",
 		"description": ""
 	},
 	"openNavigatorSettings_description": {
@@ -1236,11 +1236,11 @@
 		"description": ""
 	},
 	"navigatorSettings_title": {
-		"message": "CanvasBlocker navigator settings",
+		"message": "CanvasBlocker navigator nastavení",
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "On this page you can set the navigator settings. If using a preset you should always use an operating system and browser preset. After selecting these you can still make modifications.",
+		"message": "Na této stránce můžete zvolit nastavení navigator. Pokud používáte přednastavení, měli byste vždy použít předvolbu operačního systému a prohlížeče. Po jejich výběru stále můžete provést úpravy.",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
@@ -1260,7 +1260,7 @@
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Navigator values",
+		"message": "Navigator hodnoty",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
@@ -1332,15 +1332,15 @@
 		"description": ""
 	},
 	"theme_options.none": {
-		"message": "none",
+		"message": "nic",
 		"description": ""
 	},
 	"blockDataURLs_title": {
-		"message": "Block data URL pages",
+		"message": "Blokovat stránky data URL",
 		"description": ""
 	},
 	"blockDataURLs_description": {
-		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking them prevents the real fingerprint to reach any server.",
+		"message": "Data URL stránky nelze chránit před otisky (viz https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Jejich blokování brání skutečnému otisku dosáhnout jakéhokoli serveru.",
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
@@ -1528,7 +1528,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
-		"message": "disable main flag",
+		"message": "zakázat hlavní vlajku",
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
@@ -1536,11 +1536,11 @@
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
-		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"message": "Doporučuje se používat režimy blokování \"zkreslit\" nebo \"zeptat se\".",
 		"description": ""
 	},
 	"sanitation_resolution.switchToFake": {
-		"message": "switch to \"fake\"",
+		"message": "přepněte na \"zkreslit\"",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
@@ -1548,7 +1548,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
-		"message": "disable \"{flag}\"",
+		"message": "zakázat \"{flag}\"",
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
@@ -1556,11 +1556,11 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
-		"message": "switch to protect readout",
+		"message": "přepněte na ochranu čtení",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "switch to \"nonpersistent\" rng",
+		"message": "přepněte na \"nonpersistent\" rng",
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
@@ -1568,7 +1568,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectInput": {
-		"message": "switch to protect input",
+		"message": "přepněte na ochranu vstupu",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
@@ -1600,7 +1600,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_title": {
-		"message": "CanvasBlocker whitelist inspection",
+		"message": "CanvasBlocker inspekce seznamu povolených",
 		"description": ""
 	},
 	"whitelist_inspection_description": {
