@@ -104,7 +104,7 @@
 		"description": ""
 	},
 	"labelForDefaultOption": {
-		"message": " (default)",
+		"message": " (výchozí)",
 		"description": ""
 	},
 	"group_general": {
@@ -228,7 +228,7 @@
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Do you want to allow invisible <canvas>?",
+		"message": "Chcete povolit neviditelný <canvas>?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
@@ -236,7 +236,7 @@
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "Do you want to allow invisible <canvas> readout?",
+		"message": "Chcete povolit čtení neviditelného <canvas>?",
 		"description": ""
 	},
 	"askForPermission": {
@@ -248,11 +248,11 @@
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Do you want to allow <canvas> readout?",
+		"message": "Chcete povolit čtení <canvas>?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "Do you want to allow the red bordered <canvas>?",
+		"message": "Chcete povolit červeně ohraničený <canvas>?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
@@ -260,7 +260,7 @@
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "Do you want to allow the readout of the red bordered <canvas>?",
+		"message": "Chcete povolit čtení červeně ohraničeného <canvas>?",
 		"description": ""
 	},
 	"askForAudioPermission": {
@@ -272,7 +272,7 @@
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio API readout?",
+		"message": "Chcete povolit čtení zvukového API?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
@@ -284,7 +284,7 @@
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "Chcete povolit čtení API historie?",
 		"description": ""
 	},
 	"askForWindowPermission": {
@@ -296,7 +296,7 @@
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window API readout?",
+		"message": "Chcete povolit čtení API okna?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
@@ -308,7 +308,7 @@
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "Chcete povolit čtení DOMRect API?",
 		"description": ""
 	},
 	"askForSVGPermission": {
@@ -320,31 +320,31 @@
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "Chcete povolit čtení API SVG?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "Chcete povolit TextMetrics API?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "Chcete povolit vstup TextMetrics API?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "Chcete povolit čtení TextMetrics API?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "Chcete povolit navigator API?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Do you want to allow navigator API input?",
+		"message": "Chcete povolit vstup navigator API?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "Chcete povolit čtení navigator API?",
 		"description": ""
 	},
 	"askForScreenPermission": {
@@ -356,7 +356,7 @@
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "Chcete povolit čtení API obrazovky?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -412,7 +412,7 @@
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "Seznam zakázaných",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -428,7 +428,7 @@
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "povolit pouze seznam povolených",
 		"description": ""
 	},
 	"blockMode_options.ask": {
@@ -440,11 +440,11 @@
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "blokovat pouze seznam zakázaných",
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "falešné",
 		"description": ""
 	},
 	"blockMode_title": {
@@ -452,11 +452,11 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "Chráněna část canvas API",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "nothing: no features of the canvas API are protected.\n\nreadout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "nic: nejsou chráněny žádné funkce canvas API.\n\nčtení: funkce čtení canvas API jsou chráněny.\n\nvstup: vstupní funkce canvas API jsou chráněny. V režimu blokování \"falešné\" se nakreslené pixely při zobrazení textu mírně upraví. Díky tomu je detekce doplňku složitější, ale je to méně bezpečné. S WebGL canvasy je chování totožné s \"čtením\".\n\nvše: jak čtení, tak vstupní funkce jsou chráněny. Není doporučeno použít toto s režimem blokování nastaveným na \"falešné\", protože se zvyšuje pravděpodobnost detekce.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
@@ -464,7 +464,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "nic",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
@@ -472,7 +472,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "readout",
+		"message": "čtení",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
@@ -488,7 +488,7 @@
 		"description": ""
 	},
 	"inputURL": {
-		"message": "Input domain or URL \"RegExp\":",
+		"message": "Zadejte doménu nebo URL \"RegExp\":",
 		"description": ""
 	},
 	"minFakeSize_description": {
@@ -640,15 +640,15 @@
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "Nahlášený webGL dodavatel",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Hodnota, která má být hlášena ve funkci webGL \"getParameter\" pro \"vendor\". Speciální hodnoty:\nPro použití původní hodnoty nechte prázdné.\n\n{undefined}: vrací nedefinovanou hodnotu (#508)\n\n{false}: vrací logickou hodnotu false (#508).\n\n{empty}: vrací prázdný řetězec (#508)\n\n{disabled}: vrací null (#508)\n\n{random vendor}: vrací náhodného dodavatele z vestavěného seznamu (#493).\n\n{random renderer}: vrací náhodný renderer z vestavěného seznamu (#493)\n\n<xxx|yyy|zzz>: náhodně vybere jednu ze zadaných možností xxx, yyy nebo zzz (libovolný počet možností) (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "Nahlášené vykreslování webGL",
 		"description": ""
 	},
 	"webGLRenderer_description": {
