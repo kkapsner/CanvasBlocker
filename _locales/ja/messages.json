@@ -16,7 +16,7 @@
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " ({url}のホワイトリストに登録されたAPI)",
+		"message": " ({url} のホワイトリストに登録されたAPI)",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
