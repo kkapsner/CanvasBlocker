@@ -652,7 +652,7 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valeur qui sera renvoyée par la fonction WebGL \"getParameter\" pour \"renderer\". Laisser vide pour utiliser la valeur originale. Valeurs spéciales :\n\n{undefined}: renvoie indéfini (#508)\n\n{false}: renvoie la valeur booléenne faux (#508)\n\n{empty}: renvoie une chaîne de caractère vide (#508)\n\n{disabled}: renvoie \"null\" (#508)\n\n{random vendor}: renvoie un constructeur au hasard depuis la liste intégrée (#493)\n\n{random renderer}: renvoie un moteur de rendu aléatoire à partir de la liste intégrée (#493)\n\n<xxx|yyy|zzz>: choisir l'une des options données (ici xxx, yyy, zzz) au hazard (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -660,7 +660,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valeur qui sera renvoyée par la fonction WebGL \"getParameter\" pour \"unmasked vendor\". Laisser vide pour utiliser la valeur originale. Valeurs spéciales :\n\n{undefined}: renvoie indéfini (#508)\n\n{false}: renvoie la valeur booléenne faux (#508)\n\n{empty}: renvoie une chaîne de caractère vide (#508)\n\n{disabled}: renvoie \"null\" (#508)\n\n{random vendor}: renvoie un constructeur au hasard depuis la liste intégrée (#493)\n\n{random renderer}: renvoie un moteur de rendu aléatoire à partir de la liste intégrée (#493)\n\n<xxx|yyy|zzz>: choisir l'une des options données (ici xxx, yyy, zzz) au hazard (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -668,7 +668,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valeur qui sera renvoyée par la fonction WebGL \"getParameter\" pour \"unmasked renderer\". Laisser vide pour utiliser la valeur originale. Valeurs spéciales :\n\n{undefined}: renvoie indéfini (#508)\n\n{false}: renvoie la valeur booléenne faux (#508)\n\n{empty}: renvoie une chaîne de caractère vide (#508)\n\n{disabled}: renvoie \"null\" (#508)\n\n{random vendor}: renvoie un constructeur au hasard depuis la liste intégrée (#493)\n\n{random renderer}: renvoie un moteur de rendu aléatoire à partir de la liste intégrée (#493)\n\n<xxx|yyy|zzz>: choisir l'une des options données (ici xxx, yyy, zzz) au hazard (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
