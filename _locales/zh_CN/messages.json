@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "显示指定站点的 API 保护情况。 如果您取消一个 API 的勾选，此 API 将不会对选定的站点进行保护。",
+		"message": "This shows which fingerprint protections are active for specified sites.\n\nUnchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.\nChecked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
