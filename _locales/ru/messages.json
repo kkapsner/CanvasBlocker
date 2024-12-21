@@ -992,7 +992,11 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Домены или URL-адреса, которым разрешено использовать все API в течение текущей сессии. Чтобы добавить несколько записей, разделите их запятыми.",
+		"message": "Domains or URLs which shall be allowed to use all APIs during the current session (i.e. temporarily whitelisted). To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"sessionWhiteList_search": {
+		"message": "temporary",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
