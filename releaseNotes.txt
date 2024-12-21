@@ -1,9 +1,11 @@
 Version 1.11:
 	changes:
 		- added jnn-pa.googleapis.com to the convenience preset for YouTube
+		- improve whitelist inspection
 	
 	new features:
-		- 
+		- added search for setting values and urls
+		- added search specific keywords
 	
 	fixes:
 		- 
