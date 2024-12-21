@@ -9,6 +9,9 @@
 		"protectWindow": {
 			"paypal.com": false,
 			"dhl.de": false
+		},
+		"protectNavigator": {
+			"jnn-pa.googleapis.com": false
 		}
 	},
 	"stealth": {

@@ -1,6 +1,6 @@
 Version 1.11:
 	changes:
-		- 
+		- added jnn-pa.googleapis.com to the convenience preset for YouTube
 	
 	new features:
 		- 
