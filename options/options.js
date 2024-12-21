@@ -576,6 +576,22 @@
 					settingStrings.getStrings(setting).forEach(function(string){
 						search.register(string, row);
 					});
+					if (setting.get){
+						search.register(function(term){
+							if (term.test(setting.get())){
+								return true;
+							}
+							if (setting.urlSpecific){
+								return setting.urlContainer.get().some(function(urlSetting){
+									if (urlSetting.hasOwnProperty(setting.name)){
+										return term.test(urlSetting.url) || term.test(urlSetting[setting.name]);
+									}
+									return false;
+								});
+							}
+							return false;
+						}, row);
+					}
 					section.addRow(row);
 					
 					setupComputeDependenciesForDisplay(setting, section, row);
