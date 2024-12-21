@@ -1456,11 +1456,11 @@
 	},
 	
 	"exportSettings_title": {
-		"message": "Export settings",
+		"message": "CanvasBlocker settings export",
 		"description": ""
 	},
 	"exportSettings_description": {
-		"message": "",
+		"message": "This allows you to copy your current settings. You can also paste and modify them here. If something is invalid the textarea will get a red background and the change is not stored.",
 		"description": ""
 	},
 	

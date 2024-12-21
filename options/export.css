@@ -1,12 +1,26 @@
-html, body {
+html {
 	height: 100%;
 	padding: 0;
 	margin: 0;
 }
-#settings {
-	width: 100%;
-	box-sizing: border-box;
+
+body {
 	height: 100%;
+	margin: 0;
+	padding: 0.5em;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: max-content auto;
+}
+
+#description {
+	margin: 0.5em 0em;
+}
+
+#settings {
+	box-sizing: border-box;
+	margin: 0;
 }
 #settings.invalid {
 	background-color: var(--input-error-background-color);

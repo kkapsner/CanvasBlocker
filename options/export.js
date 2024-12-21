@@ -8,6 +8,12 @@
 	const logging = require("../lib/logging");
 	const settingsMigration = require("../lib/settingsMigration");
 	require("../lib/theme").init();
+	const extension = require("../lib/extension");
+	document.querySelector("head title").textContent = extension.getTranslation("exportSettings_title");
+	document.getElementById("description").appendChild(
+		extension.parseTranslation(extension.getTranslation("exportSettings_description"))
+	);
+	
 	const input = document.getElementById("settings");
 	settings.onloaded(function(){
 		const data = {};
