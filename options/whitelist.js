@@ -20,10 +20,7 @@
 	
 	const description = document.createElement("div");
 	description.className = "description";
-	extension.getTranslation("whitelist_inspection_description").split(/(\n)/g).forEach(function(line){
-		const node = line === "\n"? document.createElement("br"): document.createTextNode(line);
-		description.appendChild(node);
-	});
+	description.appendChild(extension.parseTranslation(extension.getTranslation("whitelist_inspection_description")));
 	
 	document.body.appendChild(description);
 	
