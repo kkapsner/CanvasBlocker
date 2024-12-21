@@ -20,7 +20,11 @@
 	
 	const description = document.createElement("div");
 	description.className = "description";
-	description.textContent = extension.getTranslation("whitelist_inspection_description");
+	extension.getTranslation("whitelist_inspection_description").split(/(\n)/g).forEach(function(line){
+		const node = line === "\n"? document.createElement("br"): document.createTextNode(line);
+		description.appendChild(node);
+	});
+	
 	document.body.appendChild(description);
 	
 		
@@ -81,18 +85,30 @@
 		},
 	];
 	
+	const table = document.createElement("table");
+	table.className = "whitelist";
+	document.body.appendChild(table);
+	
+	const header = document.createElement("thead");
+	table.appendChild(header);
+	
+	const headerRow = document.createElement("tr");
+	header.appendChild(headerRow);
+	
+	const urlCell = document.createElement("th");
+	urlCell.textContent = "URL";
+	headerRow.appendChild(urlCell);
+	
+	whitelistSettings.forEach(function(setting){
+		const cell = document.createElement("th");
+		cell.textContent = setting.title;
+		setting.headerCell = cell;
+		headerRow.appendChild(cell);
+	});
+	const tableBody = document.createElement("tbody");
+	table.appendChild(tableBody);
 	settings.onloaded(function(){
-		const sets = settingContainers.urlContainer.get();
-		
-		const selectLabel = document.createElement("label");
-		selectLabel.textContent = "URL ";
-		document.body.appendChild(selectLabel);
-		
-		const setSelect = document.createElement("select");
-		sets.forEach(function(set){
-			setSelect.appendChild(new Option(set.url));
-		});
-		selectLabel.appendChild(setSelect);
+		const sets = Array.from(settingContainers.urlContainer.get());
 		
 		if (searchParameters.has("urls")){
 			const urls = JSON.parse(searchParameters.get("urls")).map(function(url){
@@ -103,56 +119,69 @@
 					if (urls.some(function(url){
 						return set.match && set.match(url);
 					})){
-						setSelect.selectedIndex = index;
+						set.highlight = true;
 						return true;
 					}
 					return false;
 				}) &&
 				searchParameters.has("domain")
 			){
-				setSelect.appendChild(new Option(searchParameters.get("domain")));
-				setSelect.selectedIndex = setSelect.options.length - 1;
+				sets.unshift({url: searchParameters.get("domain"), highlight: true});
 			}
 		}
 		
-		const table = document.createElement("table");
-		whitelistSettings.forEach(function(setting){
-			const settingDefinition = settings.getDefinition(setting.name);
+		const setNodes = new Map();
+		sets.forEach(function(set){
 			const row = document.createElement("tr");
-			setting.row = row;
-			const name = document.createElement("td");
-			name.textContent = setting.title || extension.getTranslation(setting.name + "_title");
-			row.appendChild(name);
-			setting.input = document.createElement("input");
-			setting.input.type = "checkbox";
-			setting.input.addEventListener("change", function(){
-				const value = this.checked? setting.protectedValue: setting.whitelistValue;
-				if (settingDefinition.get() === value){
-					settingDefinition.reset(setSelect.value);
-				}
-				else {
-					settingDefinition.set(value, setSelect.value);
-				}
+			if (set.highlight){
+				row.className = "highlight";
+			}
+			tableBody.appendChild(row);
+			
+			const urlCell = document.createElement("td");
+			urlCell.textContent = set.url;
+			row.appendChild(urlCell);
+			
+			const nodes = new Map();
+			whitelistSettings.forEach(function(setting){
+				const settingDefinition = settings.getDefinition(setting.name);
+				const cell = document.createElement("td");
+				cell.className = "inputCell";
+				row.appendChild(cell);
+				
+				const input = document.createElement("input");
+				input.type = "checkbox";
+				input.addEventListener("change", function(){
+					const value = this.checked? setting.protectedValue: setting.whitelistValue;
+					if (settingDefinition.get() === value){
+						settingDefinition.reset(set.url);
+					}
+					else {
+						settingDefinition.set(value, set.url);
+					}
+				});
+				nodes.set(setting, {cell, input});
+				cell.appendChild(input);
 			});
-			const input = document.createElement("td");
-			input.appendChild(setting.input);
-			row.appendChild(input);
-			table.appendChild(row);
+			setNodes.set(set, nodes);
 		});
-		document.body.appendChild(table);
 		
 		function update(){
-			whitelistSettings.forEach(function(setting){
-				setting.row.style.display = settings.get(setting.name) === setting.whitelistValue?
-					"none":
-					"";
-				
-				const currentValue = settings.get(setting.name, setSelect.value);
-				setting.input.checked = currentValue !== setting.whitelistValue;
+			sets.forEach(function(set){
+				const nodes = setNodes.get(set);
+				whitelistSettings.forEach(function(setting){
+					const display = settings.get(setting.name) === setting.whitelistValue?
+						"none":
+						"";
+					setting.headerCell.style.display = display;
+					const currentValue = settings.get(setting.name, set.url);
+					const node = nodes.get(setting);
+					node.cell.style.display = display;
+					node.input.checked = currentValue !== setting.whitelistValue;
+				});
 			});
 		}
 		update();
-		setSelect.addEventListener("change", update);
 		settings.on("any", update);
 	});
 }());

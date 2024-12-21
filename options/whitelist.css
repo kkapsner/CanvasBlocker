@@ -1,3 +1,23 @@
 .description {
 	margin: 1em 0;
 }
+
+.whitelist {
+	border-collapse: collapse;
+}
+
+.whitelist tr.highlight {
+	background-color: var(--highlight-color);
+}
+
+.whitelist th {
+	padding: 0.1em 0.4em;
+}
+
+.whitelist td {
+	padding: 0.1em 0.4em;
+	border: 1px solid gray;
+}
+.whitelist .inputCell {
+	text-align: center;
+}

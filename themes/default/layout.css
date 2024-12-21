@@ -7,4 +7,5 @@ body {
 	--button-background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 	--stacked-inputs-border-color: rgb(185, 185, 185);
 	--stacked-inputs-focus-color: rgb(236, 237, 236);
+	--highlight-color: rgb(203, 255, 192);;
 }
