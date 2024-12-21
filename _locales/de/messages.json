@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Anzeige des API-Schutzes für eine bestimmte Webseite. Wenn man das Häkchen bei einer API entfernt, wird diese für die ausgewählte Webseite nicht mehr beschützt.",
+		"message": "This shows which fingerprint protections are active for specified sites.\n\nUnchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.\nChecked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
