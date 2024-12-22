@@ -1396,11 +1396,11 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Paramètres d'exportation",
+		"message": "CanvasBlocker settings export",
 		"description": ""
 	},
 	"exportSettings_description": {
-		"message": "",
+		"message": "This allows you to copy your current settings. You can also paste and modify them here. If something is invalid the textarea will get a red background and the change is not stored.",
 		"description": ""
 	},
 	"settingControlling_title": {
@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "This shows which fingerprint protections are active for specified sites.\n\nUnchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.\nChecked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
+		"message": "This shows which fingerprint protections are active for specified sites.{newline}{newline}Unchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.{newline}Checked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
