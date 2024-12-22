@@ -1,4 +1,4 @@
-/* globals testAPI, canvasAPI */
+/* globals testAPI, canvasAPI, iframeAPI */
 (function(){
 	"use strict";
 	
