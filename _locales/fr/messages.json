@@ -104,7 +104,7 @@
 		"description": ""
 	},
 	"labelForDefaultOption": {
-		"message": " (default)",
+		"message": " (par défaut)",
 		"description": ""
 	},
 	"group_general": {
@@ -508,7 +508,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnonpersistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of nonpersistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "Rien (complètement blanc) : une image blanche est renvoyée. L'option \"Feindre le canal alpha\" doit être activé. AVERTISSEMENT : Ne pas utiliser avec le mode \"feindre\" en entrée.\n\nnon 'Persistance' des données : les nombres aléatoires vont être déterminés pour chaque action de falsification. Rappelez-vous que beaucoup de système de protection d'API disposent de caches pour empêcher la détéction.\n\nConservation des données : Variante de non 'Persistance' des données. La différence est que lors de la modification du canvas, les pixels de même couleur partageront toujours une couleur identique après modification.\n\npersistant : Le nombre aléatoire sera déterminé une seule fois pour chaque domaine.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -644,7 +644,7 @@
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valeur qui sera renvoyée par la fonction WebGL \"getParameter\" pour \"vendor\". Laisser vide pour utiliser la valeur originale. Valeurs spéciales :\n\n{undefined}: renvoie indéfini (#508)\n\n{false}: renvoie la valeur booléenne faux (#508)\n\n{empty}: renvoie une chaîne de caractère vide (#508)\n\n{disabled}: renvoie \"null\" (#508)\n\n{random vendor}: renvoie un constructeur au hasard depuis la liste intégrée (#493)\n\n{random renderer}: renvoie un moteur de rendu aléatoire à partir de la liste intégrée (#493)\n\n<xxx|yyy|zzz>: choisir l'une des options données (ici xxx, yyy, zzz) au hazard (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
@@ -652,7 +652,7 @@
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valeur qui sera renvoyée par la fonction WebGL \"getParameter\" pour \"renderer\". Laisser vide pour utiliser la valeur originale. Valeurs spéciales :\n\n{undefined}: renvoie indéfini (#508)\n\n{false}: renvoie la valeur booléenne faux (#508)\n\n{empty}: renvoie une chaîne de caractère vide (#508)\n\n{disabled}: renvoie \"null\" (#508)\n\n{random vendor}: renvoie un constructeur au hasard depuis la liste intégrée (#493)\n\n{random renderer}: renvoie un moteur de rendu aléatoire à partir de la liste intégrée (#493)\n\n<xxx|yyy|zzz>: choisir l'une des options données (ici xxx, yyy, zzz) au hazard (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -660,7 +660,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valeur qui sera renvoyée par la fonction WebGL \"getParameter\" pour \"unmasked vendor\". Laisser vide pour utiliser la valeur originale. Valeurs spéciales :\n\n{undefined}: renvoie indéfini (#508)\n\n{false}: renvoie la valeur booléenne faux (#508)\n\n{empty}: renvoie une chaîne de caractère vide (#508)\n\n{disabled}: renvoie \"null\" (#508)\n\n{random vendor}: renvoie un constructeur au hasard depuis la liste intégrée (#493)\n\n{random renderer}: renvoie un moteur de rendu aléatoire à partir de la liste intégrée (#493)\n\n<xxx|yyy|zzz>: choisir l'une des options données (ici xxx, yyy, zzz) au hazard (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -668,7 +668,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "Valeur qui sera renvoyée par la fonction WebGL \"getParameter\" pour \"unmasked renderer\". Laisser vide pour utiliser la valeur originale. Valeurs spéciales :\n\n{undefined}: renvoie indéfini (#508)\n\n{false}: renvoie la valeur booléenne faux (#508)\n\n{empty}: renvoie une chaîne de caractère vide (#508)\n\n{disabled}: renvoie \"null\" (#508)\n\n{random vendor}: renvoie un constructeur au hasard depuis la liste intégrée (#493)\n\n{random renderer}: renvoie un moteur de rendu aléatoire à partir de la liste intégrée (#493)\n\n<xxx|yyy|zzz>: choisir l'une des options données (ici xxx, yyy, zzz) au hazard (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -992,7 +992,11 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domaines ou URLs autorisés à utiliser toutes les APIs durant la session courante. Pour ajouter plusieurs entrées, séparez-les par des virgules.",
+		"message": "Domains or URLs which shall be allowed to use all APIs during the current session (i.e. temporarily whitelisted). To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"sessionWhiteList_search": {
+		"message": "temporary",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
@@ -1392,11 +1396,11 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Paramètres d'exportation",
+		"message": "CanvasBlocker settings export",
 		"description": ""
 	},
 	"exportSettings_description": {
-		"message": "",
+		"message": "This allows you to copy your current settings. You can also paste and modify them here. If something is invalid the textarea will get a red background and the change is not stored.",
 		"description": ""
 	},
 	"settingControlling_title": {
@@ -1604,7 +1608,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Montre quelles protections d'API sont actives pour un site donné. Si vous supprimez la coche pour une API, cette API ne sera pas protégée pour le site sélectionné.",
+		"message": "This shows which fingerprint protections are active for specified sites.{newline}{newline}Unchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.{newline}Checked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
 		"description": ""
 	},
 	"whitelist_all_apis": {

@@ -992,7 +992,11 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domini o URL che devono essere autorizzati ad utilizzare tutte le API durante la sessione attuale. Per aggiungere più voci, separale con virgole.",
+		"message": "Domains or URLs which shall be allowed to use all APIs during the current session (i.e. temporarily whitelisted). To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"sessionWhiteList_search": {
+		"message": "temporary",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
@@ -1392,11 +1396,11 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Esporta le impostazioni",
+		"message": "CanvasBlocker settings export",
 		"description": ""
 	},
 	"exportSettings_description": {
-		"message": "",
+		"message": "This allows you to copy your current settings. You can also paste and modify them here. If something is invalid the textarea will get a red background and the change is not stored.",
 		"description": ""
 	},
 	"settingControlling_title": {
@@ -1604,7 +1608,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Mostra quali protezioni API sono attive per un dato sito. Se rimuovi un segno di spunta per un'API, questa API non sarà protetta per il sito selezionato.",
+		"message": "This shows which fingerprint protections are active for specified sites.{newline}{newline}Unchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.{newline}Checked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
 		"description": ""
 	},
 	"whitelist_all_apis": {

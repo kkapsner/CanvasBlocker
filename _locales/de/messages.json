@@ -992,7 +992,11 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains oder URLs, die während der aktuellen Sitzung alle APIs nutzen dürfen. Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"message": "Domains oder URLs, die während der aktuellen Sitzung alle APIs nutzen dürfen (d. h. temporär erlaubt). Mehrere Einträge müssen durch ein Komma getrennt werden.",
+		"description": ""
+	},
+	"sessionWhiteList_search": {
+		"message": "temporary whitelist temporär",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
@@ -1392,11 +1396,11 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "Einstellungen exportieren",
+		"message": "CanvasBlocker Einstellungsexport",
 		"description": ""
 	},
 	"exportSettings_description": {
-		"message": "",
+		"message": "Hier können Sie Ihr Einstellungen kopieren. Zusätzlich können Sie sie auf einfügen und ändern. Wenn etwas ungültig ist, wird der Textbereich rot hinterlegt und die Änderung wird nicht gespeichert.",
 		"description": ""
 	},
 	"settingControlling_title": {
@@ -1604,7 +1608,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "Anzeige des API-Schutzes für eine bestimmte Webseite. Wenn man das Häkchen bei einer API entfernt, wird diese für die ausgewählte Webseite nicht mehr beschützt.",
+		"message": "Zeigt an, welcher Fingerprint-Schutz für bestimmte Seiten aktiv sind.{newline}{newline}Nicht markiert bedeutet, dass die Seite diese Funktion unverändert nutzen kann. Das bedeutet auch, dass sie einen (teilweisen) Fingerprint Ihres Browsers erstellen kann.{newline}Markiert bedeutet, dass der Schutz von CanvasBlocker, der es der Website erschwert, Sie eindeutig zu identifizieren, aktiv ist.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
