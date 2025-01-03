@@ -2,13 +2,15 @@ Version 1.11:
 	changes:
 		- added jnn-pa.googleapis.com to the convenience preset for YouTube
 		- improve whitelist inspection
+		- improve settings export
 	
 	new features:
 		- added search for setting values and urls
 		- added search specific keywords
+		- new translations
 	
 	fixes:
-		- 
+		- proxy behaviour broke some websites
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
