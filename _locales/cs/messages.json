@@ -992,11 +992,11 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs during the current session (i.e. temporarily whitelisted). To add multiple entries, separate them by commas.",
+		"message": "Domény nebo adresy URL, které mají během aktuální relace povoleno používat všechna rozhraní API (tj. dočasně zařazené na seznam povolených). Chcete-li přidat více položek, oddělte je čárkami.",
 		"description": ""
 	},
 	"sessionWhiteList_search": {
-		"message": "temporary",
+		"message": "dočasné",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
@@ -1396,11 +1396,11 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "CanvasBlocker settings export",
+		"message": "Export nastavení CanvasBlocker",
 		"description": ""
 	},
 	"exportSettings_description": {
-		"message": "This allows you to copy your current settings. You can also paste and modify them here. If something is invalid the textarea will get a red background and the change is not stored.",
+		"message": "Toto vám umožní zkopírovat aktuální nastavení. Můžete je sem také vložit a upravit. Pokud je něco špatně, textové pole změní pozadí na červenou a vaše úprava se neuloží.",
 		"description": ""
 	},
 	"settingControlling_title": {
@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "This shows which fingerprint protections are active for specified sites.{newline}{newline}Unchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.{newline}Checked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
+		"message": "Zobrazuje, které ochrany před otisky jsou pro zadané stránky aktivní.{newline}{newline}Nezaškrtnuté znamená, že stránka může danou funkci používat beze změny. To znamená, že ji může použít k (částečnému) otisku vašeho prohlížeče.{newline}Zaškrtnuto znamená, že CanvasBlocker poskytuje ochranu, která ztěžuje webu vaši jednoznačnou identifikaci.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
