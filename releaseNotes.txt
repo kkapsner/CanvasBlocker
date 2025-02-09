@@ -1,3 +1,17 @@
+Version 1.12:
+	changes:
+		- 
+	
+	new features:
+		- 
+	
+	fixes:
+		- 
+	
+	known issues:
+		- if a data URL is blocked the page action button does not appear
+		- canvas and navigator APIs in workers are not protected
+
 Version 1.11:
 	changes:
 		- added jnn-pa.googleapis.com to the convenience preset for YouTube
