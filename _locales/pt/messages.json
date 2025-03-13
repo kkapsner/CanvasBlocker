@@ -992,11 +992,11 @@
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs during the current session (i.e. temporarily whitelisted). To add multiple entries, separate them by commas.",
+		"message": "Domínios ou URL's que podem utilizar todas as APIs durante a sessão atual (ou seja, temporariamente permitidos). Para adicionar várias entradas, separe-as por vírgulas.",
 		"description": ""
 	},
 	"sessionWhiteList_search": {
-		"message": "temporary",
+		"message": "temporário",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
@@ -1396,11 +1396,11 @@
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "CanvasBlocker settings export",
+		"message": "Exportação das definições do CanvasBlocker",
 		"description": ""
 	},
 	"exportSettings_description": {
-		"message": "This allows you to copy your current settings. You can also paste and modify them here. If something is invalid the textarea will get a red background and the change is not stored.",
+		"message": "Isto permite-lhe copiar as suas definições atuais. Pode também colá-las e modificá-las aqui. Se algo for inválido, a área de texto ficará com um fundo vermelho e a alteração não será guardada.",
 		"description": ""
 	},
 	"settingControlling_title": {
@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "This shows which fingerprint protections are active for specified sites.{newline}{newline}Unchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.{newline}Checked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
+		"message": "Isto mostra quais proteções contra impressões digitais estão ativas para os sites especificados.{newline}{newline}Não estando selecionado, significa que o site pode utilizar essa função específica sem alterações. Isto inclui a possibilidade de o site utilizá-la para identificar (parcialmente) o seu navegador através de impressões digitais.{newline}Estando selecionado, significa que o CanvasBlocker fornece uma proteção que dificulta ao site identificá-lo de forma única.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
