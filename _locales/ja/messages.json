@@ -1300,7 +1300,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
-		"message": "ウィンドウの内側の寸法にフィットする画面サイズの最低値を次のセットから選択してください。スクリーンサイズ: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"message": "次のセットの中で、ウィンドウの内側の寸法にフィットする最小のスクリーンサイズを使用します。画面サイズ: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
