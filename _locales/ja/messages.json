@@ -92,7 +92,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "privacy.resistFingerprintが有効になっています。これはCanvasBlockerの動作をわずかに変更します。詳細は {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} と {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767} を参照してください。",
+		"message": "privacy.resistFingerprintが有効になっています。これはCanvasBlockerの動作をわずかに変更します。詳細は {link:ここ:https://github.com/kkapsner/CanvasBlocker/issues/158} と {link:ここ:https://github.com/ghacksuserjs/ghacks-user.js/issues/767} を参照してください。",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
