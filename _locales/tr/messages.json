@@ -24,15 +24,15 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker açık",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker kapalı",
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "daha fazlası",
 		"description": ""
 	},
 	"less": {
@@ -40,23 +40,23 @@
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "Lütfen bekleyin...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "Arama",
 		"description": ""
 	},
 	"ok": {
-		"message": "OK",
+		"message": "Tamam",
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "Uygula",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "Vazgeç",
 		"description": ""
 	},
 	"input": {
@@ -68,7 +68,7 @@
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "Ayarlar",
 		"description": ""
 	},
 	"options_title": {
@@ -76,7 +76,7 @@
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "Bu sayfada CanvasBlocker'ın ayarlarını değiştirebilirsiniz",
 		"description": ""
 	},
 	"installNotice": {
@@ -104,23 +104,23 @@
 		"description": ""
 	},
 	"labelForDefaultOption": {
-		"message": " (default)",
+		"message": " (varsayılan)",
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "Genel",
 		"description": ""
 	},
 	"group_APIs": {
-		"message": "APIs",
+		"message": "API'ler",
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "Diğer",
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking",
+		"message": "İzin İsteme",
 		"description": ""
 	},
 	"section_faking": {
@@ -136,11 +136,11 @@
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "Diğer",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "Ayarlar",
 		"description": ""
 	},
 	"section_canvas-api": {
@@ -180,7 +180,7 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "Uzman modu",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
@@ -196,11 +196,11 @@
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Güncelleme sırasında oturumu böl",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Eğer aktif edilirse güncelleme mevcut olur olmaz eklenti güncellenecektir. Bu şu anda açık olan bazı sekmeleri bozabilir.",
 		"description": ""
 	},
 	"reloadExtension_title": {
@@ -216,15 +216,15 @@
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "Bu ayarı gizlemek için buraya tıklayın",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "Gizli ayarları göster",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "Gizli ayarları görüntülemek için etkinleştirin",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -360,47 +360,47 @@
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "Sadece bir kez sor",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API type (context, input, readout) has to be confirmed separately\n\nCombined: all API types get confirmed together",
+		"message": "CanvasBlocker'ın engelleme modu 'izin iste' veya 'readout API için izin iste' olarak ayarlandığında, bir sayfa API'ye veya readout API'sine erişmeye çalıştığı her seferde bir onaylama mesajı çıkar. Bu ayar, sayfa API'ye kaç kez erişmeye çalışırsa çalışsın, her sayfa için onaylama mesajını yalnızca bir kez göstermeye çalışır. Buna rağmen, bazı sayfalarda birden fazla onaylama mesajı gösterilebilir.\n\nHayır: her zaman sorar\n\nHer biri: her bir API türü (context, input, readout) ayrı ayrı onaylanmalıdır\n\nOrtak: tüm API türleri birlikte onaylanır",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "hayır",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
-		"message": "individual",
+		"message": "her biri",
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "ortak",
 		"description": ""
 	},
 	"askDenyMode_title": {
-		"message": "Ask deny mode",
+		"message": "İzin reddetme modu",
 		"description": ""
 	},
 	"askDenyMode_description": {
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "İzin reddedildiğinde hangi mod kullanılmalıdır.",
 		"description": ""
 	},
 	"askDenyMode_options.block": {
-		"message": "block",
+		"message": "engelle",
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "taklit et",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
-		"message": "Show canvas content",
+		"message": "Canvas içeriğini göster",
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
-		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
+		"message": "Mümkünse, izin istenen canvas'ın içeriğini gösterir.",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
@@ -420,35 +420,35 @@
 		"description": ""
 	},
 	"blockMode_urlSpecific": {
-		"message": "To set individual block modes for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired block mode.",
+		"message": "Belirli web siteleri için ayrı ayrı engelleme modları ayarlamak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve istediğiniz engelleme modunu seçin.",
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "her şeye izin ver",
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "sadece beyaz listeye izin ver",
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "ask for permission",
+		"message": "izin iste",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "her şeyi engelle",
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "sadece kara listeyi engelle",
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "taklit et",
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "Engelleme Modu",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
@@ -1468,15 +1468,15 @@
 		"description": ""
 	},
 	"browserAction_test": {
-		"message": "Test",
+		"message": "Dene",
 		"description": ""
 	},
 	"browserAction_review": {
-		"message": "Review",
+		"message": "İncele",
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Report issue",
+		"message": "Sorun bildir",
 		"description": ""
 	},
 	"sanitation_title": {
