@@ -132,7 +132,7 @@
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "Listeler",
 		"description": ""
 	},
 	"section_misc": {
@@ -184,15 +184,15 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "Ek ayarları gösterir.",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "Açıklamaları göster",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "Ayarların açıklamalarını gösterir.",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
@@ -408,11 +408,11 @@
 		"description": ""
 	},
 	"blackList_description": {
-		"message": "Domains or URLs where all APIs shall always be blocked. To add multiple entries, separate them by commas.",
+		"message": "Tüm API'lerin her zaman engelleneceği alan adları veya URL'ler. Birden fazla girdi eklemek için virgül ile ayırın.",
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "Kara liste",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -696,7 +696,7 @@
 		"description": ""
 	},
 	"displayCallingStack": {
-		"message": "display calling stack",
+		"message": "çağrı yığınını göster",
 		"description": ""
 	},
 	"displayFullURL": {
@@ -708,7 +708,7 @@
 		"description": ""
 	},
 	"enableStackList_title": {
-		"message": "Use file specific whitelist",
+		"message": "Dosyaya özel beyaz liste kullan",
 		"description": ""
 	},
 	"preBlock": {
@@ -760,19 +760,19 @@
 		"description": ""
 	},
 	"ignoreList_description": {
-		"message": "Domains or URLs where no notifications shall be shown. To add multiple entries, separate them by commas.",
+		"message": "Bildirimlerin gösterilmeyeceği alan adları veya URL'ler. Birden fazla girdi eklemek için virgül ile ayırın.",
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "Yok sayılanlar listesi",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "Yok sayılan API'ler",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
-		"message": "No notifications will be displayed for the selected APIs.",
+		"message": "Seçilen API'ler için bildirim gösterilmeyecek.",
 		"description": ""
 	},
 	"localFile": {
@@ -804,7 +804,7 @@
 		"description": ""
 	},
 	"selectWhitelist": {
-		"message": "Select domain or URL to add to whitelist:",
+		"message": "Beyaz listeye eklemek için alan adı veya URL seçin:",
 		"description": ""
 	},
 	"inputWhitelist": {
@@ -820,19 +820,19 @@
 		"description": ""
 	},
 	"selectSessionWhitelist": {
-		"message": "Select domain or URL to add to the session whitelist:",
+		"message": "Oturum beyaz listesine eklemek için alan adı veya URL seçin:",
 		"description": ""
 	},
 	"inputSessionWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to the session whitelist:",
+		"message": "Oturum beyaz listesine eklemek için alan adı veya \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Input domain to add to the session whitelist:",
+		"message": "Oturum beyaz listesine eklemek için alan adı girin:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to the session whitelist:",
+		"message": "Oturum beyaz listesine eklemek için \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"selectWhitelistScope": {
@@ -844,11 +844,11 @@
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the {api}",
+		"message": " Sadece {api}'sini beyaz listeye ekle",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "Tüm API'leri beyaz listeye ekle",
 		"description": ""
 	},
 	"settings": {
@@ -860,7 +860,7 @@
 		"description": ""
 	},
 	"showCallingFile_title": {
-		"message": "Show calling file",
+		"message": "Çağıran dosyayı göster",
 		"description": ""
 	},
 	"showCompleteCallingStack_description": {
@@ -868,7 +868,7 @@
 		"description": ""
 	},
 	"showCompleteCallingStack_title": {
-		"message": "Display complete calling stack",
+		"message": "Tam çağrı yığınını göster",
 		"description": ""
 	},
 	"showNotifications_description": {
@@ -912,7 +912,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Display badge",
+		"message": "Rozeti göster",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -940,7 +940,7 @@
 		"description": ""
 	},
 	"sourceOutput": {
-		"message": "Calling file",
+		"message": "Çağıran dosya",
 		"description": ""
 	},
 	"stackEntryOutput": {
@@ -948,19 +948,19 @@
 		"description": ""
 	},
 	"stackList_description": {
-		"message": "JS files which are allowed to use all APIs. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"message": "Tüm API'leri kullanmasına izin verilen JS dosyaları. Girdi JSON formatında olmalıdır. Örnek: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
 		"description": ""
 	},
 	"stackList_title": {
-		"message": "File specific whitelist",
+		"message": "Dosyaya özel beyaz liste",
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "Beyaz liste",
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs. To add multiple entries, separate them by commas.",
+		"message": "Tüm API’leri kullanmasına izin verilecek alan adları ve URL’ler. Birden fazla girdi eklemek için virgül ile ayırın.",
 		"description": ""
 	},
 	"whitelist": {
@@ -988,15 +988,15 @@
 		"description": ""
 	},
 	"sessionWhiteList_title": {
-		"message": "Session whitelist",
+		"message": "Oturum beyaz listesi",
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs during the current session (i.e. temporarily whitelisted). To add multiple entries, separate them by commas.",
+		"message": "Geçerli oturum süresince tüm API’leri kullanmasına izin verilecek alan adları ve URL’ler (yani geçici olarak beyaz listeye eklenmiş). Birden fazla girdi eklemek için virgül ile ayırın.",
 		"description": ""
 	},
 	"sessionWhiteList_search": {
-		"message": "temporary",
+		"message": "geçici",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
@@ -1008,7 +1008,7 @@
 		"description": ""
 	},
 	"storeNotificationData_title": {
-		"message": "Store detail data of the notifications",
+		"message": "Bildirimlerin ayrıntılı verilerini depola",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -1236,7 +1236,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "Aç",
 		"description": ""
 	},
 	"navigatorSettings_title": {
@@ -1268,7 +1268,7 @@
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "Sıfırla",
 		"description": ""
 	},
 	"protectScreen_title": {
@@ -1320,7 +1320,7 @@
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "varsayılan",
 		"description": ""
 	},
 	"theme_options.light": {
@@ -1432,19 +1432,19 @@
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Inspect",
+		"message": "Incele",
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "Kaydet",
 		"description": ""
 	},
 	"loadSettings_label": {
-		"message": "Load",
+		"message": "Yükle",
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reset settings",
+		"message": "Ayarları sıfırlama",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1452,15 +1452,15 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reset",
+		"message": "Sıfırla",
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Are you sure you want to reset all settings?",
+		"message": "Tüm ayarları sıfırlamak istediğinzden emin misiniz?",
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "Ayarlar",
 		"description": ""
 	},
 	"browserAction_faq": {
@@ -1632,7 +1632,7 @@
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "Varsayılan ayarlar",
 		"description": ""
 	},
 	"preset_default_description": {
