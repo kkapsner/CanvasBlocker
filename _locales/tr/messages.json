@@ -72,11 +72,11 @@
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "CanvasBlocker ayarları",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "Bu sayfada CanvasBlocker'ın ayarlarını değiştirebilirsiniz",
+		"message": "Bu sayfada CanvasBlocker'ın ayarlarını değiştirebilirsiniz.",
 		"description": ""
 	},
 	"installNotice": {
@@ -128,7 +128,7 @@
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "Bildirimler",
 		"description": ""
 	},
 	"section_lists": {
@@ -224,7 +224,7 @@
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Gizli ayarları görüntülemek için etkinleştirin",
+		"message": "Gizli ayarları görüntülemek için etkinleştirin.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
@@ -872,19 +872,19 @@
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Shows a notification icon in the address bar when something gets blocked or faked.",
+		"message": "Bir şey engellendiğinde veya taklit edildiğinde adres çubuğunda bir bildirim simgesi gösterir.",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
-		"message": "To deactivate notifications for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web siteleri için bildirimleri devre dışı bırakmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"showNotifications_title": {
-		"message": "Show notification icon",
+		"message": "Bildirim simgesini göster",
 		"description": ""
 	},
 	"highlightPageAction_description": {
-		"message": "Highlight the page action icon for better visibility.",
+		"message": "Daha iyi görünürlik için sayfa eylemi simgesini vurgula.",
 		"description": ""
 	},
 	"highlightPageAction_urlSpecific": {
@@ -892,19 +892,19 @@
 		"description": ""
 	},
 	"highlightPageAction_title": {
-		"message": "Highlight page action icon",
+		"message": "Sayfa eylemi simgesini vurgula",
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "vurgu yok",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "renklendir",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "blink",
+		"message": "yanıp sönme",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -924,19 +924,19 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Change toolbar icon on notification",
+		"message": "Bildirim sırasında araç çubuğu simgesini değiştir",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "hiçbir şeyi değiştirme",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "rengi değiştir",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "blink",
+		"message": "yanıp sönme",
 		"description": ""
 	},
 	"sourceOutput": {
