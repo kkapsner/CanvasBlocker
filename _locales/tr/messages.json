@@ -80,15 +80,15 @@
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "CanvasBlocker kuruldu. Eğer bu sayfaya ileride tekrar erişebilmek istiyorsanız, lütfen sık kullanılanlara ekleyin.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlocker güncellendi. Bu sayfaya gelecekte tekrar ulaşmak istiyor ve henüz yer imlerine eklemediyseniz, lütfen ekleyin.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "Güncellemeden sonra tekrar gösterme.",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
@@ -100,7 +100,7 @@
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "Ayrı sekmede aç",
 		"description": ""
 	},
 	"labelForDefaultOption": {
@@ -124,7 +124,7 @@
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "Taklit Etme",
 		"description": ""
 	},
 	"section_notifications": {
@@ -208,7 +208,7 @@
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Bekleyen güncellemeyi yapın.",
 		"description": ""
 	},
 	"reloadExtension_label": {
@@ -480,7 +480,7 @@
 		"description": ""
 	},
 	"urlSettings_title": {
-		"message": "Site-specific values",
+		"message": "Siteye özel değerler",
 		"description": ""
 	},
 	"urlSettings_description": {
@@ -540,7 +540,7 @@
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "Kalıcı verileri depola",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
@@ -852,7 +852,7 @@
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "ayarlar",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -984,7 +984,7 @@
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "inspect whitelist",
+		"message": "Beyaz listeyi denetle",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
@@ -1016,7 +1016,7 @@
 		"description": ""
 	},
 	"storeImageForInspection_title": {
-		"message": "Store image for inspection",
+		"message": "Denetleme için resmi depola",
 		"description": ""
 	},
 	"storeImageForInspection_description": {
@@ -1256,11 +1256,11 @@
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "Operating system presets",
+		"message": "İşletim sistemi ön ayarları",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Browser presets",
+		"message": "Tarayıcı ön ayarları",
 		"description": ""
 	},
 	"navigatorSettings_values": {
@@ -1400,11 +1400,11 @@
 		"description": ""
 	},
 	"exportSettings_description": {
-		"message": "This allows you to copy your current settings. You can also paste and modify them here. If something is invalid the textarea will get a red background and the change is not stored.",
+		"message": "Bu, mevcut ayarlarınızı kopyalamanızı sağlar. Ayrıca buraya da yapıştırıp değiştirebilirsiniz. Eğer bir girdi geçersiz ise metin alanı kırmızı arka plan alır ve değişiklik kaydedilmez.",
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "Ayar kontrolü",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1412,27 +1412,27 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Setting sanitation",
+		"message": "Ayar temizliği",
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "Beyaz listeyi denetle",
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "Ön Ayarlar",
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "Bu, kurulum sırasında gösterilen ön ayar sayfasını açar. Ön ayarlar, CanvasBlocker'ın bazı yaygın kullanım senaryoları için ayar değerlerinin koleksiyonlarıdır.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Aç",
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Incele",
+		"message": "Denetle",
 		"description": ""
 	},
 	"saveSettings_label": {
@@ -1480,7 +1480,7 @@
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Setting sanitation",
+		"message": "Ayar temizliği",
 		"description": ""
 	},
 	"sanitation_description": {
@@ -1588,11 +1588,11 @@
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
-		"message": "Storing notification data may lead to slow performance.",
+		"message": "Bildirim verilerini depolamak yavaşlamaya yol açabilir.",
 		"description": ""
 	},
 	"sanitation_error.storeImage": {
-		"message": "Storing the image for inspection has a high RAM footprint.",
+		"message": "Resmi denetleme için depolamak RAM'de büyük yer kaplar.",
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
@@ -1604,7 +1604,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_title": {
-		"message": "CanvasBlocker whitelist inspection",
+		"message": "CanvasBlocker beyaz liste denetimi",
 		"description": ""
 	},
 	"whitelist_inspection_description": {
@@ -1616,11 +1616,11 @@
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "Ön Ayarlar",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "CanvasBlocker ön ayarları",
 		"description": ""
 	},
 	"presets_installNotice": {
@@ -1628,7 +1628,7 @@
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Bunlar, farklı kullanıcı ihtiyaçlarına göre hazırlanmış ön ayarlardır. Köşeli parantez içindeki değerler, o anki ayar durumunu gösterir. Birden fazla ön ayarı arka arkaya uygulayabilirsiniz ancak bazı ayarlar daha sonradan uygulananlar tarafından üzerine yazılabilir.",
 		"description": ""
 	},
 	"preset_default_title": {
@@ -1636,31 +1636,31 @@
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "Hiç bir özel ayar uygulanmadı.",
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Rahat ayarlar",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Tarama deneyiminizi olabildiğince rahat hâle getirmek için bazı ayarları uygulayın. Buna belirli siteleri beyaz listeye eklemek de dahildir.",
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "Gizlilik ayarı",
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "CanvasBlocker’ın tespit edilmesini zorlaştıracak şekilde yapılandırılır. Bu, CPU kullanımının artmasına ve tarayıcının yavaşlamasına neden olabilir.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "Maksimum koruma",
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Parmak izi çıkarımına karşı korumayı en üst düzeye çıkarır. Bu ayarlar bazı sayfaların çalışmasını bozabilir, tarayıcıyı biraz yavaşlatabilir ve sitelerin CanvasBlocker’ın kullanıldığını tespit etmesine yol açabilir. Bu ön ayarı uyguladıktan sonra reCAPTCHA ön ayarını da uygulamayı düşünmelisiniz.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
@@ -1668,7 +1668,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "Window API’sini korumak reCAPTCHA’yı bozar. Bu ön ayar, gömülü sayfalarda window.name API’sinin kullanılmasına izin verir; böylece reCAPTCHA yeniden çalışır hale gelir.",
 		"description": ""
 	}
 }
