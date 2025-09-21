@@ -608,7 +608,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "DİKKAT: bu ayar tarayıcıyı 100% takip edilebilir yapar ve bu nedenle gizliliğiniz için bir tehdittir.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
@@ -616,43 +616,43 @@
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "En sık kullanılan renkleri yoksay",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "Canvas başına taklit edilmeyecek renk sayısı. Bu, tespiti önlemek için bir parametredir. \nDİKKAT: Bu değer, renk istatistiklerinin her görüntü için hesaplanması gerektiği için eklentinin performansını düşürebilir. Ayrıca, eklentinin güvenliğini azaltabilir, bu nedenle bu değeri 3’ün üzerine çıkarmamanız şiddetle tavsiye edilir.",
 		"description": ""
 	},
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "Minimum renk sayısı",
 		"description": ""
 	},
 	"minColors_description": {
-		"message": "Number of colors that a canvas must have to be faked.\nCAUTION: This can lower the safety of the addon, therefore it is highly recommended not to set this value above 10.",
+		"message": "Bir canvas'ın taklit edilmesi için sahip olması gereken renk sayısı.\nDİKKAT: Bu, eklentinin güvenliğini azaltabilir, bu nedenle bu değeri 10'un üzerine ayarlamamanız şiddetle tavsiye edilir.",
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
-		"message": "Fake the alpha channel",
+		"message": "Alfa kanalını taklit et",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Activates the faking of the alpha channel (transparency).",
+		"message": "Alfa kanalını (şeffaflığı) taklit etmeyi aktif eder",
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "Bildirilen webGL sağlayıcı",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"vendor\" (sağlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rastgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rastgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "Bildirilen webGL renderlayıcı",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"renderer\" (renderlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rastgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rastgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
@@ -676,7 +676,7 @@
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvases are read several times, but decreases it for big canvases.",
+		"message": "Canvas önbelleğini etkinleştirir. Bu, tespiti önleyebilir ve küçük canvas'ların birden çok kez okunması durumunda performansı artırır, ancak büyük canvas'larda performansı düşürür.",
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
@@ -684,7 +684,7 @@
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
+		"message": "Korunan API özelliklerinin listesi. Bir onay kutusunun işaretini kaldırdığınızda, API'nın bu özelliği korunmayacaktır.",
 		"description": ""
 	},
 	"disableNotifications": {
@@ -776,31 +776,31 @@
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "yerel dosya",
 		"description": ""
 	},
 	"ignorelistDomain": {
-		"message": "silence domain",
+		"message": "alan adını sessize al",
 		"description": ""
 	},
 	"ignorelistURL": {
-		"message": "ignore URL",
+		"message": "URL'i yoksay",
 		"description": ""
 	},
 	"selectIgnore": {
-		"message": "Select domain or URL to add to ignore list:",
+		"message": "Yok sayılanlar listesine eklemek için alan adı veya URL seçin:",
 		"description": ""
 	},
 	"inputIgnore": {
-		"message": "Input domain or URL \"RegExp\" to add to ignore list:",
+		"message": "Yok sayılanlar listesine eklemek için alan adı veya \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"inputIgnoreDomain": {
-		"message": "Input domain to add to ignore list:",
+		"message": "Yok sayılanlar listesine eklemek için alan adı girin:",
 		"description": ""
 	},
 	"inputIgnoreURL": {
-		"message": "Input URL \"RegExp\" to add to ignore list:",
+		"message": "Yok sayılanlar listesine eklemek için \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"selectWhitelist": {
@@ -808,15 +808,15 @@
 		"description": ""
 	},
 	"inputWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to whitelist:",
+		"message": "Beyaz listeye eklemek için alan adı veya URL girin:",
 		"description": ""
 	},
 	"inputWhitelistDomain": {
-		"message": "Input domain to add to whitelist:",
+		"message": "Beyaz listeye eklemek için alan adı girin:",
 		"description": ""
 	},
 	"inputWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to whitelist:",
+		"message": "Beyaz listeye eklemek için \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"selectSessionWhitelist": {
@@ -964,23 +964,23 @@
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "beyaz liste",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "whitelist domain",
+		"message": "Alan adını beyaz listeye al",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "whitelist URL",
+		"message": "URL'i beyaz listeye al",
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "yoksay",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "whitelist temporarily",
+		"message": "geçici olarak beyaz listeye al",
 		"description": ""
 	},
 	"inspectWhitelist": {
@@ -1000,11 +1000,11 @@
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "whitelist domain temporarily",
+		"message": "Alan adını geçici olarak beyaz listeye al",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "whitelist URL temporarily",
+		"message": "URL'i geçici olarak beyaz listeye al",
 		"description": ""
 	},
 	"storeNotificationData_title": {
@@ -1024,15 +1024,15 @@
 		"description": ""
 	},
 	"protectAudio_title": {
-		"message": "Protect audio API",
+		"message": "Ses API'sini koru",
 		"description": ""
 	},
 	"protectAudio_description": {
-		"message": "If the audio API shall be protected as well",
+		"message": "Eğer ses API’si de korunacaksa",
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"audioFakeRate_title": {
@@ -1044,39 +1044,39 @@
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1 değer",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10 değer",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100 değer",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000 değer",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "değerlerin 0.1%'i",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "değerlerin 1%'i",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "değerlerin 10%'u",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "değerlerin 100%'ü",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "Gürültü seviyesi",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
@@ -1084,31 +1084,31 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "minimum",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "düşük",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "orta",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "yüksek",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "maksimum",
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "Ses önbelliğini kullan",
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"message": "Ses önbelleğini etkinleştir. Bu tespit edilmeyi önler ama performansı düşürür.",
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
@@ -1116,7 +1116,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "Sabit indeksleri kullan",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
@@ -1124,7 +1124,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_title": {
-		"message": "Fixed indices",
+		"message": "Sabit indeksler",
 		"description": ""
 	},
 	"audioFixedIndices_description": {
@@ -1132,7 +1132,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
-		"message": "History length threshold",
+		"message": "Geçmiş uzunluğu eşiği",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
@@ -1144,19 +1144,19 @@
 		"description": ""
 	},
 	"protectWindow_title": {
-		"message": "Protect window API",
+		"message": "Window API'sini koru",
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "window.opener and window.name will be protected. This can render some webpages unusable.",
+		"message": "window.opener ve window.name korunacaktır. Bu, bazı web sayfalarının kullanılamaz hale gelmesine neden olabilir.",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "Protecting the window API breaks reCAPTCHA. Do you want to allow the window.name API in embedded pages which will make it work again?",
+		"message": "Window API’sini korumak reCAPTCHA’yı bozabilir. Gömülü sayfalarda window.name API’sine izin vererek tekrar çalışmasını sağlamak ister misiniz?",
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
@@ -1172,15 +1172,15 @@
 		"description": ""
 	},
 	"protectDOMRect_title": {
-		"message": "Protect DOMRect API",
+		"message": "DOMRect API'sini koru",
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "This protects against the \"getClientRects()\" fingerprinting and several similar methods.",
+		"message": "Bu, \"getClientRects()\" ile parmak izi takibine ve çeşitli benzer yöntemlere karşı korur.",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
@@ -1192,39 +1192,39 @@
 		"description": ""
 	},
 	"protectSVG_title": {
-		"message": "Protect SVG API",
+		"message": "SVG API'sini koru",
 		"description": ""
 	},
 	"protectSVG_description": {
-		"message": "This protects against fingerprinting using SVGs.",
+		"message": "Bu, SVG kullanılarak parmak izi takibine karşı korur.",
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "TextMetrics API'sini koru",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Bu, DOMRect değerlerini çapraz doğrulamak için kullanılabilen “measureText()” parmak izi takibine karşı korur.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Protect navigator API",
+		"message": "Navigator API'sini koru",
 		"description": ""
 	},
 	"protectNavigator_description": {
-		"message": "This page allows for changes in the navigator API. Enabling this protection does not change anything by default. Open the navigator settings to specify the changes you want to have there.",
+		"message": "Bu sayfa, navigator API’sinde değişiklik yapılmasına izin verir. Bu korumayı etkinleştirmek varsayılan olarak hiçbir şeyi değiştirmez. İstediğiniz değişiklikleri belirlemek için navigator ayarlarını açın.",
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
@@ -1272,15 +1272,15 @@
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "Screen API'sini koru",
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "This protects against fingerprinting attempts including the screen size.",
+		"message": "Bu, ekran boyutunu da içeren parmak izi takip girişimlerine karşı koruma sağlar.",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"screenSize_title": {
@@ -1344,7 +1344,7 @@
 		"description": ""
 	},
 	"blockDataURLs_description": {
-		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking them prevents the real fingerprint to reach any server.",
+		"message": "Veri URL sayfaları, parmak izi takibine karşı korunamaz (bkz. https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Bunları engellemek, gerçek parmak izinin herhangi bir sunucuya ulaşmasını önler.",
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
@@ -1488,7 +1488,7 @@
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Her şey yolunda",
+		"message": "Nothing to complain.",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
