@@ -12,7 +12,7 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\nkoruma başarılı:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
@@ -92,7 +92,7 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "privacy.resistFingerprinting özelliğini etkinleştirdiniz. Bu CanvasBlocker'ın davranışını biraz değiştirir. Daha fazla bilgi için bakınız {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} ve {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
@@ -216,7 +216,7 @@
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Bu ayarı gizlemek için buraya tıklayın",
+		"message": "Bu ayarı gizlemek için buraya tıklayın.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
@@ -328,7 +328,7 @@
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": " TextMetrics API'sine girdi izni vermek istiyor musunuz?",
+		"message": "TextMetrics API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
@@ -500,7 +500,7 @@
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "Canvases with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 1 000 000.",
+		"message": "Bu sayıdan daha büyük alana sahip canvas'lar taklit edilmez. (Devre dışı bırakmak için sıfır girin.) Bu, tarayıcı donmalarını önleyebilecek bir performans parametresidir ve cihazın işlem gücüne göre ayarlanmalıdır. \nDİKKAT: Bu, eklentinin güvenliğini azaltır; bu nedenle değerin 1 000 000’in altına düşürülmemesi şiddetle tavsiye edilir.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
@@ -508,7 +508,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnonpersistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of nonpersistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "hiç biri (tamamen beyaz): tamamen beyaz bir görüntü döndürülür. Bununla birlikte “Alfa kanalını taklit et” seçeneğinin etkinleştirilmesi gerekir. DİKKAT: Bu seçenek “girdide sahtele” moduyla kullanılmamalıdır.\n\nkalıcı olmayan: Rastgele sayılar her taklit etme işlemi için yeniden oluşturulur. Çoğu API korumasının tespiti önlemek için önbellek kullandığını akılda tutun.\n\nsabit: nonpersistent’ın bir varyasyonudur. Ancak canvas verileri değiştirildiğinde aynı renkteki pikseller de sonradan aynı rengi paylaşırlar.\n\nkalıcı: rastgele sayılar her bir alan adı için yalnızca bir kere belirlenecektir.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -528,15 +528,15 @@
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Rasgele sayı üreteci",
+		"message": "Rastgele sayı üreteci",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Persistent storage",
+		"message": "Kalıcı depolama",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"message": "Yeniden başlatma sonrasında kullanılmak üzere kalıcı rasgele sayı üreteci için verilerini depolar.",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
@@ -544,15 +544,15 @@
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "If data for the persistent random number generator shall be stored. Otherwise it is discarded on browser shutdown.",
+		"message": "Kalıcı rastgele sayı üreteci için veri saklanacaksa bu şekilde kaydedilir. Aksi takdirde tarayıcı kapatıldığında silinir.",
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
-		"message": "Clear interval of the persistent data",
+		"message": "Kalıcı verilerin temizlenme aralığı",
 		"description": ""
 	},
 	"persistentRndClearInterval_description": {
-		"message": "After the specified interval the persistent data is cleared automatically. (Enter zero to disable.)",
+		"message": "Belirtilen aralık ardından kalıcı veriler otomatik olarak temizlenir. (Devre dışı bırakmak için sıfır girin.)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
@@ -568,7 +568,7 @@
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "Gün",
+		"message": "gün",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
@@ -584,11 +584,11 @@
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
-		"message": "Clear persistent random storage",
+		"message": "Kalıcı rastgele depolama alanını temizle",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Deletes all data for the persistent random number generator.",
+		"message": "Kalıcı rastgele sayı üreteci verilerin",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
@@ -604,7 +604,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Share persistent randomness between domains",
+		"message": "Alan adları arası kalıcı rastgeleliği paylaş",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
@@ -612,7 +612,7 @@
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "Alan adları arasında kalıcı rastgeleliği paylaşmak istediğinizden gerçekten emin misiniz?\nDİKKAT: bu tarayıcıyı 100% takip edilebilir yapar ve bu nedenle gizliliğiniz için bir tehdittir.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
@@ -660,7 +660,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "WebGL'in \"getParameter\" fonksiyonunda \"unmasked vendor\" (maskelenmemiş sağlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rasgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rasgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"unmasked vendor\" (maskelenmemiş sağlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rastgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rastgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
@@ -668,7 +668,7 @@
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "WebGL'in \"getParameter\" fonksiyonunda \"unmasked renderer\" (maskelenmemiş renderlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rasgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rasgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"unmasked renderer\" (maskelenmemiş renderlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rastgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rastgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
@@ -1596,7 +1596,7 @@
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"message": "Alan adları arası kalıcı rastgeleliği paylaşmayın, çünkü bu tarayıcıyı 100% takip edilebilir yapar.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
