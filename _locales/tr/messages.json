@@ -36,7 +36,7 @@
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "daha az",
 		"description": ""
 	},
 	"pleaseWait": {
@@ -60,11 +60,11 @@
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "girdi",
 		"description": ""
 	},
 	"readout": {
-		"message": "readout",
+		"message": "okuma",
 		"description": ""
 	},
 	"options": {
@@ -204,7 +204,7 @@
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Eklentiyi yenile",
 		"description": ""
 	},
 	"reloadExtension_description": {
@@ -212,7 +212,7 @@
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Yenile",
 		"description": ""
 	},
 	"hideSetting": {
@@ -228,135 +228,135 @@
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Do you want to allow invisible <canvas>?",
+		"message": "Görünmez <canvas>'a izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Do you want to allow invisible <canvas> input?",
+		"message": "Görünmez <canvas>'a girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "Do you want to allow invisible <canvas> readout?",
+		"message": "Görünmez <canvas>'a okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "<canvas>'a izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "Do you want to allow <canvas> input?",
+		"message": "<canvas>'a girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Do you want to allow <canvas> readout?",
+		"message": "<canvas>'a okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "Do you want to allow the red bordered <canvas>?",
+		"message": "Kırmızı çerçeveli <canvas>'a izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Do you want to allow input in the red bordered <canvas>?",
+		"message": "Kırmızı çerçeveli <canvas>'da girdiye izin veriyor musunuz?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "Do you want to allow the readout of the red bordered <canvas>?",
+		"message": "Kırmızı çerçeveli <canvas>'ın okunmasına izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "Audio API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio API input?",
+		"message": "Audio API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio API readout?",
+		"message": "Audio API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "History API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "History API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "History API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "Window API''sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window API input?",
+		"message": "Window API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window API readout?",
+		"message": "Window API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "DOMRect API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect API input?",
+		"message": "DOMRect'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "DOMRect API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "SVG API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "SVG API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "SVG API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "TextMetrics API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": " TextMetrics API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "TextMetrics API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "Navigator API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Do you want to allow navigator API input?",
+		"message": "Navigator API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "Navigator API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "Screen API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "Screen API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "Screen API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
@@ -404,7 +404,7 @@
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
-		"message": "The webpage wants to read the content of the following canvas:",
+		"message": "Web sayfası aşağıdaki canvas'ın içeriğini okumak istiyor:",
 		"description": ""
 	},
 	"blackList_description": {
@@ -452,7 +452,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "Canvas API'sinin korumalı kısmı",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
@@ -468,11 +468,11 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "input",
+		"message": "girdi",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "readout",
+		"message": "okuma",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
@@ -512,23 +512,23 @@
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "persistent",
+		"message": "kalıcı",
 		"description": ""
 	},
 	"rng_options.constant": {
-		"message": "constant",
+		"message": "sabit",
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "nonpersistent",
+		"message": "kalıcı değil",
 		"description": ""
 	},
 	"rng_options.white": {
-		"message": "none (completely white)",
+		"message": "hiçbiri (tamamiyle beyaz)",
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "Rasgele sayı üreteci",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
@@ -556,31 +556,31 @@
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "saniye",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "dakika",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "saat",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "Gün",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "hafta",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "ay",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "yıl",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
@@ -592,7 +592,7 @@
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "Temizle",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
