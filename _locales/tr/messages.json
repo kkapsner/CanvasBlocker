@@ -456,7 +456,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "nothing: no features of the canvas API are protected.\n\nreadout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "hiç biri: Canvas API'sinin hiçbir özelliği korunmaz.\n\nokuma: Canvas API'sinin okuma özellikleri korunmaktadır.\n\ngirdi: Canvas API'sinin girdi özellikleri korunmaktadır. Engelleme modu “taklit et” kullanıldığında, metin görüntülenirken çizilen pikseller hafifçe değiştirilir. Bu, eklentinin tespit edilmesini zorlaştırır ancak daha az güvenlidir. WebGL canvas'larında davranış, \"okuma\" ile aynıdır.\n\nherşey: Hem okuma hemde girdi özellikleri korunmaktadır. Tespit edilme ihtimalini arttırdığı için \"taklit et\" engelleme modu ile kullanılması tavsiye edilmez.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
