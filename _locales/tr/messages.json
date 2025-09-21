@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "Bazı JS API'lerini değiştirerek parmak izi takibini önler.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -16,7 +16,7 @@
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " ({url}  için beyaz listeye eklenen API'ler)",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -96,7 +96,7 @@
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "dom.webAudio.enabled devre dışı bıraktınız. Bunu çok az kişi yaptığı için sizi daha kolay takip edilebilir yapar.",
 		"description": ""
 	},
 	"openInTab": {
@@ -456,15 +456,15 @@
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "hiç biri: Canvas API'sinin hiçbir özelliği korunmaz.\n\nokuma: Canvas API'sinin okuma özellikleri korunmaktadır.\n\ngirdi: Canvas API'sinin girdi özellikleri korunmaktadır. Engelleme modu “taklit et” kullanıldığında, metin görüntülenirken çizilen pikseller hafifçe değiştirilir. Bu, eklentinin tespit edilmesini zorlaştırır ancak daha az güvenlidir. WebGL canvas'larında davranış, \"okuma\" ile aynıdır.\n\nherşey: Hem okuma hemde girdi özellikleri korunmaktadır. Tespit edilme ihtimalini arttırdığı için \"taklit et\" engelleme modu ile kullanılması tavsiye edilmez.",
+		"message": "hiç biri: Canvas API'sinin hiçbir özelliği korunmaz.\n\nokuma: Canvas API'sinin okuma özellikleri korunmaktadır.\n\ngirdi: Canvas API'sinin girdi özellikleri korunmaktadır. Engelleme modu “taklit et” kullanıldığında, metin görüntülenirken çizilen pikseller hafifçe değiştirilir. Bu, eklentinin tespit edilmesini zorlaştırır ancak daha az güvenlidir. WebGL canvas'larında davranış, \"okuma\" ile aynıdır.\n\nher şey: Hem okuma hemde girdi özellikleri korunmaktadır. Tespit edilme ihtimalini arttırdığı için \"taklit et\" engelleme modu ile kullanılması tavsiye edilmez.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"message": "Belirli web siteleri için ayrı ayrı bölümlerini korumak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve istediğiniz bölümü seçin.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "hiç biri",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
@@ -476,7 +476,7 @@
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "her şey",
 		"description": ""
 	},
 	"urlSettings_title": {
@@ -488,15 +488,15 @@
 		"description": ""
 	},
 	"inputURL": {
-		"message": "Input domain or URL \"RegExp\":",
+		"message": "Alan adı veya \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"minFakeSize_description": {
-		"message": "Canvases with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
+		"message": "Bu sayıdan daha küçük veya ona eşit alana sahip canvas'lar taklit edilmez. Bu, tespiti önlemek amacıyla kullanılan bir parametredir. \nDİKKAT: Bu, eklentinin güvenliğini azaltır; bu nedenle değeri 100’ün üzerine çıkarmamanız şiddetle tavsiye edilir.",
 		"description": ""
 	},
 	"minFakeSize_title": {
-		"message": "Minimal fake size",
+		"message": "Minimum taklit boyutu",
 		"description": ""
 	},
 	"maxFakeSize_description": {
@@ -504,7 +504,7 @@
 		"description": ""
 	},
 	"maxFakeSize_title": {
-		"message": "Maximal fake size",
+		"message": "Maksimum taklit boyutu",
 		"description": ""
 	},
 	"rng_description": {
@@ -656,23 +656,23 @@
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Reported webGL unmasked vendor",
+		"message": "Bildirilen webGL maskelenmemiş sağlayıcı",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"unmasked vendor\" (maskelenmemiş sağlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rasgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rasgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Reported webGL unmasked renderer",
+		"message": "Bildirilen webGL maskelenmemiş renderlayıcı",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"unmasked renderer\" (maskelenmemiş renderlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rasgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rasgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
-		"message": "Use canvas cache",
+		"message": "Canvas önbelleğini kullan",
 		"description": ""
 	},
 	"useCanvasCache_description": {
@@ -680,7 +680,7 @@
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
-		"message": "Protected API features",
+		"message": "Korunan API özellikleri",
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
@@ -688,11 +688,11 @@
 		"description": ""
 	},
 	"disableNotifications": {
-		"message": "disable notifications",
+		"message": "Bildirimleri kapat",
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "Görüntü ayarları",
 		"description": ""
 	},
 	"displayCallingStack": {
@@ -700,7 +700,7 @@
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "Tam URL'i görüntüle",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -712,11 +712,11 @@
 		"description": ""
 	},
 	"preBlock": {
-		"message": "API blocked on {url} because CanvasBlocker settings were not loaded in time.",
+		"message": "CanvasBlocker ayarları zamanında yüklenmediği için {url}'da API engellendi.",
 		"description": ""
 	},
 	"blocked": {
-		"message": "API blocked on {url}.",
+		"message": "{url}'da API engellendi.",
 		"description": ""
 	},
 	"fakedReadout": {
@@ -1488,7 +1488,7 @@
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Nothing to complain.",
+		"message": "Her şey yolunda",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
