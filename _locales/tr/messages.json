@@ -1228,7 +1228,7 @@
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
-		"message": "Navigator settings",
+		"message": "Navigator ayarları",
 		"description": ""
 	},
 	"openNavigatorSettings_description": {
@@ -1240,11 +1240,11 @@
 		"description": ""
 	},
 	"navigatorSettings_title": {
-		"message": "CanvasBlocker navigator settings",
+		"message": "CanvasBlocker navigator ayarları",
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "On this page you can set the navigator settings. If using a preset you should always use an operating system and browser preset. After selecting these you can still make modifications.",
+		"message": "Bu sayfada navigator ayarlarını yapılandırabilirsiniz. Bir ön ayar kullanıyorsanız, mutlaka bir işletim sistemi ve tarayıcı ön ayarı seçmelisiniz. Bu ön ayarları seçtikten sonra da değişiklik yapabilirsiniz.",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
@@ -1264,7 +1264,7 @@
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Navigator values",
+		"message": "Navigator değerleri",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
@@ -1284,7 +1284,7 @@
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "Ekran boyutu",
 		"description": ""
 	},
 	"screenSize_description": {
@@ -1308,7 +1308,7 @@
 		"description": ""
 	},
 	"theme_title": {
-		"message": "Theme",
+		"message": "Tema",
 		"description": ""
 	},
 	"theme_description": {
@@ -1316,7 +1316,7 @@
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "otomatik",
 		"description": ""
 	},
 	"theme_options.default": {
@@ -1324,23 +1324,23 @@
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "aydıklık",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "karanlık",
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "renkli",
 		"description": ""
 	},
 	"theme_options.none": {
-		"message": "none",
+		"message": "hiçbiri",
 		"description": ""
 	},
 	"blockDataURLs_title": {
-		"message": "Block data URL pages",
+		"message": "Veri URL sayfalarını engelle",
 		"description": ""
 	},
 	"blockDataURLs_description": {
@@ -1348,11 +1348,11 @@
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "Sürüm notları",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1360,31 +1360,31 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Show",
+		"message": "Göster",
 		"description": ""
 	},
 	"logLevel_title": {
-		"message": "Logging level",
+		"message": "Günlük kaydı düzeyi",
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "To find the cause of an error, detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.\n\nThe logging can be viewed in the Browser Console (Ctrl+Shift+J) and the Web Console (Ctrl+Shift+K).",
+		"message": "Bir hatanın nedenini bulmak için eklenti etkinliklerinin ayrıntılı kaydı faydalıdır. Bu parametre, kaydın detay seviyesini kontrol eder. \n\nKayıt, Tarayıcı Konsolu (Ctrl + Shift + J) ve Web Konsolu (Ctrl + Shift + K)’da görüntülenebilir.",
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "none",
+		"message": "hiçbiri",
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "hata",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "uyarı",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "mesaj",
 		"description": ""
 	},
 	"logLevel_options.75": {
@@ -1392,11 +1392,11 @@
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "verbose",
+		"message": "ayrıntılı",
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "CanvasBlocker settings export",
+		"message": "CanvasBlocker ayarlarını dışa aktar",
 		"description": ""
 	},
 	"exportSettings_description": {
@@ -1464,7 +1464,7 @@
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "SSS",
 		"description": ""
 	},
 	"browserAction_test": {
@@ -1488,31 +1488,31 @@
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Nothing to complain.",
+		"message": "Her şey yolunda.",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
-		"message": "Unnecessary URL values",
+		"message": "Gereksiz URL değerleri",
 		"description": ""
 	},
 	"sanitation_ruleset.disabledFeatures": {
-		"message": "Disabled features",
+		"message": "Kapatılan özellikler",
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "Engelleme Modu",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
-		"message": "Thresholds",
+		"message": "Eşik Değer",
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "Performans",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
-		"message": "Privacy",
+		"message": "Gizlilik",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
@@ -1520,7 +1520,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
-		"message": "remove URL value",
+		"message": "URL değerini kaldır",
 		"description": ""
 	},
 	"sanitation_error.disabledFeatures": {
@@ -1536,7 +1536,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "özellikleri aç",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
@@ -1600,7 +1600,7 @@
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
-		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"message": "Özel bir ekran boyutu kullanmayın, bu, tarayıcının daha kolay izlenmesine yol açar.",
 		"description": ""
 	},
 	"whitelist_inspection_title": {
@@ -1612,7 +1612,7 @@
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "Tüm API'ler",
 		"description": ""
 	},
 	"presets": {
@@ -1624,7 +1624,7 @@
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg}CanvasBlocker'ı kurduğunuz için teşekkürler. İhtiyacınıza göre ayarlamak için bazı ön ayarlar uygulayabilirsiniz. Daha fazla özelleştirme için {link:options:options.html} sayfasını açabilirsiniz.",
 		"description": ""
 	},
 	"presets_introduction": {
@@ -1664,7 +1664,7 @@
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "reCAPTCHA istisnası",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
