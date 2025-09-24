@@ -1112,7 +1112,7 @@
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Some pages use a very poorly written audio fingerprinting script which will cause Firefox to slow down. To disable the cache for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Bazı sayfalar, Firefox'un yavaşlamasına neden olacak çok kötü yazılmış bir ses parmak izi komut dosyası kullanıyor. Belirli websitelerinde önbelleği kapatmak için siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
@@ -1188,7 +1188,7 @@
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
-		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"message": "CSS kullanarak piksellerin bazı kısımlarını kontrol edebilirsiniz. Algılamayı önlemek için, DOMRect değeri bu katsayı ile çarpıldığında tamsayı ise değiştirilmez.",
 		"description": ""
 	},
 	"protectSVG_title": {
@@ -1292,7 +1292,7 @@
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
-		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"message": "Belirli web siteleri için özel boyutlar girmek için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve istediğiniz değeri girin.",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
@@ -1300,7 +1300,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
-		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"message": "Aşağıdaki setten iç pencere boyutlarına uyan en küçük ekran boyutunu kullanın. Ekran boyutları: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
@@ -1484,7 +1484,7 @@
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advice on suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"message": "Bu sayfa, CanvasBlocker ayarlarında yanlış yapılandırmaları bulmaya yardımcı olur. Ayrıca, optimal olmayan ayarlar hakkında tavsiyelerde bulunur. Ancak, tüm önerileri körü körüne uygulamanız önerilmez.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
@@ -1516,7 +1516,7 @@
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
+		"message": "\"{url}\" için URL değeri, \"{setting-title}\" için genel ayar ile aynıdır.",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
@@ -1548,7 +1548,7 @@
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
-		"message": "With blocking mode \"{blockMode}\" the {api} protection is not working.",
+		"message": "{blockMode} engelleme modu ile {api} koruması çalışmıyor.",
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
@@ -1556,7 +1556,7 @@
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "Do not use white random number generator with \"{blockMode}\" and protecting \"{protectedCanvasPart}\".",
+		"message": "Beyaz rastgele sayı üretecini, “{blockMode}” ve “{protectedCanvasPart}” koruması ile birlikte kullanmayın.",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
@@ -1568,23 +1568,23 @@
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
-		"message": "Do not use protect \"{protectedCanvasPart}\" in blocking mode \"{blockMode}\".",
+		"message": "{blockMode} engelleme modunda {protectedCanvasPart} koruması kullanmayın.",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectInput": {
-		"message": "switch to protect input",
+		"message": "girdi korumasına geç",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
-		"message": "\"{setting}\" should not be lower than {value}.",
+		"message": "\"{setting}\" ayarı {value} değerinden düşük olmamalıdır.",
 		"description": ""
 	},
 	"sanitation_error.valueTooHigh": {
-		"message": "\"{setting}\" should not be higher than {value}.",
+		"message": "\"{setting}\" ayarı {value} değerinden yüksek olmamalıdır.",
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
-		"message": "set to {value}",
+		"message": "{value} olarak ayarla",
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
