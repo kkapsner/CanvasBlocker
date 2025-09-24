@@ -756,7 +756,7 @@
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "Faked at input on {url}",
+		"message": "{url}'de girdi taklit edildi",
 		"description": ""
 	},
 	"ignoreList_description": {
@@ -1020,7 +1020,7 @@
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Enables the storage of the content of the faked canvas.\nCAUTION: This may lead to a lot of memory consumption.",
+		"message": "Taklit edilmiş canvas içeriğinin depolanmasını etkinleştirir. \nDİKKAT: Bu, çok fazla bellek tüketimine yol açabilir.",
 		"description": ""
 	},
 	"protectAudio_title": {
@@ -1248,7 +1248,7 @@
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
-		"message": "CAUTION: the actual browser in use cannot be faked entirely as there is a multitude of ways to detect it. E.g. feature tests and browser specific rendering of HTML elements will always leak.",
+		"message": "UYARI: Kullanılan gerçek tarayıcı tamamen taklit edilemez; bunu tespit etmenin birçok yolu vardır. Örneğin, özellik testleri ve HTML öğelerinin tarayıcıya özgü renderlanması her zaman sızıntıya neden olur.",
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
@@ -1528,7 +1528,7 @@
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Bazı {api} özellikleri devre dışı bırakılmıştır. Bu sadece test amacı veya özelliklerin ne yaptığını biliyorsanız uygundur.",
+		"message": "Bazı {api} özellikleri devre dışı bırakılmıştır. Bu yalnızca test amaçlı ya da özelliklerin ne yaptığını gerçekten bildiğiniz durumlarda yapılmalıdır.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
