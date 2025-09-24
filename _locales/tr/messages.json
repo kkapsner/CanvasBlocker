@@ -92,11 +92,11 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "privacy.resistFingerprinting özelliğini etkinleştirdiniz. Bu CanvasBlocker'ın davranışını biraz değiştirir. Daha fazla bilgi için bakınız {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} ve {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "dom.webAudio.enabled devre dışı bıraktınız. Bunu çok az kişi yaptığı için sizi daha kolay takip edilebilir yapar.",
+		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
 		"description": ""
 	},
 	"openInTab": {
@@ -508,7 +508,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "hiç biri (tamamen beyaz): tamamen beyaz bir görüntü döndürülür. Bununla birlikte “Alfa kanalını taklit et” seçeneğinin etkinleştirilmesi gerekir. DİKKAT: Bu seçenek “girdide sahtele” moduyla kullanılmamalıdır.\n\nkalıcı olmayan: Rastgele sayılar her taklit etme işlemi için yeniden oluşturulur. Çoğu API korumasının tespiti önlemek için önbellek kullandığını akılda tutun.\n\nsabit: nonpersistent’ın bir varyasyonudur. Ancak canvas verileri değiştirildiğinde aynı renkteki pikseller de sonradan aynı rengi paylaşırlar.\n\nkalıcı: rastgele sayılar her bir alan adı için yalnızca bir kere belirlenecektir.",
+		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnonpersistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of nonpersistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -536,7 +536,7 @@
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Yeniden başlatma sonrasında kullanılmak üzere kalıcı rasgele sayı üreteci için verilerini depolar.",
+		"message": "Stores the data for the persistent random number generator for usage after restart.",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
@@ -588,7 +588,7 @@
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Kalıcı rastgele sayı üreteci verilerin",
+		"message": "Deletes all data for the persistent random number generator.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
@@ -596,11 +596,11 @@
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Kapsayıcıyı temizle",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Kapsayıcı seçin",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
@@ -636,7 +636,7 @@
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Alfa kanalını (şeffaflığı) taklit etmeyi aktif eder",
+		"message": "Activates the faking of the alpha channel (transparency).",
 		"description": ""
 	},
 	"webGLVendor_title": {
@@ -684,7 +684,7 @@
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "Korunan API özelliklerinin listesi. Bir onay kutusunun işaretini kaldırdığınızda, API'nın bu özelliği korunmayacaktır.",
+		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
 		"description": ""
 	},
 	"disableNotifications": {
@@ -1252,7 +1252,7 @@
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
-		"message": "Settings for the container {select} are shown.",
+		"message": "{select} kapsayıcısının ayarları gösterilmektedir.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
@@ -1532,7 +1532,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
-		"message": "disable main flag",
+		"message": "Ana flag'ı kapat",
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
@@ -1552,7 +1552,7 @@
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
-		"message": "disable \"{flag}\"",
+		"message": "\"{flag}\"ı kapat",
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
@@ -1608,7 +1608,7 @@
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "This shows which fingerprint protections are active for specified sites.{newline}{newline}Unchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.{newline}Checked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
+		"message": "Bu, belirli bir web sitesleri için hangi parmak izi korumalarının aktif olduğunu gösterir.{newline}{newline}İşaretlenmemiş olması, sitenin bu belirli işlevi değiştirilmemiş şekilde kullanabileceği anlamına gelir. Buna, sitenin tarayıcınızın parmak izini (kısmen) almak için kullanabileceği de dahildir.{newline}İşaretlenmiş olması, CanvasBlocker'ın sitenin sizi benzersiz bir şekilde tanımlamasını zorlaştıran bir koruma sağladığı anlamına gelir.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
