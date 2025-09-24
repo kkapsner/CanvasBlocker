@@ -720,39 +720,39 @@
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Faked canvas readout on {url}",
+		"message": "{url}'da canvas okuma taklit edildi",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Faked audio readout on {url}",
+		"message": "{url}'da audio okuma taklit edildi",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Faked history readout on {url}",
+		"message": "{url}'da history okuma taklit edildi",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Faked window readout on {url}",
+		"message": "{url}'da window okuma taklit edildi",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "Faked DOMRect readout on {url}",
+		"message": "{url}'da DOMRect okuma taklit edildi",
 		"description": ""
 	},
 	"fakedSVGReadout": {
-		"message": "Faked SVG readout on {url}",
+		"message": "{url}'da SVG okuma taklit edildi",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "{url}'da TextMetrics okuma taklit edildi",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Faked navigator readout on {url}",
+		"message": "{url}'da nagivator okuma taklit edildi",
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Faked screen readout on {url}",
+		"message": "{url}'da screen okuma taklit edildi",
 		"description": ""
 	},
 	"fakedInput": {
@@ -836,11 +836,11 @@
 		"description": ""
 	},
 	"selectWhitelistScope": {
-		"message": "What is the scope of the whitelisting?",
+		"message": "Beyaz listenin kapsamı nedir?",
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "Beyaz listenin türü nedir?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
@@ -944,7 +944,7 @@
 		"description": ""
 	},
 	"stackEntryOutput": {
-		"message": "{url} line {line} column {column}",
+		"message": "{url} satır {line} sütun {column}",
 		"description": ""
 	},
 	"stackList_description": {
@@ -1036,11 +1036,11 @@
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Buffer fake rate",
+		"message": "Arabellek taklit oranı",
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "How many of the values per read request shall be faked.",
+		"message": "Okuma isteği başına kaç değer taklit edilecek",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
@@ -1120,7 +1120,7 @@
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices shall always be faked.",
+		"message": "Kullanılan indeksler bazıları her zaman taklit edilecekse.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
@@ -1128,7 +1128,7 @@
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "The indices that are always faked. To add multiple entries, separate them by commas.",
+		"message": "Her zaman taklit edilen indeksler. Birden fazla girdi eklemek için virgülle ayırın.",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
@@ -1136,11 +1136,11 @@
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximal length of the history that is reported to the website.",
+		"message": "Web sitesine bildirilen geçmişin maksimum uzunluğu",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "To change this value for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set a different value.",
+		"message": "Belirli web siteleri için bu değeri ayrı ayrı değiştirmek için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve farklı bir değer girin.",
 		"description": ""
 	},
 	"protectWindow_title": {
@@ -1160,15 +1160,15 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
-		"message": "Allow window.name in frames",
+		"message": "Çerçevelerde window.name'e izin ver",
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
-		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"message": "The window.name API'si, gömülü sayfalar bağlamında o kadar tehlikeli değildir ve burada meşru nedenlerle (ör. reCAPTCHA) kullanılır. Bu ayar, bu kullanım biçimlerine izin verecektir.\n",
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
-		"message": "To allow this only for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
+		"message": "Sadece belirli web sitelerinde buna izin vermek için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini işaretleyin.",
 		"description": ""
 	},
 	"protectDOMRect_title": {
@@ -1184,7 +1184,7 @@
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
-		"message": "DOMRect integer factor",
+		"message": "DOMRect tamsayı faktörü",
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
@@ -1288,7 +1288,7 @@
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"message": "Eğer bu değer “...x...” olarak ayarlanırsa, belirtilen boyutlar ekran boyutu olarak raporlanacaktır.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
@@ -1296,7 +1296,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
-		"message": "Fake minimal screen size",
+		"message": "Minimum taklit ekran boyutu",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
@@ -1304,7 +1304,7 @@
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini taklit etme işleminden hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"theme_title": {
@@ -1312,7 +1312,7 @@
 		"description": ""
 	},
 	"theme_description": {
-		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"message": "Sistem koyu tema kullanıyorsa otomatik tema koyu moda geçer (Firefox >= 67 gerektirir)",
 		"description": ""
 	},
 	"theme_options.auto": {
@@ -1388,7 +1388,7 @@
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "bildirim",
 		"description": ""
 	},
 	"logLevel_options.100": {
@@ -1524,11 +1524,11 @@
 		"description": ""
 	},
 	"sanitation_error.disabledFeatures": {
-		"message": "All features of {api} are disabled but the protection is enabled.",
+		"message": "Tüm {api} özellikleri devre dışı bırakılmıştır, ancak koruma etkinleştirilmiştir.",
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
+		"message": "Bazı {api} özellikleri devre dışı bırakılmıştır. Bu sadece test amacı veya özelliklerin ne yaptığını biliyorsanız uygundur.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
@@ -1540,11 +1540,11 @@
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
-		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"message": "\"taklit et\" veya \"izin iste\" engelleme modları kullanılması tavsiye edilir.",
 		"description": ""
 	},
 	"sanitation_resolution.switchToFake": {
-		"message": "switch to \"fake\"",
+		"message": "\"taklit et\"e geç",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
@@ -1560,11 +1560,11 @@
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
-		"message": "switch to protect readout",
+		"message": "okuma korumasına geç",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "switch to \"nonpersistent\" rng",
+		"message": "\"kalıcı olmayan\" rng'ye geç",
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
