@@ -92,11 +92,11 @@
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "privacy.resistFingerprinting özelliğini etkinleştirmişsiniz. Bu CanvasBlocker'ın davranışını biraz değiştirir. Daha fazla bilgi için bakınız {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} ve {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "dom.webAudio.enabled devre dışı bırakmışsınız. Bunu çok az kişi yaptığı için sizi daha kolay takip edilebilir yapar.",
 		"description": ""
 	},
 	"openInTab": {
@@ -508,7 +508,7 @@
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnonpersistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of nonpersistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "hiç biri (tamamen beyaz): tamamen beyaz bir görüntü döndürülür. Bununla birlikte “Alfa kanalını taklit et” seçeneğinin etkinleştirilmesi gerekir. DİKKAT: Bu seçenek “girdide sahtele” moduyla kullanılmamalıdır.\n\nkalıcı olmayan: Rastgele sayılar her taklit etme işlemi için yeniden oluşturulur. Çoğu API korumasının tespiti önlemek için önbellek kullandığını akılda tutun.\n\nsabit: kalıcı olmayanın bir varyasyonudur. Ancak canvas verileri değiştirildiğinde aynı renkteki pikseller de sonradan aynı rengi paylaşırlar.\n\nkalıcı: rastgele sayılar her bir alan adı için yalnızca bir kere belirlenecektir.",
 		"description": ""
 	},
 	"rng_options.persistent": {
@@ -536,7 +536,7 @@
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"message": "Yeniden başlatma sonrasında kullanılmak üzere kalıcı rastgele sayı üreteci için verilerini depolar.",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
@@ -588,7 +588,7 @@
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Deletes all data for the persistent random number generator.",
+		"message": "Kalıcı rastgele sayı üreteci verilerin.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
@@ -636,7 +636,7 @@
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Activates the faking of the alpha channel (transparency).",
+		"message": "Alfa kanalını (şeffaflığı) taklit etmeyi aktif eder.",
 		"description": ""
 	},
 	"webGLVendor_title": {
@@ -684,7 +684,7 @@
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
+		"message": "Korunan API özelliklerinin listesi. Bir onay kutusunun işaretini kaldırdığınızda, API'nin bu özelliği korunmayacaktır.",
 		"description": ""
 	},
 	"disableNotifications": {
@@ -700,7 +700,7 @@
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "Tam URL'i görüntüle",
+		"message": "tam URL'i görüntüle",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -756,7 +756,7 @@
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "{url}'de girdi taklit edildi",
+		"message": "{url}'da girdi taklit edildi",
 		"description": ""
 	},
 	"ignoreList_description": {
@@ -1040,7 +1040,7 @@
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "Okuma isteği başına kaç değer taklit edilecek",
+		"message": "Okuma isteği başına kaç değer taklit edilecek.",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
@@ -1136,7 +1136,7 @@
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Web sitesine bildirilen geçmişin maksimum uzunluğu",
+		"message": "Web sitesine bildirilen geçmişin maksimum uzunluğu.",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
@@ -1164,7 +1164,7 @@
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
-		"message": "The window.name API'si, gömülü sayfalar bağlamında o kadar tehlikeli değildir ve burada meşru nedenlerle (ör. reCAPTCHA) kullanılır. Bu ayar, bu kullanım biçimlerine izin verecektir.\n",
+		"message": "The window.name API'si, gömülü sayfalar bağlamında o kadar tehlikeli değildir ve burada meşru nedenlerle (ör. reCAPTCHA) kullanılır. Bu ayar, bu kullanım biçimlerine izin verecektir.",
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
@@ -1324,7 +1324,7 @@
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "aydıklık",
+		"message": "aydınlık",
 		"description": ""
 	},
 	"theme_options.dark": {
@@ -1484,7 +1484,7 @@
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "Bu sayfa, CanvasBlocker ayarlarında yanlış yapılandırmaları bulmaya yardımcı olur. Ayrıca, optimal olmayan ayarlar hakkında tavsiyelerde bulunur. Ancak, tüm önerileri körü körüne uygulamanız önerilmez.",
+		"message": "Bu sayfa, CanvasBlocker ayarlarında yanlış yapılandırmaları bulmaya yardımcı olur. Ayrıca, optimum olmayan ayarlar hakkında tavsiyelerde bulunur. Ancak, tüm önerileri körü körüne uygulamanız önerilmez.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
@@ -1640,11 +1640,11 @@
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Rahatlık ayarı",
+		"message": "Faydalı ayarlar",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Tarama deneyiminizi olabildiğince rahat hâle getirmek için bazı ayarları uygulayın. Buna belirli siteleri beyaz listeye eklemek de dahildir.",
+		"message": "Gezinti deneyiminizi olabildiğince rahat hale getirmek için bazı ayarları uygulayın. Buna belirli siteleri beyaz listeye eklemek de dahildir.",
 		"description": ""
 	},
 	"preset_stealth_title": {
