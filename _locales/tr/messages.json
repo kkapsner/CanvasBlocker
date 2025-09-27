@@ -588,7 +588,7 @@
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Kalıcı rastgele sayı üreteci verilerin.",
+		"message": "Kalıcı rastgele sayı üretecinin tüm verilerini siler.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
