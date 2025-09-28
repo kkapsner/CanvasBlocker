@@ -1456,7 +1456,7 @@
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Tüm ayarları sıfırlamak istediğinzden emin misiniz?",
+		"message": "Tüm ayarları sıfırlamak istediğinizden emin misiniz?",
 		"description": ""
 	},
 	"browserAction_settings": {
