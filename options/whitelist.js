@@ -104,6 +104,7 @@
 	});
 	const tableBody = document.createElement("tbody");
 	table.appendChild(tableBody);
+	const highlighted = new Map();
 	settings.onloaded(function(){
 		const sets = Array.from(settingContainers.urlContainer.get());
 		
@@ -116,21 +117,23 @@
 					if (urls.some(function(url){
 						return set.match && set.match(url);
 					})){
-						set.highlight = true;
+						highlighted.set(set, true);
 						return true;
 					}
 					return false;
 				}) &&
 				searchParameters.has("domain")
 			){
-				sets.unshift({url: searchParameters.get("domain"), highlight: true});
+				const newSet = {url: searchParameters.get("domain")};
+				highlighted.set(newSet, true);
+				sets.unshift(newSet);
 			}
 		}
 		
 		const setNodes = new Map();
 		sets.forEach(function(set){
 			const row = document.createElement("tr");
-			if (set.highlight){
+			if (highlighted.get(set)){
 				row.className = "highlight";
 			}
 			tableBody.appendChild(row);

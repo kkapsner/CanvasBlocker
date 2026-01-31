@@ -7,6 +7,7 @@ Version 1.12:
 	
 	fixes:
 		- improve compatibility with google services (e.g. YouTube)
+		- highlighted entry in whitelist inspection not working
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
