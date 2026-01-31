@@ -345,6 +345,10 @@
 				{
 					"version": "1.11.20241222",
 					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.11.20241222.xpi"
+				},
+				{
+					"version": "1.12.20260131",
+					"update_link": "https://canvasblocker.kkapsner.de/versions/canvasblocker_beta-1.12.20260131.xpi"
 				}
 			]
 		}
