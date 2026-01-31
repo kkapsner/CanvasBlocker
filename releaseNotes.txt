@@ -3,10 +3,10 @@ Version 1.12:
 		- 
 	
 	new features:
-		- 
+		- new translations
 	
 	fixes:
-		- 
+		- improve compatibility with google services (e.g. YouTube)
 	
 	known issues:
 		- if a data URL is blocked the page action button does not appear
