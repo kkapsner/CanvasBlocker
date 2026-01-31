@@ -4,7 +4,7 @@
 		"description": ""
 	},
 	"addon_description": {
-		"message": "Alters some JS APIs to prevent fingerprinting.",
+		"message": "Bazı JS API'lerini değiştirerek parmak izi takibini önler.",
 		"description": ""
 	},
 	"browserAction_title_default": {
@@ -12,11 +12,11 @@
 		"description": ""
 	},
 	"browserAction_title_notified": {
-		"message": " \n\nprotection successful for:",
+		"message": " \n\nkoruma başarılı:",
 		"description": ""
 	},
 	"browserAction_title_whitelisted": {
-		"message": " (APIs whitelisted for {url})",
+		"message": " ({url}  için beyaz listeye eklenen API'ler)",
 		"description": ""
 	},
 	"browserAction_title_protectedAPIs": {
@@ -24,123 +24,123 @@
 		"description": ""
 	},
 	"browserAction_status_on": {
-		"message": "CanvasBlocker on",
+		"message": "CanvasBlocker açık",
 		"description": ""
 	},
 	"browserAction_status_off": {
-		"message": "CanvasBlocker off",
+		"message": "CanvasBlocker kapalı",
 		"description": ""
 	},
 	"more": {
-		"message": "more",
+		"message": "daha fazlası",
 		"description": ""
 	},
 	"less": {
-		"message": "less",
+		"message": "daha az",
 		"description": ""
 	},
 	"pleaseWait": {
-		"message": "Please wait...",
+		"message": "Lütfen bekleyin...",
 		"description": ""
 	},
 	"search": {
-		"message": "Search",
+		"message": "Arama",
 		"description": ""
 	},
 	"ok": {
-		"message": "OK",
+		"message": "Tamam",
 		"description": ""
 	},
 	"apply": {
-		"message": "Apply",
+		"message": "Uygula",
 		"description": ""
 	},
 	"cancel": {
-		"message": "Cancel",
+		"message": "Vazgeç",
 		"description": ""
 	},
 	"input": {
-		"message": "input",
+		"message": "girdi",
 		"description": ""
 	},
 	"readout": {
-		"message": "readout",
+		"message": "okuma",
 		"description": ""
 	},
 	"options": {
-		"message": "Settings",
+		"message": "Ayarlar",
 		"description": ""
 	},
 	"options_title": {
-		"message": "CanvasBlocker settings",
+		"message": "CanvasBlocker ayarları",
 		"description": ""
 	},
 	"optionsIntroduction": {
-		"message": "On this page you can adjust the settings of CanvasBlocker.",
+		"message": "Bu sayfada CanvasBlocker'ın ayarlarını değiştirebilirsiniz.",
 		"description": ""
 	},
 	"installNotice": {
-		"message": "CanvasBlocker was installed. If you want to be able to access this page in the future, please bookmark it.",
+		"message": "CanvasBlocker kuruldu. Eğer bu sayfaya ileride tekrar erişebilmek istiyorsanız, lütfen sık kullanılanlara ekleyin.",
 		"description": ""
 	},
 	"updateNotice": {
-		"message": "CanvasBlocker was updated. If you want to be able to access this page in the future and have not bookmarked it yet, please bookmark it.",
+		"message": "CanvasBlocker güncellendi. Bu sayfaya gelecekte tekrar ulaşmak istiyor ve henüz yer imlerine eklemediyseniz, lütfen ekleyin.",
 		"description": ""
 	},
 	"dontShowOptionsOnUpdate": {
-		"message": "Don't show up again after update.",
+		"message": "Güncellemeden sonra tekrar gösterme.",
 		"description": ""
 	},
 	"resistFingerprintingNotice": {
-		"message": "You have privacy.resistFingerprinting enabled. This slightly changes the behaviour of CanvasBlocker. See further information {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} and {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"message": "privacy.resistFingerprinting özelliğini etkinleştirmişsiniz. Bu CanvasBlocker'ın davranışını biraz değiştirir. Daha fazla bilgi için bakınız {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} ve {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
 		"description": ""
 	},
 	"settingsNotice.dom.webAudio.enabled": {
-		"message": "You have dom.webAudio.enabled disabled. This makes you more trackable as very few people do this.",
+		"message": "dom.webAudio.enabled devre dışı bırakmışsınız. Bunu çok az kişi yaptığı için sizi daha kolay takip edilebilir yapar.",
 		"description": ""
 	},
 	"openInTab": {
-		"message": "Open in separate tab",
+		"message": "Ayrı sekmede aç",
 		"description": ""
 	},
 	"labelForDefaultOption": {
-		"message": " (default)",
+		"message": " (varsayılan)",
 		"description": ""
 	},
 	"group_general": {
-		"message": "General",
+		"message": "Genel",
 		"description": ""
 	},
 	"group_APIs": {
-		"message": "APIs",
+		"message": "API'ler",
 		"description": ""
 	},
 	"group_misc": {
-		"message": "Misc",
+		"message": "Diğer",
 		"description": ""
 	},
 	"section_asking": {
-		"message": "Asking",
+		"message": "İzin İsteme",
 		"description": ""
 	},
 	"section_faking": {
-		"message": "Faking",
+		"message": "Taklit Etme",
 		"description": ""
 	},
 	"section_notifications": {
-		"message": "Notifications",
+		"message": "Bildirimler",
 		"description": ""
 	},
 	"section_lists": {
-		"message": "Lists",
+		"message": "Listeler",
 		"description": ""
 	},
 	"section_misc": {
-		"message": "Misc",
+		"message": "Diğer",
 		"description": ""
 	},
 	"section_settings": {
-		"message": "Settings",
+		"message": "Ayarlar",
 		"description": ""
 	},
 	"section_canvas-api": {
@@ -180,239 +180,239 @@
 		"description": ""
 	},
 	"displayAdvancedSettings_title": {
-		"message": "Expert mode",
+		"message": "Uzman modu",
 		"description": ""
 	},
 	"displayAdvancedSettings_description": {
-		"message": "Displays additional settings.",
+		"message": "Ek ayarları gösterir.",
 		"description": ""
 	},
 	"displayDescriptions_title": {
-		"message": "Display descriptions",
+		"message": "Açıklamaları göster",
 		"description": ""
 	},
 	"displayDescriptions_description": {
-		"message": "Displays the descriptions of the settings.",
+		"message": "Ayarların açıklamalarını gösterir.",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_title": {
-		"message": "Disrupt session on update",
+		"message": "Güncelleme sırasında oturumu böl",
 		"description": ""
 	},
 	"disruptSessionOnUpdate_description": {
-		"message": "If set to true the extension will update as soon as the update is available. This might break some tabs that are currently open.",
+		"message": "Eğer aktif edilirse güncelleme mevcut olur olmaz eklenti güncellenecektir. Bu şu anda açık olan bazı sekmeleri bozabilir.",
 		"description": ""
 	},
 	"reloadExtension_title": {
-		"message": "Reload extension",
+		"message": "Eklentiyi yenile",
 		"description": ""
 	},
 	"reloadExtension_description": {
-		"message": "Perform a pending update.",
+		"message": "Bekleyen güncellemeyi yapın.",
 		"description": ""
 	},
 	"reloadExtension_label": {
-		"message": "Reload",
+		"message": "Yenile",
 		"description": ""
 	},
 	"hideSetting": {
-		"message": "Click here to hide this setting.",
+		"message": "Bu ayarı gizlemek için buraya tıklayın.",
 		"description": ""
 	},
 	"displayHiddenSettings_title": {
-		"message": "Display hidden settings",
+		"message": "Gizli ayarları göster",
 		"description": ""
 	},
 	"displayHiddenSettings_description": {
-		"message": "Activate to display the hidden settings.",
+		"message": "Gizli ayarları görüntülemek için etkinleştirin.",
 		"description": ""
 	},
 	"askForInvisiblePermission": {
-		"message": "Do you want to allow invisible <canvas>?",
+		"message": "Görünmez <canvas>'a izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForInvisibleInputPermission": {
-		"message": "Do you want to allow invisible <canvas> input?",
+		"message": "Görünmez <canvas>'a girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForInvisibleReadoutPermission": {
-		"message": "Do you want to allow invisible <canvas> readout?",
+		"message": "Görünmez <canvas>'a okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForPermission": {
-		"message": "Do you want to allow <canvas>?",
+		"message": "<canvas>'a izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForInputPermission": {
-		"message": "Do you want to allow <canvas> input?",
+		"message": "<canvas>'a girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForReadoutPermission": {
-		"message": "Do you want to allow <canvas> readout?",
+		"message": "<canvas>'a okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForVisiblePermission": {
-		"message": "Do you want to allow the red bordered <canvas>?",
+		"message": "Kırmızı çerçeveli <canvas>'a izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForVisibleInputPermission": {
-		"message": "Do you want to allow input in the red bordered <canvas>?",
+		"message": "Kırmızı çerçeveli <canvas>'da girdiye izin veriyor musunuz?",
 		"description": ""
 	},
 	"askForVisibleReadoutPermission": {
-		"message": "Do you want to allow the readout of the red bordered <canvas>?",
+		"message": "Kırmızı çerçeveli <canvas>'ın okunmasına izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForAudioPermission": {
-		"message": "Do you want to allow the audio API?",
+		"message": "Audio API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForAudioInputPermission": {
-		"message": "Do you want to allow audio API input?",
+		"message": "Audio API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForAudioReadoutPermission": {
-		"message": "Do you want to allow audio API readout?",
+		"message": "Audio API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForHistoryPermission": {
-		"message": "Do you want to allow the history API?",
+		"message": "History API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForHistoryInputPermission": {
-		"message": "Do you want to allow history API input?",
+		"message": "History API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForHistoryReadoutPermission": {
-		"message": "Do you want to allow history API readout?",
+		"message": "History API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForWindowPermission": {
-		"message": "Do you want to allow the window API?",
+		"message": "Window API''sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForWindowInputPermission": {
-		"message": "Do you want to allow window API input?",
+		"message": "Window API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForWindowReadoutPermission": {
-		"message": "Do you want to allow window API readout?",
+		"message": "Window API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForDOMRectPermission": {
-		"message": "Do you want to allow the DOMRect API?",
+		"message": "DOMRect API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForDOMRectInputPermission": {
-		"message": "Do you want to allow DOMRect API input?",
+		"message": "DOMRect'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForDOMRectReadoutPermission": {
-		"message": "Do you want to allow DOMRect API readout?",
+		"message": "DOMRect API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "SVG API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
-		"message": "Do you want to allow SVG API input?",
+		"message": "SVG API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForSVGReadoutPermission": {
-		"message": "Do you want to allow SVG API readout?",
+		"message": "SVG API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForTextMetricsPermission": {
-		"message": "Do you want to allow the TextMetrics API?",
+		"message": "TextMetrics API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForTextMetricsInputPermission": {
-		"message": "Do you want to allow TextMetrics API input?",
+		"message": "TextMetrics API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForTextMetricsReadoutPermission": {
-		"message": "Do you want to allow TextMetrics API readout?",
+		"message": "TextMetrics API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForNavigatorPermission": {
-		"message": "Do you want to allow the navigator API?",
+		"message": "Navigator API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForNavigatorInputPermission": {
-		"message": "Do you want to allow navigator API input?",
+		"message": "Navigator API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForNavigatorReadoutPermission": {
-		"message": "Do you want to allow navigator API readout?",
+		"message": "Navigator API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForScreenPermission": {
-		"message": "Do you want to allow the screen API?",
+		"message": "Screen API'sine izin vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForScreenInputPermission": {
-		"message": "Do you want to allow screen API input?",
+		"message": "Screen API'sine girdi izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askForScreenReadoutPermission": {
-		"message": "Do you want to allow screen API readout?",
+		"message": "Screen API'sine okuma izni vermek istiyor musunuz?",
 		"description": ""
 	},
 	"askOnlyOnce_title": {
-		"message": "Ask only once",
+		"message": "Sadece bir kez sor",
 		"description": ""
 	},
 	"askOnlyOnce_description": {
-		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API type (context, input, readout) has to be confirmed separately\n\nCombined: all API types get confirmed together",
+		"message": "CanvasBlocker'ın engelleme modu 'izin iste' veya 'readout API için izin iste' olarak ayarlandığında, bir sayfa API'ye veya readout API'sine erişmeye çalıştığı her seferde bir onaylama mesajı çıkar. Bu ayar, sayfa API'ye kaç kez erişmeye çalışırsa çalışsın, her sayfa için onaylama mesajını yalnızca bir kez göstermeye çalışır. Buna rağmen, bazı sayfalarda birden fazla onaylama mesajı gösterilebilir.\n\nHayır: her zaman sorar\n\nHer biri: her bir API türü (context, input, readout) ayrı ayrı onaylanmalıdır\n\nOrtak: tüm API türleri birlikte onaylanır",
 		"description": ""
 	},
 	"askOnlyOnce_options.no": {
-		"message": "no",
+		"message": "hayır",
 		"description": ""
 	},
 	"askOnlyOnce_options.individual": {
-		"message": "individual",
+		"message": "her biri",
 		"description": ""
 	},
 	"askOnlyOnce_options.combined": {
-		"message": "combined",
+		"message": "ortak",
 		"description": ""
 	},
 	"askDenyMode_title": {
-		"message": "Ask deny mode",
+		"message": "İzin reddetme modu",
 		"description": ""
 	},
 	"askDenyMode_description": {
-		"message": "Which mode shall be used when the permission is denied.",
+		"message": "İzin reddedildiğinde hangi mod kullanılmalıdır.",
 		"description": ""
 	},
 	"askDenyMode_options.block": {
-		"message": "block",
+		"message": "engelle",
 		"description": ""
 	},
 	"askDenyMode_options.fake": {
-		"message": "fake",
+		"message": "taklit et",
 		"description": ""
 	},
 	"showCanvasWhileAsking_title": {
-		"message": "Show canvas content",
+		"message": "Canvas içeriğini göster",
 		"description": ""
 	},
 	"showCanvasWhileAsking_description": {
-		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
+		"message": "Mümkünse, izin istenen canvas'ın içeriğini gösterir.",
 		"description": ""
 	},
 	"showCanvasWhileAsking_message": {
-		"message": "The webpage wants to read the content of the following canvas:",
+		"message": "Web sayfası aşağıdaki canvas'ın içeriğini okumak istiyor:",
 		"description": ""
 	},
 	"blackList_description": {
-		"message": "Domains or URLs where all APIs shall always be blocked. To add multiple entries, separate them by commas.",
+		"message": "Tüm API'lerin her zaman engelleneceği alan adları veya URL'ler. Birden fazla girdi eklemek için virgül ile ayırın.",
 		"description": ""
 	},
 	"blackList_title": {
-		"message": "Blacklist",
+		"message": "Kara liste",
 		"description": ""
 	},
 	"blockMode_description": {
@@ -420,67 +420,67 @@
 		"description": ""
 	},
 	"blockMode_urlSpecific": {
-		"message": "To set individual block modes for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired block mode.",
+		"message": "Belirli web siteleri için ayrı ayrı engelleme modları ayarlamak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve istediğiniz engelleme modunu seçin.",
 		"description": ""
 	},
 	"blockMode_options.allowEverything": {
-		"message": "allow everything",
+		"message": "her şeye izin ver",
 		"description": ""
 	},
 	"blockMode_options.block": {
-		"message": "allow only whitelist",
+		"message": "sadece beyaz listeye izin ver",
 		"description": ""
 	},
 	"blockMode_options.ask": {
-		"message": "ask for permission",
+		"message": "izin iste",
 		"description": ""
 	},
 	"blockMode_options.blockEverything": {
-		"message": "block everything",
+		"message": "her şeyi engelle",
 		"description": ""
 	},
 	"blockMode_options.allow": {
-		"message": "block only blacklist",
+		"message": "sadece kara listeyi engelle",
 		"description": ""
 	},
 	"blockMode_options.fake": {
-		"message": "fake",
+		"message": "taklit et",
 		"description": ""
 	},
 	"blockMode_title": {
-		"message": "Block mode",
+		"message": "Engelleme Modu",
 		"description": ""
 	},
 	"protectedCanvasPart_title": {
-		"message": "Protected part of the canvas API",
+		"message": "Canvas API'sinin korumalı kısmı",
 		"description": ""
 	},
 	"protectedCanvasPart_description": {
-		"message": "nothing: no features of the canvas API are protected.\n\nreadout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"message": "hiç biri: Canvas API'sinin hiçbir özelliği korunmaz.\n\nokuma: Canvas API'sinin okuma özellikleri korunmaktadır.\n\ngirdi: Canvas API'sinin girdi özellikleri korunmaktadır. Engelleme modu “taklit et” kullanıldığında, metin görüntülenirken çizilen pikseller hafifçe değiştirilir. Bu, eklentinin tespit edilmesini zorlaştırır ancak daha az güvenlidir. WebGL canvas'larında davranış, \"okuma\" ile aynıdır.\n\nher şey: Hem okuma hemde girdi özellikleri korunmaktadır. Tespit edilme ihtimalini arttırdığı için \"taklit et\" engelleme modu ile kullanılması tavsiye edilmez.",
 		"description": ""
 	},
 	"protectedCanvasPart_urlSpecific": {
-		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"message": "Belirli web siteleri için ayrı ayrı bölümlerini korumak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve istediğiniz bölümü seçin.",
 		"description": ""
 	},
 	"protectedCanvasPart_options.nothing": {
-		"message": "nothing",
+		"message": "hiç biri",
 		"description": ""
 	},
 	"protectedCanvasPart_options.input": {
-		"message": "input",
+		"message": "girdi",
 		"description": ""
 	},
 	"protectedCanvasPart_options.readout": {
-		"message": "readout",
+		"message": "okuma",
 		"description": ""
 	},
 	"protectedCanvasPart_options.everything": {
-		"message": "everything",
+		"message": "her şey",
 		"description": ""
 	},
 	"urlSettings_title": {
-		"message": "Site-specific values",
+		"message": "Siteye özel değerler",
 		"description": ""
 	},
 	"urlSettings_description": {
@@ -488,219 +488,219 @@
 		"description": ""
 	},
 	"inputURL": {
-		"message": "Input domain or URL \"RegExp\":",
+		"message": "Alan adı veya \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"minFakeSize_description": {
-		"message": "Canvases with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
+		"message": "Bu sayıdan daha küçük veya ona eşit alana sahip canvas'lar taklit edilmez. Bu, tespiti önlemek amacıyla kullanılan bir parametredir. \nDİKKAT: Bu, eklentinin güvenliğini azaltır; bu nedenle değeri 100’ün üzerine çıkarmamanız şiddetle tavsiye edilir.",
 		"description": ""
 	},
 	"minFakeSize_title": {
-		"message": "Minimal fake size",
+		"message": "Minimum taklit boyutu",
 		"description": ""
 	},
 	"maxFakeSize_description": {
-		"message": "Canvases with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 1 000 000.",
+		"message": "Bu sayıdan daha büyük alana sahip canvas'lar taklit edilmez. (Devre dışı bırakmak için sıfır girin.) Bu, tarayıcı donmalarını önleyebilecek bir performans parametresidir ve cihazın işlem gücüne göre ayarlanmalıdır. \nDİKKAT: Bu, eklentinin güvenliğini azaltır; bu nedenle değerin 1 000 000’in altına düşürülmemesi şiddetle tavsiye edilir.",
 		"description": ""
 	},
 	"maxFakeSize_title": {
-		"message": "Maximal fake size",
+		"message": "Maksimum taklit boyutu",
 		"description": ""
 	},
 	"rng_description": {
-		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnonpersistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of nonpersistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
+		"message": "hiç biri (tamamen beyaz): tamamen beyaz bir görüntü döndürülür. Bununla birlikte “Alfa kanalını taklit et” seçeneğinin etkinleştirilmesi gerekir. DİKKAT: Bu seçenek “girdide sahtele” moduyla kullanılmamalıdır.\n\nkalıcı olmayan: Rastgele sayılar her taklit etme işlemi için yeniden oluşturulur. Çoğu API korumasının tespiti önlemek için önbellek kullandığını akılda tutun.\n\nsabit: kalıcı olmayanın bir varyasyonudur. Ancak canvas verileri değiştirildiğinde aynı renkteki pikseller de sonradan aynı rengi paylaşırlar.\n\nkalıcı: rastgele sayılar her bir alan adı için yalnızca bir kere belirlenecektir.",
 		"description": ""
 	},
 	"rng_options.persistent": {
-		"message": "persistent",
+		"message": "kalıcı",
 		"description": ""
 	},
 	"rng_options.constant": {
-		"message": "constant",
+		"message": "sabit",
 		"description": ""
 	},
 	"rng_options.nonPersistent": {
-		"message": "nonpersistent",
+		"message": "kalıcı değil",
 		"description": ""
 	},
 	"rng_options.white": {
-		"message": "none (completely white)",
+		"message": "hiçbiri (tamamiyle beyaz)",
 		"description": ""
 	},
 	"rng_title": {
-		"message": "Random number generator",
+		"message": "Rastgele sayı üreteci",
 		"description": ""
 	},
 	"persistentRndStorage_title": {
-		"message": "Persistent storage",
+		"message": "Kalıcı depolama",
 		"description": ""
 	},
 	"persistentRndStorage_description": {
-		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"message": "Yeniden başlatma sonrasında kullanılmak üzere kalıcı rastgele sayı üreteci için verilerini depolar.",
 		"description": ""
 	},
 	"storePersistentRnd_title": {
-		"message": "Store persistent data",
+		"message": "Kalıcı verileri depola",
 		"description": ""
 	},
 	"storePersistentRnd_description": {
-		"message": "If data for the persistent random number generator shall be stored. Otherwise it is discarded on browser shutdown.",
+		"message": "Kalıcı rastgele sayı üreteci için veri saklanacaksa bu şekilde kaydedilir. Aksi takdirde tarayıcı kapatıldığında silinir.",
 		"description": ""
 	},
 	"persistentRndClearInterval_title": {
-		"message": "Clear interval of the persistent data",
+		"message": "Kalıcı verilerin temizlenme aralığı",
 		"description": ""
 	},
 	"persistentRndClearInterval_description": {
-		"message": "After the specified interval the persistent data is cleared automatically. (Enter zero to disable.)",
+		"message": "Belirtilen aralık ardından kalıcı veriler otomatik olarak temizlenir. (Devre dışı bırakmak için sıfır girin.)",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.seconds": {
-		"message": "seconds",
+		"message": "saniye",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.minutes": {
-		"message": "minutes",
+		"message": "dakika",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.hours": {
-		"message": "hours",
+		"message": "saat",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.days": {
-		"message": "days",
+		"message": "gün",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.weeks": {
-		"message": "weeks",
+		"message": "hafta",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.months": {
-		"message": "months",
+		"message": "ay",
 		"description": ""
 	},
 	"persistentRndClearIntervalUnit_options.years": {
-		"message": "years",
+		"message": "yıl",
 		"description": ""
 	},
 	"clearPersistentRnd_title": {
-		"message": "Clear persistent random storage",
+		"message": "Kalıcı rastgele depolama alanını temizle",
 		"description": ""
 	},
 	"clearPersistentRnd_description": {
-		"message": "Deletes all data for the persistent random number generator.",
+		"message": "Kalıcı rastgele sayı üretecinin tüm verilerini siler.",
 		"description": ""
 	},
 	"clearPersistentRnd_label": {
-		"message": "Clear",
+		"message": "Temizle",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_label": {
-		"message": "Clear container",
+		"message": "Kapsayıcıyı temizle",
 		"description": ""
 	},
 	"clearPersistentRndForContainer_title": {
-		"message": "Select container",
+		"message": "Kapsayıcı seçin",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_title": {
-		"message": "Share persistent randomness between domains",
+		"message": "Alan adları arası kalıcı rastgeleliği paylaş",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_description": {
-		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "DİKKAT: bu ayar tarayıcıyı 100% takip edilebilir yapar ve bu nedenle gizliliğiniz için bir tehdittir.",
 		"description": ""
 	},
 	"sharePersistentRndBetweenDomains_confirmMessage": {
-		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"message": "Alan adları arasında kalıcı rastgeleliği paylaşmak istediğinizden gerçekten emin misiniz?\nDİKKAT: bu tarayıcıyı 100% takip edilebilir yapar ve bu nedenle gizliliğiniz için bir tehdittir.",
 		"description": ""
 	},
 	"ignoreFrequentColors_title": {
-		"message": "Ignore the most frequent colors",
+		"message": "En sık kullanılan renkleri yoksay",
 		"description": ""
 	},
 	"ignoreFrequentColors_description": {
-		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"message": "Canvas başına taklit edilmeyecek renk sayısı. Bu, tespiti önlemek için bir parametredir. \nDİKKAT: Bu değer, renk istatistiklerinin her görüntü için hesaplanması gerektiği için eklentinin performansını düşürebilir. Ayrıca, eklentinin güvenliğini azaltabilir, bu nedenle bu değeri 3’ün üzerine çıkarmamanız şiddetle tavsiye edilir.",
 		"description": ""
 	},
 	"minColors_title": {
-		"message": "Minimal number of colors",
+		"message": "Minimum renk sayısı",
 		"description": ""
 	},
 	"minColors_description": {
-		"message": "Number of colors that a canvas must have to be faked.\nCAUTION: This can lower the safety of the addon, therefore it is highly recommended not to set this value above 10.",
+		"message": "Bir canvas'ın taklit edilmesi için sahip olması gereken renk sayısı.\nDİKKAT: Bu, eklentinin güvenliğini azaltabilir, bu nedenle bu değeri 10'un üzerine ayarlamamanız şiddetle tavsiye edilir.",
 		"description": ""
 	},
 	"fakeAlphaChannel_title": {
-		"message": "Fake the alpha channel",
+		"message": "Alfa kanalını taklit et",
 		"description": ""
 	},
 	"fakeAlphaChannel_description": {
-		"message": "Activates the faking of the alpha channel (transparency).",
+		"message": "Alfa kanalını (şeffaflığı) taklit etmeyi aktif eder.",
 		"description": ""
 	},
 	"webGLVendor_title": {
-		"message": "Reported webGL vendor",
+		"message": "Bildirilen webGL sağlayıcı",
 		"description": ""
 	},
 	"webGLVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"vendor\" (sağlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rastgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rastgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"webGLRenderer_title": {
-		"message": "Reported webGL renderer",
+		"message": "Bildirilen webGL renderlayıcı",
 		"description": ""
 	},
 	"webGLRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"renderer\" (renderlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rastgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rastgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_title": {
-		"message": "Reported webGL unmasked vendor",
+		"message": "Bildirilen webGL maskelenmemiş sağlayıcı",
 		"description": ""
 	},
 	"webGLUnmaskedVendor_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"unmasked vendor\" (maskelenmemiş sağlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rastgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rastgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_title": {
-		"message": "Reported webGL unmasked renderer",
+		"message": "Bildirilen webGL maskelenmemiş renderlayıcı",
 		"description": ""
 	},
 	"webGLUnmaskedRenderer_description": {
-		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"message": "WebGL'in \"getParameter\" fonksiyonunda \"unmasked renderer\" (maskelenmemiş renderlayıcı) için raporlanacak değer. Özel değerler:\nOrijinal değeri kullanmak için boş bırakın\n\n{undefined}: undefined döndürür (#508)\n\n{false}: false boolean değeri döndürür (#508)\n\n{empty}: boş bir string döndürür (#508)\n\n{disabled}: null döndürür (#508)\n\n{random vendor}: Dahili listeden rastgele bir sağlayıcı döndürür (#493)\n\n{random renderer}: Dahili listeden rastgele bir renderlayıcı döndürür (#493)\n\n<xxx|yyy|zzz>: verilen xxx, yyy veya zzz seçeneklerinden rastgele birini seçer (isteğe bağlı sayıda seçenek) (#493)",
 		"description": ""
 	},
 	"useCanvasCache_title": {
-		"message": "Use canvas cache",
+		"message": "Canvas önbelleğini kullan",
 		"description": ""
 	},
 	"useCanvasCache_description": {
-		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvases are read several times, but decreases it for big canvases.",
+		"message": "Canvas önbelleğini etkinleştirir. Bu, tespiti önleyebilir ve küçük canvas'ların birden çok kez okunması durumunda performansı artırır, ancak büyük canvas'larda performansı düşürür.",
 		"description": ""
 	},
 	"protectedAPIFeatures_title": {
-		"message": "Protected API features",
+		"message": "Korunan API özellikleri",
 		"description": ""
 	},
 	"protectedAPIFeatures_description": {
-		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
+		"message": "Korunan API özelliklerinin listesi. Bir onay kutusunun işaretini kaldırdığınızda, API'nin bu özelliği korunmayacaktır.",
 		"description": ""
 	},
 	"disableNotifications": {
-		"message": "disable notifications",
+		"message": "Bildirimleri kapat",
 		"description": ""
 	},
 	"showOptions": {
-		"message": "display settings",
+		"message": "Görüntü ayarları",
 		"description": ""
 	},
 	"displayCallingStack": {
-		"message": "display calling stack",
+		"message": "çağrı yığınını göster",
 		"description": ""
 	},
 	"displayFullURL": {
-		"message": "display full URL",
+		"message": "tam URL'i görüntüle",
 		"description": ""
 	},
 	"enableStackList_description": {
@@ -708,151 +708,151 @@
 		"description": ""
 	},
 	"enableStackList_title": {
-		"message": "Use file specific whitelist",
+		"message": "Dosyaya özel beyaz liste kullan",
 		"description": ""
 	},
 	"preBlock": {
-		"message": "API blocked on {url} because CanvasBlocker settings were not loaded in time.",
+		"message": "CanvasBlocker ayarları zamanında yüklenmediği için {url}'da API engellendi.",
 		"description": ""
 	},
 	"blocked": {
-		"message": "API blocked on {url}.",
+		"message": "{url}'da API engellendi.",
 		"description": ""
 	},
 	"fakedReadout": {
-		"message": "Faked canvas readout on {url}",
+		"message": "{url}'da canvas okuma taklit edildi",
 		"description": ""
 	},
 	"fakedAudioReadout": {
-		"message": "Faked audio readout on {url}",
+		"message": "{url}'da audio okuma taklit edildi",
 		"description": ""
 	},
 	"fakedHistoryReadout": {
-		"message": "Faked history readout on {url}",
+		"message": "{url}'da history okuma taklit edildi",
 		"description": ""
 	},
 	"fakedWindowReadout": {
-		"message": "Faked window readout on {url}",
+		"message": "{url}'da window okuma taklit edildi",
 		"description": ""
 	},
 	"fakedDOMRectReadout": {
-		"message": "Faked DOMRect readout on {url}",
+		"message": "{url}'da DOMRect okuma taklit edildi",
 		"description": ""
 	},
 	"fakedSVGReadout": {
-		"message": "Faked SVG readout on {url}",
+		"message": "{url}'da SVG okuma taklit edildi",
 		"description": ""
 	},
 	"fakedTextMetricsReadout": {
-		"message": "Faked TextMetrics readout on {url}",
+		"message": "{url}'da TextMetrics okuma taklit edildi",
 		"description": ""
 	},
 	"fakedNavigatorReadout": {
-		"message": "Faked navigator readout on {url}",
+		"message": "{url}'da nagivator okuma taklit edildi",
 		"description": ""
 	},
 	"fakedScreenReadout": {
-		"message": "Faked screen readout on {url}",
+		"message": "{url}'da screen okuma taklit edildi",
 		"description": ""
 	},
 	"fakedInput": {
-		"message": "Faked at input on {url}",
+		"message": "{url}'da girdi taklit edildi",
 		"description": ""
 	},
 	"ignoreList_description": {
-		"message": "Domains or URLs where no notifications shall be shown. To add multiple entries, separate them by commas.",
+		"message": "Bildirimlerin gösterilmeyeceği alan adları veya URL'ler. Birden fazla girdi eklemek için virgül ile ayırın.",
 		"description": ""
 	},
 	"ignoreList_title": {
-		"message": "Ignore list",
+		"message": "Yok sayılanlar listesi",
 		"description": ""
 	},
 	"ignoredAPIs_title": {
-		"message": "Ignored APIs",
+		"message": "Yok sayılan API'ler",
 		"description": ""
 	},
 	"ignoredAPIs_description": {
-		"message": "No notifications will be displayed for the selected APIs.",
+		"message": "Seçilen API'ler için bildirim gösterilmeyecek.",
 		"description": ""
 	},
 	"localFile": {
-		"message": "local file",
+		"message": "yerel dosya",
 		"description": ""
 	},
 	"ignorelistDomain": {
-		"message": "silence domain",
+		"message": "alan adını sessize al",
 		"description": ""
 	},
 	"ignorelistURL": {
-		"message": "ignore URL",
+		"message": "URL'i yoksay",
 		"description": ""
 	},
 	"selectIgnore": {
-		"message": "Select domain or URL to add to ignore list:",
+		"message": "Yok sayılanlar listesine eklemek için alan adı veya URL seçin:",
 		"description": ""
 	},
 	"inputIgnore": {
-		"message": "Input domain or URL \"RegExp\" to add to ignore list:",
+		"message": "Yok sayılanlar listesine eklemek için alan adı veya \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"inputIgnoreDomain": {
-		"message": "Input domain to add to ignore list:",
+		"message": "Yok sayılanlar listesine eklemek için alan adı girin:",
 		"description": ""
 	},
 	"inputIgnoreURL": {
-		"message": "Input URL \"RegExp\" to add to ignore list:",
+		"message": "Yok sayılanlar listesine eklemek için \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"selectWhitelist": {
-		"message": "Select domain or URL to add to whitelist:",
+		"message": "Beyaz listeye eklemek için alan adı veya URL seçin:",
 		"description": ""
 	},
 	"inputWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to whitelist:",
+		"message": "Beyaz listeye eklemek için alan adı veya URL girin:",
 		"description": ""
 	},
 	"inputWhitelistDomain": {
-		"message": "Input domain to add to whitelist:",
+		"message": "Beyaz listeye eklemek için alan adı girin:",
 		"description": ""
 	},
 	"inputWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to whitelist:",
+		"message": "Beyaz listeye eklemek için \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"selectSessionWhitelist": {
-		"message": "Select domain or URL to add to the session whitelist:",
+		"message": "Oturum beyaz listesine eklemek için alan adı veya URL seçin:",
 		"description": ""
 	},
 	"inputSessionWhitelist": {
-		"message": "Input domain or URL \"RegExp\" to add to the session whitelist:",
+		"message": "Oturum beyaz listesine eklemek için alan adı veya \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"inputSessionWhitelistDomain": {
-		"message": "Input domain to add to the session whitelist:",
+		"message": "Oturum beyaz listesine eklemek için alan adı girin:",
 		"description": ""
 	},
 	"inputSessionWhitelistURL": {
-		"message": "Input URL \"RegExp\" to add to the session whitelist:",
+		"message": "Oturum beyaz listesine eklemek için \"RegExp\" URL girin:",
 		"description": ""
 	},
 	"selectWhitelistScope": {
-		"message": "What is the scope of the whitelisting?",
+		"message": "Beyaz listenin kapsamı nedir?",
 		"description": ""
 	},
 	"selectWhitelistType": {
-		"message": "What is the type of the whitelisting?",
+		"message": "Beyaz listenin türü nedir?",
 		"description": ""
 	},
 	"whitelistOnlyAPI": {
-		"message": "Whitelist only the {api}",
+		"message": " Sadece {api}'sini beyaz listeye ekle",
 		"description": ""
 	},
 	"whitelistAllAPIs": {
-		"message": "Whitelist all APIs",
+		"message": "Tüm API'leri beyaz listeye ekle",
 		"description": ""
 	},
 	"settings": {
-		"message": "settings",
+		"message": "ayarlar",
 		"description": ""
 	},
 	"showCallingFile_description": {
@@ -860,7 +860,7 @@
 		"description": ""
 	},
 	"showCallingFile_title": {
-		"message": "Show calling file",
+		"message": "Çağıran dosyayı göster",
 		"description": ""
 	},
 	"showCompleteCallingStack_description": {
@@ -868,23 +868,23 @@
 		"description": ""
 	},
 	"showCompleteCallingStack_title": {
-		"message": "Display complete calling stack",
+		"message": "Tam çağrı yığınını göster",
 		"description": ""
 	},
 	"showNotifications_description": {
-		"message": "Shows a notification icon in the address bar when something gets blocked or faked.",
+		"message": "Bir şey engellendiğinde veya taklit edildiğinde adres çubuğunda bir bildirim simgesi gösterir.",
 		"description": ""
 	},
 	"showNotifications_urlSpecific": {
-		"message": "To deactivate notifications for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web siteleri için bildirimleri devre dışı bırakmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"showNotifications_title": {
-		"message": "Show notification icon",
+		"message": "Bildirim simgesini göster",
 		"description": ""
 	},
 	"highlightPageAction_description": {
-		"message": "Highlight the page action icon for better visibility.",
+		"message": "Daha iyi görünürlik için sayfa eylemi simgesini vurgula.",
 		"description": ""
 	},
 	"highlightPageAction_urlSpecific": {
@@ -892,19 +892,19 @@
 		"description": ""
 	},
 	"highlightPageAction_title": {
-		"message": "Highlight page action icon",
+		"message": "Sayfa eylemi simgesini vurgula",
 		"description": ""
 	},
 	"highlightPageAction_options.none": {
-		"message": "no highlight",
+		"message": "vurgu yok",
 		"description": ""
 	},
 	"highlightPageAction_options.color": {
-		"message": "color",
+		"message": "renklendir",
 		"description": ""
 	},
 	"highlightPageAction_options.blink": {
-		"message": "blink",
+		"message": "yanıp sönme",
 		"description": ""
 	},
 	"displayBadge_description": {
@@ -912,7 +912,7 @@
 		"description": ""
 	},
 	"displayBadge_title": {
-		"message": "Display badge",
+		"message": "Rozeti göster",
 		"description": ""
 	},
 	"highlightBrowserAction_description": {
@@ -924,91 +924,91 @@
 		"description": ""
 	},
 	"highlightBrowserAction_title": {
-		"message": "Change toolbar icon on notification",
+		"message": "Bildirim sırasında araç çubuğu simgesini değiştir",
 		"description": ""
 	},
 	"highlightBrowserAction_options.none": {
-		"message": "change nothing",
+		"message": "hiçbir şeyi değiştirme",
 		"description": ""
 	},
 	"highlightBrowserAction_options.color": {
-		"message": "change color",
+		"message": "rengi değiştir",
 		"description": ""
 	},
 	"highlightBrowserAction_options.blink": {
-		"message": "blink",
+		"message": "yanıp sönme",
 		"description": ""
 	},
 	"sourceOutput": {
-		"message": "Calling file",
+		"message": "Çağıran dosya",
 		"description": ""
 	},
 	"stackEntryOutput": {
-		"message": "{url} line {line} column {column}",
+		"message": "{url} satır {line} sütun {column}",
 		"description": ""
 	},
 	"stackList_description": {
-		"message": "JS files which are allowed to use all APIs. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"message": "Tüm API'leri kullanmasına izin verilen JS dosyaları. Girdi JSON formatında olmalıdır. Örnek: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
 		"description": ""
 	},
 	"stackList_title": {
-		"message": "File specific whitelist",
+		"message": "Dosyaya özel beyaz liste",
 		"description": ""
 	},
 	"whiteList_title": {
-		"message": "Whitelist",
+		"message": "Beyaz liste",
 		"description": ""
 	},
 	"whiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs. To add multiple entries, separate them by commas.",
+		"message": "Tüm API’leri kullanmasına izin verilecek alan adları ve URL’ler. Birden fazla girdi eklemek için virgül ile ayırın.",
 		"description": ""
 	},
 	"whitelist": {
-		"message": "whitelist",
+		"message": "beyaz liste",
 		"description": ""
 	},
 	"whitelistDomain": {
-		"message": "whitelist domain",
+		"message": "Alan adını beyaz listeye al",
 		"description": ""
 	},
 	"whitelistURL": {
-		"message": "whitelist URL",
+		"message": "URL'i beyaz listeye al",
 		"description": ""
 	},
 	"ignorelist": {
-		"message": "ignore",
+		"message": "yoksay",
 		"description": ""
 	},
 	"whitelistTemporarily": {
-		"message": "whitelist temporarily",
+		"message": "geçici olarak beyaz listeye al",
 		"description": ""
 	},
 	"inspectWhitelist": {
-		"message": "inspect whitelist",
+		"message": "Beyaz listeyi denetle",
 		"description": ""
 	},
 	"sessionWhiteList_title": {
-		"message": "Session whitelist",
+		"message": "Oturum beyaz listesi",
 		"description": ""
 	},
 	"sessionWhiteList_description": {
-		"message": "Domains or URLs which shall be allowed to use all APIs during the current session (i.e. temporarily whitelisted). To add multiple entries, separate them by commas.",
+		"message": "Geçerli oturum süresince tüm API’leri kullanmasına izin verilecek alan adları ve URL’ler (yani geçici olarak beyaz listeye eklenmiş). Birden fazla girdi eklemek için virgül ile ayırın.",
 		"description": ""
 	},
 	"sessionWhiteList_search": {
-		"message": "temporary",
+		"message": "geçici",
 		"description": ""
 	},
 	"whitelistDomainTemporarily": {
-		"message": "whitelist domain temporarily",
+		"message": "Alan adını geçici olarak beyaz listeye al",
 		"description": ""
 	},
 	"whitelistURLTemporarily": {
-		"message": "whitelist URL temporarily",
+		"message": "URL'i geçici olarak beyaz listeye al",
 		"description": ""
 	},
 	"storeNotificationData_title": {
-		"message": "Store detail data of the notifications",
+		"message": "Bildirimlerin ayrıntılı verilerini depola",
 		"description": ""
 	},
 	"storeNotificationData_description": {
@@ -1016,67 +1016,67 @@
 		"description": ""
 	},
 	"storeImageForInspection_title": {
-		"message": "Store image for inspection",
+		"message": "Denetleme için resmi depola",
 		"description": ""
 	},
 	"storeImageForInspection_description": {
-		"message": "Enables the storage of the content of the faked canvas.\nCAUTION: This may lead to a lot of memory consumption.",
+		"message": "Taklit edilmiş canvas içeriğinin depolanmasını etkinleştirir. \nDİKKAT: Bu, çok fazla bellek tüketimine yol açabilir.",
 		"description": ""
 	},
 	"protectAudio_title": {
-		"message": "Protect audio API",
+		"message": "Ses API'sini koru",
 		"description": ""
 	},
 	"protectAudio_description": {
-		"message": "If the audio API shall be protected as well",
+		"message": "Eğer ses API’si de korunacaksa",
 		"description": ""
 	},
 	"protectAudio_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"audioFakeRate_title": {
-		"message": "Buffer fake rate",
+		"message": "Arabellek taklit oranı",
 		"description": ""
 	},
 	"audioFakeRate_description": {
-		"message": "How many of the values per read request shall be faked.",
+		"message": "Okuma isteği başına kaç değer taklit edilecek.",
 		"description": ""
 	},
 	"audioFakeRate_options.1": {
-		"message": "1 value",
+		"message": "1 değer",
 		"description": ""
 	},
 	"audioFakeRate_options.10": {
-		"message": "10 values",
+		"message": "10 değer",
 		"description": ""
 	},
 	"audioFakeRate_options.100": {
-		"message": "100 values",
+		"message": "100 değer",
 		"description": ""
 	},
 	"audioFakeRate_options.1000": {
-		"message": "1000 values",
+		"message": "1000 değer",
 		"description": ""
 	},
 	"audioFakeRate_options.0.1%": {
-		"message": "0.1% of the values",
+		"message": "değerlerin 0.1%'i",
 		"description": ""
 	},
 	"audioFakeRate_options.1%": {
-		"message": "1% of the values",
+		"message": "değerlerin 1%'i",
 		"description": ""
 	},
 	"audioFakeRate_options.10%": {
-		"message": "10% of the values",
+		"message": "değerlerin 10%'u",
 		"description": ""
 	},
 	"audioFakeRate_options.100%": {
-		"message": "100% of the values",
+		"message": "değerlerin 100%'ü",
 		"description": ""
 	},
 	"audioNoiseLevel_title": {
-		"message": "Noise level",
+		"message": "Gürültü seviyesi",
 		"description": ""
 	},
 	"audioNoiseLevel_description": {
@@ -1084,151 +1084,151 @@
 		"description": ""
 	},
 	"audioNoiseLevel_options.minimal": {
-		"message": "minimal",
+		"message": "minimum",
 		"description": ""
 	},
 	"audioNoiseLevel_options.low": {
-		"message": "low",
+		"message": "düşük",
 		"description": ""
 	},
 	"audioNoiseLevel_options.medium": {
-		"message": "medium",
+		"message": "orta",
 		"description": ""
 	},
 	"audioNoiseLevel_options.high": {
-		"message": "high",
+		"message": "yüksek",
 		"description": ""
 	},
 	"audioNoiseLevel_options.maximal": {
-		"message": "maximal",
+		"message": "maksimum",
 		"description": ""
 	},
 	"useAudioCache_title": {
-		"message": "Use audio cache",
+		"message": "Ses önbelliğini kullan",
 		"description": ""
 	},
 	"useAudioCache_description": {
-		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"message": "Ses önbelleğini etkinleştir. Bu tespit edilmeyi önler ama performansı düşürür.",
 		"description": ""
 	},
 	"useAudioCache_urlSpecific": {
-		"message": "Some pages use a very poorly written audio fingerprinting script which will cause Firefox to slow down. To disable the cache for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Bazı sayfalar, Firefox'un yavaşlamasına neden olacak çok kötü yazılmış bir ses parmak izi komut dosyası kullanıyor. Belirli websitelerinde önbelleği kapatmak için siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"audioUseFixedIndices_title": {
-		"message": "Use fixed indices",
+		"message": "Sabit indeksleri kullan",
 		"description": ""
 	},
 	"audioUseFixedIndices_description": {
-		"message": "If some of the used indices shall always be faked.",
+		"message": "Kullanılan indeksler bazıları her zaman taklit edilecekse.",
 		"description": ""
 	},
 	"audioFixedIndices_title": {
-		"message": "Fixed indices",
+		"message": "Sabit indeksler",
 		"description": ""
 	},
 	"audioFixedIndices_description": {
-		"message": "The indices that are always faked. To add multiple entries, separate them by commas.",
+		"message": "Her zaman taklit edilen indeksler. Birden fazla girdi eklemek için virgülle ayırın.",
 		"description": ""
 	},
 	"historyLengthThreshold_title": {
-		"message": "History length threshold",
+		"message": "Geçmiş uzunluğu eşiği",
 		"description": ""
 	},
 	"historyLengthThreshold_description": {
-		"message": "Maximal length of the history that is reported to the website.",
+		"message": "Web sitesine bildirilen geçmişin maksimum uzunluğu.",
 		"description": ""
 	},
 	"historyLengthThreshold_urlSpecific": {
-		"message": "To change this value for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set a different value.",
+		"message": "Belirli web siteleri için bu değeri ayrı ayrı değiştirmek için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve farklı bir değer girin.",
 		"description": ""
 	},
 	"protectWindow_title": {
-		"message": "Protect window API",
+		"message": "Window API'sini koru",
 		"description": ""
 	},
 	"protectWindow_description": {
-		"message": "window.opener and window.name will be protected. This can render some webpages unusable.",
+		"message": "window.opener ve window.name korunacaktır. Bu, bazı web sayfalarının kullanılamaz hale gelmesine neden olabilir.",
 		"description": ""
 	},
 	"protectWindow_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"protectWindow_askReCaptchaException": {
-		"message": "Protecting the window API breaks reCAPTCHA. Do you want to allow the window.name API in embedded pages which will make it work again?",
+		"message": "Window API’sini korumak reCAPTCHA’yı bozabilir. Gömülü sayfalarda window.name API’sine izin vererek tekrar çalışmasını sağlamak ister misiniz?",
 		"description": ""
 	},
 	"allowWindowNameInFrames_title": {
-		"message": "Allow window.name in frames",
+		"message": "Çerçevelerde window.name'e izin ver",
 		"description": ""
 	},
 	"allowWindowNameInFrames_description": {
-		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"message": "The window.name API'si, gömülü sayfalar bağlamında o kadar tehlikeli değildir ve burada meşru nedenlerle (ör. reCAPTCHA) kullanılır. Bu ayar, bu kullanım biçimlerine izin verecektir.",
 		"description": ""
 	},
 	"allowWindowNameInFrames_urlSpecific": {
-		"message": "To allow this only for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
+		"message": "Sadece belirli web sitelerinde buna izin vermek için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini işaretleyin.",
 		"description": ""
 	},
 	"protectDOMRect_title": {
-		"message": "Protect DOMRect API",
+		"message": "DOMRect API'sini koru",
 		"description": ""
 	},
 	"protectDOMRect_description": {
-		"message": "This protects against the \"getClientRects()\" fingerprinting and several similar methods.",
+		"message": "Bu, \"getClientRects()\" ile parmak izi takibine ve çeşitli benzer yöntemlere karşı korur.",
 		"description": ""
 	},
 	"protectDOMRect_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"domRectIntegerFactor_title": {
-		"message": "DOMRect integer factor",
+		"message": "DOMRect tamsayı faktörü",
 		"description": ""
 	},
 	"domRectIntegerFactor_description": {
-		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"message": "CSS kullanarak piksellerin bazı kısımlarını kontrol edebilirsiniz. Algılamayı önlemek için, DOMRect değeri bu katsayı ile çarpıldığında tamsayı ise değiştirilmez.",
 		"description": ""
 	},
 	"protectSVG_title": {
-		"message": "Protect SVG API",
+		"message": "SVG API'sini koru",
 		"description": ""
 	},
 	"protectSVG_description": {
-		"message": "This protects against fingerprinting using SVGs.",
+		"message": "Bu, SVG kullanılarak parmak izi takibine karşı korur.",
 		"description": ""
 	},
 	"protectSVG_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"protectTextMetrics_title": {
-		"message": "Protect TextMetrics API",
+		"message": "TextMetrics API'sini koru",
 		"description": ""
 	},
 	"protectTextMetrics_description": {
-		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"message": "Bu, DOMRect değerlerini çapraz doğrulamak için kullanılabilen “measureText()” parmak izi takibine karşı korur.",
 		"description": ""
 	},
 	"protectTextMetrics_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"protectNavigator_title": {
-		"message": "Protect navigator API",
+		"message": "Navigator API'sini koru",
 		"description": ""
 	},
 	"protectNavigator_description": {
-		"message": "This page allows for changes in the navigator API. Enabling this protection does not change anything by default. Open the navigator settings to specify the changes you want to have there.",
+		"message": "Bu sayfa, navigator API’sinde değişiklik yapılmasına izin verir. Bu korumayı etkinleştirmek varsayılan olarak hiçbir şeyi değiştirmez. İstediğiniz değişiklikleri belirlemek için navigator ayarlarını açın.",
 		"description": ""
 	},
 	"protectNavigator_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"openNavigatorSettings_title": {
-		"message": "Navigator settings",
+		"message": "Navigator ayarları",
 		"description": ""
 	},
 	"openNavigatorSettings_description": {
@@ -1236,123 +1236,123 @@
 		"description": ""
 	},
 	"openNavigatorSettings_label": {
-		"message": "Open",
+		"message": "Aç",
 		"description": ""
 	},
 	"navigatorSettings_title": {
-		"message": "CanvasBlocker navigator settings",
+		"message": "CanvasBlocker navigator ayarları",
 		"description": ""
 	},
 	"navigatorSettings_description": {
-		"message": "On this page you can set the navigator settings. If using a preset you should always use an operating system and browser preset. After selecting these you can still make modifications.",
+		"message": "Bu sayfada navigator ayarlarını yapılandırabilirsiniz. Bir ön ayar kullanıyorsanız, mutlaka bir işletim sistemi ve tarayıcı ön ayarı seçmelisiniz. Bu ön ayarları seçtikten sonra da değişiklik yapabilirsiniz.",
 		"description": ""
 	},
 	"navigatorSettings_disclaimer": {
-		"message": "CAUTION: the actual browser in use cannot be faked entirely as there is a multitude of ways to detect it. E.g. feature tests and browser specific rendering of HTML elements will always leak.",
+		"message": "UYARI: Kullanılan gerçek tarayıcı tamamen taklit edilemez; bunu tespit etmenin birçok yolu vardır. Örneğin, özellik testleri ve HTML öğelerinin tarayıcıya özgü renderlanması her zaman sızıntıya neden olur.",
 		"description": ""
 	},
 	"navigatorSettings_contextualIdentities": {
-		"message": "Settings for the container {select} are shown.",
+		"message": "{select} kapsayıcısının ayarları gösterilmektedir.",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.os": {
-		"message": "Operating system presets",
+		"message": "İşletim sistemi ön ayarları",
 		"description": ""
 	},
 	"navigatorSettings_presetSection.browser": {
-		"message": "Browser presets",
+		"message": "Tarayıcı ön ayarları",
 		"description": ""
 	},
 	"navigatorSettings_values": {
-		"message": "Navigator values",
+		"message": "Navigator değerleri",
 		"description": ""
 	},
 	"navigatorSettings_reset": {
-		"message": "Reset",
+		"message": "Sıfırla",
 		"description": ""
 	},
 	"protectScreen_title": {
-		"message": "Protect screen API",
+		"message": "Screen API'sini koru",
 		"description": ""
 	},
 	"protectScreen_description": {
-		"message": "This protects against fingerprinting attempts including the screen size.",
+		"message": "Bu, ekran boyutunu da içeren parmak izi takip girişimlerine karşı koruma sağlar.",
 		"description": ""
 	},
 	"protectScreen_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"screenSize_title": {
-		"message": "Screen size",
+		"message": "Ekran boyutu",
 		"description": ""
 	},
 	"screenSize_description": {
-		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"message": "Eğer bu değer “...x...” olarak ayarlanırsa, belirtilen boyutlar ekran boyutu olarak raporlanacaktır.",
 		"description": ""
 	},
 	"screenSize_urlSpecific": {
-		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"message": "Belirli web siteleri için özel boyutlar girmek için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve istediğiniz değeri girin.",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_title": {
-		"message": "Fake minimal screen size",
+		"message": "Minimum taklit ekran boyutu",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_description": {
-		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"message": "Aşağıdaki setten iç pencere boyutlarına uyan en küçük ekran boyutunu kullanın. Ekran boyutları: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
 		"description": ""
 	},
 	"fakeMinimalScreenSize_urlSpecific": {
-		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini taklit etme işleminden hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"theme_title": {
-		"message": "Theme",
+		"message": "Tema",
 		"description": ""
 	},
 	"theme_description": {
-		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"message": "Sistem koyu tema kullanıyorsa otomatik tema koyu moda geçer (Firefox >= 67 gerektirir)",
 		"description": ""
 	},
 	"theme_options.auto": {
-		"message": "automatic",
+		"message": "otomatik",
 		"description": ""
 	},
 	"theme_options.default": {
-		"message": "default",
+		"message": "varsayılan",
 		"description": ""
 	},
 	"theme_options.light": {
-		"message": "light",
+		"message": "aydınlık",
 		"description": ""
 	},
 	"theme_options.dark": {
-		"message": "dark",
+		"message": "karanlık",
 		"description": ""
 	},
 	"theme_options.colorful": {
-		"message": "colorful",
+		"message": "renkli",
 		"description": ""
 	},
 	"theme_options.none": {
-		"message": "none",
+		"message": "hiçbiri",
 		"description": ""
 	},
 	"blockDataURLs_title": {
-		"message": "Block data URL pages",
+		"message": "Veri URL sayfalarını engelle",
 		"description": ""
 	},
 	"blockDataURLs_description": {
-		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking them prevents the real fingerprint to reach any server.",
+		"message": "Veri URL sayfaları, parmak izi takibine karşı korunamaz (bkz. https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Bunları engellemek, gerçek parmak izinin herhangi bir sunucuya ulaşmasını önler.",
 		"description": ""
 	},
 	"blockDataURLs_urlSpecific": {
-		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"message": "Belirli web sitelerini bu korumadan hariç tutmak için, siyah oka tıklayarak menüyü açın, \"+\" işaretine tıklayıp alan adını veya URL'i ekleyin ve onay imini kaldırın.",
 		"description": ""
 	},
 	"showReleaseNotes_title": {
-		"message": "Release notes",
+		"message": "Sürüm notları",
 		"description": ""
 	},
 	"showReleaseNotes_description": {
@@ -1360,51 +1360,51 @@
 		"description": ""
 	},
 	"showReleaseNotes_label": {
-		"message": "Show",
+		"message": "Göster",
 		"description": ""
 	},
 	"logLevel_title": {
-		"message": "Logging level",
+		"message": "Günlük kaydı düzeyi",
 		"description": ""
 	},
 	"logLevel_description": {
-		"message": "To find the cause of an error, detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.\n\nThe logging can be viewed in the Browser Console (Ctrl+Shift+J) and the Web Console (Ctrl+Shift+K).",
+		"message": "Bir hatanın nedenini bulmak için eklenti etkinliklerinin ayrıntılı kaydı faydalıdır. Bu parametre, kaydın detay seviyesini kontrol eder. \n\nKayıt, Tarayıcı Konsolu (Ctrl + Shift + J) ve Web Konsolu (Ctrl + Shift + K)’da görüntülenebilir.",
 		"description": ""
 	},
 	"logLevel_options.0": {
-		"message": "none",
+		"message": "hiçbiri",
 		"description": ""
 	},
 	"logLevel_options.1": {
-		"message": "error",
+		"message": "hata",
 		"description": ""
 	},
 	"logLevel_options.25": {
-		"message": "warning",
+		"message": "uyarı",
 		"description": ""
 	},
 	"logLevel_options.50": {
-		"message": "message",
+		"message": "mesaj",
 		"description": ""
 	},
 	"logLevel_options.75": {
-		"message": "notice",
+		"message": "bildirim",
 		"description": ""
 	},
 	"logLevel_options.100": {
-		"message": "verbose",
+		"message": "ayrıntılı",
 		"description": ""
 	},
 	"exportSettings_title": {
-		"message": "CanvasBlocker settings export",
+		"message": "CanvasBlocker ayarlarını dışa aktar",
 		"description": ""
 	},
 	"exportSettings_description": {
-		"message": "This allows you to copy your current settings. You can also paste and modify them here. If something is invalid the textarea will get a red background and the change is not stored.",
+		"message": "Bu, mevcut ayarlarınızı kopyalamanızı sağlar. Ayrıca buraya da yapıştırıp değiştirebilirsiniz. Eğer bir girdi geçersiz ise metin alanı kırmızı arka plan alır ve değişiklik kaydedilmez.",
 		"description": ""
 	},
 	"settingControlling_title": {
-		"message": "Setting controlling",
+		"message": "Ayar kontrolü",
 		"description": ""
 	},
 	"settingControlling_description": {
@@ -1412,39 +1412,39 @@
 		"description": ""
 	},
 	"openSettingSanitation_label": {
-		"message": "Setting sanitation",
+		"message": "Ayar temizliği",
 		"description": ""
 	},
 	"inspectWhitelist_label": {
-		"message": "Inspect whitelist",
+		"message": "Beyaz listeyi denetle",
 		"description": ""
 	},
 	"openSettingPresets_title": {
-		"message": "Presets",
+		"message": "Ön Ayarlar",
 		"description": ""
 	},
 	"openSettingPresets_description": {
-		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"message": "Bu, kurulum sırasında gösterilen ön ayar sayfasını açar. Ön ayarlar, CanvasBlocker'ın bazı yaygın kullanım senaryoları için ayar değerlerinin koleksiyonlarıdır.",
 		"description": ""
 	},
 	"openSettingPresets_label": {
-		"message": "Open",
+		"message": "Aç",
 		"description": ""
 	},
 	"inspectSettings_label": {
-		"message": "Inspect",
+		"message": "Denetle",
 		"description": ""
 	},
 	"saveSettings_label": {
-		"message": "Save",
+		"message": "Kaydet",
 		"description": ""
 	},
 	"loadSettings_label": {
-		"message": "Load",
+		"message": "Yükle",
 		"description": ""
 	},
 	"resetSettings_title": {
-		"message": "Reset settings",
+		"message": "Ayarları sıfırlama",
 		"description": ""
 	},
 	"resetSettings_description": {
@@ -1452,223 +1452,223 @@
 		"description": ""
 	},
 	"resetSettings_label": {
-		"message": "Reset",
+		"message": "Sıfırla",
 		"description": ""
 	},
 	"resetSettings_confirm": {
-		"message": "Are you sure you want to reset all settings?",
+		"message": "Tüm ayarları sıfırlamak istediğinizden emin misiniz?",
 		"description": ""
 	},
 	"browserAction_settings": {
-		"message": "Settings",
+		"message": "Ayarlar",
 		"description": ""
 	},
 	"browserAction_faq": {
-		"message": "FAQ",
+		"message": "SSS",
 		"description": ""
 	},
 	"browserAction_test": {
-		"message": "Test",
+		"message": "Dene",
 		"description": ""
 	},
 	"browserAction_review": {
-		"message": "Review",
+		"message": "İncele",
 		"description": ""
 	},
 	"browserAction_reportIssue": {
-		"message": "Report issue",
+		"message": "Sorun bildir",
 		"description": ""
 	},
 	"sanitation_title": {
-		"message": "Setting sanitation",
+		"message": "Ayar temizliği",
 		"description": ""
 	},
 	"sanitation_description": {
-		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advice on suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"message": "Bu sayfa, CanvasBlocker ayarlarında yanlış yapılandırmaları bulmaya yardımcı olur. Ayrıca, optimum olmayan ayarlar hakkında tavsiyelerde bulunur. Ancak, tüm önerileri körü körüne uygulamanız önerilmez.",
 		"description": ""
 	},
 	"sanitation_nothingToComplain": {
-		"message": "Nothing to complain.",
+		"message": "Her şey yolunda.",
 		"description": ""
 	},
 	"sanitation_ruleset.unnecessaryURLValue": {
-		"message": "Unnecessary URL values",
+		"message": "Gereksiz URL değerleri",
 		"description": ""
 	},
 	"sanitation_ruleset.disabledFeatures": {
-		"message": "Disabled features",
+		"message": "Kapatılan özellikler",
 		"description": ""
 	},
 	"sanitation_ruleset.blockMode": {
-		"message": "Block mode",
+		"message": "Engelleme Modu",
 		"description": ""
 	},
 	"sanitation_ruleset.thresholds": {
-		"message": "Thresholds",
+		"message": "Eşik Değer",
 		"description": ""
 	},
 	"sanitation_ruleset.performance": {
-		"message": "Performance",
+		"message": "Performans",
 		"description": ""
 	},
 	"sanitation_ruleset.privacy": {
-		"message": "Privacy",
+		"message": "Gizlilik",
 		"description": ""
 	},
 	"sanitation_error.unnecessaryURLValue": {
-		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
+		"message": "\"{url}\" için URL değeri, \"{setting-title}\" için genel ayar ile aynıdır.",
 		"description": ""
 	},
 	"sanitation_resolution.removeURLValue": {
-		"message": "remove URL value",
+		"message": "URL değerini kaldır",
 		"description": ""
 	},
 	"sanitation_error.disabledFeatures": {
-		"message": "All features of {api} are disabled but the protection is enabled.",
+		"message": "Tüm {api} özellikleri devre dışı bırakılmıştır, ancak koruma etkinleştirilmiştir.",
 		"description": ""
 	},
 	"sanitation_error.disabledSomeFeatures": {
-		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
+		"message": "Bazı {api} özellikleri devre dışı bırakılmıştır. Bu yalnızca test amaçlı ya da özelliklerin ne yaptığını gerçekten bildiğiniz durumlarda yapılmalıdır.",
 		"description": ""
 	},
 	"sanitation_resolution.disableMainFlag": {
-		"message": "disable main flag",
+		"message": "Ana flag'ı kapat",
 		"description": ""
 	},
 	"sanitation_resolution.enableFeatures": {
-		"message": "enable features",
+		"message": "özellikleri aç",
 		"description": ""
 	},
 	"sanitation_error.badBlockMode": {
-		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"message": "\"taklit et\" veya \"izin iste\" engelleme modları kullanılması tavsiye edilir.",
 		"description": ""
 	},
 	"sanitation_resolution.switchToFake": {
-		"message": "switch to \"fake\"",
+		"message": "\"taklit et\"e geç",
 		"description": ""
 	},
 	"sanitation_error.blockModeVsProtection": {
-		"message": "With blocking mode \"{blockMode}\" the {api} protection is not working.",
+		"message": "{blockMode} engelleme modu ile {api} koruması çalışmıyor.",
 		"description": ""
 	},
 	"sanitation_resolution.disableFlag": {
-		"message": "disable \"{flag}\"",
+		"message": "\"{flag}\"ı kapat",
 		"description": ""
 	},
 	"sanitation_error.fakeInputWithWhiteRng": {
-		"message": "Do not use white random number generator with \"{blockMode}\" and protecting \"{protectedCanvasPart}\".",
+		"message": "Beyaz rastgele sayı üretecini, “{blockMode}” ve “{protectedCanvasPart}” koruması ile birlikte kullanmayın.",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectReadout": {
-		"message": "switch to protect readout",
+		"message": "okuma korumasına geç",
 		"description": ""
 	},
 	"sanitation_resolution.switchToNonPersistentRng": {
-		"message": "switch to \"nonpersistent\" rng",
+		"message": "\"kalıcı olmayan\" rng'ye geç",
 		"description": ""
 	},
 	"sanitation_error.fakeEverythingInCanvas": {
-		"message": "Do not use protect \"{protectedCanvasPart}\" in blocking mode \"{blockMode}\".",
+		"message": "{blockMode} engelleme modunda {protectedCanvasPart} koruması kullanmayın.",
 		"description": ""
 	},
 	"sanitation_resolution.switchToProtectInput": {
-		"message": "switch to protect input",
+		"message": "girdi korumasına geç",
 		"description": ""
 	},
 	"sanitation_error.valueTooLow": {
-		"message": "\"{setting}\" should not be lower than {value}.",
+		"message": "\"{setting}\" ayarı {value} değerinden düşük olmamalıdır.",
 		"description": ""
 	},
 	"sanitation_error.valueTooHigh": {
-		"message": "\"{setting}\" should not be higher than {value}.",
+		"message": "\"{setting}\" ayarı {value} değerinden yüksek olmamalıdır.",
 		"description": ""
 	},
 	"sanitation_resolution.setTo": {
-		"message": "set to {value}",
+		"message": "{value} olarak ayarla",
 		"description": ""
 	},
 	"sanitation_error.storeNotificationData": {
-		"message": "Storing notification data may lead to slow performance.",
+		"message": "Bildirim verilerini depolamak yavaşlamaya yol açabilir.",
 		"description": ""
 	},
 	"sanitation_error.storeImage": {
-		"message": "Storing the image for inspection has a high RAM footprint.",
+		"message": "Resmi denetleme için depolamak RAM'de büyük yer kaplar.",
 		"description": ""
 	},
 	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
-		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"message": "Alan adları arası kalıcı rastgeleliği paylaşmayın, çünkü bu tarayıcıyı 100% takip edilebilir yapar.",
 		"description": ""
 	},
 	"sanitation_error.customScreenSize": {
-		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"message": "Özel bir ekran boyutu kullanmayın, bu, tarayıcının daha kolay izlenmesine yol açar.",
 		"description": ""
 	},
 	"whitelist_inspection_title": {
-		"message": "CanvasBlocker whitelist inspection",
+		"message": "CanvasBlocker beyaz liste denetimi",
 		"description": ""
 	},
 	"whitelist_inspection_description": {
-		"message": "This shows which fingerprint protections are active for specified sites.{newline}{newline}Unchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.{newline}Checked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
+		"message": "Bu, belirli bir web sitesleri için hangi parmak izi korumalarının aktif olduğunu gösterir.{newline}{newline}İşaretlenmemiş olması, sitenin bu belirli işlevi değiştirilmemiş şekilde kullanabileceği anlamına gelir. Buna, sitenin tarayıcınızın parmak izini (kısmen) almak için kullanabileceği de dahildir.{newline}İşaretlenmiş olması, CanvasBlocker'ın sitenin sizi benzersiz bir şekilde tanımlamasını zorlaştıran bir koruma sağladığı anlamına gelir.",
 		"description": ""
 	},
 	"whitelist_all_apis": {
-		"message": "All APIs",
+		"message": "Tüm API'ler",
 		"description": ""
 	},
 	"presets": {
-		"message": "Presets",
+		"message": "Ön Ayarlar",
 		"description": ""
 	},
 	"presets_title": {
-		"message": "CanvasBlocker presets",
+		"message": "CanvasBlocker ön ayarları",
 		"description": ""
 	},
 	"presets_installNotice": {
-		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"message": "{image:../icons/icon.svg}CanvasBlocker'ı kurduğunuz için teşekkürler. İhtiyacınıza göre ayarlamak için bazı ön ayarlar uygulayabilirsiniz. Daha fazla özelleştirme için {link:options:options.html} sayfasını açabilirsiniz.",
 		"description": ""
 	},
 	"presets_introduction": {
-		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"message": "Bunlar, farklı kullanıcı ihtiyaçlarına göre hazırlanmış ön ayarlardır. Köşeli parantez içindeki değerler, o anki ayar durumunu gösterir. Birden fazla ön ayarı arka arkaya uygulayabilirsiniz ancak bazı ayarlar daha sonradan uygulananlar tarafından üzerine yazılabilir.",
 		"description": ""
 	},
 	"preset_default_title": {
-		"message": "Default settings",
+		"message": "Varsayılan ayarlar",
 		"description": ""
 	},
 	"preset_default_description": {
-		"message": "No special settings are applied.",
+		"message": "Hiç bir özel ayar uygulanmadı.",
 		"description": ""
 	},
 	"preset_convenience_title": {
-		"message": "Convenient settings",
+		"message": "Faydalı ayarlar",
 		"description": ""
 	},
 	"preset_convenience_description": {
-		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"message": "Gezinti deneyiminizi olabildiğince rahat hale getirmek için bazı ayarları uygulayın. Buna belirli siteleri beyaz listeye eklemek de dahildir.",
 		"description": ""
 	},
 	"preset_stealth_title": {
-		"message": "Stealth settings",
+		"message": "Gizlilik ayarı",
 		"description": ""
 	},
 	"preset_stealth_description": {
-		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"message": "CanvasBlocker’ın tespit edilmesini zorlaştıracak şekilde yapılandırılır. Bu, CPU kullanımının artmasına ve tarayıcının yavaşlamasına neden olabilir.",
 		"description": ""
 	},
 	"preset_max_protection_title": {
-		"message": "Maximum protection",
+		"message": "Maksimum koruma",
 		"description": ""
 	},
 	"preset_max_protection_description": {
-		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"message": "Parmak izi çıkarımına karşı korumayı en üst düzeye çıkarır. Bu ayarlar bazı sayfaların çalışmasını bozabilir, tarayıcıyı biraz yavaşlatabilir ve sitelerin CanvasBlocker’ın kullanıldığını tespit etmesine yol açabilir. Bu ön ayarı uyguladıktan sonra reCAPTCHA ön ayarını da uygulamayı düşünmelisiniz.",
 		"description": ""
 	},
 	"preset_recaptcha_title": {
-		"message": "reCAPTCHA exception",
+		"message": "reCAPTCHA istisnası",
 		"description": ""
 	},
 	"preset_recaptcha_description": {
-		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"message": "Window API’sini korumak reCAPTCHA’yı bozar. Bu ön ayar, gömülü sayfalarda window.name API’sinin kullanılmasına izin verir; böylece reCAPTCHA yeniden çalışır hale gelir.",
 		"description": ""
 	}
 }
