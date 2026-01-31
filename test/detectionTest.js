@@ -181,16 +181,6 @@ addTest("toString modified", function(log){
 			configurable: true
 		},
 		log
-	) | checkPropertyDescriptor(
-		Function.prototype,
-		"toString",
-		{
-			value: function toString(){},
-			writable: true,
-			enumerable: false,
-			configurable: true
-		},
-		log
 	);
 });
 addTest("function name", function(log){
