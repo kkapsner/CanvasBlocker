@@ -103,7 +103,6 @@
 			"data_collection_permissions": {
 				"required": ["none"]
 			},
-			"update_url": "https://canvasblocker.kkapsner.de/versions/updates.json",
 			"strict_min_version": "100.0"
 		}
 	},
