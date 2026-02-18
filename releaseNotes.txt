@@ -1,6 +1,6 @@
 Version 1.13:
 	changes:
-		- 
+		- added challenges.cloudflare.com to the convenience preset
 	
 	new features:
 		- 

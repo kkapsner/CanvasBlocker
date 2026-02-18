@@ -12,6 +12,12 @@
 		},
 		"protectNavigator": {
 			"jnn-pa.googleapis.com": false
+		},
+		"blockMode": {
+			"challenges.cloudflare.com": "allowEverything"
+		},
+		"blockDataURLs": {
+			"challenges.cloudflare.com": false
 		}
 	},
 	"stealth": {
