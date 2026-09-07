@@ -312,7 +312,7 @@
 		"description": ""
 	},
 	"askForSVGPermission": {
-		"message": "Do you want to allow the SVG API?",
+		"message": "SVG API를 허용하시겠습니까?",
 		"description": ""
 	},
 	"askForSVGInputPermission": {
